@@ -48,17 +48,17 @@ public class TreasureTrailsTaskList extends TaskList
 
 		Task unlockLargeSpade = new Task.TaskBuilder()
 			.name("Unlock the Large spade")
-			.geVar(true, VarPlayerID.COMPLETED_CLUES, 500)
+			.geVar(false, VarPlayerID.COMPLETED_CLUES, 500)
 			.build();
 
 		Task unlockCluelessScroll = new Task.TaskBuilder()
 			.name("Unlock the Clueless scroll")
-			.geVar(true, VarPlayerID.COMPLETED_CLUES1, 400)
+			.geVar(false, VarPlayerID.COMPLETED_CLUES1, 400)
 			.build();
 
 		Task unlockUriTransformEmote = new Task.TaskBuilder()
 			.name("Unlock the Uri transform emote")
-			.geVar(true, VarPlayerID.COMPLETED_CLUES2, 300)
+			.geVar(false, VarPlayerID.COMPLETED_CLUES2, 300)
 			.build();
 
 		Task unlockHeavyCasket = new Task.TaskBuilder()
