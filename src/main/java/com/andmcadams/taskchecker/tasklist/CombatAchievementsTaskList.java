@@ -42,7 +42,7 @@ public class CombatAchievementsTaskList extends TaskList
         //Claimed all Combat Achievement rewards for every tier
         Task casCompleted = new Task.TaskBuilder()
                 .name("Claimed all Combat Achievement rewards for every tier")
-                .switchVar(true, VarbitID.CA_TIER_STATUS_GRANDMASTER)
+                .eqVar(true, VarbitID.CA_TIER_STATUS_GRANDMASTER, 2)
                 .build();
         //Revealed the previously completed tasks notification
         Task easyLamp = new Task.TaskBuilder()
