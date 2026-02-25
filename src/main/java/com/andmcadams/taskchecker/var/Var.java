@@ -41,6 +41,9 @@ public class Var
 	@Getter
 	private int currentValue;
 
+	private int targetSum;
+	private int[] varIndexes;
+
 	public Var(boolean isVarbit, int varIndex, int targetValue, BiFunction<Integer, Integer, Boolean> targetFunction)
 	{
 		this.isVarbit = isVarbit;
@@ -49,18 +52,41 @@ public class Var
 		this.targetFunction = targetFunction;
 	}
 
-	public int setCurrentValue(Client client)
+	public Var(boolean isVarbit, int[] varIndexes, int targetSum,  BiFunction<Integer, Integer, Boolean> targetFunction)
 	{
-		if (this.isVarbit == true)
-			currentValue = client.getVarbitValue(this.varIndex);
-		else
-			currentValue = client.getVarpValue(this.varIndex);
-		return currentValue;
+		this.isVarbit = isVarbit;
+		this.varIndexes = varIndexes;
+		this.targetSum = targetSum;
+		this.targetFunction = targetFunction;
 	}
 
+	public int setCurrentValue(Client client)
+	{
+		if (varIndexes != null)
+		{
+			int sum = 0;
+			for (int index : varIndexes)
+			{
+				sum += isVarbit
+						? client.getVarbitValue(index)
+						: client.getVarpValue(index);
+			}
+
+			currentValue = sum;
+		}
+		else
+		{
+			currentValue = isVarbit
+					? client.getVarbitValue(varIndex)
+					: client.getVarpValue(varIndex);
+		}
+
+		return currentValue;
+	}
 	public boolean isComplete()
 	{
-		return this.targetFunction.apply(currentValue, targetValue);
+		int comparisonTarget = (varIndexes != null) ? targetSum : targetValue;
+		return targetFunction.apply(currentValue, comparisonTarget);
 	}
 
 	public String toString()

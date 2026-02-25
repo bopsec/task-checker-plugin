@@ -111,6 +111,13 @@ public class Task
 			return this;
 		}
 
+		public TaskBuilder geSumVars(boolean isVarbit, int sum, int... varIndex)
+		{
+			Var v = new Var(isVarbit, varIndex, sum, Var::isAtLeastTargetValue);
+			varsToCheck.add(v);
+			return this;
+		}
+
 		public Task build()
 		{
 			Task task = new Task(name, varsToCheck);
