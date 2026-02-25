@@ -26,35 +26,51 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class ForgottenPrayerTaskList extends TaskList
 {
 
 	public ForgottenPrayerTaskList()
 	{
-		super("Forgotten Prayers");
+		super("Additional scroll unlocks");
 		initTasks();
 	}
 
 	public void initTasks()
 	{
+		// TODO:
+		//Unlocked the ability to avoid teleport attacks
+
 		Task unlockRigour = new Task.TaskBuilder()
 			.name("Unlock Rigour")
-			.switchVar(true, Varbits.UNLOCKED_RIGOUR.getId())
+			.switchVar(true, VarbitID.PRAYER_RIGOUR_UNLOCKED)
 			.build();
 
 		Task unlockAugury = new Task.TaskBuilder()
 			.name("Unlock Augury")
-			.switchVar(true, Varbits.UNLOCKED_AUGURY.getId())
+			.switchVar(true, VarbitID.PRAYER_AUGURY_UNLOCKED)
 			.build();
 
 		Task unlockPreserve = new Task.TaskBuilder()
 			.name("Unlock Preserve")
-			.switchVar(true, Varbits.UNLOCKED_PRESERVE.getId())
+			.switchVar(true, VarbitID.PRAYER_PRESERVE_UNLOCKED)
 			.build();
+
+		Task unlockDeadeye = new Task.TaskBuilder()
+				.name("Unlock Deadeye")
+				.switchVar(true, VarbitID.PRAYER_DEADEYE_UNLOCKED)
+				.build();
+
+		Task unlockMysticVigour = new Task.TaskBuilder()
+				.name("Unlock Mystic Vigour")
+				.switchVar(true, VarbitID.PRAYER_MYSTIC_VIGOUR_UNLOCKED)
+				.build();
 
 		this.add(unlockPreserve);
 		this.add(unlockRigour);
 		this.add(unlockAugury);
+		this.add(unlockDeadeye);
+		this.add(unlockMysticVigour);
 	}
 }

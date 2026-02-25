@@ -39,11 +39,9 @@ public class LostItemsTaskList extends TaskList
 
 	public void initTasks()
 	{
-
-		Task returnCoppersCollar = new Task.TaskBuilder()
-			.name("Deliver Copper's crimson collar to Veos")
-			.eqVar(true, Varbits.VEOS_COLLAR_PROGRESS.getId(), 2)
-			.build();
+		// TODO:
+		//Delivered Sir Gerry's notes to Sir Tiffy Cashien
+		//Delivered a tangled toad's legs to Longramble
 
 		Task returnZealotsKey = new Task.TaskBuilder()
 			.name("Deliver Zealot's key to Zealot")
@@ -56,7 +54,7 @@ public class LostItemsTaskList extends TaskList
 			.switchVar(true, Varbits.BROOCH_RETURNED_TO_MISTAG.getId())
 			.build();
 
-		add(returnCoppersCollar);
+		//add(returnCoppersCollar);
 		add(returnZealotsKey);
 		add(returnMistagsBrooch);
 	}

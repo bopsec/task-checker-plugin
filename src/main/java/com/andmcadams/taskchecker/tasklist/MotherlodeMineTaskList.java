@@ -38,6 +38,10 @@ public class MotherlodeMineTaskList extends TaskList
 
 	public void initTasks()
 	{
+		//TODO:
+		//Paid Prospector Percy for access to the restricted mine
+		//Paid Prospector Percy for the restricted hopper
+
 //		Task getAccessToUpperMine = new Task.TaskBuilder()
 //			.name("Pay Prospector Percy for access to the upper levels of the mine")
 //			.switchVar(true, Varbits.PAID_FOR_UPPER_MINE.getId())

@@ -40,6 +40,27 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 	public void initTasks()
 	{
 
+		//TODO:
+		//Claimed Castle Wars tickets from Lanthus
+		//Claimed blood runes from the Vyre well
+		//Claimed coins from Willow's bag
+		//Claimed coins from a Lovakengj minecart station conductor
+		//Claimed coins from Trossa
+		//Claimed XP from smithing a chromium ingot
+		//Claimed XP from smithing an emberlight
+		//Claimed XP from crafting a purging staff
+		//Claimed XP from fletching a scorching bow
+		//Claimed a clue scroll from a monkey from Ardougne Zoo
+		//Claimed a medium pouch from Archmage Sedridor
+		//Claimed a keris partisan from Maisa's tent
+		//Claimed the circlet of water from the High Priest of Sophanem
+		//Claimed an unholy mould from the Spirit of Scorpius
+		//Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu
+		//Claimed all 4 XP drops (or lamps) from Radimus Erkle
+		//Claimed all 6 XP drops from Combat Training Camp dummies
+		//Claimed all 14 XP drops from Perdu
+		//Claimed all Adventure Paths task rewards and starter kits
+
 		Task observatoryQuestWineClaimed = new Task.TaskBuilder()
 			.name("Claim wine from the Observatory assistant")
 			.eqVar(false, Varplayers.OBSERVATORY_QUEST_PROGESS.getId(), 8)

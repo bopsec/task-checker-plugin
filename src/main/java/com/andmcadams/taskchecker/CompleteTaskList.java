@@ -53,6 +53,10 @@ public class CompleteTaskList
 	private void initTasks()
 	{
 		TaskList hallowedSepulchre = new HallowedSepulchreTaskList();
+		TaskList combatAchievements = new CombatAchievementsTaskList();
+		TaskList petTransmogs = new PetTransmogsTaskList();
+		TaskList sailingAmenities = new SailingAmenities();
+		TaskList skillingPerks = new SkillingPerksTaskList();
 		TaskList titheFarm = new TitheFarmTaskList();
 		TaskList motherlodeMine = new MotherlodeMineTaskList();
 		TaskList forgottenPrayers = new ForgottenPrayerTaskList();
@@ -63,7 +67,6 @@ public class CompleteTaskList
 		TaskList rightClick = new RightClickTaskList();
 		TaskList doomsayerWarnings = new DoomsayerToggleTaskList();
 		TaskList unlimitedServices = new UnlimitedServicesTaskList();
-		TaskList minecartNetwork = new LovakengjMinecartNetworkTaskList();
 		TaskList utilityItems = new UtilityItemTaskList();
 		TaskList uniqueDialoguePaths = new UniqueDialoguePathsTaskList();
 		TaskList loot = new LootTaskList();
@@ -77,6 +80,10 @@ public class CompleteTaskList
 		TaskList invisible = new InvisibleTaskList();
 
 		taskLists.add(hallowedSepulchre);
+		taskLists.add(combatAchievements);
+		taskLists.add(petTransmogs);
+		taskLists.add(sailingAmenities);
+		taskLists.add(skillingPerks);
 		taskLists.add(titheFarm);
 		taskLists.add(motherlodeMine);
 		taskLists.add(forgottenPrayers);
@@ -87,7 +94,6 @@ public class CompleteTaskList
 		taskLists.add(rightClick);
 		taskLists.add(doomsayerWarnings);
 		taskLists.add(unlimitedServices);
-		taskLists.add(minecartNetwork);
 		taskLists.add(utilityItems);
 		taskLists.add(uniqueDialoguePaths);
 		taskLists.add(loot);

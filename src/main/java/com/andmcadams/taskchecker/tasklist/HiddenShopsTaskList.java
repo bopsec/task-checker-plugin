@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class HiddenShopsTaskList extends TaskList
 {
@@ -38,12 +39,13 @@ public class HiddenShopsTaskList extends TaskList
 
 	public void initTasks()
 	{
-
-		// Unsure of what the varp for uglug is
+		// TODO:
+		//Unlocked Uglug Nar's shop, Uglug's stuffsies
+		//Unlocked the Dorgesh-Kaan market trading minigame
 
 		Task unlockValiggaShop = new Task.TaskBuilder()
 			.name("Unlock Vanligga Gastfrihet's shop, Contraband yak produce")
-			.eqVar(true, Varbits.VANLIGGA_STATE.getId(), 2)
+			.eqVar(true, VarbitID.FRISD_PUB_FAVOURS, 2)
 			.build();
 
 		add(unlockValiggaShop);

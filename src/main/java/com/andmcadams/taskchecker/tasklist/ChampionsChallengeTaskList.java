@@ -2,6 +2,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class ChampionsChallengeTaskList extends TaskList
 {
@@ -18,57 +19,57 @@ public class ChampionsChallengeTaskList extends TaskList
 		// Earth warrior, ghoul, hill giant, goblin, hobgoblin, imp, jogre, lesser demon, skeleton, zombie
 		Task earthWarriorLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the earth warrior champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 0)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 0)
 			.build();
 
 		Task ghoulLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the ghoul champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 1)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 1)
 			.build();
 
 		Task giantLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the giant champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 2)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 2)
 			.build();
 
 		Task goblinLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the goblin champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 3)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 3)
 			.build();
 
 		Task hobgoblinLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the hobgoblin champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 4)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 4)
 			.build();
 
 		Task impLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the imp champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 5)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 5)
 			.build();
 
 		Task jogreLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the jogre champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 6)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 6)
 			.build();
 
 		Task lesserDemonLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the lesser demon champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 7)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 7)
 			.build();
 
 		Task skeletonLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the skeleton champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 8)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 8)
 			.build();
 
 		Task zombieLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the zombie champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 9)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 9)
 			.build();
 
 		Task humanLampUsed = new Task.TaskBuilder()
 			.name("Use the champion's lamp of the human champion")
-			.bitVar(true, Varbits.CHAMPIONS_CHALLENGE_LAMPS_BITMAP.getId(), 10)
+			.bitVar(true, VarbitID.CHAMPIONS_LAMPS, 10)
 			.build();
 
 		add(earthWarriorLampUsed);

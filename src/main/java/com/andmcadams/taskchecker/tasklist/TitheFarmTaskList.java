@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class TitheFarmTaskList extends TaskList
 {
@@ -40,12 +41,12 @@ public class TitheFarmTaskList extends TaskList
 
 		Task autoWeedUnlocked = new Task.TaskBuilder()
 			.name("Unlocked Autoweed")
-			.geVar(true, Varbits.AUTOWEED.getId(), 1)
+			.geVar(true, VarbitID.FARMING_BLOCKWEEDS, 1)
 			.build();
 
 		Task bologaBlessingUnlocked = new Task.TaskBuilder()
 			.name("Paid Bologa for the ability to purchase Bologa's blessings")
-			.eqVar(true, Varbits.BOLOGA_STATE.getId(), 2)
+			.eqVar(true, VarbitID.HOSIDIUS_EVILGRAPES, 2)
 			.build();
 
 		this.add(autoWeedUnlocked);

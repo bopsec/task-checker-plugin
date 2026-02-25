@@ -85,11 +85,6 @@ public class TemporaryTaskList extends TaskList
 			.switchVar(true, Varbits.PISCATORIS_BRONZE_AXE.getId())
 			.build();
 
-		Task excavateStatue = new Task.TaskBuilder()
-			.name("Unblock the statue leading to the Tunnel of Chaos")
-			.switchVar(true, Varbits.EXCAVATED_STATUE_TO_TUNNEL_OF_CHAOS.getId())
-			.build();
-
 		Task unlockNPCContactLastContact = new Task.TaskBuilder()
 			.name("Unlock the NPC Contact spell's previous contract option")
 			.geVar(true, Varbits.LAST_NPC_CONTACT_CONTACT.getId(), 1)
@@ -104,7 +99,6 @@ public class TemporaryTaskList extends TaskList
 		add(claimRagAndBoneManIIRewards);
 		add(zeahWorkbenchNails);
 		add(piscatorisTools);
-		add(excavateStatue);
 		add(unlockNPCContactLastContact);
 	}
 }

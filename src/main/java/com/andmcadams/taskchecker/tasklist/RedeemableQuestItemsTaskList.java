@@ -39,7 +39,6 @@ public class RedeemableQuestItemsTaskList extends TaskList
 
 	public void initTasks()
 	{
-
 		Task tradeDiaryOfHerbiFlax = new Task.TaskBuilder()
 			.name("Trade the diary of Herbi Flax to the Apothecary")
 			.bitVar(false, Varplayers.MORTTON_STATE.getId(), 30)

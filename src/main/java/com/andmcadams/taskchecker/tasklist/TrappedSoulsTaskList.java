@@ -27,6 +27,7 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
 import com.andmcadams.taskchecker.Varplayers;
+import net.runelite.api.gameval.VarbitID;
 
 public class TrappedSoulsTaskList extends TaskList
 {
@@ -39,6 +40,14 @@ public class TrappedSoulsTaskList extends TaskList
 
 	public void initTasks()
 	{
+		//TODO:
+		//Freed Mehhar from the High Priest of Scabaras's influence
+		Task freeMehhar = new Task.TaskBuilder()
+				.name("Freed Mehhar from the High Priest of Scabaras's influence")
+				.switchVar(true, VarbitID.BCS_MEHHAR_RETURNED)
+				.build();
+		add(freeMehhar);
+
 		Task freeKlenter = new Task.TaskBuilder()
 			.name("Free Klenter's soul from Amascut's torment")
 			.eqVar(true, Varbits.FREED_KLENTER.getId(), 0)

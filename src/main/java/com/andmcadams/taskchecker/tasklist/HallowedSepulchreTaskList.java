@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class HallowedSepulchreTaskList extends TaskList
 {
@@ -38,40 +39,44 @@ public class HallowedSepulchreTaskList extends TaskList
 
 	private void initTasks()
 	{
-		/**
-		 * Hallowed Sepulchre
-		 */
-		// Squirrel metamorph?
+
+		//TODO:
+		//Logged a fastest run for the Hallowed Sepulchre
+
 		Task freeDarkmeyerSlave = new Task.TaskBuilder()
-			.name("Give the Darkmeyer Slave 100 Hallowed Marks")
-			.switchVar(true, Varbits.FREED_DARKMEYER_SLAVE.getId())
+			.name("Give the Darkmeyer Slave 100 Hallowed Marks") // VarbitID: 10414
+			.switchVar(true, VarbitID.HALLOWED_ADVENTURER_MARKS_GIVEN)
 			.build();
-		// Fastest run varb?
 
 		Task freeKnightOfTheOwl = new Task.TaskBuilder()
 			.name("Free the Knight of the Owl")
-			.switchVar(true, Varbits.FREED_KNIGHT_OF_THE_OWL.getId())
+			.switchVar(true, VarbitID.HALLOWED_GHOST_OWLKNIGHT_FOUND)
 			.build();
 
 		Task freeKnightOfTheLion = new Task.TaskBuilder()
 			.name("Free the Knight of the Lion")
-			.switchVar(true, Varbits.FREED_KNIGHT_OF_THE_LION.getId())
+			.switchVar(true, VarbitID.HALLOWED_GHOST_LIONKNIGHT_FOUND)
 			.build();
 
 		Task freeKnightOfTheWolf = new Task.TaskBuilder()
 			.name("Free the Knight of the Wolf")
-			.switchVar(true, Varbits.FREED_KNIGHT_OF_THE_WOLF.getId())
+			.switchVar(true, VarbitID.HALLOWED_GHOST_WOLFKNIGHT_FOUND)
 			.build();
 
 		Task freeKnightOfTheUnicorn = new Task.TaskBuilder()
 			.name("Free the Knight of the Unicorn")
-			.switchVar(true, Varbits.FREED_KNIGHT_OF_THE_UNICORN.getId())
+			.switchVar(true, VarbitID.HALLOWED_GHOST_UNICORNKNIGHT_FOUND)
 			.build();
 
 		Task freeArchpriestOfTheUnicorn = new Task.TaskBuilder()
 			.name("Free the Archpriest of the Unicorn")
-			.switchVar(true, Varbits.FREED_ARCHPRIEST_OF_THE_UNICORN.getId())
+			.switchVar(true, VarbitID.HALLOWED_GHOST_ARCHPRIEST_FOUND)
 			.build();
+
+		Task unlockPrivateInstances = new Task.TaskBuilder()
+				.name("Unlock private instances")
+				.switchVar(true, VarbitID.HALLOWED_PRIVATE_INSTANCES_PURCHASED)
+				.build();
 
 		this.add(freeDarkmeyerSlave);
 		this.add(freeKnightOfTheLion);
@@ -79,6 +84,7 @@ public class HallowedSepulchreTaskList extends TaskList
 		this.add(freeKnightOfTheUnicorn);
 		this.add(freeKnightOfTheWolf);
 		this.add(freeArchpriestOfTheUnicorn);
+		this.add(unlockPrivateInstances);
 
 	}
 }

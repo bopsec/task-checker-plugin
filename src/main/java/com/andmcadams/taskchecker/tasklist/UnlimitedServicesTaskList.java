@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class UnlimitedServicesTaskList extends TaskList
 {
@@ -38,20 +39,27 @@ public class UnlimitedServicesTaskList extends TaskList
 
 	public void initTasks()
 	{
+		// TODO:
+		//Paid Fossegrimen for free enchanted lyre imbues
+		//Paid Petrified Pete for free entry to the Volcanic Mine
+		//Paid Matthias for free falcon rentals
+		//Paid Skully for the ability to toggle loot keys
+		//Paid the ghost captain for free trips to Dragontooth Island
+		//Paid any banker for all 360 additional bank slots
 
 		Task enhanceCamulet = new Task.TaskBuilder()
 			.name("Enhance the Camulet for one million coins")
-			.eqVar(true, Varbits.CAMULET_CHARGES.getId(), 7)
+			.eqVar(true, VarbitID.ENAKH_CAMULET_CHARGE, 7)
 			.build();
 
 		Task paySaniboch = new Task.TaskBuilder()
 			.name("Pay Saniboch one million coins for permanent access to Brimhaven dungeon")
-			.switchVar(true, Varbits.PERMANENT_ACCESS_BRIMHAVEN_DUNGEON.getId())
+			.switchVar(true, VarbitID.KARAM_DUNGEON_PERMANENTACCESS)
 			.build();
 
 		Task payAndras = new Task.TaskBuilder()
 			.name("Pay Andras for free trips to Slepe")
-			.switchVar(true, Varbits.PERMANENT_PAYMENT_SLEPE_BOAT.getId())
+			.switchVar(true, VarbitID.ANDRAS_PERM_UNLOCK)
 			.build();
 
 		add(enhanceCamulet);

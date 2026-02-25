@@ -27,6 +27,7 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
 import com.andmcadams.taskchecker.var.Var;
+import net.runelite.api.gameval.VarbitID;
 
 public class SlayerRewardsTaskList extends TaskList
 {
@@ -39,91 +40,118 @@ public class SlayerRewardsTaskList extends TaskList
 
 	public void initTasks()
 	{
+		//TODO:
+		//Unlocked the Shayzien helm (5)'s effect on slayer helmets
 
 		Task unlockGargoyleSmasher = new Task.TaskBuilder()
 			.name("Unlock Gargoyle Smasher")
-			.switchVar(true, Varbits.UNLOCKED_GARGOYLE_SMASHER.getId())
+			.switchVar(true, VarbitID.SLAYER_AUTOKILL_GARGOYLES)
 			.build();
 
 		Task unlockSlugSalter = new Task.TaskBuilder()
 			.name("Unlock Slug Salter")
-			.switchVar(true, Varbits.UNLOCKED_SLUG_SALTER.getId())
+			.switchVar(true, VarbitID.SLAYER_AUTOKILL_ROCKSLUGS)
 			.build();
 
 		Task unlockReptileFreezer = new Task.TaskBuilder()
 			.name("Unlock Reptile Freezer")
-			.switchVar(true, Varbits.UNLOCKED_REPTILE_FREEZER.getId())
+			.switchVar(true, VarbitID.SLAYER_AUTOKILL_DESERTLIZARDS)
 			.build();
 
 		Task unlockShroomSprayer = new Task.TaskBuilder()
 			.name("Unlock 'Shroom Sprayer")
-			.switchVar(true, Varbits.UNLOCKED_SHROOM_SPRAYER.getId())
+			.switchVar(true, VarbitID.SLAYER_AUTOKILL_ZYGOMITES)
 			.build();
 
 		Task unlockBroaderFletching = new Task.TaskBuilder()
 			.name("Unlock Broader Fletching")
-			.switchVar(true, Varbits.UNLOCKED_BROADER_FLETCHING.getId())
+			.switchVar(true, VarbitID.SLAYER_AMMO_UNLOCKED)
 			.build();
 
 		Task unlockMalevolentMasquerade = new Task.TaskBuilder()
 			.name("Unlock Malevolent Masquerade")
-			.switchVar(true, Varbits.UNLOCKED_MALEVOLENT_MASQUERADE.getId())
+			.switchVar(true, VarbitID.SLAYER_HELM_UNLOCKED)
 			.build();
 
 		Task unlockRingBling = new Task.TaskBuilder()
 			.name("Unlock Ring Bling")
-			.switchVar(true, Varbits.UNLOCKED_RING_BLING.getId())
+			.switchVar(true, VarbitID.SLAYER_RING_UNLOCKED)
 			.build();
 
 		Task unlockBiggerAndBadder = new Task.TaskBuilder()
 			.name("Unlock Bigger and Badder")
-			.switchVar(true, Varbits.UNLOCKED_BIGGER_AND_BADDER.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_SUPERIORMOBS)
 			.build();
 
 		Task unlockKingBlackBonnet = new Task.TaskBuilder()
 			.name("Unlock King Black Bonnet")
-			.switchVar(true, Varbits.UNLOCKED_KING_BLACK_BONNET.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_HELM_BLACK)
 			.build();
 
 		Task unlockKalphiteKhat = new Task.TaskBuilder()
 			.name("Unlock Kalphite Khat")
-			.switchVar(true, Varbits.UNLOCKED_KALPHITE_KHAT.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_HELM_GREEN)
 			.build();
 
 		Task unlockUnholyHelmet = new Task.TaskBuilder()
 			.name("Unlock Unholy Helmet")
-			.switchVar(true, Varbits.UNLOCKED_UNHOLY_HELMET.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_HELM_RED)
 			.build();
 
 		Task unlockDarkMantle = new Task.TaskBuilder()
 			.name("Unlock Dark Mantle")
-			.switchVar(true, Varbits.UNLOCKED_DARK_MANTLE.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_HELM_PURPLE)
 			.build();
 
 		Task unlockUndeadHead = new Task.TaskBuilder()
 			.name("Unlock Undead Head")
-			.switchVar(true, Varbits.UNLOCKED_UNDEAD_HEAD.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_HELM_TURQUOISE)
 			.build();
 
 		Task unlockUseMoreHead = new Task.TaskBuilder()
 			.name("Unlock Use More Head")
-			.switchVar(true, Varbits.UNLOCKED_USE_MORE_HEAD.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_HELM_HYDRA)
 			.build();
 
 		Task unlockDulyNoted = new Task.TaskBuilder()
 			.name("Unlock Duly Noted")
-			.switchVar(true, Varbits.UNLOCKED_DULY_NOTED.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_NOTEDMITHRILBARS)
 			.build();
 
 		Task unlockStopTheWyvern = new Task.TaskBuilder()
 			.name("Unlock Stop the Wyvern")
-			.switchVar(true, Varbits.UNLOCKED_STOP_THE_WYVERN.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_FOSSILWYVERNBLOCK)
 			.build();
 
 		Task unlockTwistedVision = new Task.TaskBuilder()
 			.name("Unlock Twisted Vision")
-			.switchVar(true, Varbits.UNLOCKED_TWISTED_VISION.getId())
+			.switchVar(true, VarbitID.SLAYER_UNLOCK_HELM_TWISTED)
 			.build();
+
+		Task unlockTaskStorage = new Task.TaskBuilder()
+				.name("Unlock Task Storage")
+				.switchVar(true, VarbitID.SLAYER_UNLOCK_STORAGE)
+				.build();
+
+		Task unlockedRevenenenenenants = new Task.TaskBuilder()
+				.name("Unlock Revenenenenenants")
+				.switchVar(true, VarbitID.SLAYER_LONGER_REVENANTS)
+				.build();
+
+		Task unlockedEyeSeeYou = new Task.TaskBuilder()
+				.name("Unlocked Eye See You")
+				.switchVar(true, VarbitID.SLAYER_UNLOCK_HELM_ARAXYTE)
+				.build();
+
+		Task unlockedHoodedSlayerHelmet = new Task.TaskBuilder()
+				.name("Unlocked hooded slayer helmet")
+				.switchVar(true, VarbitID.SLAYER_UNLOCK_HELM_HOODED)
+				.build();
+
+		Task unlockedShayzienHelmEffect = new Task.TaskBuilder()
+				.name("Unlocked Shayzien(5) effect on slayer helmet")
+				.switchVar(true, 1)
+				.build();
 
 		add(unlockGargoyleSmasher);
 		add(unlockSlugSalter);
@@ -142,6 +170,12 @@ public class SlayerRewardsTaskList extends TaskList
 		add(unlockDulyNoted);
 		add(unlockStopTheWyvern);
 		add(unlockTwistedVision);
+		add(unlockTaskStorage);
+		add(unlockedRevenenenenenants);
+		add(unlockedEyeSeeYou);
+		add(unlockedHoodedSlayerHelmet);
+		//add(); // shayzien helm(5) slayer helm effect i didnt find this yet
+
 
 	}
 }

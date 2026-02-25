@@ -39,6 +39,11 @@ public class RightClickTaskList extends TaskList
 
 	public void initTasks()
 	{
+		//TODO:
+		//Unlocked Rick's buy-crystals option
+		//Unlocked Historian Aldo's trade option
+		//Unlocked the Theatre of Blood chest's custom buy option
+
 		Task unlockJarvaldTravel = new Task.TaskBuilder()
 			.name("Unlock Jarvald's travel option")
 			.switchVar(true, Varbits.UNLOCKED_JARVALD_TRAVEL.getId())

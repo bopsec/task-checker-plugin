@@ -26,47 +26,57 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class FirePitsTaskList extends TaskList
 {
 
 	public FirePitsTaskList()
 	{
-		super("Fire pits");
+		super("Environmental alterations");
 		initTasks();
 	}
 
 	public void initTasks()
 	{
+		// TODO:
+		//Built a raft using the smashed table in Ah Za Rhoon
+		//Built the Spinning Wheel on the Isle of Souls
+		//Built the Potter's Wheel on the Isle of Souls
+		//Built all 5 quetzal landing sites
+		//Searched the treasure pile in Movario's base
+		//Destroyed all 9 tentacles in the Lassar Undercity
+		//Listened to all 10 remnants in the Lassar Undercity
+		//Used Saradomin's light
 
 		Task moleHolePit = new Task.TaskBuilder()
 			.name("Build the fire pit in the Mole Hole")
-			.switchVar(true, Varbits.MOLE_HOLE_FIRE_PIT.getId())
+			.switchVar(true, VarbitID.MY2ARM_FIRE_MOLE)
 			.build();
 
 		Task lumbridgeSwampCavesPit = new Task.TaskBuilder()
 			.name("Build the fire pit in the Lumbridge Swamp Caves")
-			.switchVar(true, Varbits.LUMBRIDGE_SWAMP_CAVES_FIRE_PIT.getId())
+			.switchVar(true, VarbitID.MY2ARM_FIRE_LUMB)
 			.build();
 
 		Task mosLeHarmlessCavePit = new Task.TaskBuilder()
 			.name("Build the fire pit in the Mos Le'Harmless Cave")
-			.switchVar(true, Varbits.MOS_LE_HARMLESS_CAVE_FIRE_PIT.getId())
+			.switchVar(true, VarbitID.MY2ARM_FIRE_HORRORS)
 			.build();
 
 		Task mortMyrePit = new Task.TaskBuilder()
 			.name("Build the fire pit in the Mort Myre Swamp")
-			.switchVar(true, Varbits.MORT_MYRE_SWAMP_FIRE_PIT.getId())
+			.switchVar(true, VarbitID.MY2ARM_FIRE_GHASTS)
 			.build();
 
 		Task weissHerbPatchPit = new Task.TaskBuilder()
 			.name("Build the fire pit near the Weiss herb patch")
-			.geVar(true, Varbits.MAKING_FRIENDS_WITH_MY_ARM_PROGRESS.getId(), 205)
+			.geVar(true, VarbitID.MY2ARM_STATUS, 205)
 			.build();
 
 		Task gwdEntrancePit = new Task.TaskBuilder()
 			.name("Build the fire pit by the God Wars Dungeon entrance")
-			.switchVar(true, Varbits.GWD_ENTRANCE_FIRE_PIT.getId())
+			.switchVar(true, VarbitID.MY2ARM_FIRE_GWD)
 			.build();
 
 		add(moleHolePit);
