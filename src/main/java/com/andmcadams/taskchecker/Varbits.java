@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import net.runelite.api.gameval.VarbitID;
 
 @AllArgsConstructor
 @Getter
@@ -86,14 +87,7 @@ public enum Varbits
 	 * Shayzien helm (5) on slayer helm
 	 */
 	SHAYZIEN_HELM_EFFECT_ADDED_TO_SLAYER_HELM(7940),
-
-	/**
-	 * Forgotten prayers
-	 */
-	// Based on https://github.com/RuneStar/cs2-scripts/blob/master/scripts/[proc,prayer_isavailable].cs2
-	UNLOCKED_RIGOUR(5451),
-	UNLOCKED_AUGURY(5452),
-	UNLOCKED_PRESERVE(5453),
+	
 
 	/**
 	 * LMS rewards
@@ -104,7 +98,7 @@ public enum Varbits
 	 * Graceful outfits
 	 */
 	// Ability to buy single Agility Arena recolours?
-	UNLOCKED_BRIMHAVEN_SINGLE_RECOLORS(5967),
+	UNLOCKED_BRIMHAVEN_SINGLE_RECOLORS(VarbitID.AGILITYARENA_HADRECOLOUREDGRACEFUL),
 
 	/**
 	 * Bounty Hunter rewards
@@ -142,18 +136,6 @@ public enum Varbits
 	// Diary varbs
 	// All quests
 
-	/**
-	 * Treasure Trails rewards
-	 */
-	// Can easily check clue scroll completion
-	// Can easily check STASH units, although it is tedious
-	// Ability to make watches/sextants?
-	// Beginner clues are varp 2201
-	// Master clues are varp 2353
-	// Elites varb 3935?
-	EASY_CASKETS_OPENED(3463),
-	MEDIUM_CASKETS_OPENED(3465),
-	HARD_CASKETS_OPENED(3467),
 
 	EXCAVATED_STATUE_TO_TUNNEL_OF_CHAOS(3524),
 	EXITED_THROUGH_TROLL_STRONGHOLD_SECRET_EXIT(1),

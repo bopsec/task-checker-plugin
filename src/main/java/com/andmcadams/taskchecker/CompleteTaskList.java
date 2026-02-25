@@ -52,6 +52,8 @@ public class CompleteTaskList
 
 	private void initTasks()
 	{
+		TaskList raidsCapes = new RaidsCapesTaskList();
+		TaskList spellBookStuff = new SpellbookTaskList();
 		TaskList hallowedSepulchre = new HallowedSepulchreTaskList();
 		TaskList combatAchievements = new CombatAchievementsTaskList();
 		TaskList petTransmogs = new PetTransmogsTaskList();
@@ -79,6 +81,8 @@ public class CompleteTaskList
 		TaskList temporary = new TemporaryTaskList();
 		TaskList invisible = new InvisibleTaskList();
 
+		taskLists.add(raidsCapes);
+		taskLists.add(spellBookStuff);
 		taskLists.add(hallowedSepulchre);
 		taskLists.add(combatAchievements);
 		taskLists.add(petTransmogs);

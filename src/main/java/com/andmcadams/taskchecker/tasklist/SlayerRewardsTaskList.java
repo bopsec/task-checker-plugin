@@ -40,9 +40,6 @@ public class SlayerRewardsTaskList extends TaskList
 
 	public void initTasks()
 	{
-		//TODO:
-		//Unlocked the Shayzien helm (5)'s effect on slayer helmets
-
 		Task unlockGargoyleSmasher = new Task.TaskBuilder()
 			.name("Unlock Gargoyle Smasher")
 			.switchVar(true, VarbitID.SLAYER_AUTOKILL_GARGOYLES)
@@ -150,7 +147,7 @@ public class SlayerRewardsTaskList extends TaskList
 
 		Task unlockedShayzienHelmEffect = new Task.TaskBuilder()
 				.name("Unlocked Shayzien(5) effect on slayer helmet")
-				.switchVar(true, 1)
+				.switchVar(true, VarbitID.KOUREND_SLAYER_HELM_BONUS)
 				.build();
 
 		add(unlockGargoyleSmasher);
@@ -174,8 +171,6 @@ public class SlayerRewardsTaskList extends TaskList
 		add(unlockedRevenenenenenants);
 		add(unlockedEyeSeeYou);
 		add(unlockedHoodedSlayerHelmet);
-		//add(); // shayzien helm(5) slayer helm effect i didnt find this yet
-
-
+		add(unlockedShayzienHelmEffect);
 	}
 }

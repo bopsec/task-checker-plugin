@@ -65,7 +65,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 
 		//Unlocked the ability to recolour weapons with Nigel
 		Task nigelWeapons2024 = new Task.TaskBuilder()
-				.name("Unlocked the ability to recolour weapons with Nigel")
+				.name("Unlocked the ability to recolour 2024 weapons with Nigel")
 				.switchVar(true, VarbitID.DEADMAN_2024_WEAPON_ORNAMENT_UNLOCKED)
 				.build();
 		this.add(nigelWeapons2024);
@@ -75,6 +75,18 @@ public class UniqueDialoguePathsTaskList extends TaskList
 				.switchVar(true, VarbitID.DEADMAN_2024_CAPE_ORNAMENT_UNLOCKED)
 				.build();
 		this.add(nigelCapes2024);
+
+		Task deadmanAnnihilationPohUnlocked = new Task.TaskBuilder()
+				.name("Unlocked the deadman annihilation house theme")
+				.switchVar(true, VarbitID.DEADMAN_2026_POH_ORNAMENT_UNLOCKED)
+				.build();
+		this.add(deadmanAnnihilationPohUnlocked);
+
+		Task deadmanAnnihilationWeapon = new Task.TaskBuilder()
+				.name("Unlocked the deadman annihilation weapon themes")
+				.switchVar(true, VarbitID.DEADMAN_2026_WEAPON_ORNAMENT_UNLOCKED)
+				.build();
+		this.add(deadmanAnnihilationWeapon);
 
 		//Unlocked the ability to trade giantsoul amulets
 		Task giantsoulAmuletTrade = new Task.TaskBuilder()

@@ -40,14 +40,19 @@ public class FirePitsTaskList extends TaskList
 	public void initTasks()
 	{
 		// TODO:
-		//Built a raft using the smashed table in Ah Za Rhoon
+		//Built a raft using the smashed table in Ah Za Rhoon couldn't find https://oldschool.runescape.wiki/w/Crude_raft
 		//Built the Spinning Wheel on the Isle of Souls
 		//Built the Potter's Wheel on the Isle of Souls
 		//Built all 5 quetzal landing sites
 		//Searched the treasure pile in Movario's base
 		//Destroyed all 9 tentacles in the Lassar Undercity
 		//Listened to all 10 remnants in the Lassar Undercity
-		//Used Saradomin's light
+
+		Task saradominsLight = new Task.TaskBuilder()
+				.name("Used Saradomin's light")
+				.switchVar(true, VarbitID.GODWARS_SARADOMIN_LIGHT)
+				.build();
+		this.add(saradominsLight);
 
 		Task moleHolePit = new Task.TaskBuilder()
 			.name("Build the fire pit in the Mole Hole")

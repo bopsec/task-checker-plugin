@@ -25,8 +25,6 @@
 package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
-import com.andmcadams.taskchecker.Varbits;
-import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
 public class PetTransmogsTaskList extends TaskList
