@@ -27,6 +27,8 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
 import com.andmcadams.taskchecker.Varplayers;
+import net.runelite.api.gameval.VarPlayerID;
+import net.runelite.api.gameval.VarbitID;
 
 public class PaymentsAndInstantExperienceTaskList extends TaskList
 {
@@ -63,22 +65,22 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 
 		Task observatoryQuestWineClaimed = new Task.TaskBuilder()
 			.name("Claim wine from the Observatory assistant")
-			.eqVar(false, Varplayers.OBSERVATORY_QUEST_PROGESS.getId(), 8)
+			.eqVar(false, VarPlayerID.ITGRONIGEN, 8)
 			.build();
 
 		Task cabinFeverRewardClaimed = new Task.TaskBuilder()
 			.name("Claim coins from Bill Teach")
-			.switchVar(true, Varbits.CABIN_FEVER_REWARD_CLAIMED.getId())
+			.switchVar(true, VarbitID.FEVER_GIVEN_BOOK)
 			.build();
 
 		Task gettingAheadRewardClaimed = new Task.TaskBuilder()
 			.name("Claim coins from Gordon")
-			.switchVar(true, Varbits.GETTING_AHEAD_REWARD_CLAIMED.getId())
+			.switchVar(true, VarbitID.GA_REWARD)
 			.build();
 
 		Task queenOfThievesRewardClaimed = new Task.TaskBuilder()
 			.name("Claim coins from Lady Shauna Piscarillius")
-			.switchVar(true, Varbits.QUEEN_OF_THIEVES_REWARD_CLAIMED.getId())
+			.switchVar(true, VarbitID.PISCQUEST_REWARD)
 			.build();
 
 		Task monkeyMadnessIIRewardClaimed = new Task.TaskBuilder()
@@ -88,22 +90,22 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 
 		Task dragonSlayerIIRewardClaimed = new Task.TaskBuilder()
 			.name("Claim experience from Ellen")
-			.eqVar(true, Varbits.DRAGON_SLAYER_II_REWARD_CLAIMED.getId(), 4)
+			.eqVar(true, VarbitID.MM2_PROGRESS, 4)
 			.build();
 
 		Task misthalinMysteryRewardClaimed = new Task.TaskBuilder()
 			.name("Claim experience from Mandy")
-			.switchVar(true, Varbits.MISTHALIN_MYSTERY_REWARD_CLAIMED.getId())
+			.switchVar(true, VarbitID.MISTMYST_XPREWARD)
 			.build();
 
 		Task xMarksTheSpotClueScrollClaimed = new Task.TaskBuilder()
 			.name("Claim a clue scroll (beginner) from Veos")
-			.switchVar(true, Varbits.X_MARKS_THE_SPOT_CLUE_SCROLL_CLAIMED.getId())
+			.switchVar(true, VarbitID.CLUEQUEST_CLUE_REWARD)
 			.build();
 
 		Task theFeudBeerClaimedFromAli = new Task.TaskBuilder()
 			.name("Claim a beer from Ali the Barman")
-			.eqVar(true, Varbits.THE_FEUD_BEER_CLAIMED_FROM_ALI.getId(), 2)
+			.eqVar(true, VarbitID.FEUD_REPORT_DRINK, 2)
 			.build();
 
 		add(observatoryQuestWineClaimed);

@@ -27,6 +27,8 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
 import com.andmcadams.taskchecker.Varplayers;
+import net.runelite.api.gameval.VarPlayerID;
+import net.runelite.api.gameval.VarbitID;
 
 public class LostItemsTaskList extends TaskList
 {
@@ -45,13 +47,13 @@ public class LostItemsTaskList extends TaskList
 
 		Task returnZealotsKey = new Task.TaskBuilder()
 			.name("Deliver Zealot's key to Zealot")
-			.eqVar(true, Varbits.ZEALOT_KEY.getId(), 0)
-			.eqVar(false, Varplayers.HAUNTED_MINE_PROGRESS.getId(), 11)
+			.eqVar(true, VarbitID.HAUNTEDMINE_HEARDABOUTKEY, 0)
+			.eqVar(false, VarPlayerID.HAUNTEDMINE, 11)
 			.build();
 
 		Task returnMistagsBrooch = new Task.TaskBuilder()
 			.name("Return the brooch to Mistag")
-			.switchVar(true, Varbits.BROOCH_RETURNED_TO_MISTAG.getId())
+			.switchVar(true, VarbitID.LOST_TRIBE_RETURNED_BROOCH)
 			.build();
 
 		//add(returnCoppersCollar);

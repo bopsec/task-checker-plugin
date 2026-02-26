@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class InvisibleTaskList extends TaskList
 {
@@ -41,33 +42,28 @@ public class InvisibleTaskList extends TaskList
 
 		Task ancientLetter = new Task.TaskBuilder()
 			.name("Loot the Ancient letter from the Forsaken Tower")
-			.switchVar(true, Varbits.ANCIENT_LETTER_FORSAKEN_TOWER.getId())
+			.switchVar(true, VarbitID.LOVAQUEST_HIDDEN_NOTE)
 			.build();
 
 		Task tattyNote = new Task.TaskBuilder()
 			.name("Loot the Tatty note from the bed in the Kebos Lowlands")
-			.switchVar(true, Varbits.TATTY_NOTE_KEBOS_LOWLANDS.getId())
+			.switchVar(true, VarbitID.KEBOS_SHACK_NOTE)
 			.build();
 
 		Task pickpocketTeddy = new Task.TaskBuilder()
 			.name("Pickpocket Teddy from the female student in the Digsite")
-			.switchVar(true, Varbits.PICKPOCKETED_TEDDY.getId())
+			.switchVar(true, VarbitID.ITDIGSITETEDDY)
 			.build();
 
 		// Note that this doesn't actually change dialogue as far as I can tell.
 		Task askBlackKnightFortressGuardAboutUniform = new Task.TaskBuilder()
 			.name("Ask a Fortress guard about their uniform outside the Black Knights' Fortress")
-			.switchVar(true, Varbits.ASKED_ABOUT_GUARD_UNIFORM.getId())
+			.switchVar(true, VarbitID.SPY_ARMOUR_HINT)
 			.build();
 
 		Task exitThroughSecretExit = new Task.TaskBuilder()
 			.name("Exit through the Troll Stronghold's secret exit")
-			.switchVar(true, Varbits.EXITED_THROUGH_TROLL_STRONGHOLD_SECRET_EXIT.getId())
-			.build();
-
-		Task enterTheWilderness = new Task.TaskBuilder()
-			.name("Enter the Wilderness 1000 times")
-			.eqVar(true, Varbits.ENTERED_WILDERNESS_COUNTER.getId(), 1000)
+			.switchVar(true, VarbitID.TROLL_OPENED_BACK_EXIT)
 			.build();
 
 		add(ancientLetter);
@@ -75,6 +71,5 @@ public class InvisibleTaskList extends TaskList
 		add(pickpocketTeddy);
 		add(askBlackKnightFortressGuardAboutUniform);
 		add(exitThroughSecretExit);
-		add(enterTheWilderness);
 	}
 }

@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class UtilityItemTaskList extends TaskList
 {
@@ -43,19 +44,19 @@ public class UtilityItemTaskList extends TaskList
 
 		Task attachKalphiteRopes = new Task.TaskBuilder()
 			.name("Attach ropes to both Kalphite Hives tunnel entrances (you may need to enter the Kalphite Hive)")
-			.switchVar(true, Varbits.KALPHITE_LAIR_OUTSIDE_ROPE.getId())
-			.geVar(true, Varbits.KALPHITE_LAIR_INSIDE_ROPE.getId(), 1)
+			.switchVar(true, VarbitID.KALPHITE_ROPE_1)
+			.geVar(true, VarbitID.KALPHITE_ROPE_2, 1)
 			.build();
 
 		Task attachObservatoryGrapple = new Task.TaskBuilder()
 			.name("Attach a grapple to the rocks next to the Observatory")
-			.switchVar(true, Varbits.OBSERVATORY_GRAPPLE.getId())
+			.switchVar(true, VarbitID.OBSERVATORY_SHORTCUT_ROPE)
 			.build();
 
 		Task attachDarkmeyerRopes = new Task.TaskBuilder()
 			.name("Attach both long ropes to both sides of the Darkmeyer wall")
-			.switchVar(true, Varbits.DARKMEYER_WEST_ROPE.getId())
-			.switchVar(true, Varbits.DARKMEYER_EAST_ROPE.getId())
+			.switchVar(true, VarbitID.DARKM_SHORTCUT_INNER)
+			.switchVar(true, VarbitID.DARKM_SHORTCUT_OUTER)
 			.build();
 
 		add(attachKalphiteRopes);

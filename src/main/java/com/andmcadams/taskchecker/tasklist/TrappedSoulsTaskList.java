@@ -27,6 +27,7 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
 import com.andmcadams.taskchecker.Varplayers;
+import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
 public class TrappedSoulsTaskList extends TaskList
@@ -50,19 +51,19 @@ public class TrappedSoulsTaskList extends TaskList
 
 		Task freeKlenter = new Task.TaskBuilder()
 			.name("Free Klenter's soul from Amascut's torment")
-			.eqVar(true, Varbits.FREED_KLENTER.getId(), 0)
-			.eqVar(true, Varbits.ICTHLARINS_LITTLE_HELPER_PROGRESS.getId(), 26)
+			.eqVar(true, VarbitID.ICS_SPECVIS, 0)
+			.eqVar(true, VarbitID.ICS_LITTLE_VAR, 26)
 			.build();
 
 		Task freeDroalak = new Task.TaskBuilder()
 			.name("Free Droalak's soul from his guilt of departure")
-			.switchVar(true, Varbits.FREED_DROALAK.getId())
+			.switchVar(true, VarbitID.MAKINGHISTORY_DROALAK_PRES)
 			.build();
 
 		Task cureRazmireAndUlsquire = new Task.TaskBuilder()
 			.name("Free Razmire Keelgan and Ulsquire Shauncy from affliction")
-			.bitVar(false, Varplayers.MORTTON_STATE.getId(), 5)
-			.bitVar(false, Varplayers.MORTTON_STATE.getId(), 6)
+			.bitVar(false, VarPlayerID.MORTTONMULTI, 5)
+			.bitVar(false, VarPlayerID.MORTTONMULTI, 6)
 			.build();
 
 		add(freeKlenter);

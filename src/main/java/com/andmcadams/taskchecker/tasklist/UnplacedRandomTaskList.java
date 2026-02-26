@@ -246,14 +246,15 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the ability to reclaim all 65 Christmas holiday items
         //Unlocked the ability to reclaim all 10 buyable holiday items
         //Unlocked the ability to reclaim all 7 Pride event items
-        //Unlocked the ability to reclaim the mystic cards
-        //Unlocked the ability to reclaim the banana hat
+        //Unlocked the ability to reclaim the mystic cards No varbit/varp
+        //Unlocked the ability to reclaim the banana hat No varbit/varp
         //
         //Unlocked Guildmaster Jane's contracts completed option
         Task unlockedFarmingGuildContractsOption = new Task.TaskBuilder()
                 .name("")
                 .switchVar(true, VarbitID.FARMGUILD_CONTRACT_DISCUSSED) // TODO: Untested idk about this one
                 .build();
+        this.add(unlockedFarmingGuildContractsOption);
 
         //Unlocked Simon Templeton's pyramid artefacts option
         Task simonTempletonPyramidArtefacts = new Task.TaskBuilder()
@@ -596,7 +597,7 @@ public class UnplacedRandomTaskList extends TaskList
         //Used the combat lamp from the High Priest
         Task highPriestSophanemUsedLamp = new Task.TaskBuilder()
                 .name("Used the combat lamp from the High Priest")
-                .switchVar(true, VarbitID.CONTACT_USED_REWARD_LAMP)
+                .eqVar(true, VarbitID.CONTACT_USED_REWARD_LAMP, 2)
                 .build();
         this.add(highPriestSophanemUsedLamp);
         //Used the dreamy lamp from the Oneiromancer
@@ -721,13 +722,29 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(obtainedShadesOfMorttonTexts);
         //Obtained both Dragon Slayer II texts
+        Task obtainedDs2Texts = new Task.TaskBuilder()
+                .name("Obtained both Dragon Slayer II texts")
+                .switchVar(true, VarbitID.DS2_LITHKREN_NOTES)
+                .switchVar(true, VarbitID.DS2_UNGAEL_NOTES)
+                .build();
+        this.add(obtainedDs2Texts);
         //Obtained all 6 Uhld adventurer texts from the Myths' Guild
+        Task obtainedAllUhldAdventurerTextsMythsGuild = new Task.TaskBuilder()
+                .name("Obtained all 6 Uhld adventurer texts from the Myths' Guild")
+                .switchVar(true, VarbitID.DS2_GUILD_BOOKS) // TODO: Unchecked?
+                .build();
+        this.add(obtainedAllUhldAdventurerTextsMythsGuild);
         //Obtained all 6 grand bookshelf texts from the Theatre of Blood
         //Obtained all 7 boss texts from the Chambers of Xeric
         //Obtained all 7 desert god texts from the Tombs of Amascut
         //Obtained all 7 farming patch texts from the Farming Guild
         //Obtained all 16 elven texts from the Prifddinas Grand Library
-        //Obtained all 93 miscellaneous texts (2 are obtained by default)
+        Task prifElvenTexts = new Task.TaskBuilder()
+                .name("Obtained all 16 elven texts from the Prifddinas Grand Library")
+                .switchVar(true, VarbitID.PRIF_BOOKS) // TODO: Unchecked
+                .build();
+        this.add(prifElvenTexts);
+        //Obtained all 93 miscellaneous texts (2 are obtained by default) couldn't find
         //
         //Unlocked the big bass fishing trophy option
         //Unlocked the big swordfish fishing trophy option
@@ -746,18 +763,54 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked all 5 additional ornate combat dummy options
         //
         //Paid Ceto for free entry to the drift net fishing area
-        //Unlocked all 4 Mycelium Transportation System locations
+        Task permDriftNetAccess = new Task.TaskBuilder()
+                .name("Paid Ceto for free entry to the drift net fishing area")
+                .switchVar(true, VarbitID.FOSSIL_DRIFTNET_UNLIMITEDACCESS)
+                .build();
+        this.add(permDriftNetAccess);
+        //Unlocked all 4 Mycelium Transportation System locations unfound
         //Claimed all 3 XP rewards from the information clerk
+        Task claimedAll3MuseumXpRewards = new Task.TaskBuilder()
+                .name("Claimed all 3 XP rewards from the information clerk")
+                .switchVar(true, VarbitID.VM_REWARD_50)
+                .switchVar(true, VarbitID.VM_REWARD_100)
+                .switchVar(true, VarbitID.VM_REWARD_150)
+                .build();
+        this.add(claimedAll3MuseumXpRewards);
         //Claimed XP from Orlando Smith
+        Task claimedOrlandoSmithXp = new Task.TaskBuilder()
+                .name("Claimed XP from Orlando Smith")
+                .switchVar(true, VarbitID.VM_NATHIS_REWARD_GIVEN) // why tf is he nathis
+                .build();
+        this.add(claimedOrlandoSmithXp);
         //Claimed fossils from Peter after completing the notice board
+        Task claimedFossilsAfterCompletingFossilBoard = new Task.TaskBuilder()
+                .name("Claimed fossils from Peter after completing the notice board")
+                .switchVar(true, VarbitID.FOSSIL_TASKREWARDS_CAMP)
+                .switchVar(true, VarbitID.FOSSIL_TASKREWARDS_EAST)
+                .switchVar(true, VarbitID.FOSSIL_TASKREWARDS_NORTH)
+                .switchVar(true, VarbitID.FOSSIL_TASKREWARDS_SWAMP)
+                .build();
+        this.add(claimedFossilsAfterCompletingFossilBoard);
         //Maxed the Museum Kudos counter with 235 Kudos
+        Task maxedMuseumKudosCounter = new Task.TaskBuilder()
+                .name("Maxed the Museum Kudos counter with 243 Kudos")
+                .geVar(true, VarbitID.VM_KUDOS, 243)
+                .build();
+        this.add(maxedMuseumKudosCounter);
         //
-        //Unlocked the Expert Dragon Archer title
+        //Unlocked the Expert Dragon Archer title couldn't find it, can just kill one to check for varb changes?
         //
         //Logged a personal best at Tears of Guthix
+        Task loggedATearsOfGuthixPb = new Task.TaskBuilder()
+                .name("Logged a personal best at Tears of Guthix")
+                .geVar(true, VarbitID.TOG_MAX_TEARS_COLLECTED, 1)
+                .build();
+        this.add(loggedATearsOfGuthixPb);
         //Logged at least 1 gp of destroyed loot keys via the Loot Chest
         //Logged at least 1 gp of redeemed loot keys via the Loot Chest
         //Logged at least 1 lap of the sledding course
+
         //Logged at least 2 laps of the Prifddinas Agility Course
         //Logged at least 2 laps of the Shayzien Basic Agility Course
         //Logged at least 2 laps of the Shayzien Advanced Agility Course

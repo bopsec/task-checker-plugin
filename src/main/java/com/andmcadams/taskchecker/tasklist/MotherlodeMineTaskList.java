@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class MotherlodeMineTaskList extends TaskList
 {
@@ -49,7 +50,7 @@ public class MotherlodeMineTaskList extends TaskList
 
 		Task upgradeSack = new Task.TaskBuilder()
 			.name("Pay Prospector Percy for the bigger sack capacity")
-			.switchVar(true, Varbits.UPGRADED_MLM_SACK.getId())
+			.switchVar(true, VarbitID.MOTHERLODE_BIGGERSACK)
 			.build();
 
 //		this.add(getAccessToUpperMine);

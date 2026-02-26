@@ -27,6 +27,8 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
 import com.andmcadams.taskchecker.Varplayers;
+import net.runelite.api.gameval.VarPlayerID;
+import net.runelite.api.gameval.VarbitID;
 
 public class RightClickTaskList extends TaskList
 {
@@ -46,48 +48,48 @@ public class RightClickTaskList extends TaskList
 
 		Task unlockJarvaldTravel = new Task.TaskBuilder()
 			.name("Unlock Jarvald's travel option")
-			.switchVar(true, Varbits.UNLOCKED_JARVALD_TRAVEL.getId())
+			.switchVar(true, VarbitID.DAG_ISLAND_QUICK_TRAVEL)
 			.build();
 
 		Task unlockMaryTan = new Task.TaskBuilder()
 			.name("Unlock Mary's trade option")
-			.switchVar(true, Varbits.UNLOCKED_MARY_TANNING.getId())
+			.switchVar(true, VarbitID.GA_MARY_DIALOGUE)
 			.build();
 
 		Task unlockIlfeenEnchant = new Task.TaskBuilder()
 			.name("Unlock Ilfeen's enchant option")
-			.switchVar(true, Varbits.UNLOCKED_ILFEEN_ENCHANT.getId())
+			.switchVar(true, VarbitID.ILFEEN_PRIF)
 			.build();
 
 		Task unlockConwennaAndReeseSing = new Task.TaskBuilder()
 			.name("Unlock Conwenna and Reese's sing option")
-			.switchVar(true, Varbits.UNLOCKED_CONWENNA_AND_REESE_SING.getId())
+			.switchVar(true, VarbitID.PRIF_LEARNT_CRYSTAL_SINGING)
 			.build();
 
 		Task unlockNorannaConvertShards = new Task.TaskBuilder()
 			.name("Unlock Noranna Tytanin's convert-shards option")
-			.switchVar(true, Varbits.UNLOCKED_NORANNA_CONVERT_SHARDS.getId())
+			.switchVar(true, VarbitID.DMINE_DAEYALT_CONVERTER_INTRO)
 			.build();
 
 		Task unlockMountainGuideTravel = new Task.TaskBuilder()
 			.name("Unlock the Mountain Guide's travel option")
-			.switchVar(true, Varbits.UNLOCKED_MOUNTAIN_GUIDE_TRAVEL.getId())
+			.switchVar(true, VarbitID.RAIDS_GUIDE_TRAVEL_UNLOCK)
 			.build();
 
 		Task unlockCloisterBellQuickStart = new Task.TaskBuilder()
 			.name("Unlock the Cloister Bell's quick-start option")
-			.geVar(false, Varplayers.GROTESQUE_GUARDIANS_KILLCOUNT.getId(), 5)
+			.geVar(false, VarPlayerID.TOTAL_GARGBOSS_KILLS, 5)
 			.build();
 
 
 		Task unlockJewelleryBoxLastTeleport = new Task.TaskBuilder()
 			.name("Unlock the Jewellery Box's previous teleport option")
-			.geVar(true, Varbits.LAST_JEWELLERY_BOX_TELEPORT.getId(), 1)
+			.geVar(true, VarbitID.POH_JEWELLERYBOX_MULTI, 1)
 			.build();
 
 		Task unlockCharterShipLastDestination = new Task.TaskBuilder()
 			.name("Unlock the Charter Ship's previous destination option")
-			.geVar(true, Varbits.LAST_CHARTER_SHIP_DESTINATION.getId(), 1)
+			.geVar(true, VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1)
 			.build();
 
 		add(unlockJarvaldTravel);

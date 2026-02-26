@@ -52,6 +52,7 @@ public class CompleteTaskList
 
 	private void initTasks()
 	{
+		TaskList unplacedTasks = new UnplacedRandomTaskList();
 		TaskList raidsCapes = new RaidsCapesTaskList();
 		TaskList spellBookStuff = new SpellbookTaskList();
 		TaskList hallowedSepulchre = new HallowedSepulchreTaskList();
@@ -80,35 +81,38 @@ public class CompleteTaskList
 		TaskList redeemableQuestItems = new RedeemableQuestItemsTaskList();
 		TaskList temporary = new TemporaryTaskList();
 		TaskList invisible = new InvisibleTaskList();
+		TaskList lmsAndBh = new LMSandBHTaskList();
 
-		taskLists.add(raidsCapes);
-		taskLists.add(spellBookStuff);
-		taskLists.add(hallowedSepulchre);
+		taskLists.add(championsChallenge);
 		taskLists.add(combatAchievements);
+		taskLists.add(doomsayerWarnings);
+		taskLists.add(entrancesAndObstacles);
+		taskLists.add(firePits);
+		taskLists.add(forgottenPrayers);
+		taskLists.add(hallowedSepulchre);
+		taskLists.add(hiddenShops);
+		//taskLists.add(invisible);
+		taskLists.add(lmsAndBh);
+		taskLists.add(loot);
+		taskLists.add(lostItems);
+		taskLists.add(motherlodeMine);
+		taskLists.add(paymentsAndInstantExperience);
 		taskLists.add(petTransmogs);
+		taskLists.add(raidsCapes);
+		taskLists.add(redeemableQuestItems);
+		taskLists.add(rightClick);
 		taskLists.add(sailingAmenities);
 		taskLists.add(skillingPerks);
-		taskLists.add(titheFarm);
-		taskLists.add(motherlodeMine);
-		taskLists.add(forgottenPrayers);
-		taskLists.add(treasureTrails);
-		taskLists.add(championsChallenge);
 		taskLists.add(slayerRewards);
-		taskLists.add(entrancesAndObstacles);
-		taskLists.add(rightClick);
-		taskLists.add(doomsayerWarnings);
-		taskLists.add(unlimitedServices);
-		taskLists.add(utilityItems);
-		taskLists.add(uniqueDialoguePaths);
-		taskLists.add(loot);
-		taskLists.add(firePits);
-		taskLists.add(paymentsAndInstantExperience);
-		taskLists.add(hiddenShops);
-		taskLists.add(lostItems);
-		taskLists.add(trappedSouls);
-		taskLists.add(redeemableQuestItems);
+		taskLists.add(spellBookStuff);
 		taskLists.add(temporary);
-		taskLists.add(invisible);
+		taskLists.add(titheFarm);
+		taskLists.add(trappedSouls);
+		taskLists.add(treasureTrails);
+		taskLists.add(uniqueDialoguePaths);
+		taskLists.add(unlimitedServices);
+		taskLists.add(unplacedTasks);
+		taskLists.add(utilityItems);
 
 		int sum = 0;
 		for(TaskList taskList : taskLists)

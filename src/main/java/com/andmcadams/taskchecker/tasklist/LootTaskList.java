@@ -79,40 +79,40 @@ public class LootTaskList extends TaskList
 
 		Task canifisHideoutGarlic = new Task.TaskBuilder()
 			.name("Searched the chest in the Canifis Myreque hideout for three garlic bulbs")
-			.eqVar(true, Varbits.CANIFIS_HIDEOUT_GARLIC_COUNTER.getId(), 3)
+			.eqVar(true, VarbitID.MYQ2_GARLIC_CHEST, 3)
 			.build();
 
 		Task enakhraSandstone = new Task.TaskBuilder()
 			.name("Collected 5 sandstone from Enakhra's temple")
-			.eqVar(true, Varbits.ENAKHRAS_TEMPLE_SANDSTONE_COUNTER.getId(), 5)
+			.eqVar(true, VarbitID.ENAKH_RUBBLE_LIMIT, 5)
 			.build();
 
 		Task agrithNaarThrone = new Task.TaskBuilder()
 			.name("Collected the gems from Agrith Naar's throne")
-			.switchVar(true, Varbits.AGRITH_NAAR_THRONE.getId())
+			.switchVar(true, VarbitID.GOLEM_THRONE_GEMS)
 			.build();
 
 		Task fenkenstrainClockLetter = new Task.TaskBuilder()
 			.name("Searched the clock in Fenkenstrain's castle")
-			.switchVar(true, Varbits.FENKENSTRAIN_CLOCK_LETTER.getId())
+			.switchVar(true, VarbitID.FENK_WOUND_CLOCK)
 			.build();
 
 		Task goblinVillageGoblinMail = new Task.TaskBuilder()
 			.name("Loot the 3 pieces of goblin mail in the Goblin Village")
-			.switchVar(true, Varbits.GOBLIN_MAIL_NORTH.getId())
-			.switchVar(true, Varbits.GOBLIN_MAIL_WEST.getId())
-			.switchVar(true, Varbits.GOBLIN_MAIL_UPSTAIRS.getId())
+			.switchVar(true, VarbitID.GOBDIP_CRATE1_SEARCHED)
+			.switchVar(true, VarbitID.GOBDIP_CRATE2_SEARCHED)
+			.switchVar(true, VarbitID.GOBDIP_CRATE3_SEARCHED)
 			.build();
 
 		Task observatorySpiderChests = new Task.TaskBuilder()
 			.name("Loot the 7 spider chests in the Observatory dungeon")
-			.switchVar(true, Varbits.OBSERVATORY_SPIDER_CHEST_1.getId())
-			.switchVar(true, Varbits.OBSERVATORY_SPIDER_CHEST_2.getId())
-			.switchVar(true, Varbits.OBSERVATORY_SPIDER_CHEST_3.getId())
-			.switchVar(true, Varbits.OBSERVATORY_SPIDER_CHEST_4.getId())
-			.switchVar(true, Varbits.OBSERVATORY_SPIDER_CHEST_5.getId())
-			.switchVar(true, Varbits.OBSERVATORY_SPIDER_CHEST_6.getId())
-			.switchVar(true, Varbits.OBSERVATORY_SPIDER_CHEST_7.getId())
+			.switchVar(true, VarbitID.OBSERVATORY_CHEST1_SEEN)
+			.switchVar(true, VarbitID.OBSERVATORY_CHEST2_SEEN)
+			.switchVar(true, VarbitID.OBSERVATORY_CHEST3_SEEN)
+			.switchVar(true, VarbitID.OBSERVATORY_CHEST4_SEEN)
+			.switchVar(true, VarbitID.OBSERVATORY_CHEST5_SEEN)
+			.switchVar(true, VarbitID.OBSERVATORY_CHEST6_SEEN)
+			.switchVar(true, VarbitID.OBSERVATORY_CHEST7_SEEN)
 			.build();
 
 		add(openMarlosCrate);

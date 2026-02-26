@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarbitID;
 
 public class TemporaryTaskList extends TaskList
 {
@@ -40,54 +41,54 @@ public class TemporaryTaskList extends TaskList
 	{
 		Task meetFairyAeryka = new Task.TaskBuilder()
 			.name("Listen to Fairy Aeryka's Puro-Puro introduction")
-			.switchVar(true, Varbits.MET_FAIRY_AERYKA.getId())
+			.switchVar(true, VarbitID.II_FAIRY_VAR)
 			.build();
 
 		Task meetSilasDahcsnu = new Task.TaskBuilder()
 			.name("Listen to Sil'as Dahcsnu's initial dialogue")
-			.switchVar(true, Varbits.MET_SILAS_DAHCSNU.getId())
+			.switchVar(true, VarbitID.SUROK_MONKCHECK)
 			.build();
 
 		Task meetDampe = new Task.TaskBuilder()
 			.name("Listen to Dampe explain shade coffins")
-			.switchVar(true, Varbits.MET_DAMPE.getId())
+			.switchVar(true, VarbitID.SHADES_DAMPE_INTRO)
 			.build();
 
 		Task meetDrunkenDwarf = new Task.TaskBuilder()
 			.name("Listen to the Drunken Dwarf talk about his relative")
-			.switchVar(true, Varbits.MET_DRUNKEN_DWARF.getId())
+			.switchVar(true, VarbitID.GIANTDWARF_COUSIN_INTRODUCED)
 			.build();
 
 		Task receiveThanksFromHamal = new Task.TaskBuilder()
 			.name("Receive thanks from Hamal after completing Mountain Daughter")
-			.switchVar(true, Varbits.RECEIVE_THANKS_FROM_HAMAL.getId())
+			.switchVar(true, VarbitID.MDAUGHTER_HAMAL_HEARDOFBURIAL)
 			.build();
 
 		Task buyCandleFromCandleSeller = new Task.TaskBuilder()
 			.name("Buy a candle from the Candle Seller in Lumbridge Swamp and listen to his warning")
-			.switchVar(true, Varbits.BOUGHT_CANDLE_FROM_CANDLE_SELLER.getId())
+			.switchVar(true, VarbitID.SWAMP_CANDLE_GUY_CONVERSATION)
 			.build();
 
 		Task claimRagAndBoneManIIRewards = new Task.TaskBuilder()
 			.name("Claim the Rams skull helm and Bonesack from the Odd old man")
-			.switchVar(true, Varbits.CLAIMED_RAMS_SKULL_HELM.getId())
-			.switchVar(true, Varbits.CLAIMED_BONESACK.getId())
+			.switchVar(true, VarbitID.RAG_HELMET)
+			.switchVar(true, VarbitID.RAG_BONESACK)
 			.build();
 
 		Task zeahWorkbenchNails = new Task.TaskBuilder()
 			.name("Loot the workbench containing iron nails at Gordon's farm")
-			.switchVar(true, Varbits.ZEAH_WORKBENCH_NAILS.getId())
+			.switchVar(true, VarbitID.GA_NAILS_GIVEN)
 			.build();
 
 		Task piscatorisTools = new Task.TaskBuilder()
 			.name("Loot the bronze axe and pickaxe in the Piscatoris fishing colony")
-			.switchVar(true, Varbits.PISCATORIS_BRONZE_PICKAXE.getId())
-			.switchVar(true, Varbits.PISCATORIS_BRONZE_AXE.getId())
+			.switchVar(true, VarbitID.SWANSONG_PICKAXE)
+			.switchVar(true, VarbitID.SWANSONG_HATCHET)
 			.build();
 
 		Task unlockNPCContactLastContact = new Task.TaskBuilder()
 			.name("Unlock the NPC Contact spell's previous contract option")
-			.geVar(true, Varbits.LAST_NPC_CONTACT_CONTACT.getId(), 1)
+			.geVar(true, VarbitID.LUNAR_CONTACT_LASTID, 1)
 			.build();
 
 		add(meetFairyAeryka);

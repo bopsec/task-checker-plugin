@@ -279,7 +279,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to the Wise Old Man's bank robbery confession
 		Task wiseOldManConfession = new Task.TaskBuilder()
 				.name("Listened to the Wise Old Man's bank robbery confession")
-				.switchVar(true, VarbitID.WOM_BANKJOB) // TODO: Untested
+				.eqVar(true, VarbitID.WOM_BANKJOB, 3) // TODO: Untested
 				.build();
 		this.add(wiseOldManConfession);
 
@@ -423,12 +423,12 @@ public class UniqueDialoguePathsTaskList extends TaskList
 
 		Task askStreetUrchinToLureAgain = new Task.TaskBuilder()
 			.name("Tell the Street urchin to lure another villager")
-			.switchVar(true, Varbits.ASKED_STREET_URCHIN_TO_LURE_AGAIN.getId())
+			.switchVar(true, VarbitID.FEUD_VAR_URCHIN)
 			.build();
 
 		Task informKnightOfVarlamore = new Task.TaskBuilder()
 			.name("Tell the Knight of Varlamore about the sun altar")
-			.switchVar(true, Varbits.INFORMED_KNIGHT_OF_VARLAMORE.getId())
+			.switchVar(true, VarbitID.VARLAMORE_SUN_KNIGHT)
 			.build();
 
 		add(unlockRosie);

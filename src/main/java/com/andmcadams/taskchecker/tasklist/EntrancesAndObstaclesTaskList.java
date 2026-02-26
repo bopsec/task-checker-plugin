@@ -101,7 +101,7 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 
 		Task excavateStatue = new Task.TaskBuilder()
 				.name("Unblock the statue leading to the Tunnel of Chaos")
-				.switchVar(true, Varbits.EXCAVATED_STATUE_TO_TUNNEL_OF_CHAOS.getId())
+				.switchVar(true, VarbitID.SUROK_TUNNELCHECK)
 				.build();
 
 		add(unblockLumbridgeSwampCavesHole);
