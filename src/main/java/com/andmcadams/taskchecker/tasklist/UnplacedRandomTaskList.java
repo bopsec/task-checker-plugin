@@ -436,18 +436,113 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(unlockedFeroxRespawn);
         //
         //Unlocked the ability to see the last item you smithed
+        Task lastSmithedItemSet = new Task.TaskBuilder()
+                .name("Unlocked the ability to see the last item you smithed")
+                .geVar(true, VarbitID.SMITHING_ITEM_LASTTYPE, 1)
+                .build();
+        this.add(lastSmithedItemSet);
         //Unlocked the ability to see the last gold item you crafted
+        Task lastCraftedGoldItemSet = new Task.TaskBuilder()
+                .name("Unlocked the ability to see the last gold item you crafted")
+                .geVar(true, VarbitID.CRAFTING_GOLD_ITEM_LASTTYPE, 1)
+                .build();
+        this.add(lastCraftedGoldItemSet);
         //Unlocked the ability to see the last silver item you crafted
+        Task lastCraftedSilverItemSet = new Task.TaskBuilder()
+                .name("Unlocked the ability to see the last silver item you crafted")
+                .geVar(true, VarbitID.CRAFTING_SILVER_ITEM_LASTTYPE, 1)
+                .build();
+        this.add(lastCraftedSilverItemSet);
         //
         //Unlocked the ability to reclaim the diamond speedrun trophy
+        Task unlockedDiamondSpeedrunTrophy = new Task.TaskBuilder()
+                .name("Unlocked the ability to reclaim the diamond speedrun trophy")
+                .switchVar(true, VarbitID.SPEEDRUNNING_DIAMOND_TROPHIES) // TODO: Does this just swap to 1 when you unlock trophy?
+                .build();
+        this.add(unlockedDiamondSpeedrunTrophy);
         //Unlocked the ability to reclaim the tier 1 adventurer's outfit
         //Unlocked the ability to reclaim the tier 2 adventurer's outfit
         //Unlocked the ability to reclaim the tier 3 adventurer's outfit
         //Unlocked the ability to reclaim the giant stopwatch
         //Unlocked the Home Teleport's Speedy animation option
+        Task unlockedSpeedrunHomeTeleport = new Task.TaskBuilder()
+                .name("Unlocked the Home Teleport's Speedy animation option")
+                .switchVar(true, VarbitID.SPEEDRUNNING_TELEPORT_UNLOCKED)
+                .build();
+        this.add(unlockedSpeedrunHomeTeleport);
         //
         //Filled the word translations scroll with all 77 translations
-        //Filled the travel log with all 52 fairy ring codes
+        Task filledWordTranslations = new Task.TaskBuilder()
+                .name("Filled the word translations scroll with all 77 translations")
+                .switchVar(true, VarbitID.TGOD_FULLY_TRANSLATED) // Unsure, but think it swaps to 1 when fully done
+                .build();
+        this.add(filledWordTranslations);
+        //Filled the travel log with all 53? fairy ring codes
+        Task allFairyRingCodes = new Task.TaskBuilder()
+                .name("Filled the travel log with all 53 fairy ring codes")
+                // A:
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AIQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AIR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AJP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AJQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AJR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AJS)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AKP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AKQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AKR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_AKS)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_ALP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_ALQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_ALR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_ALS)
+                // B:
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BIP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BIQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BIS)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BJP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BJR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BJS)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BKP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BKQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BKR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BKS)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BLP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BLQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BLR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_BLS)
+                // C:
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CIP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CIQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CIR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CIS)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CJQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CJR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CKP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CKQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CKR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CKS)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CLP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CLR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_CLS)
+                // D:
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DIP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DIQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DIR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DIS)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DJP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DJR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DKP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DKR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DKS)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DLP)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DLQ)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DLR)
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_DLS)
+                // Hideout:
+                .switchVar(true, VarbitID.FAIRYRINGS_LOG_HIDEOUT)
+                .build();
+        this.add(allFairyRingCodes);
+
         //Filled your Grand Exchange history with 40 completed trades
         //
         //Unlocked the memories stored in the memoriam crystal (1)
@@ -456,37 +551,175 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the memories stored in the memoriam crystal (4)
         //
         //Unlocked the ability to create Neitiznot faceguards
+        Task unlockedNezzyFaceguard = new Task.TaskBuilder()
+                .name("Unlocked the ability to create Neitiznot faceguards")
+                .switchVar(true, VarbitID.VIKINGEXILE_HELM_UNLOCK)
+                .build();
+        this.add(unlockedNezzyFaceguard);
         //Unlocked the ability to create super antifire potions
-        //Unlocked thFroe ability to create sextants and watches
+        Task unlockedSuperAntifireCrafting = new Task.TaskBuilder()
+                .name("Unlocked the ability to create super antifire potions")
+                .switchVar(true, VarbitID.SUPER_ANTIFIRE_UNLOCKED)
+                .build();
+        this.add(unlockedSuperAntifireCrafting);
+
+        //Unlocked the ability to create sextants and watches
         //Unlocked the ability to create ancient icons
+        Task unlockedAncientIcons = new Task.TaskBuilder()
+                .name("Unlocked the ability to create ancient icons")
+                .switchVar(true, VarbitID.DT2_PLAYER_LEARNED_ICON_FUSING)
+                .build();
+        this.add(unlockedAncientIcons);
         //Unlocked the ability to create tormented synapse weapons
+        Task unlockedAbilityToCreateSynapseWeapons = new Task.TaskBuilder()
+                .name("")
+                .switchVar(true, VarbitID.WGS_MESSAGE_READ) // ???
+                .build();
+        // TODO: Find the synapse weapons varbit
         //
         //Revealed the human translation of the Cosmic Being's name
         //Revealed the stranger's true appearance in the Canifis pub
         //Revealed the bank camel's name
+        Task bankCamelName = new Task.TaskBuilder()
+                .name("Revealed the bank camel's name")
+                .switchVar(true, VarbitID.TOA_CAMEL_NAME_LEARNED)
+                .build();
+        this.add(bankCamelName);
         //
         //Used the blessed lamp from Brother Tranquility
+        Task brotherTranquilityUsedLamp = new Task.TaskBuilder()
+                .name("Used the blessed lamp from Brother Tranquility")
+                .switchVar(true, VarbitID.BRAIN_LAMP_USED)
+                .build();
+        this.add(brotherTranquilityUsedLamp);
+
         //Used the combat lamp from the High Priest
+        Task highPriestSophanemUsedLamp = new Task.TaskBuilder()
+                .name("Used the combat lamp from the High Priest")
+                .switchVar(true, VarbitID.CONTACT_USED_REWARD_LAMP)
+                .build();
+        this.add(highPriestSophanemUsedLamp);
         //Used the dreamy lamp from the Oneiromancer
+        Task oneiromancerUsedLamp = new Task.TaskBuilder()
+                .name("Used the dreamy lamp from the Oneiromancer")
+                .switchVar(true, VarbitID.DREAM_LAMPUSED)
+                .build();
+        this.add(oneiromancerUsedLamp);
         //Used the antique lamp from Maisa
+        Task maisaLampUsed = new Task.TaskBuilder()
+                .name("Used the antique lamp from Maisa")
+                .switchVar(true, VarbitID.ITT_USED_LAMP)
+                .build();
+        this.add(maisaLampUsed);
         //Used the dusty lamp from the Strange Old Man
+        Task strangeOldManLampUsed = new Task.TaskBuilder()
+                .name("Used the dusty lamp from the Strange Old Man")
+                .switchVar(true, VarbitID.HFS_REWARD_LAMP)
+                .build();
+        this.add(strangeOldManLampUsed);
         //Used the crypt map from the Strange Old Man
+        Task strangeOldManCryptMapUsed = new Task.TaskBuilder()
+                .name("Used the crypt map from the Strange Old Man")
+                .switchVar(true, VarbitID.BARROWS_MAP) // TODO: Untested
+                .build();
+        this.add(strangeOldManCryptMapUsed);
+
         //Used both antique lamps from Commander Fullore
+        Task commanderFulloreLampsUsed = new Task.TaskBuilder()
+                .name("Used both antique lamps from Commander Fullore")
+                .switchVar(true, VarbitID.AKD_LAMP_REWARD) // TODO: Untested
+                .build();
+        this.add(commanderFulloreLampsUsed);
+
         //Used all 3 tomes of experience from Ivan Strom
+        Task ivanStromUsedExpTomes = new Task.TaskBuilder()
+                .name("Used all 3 tomes of experience from Ivan Strom")
+                .eqVar(true, VarbitID.MYQ3_TOME_XP, 3)
+                .eqVar(true, VarbitID.MYQ4_XP_REWARD, 3)
+                .eqVar(true, VarbitID.MYQ5_XP_REWARD, 3)
+                //.switchVar(true, VarbitID.MYQ5_BONUS_XP_REWARD) what is this?
+                .build();
+        this.add(ivanStromUsedExpTomes);
         //Used all 3 ancient lamps from the Mysterious Bandit
+        Task mysteriousBanditLamps = new Task.TaskBuilder()
+                .name("Used all 3 ancient lamps from the Mysterious Bandit")
+                .switchVar(true, VarbitID.DT2_REWARD_LAMP)
+                .build();
+        this.add(mysteriousBanditLamps);
         //Used all 3 antique lamps from Cabin Boy Herbert
+        Task cabinBoyHerbertLampsUsed = new Task.TaskBuilder()
+                .name("Used all 3 antique lamps from Cabin Boy Herbert")
+                .switchVar(true, VarbitID.CLUEQUEST_LAMP_REWARD)
+                .build();
+        this.add(cabinBoyHerbertLampsUsed);
         //Used all 4 antique lamps from the Mysterious Stranger
+        Task tobQuestLampsUsed = new Task.TaskBuilder()
+                .name("Used all 4 antique lamps from the Mysterious Stranger")
+                .eqVar(true, VarbitID.TOBQUEST_LAMPS, 3)
+                .switchVar(true, VarbitID.TOBQUEST_BONUS_LAMPS)
+                .build();
+        this.add(tobQuestLampsUsed);
+
         //Used all 4 magic lamps from Hazelmere/Narnode Shareen
+        Task pathOfGlouphrieLampsUsed = new Task.TaskBuilder()
+                .name("Used all 4 magic lamps from Hazelmere/Narnode Shareen")
+                .switchVar(true, VarbitID.POG_MAGIC_LAMP)
+                .switchVar(true, VarbitID.POG_SLAYER_LAMP)
+                .switchVar(true, VarbitID.POG_STRENGTH_LAMP)
+                .switchVar(true, VarbitID.POG_THIEVING_LAMP)
+                .build();
+        this.add(pathOfGlouphrieLampsUsed);
         //
         //Disabled Chambers of Xeric book drops
-        //Disabled Theatre of Blood book drops
-        //Filled my notes with all 26 ancient pages
-        //Filled the fossil island note book with all 21 entries
+        Task disabledCoxBooks = new Task.TaskBuilder()
+                .name("Disabled Chambers of Xeric book drops")
+                .switchVar(true, VarbitID.RAIDS_BOOK_CREATUREKEEPER_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_HOUNDMASTER_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_VASANISTIRIO_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_TEKTON_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_VANGUARD_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_VESPULA_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_REWARDCHEST_READ)
+                .build();
+        this.add(disabledCoxBooks);
+        //Disabled Theatre of Blood book drops couldn't find these
+        //Filled my notes with all 26 ancient pages couldnt find these
+        //Filled the fossil island note book with all 21 entries couldn't find these
         //Filled the strange Hallowed tome with all 5 mysterious pages
+        Task filledHallowedTome = new Task.TaskBuilder()
+                .name("Filled the strange Hallowed tome with all 5 mysterious pages")
+                .switchVar(true, VarbitID.HALLOWED_TOME_PAGE1)
+                .switchVar(true, VarbitID.HALLOWED_TOME_PAGE2)
+                .switchVar(true, VarbitID.HALLOWED_TOME_PAGE3)
+                .switchVar(true, VarbitID.HALLOWED_TOME_PAGE4)
+                .switchVar(true, VarbitID.HALLOWED_TOME_PAGE5)
+                .build();
+        this.add(filledHallowedTome);
         //Obtained Atlax's diary
+        Task obtainedAtlaxDiary = new Task.TaskBuilder()
+                .name("Obtained Atlax's diary")
+                .switchVar(true, VarbitID.GOTR_BOOK_OBTAINED)
+                .build();
+        this.add(obtainedAtlaxDiary);
         //Obtained the Overseer's book
+        Task obtainedOverseersBook = new Task.TaskBuilder()
+                .name("Obtained the Overseer's book")
+                .eqVar(true, VarbitID.ABYSSALSIRE_LORE, 5) // TODO: Untested, seems kinda random
+                .build();
+        this.add(obtainedOverseersBook);
         //Obtained the Mount Karuulm diary
+        Task obtainedMountKaruulmDiary = new Task.TaskBuilder()
+                .name("Obtained the Mount Karuulm diary")
+                .switchVar(true, VarbitID.KARUULM_NOTES_BOOK)
+                .build();
+        this.add(obtainedMountKaruulmDiary);
         //Obtained both Shades of Mort'ton texts
+        Task obtainedShadesOfMorttonTexts = new Task.TaskBuilder()
+                .name("Obtained both Shades of Mort'ton texts")
+                .switchVar(true, VarbitID.SHADES_BLOOD_DIARY)
+                .switchVar(true, VarbitID.SHADES_SWAMP_DIARY)
+                .build();
+        this.add(obtainedShadesOfMorttonTexts);
         //Obtained both Dragon Slayer II texts
         //Obtained all 6 Uhld adventurer texts from the Myths' Guild
         //Obtained all 6 grand bookshelf texts from the Theatre of Blood

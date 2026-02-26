@@ -342,7 +342,6 @@ public enum Varbits
 	/**
 	 * Lost items
 	 */
-	VEOS_COLLAR_PROGRESS(5627), // 0->1 on wolf bones conv, 1->2 on collar
 	// Note that 2397 alone is not enough to tell whether or not the key has been returned
 	// Also need to check quest state to make sure the quest is completed. Otherwise the quest might not have been started
 	ZEALOT_KEY(2397),
@@ -453,11 +452,6 @@ public enum Varbits
 	// Check Adventurer Jon visibility, as varbs actually associated with this may be incomplete by accounts that are older
 	// Val of 0 means Jon is not visible
 	ADVENTURER_JON_STATE(9340),
-
-	/**
-	 * Fairy ring codes
-	 */
-	// If they exist, probably in a varp
 
 	// Warnings
 

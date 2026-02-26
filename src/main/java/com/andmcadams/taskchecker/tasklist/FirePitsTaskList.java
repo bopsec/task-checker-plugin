@@ -42,7 +42,16 @@ public class FirePitsTaskList extends TaskList
 		// TODO:
 		//Built a raft using the smashed table in Ah Za Rhoon couldn't find https://oldschool.runescape.wiki/w/Crude_raft
 		//Built the Spinning Wheel on the Isle of Souls
+		Task isleOfSoulsSpinningWheel = new Task.TaskBuilder()
+				.name("Built the Spinning Wheel on the Isle of Souls")
+				.switchVar(true, VarbitID.SW_SPINNINGWHEEL_BUILT)
+				.build();
+
 		//Built the Potter's Wheel on the Isle of Souls
+		Task isleOfSoulsPottersWheel = new Task.TaskBuilder()
+				.name("Built the Potter's Wheel on the Isle of Souls")
+				.switchVar(true, VarbitID.SW_SPINNINGWHEEL_BUILT)
+				.build();
 		//Built all 5 quetzal landing sites
 		//Searched the treasure pile in Movario's base
 		//Destroyed all 9 tentacles in the Lassar Undercity
