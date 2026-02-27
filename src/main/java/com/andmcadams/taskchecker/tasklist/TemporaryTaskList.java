@@ -64,11 +64,6 @@ public class TemporaryTaskList extends TaskList
 			.switchVar(true, VarbitID.MDAUGHTER_HAMAL_HEARDOFBURIAL)
 			.build();
 
-		Task buyCandleFromCandleSeller = new Task.TaskBuilder()
-			.name("Buy a candle from the Candle Seller in Lumbridge Swamp and listen to his warning")
-			.switchVar(true, VarbitID.SWAMP_CANDLE_GUY_CONVERSATION)
-			.build();
-
 		Task claimRagAndBoneManIIRewards = new Task.TaskBuilder()
 			.name("Claim the Rams skull helm and Bonesack from the Odd old man")
 			.switchVar(true, VarbitID.RAG_HELMET)
@@ -85,7 +80,6 @@ public class TemporaryTaskList extends TaskList
 		add(meetDampe);
 		add(meetDrunkenDwarf);
 		add(receiveThanksFromHamal);
-		add(buyCandleFromCandleSeller);
 		add(claimRagAndBoneManIIRewards);
 		add(unlockNPCContactLastContact);
 	}

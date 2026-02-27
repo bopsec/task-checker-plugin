@@ -50,7 +50,7 @@ public class FirePitsTaskList extends TaskList
 		//Built the Potter's Wheel on the Isle of Souls
 		Task isleOfSoulsPottersWheel = new Task.TaskBuilder()
 				.name("Built the Potter's Wheel on the Isle of Souls")
-				.switchVar(true, VarbitID.SW_SPINNINGWHEEL_BUILT)
+				.switchVar(true, VarbitID.SW_POTTERYWHEEL_BUILT)
 				.build();
 		//Built all 5 quetzal landing sites
 		Task allQuetzalSites = new Task.TaskBuilder()
