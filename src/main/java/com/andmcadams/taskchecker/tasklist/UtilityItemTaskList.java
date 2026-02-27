@@ -39,8 +39,11 @@ public class UtilityItemTaskList extends TaskList
 
 	public void initTasks()
 	{
-		//TODO:
-		// Attached a long rope to the rock in the Viyeldi caves
+		Task attachedViyeldiCaveLongRope = new Task.TaskBuilder()
+				.name("Attached a long rope to the rock in the Viyeldi caves")
+				.switchVar(true, VarbitID.VIYELDI_SHORTCUT)
+				.build();
+		this.add(attachedViyeldiCaveLongRope);
 
 		Task attachKalphiteRopes = new Task.TaskBuilder()
 			.name("Attach ropes to both Kalphite Hives tunnel entrances (you may need to enter the Kalphite Hive)")

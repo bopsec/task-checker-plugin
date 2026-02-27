@@ -39,8 +39,6 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 
 	public void initTasks()
 	{
-		// TODO:
-		// Unblocked the tunnel leading to the true Blood Altar
 
 		Task unblockLumbridgeSwampCavesHole = new Task.TaskBuilder()
 			.name("Unblock the hole leading to the Lumbridge Swamp Caves")
@@ -104,6 +102,12 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 				.switchVar(true, VarbitID.SUROK_TUNNELCHECK)
 				.build();
 
+		Task excavateTrueBloodAltar = new Task.TaskBuilder()
+				.name("Unblocked the tunnel leading to the true Blood Altar")
+				.switchVar(true, VarbitID.MYQ5_LAB_SC_UNLOCKED)
+				.build();
+
+
 		add(unblockLumbridgeSwampCavesHole);
 		add(unblockEagleTransport);
 		add(unblockKourendCatacombsEntrances);
@@ -114,5 +118,6 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 		add(unlockEnakhrasTempleEntrances);
 		add(unlockEnakhrasTempleSigilDoors);
 		add(excavateStatue);
+		add(excavateTrueBloodAltar);
 	}
 }

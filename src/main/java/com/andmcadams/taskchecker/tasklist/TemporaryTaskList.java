@@ -75,17 +75,6 @@ public class TemporaryTaskList extends TaskList
 			.switchVar(true, VarbitID.RAG_BONESACK)
 			.build();
 
-		Task zeahWorkbenchNails = new Task.TaskBuilder()
-			.name("Loot the workbench containing iron nails at Gordon's farm")
-			.switchVar(true, VarbitID.GA_NAILS_GIVEN)
-			.build();
-
-		Task piscatorisTools = new Task.TaskBuilder()
-			.name("Loot the bronze axe and pickaxe in the Piscatoris fishing colony")
-			.switchVar(true, VarbitID.SWANSONG_PICKAXE)
-			.switchVar(true, VarbitID.SWANSONG_HATCHET)
-			.build();
-
 		Task unlockNPCContactLastContact = new Task.TaskBuilder()
 			.name("Unlock the NPC Contact spell's previous contract option")
 			.geVar(true, VarbitID.LUNAR_CONTACT_LASTID, 1)
@@ -98,8 +87,6 @@ public class TemporaryTaskList extends TaskList
 		add(receiveThanksFromHamal);
 		add(buyCandleFromCandleSeller);
 		add(claimRagAndBoneManIIRewards);
-		add(zeahWorkbenchNails);
-		add(piscatorisTools);
 		add(unlockNPCContactLastContact);
 	}
 }

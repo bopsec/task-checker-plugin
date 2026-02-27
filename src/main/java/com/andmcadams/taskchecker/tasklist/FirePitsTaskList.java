@@ -53,9 +53,42 @@ public class FirePitsTaskList extends TaskList
 				.switchVar(true, VarbitID.SW_SPINNINGWHEEL_BUILT)
 				.build();
 		//Built all 5 quetzal landing sites
+		Task allQuetzalSites = new Task.TaskBuilder()
+				.name("Built all 5 quetzal landing sites")
+				//.eqVar(true, VarbitID.QUETZAL_AUBURNVALLEY, 2)
+				//.eqVar(true, VarbitID.QUETZAL_QUETZACALLIGORGE, 2)
+				//.eqVar(true, VarbitID.QUETZAL_TEOMAT, 2)
+				//.eqVar(true, VarbitID.QUETZAL_TALTEKLAN, 2)
+				//.eqVar(true, VarbitID.QUETZAL_HUNTERGUILD, 2)
+				//.eqVar(true, VarbitID.QUETZAL_FORTIS, 2)
+				//.eqVar(true, VarbitID.QUETZAL_SUNSETCOAST, 2)
+				//.eqVar(true, VarbitID.QUETZAL_ALDARIN, 2)
+				.eqVar(true, VarbitID.QUETZAL_SALVAGEROVERLOOK, 2)
+				.eqVar(true, VarbitID.QUETZAL_CAMTORUM, 2)
+				.eqVar(true, VarbitID.QUETZAL_COLOSSEUM, 2)
+				.eqVar(true, VarbitID.QUETZAL_KASTORI, 2)
+				.eqVar(true, VarbitID.QUETZAL_OUTERFORTIS, 2)
+				.eqVar(true, VarbitID.QUETZAL_COLOSSALWYRM, 2)
+				.build();
+		this.add(allQuetzalSites);
+
 		//Searched the treasure pile in Movario's base
-		//Destroyed all 9 tentacles in the Lassar Undercity
+		Task searchedMovarioTreasurePile = new Task.TaskBuilder()
+				.name("Searched the treasure pile in Movario's base")
+				.switchVar(true, VarbitID.WGS_SEARCHED_TREASURE)
+				.build();
+		this.add(searchedMovarioTreasurePile);
+
+		//Destroyed all 9 tentacles in the Lassar Undercity couldn't find under DT2_LASSAR
 		//Listened to all 10 remnants in the Lassar Undercity
+//		Task listenedToRemnantsLassarUndercity = new Task.TaskBuilder()
+//				.name("")
+//				// where did the other 6 go?
+//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_6)
+//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_7)
+//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_8)
+//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_9)
+//				.build();
 
 		Task saradominsLight = new Task.TaskBuilder()
 				.name("Used Saradomin's light")

@@ -43,8 +43,20 @@ public class RightClickTaskList extends TaskList
 	{
 		//TODO:
 		//Unlocked Rick's buy-crystals option
+		Task unlockedRickBuyCrystal = new Task.TaskBuilder()
+				.name("Unlocked Rick's buy-crystals option")
+				.switchVar(true, VarbitID.RICK_HAS_OPENED_SHOP)
+				.build();
+		this.add(unlockedRickBuyCrystal);
+
 		//Unlocked Historian Aldo's trade option
-		//Unlocked the Theatre of Blood chest's custom buy option
+		Task unlockedHistorianAldoTradeOption = new Task.TaskBuilder()
+				.name("Unlocked Historian Aldo's trade option")
+				.switchVar(true, VarbitID.RAT_BOSS_BIOLOGIST_DIALOG)
+				.build();
+		this.add(unlockedHistorianAldoTradeOption);
+
+		//Unlocked the Theatre of Blood chest's custom buy option couldn't find
 
 		Task unlockJarvaldTravel = new Task.TaskBuilder()
 			.name("Unlock Jarvald's travel option")

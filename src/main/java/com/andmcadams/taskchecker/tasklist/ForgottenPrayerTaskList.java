@@ -39,8 +39,11 @@ public class ForgottenPrayerTaskList extends TaskList
 
 	public void initTasks()
 	{
-		// TODO:
-		//Unlocked the ability to avoid teleport attacks
+		Task avoidAbyssalDemonTeleports = new Task.TaskBuilder()
+				.name("Unlocked the ability to avoid teleport attacks")
+				.switchVar(true, VarbitID.BLIP_BLOCKING_SCROLL_USED)
+				.build();
+		this.add(avoidAbyssalDemonTeleports);
 
 		Task unlockRigour = new Task.TaskBuilder()
 			.name("Unlock Rigour")

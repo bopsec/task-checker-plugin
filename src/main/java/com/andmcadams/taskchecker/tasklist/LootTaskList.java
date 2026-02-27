@@ -41,13 +41,33 @@ public class LootTaskList extends TaskList
 
 	public void initTasks()
 	{
-		// TODO:
 //		Looted the crate containing a teleport in the Goblin Temple
+		Task lootedTeleportGoblinTemple = new Task.TaskBuilder()
+				.name("Looted the crate containing a teleport in the Goblin Temple")
+				.switchVar(true, VarbitID.LOTG_FOUND_SPHERE)
+				.build();
+		this.add(lootedTeleportGoblinTemple);
 //		Looted the workbench containing iron nails at Gordon's farm
-//		Looted the stone chest in The Stranglewood mine
-//		Looted the chest in Lassar Undercity
-//		Looted both bronze tools in the Piscatoris Fishing Colony
-//		Looted all 3 of Ru Merald's gem locations
+		Task lootedIronNailsGordonsFarm = new Task.TaskBuilder()
+				.name("Looted the workbench containing iron nails at Gordon's farm")
+				.switchVar(true, VarbitID.GA_NAILS_GIVEN)
+				.build();
+		this.add(lootedIronNailsGordonsFarm);
+		// TODO:
+//		Looted the stone chest in The Stranglewood mine couldn't find
+//		Looted the chest in Lassar Undercity couldn't find
+
+//
+		Task piscatorisTools = new Task.TaskBuilder()
+				.name("Looted both bronze tools in the Piscatoris Fishing Colony")
+				.switchVar(true, VarbitID.SWANSONG_PICKAXE)
+				.switchVar(true, VarbitID.SWANSONG_HATCHET)
+				.build();
+		this.add(piscatorisTools);
+		//
+		// Looted all 3 of Ru Merald's gem locations not transmitted
+
+
 //		Looted all 4 pallets and the chest in Movario's base
 
 		// Search tasks

@@ -119,7 +119,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the pool of Nightmares' fight initiation warning
 		//Disabled the Nightmare's Energy Barrier exit warning
 		//Disabled the Nightmare staff's orb addition/removal warning
-		//Disabled the mounted mythical cape's Building Mode warning
+		//Disabled the mounted mythical cape's Building Mode warning no varb/varp
 		//Disabled the Clan Coffer's coin deposit warning
 		//Disabled the Hallowed Sepulchre's lobby stairs warning
 		//Disabled the Hallowed sack's inventory space warning

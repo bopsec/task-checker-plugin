@@ -44,7 +44,7 @@ public class HallowedSepulchreTaskList extends TaskList
 		//Logged a fastest run for the Hallowed Sepulchre
 
 		Task freeDarkmeyerSlave = new Task.TaskBuilder()
-			.name("Give the Darkmeyer Slave 100 Hallowed Marks") // VarbitID: 10414
+			.name("Give the Darkmeyer Slave 100 Hallowed Marks")
 			.switchVar(true, VarbitID.HALLOWED_ADVENTURER_MARKS_GIVEN)
 			.build();
 

@@ -807,6 +807,13 @@ public class UnplacedRandomTaskList extends TaskList
                 .geVar(true, VarbitID.TOG_MAX_TEARS_COLLECTED, 1)
                 .build();
         this.add(loggedATearsOfGuthixPb);
+
+        //Listened to Ru Merald's Gem Crab intro
+        Task ruMeraldCrabIntro = new Task.TaskBuilder()
+                .name("Listened to Ru Merald's Gem Crab intro")
+                .switchVar(true, VarbitID.GEMSTONE_CRAB_INTRO)
+                .build();
+        this.add(ruMeraldCrabIntro);
         //Logged at least 1 gp of destroyed loot keys via the Loot Chest
         //Logged at least 1 gp of redeemed loot keys via the Loot Chest
         //Logged at least 1 lap of the sledding course
