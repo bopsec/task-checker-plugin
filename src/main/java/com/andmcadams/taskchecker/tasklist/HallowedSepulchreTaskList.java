@@ -40,8 +40,12 @@ public class HallowedSepulchreTaskList extends TaskList
 	private void initTasks()
 	{
 
-		//TODO:
 		//Logged a fastest run for the Hallowed Sepulchre
+		Task hallowedSepulchreFastestRunLogged = new Task.TaskBuilder()
+				.name("Logged a fastest run for the Hallowed Sepulchre")
+				.switchVar(true, VarbitID.HALLOWED_TIME_PB_ALL) // TODO: Untested
+				.build();
+		this.add(hallowedSepulchreFastestRunLogged);
 
 		Task freeDarkmeyerSlave = new Task.TaskBuilder()
 			.name("Give the Darkmeyer Slave 100 Hallowed Marks")

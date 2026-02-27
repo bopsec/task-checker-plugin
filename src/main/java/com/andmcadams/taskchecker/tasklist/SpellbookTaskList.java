@@ -100,9 +100,8 @@ public class SpellbookTaskList extends TaskList
                 .build();
         this.add(league4Vengeance);
 
-        //TODO:
-        //Unlocked the NPC Contact's League V animation option couldn't find these two
-        //Unlocked the ability to select all characters via NPC Contact
+        //TODO:Unlocked the NPC Contact's League V animation option couldn't find these two
+        //TODO:Unlocked the ability to select all characters via NPC Contact
 
         Task selectedHomeTeleAnimation = new Task.TaskBuilder()
                 .name("Selected at least one Home Teleport animation option")

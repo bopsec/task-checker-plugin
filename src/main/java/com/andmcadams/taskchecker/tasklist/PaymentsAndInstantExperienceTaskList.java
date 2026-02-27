@@ -41,27 +41,51 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 
 	public void initTasks()
 	{
-
-		//TODO:
-		//Claimed Castle Wars tickets from Lanthus
-		//Claimed blood runes from the Vyre well
+		//TODO:Claimed Castle Wars tickets from Lanthus maybe VarbitID.PVPA_OWED_JOIN_REFUND?
+		//TODO:Claimed blood runes from the Vyre well
 		//Claimed coins from Willow's bag
-		//Claimed coins from a Lovakengj minecart station conductor
-		//Claimed coins from Trossa
+		Task claimedWillowsCoins = new Task.TaskBuilder()
+				.name("Claimed coins from Willow's bag")
+				.switchVar(true, VarbitID.BIM_CLAIMED_REWARD) // Untested, but likely
+				.build();
+		this.add(claimedWillowsCoins);
+		//TODO:Claimed coins from a Lovakengj minecart station conductor
+		//TODO:Claimed coins from Trossa
 		//Claimed XP from smithing a chromium ingot
-		//Claimed XP from smithing an emberlight
-		//Claimed XP from crafting a purging staff
-		//Claimed XP from fletching a scorching bow
-		//Claimed a clue scroll from a monkey from Ardougne Zoo
-		//Claimed a medium pouch from Archmage Sedridor
+		Task unlockedChromiumSmithing = new Task.TaskBuilder()
+				.name("Claimed XP from smithing a chromium ingot")
+				.switchVar(true, VarbitID.CHROMIUM_CRAFTING_UNLOCKED)
+				.build();
+		this.add(unlockedChromiumSmithing);
+		//TODO:Claimed XP from smithing an emberlight
+		//TODO:Claimed XP from crafting a purging staff
+		//TODO:Claimed XP from fletching a scorching bow
+		//TODO:Claimed a clue scroll from a monkey from Ardougne Zoo
+		//TODO:Claimed a medium pouch from Archmage Sedridor
 		//Claimed a keris partisan from Maisa's tent
+		Task claimedKerisPartisan = new Task.TaskBuilder()
+				.name("Claimed a keris partisan from Maisa's tent")
+				.eqVar(true, VarbitID.BCS_OWED_PARTISAN, 0)
+				.build();
+		this.add(claimedKerisPartisan);
 		//Claimed the circlet of water from the High Priest of Sophanem
-		//Claimed an unholy mould from the Spirit of Scorpius
-		//Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu
+		Task claimedCircletOfWater = new Task.TaskBuilder()
+				.name("Claimed the circlet of water from the High Priest of Sophanem")
+				.eqVar(true, VarbitID.BCS_OWED_CIRCLET, 0)
+				.build();
+		this.add(claimedCircletOfWater);
+		//TODO:Claimed an unholy mould from the Spirit of Scorpius
+		//TODO:Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu
 		//Claimed all 4 XP drops (or lamps) from Radimus Erkle
-		//Claimed all 6 XP drops from Combat Training Camp dummies
-		//Claimed all 14 XP drops from Perdu
-		//Claimed all Adventure Paths task rewards and starter kits
+		Task legendsQuestXpRewardsClaimed = new Task.TaskBuilder()
+				.name("Claimed all 4 XP drops (or lamps) from Radimus Erkle")
+				.eqVar(true, VarbitID.LEGENDS_BONUS_LAMPS, 4)
+				.build();
+		this.add(legendsQuestXpRewardsClaimed);
+
+		//TODO:Claimed all 6 XP drops from Combat Training Camp dummies
+		//TODO:Claimed all 14 XP drops from Perdu
+		//TODO:Claimed all Adventure Paths task rewards and starter kits
 
 		Task observatoryQuestWineClaimed = new Task.TaskBuilder()
 			.name("Claim wine from the Observatory assistant")

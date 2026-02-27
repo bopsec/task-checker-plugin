@@ -41,7 +41,6 @@ public class RightClickTaskList extends TaskList
 
 	public void initTasks()
 	{
-		//TODO:
 		//Unlocked Rick's buy-crystals option
 		Task unlockedRickBuyCrystal = new Task.TaskBuilder()
 				.name("Unlocked Rick's buy-crystals option")
@@ -56,7 +55,7 @@ public class RightClickTaskList extends TaskList
 				.build();
 		this.add(unlockedHistorianAldoTradeOption);
 
-		//Unlocked the Theatre of Blood chest's custom buy option couldn't find
+		//TODO:Unlocked the Theatre of Blood chest's custom buy option couldn't find
 
 		Task unlockJarvaldTravel = new Task.TaskBuilder()
 			.name("Unlock Jarvald's travel option")

@@ -41,9 +41,14 @@ public class LostItemsTaskList extends TaskList
 
 	public void initTasks()
 	{
-		// TODO:
 		//Delivered Sir Gerry's notes to Sir Tiffy Cashien
-		//Delivered a tangled toad's legs to Longramble
+		Task deliveredGWDNotesToSirTiffyCashien = new Task.TaskBuilder()
+				.name("Delivered Sir Gerry's notes to Sir Tiffy Cashien")
+				.switchVar(true, VarbitID.GODWARS_SCROLL_DELIVERED) // TODO: Untested
+				.build();
+		this.add(deliveredGWDNotesToSirTiffyCashien);
+
+		//TODO: Delivered a tangled toad's legs to Longramble
 
 		Task returnZealotsKey = new Task.TaskBuilder()
 			.name("Deliver Zealot's key to Zealot")

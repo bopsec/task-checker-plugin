@@ -38,7 +38,6 @@ public class CombatAchievementsTaskList extends TaskList
 
     public void initTasks()
     {
-        // TODO:
         //Claimed all Combat Achievement rewards for every tier
         Task casCompleted = new Task.TaskBuilder()
                 .name("Claimed all Combat Achievement rewards for every tier")

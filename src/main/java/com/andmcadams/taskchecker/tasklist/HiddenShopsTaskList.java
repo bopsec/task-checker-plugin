@@ -39,7 +39,6 @@ public class HiddenShopsTaskList extends TaskList
 
 	public void initTasks()
 	{
-		// TODO:
 		//Unlocked Uglug Nar's shop, Uglug's stuffsies
 		Task unlockUglugNarShop = new Task.TaskBuilder()
 				.name("Unlocked Uglug Nar's shop, Uglug's stuffsies")

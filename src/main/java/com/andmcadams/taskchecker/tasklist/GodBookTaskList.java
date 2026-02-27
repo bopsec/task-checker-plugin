@@ -16,8 +16,6 @@ public class GodBookTaskList extends TaskList
     public void initTasks()
     {
         // These varbits are not exposed.
-
-        //TODO:
         //Filled the holy book with all 4 Saradomin pages
         //Filled the book of balance with all 4 Guthix pages
         //Filled the unholy book with all 4 Zamorak pages

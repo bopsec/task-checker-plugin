@@ -186,7 +186,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Sir Tiffy Cashien's news from Akrisae
 		Task sirTiffyAkrisaeNews = new Task.TaskBuilder()
 				.name("Listened to Sir Tiffy Cashien's news from Akrisae")
-				.switchVar(true, VarbitID.WGS_TIFFY_CHAT) // TODO: Unfound thsi is not it
+				.switchVar(true, VarbitID.WGS_TIFFY_CHAT) // TODO: Unfound, this is not it
 				.build();
 		//this.add(sirTiffyAkrisaeNews);
 

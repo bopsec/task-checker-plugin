@@ -41,17 +41,19 @@ public class FirePitsTaskList extends TaskList
 	{
 		// TODO:
 		//Built a raft using the smashed table in Ah Za Rhoon couldn't find https://oldschool.runescape.wiki/w/Crude_raft
+		
 		//Built the Spinning Wheel on the Isle of Souls
 		Task isleOfSoulsSpinningWheel = new Task.TaskBuilder()
 				.name("Built the Spinning Wheel on the Isle of Souls")
 				.switchVar(true, VarbitID.SW_SPINNINGWHEEL_BUILT)
 				.build();
-
+		this.add(isleOfSoulsSpinningWheel);
 		//Built the Potter's Wheel on the Isle of Souls
 		Task isleOfSoulsPottersWheel = new Task.TaskBuilder()
 				.name("Built the Potter's Wheel on the Isle of Souls")
 				.switchVar(true, VarbitID.SW_POTTERYWHEEL_BUILT)
 				.build();
+		this.add(isleOfSoulsPottersWheel);
 		//Built all 5 quetzal landing sites
 		Task allQuetzalSites = new Task.TaskBuilder()
 				.name("Built all 5 quetzal landing sites")

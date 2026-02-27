@@ -67,70 +67,191 @@ public class DoomsayerToggleTaskList extends TaskList
 			.geVar(true, VarbitID.CWS_WARNING_25, 6) // Gwd wildy agil route
 			.geVar(true, VarbitID.CWS_WARNING_26, 6) // idk
 			.build();
-
-		// TODO:
-		//Disabled Odovacar's bank cost warning
+		this.add(unlockAllWarningToggles);
+		//TODO:
+		//Disabled Odovacar's bank cost warning didnt find
 		//Disabled Pennant's crystal acorn trade warning
+		Task pennantCrystalAcornWarning = new Task.TaskBuilder()
+				.name("Disabled Pennant's crystal acorn trade warning")
+				.switchVar(true, VarbitID.PRIF_ACORN_TRADE) //TODO: Untested
+				.build();
+		this.add(pennantCrystalAcornWarning);
 		//Disabled Perdu's owned item purchase warning
+		Task perduMultipleWarning = new Task.TaskBuilder()
+				.name("Disabled Perdu's owned item purchase warning")
+				.switchVar(true, VarbitID.PERDU_BUY_MULTIPLE_WARNING)
+				.build();
 		//Disabled Nex's Ancient Barrier warning
-		//Disabled Araxxor's web tunnel warning
-		//Disabled Araxxor's destroy loot warning
-		//Disabled Wintertodt's modification warning
+		Task nexBarrierWarning = new Task.TaskBuilder()
+				.name("Disabled Nex's Ancient Barrier warning")
+				.switchVar(true, VarbitID.NEX_BARRIER_WARNING_HIDDEN)
+				.build();
+		this.add(nexBarrierWarning);
+
+		//Disabled Araxxor's web tunnel warning didn't find
+		//Disabled Araxxor's destroy loot warning didn't find
+		//Disabled Wintertodt's modification warning didn't find
 		//Disabled the Ancient Prison warning
-		//Disabled the crystal item creation warning
-		//Disabled the Gauntlet's crystal teleporter entrance warning
-		//Disabled the Gauntlet's item storage warning
-		//Disabled the Gauntlet escape crystal warning
+		Task ancientPrisonWarning = new Task.TaskBuilder()
+				.name("Disabled the Ancient Prison warning")
+				.switchVar(true, VarbitID.NEX_PRISON_DOOR_WARNING_HIDDEN)
+				.build();
+		this.add(ancientPrisonWarning);
+		//Disabled the crystal item creation warning didn't find
+		//Disabled the Gauntlet's crystal teleporter entrance warning didn't find
+		//Disabled the Gauntlet's item storage warning didn't find
+		//Disabled the Gauntlet escape crystal warning didn't find
 		//Disabled the Hespori's fight initiation warning
+		Task hesporiFightWarning = new Task.TaskBuilder()
+				.name("Disabled the Hespori's fight initiation warning")
+				.switchVar(true, VarbitID.HESPORI_WARNING)
+				.build();
+		this.add(hesporiFightWarning);
 		//Disabled the Daimon's crater entrance warning
+		Task daimonsCraterEntranceWarning = new Task.TaskBuilder()
+				.name("Disabled the Daimon's crater entrance warning")
+				.switchVar(true, VarbitID.BH_ARENA_ENTER_WARNING)
+				.build();
+		this.add(daimonsCraterEntranceWarning);
 		//Disabled the Daimon's crater PK skull prevention warning
+		Task daimonsCraterPkSkullWarning = new Task.TaskBuilder()
+				.name("Disabled the Daimon's crater PK skull prevention warning")
+				.switchVar(true, VarbitID.BH_SKULL_SETTING_WARNING)
+				.build();
+		this.add(daimonsCraterPkSkullWarning);
 		//Disabled the Revenant Cave's payment warning
 		//Disabled the Revenant Cave's one-way entrance warning
 		//Disabled the Ferox Enclave's barrier exit warning
 		//Disabled the Soul Wars clan lobby entrance warning
 		//Disabled the Scurrius's broken bars warning
+		Task scurriusBrokenBarsWarning = new Task.TaskBuilder()
+				.name("Disabled the Scurrius's broken bars warning")
+				.switchVar(true, VarbitID.RAT_BOSS_ENTER_WARNING)
+				.build();
+		this.add(scurriusBrokenBarsWarning);
 		//Disabled the Wilderness bosses' cave's warning
+		Task wildyBossesWarning = new Task.TaskBuilder()
+				.name("Disabled the Wilderness bosses' cave's warning")
+				.switchVar(true, VarbitID.WBR_ENTRANCE_FEE_WARNING) //TODO: Untested
+				.build();
+		this.add(wildyBossesWarning);
 		//Disabled the Wilderness Agility dispenser cost warning
+		Task wildyAgilCostWarning = new Task.TaskBuilder()
+				.name("Disabled the Wilderness Agility dispenser cost warning")
+				.switchVar(true, VarbitID.WILDY_AGILITY_PAYMENT_WARNING)
+				.build();
+		this.add(wildyAgilCostWarning);
 		//Disabled the Wilderness Agility pipe rewards warning
+		Task wildyAgilPipeRewardsWarning = new Task.TaskBuilder()
+				.name("Disabled the Wilderness Agility pipe rewards warning")
+				.switchVar(true, VarbitID.WILDY_AGILITY_START_WARNING)
+				.build();
+		this.add(wildyAgilPipeRewardsWarning);
 		//Disabled the Wilderness Agility gate opening warning
+		Task wildyAgilLeaveWarning = new Task.TaskBuilder()
+				.name("Disabled the Wilderness Agility gate opening warning")
+				.switchVar(true, VarbitID.WILDY_AGILITY_EXIT_WARNING)
+				.build();
+		this.add(wildyAgilLeaveWarning);
 		//Disabled the looting bag usage warning
 		//Disabled the ornate maul handle attachment warning
 		//Disabled the Camdozaal Vault entrance warning
+		Task camdozaalVaultEntranceWarning = new Task.TaskBuilder()
+				.name("Disabled the Camdozaal Vault entrance warning")
+				.switchVar(true, VarbitID.CAMDOZAAL_VAULT_WARNING)
+				.build();
+		this.add(camdozaalVaultEntranceWarning);
 		//Disabled the Camdozaal Vault's dropped items warning
+		Task camdozaalVaultDropWarning = new Task.TaskBuilder()
+				.name("Disabled the Camdozaal Vault's dropped items warning")
+				.switchVar(true, VarbitID.CAMDOZAAL_VAULT_DROP_WARNING)
+				.build();
+		this.add(camdozaalVaultDropWarning);
 		//Disabled the Blast Furnace conveyor belt warning
 		//Disabled the Brimhaven dungeon hole entrance warning
 		//Disabled the Vorkath crater warning
+		Task vorkathCraterWarning = new Task.TaskBuilder()
+				.name("Disabled the Vorkath crater warning")
+				.switchVar(true, VarbitID.DS2_UNGAEL_WARNING) // TODO: Untested
+				.build();
+		this.add(vorkathCraterWarning);
 		//Disabled the Thermonuclear Smoke Devil area warning
 		//Disabled the Kraken area warning
 		//Disabled the Phantom Muspah crevice warning
+		Task muspahCreviceWarning = new Task.TaskBuilder()
+				.name("Disabled the Phantom Muspah crevice warning")
+				.switchVar(true, VarbitID.MUSPAH_WARNING) // TODO: Untested
+				.build();
+		this.add(muspahCreviceWarning);
 		//Disabled the Tempoross area's dropped items warning
 		//Disabled the Tithe Farm instanced area entrance warning
 		//Disabled the Character Summary's Time Played warning
+		Task characterSummaryTimePlayedWarning = new Task.TaskBuilder()
+				.name("Disabled the Character Summary's Time Played warning")
+				.switchVar(true, VarbitID.ACCOUNT_SUMMARY_DISPLAY_PLAYTIME_REMIND_DISABLE)
+				.build();
+		this.add(characterSummaryTimePlayedWarning);
 		//Disabled the World Switcher's switch warning
+		Task worldHopperWarning = new Task.TaskBuilder()
+				.name("Disabled the World Switcher's switch warning")
+				.switchVar(true, VarbitID.WORLDSWITCHER_DISABLE_CONFIRMATION)
+				.build();
+		this.add(worldHopperWarning);
 		//Disabled the minigame group finder warning
+		Task minigameGroupFinderWarning = new Task.TaskBuilder()
+				.name("Disabled the minigame group finder warning")
+				.switchVar(true, VarbitID.WORLDSWITCHER_MINIGAME_PROMPT) // TODO:Unchecked
+				.build();
+		this.add(minigameGroupFinderWarning);
 		//Disabled the Chambers of Xeric's shared storage warning
 		//Disabled the Theatre of Blood's escape crystal warning
 		//Disabled the Tombs of Amascut entry warning
 		//Disabled the Icy Cavern entrance warning
 		//Disabled the crashed airship opening entrance warning
 		//Disabled the Grubby Chest's inventory space warning
+		Task grubbyCheckInventorySpaceWarning = new Task.TaskBuilder()
+				.name("Disabled the Grubby Chest's inventory space warning")
+				.switchVar(true, VarbitID.HOSDUN_CHEST_WARNING) // TODO: Untested
+				.build();
+		this.add(grubbyCheckInventorySpaceWarning);
 		//Disabled the Zalcano prison barrier entrance warning
 		//Disabled the Nightmare's fight initiation warning
+		Task nightmareFightWarning = new Task.TaskBuilder()
+				.name("Disabled the Nightmare's fight initiation warning")
+				.switchVar(true, VarbitID.NIGHTMARE_ENTRY_CHECK) // TODO: Untested
+				.build();
+		this.add(nightmareFightWarning);
 		//Disabled the pool of Nightmares' fight initiation warning
+		Task nightmarePoolEntranceWarning = new Task.TaskBuilder()
+				.name("Disabled the pool of Nightmares' fight initiation warning")
+				.switchVar(true, VarbitID.NIGHTMARE_CHALLENGE_ENTRY_CHECK) // TODO: Untested
+				.build();
 		//Disabled the Nightmare's Energy Barrier exit warning
 		//Disabled the Nightmare staff's orb addition/removal warning
+		Task nightmareStaffWarning = new Task.TaskBuilder()
+			.name("Disabled the Nightmare staff's orb addition/removal warning")
+			.switchVar(true, VarbitID.NIGHTMARE_STAFF_CHECK)
+			.build();
 		//Disabled the mounted mythical cape's Building Mode warning no varb/varp
 		//Disabled the Clan Coffer's coin deposit warning
 		//Disabled the Hallowed Sepulchre's lobby stairs warning
 		//Disabled the Hallowed sack's inventory space warning
 		//Disabled the Sourhog cave strange hole entrance warning
+		Task sourhogCaveWarning = new Task.TaskBuilder()
+				.name("Disabled the Sourhog cave strange hole entrance warning")
+				.switchVar(true, VarbitID.PORCINE_STOP_WARNING)
+				.build();
+		this.add(sourhogCaveWarning);
 		//Disabled the Mahogany Homes expert contract warning
 		//Disabled the Royal Titans' tunnel warning
+		Task royalTitansEnterWarning = new Task.TaskBuilder()
+				.name("Disabled the Royal Titans' tunnel warning")
+				.switchVar(true, VarbitID.ROYAL_TITANS_ENTER_WARNING)
+				.build();
+		this.add(royalTitansEnterWarning);
 		//Disabled the Royal Titans' destroy loot warning
 		//Disabled the Moons of Peril encounter warning
 		//Disabled the museum's storage crate warning
-
-		add(unlockAllWarningToggles);
 	}
 
 }

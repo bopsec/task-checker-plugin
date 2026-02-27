@@ -40,7 +40,6 @@ public class SkillingPerksTaskList extends TaskList
 
     private void initTasks()
     {
-        //TODO:
         Task minnows = new Task.TaskBuilder()
                 .name("Unlocked access to Kylie Minnow's fishing platform")
                 .eqVar(true, VarbitID.MINNOW_ACCESS, 2)
@@ -220,7 +219,7 @@ public class SkillingPerksTaskList extends TaskList
                 .name("Unlocked the large water container")
                 .switchVar(true, VarbitID.FOSSIL_MINE_UNLOCKED_MOREWATER)
                 .build();
-        //this.add(largeWaterContainer);
+        this.add(largeWaterContainer);
         //Disabled the Fertile Soil's non-upgraded spell warning
         Task fertileSoilWarningDisabled = new Task.TaskBuilder()
                 .name("Disabled the Fertile Soil's non-upgraded spell warning")
