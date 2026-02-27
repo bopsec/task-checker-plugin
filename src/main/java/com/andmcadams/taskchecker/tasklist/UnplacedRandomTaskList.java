@@ -800,7 +800,7 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(maxedMuseumKudosCounter);
         //
         //Unlocked the Expert Dragon Archer title couldn't find it, can just kill one to check for varb changes?
-        //
+        // could not find this one, maybe it +1s when we reach a new rank?
         //Logged a personal best at Tears of Guthix
         Task loggedATearsOfGuthixPb = new Task.TaskBuilder()
                 .name("Logged a personal best at Tears of Guthix")

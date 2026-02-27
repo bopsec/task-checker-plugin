@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
 public class UnlimitedServicesTaskList extends TaskList
@@ -41,11 +42,17 @@ public class UnlimitedServicesTaskList extends TaskList
 	{
 		// TODO:
 		//Paid Fossegrimen for free enchanted lyre imbues
-		//Paid Petrified Pete for free entry to the Volcanic Mine
-		//Paid Matthias for free falcon rentals
-		//Paid Skully for the ability to toggle loot keys
-		//Paid the ghost captain for free trips to Dragontooth Island
-		//Paid any banker for all 360 additional bank slots
+		// VarbitID.FREMMY_TELE_FIXY?
+
+		//Paid Petrified Pete for free entry to the Volcanic Mine couldnt find
+		//Paid Matthias for free falcon rentals couldnt find
+		//Paid Skully for the ability to toggle loot keys couldnt find
+		//Paid the ghost captain for free trips to Dragontooth Island couldnt find
+
+		Task boughtAllBankSlots = new Task.TaskBuilder()
+				.name("Paid any banker for all 360 additional bank slots")
+				.eqVar(true, VarbitID.BANK_EXTRA_BLOCKS_PURCHASED, 9)
+				.build();
 
 		Task enhanceCamulet = new Task.TaskBuilder()
 			.name("Enhance the Camulet for one million coins")
@@ -65,5 +72,6 @@ public class UnlimitedServicesTaskList extends TaskList
 		add(enhanceCamulet);
 		add(paySaniboch);
 		add(payAndras);
+		add(boughtAllBankSlots);
 	}
 }
