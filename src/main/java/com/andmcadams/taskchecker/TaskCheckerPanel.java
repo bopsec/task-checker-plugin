@@ -26,8 +26,12 @@ package com.andmcadams.taskchecker;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
+import java.awt.FlowLayout;
 import java.util.ArrayList;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -35,18 +39,31 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EmptyBorder;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.client.ui.ColorScheme;
-import net.runelite.client.ui.DynamicGridLayout;
 import net.runelite.client.ui.PluginPanel;
 import com.andmcadams.taskchecker.tasklist.TaskList;
 
 @Slf4j
 public class TaskCheckerPanel extends PluginPanel
 {
+	private static class CategorySection
+	{
+		private final TaskListHeaderPanel headerPanel;
+		private final JPanel taskContainer;
+		private final ArrayList<TaskPanel> taskPanels = new ArrayList<>();
+
+		private CategorySection(TaskListHeaderPanel headerPanel, JPanel taskContainer)
+		{
+			this.headerPanel = headerPanel;
+			this.taskContainer = taskContainer;
+		}
+	}
 
 	TaskCheckerPlugin taskCheckerPlugin;
 	ArrayList<TaskPanel> taskPanelList = new ArrayList<>();
+	ArrayList<CategorySection> categorySections = new ArrayList<>();
 
 	private JScrollPane scrollPane;
+	private JCheckBox hideCompletedToggle;
 
 	public TaskCheckerPanel(TaskCheckerPlugin taskCheckerPlugin, ArrayList<TaskList> taskLists)
 	{
@@ -69,6 +86,20 @@ public class TaskCheckerPanel extends PluginPanel
 		title.setText("Task Checker");
 		title.setForeground(Color.WHITE);
 		titlePanel.add(title, BorderLayout.WEST);
+
+		JPanel hideCompletedPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 4, 0));
+		hideCompletedPanel.setOpaque(false);
+
+		JLabel hideCompletedLabel = new JLabel("Hide completed:");
+		hideCompletedLabel.setForeground(Color.WHITE);
+		hideCompletedPanel.add(hideCompletedLabel);
+
+		hideCompletedToggle = new JCheckBox();
+		hideCompletedToggle.setOpaque(false);
+		hideCompletedToggle.addActionListener((event) -> applyVisibilityFilters());
+		hideCompletedPanel.add(hideCompletedToggle);
+		titlePanel.add(hideCompletedPanel, BorderLayout.EAST);
+
 		topContainer.add(titlePanel, BorderLayout.NORTH);
 
 		JButton calculateTasksButton = new JButton("Check tasks");
@@ -81,15 +112,26 @@ public class TaskCheckerPanel extends PluginPanel
 
 		// Create the task list panel
 		FixedWidthPanel taskListPanel = new FixedWidthPanel();
-		taskListPanel.setLayout(new DynamicGridLayout(0, 1, 0, 2));
+		taskListPanel.setLayout(new BoxLayout(taskListPanel, BoxLayout.Y_AXIS));
+		taskListPanel.setBackground(ColorScheme.DARK_GRAY_COLOR);
 
 		for (TaskList taskList : taskLists)
 		{
-			addTaskListHeader(taskListPanel, taskList.getName());
+			JPanel categoryTaskContainer = new JPanel();
+			categoryTaskContainer.setLayout(new BoxLayout(categoryTaskContainer, BoxLayout.Y_AXIS));
+			categoryTaskContainer.setAlignmentX(Component.LEFT_ALIGNMENT);
+			categoryTaskContainer.setBackground(ColorScheme.DARK_GRAY_COLOR);
+			TaskListHeaderPanel taskListHeaderPanel = addTaskListHeader(taskListPanel, taskList.getName(), categoryTaskContainer);
+			taskListHeaderPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+
+			CategorySection categorySection = new CategorySection(taskListHeaderPanel, categoryTaskContainer);
+			categorySections.add(categorySection);
+
 			for (Task task : taskList.getTasks())
 			{
-				addTask(taskListPanel, task);
+				addTask(categoryTaskContainer, task, categorySection);
 			}
+			taskListPanel.add(categoryTaskContainer);
 		}
 
 		scrollPane = new JScrollPane(taskListPanel);
@@ -98,19 +140,27 @@ public class TaskCheckerPanel extends PluginPanel
 		scrollPane.setBackground(ColorScheme.DARK_GRAY_COLOR);
 
 		add(scrollPane, BorderLayout.CENTER);
+		refresh();
 
 	}
 
-	public void addTaskListHeader(JPanel taskListPanel, String name)
+	public TaskListHeaderPanel addTaskListHeader(JPanel taskListPanel, String name, JPanel categoryTaskContainer)
 	{
 		TaskListHeaderPanel taskListHeaderPanel = new TaskListHeaderPanel(name);
+		taskListHeaderPanel.setToggleAction(() ->
+		{
+			applyVisibilityFilters();
+		});
 		taskListPanel.add(taskListHeaderPanel);
+		return taskListHeaderPanel;
 	}
 
-	public void addTask(JPanel taskListPanel, Task task)
+	public void addTask(JPanel taskListPanel, Task task, CategorySection categorySection)
 	{
 		TaskPanel taskPanel = new TaskPanel(task);
+		taskPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 		taskPanelList.add(taskPanel);
+		categorySection.taskPanels.add(taskPanel);
 		taskListPanel.add(taskPanel);
 	}
 
@@ -125,6 +175,51 @@ public class TaskCheckerPanel extends PluginPanel
 		for (TaskPanel taskPanel : taskPanelList)
 		{
 			taskPanel.updateCompletion();
+		}
+		for (CategorySection categorySection : categorySections)
+		{
+			boolean allComplete = !categorySection.taskPanels.isEmpty();
+			for (TaskPanel taskPanel : categorySection.taskPanels)
+			{
+				if (!taskPanel.getTask().isComplete())
+				{
+					allComplete = false;
+					break;
+				}
+			}
+			categorySection.headerPanel.setComplete(allComplete);
+		}
+
+		applyVisibilityFilters();
+	}
+
+	private void applyVisibilityFilters()
+	{
+		boolean hideCompleted = hideCompletedToggle != null && hideCompletedToggle.isSelected();
+		for (CategorySection categorySection : categorySections)
+		{
+			boolean allComplete = !categorySection.taskPanels.isEmpty();
+			boolean hasVisibleTask = false;
+			for (TaskPanel taskPanel : categorySection.taskPanels)
+			{
+				boolean taskComplete = taskPanel.getTask().isComplete();
+				if (!taskComplete)
+				{
+					allComplete = false;
+				}
+				boolean taskVisible = !hideCompleted || !taskComplete;
+				taskPanel.setVisible(taskVisible);
+				if (taskVisible)
+				{
+					hasVisibleTask = true;
+				}
+			}
+
+			boolean hideEntireCategory = hideCompleted && allComplete;
+			categorySection.headerPanel.setVisible(!hideEntireCategory);
+
+			boolean showTaskContainer = !hideEntireCategory && !categorySection.headerPanel.isCollapsed() && hasVisibleTask;
+			categorySection.taskContainer.setVisible(showTaskContainer);
 		}
 
 		repaint();

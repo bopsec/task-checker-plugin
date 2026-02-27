@@ -24,37 +24,75 @@
  */
 package com.andmcadams.taskchecker;
 
+import java.awt.BorderLayout;
+import java.awt.Color;
+import javax.swing.JButton;
 import javax.swing.JPanel;
-import javax.swing.JTextPane;
 import javax.swing.border.EmptyBorder;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyledDocument;
 import net.runelite.client.ui.ColorScheme;
-import net.runelite.client.ui.DynamicGridLayout;
 
 public class TaskListHeaderPanel extends JPanel
 {
+	private static final Color COMPLETE = Color.GREEN;
+	private static final Color INCOMPLETE = Color.WHITE;
+
+	private final JButton toggleButton;
+	private final String name;
+	private boolean collapsed;
+	private Runnable toggleAction = () -> {};
 
 	public TaskListHeaderPanel(String name)
 	{
 		super();
+		this.name = name;
+		this.collapsed = false;
 
-		setLayout(new DynamicGridLayout(1, 1, 0, 0));
+		setLayout(new BorderLayout());
 		setBorder(new EmptyBorder(5, 5, 5, 5));
-
 		setBackground(ColorScheme.DARKER_GRAY_COLOR);
-		JTextPane nameLabel = new JTextPane();
-		StyledDocument doc = nameLabel.getStyledDocument();
-		SimpleAttributeSet center = new SimpleAttributeSet();
-		StyleConstants.setAlignment(center, StyleConstants.ALIGN_CENTER);
-		doc.setParagraphAttributes(0, doc.getLength(), center, false);
-		nameLabel.setEditable(false);
-		nameLabel.setOpaque(false);
-		nameLabel.setFocusable(false);
-		nameLabel.setBorder(new EmptyBorder(5, 10, 5, 10));
 
-		nameLabel.setText(name);
-		add(nameLabel);
+		toggleButton = new JButton();
+		toggleButton.setBorder(new EmptyBorder(8, 10, 8, 10));
+		toggleButton.setBackground(ColorScheme.DARKER_GRAY_HOVER_COLOR);
+		toggleButton.setForeground(INCOMPLETE);
+		toggleButton.setFocusPainted(false);
+		toggleButton.setContentAreaFilled(true);
+		toggleButton.setHorizontalAlignment(JButton.LEFT);
+		toggleButton.addActionListener((event) ->
+		{
+			collapsed = !collapsed;
+			updateButtonText();
+			toggleAction.run();
+		});
+
+		updateButtonText();
+		add(toggleButton, BorderLayout.CENTER);
+	}
+
+	public boolean isCollapsed()
+	{
+		return collapsed;
+	}
+
+	public void setCollapsed(boolean collapsed)
+	{
+		this.collapsed = collapsed;
+		updateButtonText();
+	}
+
+	public void setComplete(boolean isComplete)
+	{
+		toggleButton.setForeground(isComplete ? COMPLETE : INCOMPLETE);
+	}
+
+	public void setToggleAction(Runnable toggleAction)
+	{
+		this.toggleAction = toggleAction == null ? () -> {} : toggleAction;
+	}
+
+	private void updateButtonText()
+	{
+		String prefix = collapsed ? "[+] " : "[-] ";
+		toggleButton.setText(prefix + name);
 	}
 }
