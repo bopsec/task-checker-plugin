@@ -188,7 +188,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Sir Tiffy Cashien's news from Akrisae
 		Task sirTiffyAkrisaeNews = new Task.TaskBuilder()
 				.name("Listened to Sir Tiffy Cashien's news from Akrisae")
-				.switchVar(true, 0) // TODO: Unfound
+				.switchVar(true, VarbitID.WGS_TIFFY_CHAT) // TODO: Unfound thsi is not it
 				.build();
 		//this.add(sirTiffyAkrisaeNews);
 
@@ -216,7 +216,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to your spirit tree's rotation complaints
 		Task spiritTreeRotationComplaints = new Task.TaskBuilder()
 				.name("Listened to your spirit tree's rotation complaints")
-				.switchVar(true, VarbitID.POH_SPIRIT_TREE_UPROOTED) // TODO: Untested
+				.switchVar(true, VarbitID.POH_SPIRIT_TREE_UPROOTED)
 				.build();
 		this.add(spiritTreeRotationComplaints);
 
@@ -237,7 +237,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Mage of Zamorak's incantation description
 		Task mageOfZammyIncantationDescription = new Task.TaskBuilder()
 				.name("Listened to Mage of Zamorak's incantation description")
-				.switchVar(true, 0) // TODO: Unfound
+				.switchVar(true, VarbitID.TOTE_RECEIVED_INCANTATION_BEFORE) // TODO: Untested
 				.build();
 		//this.add(mageOfZammyIncantationDescription);
 
@@ -286,9 +286,9 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Oriana's bargain for valuables
 		Task orianaValuablesBargain = new Task.TaskBuilder()
 				.name("Listened to Oriana's bargain for valuables")
-				.switchVar(true, 0) // TODO: Unfound
+				.switchVar(true, VarbitID.VARLAMORE_THIEVING_HOUSE_STRANGER_MET)
 				.build();
-		//this.add(orianaValuablesBargain);
+		this.add(orianaValuablesBargain);
 
 		//Listened to all 3 of the haunted wine bottle's initial dialogues
 		Task hauntedWineBottleDialogues = new Task.TaskBuilder()
@@ -328,7 +328,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Told Ramarno about Ketla's fate
 		Task toldRamarnoAboutKetla = new Task.TaskBuilder()
 				.name("Told Ramarno about Ketla's fate")
-				.switchVar(true, VarbitID.DT2_RAMARNO_SLISKE_DIALOGUE) // TODO: Idk!
+				.switchVar(true, VarbitID.DT2_RAMARNO_SLISKE_DIALOGUE) // TODO: Idk! This does not seem right but maybe?
 				.build();
 		this.add(toldRamarnoAboutKetla);
 
@@ -370,9 +370,9 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Told the head butler you won't join the union
 		Task toldHeadButlerWontJoinUnion = new Task.TaskBuilder()
 				.name("Told the head butler you won't join the union")
-				.switchVar(true, 0) // TODO: Unfound, something DOTI_
+				.switchVar(true, VarbitID.DOTI_MASK_DIALOGUE)
 				.build();
-		//this.add(toldHeadButlerWontJoinUnion);
+		this.add(toldHeadButlerWontJoinUnion);
 
 
 		Task unlockRosie = new Task.TaskBuilder()
