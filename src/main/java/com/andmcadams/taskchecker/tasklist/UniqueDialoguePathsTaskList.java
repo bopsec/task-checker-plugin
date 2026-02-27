@@ -42,7 +42,6 @@ public class UniqueDialoguePathsTaskList extends TaskList
 	public void initTasks()
 	{
 
-		//TODO:
 		//Unlocked the ability to equip comp ogre bows
 		Task unlockedCompOgreBows = new Task.TaskBuilder()
 				.name("Unlocked the ability to equip comp ogre bows")
@@ -54,8 +53,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 				.name("Unlocked the ability to recharge the pharaoh's sceptre")
 				.switchVar(true, VarbitID.PHARAOHS_SCEPTRE_MUMMY_MET) // TODO: Untested
 				.build();
-		//this.add(rechargePharaohsSceptre);
-
+		//this.add(rechargePharaohsSceptre)
 		//Unlocked the ability to offer Viero extra redberry antelopes
 		Task vieroRedberryAntelopes = new Task.TaskBuilder()
 				.name("Unlocked the ability to offer Viero extra redberry antelopes")
@@ -98,7 +96,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Paid Atlas for at least 2 training sessions
 		Task atlasTwoOrMoreSessions = new Task.TaskBuilder()
 				.name("Paid Atlas for at least 2 training sessions")
-				.geVar(true, VarbitID.BIM_WORKOUT_COUNTER, 1) // idk kinda untested
+				.geVar(true, VarbitID.BIM_WORKOUT_COUNTER, 2) // idk kinda untested
 				.build();
 		this.add(atlasTwoOrMoreSessions);
 
@@ -202,9 +200,9 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Harminia farming patch protection offer
 		Task harminiaFarmingPatchProtection = new Task.TaskBuilder()
 				.name("Listened to Harminia farming patch protection offer")
-				.switchVar(true, 0) // TODO: Unfound
+				.switchVar(true, VarbitID.COLOSSEUM_HERB_PATCH_CHAT)
 				.build();
-		//this.add(harminiaFarmingPatchProtection);
+		this.add(harminiaFarmingPatchProtection);
 
 		//Listened to Overseer Khougo interrogation about Mistrock
 		Task khougoMistrockInterrogation = new Task.TaskBuilder()

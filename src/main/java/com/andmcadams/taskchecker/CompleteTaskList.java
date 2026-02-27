@@ -82,6 +82,7 @@ public class CompleteTaskList
 		TaskList temporary = new TemporaryTaskList();
 		TaskList invisible = new InvisibleTaskList();
 		TaskList lmsAndBh = new LMSandBHTaskList();
+		TaskList allPets = new PetsTaskList();
 
 		taskLists.add(championsChallenge);
 		taskLists.add(combatAchievements);
@@ -97,6 +98,7 @@ public class CompleteTaskList
 		taskLists.add(lostItems);
 		taskLists.add(motherlodeMine);
 		taskLists.add(paymentsAndInstantExperience);
+		taskLists.add(allPets);
 		taskLists.add(petTransmogs);
 		taskLists.add(raidsCapes);
 		taskLists.add(redeemableQuestItems);
