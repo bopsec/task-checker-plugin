@@ -90,7 +90,7 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 
 		Task dragonSlayerIIRewardClaimed = new Task.TaskBuilder()
 			.name("Claim experience from Ellen")
-			.eqVar(true, VarbitID.MM2_PROGRESS, 4)
+			.eqVar(true, VarbitID.DS2_COMBAT_TRAINING, 4)
 			.build();
 
 		Task misthalinMysteryRewardClaimed = new Task.TaskBuilder()

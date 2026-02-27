@@ -52,7 +52,7 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(cwAvasEffect);
         //Unlocked the effect of Ava's assembler in Soul Wars
         Task swAvasEffect = new Task.TaskBuilder()
-                .name("")
+                .name("Unlocked the effect of Ava's assembler in Soul Wars")
                 .eqVar(true, VarbitID.SOUL_WARS_AVA_REWARD_TIER, 3)
                 .build();
         this.add(swAvasEffect);
@@ -186,7 +186,7 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the ability to equip a quest point cape (t)
         Task trimmedQuestCape = new Task.TaskBuilder()
                 .name("Unlocked the ability to equip a quest point cape (t)")
-                .eqVar(true, VarPlayerID.QP, 333)
+                .eqVar(false, VarPlayerID.QP, 333)
                 .switchVar(true, VarbitID.ARDOUGNE_DIARY_ELITE_COMPLETE)
                 .switchVar(true, VarbitID.DESERT_DIARY_ELITE_COMPLETE)
                 .switchVar(true, VarbitID.FALADOR_DIARY_ELITE_COMPLETE)
@@ -251,7 +251,7 @@ public class UnplacedRandomTaskList extends TaskList
         //
         //Unlocked Guildmaster Jane's contracts completed option
         Task unlockedFarmingGuildContractsOption = new Task.TaskBuilder()
-                .name("")
+                .name("Unlocked Guildmaster Jane's contracts completed option")
                 .switchVar(true, VarbitID.FARMGUILD_CONTRACT_DISCUSSED) // TODO: Untested idk about this one
                 .build();
         this.add(unlockedFarmingGuildContractsOption);
@@ -343,8 +343,8 @@ public class UnplacedRandomTaskList extends TaskList
                 .switchVar(true, VarbitID.ZEP_MULTI_CAST)
                 .switchVar(true, VarbitID.ZEP_MULTI_CRAFT)
                 .switchVar(true, VarbitID.ZEP_MULTI_GNO)
-                .switchVar(true, VarbitID.ZEP_MULTI_BASKET)
-                .switchVar(true, VarbitID.ZEP_MULTI_PICCARD)
+                .eqVar(true, VarbitID.ZEP_MULTI_BASKET, 2)
+                .eqVar(true, VarbitID.ZEP_MULTI_PICCARD, 2)
                 .build();
         this.add(unlockedAllBallooonTransports);
         //Selected a preference for the log storage crates TODO: Didn't change when already done, so couldn't fint it
@@ -430,11 +430,11 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(unlockedEdgeRespawn);
         //Paid Ferox for the ability to respawn at Ferox Enclave
-        Task unlockedFeroxRespawn = new Task.TaskBuilder()
-                .name("Paid Ferox for the ability to respawn at Ferox Enclave")
-                .switchVar(true, VarbitID.WILDERNESS_SPAWN_UNLOCKED)
-                .build();
-        this.add(unlockedFeroxRespawn);
+        //Task unlockedFeroxRespawn = new Task.TaskBuilder()
+        //        .name("Paid Ferox for the ability to respawn at Ferox Enclave")
+        //        .switchVar(true, VarbitID.WILDERNESS_SPAWN_UNLOCKED) this does never change from 0
+        //        .build();
+        //this.add(unlockedFeroxRespawn);
         //
         //Unlocked the ability to see the last item you smithed
         Task lastSmithedItemSet = new Task.TaskBuilder()

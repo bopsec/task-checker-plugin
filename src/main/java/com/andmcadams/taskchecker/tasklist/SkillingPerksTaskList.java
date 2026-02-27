@@ -43,7 +43,7 @@ public class SkillingPerksTaskList extends TaskList
         //TODO:
         Task minnows = new Task.TaskBuilder()
                 .name("Unlocked access to Kylie Minnow's fishing platform")
-                .switchVar(true, VarbitID.MINNOW_ACCESS)
+                .eqVar(true, VarbitID.MINNOW_ACCESS, 2)
                 .build();
         this.add(minnows);
 

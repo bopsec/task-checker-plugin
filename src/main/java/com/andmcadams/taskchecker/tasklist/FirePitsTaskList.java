@@ -55,6 +55,7 @@ public class FirePitsTaskList extends TaskList
 		//Built all 5 quetzal landing sites
 		Task allQuetzalSites = new Task.TaskBuilder()
 				.name("Built all 5 quetzal landing sites")
+				// the commented out ones are already built
 				//.eqVar(true, VarbitID.QUETZAL_AUBURNVALLEY, 2)
 				//.eqVar(true, VarbitID.QUETZAL_QUETZACALLIGORGE, 2)
 				//.eqVar(true, VarbitID.QUETZAL_TEOMAT, 2)

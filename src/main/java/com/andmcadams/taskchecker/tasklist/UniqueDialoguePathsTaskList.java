@@ -209,7 +209,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Overseer Khougo interrogation about Mistrock
 		Task khougoMistrockInterrogation = new Task.TaskBuilder()
 				.name("Listened to Overseer Khougo interrogation about Mistrock")
-				.switchVar(true, VarbitID.VARLAMORE_MISTROCK_OVERSEER) // TODO: Untested
+				.eqVar(true, VarbitID.VARLAMORE_MISTROCK_OVERSEER, 3)
 				.build();
 		this.add(khougoMistrockInterrogation);
 
@@ -229,7 +229,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 
 		//Listened to Izel introduce Hugh
 		Task izelIntroduction = new Task.TaskBuilder()
-				.name("Listened to Taala's Hueycoatl introduction")
+				.name("Listened to Izel's Hugh introduction")
 				.switchVar(true, VarbitID.VARLAMORE_IZEL_MET)
 				.build();
 		this.add(izelIntroduction);
@@ -300,7 +300,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Jim explain his wet cloth
 		Task jimWetClothExplanation = new Task.TaskBuilder()
 				.name("Listened to Jim explain his wet cloth")
-				.switchVar(true, VarbitID.YAMA_IMP_CONTRACT_SIGNED) // TODO: Untested
+				.eqVar(true, VarbitID.YAMA_IMP_CONTRACT_SIGNED, 2) // TODO: Untested
 				.build();
 		this.add(jimWetClothExplanation);
 
@@ -328,7 +328,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Told Ramarno about Ketla's fate
 		Task toldRamarnoAboutKetla = new Task.TaskBuilder()
 				.name("Told Ramarno about Ketla's fate")
-				.switchVar(true, VarbitID.DT2_RAMARNO_KETLA_DIALOGUE)
+				.switchVar(true, VarbitID.DT2_RAMARNO_SLISKE_DIALOGUE) // TODO: Idk!
 				.build();
 		this.add(toldRamarnoAboutKetla);
 
