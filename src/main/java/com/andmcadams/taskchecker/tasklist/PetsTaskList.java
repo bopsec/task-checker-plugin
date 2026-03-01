@@ -34,7 +34,7 @@ public class PetsTaskList extends TaskList
 
     public PetsTaskList()
     {
-        super("All pets (loads are wrong! blame jagex)");
+        super("Legacy pet insurance");
         initTasks();
     }
 
@@ -59,9 +59,9 @@ public class PetsTaskList extends TaskList
         //Unlocked the Pet K'ril Tsutsaroth
         addPet("Unlocked the Pet K'ril Tsutsaroth", VarbitID.PET_INSURANCE_ZAMORAKPET);
         //Unlocked the Baby Mole
-        addPet("Unlocked the Baby Mole (doesn't work)", VarbitID.PET_INSURANCE_MOLEPET);
+        addPet("Unlocked the Baby Mole", VarbitID.PET_INSURANCE_MOLEPET);
         //Unlocked the Prince Black Dragon
-        addPet("Unlocked the Prince Black Dragon (doesn't work)", VarbitID.PET_INSURANCE_KBDPET);
+        addPet("Unlocked the Prince Black Dragon", VarbitID.PET_INSURANCE_KBDPET);
         //Unlocked the Kalphite Princess
         addPet("Unlocked the Kalphite Princess", VarbitID.PET_INSURANCE_KQPET);
         //Unlocked the Pet Smoke Devil
@@ -111,13 +111,13 @@ public class PetsTaskList extends TaskList
         //Unlocked the Olmlet
         addPet("Unlocked the Olmlet", VarbitID.PET_INSURANCE_OLMPET);
         //Unlocked Skotos
-        addPet("Unlocked Skotos (doesn't work)", VarbitID.PET_INSURANCE_SKOTUS);
+        addPet("Unlocked Skotos", VarbitID.PET_INSURANCE_SKOTUS);
         //Unlocked Jal-Nib-Rek
         addPet("Unlocked Jal-Nib-Rek", VarbitID.PET_INSURANCE_INFERNO);
         //Unlocked Herbi
-        addPet("Unlocked Herbi (doesn't work)", VarbitID.PET_INSURANCE_HERBIBOAR);
+        addPet("Unlocked Herbi", VarbitID.PET_INSURANCE_HERBIBOAR);
         //Unlocked Noon
-        addPet("Unlocked Noon (doesn't work)", VarbitID.PET_INSURANCE_GARGBOSS);
+        addPet("Unlocked Noon", VarbitID.PET_INSURANCE_GARGBOSS);
         //Unlocked Vorki
         addPet("Unlocked Vorki", VarbitID.PET_INSURANCE_VORKI);
         //Unlocked Lil' Zik
@@ -133,7 +133,7 @@ public class PetsTaskList extends TaskList
         //Unlocked the Little Nightmare
         addPet("Unlocked the Little Nightmare", VarbitID.PET_INSURANCE_NIGHTMARE);
         //Unlocked the Lil' Creator
-        addPet("Unlocked the Lil' Creator (doesn't work)", VarbitID.PET_INSURANCE_SOULWARS);
+        addPet("Unlocked the Lil' Creator", VarbitID.PET_INSURANCE_SOULWARS);
         //Unlocked the Tiny Tempor
         addPet("Unlocked the Tiny Tempor", VarbitID.PET_INSURANCE_TEMPOROSS);
         //Unlocked the Nexling
@@ -143,7 +143,7 @@ public class PetsTaskList extends TaskList
         //Unlocked Tumeken's Guardian
         addPet("Unlocked Tumeken's Guardian", VarbitID.PET_INSURANCE_WARDENS);
         //Unlocked Muphin
-        addPet("Unlocked Muphin (doesn't work)", VarbitID.PET_INSURANCE_MUSPAH);
+        addPet("Unlocked Muphin", VarbitID.PET_INSURANCE_MUSPAH);
         //Unlocked Baron
         addPet("Unlocked Baron", VarbitID.PET_INSURANCE_DUKE_SUCELLUS);
         //Unlocked Butch
