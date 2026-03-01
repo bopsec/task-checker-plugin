@@ -42,17 +42,9 @@ public class LootTaskList extends TaskList
 	public void initTasks()
 	{
 //		Looted the crate containing a teleport in the Goblin Temple
-		Task lootedTeleportGoblinTemple = new Task.TaskBuilder()
-				.name("Looted the crate containing a teleport in the Goblin Temple")
-				.switchVar(true, VarbitID.LOTG_FOUND_SPHERE)
-				.build();
-		this.add(lootedTeleportGoblinTemple);
+		addTask("Looted the crate containing a teleport in the Goblin Temple", VarbitID.LOTG_FOUND_SPHERE);
 //		Looted the workbench containing iron nails at Gordon's farm
-		Task lootedIronNailsGordonsFarm = new Task.TaskBuilder()
-				.name("Looted the workbench containing iron nails at Gordon's farm")
-				.switchVar(true, VarbitID.GA_NAILS_GIVEN)
-				.build();
-		this.add(lootedIronNailsGordonsFarm);
+		addTask("Looted the workbench containing iron nails at Gordon's farm", VarbitID.GA_NAILS_GIVEN);
 		// TODO:
 //		Looted the stone chest in The Stranglewood mine couldn't find
 //		Looted the chest in Lassar Undercity couldn't find
@@ -70,10 +62,7 @@ public class LootTaskList extends TaskList
 		//Looted all 4 pallets and the chest in Movario's base
 
 		// Search tasks
-		Task openMarlosCrate = new Task.TaskBuilder()
-			.name("Open Marlo's crate")
-			.eqVar(true, VarbitID.DADDYSHOME_STATUS, 14)
-			.build();
+		addEqTask(true, "Open Marlo's crate", VarbitID.DADDYSHOME_STATUS, 14);
 
 		// MORTON_TABLE - UNKNOWN
 		Task searchMorttonTable = new Task.TaskBuilder()
@@ -81,40 +70,19 @@ public class LootTaskList extends TaskList
 			.bitVar(false, VarPlayerID.MORTTONMULTI, 8)
 			.build();
 
-		Task undergroundPassCrate = new Task.TaskBuilder()
-			.name("Searched the crate in the Underground Pass")
-			.switchVar(true, VarbitID.UPASS_CRATE_FOOD)
-			.build();
+		addTask("Searched the crate in the Underground Pass", VarbitID.UPASS_CRATE_FOOD);
 
-		Task elementalWorkshopCrate = new Task.TaskBuilder()
-			.name("Searched the crate in the Elemental Workshop for leather")
-			.switchVar(true, VarbitID.ELEMENTAL_WORKSHOP_LEATHER)
-			.build();
+		addTask("Searched the crate in the Elemental Workshop for leather", VarbitID.ELEMENTAL_WORKSHOP_LEATHER);
 
-		Task meiyerditchLabRuneCase = new Task.TaskBuilder()
-			.name("Searched the broken rune case in the Meiyerditch lab")
-			.switchVar(true, VarbitID.MYQ3_RUNECASE_SEARCHED)
-			.build();
+		addTask("Searched the broken rune case in the Meiyerditch lab", VarbitID.MYQ3_RUNECASE_SEARCHED);
 
-		Task canifisHideoutGarlic = new Task.TaskBuilder()
-			.name("Searched the chest in the Canifis Myreque hideout for three garlic bulbs")
-			.eqVar(true, VarbitID.MYQ2_GARLIC_CHEST, 3)
-			.build();
+		addEqTask(true, "Searched the chest in the Canifis Myreque hideout for three garlic bulbs", VarbitID.MYQ2_GARLIC_CHEST, 3);
 
-		Task enakhraSandstone = new Task.TaskBuilder()
-			.name("Collected 5 sandstone from Enakhra's temple")
-			.eqVar(true, VarbitID.ENAKH_RUBBLE_LIMIT, 5)
-			.build();
+		addEqTask(true, "Collected 5 sandstone from Enakhra's temple", VarbitID.ENAKH_RUBBLE_LIMIT, 5);
 
-		Task agrithNaarThrone = new Task.TaskBuilder()
-			.name("Collected the gems from Agrith Naar's throne")
-			.switchVar(true, VarbitID.GOLEM_THRONE_GEMS)
-			.build();
+		addTask("Collected the gems from Agrith Naar's throne", VarbitID.GOLEM_THRONE_GEMS);
 
-		Task fenkenstrainClockLetter = new Task.TaskBuilder()
-			.name("Searched the clock in Fenkenstrain's castle")
-			.switchVar(true, VarbitID.FENK_WOUND_CLOCK)
-			.build();
+		addTask("Searched the clock in Fenkenstrain's castle", VarbitID.FENK_WOUND_CLOCK);
 
 		Task goblinVillageGoblinMail = new Task.TaskBuilder()
 			.name("Loot the 3 pieces of goblin mail in the Goblin Village")
@@ -134,16 +102,9 @@ public class LootTaskList extends TaskList
 			.switchVar(true, VarbitID.OBSERVATORY_CHEST7_SEEN)
 			.build();
 
-		add(openMarlosCrate);
 		add(searchMorttonTable);
-		add(undergroundPassCrate);
-		add(elementalWorkshopCrate);
-		add(meiyerditchLabRuneCase);
-		add(canifisHideoutGarlic);
-		add(enakhraSandstone);
-		add(agrithNaarThrone);
-		add(fenkenstrainClockLetter);
 		add(goblinVillageGoblinMail);
 		add(observatorySpiderChests);
 	}
 }
+

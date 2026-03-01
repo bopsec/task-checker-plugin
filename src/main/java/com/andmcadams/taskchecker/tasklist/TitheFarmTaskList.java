@@ -39,18 +39,11 @@ public class TitheFarmTaskList extends TaskList
 	public void initTasks()
 	{
 
-		Task autoWeedUnlocked = new Task.TaskBuilder()
-			.name("Unlocked Autoweed")
-			.geVar(true, VarbitID.FARMING_BLOCKWEEDS, 1)
-			.build();
+		addGeTask(true, "Unlocked Autoweed", VarbitID.FARMING_BLOCKWEEDS, 1);
 
-		Task bologaBlessingUnlocked = new Task.TaskBuilder()
-			.name("Paid Bologa for the ability to purchase Bologa's blessings")
-			.eqVar(true, VarbitID.HOSIDIUS_EVILGRAPES, 2)
-			.build();
+		addEqTask(true, "Paid Bologa for the ability to purchase Bologa's blessings", VarbitID.HOSIDIUS_EVILGRAPES, 2);
 
-		this.add(autoWeedUnlocked);
-		this.add(bologaBlessingUnlocked);
 
 	}
 }
+

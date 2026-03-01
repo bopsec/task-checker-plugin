@@ -16,63 +16,55 @@ public class SailingAmenities extends TaskList
     public void initTasks()
     {
         // Anglers
-        addAmenity("Anglers' retreat cooking pot", VarbitID.AMENITY_COOKING_POT_ANGLERS);
-        addAmenity("Anglers' retreat rowboat", VarbitID.AMENITY_ROWBOAT_ANGLERS);
-        addAmenity("Anglers' retreat spinning wheel", VarbitID.AMENITY_SPINNING_WHEEL_ANGLERS);
+        addTask("Anglers' retreat cooking pot", VarbitID.AMENITY_COOKING_POT_ANGLERS);
+        addTask("Anglers' retreat rowboat", VarbitID.AMENITY_ROWBOAT_ANGLERS);
+        addTask("Anglers' retreat spinning wheel", VarbitID.AMENITY_SPINNING_WHEEL_ANGLERS);
 
         // Buccaneers
-        addAmenity("Buccaneers anvil", VarbitID.AMENITY_ANVIL_BUCCANEERS);
-        addAmenity("Buccaneers bank chest", VarbitID.AMENITY_BANKCHEST_BUCCANEERS);
-        addAmenity("Buccaneers furnace", VarbitID.AMENITY_FURNACE_BUCCANEERS);
-        addAmenity("Buccaneers rowboat", VarbitID.AMENITY_ROWBOAT_BUCCANEERS);
+        addTask("Buccaneers anvil", VarbitID.AMENITY_ANVIL_BUCCANEERS);
+        addTask("Buccaneers bank chest", VarbitID.AMENITY_BANKCHEST_BUCCANEERS);
+        addTask("Buccaneers furnace", VarbitID.AMENITY_FURNACE_BUCCANEERS);
+        addTask("Buccaneers rowboat", VarbitID.AMENITY_ROWBOAT_BUCCANEERS);
 
         // Charred Island
-        addAmenity("Charred Island anvil", VarbitID.AMENITY_ANVIL_CHARRED_ISLAND);
-        addAmenity("Charred Island bank chest", VarbitID.AMENITY_BANKCHEST_CHARRED_ISLAND);
+        addTask("Charred Island anvil", VarbitID.AMENITY_ANVIL_CHARRED_ISLAND);
+        addTask("Charred Island bank chest", VarbitID.AMENITY_BANKCHEST_CHARRED_ISLAND);
 
         // Chinchompa Island
-        addAmenity("Chinchompa Island cooking pot", VarbitID.AMENITY_COOKING_POT_CHINCHOMPA);
+        addTask("Chinchompa Island cooking pot", VarbitID.AMENITY_COOKING_POT_CHINCHOMPA);
 
         // Crown Jewel
-        addAmenity("Crown Jewel cooking pot", VarbitID.AMENITY_COOKING_POT_CROWN_JEWEL);
+        addTask("Crown Jewel cooking pot", VarbitID.AMENITY_COOKING_POT_CROWN_JEWEL);
 
         // Deepfin
-        addAmenity("Deepfin bank chest 1", VarbitID.AMENITY_BANKCHEST_DEEPFIN_1);
-        addAmenity("Deepfin bank chest 2", VarbitID.AMENITY_BANKCHEST_DEEPFIN_2);
+        addTask("Deepfin bank chest 1", VarbitID.AMENITY_BANKCHEST_DEEPFIN_1);
+        addTask("Deepfin bank chest 2", VarbitID.AMENITY_BANKCHEST_DEEPFIN_2);
 
         // Laguna Aurorae
-        addAmenity("Laguna Aurorae cooking pot", VarbitID.AMENITY_COOKING_POT_LAGUNA_AURORAE);
-        addAmenity("Laguna Aurorae loom", VarbitID.AMENITY_LOOM_LAGUNA_AURORAE);
-        addAmenity("Laguna Aurorae water pump", VarbitID.AMENITY_WATER_PUMP_LAGUNA_AURORAE);
+        addTask("Laguna Aurorae cooking pot", VarbitID.AMENITY_COOKING_POT_LAGUNA_AURORAE);
+        addTask("Laguna Aurorae loom", VarbitID.AMENITY_LOOM_LAGUNA_AURORAE);
+        addTask("Laguna Aurorae water pump", VarbitID.AMENITY_WATER_PUMP_LAGUNA_AURORAE);
 
         // Onyx Crest
-        addAmenity("Onyx Crest bank chest", VarbitID.AMENITY_BANKCHEST_ONYX_CREST);
-        addAmenity("Onyx Crest furnace", VarbitID.AMENITY_FURNACE_ONYX_CREST);
-        addAmenity("Onyx Crest water pump", VarbitID.AMENITY_WATER_PUMP_ONYX_CREST);
+        addTask("Onyx Crest bank chest", VarbitID.AMENITY_BANKCHEST_ONYX_CREST);
+        addTask("Onyx Crest furnace", VarbitID.AMENITY_FURNACE_ONYX_CREST);
+        addTask("Onyx Crest water pump", VarbitID.AMENITY_WATER_PUMP_ONYX_CREST);
 
         // Soul Tear
-        addAmenity("Soul Tear rowboat", VarbitID.AMENITY_ROWBOAT_SOUL_TEAR);
+        addTask("Soul Tear rowboat", VarbitID.AMENITY_ROWBOAT_SOUL_TEAR);
 
         // Sunbleak
-        addAmenity("Sunbleak bank chest", VarbitID.AMENITY_BANKCHEST_SUNBLEAK);
-        addAmenity("Sunbleak cooking pot", VarbitID.AMENITY_COOKING_POT_SUNBLEAK);
-        addAmenity("Sunbleak water pump", VarbitID.AMENITY_WATER_PUMP_SUNBLEAK);
+        addTask("Sunbleak bank chest", VarbitID.AMENITY_BANKCHEST_SUNBLEAK);
+        addTask("Sunbleak cooking pot", VarbitID.AMENITY_COOKING_POT_SUNBLEAK);
+        addTask("Sunbleak water pump", VarbitID.AMENITY_WATER_PUMP_SUNBLEAK);
 
         // Vatrachos
-        addAmenity("Vatrachos pottery oven", VarbitID.AMENITY_POTTERY_OVEN_VATRACHOS);
-        addAmenity("Vatrachos pottery wheel", VarbitID.AMENITY_POTTERY_WHEEL_VATRACHOS);
-        addAmenity("Vatrachos rowboat", VarbitID.AMENITY_ROWBOAT_VATRACHOS);
-        addAmenity("Vatrachos water pump", VarbitID.AMENITY_WATER_PUMP_VATRACHOS);
+        addTask("Vatrachos pottery oven", VarbitID.AMENITY_POTTERY_OVEN_VATRACHOS);
+        addTask("Vatrachos pottery wheel", VarbitID.AMENITY_POTTERY_WHEEL_VATRACHOS);
+        addTask("Vatrachos rowboat", VarbitID.AMENITY_ROWBOAT_VATRACHOS);
+        addTask("Vatrachos water pump", VarbitID.AMENITY_WATER_PUMP_VATRACHOS);
 
         // Ynysdail
-        addAmenity("Ynysdail rowboat", VarbitID.AMENITY_ROWBOAT_YNYSDAIL);
-    }
-
-    private void addAmenity(String name, int varbit)
-    {
-        add(new Task.TaskBuilder()
-                .name(name)
-                .switchVar(true, varbit)
-                .build());
+        addTask("Ynysdail rowboat", VarbitID.AMENITY_ROWBOAT_YNYSDAIL);
     }
 }

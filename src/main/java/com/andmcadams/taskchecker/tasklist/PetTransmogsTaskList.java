@@ -40,107 +40,44 @@ public class PetTransmogsTaskList extends TaskList
     {
         // Skilling pets
         // Unlocked the ability to recolour the Beaver
-        Task beaverRecolour = new Task.TaskBuilder()
-                .name("Unlocked the ability to recolour the Beaver")
-                .switchVar(true, 0) // TODO
-                .build();
+        addTask("Unlocked the ability to recolour the Beaver", 0); // TODO
         // Unlocked the Beaver's pheasant metamorphosis option
-        Task beaverPheasant = new Task.TaskBuilder()
-                .name("Unlocked the Beaver's pheasant metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
-        Task beaverFox = new Task.TaskBuilder()
-                .name("Unlocked the Beaver's fox metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
+        addTask("Unlocked the Beaver's pheasant metamorphosis option", 0); // TODO
+        addTask("Unlocked the Beaver's fox metamorphosis option", 0); // TODO
         // Unlocked the Heron's reduced metamorphosis cost
-        Task heronMetamorphosis = new Task.TaskBuilder()
-                .name("Unlocked the Heron's reduced metamorphosis cost")
-                .switchVar(true, 0)
-                .build();
+        addTask("Unlocked the Heron's reduced metamorphosis cost", 0);
         // Unlocked the pet phoenix's green metamorphosis option
-        Task phoenixGreen = new Task.TaskBuilder()
-                .name("Unlocked the pet phoenix's green metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
+        addTask("Unlocked the pet phoenix's green metamorphosis option", 0); // TODO
         // Unlocked the pet phoenix's blue metamorphosis option
-        Task phoenixBlue = new Task.TaskBuilder()
-                .name("Unlocked the pet phoenix's blue metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
+        addTask("Unlocked the pet phoenix's blue metamorphosis option", 0); // TODO
         // Unlocked the pet phoenix's white metamorphosis option
-        Task phoenixWhite = new Task.TaskBuilder()
-                .name("Unlocked the pet phoenix's white metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
+        addTask("Unlocked the pet phoenix's white metamorphosis option", 0); // TODO
         // Unlocked the pet phoenix's purple metamorphosis option
-        Task phoenixPurple = new Task.TaskBuilder()
-                .name("Unlocked the pet phoenix's purple metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
+        addTask("Unlocked the pet phoenix's purple metamorphosis option", 0); // TODO
 
-        Task squirrelDark = new Task.TaskBuilder()
-                .name("Unlocked the Giant Squirrel's dark metamorphosis option")
-                .switchVar(true, VarbitID.HALLOWED_SKILLPET_DARK_UNLOCKED)
-                .build();
-        Task squirrelBone = new Task.TaskBuilder()
-                .name("Unlocked the Giant Squirrel's bone metamorphosis option")
-                .switchVar(true, VarbitID.AGILITY_SKILLPET_BONE_UNLOCKED)
-                .build();
+        addTask("Unlocked the Giant Squirrel's dark metamorphosis option", VarbitID.HALLOWED_SKILLPET_DARK_UNLOCKED);
+        addTask("Unlocked the Giant Squirrel's bone metamorphosis option", VarbitID.AGILITY_SKILLPET_BONE_UNLOCKED);
 
         // Bossing pets
         // Unlocked Muphin's metamorphosis option
-        Task muphinMetamorphosis = new Task.TaskBuilder()
-                .name("Unlocked Muphin's metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
+        addTask("Unlocked Muphin's metamorphosis option", 0); // TODO
         // Unlocked Nid's metamorphosis option
-        Task nidMetamorphosis = new Task.TaskBuilder()
-                .name("Unlocked Nid's metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
+        addTask("Unlocked Nid's metamorphosis option", 0); // TODO
         // Unlocked the Little Nightmare's metamorphosis option
-        Task lilNightmareMetamorphosis = new Task.TaskBuilder()
-                .name("Unlocked the Little Nightmare's metamorphosis option")
-                .switchVar(true, VarbitID.NIGHTMARE_PET_PARASITE_UNLOCKED)
-                .build();
+        addTask("Unlocked the Little Nightmare's metamorphosis option", VarbitID.NIGHTMARE_PET_PARASITE_UNLOCKED);
         // Unlocked Sraracha's orange metamorphosis option
-        Task srarachaOrange = new Task.TaskBuilder()
-                .name("Unlocked Sraracha's orange metamorphosis option")
-                .switchVar(true, VarbitID.SARACHNISPET_ORANGE_TRANSMOG)
-                .build();
+        addTask("Unlocked Sraracha's orange metamorphosis option", VarbitID.SARACHNISPET_ORANGE_TRANSMOG);
         // Unlocked Sraracha's blue metamorphosis option
-        Task srarachaBlue = new Task.TaskBuilder()
-                .name("Unlocked Sraracha's blue metamorphosis option")
-                .switchVar(true, VarbitID.SARACHNISPET_BLUE_TRANSMOG)
-                .build();
+        addTask("Unlocked Sraracha's blue metamorphosis option", VarbitID.SARACHNISPET_BLUE_TRANSMOG);
 
         // Raids pets
-        Task olmletTransmog = new Task.TaskBuilder()
-                .name("Unlocked the Olmlet's metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
-        Task zikTransmog = new Task.TaskBuilder()
-                .name("Unlocked Lil' Zik's metamorphosis option")
-                .switchVar(true, 0) // TODO
-                .build();
+        addTask("Unlocked the Olmlet's metamorphosis option", 0); // TODO
+        addTask("Unlocked Lil' Zik's metamorphosis option", 0); // TODO
 
-        Task akkhito = new Task.TaskBuilder()
-                .name("Unlocked Tumeken's Guardian's Akkhito metamorphosis")
-                .switchVar(true, VarbitID.TOA_UNLOCKED_PET_MORPH_AKKHA)
-                .build();
-        Task babi = new Task.TaskBuilder()
-                .name("Unlocked Tumeken's Guardian's Babi metamorphosis")
-                .switchVar(true, VarbitID.TOA_UNLOCKED_PET_MORPH_BABA)
-                .build();
-        Task kephriti = new Task.TaskBuilder()
-                .name("Unlocked Tumeken's Guardian's Kephriti metamorphosis")
-                .switchVar(true, VarbitID.TOA_UNLOCKED_PET_MORPH_KEPHRI)
-                .build();
-        Task zebo = new Task.TaskBuilder()
-                .name("Unlocked Tumeken's Guardian's Zebo metamorphosis")
-                .switchVar(true, VarbitID.TOA_UNLOCKED_PET_MORPH_ZEBAK)
-                .build();
+        addTask("Unlocked Tumeken's Guardian's Akkhito metamorphosis", VarbitID.TOA_UNLOCKED_PET_MORPH_AKKHA);
+        addTask("Unlocked Tumeken's Guardian's Babi metamorphosis", VarbitID.TOA_UNLOCKED_PET_MORPH_BABA);
+        addTask("Unlocked Tumeken's Guardian's Kephriti metamorphosis", VarbitID.TOA_UNLOCKED_PET_MORPH_KEPHRI);
+        addTask("Unlocked Tumeken's Guardian's Zebo metamorphosis", VarbitID.TOA_UNLOCKED_PET_MORPH_ZEBAK);
         Task damagedGuardian = new Task.TaskBuilder()
                 .name("Unlocked Tumeken's Guardian's damaged metamorphosis")
                 .switchVar(true, VarbitID.TOA_UNLOCKED_PET_MORPH_DESTROYED_ELIDINIS)
@@ -156,24 +93,16 @@ public class PetTransmogsTaskList extends TaskList
 //        this.add(phoenixWhite);
 //        this.add(phoenixPurple);
 
-        this.add(squirrelDark);
-        this.add(squirrelBone);
 
 //        this.add(muphinMetamorphosis); //
 //        this.add(nidMetamorphosis); //
 
-        this.add(lilNightmareMetamorphosis);
-        this.add(srarachaOrange);
-        this.add(srarachaBlue);
 
 //        this.add(olmletTransmog); //
 //        this.add(zikTransmog); //
 
-        this.add(akkhito);
-        this.add(babi);
-        this.add(kephriti);
-        this.add(zebo);
         this.add(damagedGuardian);
     }
 
 }
+

@@ -42,11 +42,7 @@ public class TrappedSoulsTaskList extends TaskList
 	public void initTasks()
 	{
 		//Freed Mehhar from the High Priest of Scabaras's influence
-		Task freeMehhar = new Task.TaskBuilder()
-				.name("Freed Mehhar from the High Priest of Scabaras's influence")
-				.switchVar(true, VarbitID.BCS_MEHHAR_RETURNED)
-				.build();
-		add(freeMehhar);
+		addTask("Freed Mehhar from the High Priest of Scabaras's influence", VarbitID.BCS_MEHHAR_RETURNED);
 
 		Task freeKlenter = new Task.TaskBuilder()
 			.name("Free Klenter's soul from Amascut's torment")
@@ -54,10 +50,7 @@ public class TrappedSoulsTaskList extends TaskList
 			.eqVar(true, VarbitID.ICS_LITTLE_VAR, 26)
 			.build();
 
-		Task freeDroalak = new Task.TaskBuilder()
-			.name("Free Droalak's soul from his guilt of departure")
-			.switchVar(true, VarbitID.MAKINGHISTORY_DROALAK_PRES)
-			.build();
+		addTask("Free Droalak's soul from his guilt of departure", VarbitID.MAKINGHISTORY_DROALAK_PRES);
 
 		Task cureRazmireAndUlsquire = new Task.TaskBuilder()
 			.name("Free Razmire Keelgan and Ulsquire Shauncy from affliction")
@@ -66,7 +59,7 @@ public class TrappedSoulsTaskList extends TaskList
 			.build();
 
 		add(freeKlenter);
-		add(freeDroalak);
 		add(cureRazmireAndUlsquire);
 	}
 }
+

@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import com.andmcadams.taskchecker.Varbits;
+import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
 public class PetsTaskList extends TaskList
@@ -33,420 +34,158 @@ public class PetsTaskList extends TaskList
 
     public PetsTaskList()
     {
-        super("All pets");
+        super("All pets (loads are wrong! blame jagex)");
         initTasks();
     }
 
     public void initTasks()
     {
         //Unlocked the Pet Chaos Elemental
-        Task chaosElyPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Chaos Elemental")
-                .switchVar(true, VarbitID.PET_INSURANCE_CHAOSELEPET)
-                .build();
-        this.add(chaosElyPet);
+        addPet("Unlocked the Pet Chaos Elemental", VarbitID.PET_INSURANCE_CHAOSELEPET);
         //Unlocked the Pet Dagannoth Supreme
-        Task dagannothSupremePet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Dagannoth Supreme")
-                .switchVar(true, VarbitID.PET_INSURANCE_SUPREMEPET)
-                .build();
-        this.add(dagannothSupremePet);
+        addPet("Unlocked the Pet Dagannoth Supreme", VarbitID.PET_INSURANCE_SUPREMEPET);
         //Unlocked the Pet Dagannoth Prime
-        Task dagannothPrimePet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Dagannoth Prime")
-                .switchVar(true, VarbitID.PET_INSURANCE_PRIMEPET)
-                .build();
-        this.add(dagannothPrimePet);
+        addPet("Unlocked the Pet Dagannoth Prime", VarbitID.PET_INSURANCE_PRIMEPET);
         //Unlocked the Pet Dagannoth Rex
-        Task dagannothRexPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Dagannoth Rex")
-                .switchVar(true, VarbitID.PET_INSURANCE_REXPET)
-                .build();
-        this.add(dagannothRexPet);
+        addPet("Unlocked the Pet Dagannoth Rex", VarbitID.PET_INSURANCE_REXPET);
         //Unlocked the Pet Penance Queen
-        Task penanceQueenPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Penance Queen")
-                .switchVar(true, VarbitID.PET_INSURANCE_PENANCEPET)
-                .build();
-        this.add(penanceQueenPet);
+        addPet("Unlocked the Pet Penance Queen", VarbitID.PET_INSURANCE_PENANCEPET);
         //Unlocked the Pet Kree'arra
-        Task kreeArraPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Kree'arra")
-                .switchVar(true, VarbitID.PET_INSURANCE_ARMADYLPET)
-                .build();
-        this.add(kreeArraPet);
+        addPet("Unlocked the Pet Kree'arra", VarbitID.PET_INSURANCE_ARMADYLPET);
         //Unlocked the Pet General Graardor
-        Task generalGraardorPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet General Graardor")
-                .switchVar(true, VarbitID.PET_INSURANCE_BANDOSPET)
-                .build();
-        this.add(generalGraardorPet);
+        addPet("Unlocked the Pet General Graardor", VarbitID.PET_INSURANCE_BANDOSPET);
         //Unlocked the Pet Zilyana
-        Task commanderZilyanaPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Zilyana")
-                .switchVar(true, VarbitID.PET_INSURANCE_SARADOMINPET)
-                .build();
-        this.add(commanderZilyanaPet);
+        addPet("Unlocked the Pet Zilyana", VarbitID.PET_INSURANCE_SARADOMINPET);
         //Unlocked the Pet K'ril Tsutsaroth
-        Task krilTsutsarothPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet K'ril Tsutsaroth")
-                .switchVar(true, VarbitID.PET_INSURANCE_ZAMORAKPET)
-                .build();
-        this.add(krilTsutsarothPet);
+        addPet("Unlocked the Pet K'ril Tsutsaroth", VarbitID.PET_INSURANCE_ZAMORAKPET);
         //Unlocked the Baby Mole
-        Task molePet = new Task.TaskBuilder()
-                .name("Unlocked the Baby Mole")
-                .switchVar(true, VarbitID.PET_INSURANCE_MOLEPET)
-                .build();
-        this.add(molePet);
+        addPet("Unlocked the Baby Mole (doesn't work)", VarbitID.PET_INSURANCE_MOLEPET);
         //Unlocked the Prince Black Dragon
-        Task kingBlackDragonPet = new Task.TaskBuilder()
-                .name("Unlocked the Prince Black Dragon")
-                .switchVar(true, VarbitID.PET_INSURANCE_KBDPET)
-                .build();
-        this.add(kingBlackDragonPet);
+        addPet("Unlocked the Prince Black Dragon (doesn't work)", VarbitID.PET_INSURANCE_KBDPET);
         //Unlocked the Kalphite Princess
-        Task kalphiteQueenPet = new Task.TaskBuilder()
-                .name("Unlocked the Kalphite Princess")
-                .switchVar(true, VarbitID.PET_INSURANCE_KQPET)
-                .build();
-        this.add(kalphiteQueenPet);
+        addPet("Unlocked the Kalphite Princess", VarbitID.PET_INSURANCE_KQPET);
         //Unlocked the Pet Smoke Devil
-        Task smokeDevilPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Smoke Devil")
-                .switchVar(true, VarbitID.PET_INSURANCE_SMOKEPET)
-                .build();
-        this.add(smokeDevilPet);
+        addPet("Unlocked the Pet Smoke Devil", VarbitID.PET_INSURANCE_SMOKEPET);
         //Unlocked the Pet Kraken
-        Task krakenPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Kraken")
-                .switchVar(true, VarbitID.PET_INSURANCE_KRAKENPET)
-                .build();
-        this.add(krakenPet);
+        addPet("Unlocked the Pet Kraken", VarbitID.PET_INSURANCE_KRAKENPET);
         //Unlocked the Pet Dark Core
-        Task corporealBeastPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Dark Core")
-                .switchVar(true, VarbitID.PET_INSURANCE_COREPET)
-                .build();
-        this.add(corporealBeastPet);
+        addPet("Unlocked the Pet Dark Core", VarbitID.PET_INSURANCE_COREPET);
         //Unlocked the Pet Snakeling
-        Task zulrahPet = new Task.TaskBuilder()
-                .name("Unlocked the Pet Snakeling")
-                .switchVar(true, VarbitID.PET_INSURANCE_SNAKEPET)
-                .build();
-        this.add(zulrahPet);
+        addPet("Unlocked the Pet Snakeling", VarbitID.PET_INSURANCE_SNAKEPET);
         //Unlocked the Chompy Chick
-        Task chompyPet = new Task.TaskBuilder()
-                .name("Unlocked the Chompy Chick")
-                .switchVar(true, VarbitID.PET_INSURANCE_CHOMPYPET)
-                .build();
-        this.add(chompyPet);
+        addPet("Unlocked the Chompy Chick", VarbitID.PET_INSURANCE_CHOMPYPET);
         //Unlocked the Venenatis Spiderling
-        Task venenatisPet = new Task.TaskBuilder()
-                .name("Unlocked the Venenatis Spiderling")
-                .switchVar(true, VarbitID.PET_INSURANCE_VENENATISPET)
-                .build();
-        this.add(venenatisPet);
+        addPet("Unlocked the Venenatis Spiderling", VarbitID.PET_INSURANCE_VENENATISPET);
         //Unlocked the Callisto Cub
-        Task callistoPet = new Task.TaskBuilder()
-                .name("Unlocked the Callisto Cub")
-                .switchVar(true, VarbitID.PET_INSURANCE_CALLISTOPET)
-                .build();
-        this.add(callistoPet);
+        addPet("Unlocked the Callisto Cub", VarbitID.PET_INSURANCE_CALLISTOPET);
         //Unlocked Vet'ion Jr.
-        Task vetionPet = new Task.TaskBuilder()
-                .name("Unlocked Vet'ion Jr.")
-                .switchVar(true, VarbitID.PET_INSURANCE_VETIONPET)
-                .build();
-        this.add(vetionPet);
+        addPet("Unlocked Vet'ion Jr.", VarbitID.PET_INSURANCE_VETIONPET);
         //Unlocked Scorpia's Offspring
-        Task scorpiaPet = new Task.TaskBuilder()
-                .name("Unlocked Scorpia's Offspring")
-                .switchVar(true, VarbitID.PET_INSURANCE_SCORPIAPET)
-                .build();
-        this.add(scorpiaPet);
+        addPet("Unlocked Scorpia's Offspring", VarbitID.PET_INSURANCE_SCORPIAPET);
         //Unlocked TzRek-Jad
-        Task jadPet = new Task.TaskBuilder()
-                .name("Unlocked TzRek-Jad")
-                .switchVar(true, VarbitID.PET_INSURANCE_JADPET)
-                .build();
-        this.add(jadPet);
+        addPet("Unlocked TzRek-Jad", VarbitID.PET_INSURANCE_JADPET);
         //Unlocked the Hellpuppy
-        Task cerberusPet = new Task.TaskBuilder()
-                .name("Unlocked the Hellpuppy")
-                .switchVar(true, VarbitID.PET_INSURANCE_HELLPET)
-                .build();
-        this.add(cerberusPet);
+        addPet("Unlocked the Hellpuppy", VarbitID.PET_INSURANCE_HELLPET);
         //Unlocked the Abyssal Orphan
-        Task abyssalSirePet = new Task.TaskBuilder()
-                .name("Unlocked the Abyssal Orphan")
-                .switchVar(true, VarbitID.PET_INSURANCE_ABYSSALSIREPET)
-                .build();
-        this.add(abyssalSirePet);
+        addPet("Unlocked the Abyssal Orphan", VarbitID.PET_INSURANCE_ABYSSALSIREPET);
         //Unlocked the Heron
-        Task fishingPet = new Task.TaskBuilder()
-                .name("Unlocked the Heron")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKILLPETFISH)
-                .build();
-        this.add(fishingPet);
+        addPet("Unlocked the Heron", VarbitID.PET_INSURANCE_SKILLPETFISH);
         //Unlocked the Rock Golem
-        Task miningPet = new Task.TaskBuilder()
-                .name("Unlocked the Rock Golem")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKILLPETMINING)
-                .build();
-        this.add(miningPet);
+        addPet("Unlocked the Rock Golem", VarbitID.PET_INSURANCE_SKILLPETMINING);
         //Unlocked the Beaver
-        Task woodcuttingPet = new Task.TaskBuilder()
-                .name("Unlocked the Beaver")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKILLPETWC)
-                .build();
-        this.add(woodcuttingPet);
+        addPet("Unlocked the Beaver", VarbitID.PET_INSURANCE_SKILLPETWC);
         //Unlocked the Baby Chinchompa
-        Task chinchompaPet = new Task.TaskBuilder()
-                .name("Unlocked the Baby Chinchompa")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKILLPETHUNTER)
-                .build();
-        this.add(chinchompaPet);
+        addPet("Unlocked the Baby Chinchompa", VarbitID.PET_INSURANCE_SKILLPETHUNTER);
         //Unlocked the Bloodhound
-        Task bloodhoundPet = new Task.TaskBuilder()
-                .name("Unlocked the Bloodhound")
-                .switchVar(true, VarbitID.PET_INSURANCE_BLOODHOUND)
-                .build();
-        this.add(bloodhoundPet);
+        addPet("Unlocked the Bloodhound", VarbitID.PET_INSURANCE_BLOODHOUND);
         //Unlocked the Giant Squirrel
-        Task agilityPet = new Task.TaskBuilder()
-                .name("Unlocked the Giant Squirrel")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKILLPETAGILITY)
-                .build();
-        this.add(agilityPet);
+        addPet("Unlocked the Giant Squirrel", VarbitID.PET_INSURANCE_SKILLPETAGILITY);
         //Unlocked Tangleroot
-        Task farmingPet = new Task.TaskBuilder()
-                .name("Unlocked Tangleroot")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKILLPETFARMING)
-                .build();
-        this.add(farmingPet);
+        addPet("Unlocked Tangleroot", VarbitID.PET_INSURANCE_SKILLPETFARMING);
         //Unlocked the Rift Guardian
-        Task runecraftPet = new Task.TaskBuilder()
-                .name("Unlocked the Rift Guardian")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKILLPETRUNECRAFT)
-                .build();
-        this.add(runecraftPet);
+        addPet("Unlocked the Rift Guardian", VarbitID.PET_INSURANCE_SKILLPETRUNECRAFT);
         //Unlocked Rocky
-        Task thievingPet = new Task.TaskBuilder()
-                .name("Unlocked Rocky")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKILLPETTHIEVING)
-                .build();
-        this.add(thievingPet);
+        addPet("Unlocked Rocky", VarbitID.PET_INSURANCE_SKILLPETTHIEVING);
         //Unlocked the Phoenix
-        Task phoenixPet = new Task.TaskBuilder()
-                .name("Unlocked the Phoenix")
-                .switchVar(true, VarbitID.PET_INSURANCE_PHOENIXPET)
-                .build();
-        this.add(phoenixPet);
+        addPet("Unlocked the Phoenix", VarbitID.PET_INSURANCE_PHOENIXPET);
         //Unlocked the Olmlet
-        Task olmletPet = new Task.TaskBuilder()
-                .name("Unlocked the Olmlet")
-                .switchVar(true, VarbitID.PET_INSURANCE_OLMPET)
-                .build();
-        this.add(olmletPet);
+        addPet("Unlocked the Olmlet", VarbitID.PET_INSURANCE_OLMPET);
         //Unlocked Skotos
-        Task skotizoPet = new Task.TaskBuilder()
-                .name("Unlocked Skotos")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKOTUS)
-                .build();
-        this.add(skotizoPet);
+        addPet("Unlocked Skotos (doesn't work)", VarbitID.PET_INSURANCE_SKOTUS);
         //Unlocked Jal-Nib-Rek
-        Task infernoPet = new Task.TaskBuilder()
-                .name("Unlocked Jal-Nib-Rek")
-                .switchVar(true, VarbitID.PET_INSURANCE_INFERNO)
-                .build();
-        this.add(infernoPet);
+        addPet("Unlocked Jal-Nib-Rek", VarbitID.PET_INSURANCE_INFERNO);
         //Unlocked Herbi
-        Task herbiboarPet = new Task.TaskBuilder()
-                .name("Unlocked Herbi")
-                .switchVar(true, VarbitID.PET_INSURANCE_HERBIBOAR)
-                .build();
-        this.add(herbiboarPet);
+        addPet("Unlocked Herbi (doesn't work)", VarbitID.PET_INSURANCE_HERBIBOAR);
         //Unlocked Noon
-        Task grotesqueGuardiansPet = new Task.TaskBuilder()
-                .name("Unlocked Noon")
-                .switchVar(true, VarbitID.PET_INSURANCE_GARGBOSS)
-                .build();
-        this.add(grotesqueGuardiansPet);
+        addPet("Unlocked Noon (doesn't work)", VarbitID.PET_INSURANCE_GARGBOSS);
         //Unlocked Vorki
-        Task vorkathPet = new Task.TaskBuilder()
-                .name("Unlocked Vorki")
-                .switchVar(true, VarbitID.PET_INSURANCE_VORKI)
-                .build();
-        this.add(vorkathPet);
+        addPet("Unlocked Vorki", VarbitID.PET_INSURANCE_VORKI);
         //Unlocked Lil' Zik
-        Task verzikPet = new Task.TaskBuilder()
-                .name("Unlocked Lil' Zik")
-                .switchVar(true, VarbitID.PET_INSURANCE_VERZIK)
-                .build();
-        this.add(verzikPet);
+        addPet("Unlocked Lil' Zik", VarbitID.PET_INSURANCE_VERZIK);
         //Unlocked the Ikkle Hydra
-        Task hydraPet = new Task.TaskBuilder()
-                .name("Unlocked the Ikkle Hydra")
-                .switchVar(true, VarbitID.PET_INSURANCE_HYDRA)
-                .build();
-        this.add(hydraPet);
+        addPet("Unlocked the Ikkle Hydra", VarbitID.PET_INSURANCE_HYDRA);
         //Unlocked Sraracha
-        Task sarachnisPet = new Task.TaskBuilder()
-                .name("Unlocked Sraracha")
-                .switchVar(true, VarbitID.PET_INSURANCE_SARACHNIS)
-                .build();
-        this.add(sarachnisPet);
+        addPet("Unlocked Sraracha", VarbitID.PET_INSURANCE_SARACHNIS);
         //Unlocked Youngllef
-        Task gauntletPet = new Task.TaskBuilder()
-                .name("Unlocked Youngllef")
-                .switchVar(true, VarbitID.PET_INSURANCE_GAUNTLET)
-                .build();
-        this.add(gauntletPet);
+        addPet("Unlocked Youngllef", VarbitID.PET_INSURANCE_GAUNTLET);
         //Unlocked Smolcano
-        Task zalcanoPet = new Task.TaskBuilder()
-                .name("Unlocked Smolcano")
-                .switchVar(true, VarbitID.PET_INSURANCE_ZALCANO)
-                .build();
-        this.add(zalcanoPet);
+        addPet("Unlocked Smolcano", VarbitID.PET_INSURANCE_ZALCANO);
         //Unlocked the Little Nightmare
-        Task nightmarePet = new Task.TaskBuilder()
-                .name("Unlocked the Little Nightmare")
-                .switchVar(true, VarbitID.PET_INSURANCE_NIGHTMARE)
-                .build();
-        this.add(nightmarePet);
+        addPet("Unlocked the Little Nightmare", VarbitID.PET_INSURANCE_NIGHTMARE);
         //Unlocked the Lil' Creator
-        Task soulWarsPet = new Task.TaskBuilder()
-                .name("Unlocked the Lil' Creator")
-                .switchVar(true, VarbitID.PET_INSURANCE_SOULWARS)
-                .build();
-        this.add(soulWarsPet);
+        addPet("Unlocked the Lil' Creator (doesn't work)", VarbitID.PET_INSURANCE_SOULWARS);
         //Unlocked the Tiny Tempor
-        Task temporossPet = new Task.TaskBuilder()
-                .name("Unlocked the Tiny Tempor")
-                .switchVar(true, VarbitID.PET_INSURANCE_TEMPOROSS)
-                .build();
-        this.add(temporossPet);
+        addPet("Unlocked the Tiny Tempor", VarbitID.PET_INSURANCE_TEMPOROSS);
         //Unlocked the Nexling
-        Task nexPet = new Task.TaskBuilder()
-                .name("Unlocked the Nexling")
-                .switchVar(true, VarbitID.PET_INSURANCE_NEX)
-                .build();
-        this.add(nexPet);
+        addPet("Unlocked the Nexling", VarbitID.PET_INSURANCE_NEX);
         //Unlocked the Abyssal Protector
-        Task guardiansOfTheRiftPet = new Task.TaskBuilder()
-                .name("Unlocked the Abyssal Protector")
-                .switchVar(true, VarbitID.PET_INSURANCE_ABYSSAL)
-                .build();
-        this.add(guardiansOfTheRiftPet);
+        addPet("Unlocked the Abyssal Protector", VarbitID.PET_INSURANCE_ABYSSAL);
         //Unlocked Tumeken's Guardian
-        Task tombsOfAmascutPet = new Task.TaskBuilder()
-                .name("Unlocked Tumeken's Guardian")
-                .switchVar(true, VarbitID.PET_INSURANCE_WARDENS)
-                .build();
-        this.add(tombsOfAmascutPet);
+        addPet("Unlocked Tumeken's Guardian", VarbitID.PET_INSURANCE_WARDENS);
         //Unlocked Muphin
-        Task muspahPet = new Task.TaskBuilder()
-                .name("Unlocked Muphin")
-                .switchVar(true, VarbitID.PET_INSURANCE_MUSPAH)
-                .build();
-        this.add(muspahPet);
+        addPet("Unlocked Muphin (doesn't work)", VarbitID.PET_INSURANCE_MUSPAH);
         //Unlocked Baron
-        Task dukeSucellusPet = new Task.TaskBuilder()
-                .name("Unlocked Baron")
-                .switchVar(true, VarbitID.PET_INSURANCE_DUKE_SUCELLUS)
-                .build();
-        this.add(dukeSucellusPet);
+        addPet("Unlocked Baron", VarbitID.PET_INSURANCE_DUKE_SUCELLUS);
         //Unlocked Butch
-        Task vardorvisPet = new Task.TaskBuilder()
-                .name("Unlocked Butch")
-                .switchVar(true, VarbitID.PET_INSURANCE_VARDORVIS)
-                .build();
-        this.add(vardorvisPet);
+        addPet("Unlocked Butch", VarbitID.PET_INSURANCE_VARDORVIS);
         //Unlocked Lil'viathan
-        Task leviathanPet = new Task.TaskBuilder()
-                .name("Unlocked Lil'viathan")
-                .switchVar(true, VarbitID.PET_INSURANCE_LEVIATHAN)
-                .build();
-        this.add(leviathanPet);
+        addPet("Unlocked Lil'viathan", VarbitID.PET_INSURANCE_LEVIATHAN);
         //Unlocked Wisp
-        Task whispererPet = new Task.TaskBuilder()
-                .name("Unlocked Wisp")
-                .switchVar(true, VarbitID.PET_INSURANCE_WHISPERER)
-                .build();
-        this.add(whispererPet);
+        addPet("Unlocked Wisp", VarbitID.PET_INSURANCE_WHISPERER);
         //Unlocked Scurry
-        Task scurriusPet = new Task.TaskBuilder()
-                .name("Unlocked Scurry")
-                .switchVar(true, VarbitID.PET_INSURANCE_SCURRIUS)
-                .build();
-        this.add(scurriusPet);
+        addPet("Unlocked Scurry", VarbitID.PET_INSURANCE_SCURRIUS);
         //Unlocked Smol Heredit
-        Task solHereditPet = new Task.TaskBuilder()
-                .name("Unlocked Smol Heredit")
-                .switchVar(true, VarbitID.PET_INSURANCE_SOLHEREDIT)
-                .build();
-        this.add(solHereditPet);
+        addPet("Unlocked Smol Heredit", VarbitID.PET_INSURANCE_SOLHEREDIT);
         //Unlocked Quetzin
-        Task hunterRumourPet = new Task.TaskBuilder()
-                .name("Unlocked Quetzin")
-                .switchVar(true, VarbitID.PET_INSURANCE_QUETZAL)
-                .build();
-        this.add(hunterRumourPet);
+        addPet("Unlocked Quetzin", VarbitID.PET_INSURANCE_QUETZAL);
         //Unlocked Nid
-        Task araxxorPet = new Task.TaskBuilder()
-                .name("Unlocked Nid")
-                .switchVar(true, VarbitID.PET_INSURANCE_ARAXXOR)
-                .build();
-        this.add(araxxorPet);
+        addPet("Unlocked Nid", VarbitID.PET_INSURANCE_ARAXXOR);
         //Unlocked Moxi
-        Task amoxliatlPet = new Task.TaskBuilder()
-                .name("Unlocked Moxi")
-                .switchVar(true, VarbitID.PET_INSURANCE_AMOXLIATL)
-                .build();
-        this.add(amoxliatlPet);
+        addPet("Unlocked Moxi", VarbitID.PET_INSURANCE_AMOXLIATL);
         //Unlocked Huberte
-        Task hueycoatlPet = new Task.TaskBuilder()
-                .name("Unlocked Huberte")
-                .switchVar(true, VarbitID.PET_INSURANCE_HUEY)
-                .build();
-        this.add(hueycoatlPet);
+        addPet("Unlocked Huberte", VarbitID.PET_INSURANCE_HUEY);
         //Unlocked Bran
-        Task royalTitansPet = new Task.TaskBuilder()
-                .name("Unlocked Bran")
-                .switchVar(true, VarbitID.PET_INSURANCE_ROYALTITANS)
-                .build();
-        this.add(royalTitansPet);
+        addPet("Unlocked Bran", VarbitID.PET_INSURANCE_ROYALTITANS);
         //Unlocked Yami
-        Task yamaPet = new Task.TaskBuilder()
-                .name("Unlocked Yami (not added)")
-                .switchVar(true, 0) // TODO: does this not exist?
-                .build();
-        this.add(yamaPet);
+        addPet("Unlocked Yami (not added)", 0); // TODO: why does this not exist?
         //Unlocked Dom
-        Task doomPet = new Task.TaskBuilder()
-                .name("Unlocked Dom")
-                .switchVar(true, VarbitID.PET_INSURANCE_DOM)
-                .build();
-        this.add(doomPet);
+        addPet("Unlocked Dom", VarbitID.PET_INSURANCE_DOM);
         //Unlocked soup
-        Task sailingPet = new Task.TaskBuilder()
-                .name("Unlocked soup")
-                .switchVar(true, VarbitID.PET_INSURANCE_SKILLPETSAILING)
-                .build();
-        this.add(sailingPet);
+        addPet("Unlocked soup", VarbitID.PET_INSURANCE_SKILLPETSAILING);
         //Unlocked Gull
-        Task gryphonPet = new Task.TaskBuilder()
-                .name("Unlocked Gull")
-                .switchVar(true, VarbitID.PET_INSURANCE_GRYPHON)
-                .build();
-        this.add(gryphonPet);
+        addPet("Unlocked Gull", VarbitID.PET_INSURANCE_GRYPHON);
         //Unlocked Beef
-        Task cowbossPet = new Task.TaskBuilder()
-                .name("Unlocked Beef (not added)")
-                .switchVar(true, 0) // TODO: why tf does this not exist?
+        addPet("Unlocked Beef (not added)", 0); // TODO: Why does this not exist?
+    }
+
+    public void addPet(String taskName, int varbitID) {
+        Task task = new Task.TaskBuilder()
+                .name(taskName)
+                .switchVar(true, varbitID)
                 .build();
-        this.add(cowbossPet);
+        this.add(task);
     }
 
 }
+
+

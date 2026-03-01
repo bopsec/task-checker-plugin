@@ -40,99 +40,47 @@ public class SkillingPerksTaskList extends TaskList
 
     private void initTasks()
     {
-        Task minnows = new Task.TaskBuilder()
-                .name("Unlocked access to Kylie Minnow's fishing platform")
-                .eqVar(true, VarbitID.MINNOW_ACCESS, 2)
-                .build();
-        this.add(minnows);
+        addEqTask(true, "Unlocked access to Kylie Minnow's fishing platform", VarbitID.MINNOW_ACCESS, 2);
 
-        Task abyssalNeedles = new Task.TaskBuilder()
-                .name("Unlocked the ability to make abyssal needles")
-                .switchVar(true, VarbitID.GOTR_UNLOCKED_NEEDLE)
-                .build();
-        this.add(abyssalNeedles);
-        Task amuletOfTheEye = new Task.TaskBuilder()
-                .name("Unlocked the ability to reclaim the amulet of the Eye")
-                .switchVar(true, VarbitID.GOTR_AMULET_OF_THE_EYE_OBTAINED)
-                .build();
-        this.add(amuletOfTheEye);
-        Task lostBag = new Task.TaskBuilder()
-                .name("Unlocked the ability to reclaim the lost bag")
-                .switchVar(true, VarbitID.GOTR_BAG_OBTAINED)
-                .build();
-        this.add(lostBag);
+        addTask("Unlocked the ability to make abyssal needles", VarbitID.GOTR_UNLOCKED_NEEDLE);
+        addTask("Unlocked the ability to reclaim the amulet of the Eye", VarbitID.GOTR_AMULET_OF_THE_EYE_OBTAINED);
+        addTask("Unlocked the ability to reclaim the lost bag", VarbitID.GOTR_BAG_OBTAINED);
         //Unlocked the ring of the elements' previous teleport option
-        Task rotePrevious = new Task.TaskBuilder()
-                .name("Unlocked the ring of the elements' previous teleport option")
-                .geVar(true, VarbitID.RING_OF_ELEMENTS_LAST_DESTINATION, 1)
-                .build();
-        this.add(rotePrevious);
+        addGeTask(true, "Unlocked the ring of the elements' previous teleport option", VarbitID.RING_OF_ELEMENTS_LAST_DESTINATION, 1);
         //Unlocked Apprentice Tamara's quick-lock option
-        Task tamaraQuickLock = new Task.TaskBuilder()
-                .name("Unlocked Apprentice Tamara's quick-lock option")
-                .switchVar(true, VarbitID.GOTR_TAMARA_LOCK_OP) // TODO: Unchecked
-                .build();
-        this.add(tamaraQuickLock);
+        addTask("Unlocked Apprentice Tamara's quick-lock option", VarbitID.GOTR_TAMARA_LOCK_OP); // TODO: Unchecked
         //Unlocked Apprentice Cordelia's ability to repair pouches
-        Task cordeliaRepairUnlocked = new Task.TaskBuilder()
-                .name("Unlocked Apprentice Cordelia's ability to repair pouches")
-                .switchVar(true, VarbitID.GOTR_CORDELIA_REPAIR_POUCH)
-                .build();
-        this.add(cordeliaRepairUnlocked);
+        addTask("Unlocked Apprentice Cordelia's ability to repair pouches", VarbitID.GOTR_CORDELIA_REPAIR_POUCH);
 
         //Disabled torn perfected quetzal whistle blueprint drops
-        Task disabledTornPerfectedQuetzalWhistleBlueprint = new Task.TaskBuilder()
-                .name("Disabled torn perfected quetzal whistle blueprint drops")
-                .switchVar(true, 0) // TODO: not found
-                .build();
+        addTask("Disabled torn perfected quetzal whistle blueprint drops", 0); // TODO: not found
         //this.add(disabledTornPerfectedQuetzalWhistleBlueprint);
 
         //Claimed a free basic quetzal whistle blueprint
-        Task claimedFreeWhistle = new Task.TaskBuilder()
-                .name("Claimed a free basic quetzal whistle blueprint")
-                .switchVar(true, 0) // TODO: Not found
-                .build();
+        addTask("Claimed a free basic quetzal whistle blueprint", 0); // TODO: Not found
         //this.add(claimedFreeWhistle);
         //Unlocked the Hunter Guild teleport on a hunter/max cape
-        Task hunterGuildTeleport = new Task.TaskBuilder()
-                .name("Unlocked the Hunter Guild teleport on a hunter/max cape")
-                .switchVar(true, 0) // TODO: Not found
-                .build();
+        addTask("Unlocked the Hunter Guild teleport on a hunter/max cape", 0); // TODO: Not found
         //this.add(hunterGuildTeleport);
         //Unlocked the ability to reclaim Apatura's items
-        Task apaturasItems = new Task.TaskBuilder()
-                .name("Unlocked the ability to reclaim Apatura's items")
-                .switchVar(true, 0) // TODO: Not found
-                .build();
+        addTask("Unlocked the ability to reclaim Apatura's items", 0); // TODO: Not found
         //this.add(apaturasItems);
         //
         //Unlocked the forestry kit/basket's outfit storage ability
-        Task forestryKitBasketOutfit = new Task.TaskBuilder()
-                .name("Unlocked the forestry kit/basket's outfit storage ability")
-                .switchVar(true, 0) // TODO: Not found
-                .build();
+        addTask("Unlocked the forestry kit/basket's outfit storage ability", 0); // TODO: Not found
         //this.add(forestryKitBasketOutfit);
         //Unlocked the forestry kit/basket's cape storage ability
-        Task forestryKitBasketCape = new Task.TaskBuilder()
-                .name("Unlocked the forestry kit/basket's cape storage ability")
-                .switchVar(true, 0) // TODO: Not found
-                .build();
+        addTask("Unlocked the forestry kit/basket's cape storage ability", 0); // TODO: Not found
         //this.add(forestryKitBasketCape);
         //
         //Unlocked the ability to redecorate to the Hosidius house style
-        Task hosidiusHouseStyle = new Task.TaskBuilder()
-                .name("Unlocked the ability to redecorate to the Hosidius house style")
-                .switchVar(true, 0) // TODO: Not found
-                .build();
+        addTask("Unlocked the ability to redecorate to the Hosidius house style", 0); // TODO: Not found
         //this.add(hosidiusHouseStyle);
         //
         //Logged a fastest commission at the highest quality of 199
         // ?
         //Unlocked the ability to purchase colossal blades from Perdu
-        Task colossalBlade = new Task.TaskBuilder()
-                .name("Unlocked the ability to purchase colossal blades from Perdu")
-                .switchVar(true, 0) // TODO: Not found
-                .build();
+        addTask("Unlocked the ability to purchase colossal blades from Perdu", 0); // TODO: Not found
         //this.add(colossalBlade);
         //Unlocked the crucible's custom quantity option
         //Unlocked all 15 additional sword moulds
@@ -157,107 +105,50 @@ public class SkillingPerksTaskList extends TaskList
         this.add(giantsFoundryAllMoulds);
         //
         //Unlocked potion storage
-        Task potionStorage = new Task.TaskBuilder()
-                .name("Unlocked potion storage")
-                .switchVar(true, VarbitID.MM_POTION_STORAGE_UNLOCKED)
-                .build();
-        this.add(potionStorage);
+        addTask("Unlocked potion storage", VarbitID.MM_POTION_STORAGE_UNLOCKED);
         //
         //Unlocked the Camdozaal fishing buff
-        Task camdozaalFishingBuff = new Task.TaskBuilder()
-                .name("Unlocked the Camdozaal fishing buff")
-                .switchVar(true, VarbitID.CAMDOZAAL_FISH_CATCH_BUFF)
-                .build();
-        this.add(camdozaalFishingBuff);
+        addTask("Unlocked the Camdozaal fishing buff", VarbitID.CAMDOZAAL_FISH_CATCH_BUFF);
         //Unlocked the Camdozaal preparation buff
-        Task camdozaalPrepBuff = new Task.TaskBuilder()
-                .name("Unlocked the Camdozaal preparation buff")
-                .switchVar(true, VarbitID.CAMDOZAAL_FISH_PREP_BUFF)
-                .build();
-        this.add(camdozaalPrepBuff);
+        addTask("Unlocked the Camdozaal preparation buff", VarbitID.CAMDOZAAL_FISH_PREP_BUFF);
         //Unlocked the Camdozaal defence buff
-        Task camdozaalDefBuff = new Task.TaskBuilder()
-                .name("Unlocked the Camdozaal defence buff")
-                .switchVar(true, VarbitID.CAMDOZAAL_DEFENCE_BUFF)
-                .build();
-        this.add(camdozaalDefBuff);
+        addTask("Unlocked the Camdozaal defence buff", VarbitID.CAMDOZAAL_DEFENCE_BUFF);
         //Unlocked the Camdozaal mining buff
-        Task camdozaalMiningBuff = new Task.TaskBuilder()
-                .name("Unlocked the Camdozaal mining buff")
-                .switchVar(true, VarbitID.CAMDOZAAL_MINING_BUFF)
-                .build();
-        this.add(camdozaalMiningBuff);
+        addTask("Unlocked the Camdozaal mining buff", VarbitID.CAMDOZAAL_MINING_BUFF);
         //Unlocked the Camdozaal luck buff
-        Task camdozaalLuckBuff = new Task.TaskBuilder()
-                .name("Unlocked the Camdozaal luck buff")
-                .switchVar(true, VarbitID.CAMDOZAAL_REWARDS_BUFF)
-                .build();
-        this.add(camdozaalLuckBuff);
+        addTask("Unlocked the Camdozaal luck buff", VarbitID.CAMDOZAAL_REWARDS_BUFF);
         //
         //Unlocked access to Belona's amethyst cave
-        Task belonasAmethystCave = new Task.TaskBuilder()
-                .name("Unlocked access to Belona's amethyst cave")
-                .switchVar(true, 0) // TODO: Unfound
-                .build();
+        addTask("Unlocked access to Belona's amethyst cave", 0); // TODO: Unfound
         //this.add(belonasAmethystCave);
         //
         //Unlocked the ability to toggle the full spirit angler outfit
-        Task spiritAngler = new Task.TaskBuilder()
-                .name("Unlocked the ability to toggle the full spirit angler outfit")
-                .switchVar(true, 0) // TODO: Unfound
-                .build();
+        addTask("Unlocked the ability to toggle the full spirit angler outfit", 0); // TODO: Unfound
         //this.add(spiritAngler);
         //Listened to Captain Pudi's explanation of Tempoross
-        Task captainPudiExplanation = new Task.TaskBuilder()
-                .name("Unlocked the ability to toggle the full spirit angler outfit")
-                .switchVar(true, 0) // TODO: Unfound
-                .build();
+        addTask("Unlocked the ability to toggle the full spirit angler outfit", 0); // TODO: Unfound
         //this.add(captainPudiExplanation);
         //
         //Unlocked the large water container
-        Task largeWaterContainer = new Task.TaskBuilder()
-                .name("Unlocked the large water container")
-                .switchVar(true, VarbitID.FOSSIL_MINE_UNLOCKED_MOREWATER)
-                .build();
-        this.add(largeWaterContainer);
+        addTask("Unlocked the large water container", VarbitID.FOSSIL_MINE_UNLOCKED_MOREWATER);
         //Disabled the Fertile Soil's non-upgraded spell warning
-        Task fertileSoilWarningDisabled = new Task.TaskBuilder()
-                .name("Disabled the Fertile Soil's non-upgraded spell warning")
-                .switchVar(true, 0) // TODO: Unfound
-                .build();
+        addTask("Disabled the Fertile Soil's non-upgraded spell warning", 0); // TODO: Unfound
         //this.add(fertileSoilWarningDisabled);
 
         //Unlocked the ability to create swampbark armours
-        Task unlockedSwampbark = new Task.TaskBuilder()
-                .name("Unlocked the ability to create swampbark armours")
-                .switchVar(true, VarbitID.SHADES_SWAMP_UNLOCK)
-                .build();
-        this.add(unlockedSwampbark);
+        addTask("Unlocked the ability to create swampbark armours", VarbitID.SHADES_SWAMP_UNLOCK);
         //Unlocked the ability to create bloodbark armours
-        Task unlockedBloodbark = new Task.TaskBuilder()
-                .name("Unlocked the ability to create bloodbark armours")
-                .switchVar(true, VarbitID.SHADES_BLOOD_UNLOCK)
-                .build();
-        this.add(unlockedBloodbark);
+        addTask("Unlocked the ability to create bloodbark armours", VarbitID.SHADES_BLOOD_UNLOCK);
 
         //Unlocked Dusuri's trade option
-        Task unlockedDusuriTrade = new Task.TaskBuilder()
-                .name("Unlocked Dusuri's trade option")
-                .switchVar(true, VarbitID.STAR_TRADER_MET)
-                .build();
-        this.add(unlockedDusuriTrade);
+        addTask("Unlocked Dusuri's trade option", VarbitID.STAR_TRADER_MET);
         //
         //Unlocked the blood rift in the Abyss
-        Task unlockedBloodAbyss = new Task.TaskBuilder()
-            .name("Unlocked the blood rift in the Abyss")
-            .switchVar(true, 0) // TODO: Unfound
-            .build();
+        addTask("Unlocked the blood rift in the Abyss", 0); // TODO: Unfound
         //this.add(unlockedBloodAbyss);
         //Unlocked the soul rift in the Abyss
-        Task unlockedSoulAbyss = new Task.TaskBuilder()
-                .name("Unlocked the soul rift in the Abyss")
-                .switchVar(true, 0) // TODO: Unfound
-                .build();
+        addTask("Unlocked the soul rift in the Abyss", 0); // TODO: Unfound
         //this.add(unlockedSoulAbyss);
     }
 }
+

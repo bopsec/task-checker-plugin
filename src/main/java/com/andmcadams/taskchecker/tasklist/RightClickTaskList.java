@@ -42,75 +42,32 @@ public class RightClickTaskList extends TaskList
 	public void initTasks()
 	{
 		//Unlocked Rick's buy-crystals option
-		Task unlockedRickBuyCrystal = new Task.TaskBuilder()
-				.name("Unlocked Rick's buy-crystals option")
-				.switchVar(true, VarbitID.RICK_HAS_OPENED_SHOP)
-				.build();
-		this.add(unlockedRickBuyCrystal);
+		addTask("Unlocked Rick's buy-crystals option", VarbitID.RICK_HAS_OPENED_SHOP);
 
 		//Unlocked Historian Aldo's trade option
-		Task unlockedHistorianAldoTradeOption = new Task.TaskBuilder()
-				.name("Unlocked Historian Aldo's trade option")
-				.switchVar(true, VarbitID.RAT_BOSS_BIOLOGIST_DIALOG)
-				.build();
-		this.add(unlockedHistorianAldoTradeOption);
+		addTask("Unlocked Historian Aldo's trade option", VarbitID.RAT_BOSS_BIOLOGIST_DIALOG);
 
 		//TODO:Unlocked the Theatre of Blood chest's custom buy option couldn't find
 
-		Task unlockJarvaldTravel = new Task.TaskBuilder()
-			.name("Unlock Jarvald's travel option")
-			.switchVar(true, VarbitID.DAG_ISLAND_QUICK_TRAVEL)
-			.build();
+		addTask("Unlock Jarvald's travel option", VarbitID.DAG_ISLAND_QUICK_TRAVEL);
 
-		Task unlockMaryTan = new Task.TaskBuilder()
-			.name("Unlock Mary's trade option")
-			.switchVar(true, VarbitID.GA_MARY_DIALOGUE)
-			.build();
+		addTask("Unlock Mary's trade option", VarbitID.GA_MARY_DIALOGUE);
 
-		Task unlockIlfeenEnchant = new Task.TaskBuilder()
-			.name("Unlock Ilfeen's enchant option")
-			.switchVar(true, VarbitID.ILFEEN_PRIF)
-			.build();
+		addTask("Unlock Ilfeen's enchant option", VarbitID.ILFEEN_PRIF);
 
-		Task unlockConwennaAndReeseSing = new Task.TaskBuilder()
-			.name("Unlock Conwenna and Reese's sing option")
-			.switchVar(true, VarbitID.PRIF_LEARNT_CRYSTAL_SINGING)
-			.build();
+		addTask("Unlock Conwenna and Reese's sing option", VarbitID.PRIF_LEARNT_CRYSTAL_SINGING);
 
-		Task unlockNorannaConvertShards = new Task.TaskBuilder()
-			.name("Unlock Noranna Tytanin's convert-shards option")
-			.switchVar(true, VarbitID.DMINE_DAEYALT_CONVERTER_INTRO)
-			.build();
+		addTask("Unlock Noranna Tytanin's convert-shards option", VarbitID.DMINE_DAEYALT_CONVERTER_INTRO);
 
-		Task unlockMountainGuideTravel = new Task.TaskBuilder()
-			.name("Unlock the Mountain Guide's travel option")
-			.switchVar(true, VarbitID.RAIDS_GUIDE_TRAVEL_UNLOCK)
-			.build();
+		addTask("Unlock the Mountain Guide's travel option", VarbitID.RAIDS_GUIDE_TRAVEL_UNLOCK);
 
-		Task unlockCloisterBellQuickStart = new Task.TaskBuilder()
-			.name("Unlock the Cloister Bell's quick-start option")
-			.geVar(false, VarPlayerID.TOTAL_GARGBOSS_KILLS, 5)
-			.build();
+		addGeTask(false, "Unlock the Cloister Bell's quick-start option", VarPlayerID.TOTAL_GARGBOSS_KILLS, 5);
 
 
-		Task unlockJewelleryBoxLastTeleport = new Task.TaskBuilder()
-			.name("Unlock the Jewellery Box's previous teleport option")
-			.geVar(true, VarbitID.POH_JEWELLERYBOX_MULTI, 1)
-			.build();
+		addGeTask(true, "Unlock the Jewellery Box's previous teleport option", VarbitID.POH_JEWELLERYBOX_MULTI, 1);
 
-		Task unlockCharterShipLastDestination = new Task.TaskBuilder()
-			.name("Unlock the Charter Ship's previous destination option")
-			.geVar(true, VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1)
-			.build();
+		addGeTask(true, "Unlock the Charter Ship's previous destination option", VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1);
 
-		add(unlockJarvaldTravel);
-		add(unlockMaryTan);
-		add(unlockIlfeenEnchant);
-		add(unlockConwennaAndReeseSing);
-		add(unlockNorannaConvertShards);
-		add(unlockMountainGuideTravel);
-		add(unlockCloisterBellQuickStart);
-		add(unlockJewelleryBoxLastTeleport);
-		add(unlockCharterShipLastDestination);
 	}
 }
+

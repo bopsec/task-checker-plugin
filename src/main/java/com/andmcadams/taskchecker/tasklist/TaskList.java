@@ -47,4 +47,40 @@ public class TaskList
 		return tasks.add(task);
 	}
 
+	protected void addTask(String taskInfo, int varbitID)
+	{
+		Task task = new Task.TaskBuilder()
+			.name(taskInfo)
+			.switchVar(true, varbitID)
+			.build();
+		this.add(task);
+	}
+
+	protected void addEqTask(boolean isVarbit, String taskInfo, int varID, int value)
+	{
+		Task task = new Task.TaskBuilder()
+			.name(taskInfo)
+			.eqVar(isVarbit, varID, value)
+			.build();
+		this.add(task);
+	}
+
+	protected void addGeTask(boolean isVarbit, String taskInfo, int varID, int value)
+	{
+		Task task = new Task.TaskBuilder()
+			.name(taskInfo)
+			.geVar(isVarbit, varID, value)
+			.build();
+		this.add(task);
+	}
+
+	protected void addBitTask(boolean isVarbit, String taskInfo, int varID, int bitPosition)
+	{
+		Task task = new Task.TaskBuilder()
+			.name(taskInfo)
+			.bitVar(isVarbit, varID, bitPosition)
+			.build();
+		this.add(task);
+	}
+
 }

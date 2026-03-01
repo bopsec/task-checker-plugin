@@ -39,92 +39,29 @@ public class SpellbookTaskList extends TaskList
 
     public void initTasks()
     {
-        Task targetTeleportUnlocked = new Task.TaskBuilder()
-                .name("Unlocked Teleport to Target")
-                .switchVar(true, VarbitID.BOUNTY_TARGET_TELEPORT)
-                .build();
-        this.add(targetTeleportUnlocked);
-        Task ouraniaTeleportUnlocked = new Task.TaskBuilder()
-                .name("Unlocked Ourania Teleport")
-                .switchVar(true, VarbitID.RC_ZMI_LUNAR_SPELL)
-                .build();
-        this.add(ouraniaTeleportUnlocked);
-        Task deathChargeUpgrade = new Task.TaskBuilder()
-                .name("Unlocked the Death Charge upgrade")
-                .switchVar(true, VarbitID.DEATH_CHARGE_SCROLL_USED)
-                .build();
-        this.add(deathChargeUpgrade);
-        Task deadman24HomeTele = new Task.TaskBuilder()
-                .name("Unlocked the Home Teleport's Deadman 2024 animation option")
-                .switchVar(true, VarbitID.DEADMAN_2024_TELEPORT_UNLOCKED)
-                .build();
-        this.add(deadman24HomeTele);
-        Task deadman26HomeTele = new Task.TaskBuilder()
-                .name("Unlocked the Home Teleport's Deadman 2026 animation option")
-                .switchVar(true, VarbitID.DEADMAN_2026_TELEPORT_UNLOCKED)
-                .build();
-        this.add(deadman26HomeTele);
-        Task league1HomeTele = new Task.TaskBuilder()
-                .name("Unlocked the Home Teleport's League I animation option")
-                .switchVar(true, VarbitID.LEAGUE_TWISTED_TELEPORT_UNLOCKED)
-                .build();
-        this.add(league1HomeTele);
-        Task league2HomeTele = new Task.TaskBuilder()
-                .name("Unlocked the Home Teleport's League II animation option")
-                .switchVar(true, VarbitID.LEAGUE_TRAILBLAZER_TELEPORT_UNLOCKED)
-                .build();
-        this.add(league2HomeTele);
-        Task league3HomeTele = new Task.TaskBuilder()
-                .name("Unlocked the Home Teleport's League III animation option")
-                .switchVar(true, VarbitID.LEAGUE_3_TELEPORT_UNLOCKED)
-                .build();
-        this.add(league3HomeTele);
-        Task league4HomeTele = new Task.TaskBuilder()
-                .name("Unlocked the Home Teleport's League 4 animation option")
-                .switchVar(true, VarbitID.LEAGUE_4_HOME_TELEPORT_UNLOCKED)
-                .build();
-        this.add(league4HomeTele);
-        Task league5HomeTele = new Task.TaskBuilder()
-                .name("Unlocked the Home Teleport's League 5 animation option")
-                .switchVar(true, VarbitID.LEAGUE_5_HOME_TELEPORT_UNLOCKED)
-                .build();
-        this.add(league5HomeTele);
-        Task league4Alchemy = new Task.TaskBuilder()
-                .name("Unlocked the Alchemy's League IV animation option")
-                .switchVar(true, VarbitID.LEAGUE_4_HIGH_ALCH_ANIMATION_UNLOCKED)
-                .build();
-        this.add(league4Alchemy);
-        Task league4Vengeance = new Task.TaskBuilder()
-                .name("Unlocked the Vengeance's League IV animation option")
-                .switchVar(true, VarbitID.LEAGUE_4_VENGEANCE_ANIMATION_UNLOCKED)
-                .build();
-        this.add(league4Vengeance);
+        addTask("Unlocked Teleport to Target", VarbitID.BOUNTY_TARGET_TELEPORT);
+        addTask("Unlocked Ourania Teleport", VarbitID.RC_ZMI_LUNAR_SPELL);
+        addTask("Unlocked the Death Charge upgrade", VarbitID.DEATH_CHARGE_SCROLL_USED);
+        addTask("Unlocked the Home Teleport's Deadman 2024 animation option", VarbitID.DEADMAN_2024_TELEPORT_UNLOCKED);
+        addTask("Unlocked the Home Teleport's Deadman 2026 animation option", VarbitID.DEADMAN_2026_TELEPORT_UNLOCKED);
+        addTask("Unlocked the Home Teleport's League I animation option", VarbitID.LEAGUE_TWISTED_TELEPORT_UNLOCKED);
+        addTask("Unlocked the Home Teleport's League II animation option", VarbitID.LEAGUE_TRAILBLAZER_TELEPORT_UNLOCKED);
+        addTask("Unlocked the Home Teleport's League III animation option", VarbitID.LEAGUE_3_TELEPORT_UNLOCKED);
+        addTask("Unlocked the Home Teleport's League 4 animation option", VarbitID.LEAGUE_4_HOME_TELEPORT_UNLOCKED);
+        addTask("Unlocked the Home Teleport's League 5 animation option", VarbitID.LEAGUE_5_HOME_TELEPORT_UNLOCKED);
+        addTask("Unlocked the Alchemy's League IV animation option", VarbitID.LEAGUE_4_HIGH_ALCH_ANIMATION_UNLOCKED);
+        addTask("Unlocked the Vengeance's League IV animation option", VarbitID.LEAGUE_4_VENGEANCE_ANIMATION_UNLOCKED);
 
         //TODO:Unlocked the NPC Contact's League V animation option couldn't find these two
         //TODO:Unlocked the ability to select all characters via NPC Contact
 
-        Task selectedHomeTeleAnimation = new Task.TaskBuilder()
-                .name("Selected at least one Home Teleport animation option")
-                .geVar(true, VarbitID.HOME_TELEPORT_SELECTED, 1)
-                .build();
-        this.add(selectedHomeTeleAnimation);
+        addGeTask(true, "Selected at least one Home Teleport animation option", VarbitID.HOME_TELEPORT_SELECTED, 1);
 
-        Task selectedAlchemyAnimation = new Task.TaskBuilder()
-                .name("Selected at least one Alchemy animation option\t\t")
-                .geVar(false, VarPlayerID.ALCHEMY_ANIM_TOGGLES, 1)
-                .build();
-        this.add(selectedAlchemyAnimation);
+        addGeTask(false, "Selected at least one Alchemy animation option\t\t", VarPlayerID.ALCHEMY_ANIM_TOGGLES, 1);
 
-        Task selectedVengeanceAnimation = new Task.TaskBuilder()
-                .name("Selected at least one Vengeance animation option\t\t")
-                .geVar(false, VarPlayerID.VENGEANCE_ANIM_TOGGLES, 1)
-                .build();
-        this.add(selectedVengeanceAnimation);
+        addGeTask(false, "Selected at least one Vengeance animation option\t\t", VarPlayerID.VENGEANCE_ANIM_TOGGLES, 1);
 
-        Task selectedNpcContactAnimation = new Task.TaskBuilder()
-                .name("Selected at least one NPC Contact animation option\t\t")
-                .geVar(false, VarPlayerID.NPC_CONTACT_ANIM_TOGGLES, 1)
-                .build();
-        this.add(selectedNpcContactAnimation);
+        addGeTask(false, "Selected at least one NPC Contact animation option\t\t", VarPlayerID.NPC_CONTACT_ANIM_TOGGLES, 1);
     }
 }
+

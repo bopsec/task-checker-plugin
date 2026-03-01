@@ -40,23 +40,12 @@ public class HiddenShopsTaskList extends TaskList
 	public void initTasks()
 	{
 		//Unlocked Uglug Nar's shop, Uglug's stuffsies
-		Task unlockUglugNarShop = new Task.TaskBuilder()
-				.name("Unlocked Uglug Nar's shop, Uglug's stuffsies")
-				.switchVar(true, VarbitID.THZFE_SOLD_BALM)
-				.build();
-		add(unlockUglugNarShop);
+		addTask("Unlocked Uglug Nar's shop, Uglug's stuffsies", VarbitID.THZFE_SOLD_BALM);
 		//Unlocked the Dorgesh-Kaan market trading minigame
-		Task unlockDorgeshkaanMarketTradingMinigame = new Task.TaskBuilder()
-				.name("Unlocked the Dorgesh-Kaan market trading minigame")
-				.geVar(true, VarbitID.DORGESH_FOOD_MARKET_LAST_WORLD, 1) // TODO: Unsure on this one
-				.build();
-		add(unlockDorgeshkaanMarketTradingMinigame);
+		addGeTask(true, "Unlocked the Dorgesh-Kaan market trading minigame", VarbitID.DORGESH_FOOD_MARKET_LAST_WORLD, 1); // TODO: Unsure on this one
 
-		Task unlockValiggaShop = new Task.TaskBuilder()
-			.name("Unlock Vanligga Gastfrihet's shop, Contraband yak produce")
-			.eqVar(true, VarbitID.FRISD_PUB_FAVOURS, 2)
-			.build();
+		addEqTask(true, "Unlock Vanligga Gastfrihet's shop, Contraband yak produce", VarbitID.FRISD_PUB_FAVOURS, 2);
 
-		add(unlockValiggaShop);
 	}
 }
+

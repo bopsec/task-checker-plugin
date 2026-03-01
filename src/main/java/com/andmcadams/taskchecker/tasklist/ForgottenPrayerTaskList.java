@@ -39,41 +39,18 @@ public class ForgottenPrayerTaskList extends TaskList
 
 	public void initTasks()
 	{
-		Task avoidAbyssalDemonTeleports = new Task.TaskBuilder()
-				.name("Unlocked the ability to avoid teleport attacks")
-				.switchVar(true, VarbitID.BLIP_BLOCKING_SCROLL_USED)
-				.build();
-		this.add(avoidAbyssalDemonTeleports);
+		addTask("Unlocked the ability to avoid teleport attacks", VarbitID.BLIP_BLOCKING_SCROLL_USED);
 
-		Task unlockRigour = new Task.TaskBuilder()
-			.name("Unlock Rigour")
-			.switchVar(true, VarbitID.PRAYER_RIGOUR_UNLOCKED)
-			.build();
+		addTask("Unlock Rigour", VarbitID.PRAYER_RIGOUR_UNLOCKED);
 
-		Task unlockAugury = new Task.TaskBuilder()
-			.name("Unlock Augury")
-			.switchVar(true, VarbitID.PRAYER_AUGURY_UNLOCKED)
-			.build();
+		addTask("Unlock Augury", VarbitID.PRAYER_AUGURY_UNLOCKED);
 
-		Task unlockPreserve = new Task.TaskBuilder()
-			.name("Unlock Preserve")
-			.switchVar(true, VarbitID.PRAYER_PRESERVE_UNLOCKED)
-			.build();
+		addTask("Unlock Preserve", VarbitID.PRAYER_PRESERVE_UNLOCKED);
 
-		Task unlockDeadeye = new Task.TaskBuilder()
-				.name("Unlock Deadeye")
-				.switchVar(true, VarbitID.PRAYER_DEADEYE_UNLOCKED)
-				.build();
+		addTask("Unlock Deadeye", VarbitID.PRAYER_DEADEYE_UNLOCKED);
 
-		Task unlockMysticVigour = new Task.TaskBuilder()
-				.name("Unlock Mystic Vigour")
-				.switchVar(true, VarbitID.PRAYER_MYSTIC_VIGOUR_UNLOCKED)
-				.build();
+		addTask("Unlock Mystic Vigour", VarbitID.PRAYER_MYSTIC_VIGOUR_UNLOCKED);
 
-		this.add(unlockPreserve);
-		this.add(unlockRigour);
-		this.add(unlockAugury);
-		this.add(unlockDeadeye);
-		this.add(unlockMysticVigour);
 	}
 }
+

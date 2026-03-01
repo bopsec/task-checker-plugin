@@ -39,43 +39,14 @@ public class CombatAchievementsTaskList extends TaskList
     public void initTasks()
     {
         //Claimed all Combat Achievement rewards for every tier
-        Task casCompleted = new Task.TaskBuilder()
-                .name("Claimed all Combat Achievement rewards for every tier")
-                .eqVar(true, VarbitID.CA_TIER_STATUS_GRANDMASTER, 2)
-                .build();
-        //Revealed the previously completed tasks notification
-        Task easyLamp = new Task.TaskBuilder()
-                .name("Used the antique lamp (easy tier)")
-                .switchVar(true, VarbitID.CA_LAMP_CLAIMED_EASY)
-                .build();
-        Task mediumLamp = new Task.TaskBuilder()
-                .name("Used the antique lamp (medium tier)")
-                .switchVar(true, VarbitID.CA_LAMP_CLAIMED_MEDIUM)
-                .build();
-        Task hardLamp = new Task.TaskBuilder()
-                .name("Used the antique lamp (hard tier)")
-                .switchVar(true, VarbitID.CA_LAMP_CLAIMED_HARD)
-                .build();
-        Task eliteLamp = new Task.TaskBuilder()
-                .name("Used the antique lamp (elite tier)")
-                .switchVar(true, VarbitID.CA_LAMP_CLAIMED_ELITE)
-                .build();
-        Task masterLamp = new Task.TaskBuilder()
-                .name("Used the antique lamp (master tier)")
-                .switchVar(true, VarbitID.CA_LAMP_CLAIMED_MASTER)
-                .build();
-
-        Task grandmasterLamp = new Task.TaskBuilder()
-                .name("Used the antique lamp (grandmaster tier)")
-                .switchVar(true, VarbitID.CA_LAMP_CLAIMED_GRANDMASTER)
-                .build();
-
-        this.add(casCompleted);
-        this.add(easyLamp);
-        this.add(mediumLamp);
-        this.add(hardLamp);
-        this.add(eliteLamp);
-        this.add(masterLamp);
-        this.add(grandmasterLamp);
+        addEqTask(true, "Claimed all Combat Achievement rewards for every tier", VarbitID.CA_TIER_STATUS_GRANDMASTER, 2);
+        addTask("Used the antique lamp (easy tier)", VarbitID.CA_LAMP_CLAIMED_EASY);
+        addTask("Used the antique lamp (medium tier)",  VarbitID.CA_LAMP_CLAIMED_MEDIUM);
+        addTask("Used the antique lamp (hard tier)", VarbitID.CA_LAMP_CLAIMED_HARD);
+        addTask("Used the antique lamp (elite tier)", VarbitID.CA_LAMP_CLAIMED_ELITE);
+        addTask("Used the antique lamp (master tier)", VarbitID.CA_LAMP_CLAIMED_MASTER);
+        addTask("Used the antique lamp (grandmaster tier)", VarbitID.CA_LAMP_CLAIMED_GRANDMASTER);
     }
+
 }
+

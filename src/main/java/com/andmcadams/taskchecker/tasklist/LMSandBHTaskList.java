@@ -40,29 +40,13 @@ public class LMSandBHTaskList extends TaskList
 
     public void initTasks()
     {
-        Task goldenAGS = new Task.TaskBuilder()
-                .name("Unlocked the Golden Armadyl Special")
-                .geVar(true, VarbitID.BH_UNLOCKS_AGS_SPEC, 1)
-                .build();
-        this.add(goldenAGS);
+        addGeTask(true, "Unlocked the Golden Armadyl Special", VarbitID.BH_UNLOCKS_AGS_SPEC, 1);
         //Unlocked the Golden Bandos Special
-        Task goldenBGS = new Task.TaskBuilder()
-                .name("Unlocked the Golden Bandos Special")
-                .geVar(true, VarbitID.BH_UNLOCKS_BGS_SPEC, 1)
-                .build();
-        this.add(goldenBGS);
+        addGeTask(true, "Unlocked the Golden Bandos Special", VarbitID.BH_UNLOCKS_BGS_SPEC, 1);
         //Unlocked the Golden Saradomin Special
-        Task goldenSGS = new Task.TaskBuilder()
-                .name("Unlocked the Golden Saradomin Special")
-                .geVar(true, VarbitID.BH_UNLOCKS_SGS_SPEC, 1)
-                .build();
-        this.add(goldenSGS);
+        addGeTask(true, "Unlocked the Golden Saradomin Special", VarbitID.BH_UNLOCKS_SGS_SPEC, 1);
         //Unlocked the Golden Zamorak Special
-        Task goldenZGS = new Task.TaskBuilder()
-                .name("Unlocked the Golden Zamorak Special")
-                .geVar(true, VarbitID.BH_UNLOCKS_ZGS_SPEC, 1)
-                .build();
-        this.add(goldenZGS);
+        addGeTask(true, "Unlocked the Golden Zamorak Special", VarbitID.BH_UNLOCKS_ZGS_SPEC, 1);
         //
          //TODO: Couldn't find LMS wins varb/varp
         //Unlocked the ability to claim a victor's cape (1)
@@ -82,3 +66,4 @@ public class LMSandBHTaskList extends TaskList
         //Unlocked the ability to avoid teleport attacks
     }
 }
+

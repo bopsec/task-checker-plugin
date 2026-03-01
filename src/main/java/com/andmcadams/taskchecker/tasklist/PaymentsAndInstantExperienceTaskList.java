@@ -44,102 +44,47 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		//TODO:Claimed Castle Wars tickets from Lanthus maybe VarbitID.PVPA_OWED_JOIN_REFUND?
 		//TODO:Claimed blood runes from the Vyre well
 		//Claimed coins from Willow's bag
-		Task claimedWillowsCoins = new Task.TaskBuilder()
-				.name("Claimed coins from Willow's bag")
-				.switchVar(true, VarbitID.BIM_CLAIMED_REWARD) // Untested, but likely
-				.build();
-		this.add(claimedWillowsCoins);
+		addTask("Claimed coins from Willow's bag", VarbitID.BIM_CLAIMED_REWARD); // Untested, but likely
 		//TODO:Claimed coins from a Lovakengj minecart station conductor
 		//TODO:Claimed coins from Trossa
 		//Claimed XP from smithing a chromium ingot
-		Task unlockedChromiumSmithing = new Task.TaskBuilder()
-				.name("Claimed XP from smithing a chromium ingot")
-				.switchVar(true, VarbitID.CHROMIUM_CRAFTING_UNLOCKED)
-				.build();
-		this.add(unlockedChromiumSmithing);
+		addTask("Claimed XP from smithing a chromium ingot", VarbitID.CHROMIUM_CRAFTING_UNLOCKED);
 		//TODO:Claimed XP from smithing an emberlight
 		//TODO:Claimed XP from crafting a purging staff
 		//TODO:Claimed XP from fletching a scorching bow
 		//TODO:Claimed a clue scroll from a monkey from Ardougne Zoo
 		//TODO:Claimed a medium pouch from Archmage Sedridor
 		//Claimed a keris partisan from Maisa's tent
-		Task claimedKerisPartisan = new Task.TaskBuilder()
-				.name("Claimed a keris partisan from Maisa's tent")
-				.eqVar(true, VarbitID.BCS_OWED_PARTISAN, 0)
-				.build();
-		this.add(claimedKerisPartisan);
+		addEqTask(true, "Claimed a keris partisan from Maisa's tent", VarbitID.BCS_OWED_PARTISAN, 0);
 		//Claimed the circlet of water from the High Priest of Sophanem
-		Task claimedCircletOfWater = new Task.TaskBuilder()
-				.name("Claimed the circlet of water from the High Priest of Sophanem")
-				.eqVar(true, VarbitID.BCS_OWED_CIRCLET, 0)
-				.build();
-		this.add(claimedCircletOfWater);
+		addEqTask(true, "Claimed the circlet of water from the High Priest of Sophanem", VarbitID.BCS_OWED_CIRCLET, 0);
 		//TODO:Claimed an unholy mould from the Spirit of Scorpius
 		//TODO:Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu
 		//Claimed all 4 XP drops (or lamps) from Radimus Erkle
-		Task legendsQuestXpRewardsClaimed = new Task.TaskBuilder()
-				.name("Claimed all 4 XP drops (or lamps) from Radimus Erkle")
-				.eqVar(true, VarbitID.LEGENDS_BONUS_LAMPS, 4)
-				.build();
-		this.add(legendsQuestXpRewardsClaimed);
+		addEqTask(true, "Claimed all 4 XP drops (or lamps) from Radimus Erkle", VarbitID.LEGENDS_BONUS_LAMPS, 4);
 
 		//TODO:Claimed all 6 XP drops from Combat Training Camp dummies
 		//TODO:Claimed all 14 XP drops from Perdu
 		//TODO:Claimed all Adventure Paths task rewards and starter kits
 
-		Task observatoryQuestWineClaimed = new Task.TaskBuilder()
-			.name("Claim wine from the Observatory assistant")
-			.eqVar(false, VarPlayerID.ITGRONIGEN, 8)
-			.build();
+		addEqTask(false, "Claim wine from the Observatory assistant", VarPlayerID.ITGRONIGEN, 8);
 
-		Task cabinFeverRewardClaimed = new Task.TaskBuilder()
-			.name("Claim coins from Bill Teach")
-			.switchVar(true, VarbitID.FEVER_GIVEN_BOOK)
-			.build();
+		addTask("Claim coins from Bill Teach", VarbitID.FEVER_GIVEN_BOOK);
 
-		Task gettingAheadRewardClaimed = new Task.TaskBuilder()
-			.name("Claim coins from Gordon")
-			.switchVar(true, VarbitID.GA_REWARD)
-			.build();
+		addTask("Claim coins from Gordon", VarbitID.GA_REWARD);
 
-		Task queenOfThievesRewardClaimed = new Task.TaskBuilder()
-			.name("Claim coins from Lady Shauna Piscarillius")
-			.switchVar(true, VarbitID.PISCQUEST_REWARD)
-			.build();
+		addTask("Claim coins from Lady Shauna Piscarillius", VarbitID.PISCQUEST_REWARD);
 
-		Task monkeyMadnessIIRewardClaimed = new Task.TaskBuilder()
-			.name("Claim experience from Duke")
-			.geVar(true, Varbits.MONKEY_MADNESS_II_PROGRESS.getId(), 200)
-			.build();
+		addGeTask(true, "Claim experience from Duke", Varbits.MONKEY_MADNESS_II_PROGRESS.getId(), 200);
 
-		Task dragonSlayerIIRewardClaimed = new Task.TaskBuilder()
-			.name("Claim experience from Ellen")
-			.eqVar(true, VarbitID.DS2_COMBAT_TRAINING, 4)
-			.build();
+		addEqTask(true, "Claim experience from Ellen", VarbitID.DS2_COMBAT_TRAINING, 4);
 
-		Task misthalinMysteryRewardClaimed = new Task.TaskBuilder()
-			.name("Claim experience from Mandy")
-			.switchVar(true, VarbitID.MISTMYST_XPREWARD)
-			.build();
+		addTask("Claim experience from Mandy", VarbitID.MISTMYST_XPREWARD);
 
-		Task xMarksTheSpotClueScrollClaimed = new Task.TaskBuilder()
-			.name("Claim a clue scroll (beginner) from Veos")
-			.switchVar(true, VarbitID.CLUEQUEST_CLUE_REWARD)
-			.build();
+		addTask("Claim a clue scroll (beginner) from Veos", VarbitID.CLUEQUEST_CLUE_REWARD);
 
-		Task theFeudBeerClaimedFromAli = new Task.TaskBuilder()
-			.name("Claim a beer from Ali the Barman")
-			.eqVar(true, VarbitID.FEUD_REPORT_DRINK, 2)
-			.build();
+		addEqTask(true, "Claim a beer from Ali the Barman", VarbitID.FEUD_REPORT_DRINK, 2);
 
-		add(observatoryQuestWineClaimed);
-		add(cabinFeverRewardClaimed);
-		add(gettingAheadRewardClaimed);
-		add(queenOfThievesRewardClaimed);
-		add(monkeyMadnessIIRewardClaimed);
-		add(dragonSlayerIIRewardClaimed);
-		add(misthalinMysteryRewardClaimed);
-		add(xMarksTheSpotClueScrollClaimed);
-		add(theFeudBeerClaimedFromAli);
 	}
 }
+

@@ -45,49 +45,21 @@ public class UnplacedRandomTaskList extends TaskList
         //Logged at least 1 count of opening spoils of war
         //
         //Unlocked the effect of Ava's assembler in Castle Wars
-        Task cwAvasEffect = new Task.TaskBuilder()
-                .name("Unlocked the effect of Ava's assembler in Castle Wars")
-                .eqVar(true, VarbitID.CASTLEWARS_AVA_REWARD_TIER, 3)
-                .build();
-        this.add(cwAvasEffect);
+        addEqTask(true, "Unlocked the effect of Ava's assembler in Castle Wars", VarbitID.CASTLEWARS_AVA_REWARD_TIER, 3);
         //Unlocked the effect of Ava's assembler in Soul Wars
-        Task swAvasEffect = new Task.TaskBuilder()
-                .name("Unlocked the effect of Ava's assembler in Soul Wars")
-                .eqVar(true, VarbitID.SOUL_WARS_AVA_REWARD_TIER, 3)
-                .build();
-        this.add(swAvasEffect);
+        addEqTask(true, "Unlocked the effect of Ava's assembler in Soul Wars", VarbitID.SOUL_WARS_AVA_REWARD_TIER, 3);
         //Unlocked the effect of Ava's assembler on ranging/max capes
-        Task maxCapeAvasEffect = new Task.TaskBuilder()
-                .name("Unlocked the effect of Ava's assembler on ranging/max capes")
-                .switchVar(true, VarbitID.DS2_AMMO_COLLECTION)
-                .build();
-        this.add(maxCapeAvasEffect);
+        addTask("Unlocked the effect of Ava's assembler on ranging/max capes", VarbitID.DS2_AMMO_COLLECTION);
         //Unlocked the effect of Ava's assembler on Dizana's quiver
-        Task quiverAvasEffect = new Task.TaskBuilder()
-                .name("Unlocked the effect of Ava's assembler on Dizana's quiver")
-                .eqVar(true, VarbitID.DIZANAS_QUIVER_AMMO_SAVE, 3)
-                .build();
-        this.add(quiverAvasEffect);
+        addEqTask(true, "Unlocked the effect of Ava's assembler on Dizana's quiver", VarbitID.DIZANAS_QUIVER_AMMO_SAVE, 3);
         //
         //Unlocked access to the basement of the Warriors' Guild
-        Task warriorGuildBasement = new Task.TaskBuilder()
-                .name("Unlocked access to the basement of the Warriors' Guild")
-                .switchVar(true, VarbitID.WARGUILD_BASEMENT_ACCESS)
-                .build();
-        this.add(warriorGuildBasement);
+        addTask("Unlocked access to the basement of the Warriors' Guild", VarbitID.WARGUILD_BASEMENT_ACCESS);
         //
         //Unlocked all non-holiday music tracks
-        Task unlockedMusicCape = new Task.TaskBuilder()
-                .name("Unlocked all non-holiday music tracks")
-                .geVar(true, VarbitID.MUSIC_CAPE_STATUS, 1)
-                .build();
-        this.add(unlockedMusicCape);
+        addGeTask(true, "Unlocked all non-holiday music tracks", VarbitID.MUSIC_CAPE_STATUS, 1);
         //Unlocked the ability to toggle the music cape's trim
-        Task unlockedMusicCapeTrim = new Task.TaskBuilder()
-                .name("Unlocked the ability to toggle the music cape's trim")
-                .geVar(true, VarbitID.MUSIC_CAPE_STATUS, 2)
-                .build();
-        this.add(unlockedMusicCapeTrim);
+        addGeTask(true, "Unlocked the ability to toggle the music cape's trim", VarbitID.MUSIC_CAPE_STATUS, 2);
         //
         //Unlocked the ring of shadows' full potential
         Task unlockedRingOfShadowTeleports = new Task.TaskBuilder()
@@ -100,20 +72,12 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(unlockedRingOfShadowTeleports);
         //
         //Unlocked the ability to use Drakan's medallion's third teleport
-        Task unlockedSlepeTeleport = new Task.TaskBuilder()
-                .name("Unlocked the ability to use Drakan's medallion's third teleport")
-                .switchVar(true, VarbitID.SLEPE_TELEPORT_UNLOCKED)
-                .build();
-        this.add(unlockedSlepeTeleport);
+        addTask("Unlocked the ability to use Drakan's medallion's third teleport", VarbitID.SLEPE_TELEPORT_UNLOCKED);
         //
         //Unlocked the ability to use Xeric's talisman's fifth teleport TODO: Unfound
         //
         //Told Litara about what happened to Solztun TODO: Untested
-        Task toldLitaraAboutSolztun = new Task.TaskBuilder()
-                .name("Told Litara about what happened to Solztun")
-                .eqVar(true, VarbitID.SOS_BROTHER_FOUND, 2)
-                .build();
-        this.add(toldLitaraAboutSolztun);
+        addEqTask(true, "Told Litara about what happened to Solztun", VarbitID.SOS_BROTHER_FOUND, 2);
         //
         //Completed all 12 easy achievement diaries
         Task completedEasyDiaries = new Task.TaskBuilder()
@@ -203,41 +167,17 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(trimmedQuestCape);
         //
         //Built all 3 beginner STASH units (do not have to be filled)
-        Task allBeginnerStashUnits = new Task.TaskBuilder()
-                .name("Built all 3 beginner STASH units (do not have to be filled)")
-                .eqVar(true, VarbitID.HH_CONSTRUCTED_BEGINNER_ALL, 7)
-                .build();
-        this.add(allBeginnerStashUnits);
+        addEqTask(true, "Built all 3 beginner STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_BEGINNER_ALL, 7);
         //Built all 30 easy STASH units (do not have to be filled)
-        Task allEasyStashUnits = new Task.TaskBuilder()
-                .name("Built all 32 easy STASH units (do not have to be filled)")
-                .eqVar(true, VarbitID.HH_CONSTRUCTED_EASY_ALL, Integer.MAX_VALUE) // 2^32 - 1
-                .build();
-        this.add(allEasyStashUnits);
+        addEqTask(true, "Built all 32 easy STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_EASY_ALL, Integer.MAX_VALUE); // 2^32 - 1
         //Built all 25 medium STASH units (do not have to be filled)
-        Task allMediumStashUnits = new Task.TaskBuilder()
-                .name("Built all 25 medium STASH units (do not have to be filled)")
-                .eqVar(true, VarbitID.HH_CONSTRUCTED_MEDIUM_ALL, 33554431) // 2^25 - 1
-                .build();
-        this.add(allMediumStashUnits);
+        addEqTask(true, "Built all 25 medium STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_MEDIUM_ALL, 33554431); // 2^25 - 1
         //Built all 16 hard STASH units (do not have to be filled)
-        Task allHardStashUnits = new Task.TaskBuilder()
-                .name("Built all 16 hard STASH units (do not have to be filled)")
-                .eqVar(true, VarbitID.HH_CONSTRUCTED_HARD_ALL, 65535) // 2 ^ 16 - 1
-                .build();
-        this.add(allHardStashUnits);
+        addEqTask(true, "Built all 16 hard STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_HARD_ALL, 65535); // 2 ^ 16 - 1
         //Built all 19 elite STASH units (do not have to be filled)
-        Task allEliteStashUnits = new Task.TaskBuilder()
-                .name("Built all 19 elite STASH units (do not have to be filled)")
-                .eqVar(true, VarbitID.HH_CONSTRUCTED_ELITE_ALL, 524287) // 2^19 - 1
-                .build();
-        this.add(allEliteStashUnits);
+        addEqTask(true, "Built all 19 elite STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_ELITE_ALL, 524287); // 2^19 - 1
         //Built all 25 master STASH units (do not have to be filled)
-        Task allMasterStashUnits = new Task.TaskBuilder()
-                .name("Built all 25 master STASH units (do not have to be filled)")
-                .eqVar(true, VarbitID.HH_CONSTRUCTED_MASTER_ALL, 33554431) // 2^25 - 1
-                .build();
-        this.add(allMasterStashUnits);
+        addEqTask(true, "Built all 25 master STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_MASTER_ALL, 33554431); // 2^25 - 1
         //
         //Unlocked the ability to reclaim Crack the Clue III event items
         //Unlocked the ability to reclaim all 35 Birthday holiday items
@@ -250,55 +190,23 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the ability to reclaim the banana hat No varbit/varp
         //
         //Unlocked Guildmaster Jane's contracts completed option
-        Task unlockedFarmingGuildContractsOption = new Task.TaskBuilder()
-                .name("Unlocked Guildmaster Jane's contracts completed option")
-                .switchVar(true, VarbitID.FARMGUILD_CONTRACT_DISCUSSED) // TODO: Untested idk about this one
-                .build();
-        this.add(unlockedFarmingGuildContractsOption);
+        addTask("Unlocked Guildmaster Jane's contracts completed option", VarbitID.FARMGUILD_CONTRACT_DISCUSSED); // TODO: Untested idk about this one
 
         //Unlocked Simon Templeton's pyramid artefacts option
-        Task simonTempletonPyramidArtefacts = new Task.TaskBuilder()
-                .name("Unlocked Simon Templeton's pyramid artefacts option")
-                .switchVar(true, VarbitID.AGILITY_PYRAMID_SIMON_NAMED) // TODO: Untested
-                .build();
-        this.add(simonTempletonPyramidArtefacts);
+        addTask("Unlocked Simon Templeton's pyramid artefacts option", VarbitID.AGILITY_PYRAMID_SIMON_NAMED); // TODO: Untested
         //Unlocked Farmer Gricoller's visitors option
-        Task gricollerVisitorsOption = new Task.TaskBuilder()
-                .name("Unlocked Farmer Gricoller's visitors option")
-                .switchVar(true, VarbitID.DARKMEYER_VYRE_TITHE_DIALOGUE) // TODO: Untested
-                .build();
-        this.add(gricollerVisitorsOption);
+        addTask("Unlocked Farmer Gricoller's visitors option", VarbitID.DARKMEYER_VYRE_TITHE_DIALOGUE); // TODO: Untested
         //Unlocked Death's death Leagues IV animation option
-        Task leagues4DeathAnim = new Task.TaskBuilder()
-                .name("Unlocked Death's death Leagues IV animation option")
-                .switchVar(true, VarbitID.LEAGUE_4_DEATH_ANIMATION_UNLOCKED)
-                .build();
-        this.add(leagues4DeathAnim);
+        addTask("Unlocked Death's death Leagues IV animation option", VarbitID.LEAGUE_4_DEATH_ANIMATION_UNLOCKED);
         //Unlocked Death's death Leagues V animation option
-        Task leagues5DeathAnim = new Task.TaskBuilder()
-                .name("Unlocked Death's death Leagues V animation option")
-                .switchVar(true, VarbitID.LEAGUE_5_DEATH_ANIMATION_UNLOCKED)
-                .build();
-        this.add(leagues5DeathAnim);
+        addTask("Unlocked Death's death Leagues V animation option", VarbitID.LEAGUE_5_DEATH_ANIMATION_UNLOCKED);
         //Unlocked the candle seller's lantern making option
-        Task candleSellerLanternOption = new Task.TaskBuilder()
-                .name("Unlocked the candle seller's lantern making option")
-                .switchVar(true, VarbitID.SWAMP_CANDLE_GUY_CONVERSATION) // TODO: Think untested
-                .build();
-        this.add(candleSellerLanternOption);
+        addTask("Unlocked the candle seller's lantern making option", VarbitID.SWAMP_CANDLE_GUY_CONVERSATION); // TODO: Think untested
         //Unlocked the pharaoh's sceptre's Jaltevas teleport option
-        Task unlockedPharaohsSceptreJaltevas = new Task.TaskBuilder()
-                .name("Unlocked the pharaoh's sceptre's Jaltevas teleport option")
-                .switchVar(true, VarbitID.PHARAOHS_SCEPTRE_NECROPOLIS)
-                .build();
-        this.add(unlockedPharaohsSceptreJaltevas);
+        addTask("Unlocked the pharaoh's sceptre's Jaltevas teleport option", VarbitID.PHARAOHS_SCEPTRE_NECROPOLIS);
         //
         //Unlocked all 3 of Juna's story options
-        Task unlockedAll3JunaStories = new Task.TaskBuilder()
-                .name("Unlocked all 3 of Juna's story options")
-                .eqVar(true, VarbitID.TOG_JUNA_STORIES, 4)
-                .build();
-        this.add(unlockedAll3JunaStories);
+        addEqTask(true, "Unlocked all 3 of Juna's story options", VarbitID.TOG_JUNA_STORIES, 4);
         //Unlocked all 4 of Ali Morrisane workers' threatening option
         Task unlockedAllMorrisaneWorkersThreateningOption = new Task.TaskBuilder()
                 .name("Unlocked all 4 of Ali Morrisane workers' threatening option")
@@ -310,11 +218,7 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(unlockedAllMorrisaneWorkersThreateningOption);
 
         //Unlocked all 4 additional secret santa present colours
-        Task secretSantaPresentColours = new Task.TaskBuilder()
-                .name("Unlocked all 4 additional secret santa present colours")
-                .eqVar(true, VarbitID.XM21_REWARD_PRESENT, 4)
-                .build();
-        this.add(secretSantaPresentColours);
+        addEqTask(true, "Unlocked all 4 additional secret santa present colours", VarbitID.XM21_REWARD_PRESENT, 4);
         //Unlocked all 7 teleporters in the Lassar Undercity
         Task lassarTeleporters = new Task.TaskBuilder()
                 .name("Unlocked all 7 teleporters in the Lassar Undercity")
@@ -330,11 +234,7 @@ public class UnplacedRandomTaskList extends TaskList
 
 
         //Selected at least one death animation option
-        Task toggledDeathAnimation = new Task.TaskBuilder()
-                .name("Selected at least one death animation option")
-                .geVar(false, VarPlayerID.DEATH_ANIM_TOGGLES, 1)
-                .build();
-        this.add(toggledDeathAnimation);
+        addGeTask(false, "Selected at least one death animation option", VarPlayerID.DEATH_ANIM_TOGGLES, 1);
         //
         //Unlocked all 6 balloon transport system routes
         Task unlockedAllBallooonTransports = new Task.TaskBuilder()
@@ -380,55 +280,23 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(unlockedAllHolidayEmotes);
         //
         //Unlocked the ability to peek inside Callisto's Den
-        Task peekInsideCallistoDen = new Task.TaskBuilder()
-                .name("Unlocked the ability to peek inside Callisto's Den")
-                .geVar(false, VarPlayerID.TOTAL_CALLISTO_KILLS, 20)
-                .build();
-        this.add(peekInsideCallistoDen);
+        addGeTask(false, "Unlocked the ability to peek inside Callisto's Den", VarPlayerID.TOTAL_CALLISTO_KILLS, 20);
         //Unlocked the ability to peek inside Venenatis' Silk Chasm
-        Task peekInsideVenenatisChasm = new Task.TaskBuilder()
-                .name("Unlocked the ability to peek inside Venenatis' Silk Chasm")
-                .geVar(false, VarPlayerID.TOTAL_VENENATIS_KILLS, 20)
-                .build();
-        this.add(peekInsideVenenatisChasm);
+        addGeTask(false, "Unlocked the ability to peek inside Venenatis' Silk Chasm", VarPlayerID.TOTAL_VENENATIS_KILLS, 20);
         //Unlocked the ability to peek inside Vet'ion's Rest
-        Task peekInsideVetionRest = new Task.TaskBuilder()
-                .name("Unlocked the ability to peek inside Vet'ion's Rest")
-                .geVar(false, VarPlayerID.TOTAL_VETION_KILLS, 20)
-                .build();
-        this.add(peekInsideVetionRest);
+        addGeTask(false, "Unlocked the ability to peek inside Vet'ion's Rest", VarPlayerID.TOTAL_VETION_KILLS, 20);
         //Unlocked the ability to peek inside Artio's Hunter's End
-        Task peekInsideArtioEnd = new Task.TaskBuilder()
-                .name("Unlocked the ability to peek inside Artio's Hunter's End")
-                .geVar(false, VarPlayerID.TOTAL_ARTIO_KILLS, 20)
-                .build();
-        this.add(peekInsideArtioEnd);
+        addGeTask(false, "Unlocked the ability to peek inside Artio's Hunter's End", VarPlayerID.TOTAL_ARTIO_KILLS, 20);
         //Unlocked the ability to peek inside Spindel's Web Chasm
-        Task peekInsideSpindelChasm = new Task.TaskBuilder()
-                .name("Unlocked the ability to peek inside Spindel's Web Chasm")
-                .geVar(false, VarPlayerID.TOTAL_SPINDEL_KILLS, 20)
-                .build();
-        this.add(peekInsideSpindelChasm);
+        addGeTask(false, "Unlocked the ability to peek inside Spindel's Web Chasm", VarPlayerID.TOTAL_SPINDEL_KILLS, 20);
         //Unlocked the ability to peek inside Calvar'ion's Skeletal Tomb
-        Task peekInsideCalvarionTomb = new Task.TaskBuilder()
-                .name("Unlocked the ability to peek inside Calvar'ion's Skeletal Tomb")
-                .geVar(false, VarPlayerID.TOTAL_CALVARION_KILLS, 20)
-                .build();
-        this.add(peekInsideCalvarionTomb);
+        addGeTask(false, "Unlocked the ability to peek inside Calvar'ion's Skeletal Tomb", VarPlayerID.TOTAL_CALVARION_KILLS, 20);
         //
         //Unlocked the ability to respawn at Kourend Castle
-        Task unlockedKourendRespawn = new Task.TaskBuilder()
-                .name("Unlocked the ability to respawn at Kourend Castle")
-                .switchVar(true, VarbitID.AKD_ASTEROS_MET)
-                .build();
-        this.add(unlockedKourendRespawn);
+        addTask("Unlocked the ability to respawn at Kourend Castle", VarbitID.AKD_ASTEROS_MET);
 
         //Paid Krystilia for the ability to respawn at Edgeville
-        Task unlockedEdgeRespawn = new Task.TaskBuilder()
-                .name("Paid Krystilia for the ability to respawn at Edgeville")
-                .switchVar(true, VarbitID.EDGEVILLE_SPAWN_UNLOCKED)
-                .build();
-        this.add(unlockedEdgeRespawn);
+        addTask("Paid Krystilia for the ability to respawn at Edgeville", VarbitID.EDGEVILLE_SPAWN_UNLOCKED);
         //Paid Ferox for the ability to respawn at Ferox Enclave
         //Task unlockedFeroxRespawn = new Task.TaskBuilder()
         //        .name("Paid Ferox for the ability to respawn at Ferox Enclave")
@@ -437,47 +305,23 @@ public class UnplacedRandomTaskList extends TaskList
         //this.add(unlockedFeroxRespawn);
         //
         //Unlocked the ability to see the last item you smithed
-        Task lastSmithedItemSet = new Task.TaskBuilder()
-                .name("Unlocked the ability to see the last item you smithed")
-                .geVar(true, VarbitID.SMITHING_ITEM_LASTTYPE, 1)
-                .build();
-        this.add(lastSmithedItemSet);
+        addGeTask(true, "Unlocked the ability to see the last item you smithed", VarbitID.SMITHING_ITEM_LASTTYPE, 1);
         //Unlocked the ability to see the last gold item you crafted
-        Task lastCraftedGoldItemSet = new Task.TaskBuilder()
-                .name("Unlocked the ability to see the last gold item you crafted")
-                .geVar(true, VarbitID.CRAFTING_GOLD_ITEM_LASTTYPE, 1)
-                .build();
-        this.add(lastCraftedGoldItemSet);
+        addGeTask(true, "Unlocked the ability to see the last gold item you crafted", VarbitID.CRAFTING_GOLD_ITEM_LASTTYPE, 1);
         //Unlocked the ability to see the last silver item you crafted
-        Task lastCraftedSilverItemSet = new Task.TaskBuilder()
-                .name("Unlocked the ability to see the last silver item you crafted")
-                .geVar(true, VarbitID.CRAFTING_SILVER_ITEM_LASTTYPE, 1)
-                .build();
-        this.add(lastCraftedSilverItemSet);
+        addGeTask(true, "Unlocked the ability to see the last silver item you crafted", VarbitID.CRAFTING_SILVER_ITEM_LASTTYPE, 1);
         //
         //Unlocked the ability to reclaim the diamond speedrun trophy
-        Task unlockedDiamondSpeedrunTrophy = new Task.TaskBuilder()
-                .name("Unlocked the ability to reclaim the diamond speedrun trophy")
-                .switchVar(true, VarbitID.SPEEDRUNNING_DIAMOND_TROPHIES) // TODO: Does this just swap to 1 when you unlock trophy?
-                .build();
-        this.add(unlockedDiamondSpeedrunTrophy);
+        addTask("Unlocked the ability to reclaim the diamond speedrun trophy", VarbitID.SPEEDRUNNING_DIAMOND_TROPHIES); // TODO: Does this just swap to 1 when you unlock trophy?
         //Unlocked the ability to reclaim the tier 1 adventurer's outfit
         //Unlocked the ability to reclaim the tier 2 adventurer's outfit
         //Unlocked the ability to reclaim the tier 3 adventurer's outfit
         //Unlocked the ability to reclaim the giant stopwatch
         //Unlocked the Home Teleport's Speedy animation option
-        Task unlockedSpeedrunHomeTeleport = new Task.TaskBuilder()
-                .name("Unlocked the Home Teleport's Speedy animation option")
-                .switchVar(true, VarbitID.SPEEDRUNNING_TELEPORT_UNLOCKED)
-                .build();
-        this.add(unlockedSpeedrunHomeTeleport);
+        addTask("Unlocked the Home Teleport's Speedy animation option", VarbitID.SPEEDRUNNING_TELEPORT_UNLOCKED);
         //
         //Filled the word translations scroll with all 77 translations
-        Task filledWordTranslations = new Task.TaskBuilder()
-                .name("Filled the word translations scroll with all 77 translations")
-                .switchVar(true, VarbitID.TGOD_FULLY_TRANSLATED) // Unsure, but think it swaps to 1 when fully done
-                .build();
-        this.add(filledWordTranslations);
+        addTask("Filled the word translations scroll with all 77 translations", VarbitID.TGOD_FULLY_TRANSLATED); // Unsure, but think it swaps to 1 when fully done
         //Filled the travel log with all 53? fairy ring codes
         Task allFairyRingCodes = new Task.TaskBuilder()
                 .name("Filled the travel log with all 53 fairy ring codes")
@@ -552,85 +396,38 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the memories stored in the memoriam crystal (4)
         //
         //Unlocked the ability to create Neitiznot faceguards
-        Task unlockedNezzyFaceguard = new Task.TaskBuilder()
-                .name("Unlocked the ability to create Neitiznot faceguards")
-                .switchVar(true, VarbitID.VIKINGEXILE_HELM_UNLOCK)
-                .build();
-        this.add(unlockedNezzyFaceguard);
+        addTask("Unlocked the ability to create Neitiznot faceguards", VarbitID.VIKINGEXILE_HELM_UNLOCK);
         //Unlocked the ability to create super antifire potions
-        Task unlockedSuperAntifireCrafting = new Task.TaskBuilder()
-                .name("Unlocked the ability to create super antifire potions")
-                .switchVar(true, VarbitID.SUPER_ANTIFIRE_UNLOCKED)
-                .build();
-        this.add(unlockedSuperAntifireCrafting);
+        addTask("Unlocked the ability to create super antifire potions", VarbitID.SUPER_ANTIFIRE_UNLOCKED);
 
         //Unlocked the ability to create sextants and watches
         //Unlocked the ability to create ancient icons
-        Task unlockedAncientIcons = new Task.TaskBuilder()
-                .name("Unlocked the ability to create ancient icons")
-                .switchVar(true, VarbitID.DT2_PLAYER_LEARNED_ICON_FUSING)
-                .build();
-        this.add(unlockedAncientIcons);
+        addTask("Unlocked the ability to create ancient icons", VarbitID.DT2_PLAYER_LEARNED_ICON_FUSING);
         //Unlocked the ability to create tormented synapse weapons
-        Task unlockedAbilityToCreateSynapseWeapons = new Task.TaskBuilder()
-                .name("")
-                .switchVar(true, VarbitID.WGS_MESSAGE_READ) // ???
-                .build();
+        addTask("", VarbitID.WGS_MESSAGE_READ); // ???
         // TODO: Find the synapse weapons varbit
         //
         //Revealed the human translation of the Cosmic Being's name
         //Revealed the stranger's true appearance in the Canifis pub
         //Revealed the bank camel's name
-        Task bankCamelName = new Task.TaskBuilder()
-                .name("Revealed the bank camel's name")
-                .switchVar(true, VarbitID.TOA_CAMEL_NAME_LEARNED)
-                .build();
-        this.add(bankCamelName);
+        addTask("Revealed the bank camel's name", VarbitID.TOA_CAMEL_NAME_LEARNED);
         //
         //Used the blessed lamp from Brother Tranquility
-        Task brotherTranquilityUsedLamp = new Task.TaskBuilder()
-                .name("Used the blessed lamp from Brother Tranquility")
-                .switchVar(true, VarbitID.BRAIN_LAMP_USED)
-                .build();
-        this.add(brotherTranquilityUsedLamp);
+        addTask("Used the blessed lamp from Brother Tranquility", VarbitID.BRAIN_LAMP_USED);
 
         //Used the combat lamp from the High Priest
-        Task highPriestSophanemUsedLamp = new Task.TaskBuilder()
-                .name("Used the combat lamp from the High Priest")
-                .eqVar(true, VarbitID.CONTACT_USED_REWARD_LAMP, 2)
-                .build();
-        this.add(highPriestSophanemUsedLamp);
+        addEqTask(true, "Used the combat lamp from the High Priest", VarbitID.CONTACT_USED_REWARD_LAMP, 2);
         //Used the dreamy lamp from the Oneiromancer
-        Task oneiromancerUsedLamp = new Task.TaskBuilder()
-                .name("Used the dreamy lamp from the Oneiromancer")
-                .switchVar(true, VarbitID.DREAM_LAMPUSED)
-                .build();
-        this.add(oneiromancerUsedLamp);
+        addTask("Used the dreamy lamp from the Oneiromancer", VarbitID.DREAM_LAMPUSED);
         //Used the antique lamp from Maisa
-        Task maisaLampUsed = new Task.TaskBuilder()
-                .name("Used the antique lamp from Maisa")
-                .switchVar(true, VarbitID.ITT_USED_LAMP)
-                .build();
-        this.add(maisaLampUsed);
+        addTask("Used the antique lamp from Maisa", VarbitID.ITT_USED_LAMP);
         //Used the dusty lamp from the Strange Old Man
-        Task strangeOldManLampUsed = new Task.TaskBuilder()
-                .name("Used the dusty lamp from the Strange Old Man")
-                .switchVar(true, VarbitID.HFS_REWARD_LAMP)
-                .build();
-        this.add(strangeOldManLampUsed);
+        addTask("Used the dusty lamp from the Strange Old Man", VarbitID.HFS_REWARD_LAMP);
         //Used the crypt map from the Strange Old Man
-        Task strangeOldManCryptMapUsed = new Task.TaskBuilder()
-                .name("Used the crypt map from the Strange Old Man")
-                .switchVar(true, VarbitID.BARROWS_MAP) // TODO: Untested
-                .build();
-        this.add(strangeOldManCryptMapUsed);
+        addTask("Used the crypt map from the Strange Old Man", VarbitID.BARROWS_MAP); // TODO: Untested
 
         //Used both antique lamps from Commander Fullore
-        Task commanderFulloreLampsUsed = new Task.TaskBuilder()
-                .name("Used both antique lamps from Commander Fullore")
-                .switchVar(true, VarbitID.AKD_LAMP_REWARD) // TODO: Untested
-                .build();
-        this.add(commanderFulloreLampsUsed);
+        addTask("Used both antique lamps from Commander Fullore", VarbitID.AKD_LAMP_REWARD); // TODO: Untested
 
         //Used all 3 tomes of experience from Ivan Strom
         Task ivanStromUsedExpTomes = new Task.TaskBuilder()
@@ -642,17 +439,9 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(ivanStromUsedExpTomes);
         //Used all 3 ancient lamps from the Mysterious Bandit
-        Task mysteriousBanditLamps = new Task.TaskBuilder()
-                .name("Used all 3 ancient lamps from the Mysterious Bandit")
-                .switchVar(true, VarbitID.DT2_REWARD_LAMP)
-                .build();
-        this.add(mysteriousBanditLamps);
+        addTask("Used all 3 ancient lamps from the Mysterious Bandit", VarbitID.DT2_REWARD_LAMP);
         //Used all 3 antique lamps from Cabin Boy Herbert
-        Task cabinBoyHerbertLampsUsed = new Task.TaskBuilder()
-                .name("Used all 3 antique lamps from Cabin Boy Herbert")
-                .switchVar(true, VarbitID.CLUEQUEST_LAMP_REWARD)
-                .build();
-        this.add(cabinBoyHerbertLampsUsed);
+        addTask("Used all 3 antique lamps from Cabin Boy Herbert", VarbitID.CLUEQUEST_LAMP_REWARD);
         //Used all 4 antique lamps from the Mysterious Stranger
         Task tobQuestLampsUsed = new Task.TaskBuilder()
                 .name("Used all 4 antique lamps from the Mysterious Stranger")
@@ -697,23 +486,11 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(filledHallowedTome);
         //Obtained Atlax's diary
-        Task obtainedAtlaxDiary = new Task.TaskBuilder()
-                .name("Obtained Atlax's diary")
-                .switchVar(true, VarbitID.GOTR_BOOK_OBTAINED)
-                .build();
-        this.add(obtainedAtlaxDiary);
+        addTask("Obtained Atlax's diary", VarbitID.GOTR_BOOK_OBTAINED);
         //Obtained the Overseer's book
-        Task obtainedOverseersBook = new Task.TaskBuilder()
-                .name("Obtained the Overseer's book")
-                .eqVar(true, VarbitID.ABYSSALSIRE_LORE, 5) // TODO: Untested, seems kinda random
-                .build();
-        this.add(obtainedOverseersBook);
+        addEqTask(true, "Obtained the Overseer's book", VarbitID.ABYSSALSIRE_LORE, 5); // TODO: Untested, seems kinda random
         //Obtained the Mount Karuulm diary
-        Task obtainedMountKaruulmDiary = new Task.TaskBuilder()
-                .name("Obtained the Mount Karuulm diary")
-                .switchVar(true, VarbitID.KARUULM_NOTES_BOOK)
-                .build();
-        this.add(obtainedMountKaruulmDiary);
+        addTask("Obtained the Mount Karuulm diary", VarbitID.KARUULM_NOTES_BOOK);
         //Obtained both Shades of Mort'ton texts
         Task obtainedShadesOfMorttonTexts = new Task.TaskBuilder()
                 .name("Obtained both Shades of Mort'ton texts")
@@ -729,21 +506,13 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(obtainedDs2Texts);
         //Obtained all 6 Uhld adventurer texts from the Myths' Guild
-        Task obtainedAllUhldAdventurerTextsMythsGuild = new Task.TaskBuilder()
-                .name("Obtained all 6 Uhld adventurer texts from the Myths' Guild")
-                .switchVar(true, VarbitID.DS2_GUILD_BOOKS) // TODO: Unchecked?
-                .build();
-        this.add(obtainedAllUhldAdventurerTextsMythsGuild);
+        addTask("Obtained all 6 Uhld adventurer texts from the Myths' Guild", VarbitID.DS2_GUILD_BOOKS); // TODO: Unchecked?
         //Obtained all 6 grand bookshelf texts from the Theatre of Blood
         //Obtained all 7 boss texts from the Chambers of Xeric
         //Obtained all 7 desert god texts from the Tombs of Amascut
         //Obtained all 7 farming patch texts from the Farming Guild
         //Obtained all 16 elven texts from the Prifddinas Grand Library
-        Task prifElvenTexts = new Task.TaskBuilder()
-                .name("Obtained all 16 elven texts from the Prifddinas Grand Library")
-                .switchVar(true, VarbitID.PRIF_BOOKS) // TODO: Unchecked
-                .build();
-        this.add(prifElvenTexts);
+        addTask("Obtained all 16 elven texts from the Prifddinas Grand Library", VarbitID.PRIF_BOOKS); // TODO: Unchecked
         //Obtained all 93 miscellaneous texts (2 are obtained by default) couldn't find
         //
         //Unlocked the big bass fishing trophy option
@@ -763,11 +532,7 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked all 5 additional ornate combat dummy options
         //
         //Paid Ceto for free entry to the drift net fishing area
-        Task permDriftNetAccess = new Task.TaskBuilder()
-                .name("Paid Ceto for free entry to the drift net fishing area")
-                .switchVar(true, VarbitID.FOSSIL_DRIFTNET_UNLIMITEDACCESS)
-                .build();
-        this.add(permDriftNetAccess);
+        addTask("Paid Ceto for free entry to the drift net fishing area", VarbitID.FOSSIL_DRIFTNET_UNLIMITEDACCESS);
         //Unlocked all 4 Mycelium Transportation System locations unfound
         //Claimed all 3 XP rewards from the information clerk
         Task claimedAll3MuseumXpRewards = new Task.TaskBuilder()
@@ -778,11 +543,7 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(claimedAll3MuseumXpRewards);
         //Claimed XP from Orlando Smith
-        Task claimedOrlandoSmithXp = new Task.TaskBuilder()
-                .name("Claimed XP from Orlando Smith")
-                .switchVar(true, VarbitID.VM_NATHIS_REWARD_GIVEN) // why tf is he nathis
-                .build();
-        this.add(claimedOrlandoSmithXp);
+        addTask("Claimed XP from Orlando Smith", VarbitID.VM_NATHIS_REWARD_GIVEN); // why tf is he nathis
         //Claimed fossils from Peter after completing the notice board
         Task claimedFossilsAfterCompletingFossilBoard = new Task.TaskBuilder()
                 .name("Claimed fossils from Peter after completing the notice board")
@@ -793,27 +554,15 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(claimedFossilsAfterCompletingFossilBoard);
         //Maxed the Museum Kudos counter with 235 Kudos
-        Task maxedMuseumKudosCounter = new Task.TaskBuilder()
-                .name("Maxed the Museum Kudos counter with 243 Kudos")
-                .geVar(true, VarbitID.VM_KUDOS, 243)
-                .build();
-        this.add(maxedMuseumKudosCounter);
+        addGeTask(true, "Maxed the Museum Kudos counter with 243 Kudos", VarbitID.VM_KUDOS, 243);
         //
         //Unlocked the Expert Dragon Archer title couldn't find it, can just kill one to check for varb changes?
         // could not find this one, maybe it +1s when we reach a new rank?
         //Logged a personal best at Tears of Guthix
-        Task loggedATearsOfGuthixPb = new Task.TaskBuilder()
-                .name("Logged a personal best at Tears of Guthix")
-                .geVar(true, VarbitID.TOG_MAX_TEARS_COLLECTED, 1)
-                .build();
-        this.add(loggedATearsOfGuthixPb);
+        addGeTask(true, "Logged a personal best at Tears of Guthix", VarbitID.TOG_MAX_TEARS_COLLECTED, 1);
 
         //Listened to Ru Merald's Gem Crab intro
-        Task ruMeraldCrabIntro = new Task.TaskBuilder()
-                .name("Listened to Ru Merald's Gem Crab intro")
-                .switchVar(true, VarbitID.GEMSTONE_CRAB_INTRO)
-                .build();
-        this.add(ruMeraldCrabIntro);
+        addTask("Listened to Ru Merald's Gem Crab intro", VarbitID.GEMSTONE_CRAB_INTRO);
         //Logged at least 1 gp of destroyed loot keys via the Loot Chest
         //Logged at least 1 gp of redeemed loot keys via the Loot Chest
         //Logged at least 1 lap of the sledding course
@@ -845,3 +594,4 @@ public class UnplacedRandomTaskList extends TaskList
 
     }
 }
+

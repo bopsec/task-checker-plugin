@@ -40,36 +40,16 @@ public class InvisibleTaskList extends TaskList
 	public void initTasks()
 	{
 
-		Task ancientLetter = new Task.TaskBuilder()
-			.name("Loot the Ancient letter from the Forsaken Tower")
-			.switchVar(true, VarbitID.LOVAQUEST_HIDDEN_NOTE)
-			.build();
+		addTask("Loot the Ancient letter from the Forsaken Tower", VarbitID.LOVAQUEST_HIDDEN_NOTE);
 
-		Task tattyNote = new Task.TaskBuilder()
-			.name("Loot the Tatty note from the bed in the Kebos Lowlands")
-			.switchVar(true, VarbitID.KEBOS_SHACK_NOTE)
-			.build();
+		addTask("Loot the Tatty note from the bed in the Kebos Lowlands", VarbitID.KEBOS_SHACK_NOTE);
 
-		Task pickpocketTeddy = new Task.TaskBuilder()
-			.name("Pickpocket Teddy from the female student in the Digsite")
-			.switchVar(true, VarbitID.ITDIGSITETEDDY)
-			.build();
+		addTask("Pickpocket Teddy from the female student in the Digsite", VarbitID.ITDIGSITETEDDY);
 
 		// Note that this doesn't actually change dialogue as far as I can tell.
-		Task askBlackKnightFortressGuardAboutUniform = new Task.TaskBuilder()
-			.name("Ask a Fortress guard about their uniform outside the Black Knights' Fortress")
-			.switchVar(true, VarbitID.SPY_ARMOUR_HINT)
-			.build();
+		addTask("Ask a Fortress guard about their uniform outside the Black Knights' Fortress", VarbitID.SPY_ARMOUR_HINT);
 
-		Task exitThroughSecretExit = new Task.TaskBuilder()
-			.name("Exit through the Troll Stronghold's secret exit")
-			.switchVar(true, VarbitID.TROLL_OPENED_BACK_EXIT)
-			.build();
+		addTask("Exit through the Troll Stronghold's secret exit", VarbitID.TROLL_OPENED_BACK_EXIT);
 
-		add(ancientLetter);
-		add(tattyNote);
-		add(pickpocketTeddy);
-		add(askBlackKnightFortressGuardAboutUniform);
-		add(exitThroughSecretExit);
 	}
 }

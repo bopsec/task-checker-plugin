@@ -41,374 +41,158 @@ public class UniqueDialoguePathsTaskList extends TaskList
 
 	public void initTasks()
 	{
-
 		//Unlocked the ability to equip comp ogre bows
-		Task unlockedCompOgreBows = new Task.TaskBuilder()
-				.name("Unlocked the ability to equip comp ogre bows")
-				.switchVar(true, VarbitID.THZFE_MAKECOMPOZOGREBOW)
-				.build();
-		this.add(unlockedCompOgreBows);
+		addTask("Unlocked the ability to equip comp ogre bows", VarbitID.THZFE_MAKECOMPOZOGREBOW);
 		//Unlocked the ability to recharge the pharaoh's sceptre
-		Task rechargePharaohsSceptre = new Task.TaskBuilder()
-				.name("Unlocked the ability to recharge the pharaoh's sceptre")
-				.switchVar(true, VarbitID.PHARAOHS_SCEPTRE_MUMMY_MET) // TODO: Untested
-				.build();
-		//this.add(rechargePharaohsSceptre)
+		addTask("Unlocked the ability to recharge the pharaoh's sceptre", VarbitID.PHARAOHS_SCEPTRE_MUMMY_MET);
 		//Unlocked the ability to offer Viero extra redberry antelopes
-		Task vieroRedberryAntelopes = new Task.TaskBuilder()
-				.name("Unlocked the ability to offer Viero extra redberry antelopes")
-				.eqVar(true, VarbitID.HUEY_FOOD_ERRAND_STATE, 3)
-				.build();
-		this.add(vieroRedberryAntelopes);
+		addEqTask(true, "Unlocked the ability to offer Viero extra redberry antelopes", VarbitID.HUEY_FOOD_ERRAND_STATE, 3);
 
 		//Unlocked the ability to recolour weapons with Nigel
-		Task nigelWeapons2024 = new Task.TaskBuilder()
-				.name("Unlocked the ability to recolour 2024 weapons with Nigel")
-				.switchVar(true, VarbitID.DEADMAN_2024_WEAPON_ORNAMENT_UNLOCKED)
-				.build();
-		this.add(nigelWeapons2024);
+		addTask("Unlocked the ability to recolour 2024 weapons with Nigel", VarbitID.DEADMAN_2024_WEAPON_ORNAMENT_UNLOCKED);
 
-		Task nigelCapes2024 = new Task.TaskBuilder()
-				.name("Unlocked the ability to recolour capes with Nigel")
-				.switchVar(true, VarbitID.DEADMAN_2024_CAPE_ORNAMENT_UNLOCKED)
-				.build();
-		this.add(nigelCapes2024);
+		addTask("Unlocked the ability to recolour capes with Nigel", VarbitID.DEADMAN_2024_CAPE_ORNAMENT_UNLOCKED);
 
-		Task deadmanAnnihilationPohUnlocked = new Task.TaskBuilder()
-				.name("Unlocked the deadman annihilation house theme")
-				.switchVar(true, VarbitID.DEADMAN_2026_POH_ORNAMENT_UNLOCKED)
-				.build();
-		this.add(deadmanAnnihilationPohUnlocked);
+		addTask("Unlocked the deadman annihilation house theme", VarbitID.DEADMAN_2026_POH_ORNAMENT_UNLOCKED);
 
-		Task deadmanAnnihilationWeapon = new Task.TaskBuilder()
-				.name("Unlocked the deadman annihilation weapon themes")
-				.switchVar(true, VarbitID.DEADMAN_2026_WEAPON_ORNAMENT_UNLOCKED)
-				.build();
-		this.add(deadmanAnnihilationWeapon);
+		addTask("Unlocked the deadman annihilation weapon themes", VarbitID.DEADMAN_2026_WEAPON_ORNAMENT_UNLOCKED);
 
 		//Unlocked the ability to trade giantsoul amulets
-		Task giantsoulAmuletTrade = new Task.TaskBuilder()
-				.name("Unlocked the ability to trade giantsoul amulets")
-				.switchVar(true, 0) // TODO: Unfound
-				.build();
-		//this.add(giantsoulAmuletTrade);
+		//addTask("Unlocked the ability to trade giantsoul amulets", 0); // TODO: Unfound
 
 		//Paid Atlas for at least 2 training sessions
-		Task atlasTwoOrMoreSessions = new Task.TaskBuilder()
-				.name("Paid Atlas for at least 2 training sessions")
-				.geVar(true, VarbitID.BIM_WORKOUT_COUNTER, 2) // idk kinda untested
-				.build();
-		this.add(atlasTwoOrMoreSessions);
+		addGeTask(true, "Paid Atlas for at least 2 training sessions", VarbitID.BIM_WORKOUT_COUNTER, 2); // TODO: Unsure
 
 		//Paid Madam Sikaro to make the voidwaker
-		Task sikaroMadeVoidwaker = new Task.TaskBuilder()
-				.name("Paid Madam Sikaro to make the voidwaker")
-				.switchVar(true, VarbitID.WBR_ASSEMBLED_VOIDWAKER)
-				.build();
-		this.add(sikaroMadeVoidwaker);
+		addTask("Paid Madam Sikaro to make the voidwaker", VarbitID.WBR_ASSEMBLED_VOIDWAKER);
 
 		//Listened to Selim explain Osman's absence
-		Task selimExplanation = new Task.TaskBuilder()
-				.name("Listened to Selim explain Osman's absence")
-				.switchVar(true, VarbitID.BCS_MET_SELIM) // TODO: Untested
-				.build();
-		this.add(selimExplanation);
+		addTask("Listened to Selim explain Osman's absence", VarbitID.BCS_MET_SELIM); // TODO: Untested
 
 		//Listened to Raqueel introduce herself and Gem
-		Task raqueelIntroduction = new Task.TaskBuilder()
-				.name("Listened to Raqueel introduce herself and Gem")
-				.switchVar(true, 0) // TODO: Unfound
-				.build();
-		//this.add(raqueelIntroduction);
+		//addTask("Listened to Raqueel introduce herself and Gem", 0); // TODO: Unfound
 
 		//Listened to Tarik's request for pyramid loot
-		Task tarikLootRequest = new Task.TaskBuilder()
-				.name("Listened to Tarik's request for pyramid loot")
-				.switchVar(true, VarbitID.TARIK_MET)
-				.build();
-		this.add(tarikLootRequest);
+		addTask("Listened to Tarik's request for pyramid loot", VarbitID.TARIK_MET);
 
 		//Listened to Al the Camel's confession of love for Ellie
-		Task camelLoveConfession = new Task.TaskBuilder()
-				.name("Listened to Al the Camel's confession of love for Ellie")
-				.switchVar(true, VarbitID.AL_CAMEL_ADVICEGIVEN)
-				.build();
-		this.add(camelLoveConfession);
+		addTask("Listened to Al the Camel's confession of love for Ellie", VarbitID.AL_CAMEL_ADVICEGIVEN);
 
 		//Listened to Death's tutorial after dying a dangerous death
-		Task deathTutorial = new Task.TaskBuilder()
-				.name("Listened to Death's tutorial after dying a dangerous death")
-				.switchVar(true, 0) // TODO: Unfound
-				.build();
-		//this.add(deathTutorial);
+		//addTask("Listened to Death's tutorial after dying a dangerous death", 0); // TODO: Unfound
 
 		//Listened to Nathifa's gratitude
-		Task nathifasGratitude = new Task.TaskBuilder()
-				.name("Listened to Nathifa's gratitude")
-				.switchVar(true, VarbitID.CONTACT_MET_BAKER)
-				.build();
-		this.add(nathifasGratitude);
+		addTask("Listened to Nathifa's gratitude", VarbitID.CONTACT_MET_BAKER);
 
 		//Listened to Ali the Tea Seller's introduction
-		Task aliTeaSellerIntro = new Task.TaskBuilder()
-				.name("Listened to Ali the Tea Seller's introduction")
-				.switchVar(true, VarbitID.OASIS_TEA_SELLER_MET)
-				.build();
-		this.add(aliTeaSellerIntro);
+		addTask("Listened to Ali the Tea Seller's introduction", VarbitID.OASIS_TEA_SELLER_MET);
 
 		//Listened to Cassim's introduction
-		Task cassimIntroduction = new Task.TaskBuilder()
-				.name("Listened to Cassim's introduction")
-				.switchVar(true, VarbitID.OASIS_MAGE_MET)
-				.build();
-		this.add(cassimIntroduction);
+		addTask("Listened to Cassim's introduction", VarbitID.OASIS_MAGE_MET);
 
 		//Listened to Morgiana's introduction
-		Task morgianaIntroduction = new Task.TaskBuilder()
-				.name("Listened to Morgiana's introduction")
-				.switchVar(true, VarbitID.OASIS_KNIGHT_MET)
-				.build();
-		this.add(morgianaIntroduction);
+		addTask("Listened to Morgiana's introduction", VarbitID.OASIS_KNIGHT_MET);
 
 		//Listened to Hagus' gratitude for supporting the cause
-		Task hagus1000Wraths = new Task.TaskBuilder()
-				.name("Listened to Hagus' gratitude for supporting the cause")
-				.switchVar(true, 0) // TODO: Unfound
-				.build();
-		//this.add(hagus1000Wraths);
+		//addTask("Listened to Hagus' gratitude for supporting the cause", 0); // TODO: Unfound
 		//Listened to Marcellus give permission to use his farming patch
-		Task marcellusFarmingPermission = new Task.TaskBuilder()
-				.name("Listened to Marcellus give permission to use his farming patch")
-				.switchVar(true, VarbitID.FROG_QUEST_PATCH_UNLOCKED)
-				.build();
-		this.add(marcellusFarmingPermission);
+		addTask("Listened to Marcellus give permission to use his farming patch", VarbitID.FROG_QUEST_PATCH_UNLOCKED);
 
 		//Listened to Sir Tiffy Cashien's news from Akrisae
-		Task sirTiffyAkrisaeNews = new Task.TaskBuilder()
-				.name("Listened to Sir Tiffy Cashien's news from Akrisae")
-				.switchVar(true, VarbitID.WGS_TIFFY_CHAT) // TODO: Unfound, this is not it
-				.build();
-		//this.add(sirTiffyAkrisaeNews);
+		//addTask("Listened to Sir Tiffy Cashien's news from Akrisae", VarbitID.WGS_TIFFY_CHAT); // TODO: Unfound, current is wrong
 
 		//Listened to Gloria talk about Grand Champion rank
-		Task gloriaGrandChampionTalk = new Task.TaskBuilder()
-				.name("Listened to Gloria talk about Grand Champion rank")
-				.switchVar(true, VarbitID.COLOSSEUM_GLORIA_MET) // TODO: Untested
-				.build();
-		this.add(gloriaGrandChampionTalk);
+		addTask("Listened to Gloria talk about Grand Champion rank", VarbitID.COLOSSEUM_GLORIA_MET); // TODO: Untested
 
 		//Listened to Harminia farming patch protection offer
-		Task harminiaFarmingPatchProtection = new Task.TaskBuilder()
-				.name("Listened to Harminia farming patch protection offer")
-				.switchVar(true, VarbitID.COLOSSEUM_HERB_PATCH_CHAT)
-				.build();
-		this.add(harminiaFarmingPatchProtection);
+		addTask("Listened to Harminia farming patch protection offer", VarbitID.COLOSSEUM_HERB_PATCH_CHAT);
 
 		//Listened to Overseer Khougo interrogation about Mistrock
-		Task khougoMistrockInterrogation = new Task.TaskBuilder()
-				.name("Listened to Overseer Khougo interrogation about Mistrock")
-				.eqVar(true, VarbitID.VARLAMORE_MISTROCK_OVERSEER, 3)
-				.build();
-		this.add(khougoMistrockInterrogation);
+		addEqTask(true, "Listened to Overseer Khougo interrogation about Mistrock", VarbitID.VARLAMORE_MISTROCK_OVERSEER, 3);
 
 		//Listened to your spirit tree's rotation complaints
-		Task spiritTreeRotationComplaints = new Task.TaskBuilder()
-				.name("Listened to your spirit tree's rotation complaints")
-				.switchVar(true, VarbitID.POH_SPIRIT_TREE_UPROOTED)
-				.build();
-		this.add(spiritTreeRotationComplaints);
+		addTask("Listened to your spirit tree's rotation complaints", VarbitID.POH_SPIRIT_TREE_UPROOTED);
 
 		//Listened to Taala's Hueycoatl introduction
-		Task taalaIntroduction = new Task.TaskBuilder()
-				.name("Listened to Taala's Hueycoatl introduction")
-				.switchVar(true, VarbitID.HUEY_INTRO)
-				.build();
-		this.add(taalaIntroduction);
+		addTask("Listened to Taala's Hueycoatl introduction", VarbitID.HUEY_INTRO);
 
 		//Listened to Izel introduce Hugh
-		Task izelIntroduction = new Task.TaskBuilder()
-				.name("Listened to Izel's Hugh introduction")
-				.switchVar(true, VarbitID.VARLAMORE_IZEL_MET)
-				.build();
-		this.add(izelIntroduction);
+		addTask("Listened to Izel's Hugh introduction", VarbitID.VARLAMORE_IZEL_MET);
 
 		//Listened to Mage of Zamorak's incantation description
-		Task mageOfZammyIncantationDescription = new Task.TaskBuilder()
-				.name("Listened to Mage of Zamorak's incantation description")
-				.switchVar(true, VarbitID.TOTE_RECEIVED_INCANTATION_BEFORE) // TODO: Untested
-				.build();
-		//this.add(mageOfZammyIncantationDescription);
+		addTask("Listened to Mage of Zamorak's incantation description", VarbitID.TOTE_RECEIVED_INCANTATION_BEFORE); // TODO: Untested
 
 		//Listened to a Street urchin's admiration for gladiators
-		Task streetUrchinGladiatorAdmiration = new Task.TaskBuilder()
-				.name("Listened to a Street urchin's admiration for gladiators")
-				.switchVar(true, VarbitID.VARLAMORE_THIEVING_HOUSE_URCHIN_GLORY_MENTIONED)
-				.build();
-		this.add(streetUrchinGladiatorAdmiration);
+		addTask("Listened to a Street urchin's admiration for gladiators", VarbitID.VARLAMORE_THIEVING_HOUSE_URCHIN_GLORY_MENTIONED);
 
 		//Listened to the Windbreaker worker's Darkfrost introduction
-		Task windbreakerDarkfrostIntroduction = new Task.TaskBuilder()
-				.name("Listened to the Windbreaker worker's Darkfrost introduction")
-				.switchVar(true, VarbitID.HUEY_MET_DWARF_WORKER)
-				.build();
-		this.add(windbreakerDarkfrostIntroduction);
+		addTask("Listened to the Windbreaker worker's Darkfrost introduction", VarbitID.HUEY_MET_DWARF_WORKER);
 
 		//Listened to the natural historians' introductions
-		Task naturalHistorianIntroduction = new Task.TaskBuilder()
-				.name("Listened to the natural historians' introductions")
-				.switchVar(true, 0) // TODO: Unfound, probably VM_something
-				.build();
-		// this.add(naturalHistorianIntroduction);
+		//addTask("Listened to the natural historians' introductions", 0); // TODO: Unfound, probably VM_something
 
 		//Listened to the Mage of Zamorak's Z.M.I. origin story
-		Task mageOfZammyZMIIntroduction = new Task.TaskBuilder()
-				.name("Listened to the Mage of Zamorak's Z.M.I. origin story")
-				.switchVar(true, VarbitID.TOTE_ZMI_POSTQUEST_CHAT) // TODO: Untested
-				.build();
-		this.add(mageOfZammyZMIIntroduction);
+		addTask("Listened to the Mage of Zamorak's Z.M.I. origin story", VarbitID.TOTE_ZMI_POSTQUEST_CHAT); // TODO: Untested
 
 		//Listened to the Mysterious Bandit's introduction
-		Task mysteriousBanditIntro = new Task.TaskBuilder()
-				.name("Listened to the Mysterious Bandit's introduction")
-				.switchVar(true, VarbitID.DT2_RING_NPC_MET_BEFORE) // TODO: Untested
-				.build();
-		this.add(mysteriousBanditIntro);
+		addTask("Listened to the Mysterious Bandit's introduction", VarbitID.DT2_RING_NPC_MET_BEFORE); // TODO: Untested
 
 		//Listened to the Wise Old Man's bank robbery confession
-		Task wiseOldManConfession = new Task.TaskBuilder()
-				.name("Listened to the Wise Old Man's bank robbery confession")
-				.eqVar(true, VarbitID.WOM_BANKJOB, 3) // TODO: Untested
-				.build();
-		this.add(wiseOldManConfession);
+		addEqTask(true, "Listened to the Wise Old Man's bank robbery confession", VarbitID.WOM_BANKJOB, 3);
 
 		//Listened to Oriana's bargain for valuables
-		Task orianaValuablesBargain = new Task.TaskBuilder()
-				.name("Listened to Oriana's bargain for valuables")
-				.switchVar(true, VarbitID.VARLAMORE_THIEVING_HOUSE_STRANGER_MET)
-				.build();
-		this.add(orianaValuablesBargain);
+		addTask("Listened to Oriana's bargain for valuables", VarbitID.VARLAMORE_THIEVING_HOUSE_STRANGER_MET);
 
 		//Listened to all 3 of the haunted wine bottle's initial dialogues
-		Task hauntedWineBottleDialogues = new Task.TaskBuilder()
-				.name("Listened to all 3 of the haunted wine bottle's initial dialogues")
-				.switchVar(true, VarbitID.HW21_SCARE_PROGRESS) // TODO: Unfound
-				.build();
-		//this.add(hauntedWineBottleDialogues);
+		//addTask("Listened to all 3 of the haunted wine bottle's initial dialogues", 0); // TODO: Unfound
 
 		//Listened to Jim explain his wet cloth
-		Task jimWetClothExplanation = new Task.TaskBuilder()
-				.name("Listened to Jim explain his wet cloth")
-				.eqVar(true, VarbitID.YAMA_IMP_CONTRACT_SIGNED, 2) // TODO: Untested
-				.build();
-		this.add(jimWetClothExplanation);
+		addEqTask(true, "Listened to Jim explain his wet cloth", VarbitID.YAMA_IMP_CONTRACT_SIGNED, 2);
 
 		//Listened to the sergeant's advice
-		Task sergeantsAdvice = new Task.TaskBuilder()
-				.name("Listened to the sergeant's advice")
-				.switchVar(true, 0) // TODO: Unfound
-				.build();
-		//this.add(sergeantsAdvice);
+		addTask("Listened to the sergeant's advice", 0); // TOOD: Unfound
 
 		//Told Archmage Sedridor about Wizard Persten's fate
-		Task toldSedridorAboutPersten = new Task.TaskBuilder()
-				.name("Told Archmage Sedridor about Wizard Persten's fate")
-				.switchVar(true, VarbitID.DT2_SEDRIDOR_PERSTEN_DIALOGUE)
-				.build();
-		this.add(toldSedridorAboutPersten);
+		addTask("Told Archmage Sedridor about Wizard Persten's fate", VarbitID.DT2_SEDRIDOR_PERSTEN_DIALOGUE);
 
 		//Told Miazrqa about her cousin's activities
-		Task miazrqaCousins = new Task.TaskBuilder()
-				.name("Told Miazrqa about her cousin's activities")
-				.switchVar(true, 0) // TODO: Unfound, probably GRIM_something
-				.build();
-		//this.add(miazrqaCousins);
+		//addTask("Told Miazrqa about her cousin's activities", 0); // TODO: Unfound, probably GRIM_ something
 
 		//Told Ramarno about Ketla's fate
-		Task toldRamarnoAboutKetla = new Task.TaskBuilder()
-				.name("Told Ramarno about Ketla's fate")
-				.switchVar(true, VarbitID.DT2_RAMARNO_SLISKE_DIALOGUE) // TODO: Idk! This does not seem right but maybe?
-				.build();
-		this.add(toldRamarnoAboutKetla);
+		addTask("Told Ramarno about Ketla's fate", VarbitID.DT2_RAMARNO_SLISKE_DIALOGUE); // TODO: Idk! This does not seem right but maybe?
 
 		//Told Sir Tiffy Cashien about the assassin's identity
-		Task toldSirTiffyAboutAssassin = new Task.TaskBuilder()
-				.name("Told Sir Tiffy Cashien about the assassin's identity")
-				.switchVar(true, VarbitID.DT2_TIFFY_CHAT)
-				.build();
-		this.add(toldSirTiffyAboutAssassin);
+		addTask("Told Sir Tiffy Cashien about the assassin's identity", VarbitID.DT2_TIFFY_CHAT);
 
 		//Told King Bolren about Arposandra
-		Task toldKingBolrenAboutArposandra = new Task.TaskBuilder()
-				.name("Told King Bolren about Arposandra")
-				.switchVar(true, VarbitID.POG_KING_BOLREN_DONE)
-				.build();
-		this.add(toldKingBolrenAboutArposandra);
+		addTask("Told King Bolren about Arposandra", VarbitID.POG_KING_BOLREN_DONE);
 
 		//Told Golrie about Yewnock's machine
-		Task toldGolrieAboutYewnock = new Task.TaskBuilder()
-				.name("Told Golrie about Yewnock's machine")
-				.switchVar(true, VarbitID.POG_GOLRIE_RETURN)
-				.build();
-		this.add(toldGolrieAboutYewnock);
+		addTask("Told Golrie about Yewnock's machine", VarbitID.POG_GOLRIE_RETURN);
 
 		//Told Longramble about the entrance to Arposandra
-		Task toldLongrambleAboutArposandra = new Task.TaskBuilder()
-				.name("Told Longramble about the entrance to Arposandra")
-				.switchVar(true, VarbitID.POG_LONGRAMBLE_DONE)
-				.build();
-		this.add(toldLongrambleAboutArposandra);
+		addTask("Told Longramble about the entrance to Arposandra", VarbitID.POG_LONGRAMBLE_DONE);
 
-		//Told Weave about the jar of venom
-		Task toldWeaveAboutJarOfVenom = new Task.TaskBuilder()
-				.name("Told Weave about the jar of venom")
-				.switchVar(true, 0) // TODO: Unfound
-				.build();
-		//this.add(toldWeaveAboutJarOfVenom);
+		//addTask("Told Weave about the jar of venom", 0); // TODO: Unfound
 
 		//Told the head butler you won't join the union
-		Task toldHeadButlerWontJoinUnion = new Task.TaskBuilder()
-				.name("Told the head butler you won't join the union")
-				.switchVar(true, VarbitID.DOTI_MASK_DIALOGUE)
-				.build();
-		this.add(toldHeadButlerWontJoinUnion);
+		addTask("Told the head butler you won't join the union", VarbitID.DOTI_MASK_DIALOGUE);
 
+		addTask("Unlocked Rosie", VarbitID.PORCINE_ROSIE);
 
-		Task unlockRosie = new Task.TaskBuilder()
-			.name("Unlocked Rosie")
-			.switchVar(true, VarbitID.PORCINE_ROSIE)
-			.build();
+		addEqTask(false, "Get directions from Baraek", VarPlayerID.PHOENIXGANG, 4);
 
-		Task getDirectionsFromBaraek = new Task.TaskBuilder()
-			.name("Get directions from Baraek")
-			.geVar(false, VarPlayerID.PHOENIXGANG, 4)
-			.build();
+		addTask("Pay Eblis for an ancient staff", VarbitID.FD_GOT_ZAROS_STAFF);
 
-		Task buyStaffFromEblis = new Task.TaskBuilder()
-			.name("Pay Eblis for an ancient staff")
-			.switchVar(true, VarbitID.FD_GOT_ZAROS_STAFF)
-			.build();
-
-		Task askBrundtAboutMtnCamp = new Task.TaskBuilder()
-			.name("Asked Chieftain Brundt about the Mountain Camp")
-			.switchVar(true, VarbitID.MDAUGHTER_BRUNDT_DONE)
-			.build();
+		addTask("Asked Chieftain Brundt about the Mountain Camp", VarbitID.MDAUGHTER_BRUNDT_DONE);
 
 		// Unsure about this one, but looks this way from chisel data
-		Task talkToTrufitus = new Task.TaskBuilder()
-			.name("Talk to Trufitus after completing Shilo Village")
-			.eqVar(false, VarPlayerID.ZOMBIEQUEEN, 17)
-			.build();
+		addEqTask(false, "Talk to Trufitus after completing Shilo Village", VarPlayerID.ZOMBIEQUEEN, 17);
 
 		// CAT - UNKNOWN
-		Task listenToCatExplain = new Task.TaskBuilder()
-			.name("Listen to your cat explain Icthlarin and the devourer again")
-			.eqVar(true, VarbitID.ICS_TALKED_CATABOUTPRO, 3)
-			.build();
+		addEqTask(true, "Listen to your cat explain Icthlarin and the devourer again", VarbitID.ICS_TALKED_CATABOUTPRO, 3);
 
-		Task askDwarvenBoatmanAboutGold = new Task.TaskBuilder()
-			.name("Asked the Dwarven Boatman about transporting gold")
-			.switchVar(true, VarbitID.DWARFROCK_GOLD_BOATMAN_MET)
-			.build();
+		addTask("Asked the Dwarven Boatman about transporting gold", VarbitID.DWARFROCK_GOLD_BOATMAN_MET);
 
 		Task tellThreeDwarves = new Task.TaskBuilder()
 			.name("Tell the three dwarven boatmen about the dwarven quests")
@@ -416,29 +200,13 @@ public class UniqueDialoguePathsTaskList extends TaskList
 			.switchVar(true, VarbitID.GIANTDWARF_BROTHERS_TOLDSUCCESS)
 			.switchVar(true, VarbitID.FORGET_BROTHERS_TOLDSUCCESS)
 			.build();
-
+		add(tellThreeDwarves);
 		// MIAZRQA - UNKNOWN
 
-		Task askStreetUrchinToLureAgain = new Task.TaskBuilder()
-			.name("Tell the Street urchin to lure another villager")
-			.switchVar(true, VarbitID.FEUD_VAR_URCHIN)
-			.build();
+		addTask("Tell the Street urchin to lure another villager", VarbitID.FEUD_VAR_URCHIN);
 
-		Task informKnightOfVarlamore = new Task.TaskBuilder()
-			.name("Tell the Knight of Varlamore about the sun altar")
-			.switchVar(true, VarbitID.VARLAMORE_SUN_KNIGHT)
-			.build();
-
-		add(unlockRosie);
-		add(getDirectionsFromBaraek);
-		add(buyStaffFromEblis);
-		add(askBrundtAboutMtnCamp);
-		add(talkToTrufitus);
-		add(listenToCatExplain);
-		add(askDwarvenBoatmanAboutGold);
-		add(tellThreeDwarves);
-		add(askStreetUrchinToLureAgain);
-		add(informKnightOfVarlamore);
+		addTask("Tell the Knight of Varlamore about the sun altar",  VarbitID.VARLAMORE_SUN_KNIGHT);
 	}
 
 }
+

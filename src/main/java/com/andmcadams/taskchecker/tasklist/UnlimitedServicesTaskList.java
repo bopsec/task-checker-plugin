@@ -49,29 +49,14 @@ public class UnlimitedServicesTaskList extends TaskList
 		//Paid Skully for the ability to toggle loot keys couldnt find
 		//Paid the ghost captain for free trips to Dragontooth Island couldnt find
 
-		Task boughtAllBankSlots = new Task.TaskBuilder()
-				.name("Paid any banker for all 360 additional bank slots")
-				.eqVar(true, VarbitID.BANK_EXTRA_BLOCKS_PURCHASED, 9)
-				.build();
+		addEqTask(true, "Paid any banker for all 360 additional bank slots", VarbitID.BANK_EXTRA_BLOCKS_PURCHASED, 9);
 
-		Task enhanceCamulet = new Task.TaskBuilder()
-			.name("Enhance the Camulet for one million coins")
-			.eqVar(true, VarbitID.ENAKH_CAMULET_CHARGE, 7)
-			.build();
+		addEqTask(true, "Enhance the Camulet for one million coins", VarbitID.ENAKH_CAMULET_CHARGE, 7);
 
-		Task paySaniboch = new Task.TaskBuilder()
-			.name("Pay Saniboch one million coins for permanent access to Brimhaven dungeon")
-			.switchVar(true, VarbitID.KARAM_DUNGEON_PERMANENTACCESS)
-			.build();
+		addTask("Pay Saniboch one million coins for permanent access to Brimhaven dungeon", VarbitID.KARAM_DUNGEON_PERMANENTACCESS);
 
-		Task payAndras = new Task.TaskBuilder()
-			.name("Pay Andras for free trips to Slepe")
-			.switchVar(true, VarbitID.ANDRAS_PERM_UNLOCK)
-			.build();
+		addTask("Pay Andras for free trips to Slepe", VarbitID.ANDRAS_PERM_UNLOCK);
 
-		add(enhanceCamulet);
-		add(paySaniboch);
-		add(payAndras);
-		add(boughtAllBankSlots);
 	}
 }
+

@@ -46,18 +46,11 @@ public class RedeemableQuestItemsTaskList extends TaskList
 			.bitVar(false, VarPlayerID.MORTTONMULTI, 30)
 			.build();
 
-		Task tradeWeissFireNotes = new Task.TaskBuilder()
-			.name("Trade the Weiss fire notes to Burntmeat")
-			.switchVar(true, VarbitID.MY2ARM_EXTRASTRONGHOLDREWARD)
-			.build();
+		addTask("Trade the Weiss fire notes to Burntmeat", VarbitID.MY2ARM_EXTRASTRONGHOLDREWARD);
 
-		Task tradeBlackPrism = new Task.TaskBuilder()
-			.name("Trade the black prism to Yanni Salika or Zavistic Rarve")
-			.switchVar(true, VarbitID.THZFE_PRISMSOLD)
-			.build();
+		addTask("Trade the black prism to Yanni Salika or Zavistic Rarve", VarbitID.THZFE_PRISMSOLD);
 
 		add(tradeDiaryOfHerbiFlax);
-		add(tradeWeissFireNotes);
-		add(tradeBlackPrism);
 	}
 }
+

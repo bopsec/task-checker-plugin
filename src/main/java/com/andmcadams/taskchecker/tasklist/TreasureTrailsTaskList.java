@@ -41,41 +41,18 @@ public class TreasureTrailsTaskList extends TaskList
 	public void initTasks()
 	{
 
-		Task unlockExploreEmote = new Task.TaskBuilder()
-			.name("Unlock the Explore emote")
-			.geVar(false, VarPlayerID.COMPLETED_CLUES5, 600)
-			.build();
+		addGeTask(false, "Unlock the Explore emote", VarPlayerID.COMPLETED_CLUES5, 600);
 
-		Task unlockLargeSpade = new Task.TaskBuilder()
-			.name("Unlock the Large spade")
-			.geVar(false, VarPlayerID.COMPLETED_CLUES, 500)
-			.build();
+		addGeTask(false, "Unlock the Large spade", VarPlayerID.COMPLETED_CLUES, 500);
 
-		Task unlockCluelessScroll = new Task.TaskBuilder()
-			.name("Unlock the Clueless scroll")
-			.geVar(false, VarPlayerID.COMPLETED_CLUES1, 400)
-			.build();
+		addGeTask(false, "Unlock the Clueless scroll", VarPlayerID.COMPLETED_CLUES1, 400);
 
-		Task unlockUriTransformEmote = new Task.TaskBuilder()
-			.name("Unlock the Uri transform emote")
-			.geVar(false, VarPlayerID.COMPLETED_CLUES2, 300)
-			.build();
+		addGeTask(false, "Unlock the Uri transform emote", VarPlayerID.COMPLETED_CLUES2, 300);
 
-		Task unlockHeavyCasket = new Task.TaskBuilder()
-			.name("Unlock the Heavy casket")
-			.geVar(false, VarPlayerID.COMPLETED_CLUES3, 200)
-			.build();
+		addGeTask(false, "Unlock the Heavy casket", VarPlayerID.COMPLETED_CLUES3, 200);
 
-		Task unlockScrollSack = new Task.TaskBuilder()
-			.name("Unlock the Scroll sack")
-			.geVar(false, VarPlayerID.COMPLETED_CLUES4, 100)
-			.build();
+		addGeTask(false, "Unlock the Scroll sack", VarPlayerID.COMPLETED_CLUES4, 100);
 
-		this.add(unlockExploreEmote);
-		this.add(unlockLargeSpade);
-		this.add(unlockCluelessScroll);
-		this.add(unlockUriTransformEmote);
-		this.add(unlockHeavyCasket);
-		this.add(unlockScrollSack);
 	}
 }
+

@@ -39,31 +39,11 @@ public class RaidsCapesTaskList extends TaskList
 
     public void initTasks()
     {
-        Task coxCape1 = new Task.TaskBuilder()
-                .name("Unlocked the ability to claim Xeric's guard")
-                .geVar(false, VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 100)
-                .build();
-        this.add(coxCape1);
-        Task coxCape2 = new Task.TaskBuilder()
-                .name("Unlocked the ability to claim Xeric's warrior")
-                .geVar(false, VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 500)
-                .build();
-        this.add(coxCape2);
-        Task coxCape3 = new Task.TaskBuilder()
-                .name("Unlocked the ability to claim Xeric's sentinel")
-                .geVar(false, VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 1000)
-                .build();
-        this.add(coxCape3);
-        Task coxCape4 = new Task.TaskBuilder()
-                .name("Unlocked the ability to claim Xeric's general")
-                .geVar(false, VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 1500)
-                .build();
-        this.add(coxCape4);
-        Task coxCape5 = new Task.TaskBuilder()
-                .name("Unlocked the ability to claim Xeric's champion")
-                .geVar(false, VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 2000)
-                .build();
-        this.add(coxCape5);
+        addGeTask(false, "Unlocked the ability to claim Xeric's guard", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 100);
+        addGeTask(false, "Unlocked the ability to claim Xeric's warrior", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 500);
+        addGeTask(false, "Unlocked the ability to claim Xeric's sentinel", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 1000);
+        addGeTask(false, "Unlocked the ability to claim Xeric's general", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 1500);
+        addGeTask(false, "Unlocked the ability to claim Xeric's champion", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 2000);
 
         //
         Task tobCape1 = new Task.TaskBuilder()
@@ -119,3 +99,4 @@ public class RaidsCapesTaskList extends TaskList
         this.add(toaCape5);
     }
 }
+

@@ -40,10 +40,7 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 	public void initTasks()
 	{
 
-		Task unblockLumbridgeSwampCavesHole = new Task.TaskBuilder()
-			.name("Unblock the hole leading to the Lumbridge Swamp Caves")
-			.switchVar(true, VarbitID.LOST_TRIBE_HOLE_2_DUG)
-			.build();
+		addTask("Unblock the hole leading to the Lumbridge Swamp Caves", VarbitID.LOST_TRIBE_HOLE_2_DUG);
 
 		Task unblockEagleTransport = new Task.TaskBuilder()
 			.name("Unblock both obstructed eagle transport route entrances")
@@ -60,20 +57,11 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 			.switchVar(true, VarbitID.CATA_HOLE_GIANTS_DEN)
 			.build();
 
-		Task unlockAccessToHarisArea = new Task.TaskBuilder()
-			.name("Unlock access to Haris's resource area in Corsair Cove")
-			.switchVar(true, VarbitID.CORSAIR_COVE_RESOURCE_ENTRY)
-			.build();
+		addTask("Unlock access to Haris's resource area in Corsair Cove", VarbitID.CORSAIR_COVE_RESOURCE_ENTRY);
 
-		Task unblockKrukDungeonPassage = new Task.TaskBuilder()
-			.name("Unlock the hidden passage to the entrance of Kruk's lair")
-			.switchVar(true, VarbitID.MM2_MAZE_RETURN)
-			.build();
+		addTask("Unlock the hidden passage to the entrance of Kruk's lair", VarbitID.MM2_MAZE_RETURN);
 
-		Task unlockDoorToEodan = new Task.TaskBuilder()
-			.name("Unlock the door to Eodan in the Forthos Dungeon")
-			.switchVar(true, VarbitID.HOSDUN_BURNER_OPEN)
-			.build();
+		addTask("Unlock the door to Eodan in the Forthos Dungeon", VarbitID.HOSDUN_BURNER_OPEN);
 
 		Task unlockForthosDungeonDoors = new Task.TaskBuilder()
 			.name("Unlock both Temple Doors in the Forthos Dungeon")
@@ -97,27 +85,16 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 			.switchVar(true, VarbitID.ENAKH_K_DOOR)
 			.build();
 
-		Task excavateStatue = new Task.TaskBuilder()
-				.name("Unblock the statue leading to the Tunnel of Chaos")
-				.switchVar(true, VarbitID.SUROK_TUNNELCHECK)
-				.build();
+		addTask("Unblock the statue leading to the Tunnel of Chaos", VarbitID.SUROK_TUNNELCHECK);
 
-		Task excavateTrueBloodAltar = new Task.TaskBuilder()
-				.name("Unblocked the tunnel leading to the true Blood Altar")
-				.switchVar(true, VarbitID.MYQ5_LAB_SC_UNLOCKED)
-				.build();
+		addTask("Unblocked the tunnel leading to the true Blood Altar", VarbitID.MYQ5_LAB_SC_UNLOCKED);
 
 
-		add(unblockLumbridgeSwampCavesHole);
 		add(unblockEagleTransport);
 		add(unblockKourendCatacombsEntrances);
-		add(unlockAccessToHarisArea);
-		add(unblockKrukDungeonPassage);
-		add(unlockDoorToEodan);
 		add(unlockForthosDungeonDoors);
 		add(unlockEnakhrasTempleEntrances);
 		add(unlockEnakhrasTempleSigilDoors);
-		add(excavateStatue);
-		add(excavateTrueBloodAltar);
 	}
 }
+

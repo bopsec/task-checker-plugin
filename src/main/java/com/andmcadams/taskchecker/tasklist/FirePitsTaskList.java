@@ -43,17 +43,9 @@ public class FirePitsTaskList extends TaskList
 		//Built a raft using the smashed table in Ah Za Rhoon couldn't find https://oldschool.runescape.wiki/w/Crude_raft
 		
 		//Built the Spinning Wheel on the Isle of Souls
-		Task isleOfSoulsSpinningWheel = new Task.TaskBuilder()
-				.name("Built the Spinning Wheel on the Isle of Souls")
-				.switchVar(true, VarbitID.SW_SPINNINGWHEEL_BUILT)
-				.build();
-		this.add(isleOfSoulsSpinningWheel);
+		addTask("Built the Spinning Wheel on the Isle of Souls", VarbitID.SW_SPINNINGWHEEL_BUILT);
 		//Built the Potter's Wheel on the Isle of Souls
-		Task isleOfSoulsPottersWheel = new Task.TaskBuilder()
-				.name("Built the Potter's Wheel on the Isle of Souls")
-				.switchVar(true, VarbitID.SW_POTTERYWHEEL_BUILT)
-				.build();
-		this.add(isleOfSoulsPottersWheel);
+		addTask("Built the Potter's Wheel on the Isle of Souls", VarbitID.SW_POTTERYWHEEL_BUILT);
 		//Built all 5 quetzal landing sites
 		Task allQuetzalSites = new Task.TaskBuilder()
 				.name("Built all 5 quetzal landing sites")
@@ -76,11 +68,7 @@ public class FirePitsTaskList extends TaskList
 		this.add(allQuetzalSites);
 
 		//Searched the treasure pile in Movario's base
-		Task searchedMovarioTreasurePile = new Task.TaskBuilder()
-				.name("Searched the treasure pile in Movario's base")
-				.switchVar(true, VarbitID.WGS_SEARCHED_TREASURE)
-				.build();
-		this.add(searchedMovarioTreasurePile);
+		addTask("Searched the treasure pile in Movario's base", VarbitID.WGS_SEARCHED_TREASURE);
 
 		//Destroyed all 9 tentacles in the Lassar Undercity couldn't find under DT2_LASSAR
 		//Listened to all 10 remnants in the Lassar Undercity
@@ -93,48 +81,21 @@ public class FirePitsTaskList extends TaskList
 //				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_9)
 //				.build();
 
-		Task saradominsLight = new Task.TaskBuilder()
-				.name("Used Saradomin's light")
-				.switchVar(true, VarbitID.GODWARS_SARADOMIN_LIGHT)
-				.build();
-		this.add(saradominsLight);
+		addTask("Used Saradomin's light", VarbitID.GODWARS_SARADOMIN_LIGHT);
 
-		Task moleHolePit = new Task.TaskBuilder()
-			.name("Build the fire pit in the Mole Hole")
-			.switchVar(true, VarbitID.MY2ARM_FIRE_MOLE)
-			.build();
+		addTask("Build the fire pit in the Mole Hole", VarbitID.MY2ARM_FIRE_MOLE);
 
-		Task lumbridgeSwampCavesPit = new Task.TaskBuilder()
-			.name("Build the fire pit in the Lumbridge Swamp Caves")
-			.switchVar(true, VarbitID.MY2ARM_FIRE_LUMB)
-			.build();
+		addTask("Build the fire pit in the Lumbridge Swamp Caves", VarbitID.MY2ARM_FIRE_LUMB);
 
-		Task mosLeHarmlessCavePit = new Task.TaskBuilder()
-			.name("Build the fire pit in the Mos Le'Harmless Cave")
-			.switchVar(true, VarbitID.MY2ARM_FIRE_HORRORS)
-			.build();
+		addTask("Build the fire pit in the Mos Le'Harmless Cave", VarbitID.MY2ARM_FIRE_HORRORS);
 
-		Task mortMyrePit = new Task.TaskBuilder()
-			.name("Build the fire pit in the Mort Myre Swamp")
-			.switchVar(true, VarbitID.MY2ARM_FIRE_GHASTS)
-			.build();
+		addTask("Build the fire pit in the Mort Myre Swamp", VarbitID.MY2ARM_FIRE_GHASTS);
 
-		Task weissHerbPatchPit = new Task.TaskBuilder()
-			.name("Build the fire pit near the Weiss herb patch")
-			.geVar(true, VarbitID.MY2ARM_STATUS, 205)
-			.build();
+		addGeTask(true, "Build the fire pit near the Weiss herb patch", VarbitID.MY2ARM_STATUS, 205);
 
-		Task gwdEntrancePit = new Task.TaskBuilder()
-			.name("Build the fire pit by the God Wars Dungeon entrance")
-			.switchVar(true, VarbitID.MY2ARM_FIRE_GWD)
-			.build();
+		addTask("Build the fire pit by the God Wars Dungeon entrance", VarbitID.MY2ARM_FIRE_GWD);
 
-		add(moleHolePit);
-		add(lumbridgeSwampCavesPit);
-		add(mosLeHarmlessCavePit);
-		add(mortMyrePit);
-		add(weissHerbPatchPit);
-		add(gwdEntrancePit);
 	}
 
 }
+

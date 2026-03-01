@@ -42,11 +42,7 @@ public class LostItemsTaskList extends TaskList
 	public void initTasks()
 	{
 		//Delivered Sir Gerry's notes to Sir Tiffy Cashien
-		Task deliveredGWDNotesToSirTiffyCashien = new Task.TaskBuilder()
-				.name("Delivered Sir Gerry's notes to Sir Tiffy Cashien")
-				.switchVar(true, VarbitID.GODWARS_SCROLL_DELIVERED) // TODO: Untested
-				.build();
-		this.add(deliveredGWDNotesToSirTiffyCashien);
+		addTask("Delivered Sir Gerry's notes to Sir Tiffy Cashien", VarbitID.GODWARS_SCROLL_DELIVERED); // TODO: Untested
 
 		//TODO: Delivered a tangled toad's legs to Longramble
 
@@ -56,14 +52,11 @@ public class LostItemsTaskList extends TaskList
 			.eqVar(false, VarPlayerID.HAUNTEDMINE, 11)
 			.build();
 
-		Task returnMistagsBrooch = new Task.TaskBuilder()
-			.name("Return the brooch to Mistag")
-			.switchVar(true, VarbitID.LOST_TRIBE_RETURNED_BROOCH)
-			.build();
+		addTask("Return the brooch to Mistag", VarbitID.LOST_TRIBE_RETURNED_BROOCH);
 
 		//add(returnCoppersCollar);
 		add(returnZealotsKey);
-		add(returnMistagsBrooch);
 	}
 
 }
+
