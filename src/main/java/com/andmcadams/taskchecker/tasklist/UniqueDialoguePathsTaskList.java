@@ -152,8 +152,8 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to the sergeant's advice
 		addTask("Listened to the sergeant's advice", 0); // TOOD: Unfound
 
-		//Told Archmage Sedridor about Wizard Persten's fate
-		addTask("Told Archmage Sedridor about Wizard Persten's fate", VarbitID.DT2_SEDRIDOR_PERSTEN_DIALOGUE);
+		//Told Apprentice Felix about Wizard Persten's fate
+		addTask("Told Apprentice Felix about Wizard Persten's fate", VarbitID.DT2_FELIX_DIALOGUE); // tested, correct
 
 		//Told Miazrqa about her cousin's activities
 		//addTask("Told Miazrqa about her cousin's activities", 0); // TODO: Unfound, probably GRIM_ something

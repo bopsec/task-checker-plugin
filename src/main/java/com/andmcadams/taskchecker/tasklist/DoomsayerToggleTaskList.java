@@ -93,7 +93,6 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled the Daimon's crater PK skull prevention warning", VarbitID.BH_SKULL_SETTING_WARNING);
 		//Disabled the Revenant Cave's payment warning
 		//Disabled the Revenant Cave's one-way entrance warning
-		//Disabled the Ferox Enclave's barrier exit warning
 		//Disabled the Soul Wars clan lobby entrance warning
 		//Disabled the Scurrius's broken bars warning
 		addTask("Disabled the Scurrius's broken bars warning", VarbitID.RAT_BOSS_ENTER_WARNING);

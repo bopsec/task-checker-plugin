@@ -404,7 +404,7 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the ability to create ancient icons
         addTask("Unlocked the ability to create ancient icons", VarbitID.DT2_PLAYER_LEARNED_ICON_FUSING);
         //Unlocked the ability to create tormented synapse weapons
-        addTask("", VarbitID.WGS_MESSAGE_READ); // ???
+        addTask("Unlocked the ability to create tormented synapse weapons", VarbitID.WGS_MESSAGE_READ); // ???
         // TODO: Find the synapse weapons varbit
         //
         //Revealed the human translation of the Cosmic Being's name
@@ -562,15 +562,14 @@ public class UnplacedRandomTaskList extends TaskList
         addGeTask(true, "Logged a personal best at Tears of Guthix", VarbitID.TOG_MAX_TEARS_COLLECTED, 1);
 
         //Listened to Ru Merald's Gem Crab intro
-        addTask("Listened to Ru Merald's Gem Crab intro", VarbitID.GEMSTONE_CRAB_INTRO);
+        addTask("Listened to Ru Merald's gemstone crab directions", VarbitID.GEMSTONE_CRAB_INTRO);
         //Logged at least 1 gp of destroyed loot keys via the Loot Chest
         //Logged at least 1 gp of redeemed loot keys via the Loot Chest
         //Logged at least 1 lap of the sledding course
-
         //Logged at least 2 laps of the Prifddinas Agility Course
         //Logged at least 2 laps of the Shayzien Basic Agility Course
         //Logged at least 2 laps of the Shayzien Advanced Agility Course
-        //Logged at least 2  laps of the Wyrm Basic Agility Course
+        //Logged at least 2 laps of the Wyrm Basic Agility Course
         //Logged at least 2 laps of the Wyrm Advanced Agility Course
         //Logged at least 2 offerings at the Woodcutting Guild's shrine
         //Logged at least 2 counts of opening Larran's small chest
@@ -582,15 +581,210 @@ public class UnplacedRandomTaskList extends TaskList
         //Logged at least 2 counts of opening all 8 Grand Gold Chests
         //
         //Claimed free food from Kamen in the Underground Pass
+        addTask("Claimed free food from Kamen in the Underground Pass", VarbitID.UPASS_DWARF_FOOD);
         //Claimed free food from Koftik in the Underground Pass
+        addTask("Claimed free food from Koftik in the Underground Pass", VarbitID.UPASS_PALADIN_FOOD); //??
         //Claimed items from Elnock Inquisitor in Impetuous Impulses
+        addTask("Claimed items from Elnock Inquisitor in Impetuous Impulses", VarbitID.II_ELNOCK_GIVEN_FREESTUFF);
         //Claimed a free bucket from Fritz the Glassblower
         //Claimed both free beers from Lucy in the Falador Party Room
-        //Claimed the pet reclaim token discount at Probita
+        addEqTask(true, "Claimed both free beers from Lucy in the Falador Party Room", VarbitID.OSB4_FREEBEERS, 3);
+        //Claimed the pet reclaim token discount at Probita ? this is dead isnt it
         //Claimed all free chants for lost crystal equipment from Ilfeen
         //Claimed all weapon charge refunds from the Emblem Trader
+        Task claimedBountyHunterWeaponChargeRefund = new Task.TaskBuilder()
+                .name("Claimed all weapon charge refunds from the Emblem Trader")
+                .eqVar(true, VarbitID.BH_MORRIGAN_AXE_REFUND_QUANTITY, 0)
+                .eqVar(true, VarbitID.BH_MORRIGAN_JAVELIN_REFUND_QUANTITY, 0)
+                .eqVar(true, VarbitID.BH_STATIUS_WARHAMMER_REFUND_QUANTITY, 0)
+                .eqVar(true, VarbitID.BH_VESTA_SPEAR_REFUND_QUANTITY, 0)
+                .eqVar(true, VarbitID.BH_ZURIEL_STAFF_REFUND_QUANTITY, 0)
+                .build();
+        this.add(claimedBountyHunterWeaponChargeRefund);
+
         //Claimed any deposit back from the Shilo Village furnace coffer
         //Claimed any additional sunfire armour from the STASH unit)
+        //Completed all 18 miniquests
+        addEqTask(true,"Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
+
+
+        // TODO: New, two-point-nine
+        // Unlocked the ability to trade Thorgel for death talismans
+        addTask("Unlocked the ability to trade Thorgel for death talismans", VarbitID.MOURNING_DWARF_STARTEDTASK); // Test on hog
+        // Unlocked Gabooty's shop open option
+        addTask("Unlocked Gabooty's shop open option", VarbitID.GABOOTYSHOPCHAT); // tested, correct
+        // Listened to Shantay introduce the Shantay Pass
+        // Razmire's directions to the Shade Lair (Shades of Mortton)
+        // Listened to the summary of Ulfric's parchment (Olaf's Quest)
+        addTask("Listened to the summary of Ulfric's parchment", VarbitID.OLAF2_READ_NOTE); // tested, correct
+        // Disabled the giant bones bury warning Obor/Bryophyta
+        addTask("Disabled the giant bones bury warning", VarbitID.GIANT_BONE_BURY_WARNING_DISABLE); // TODO: Untested
+        // Listened to the vineyard foreman's ripe grape request
+        addTask("Listened to the vineyard foreman's ripe grape request", VarbitID.ALDARIN_GRAPES_INTRO); // Test on bop
+        // Unlocked the maximum bow string spool capacity
+        addTask("Unlocked the maximum bow string spool capacity", VarbitID.BOWSTRING_SPOOL_SIZE); // Idk what the max size is
+        // Unlocked all 6 greenman mask variants
+        // Unlocked all 6 pendant of ates teleport locations
+        Task unlockPendantOfAtes = new Task.TaskBuilder()
+                .name("Unlocked all 6 pendant of ates teleport locations")
+                .switchVar(true, VarbitID.PENDANT_OF_ATES_ALDARIN_FOUND)
+                .switchVar(true, VarbitID.PENDANT_OF_ATES_AUBURN_FOUND)
+                .switchVar(true, VarbitID.PENDANT_OF_ATES_DARKFROST_FOUND)
+                .switchVar(true, VarbitID.PENDANT_OF_ATES_RALOS_FOUND)
+                .switchVar(true, VarbitID.PENDANT_OF_ATES_TWILIGHT_FOUND)
+                .switchVar(true, VarbitID.PENDANT_OF_ATES_TLATI_FOUND)
+                .build();
+        this.add(unlockPendantOfAtes);
+        // Obtained both Hunter Guild texts
+        // Looted the workbench containing iron nails at Tal Teklan
+        addTask("Looted the workbench containing iron nails at Tal Teklan", VarbitID.SCRAMBLED_NAILS_GIVEN);
+        // Told King her men helped with the egg (Scrambled!)
+        addTask("Told King her men helped with the egg", VarbitID.SCRAMBLED_FINAL_KING_DIALOGUE);
+        // Told Attala about Mokhaiotl (The final dawn)
+        addTask("Told Attala about Mokhaiotl", VarbitID.VMQ4_ATTALA_POST_QUEST_CHAT);
+        // Told Eyatlalli about Mokhaiotl (The final dawn)
+        addTask("Told Eyatlalli about Mokhaiotl", VarbitID.VMQ4_EYATLALLI_POST_QUEST_CHAT);
+        // Told Bernard that Bernina is proud of him (https://oldschool.runescape.wiki/w/Bernard)
+        addEqTask(true, "Told Bernard that Bernina is proud of him", VarbitID.SPIRITOFADVENTURE, 5);
+        // Told Xilo and Fabia where to find each other (https://oldschool.runescape.wiki/w/Xilo)
+        addEqTask(true, "Told Xilo and Fabia where to find each other", VarbitID.TLATI_LOST_LOVER_FABIA, 2);
+        // Listened to the Friendly Forester explain Forestry
+        addTask("Listened to the Friendly Forester explain Forestry", VarbitID.FORESTRY_FORESTER_MET);
+        // Listened to the Mountain Guide's offer for help
+        addTask("Listened to the Mountain Guide's offer for help", VarbitID.MET_AUBURN_MOUNTAIN_GUIDE);
+        // Used the antique lamp from Prince Itzla (The final dawn)?
+        addTask("Used the antique lamp from Prince Itzla", VarbitID.VMQ4_REWARD_LAMP_USED);
+        // Listened to the Pilgrim introduce the Pilgrim Path (https://oldschool.runescape.wiki/w/Pilgrim)
+        addTask("Listened to the Pilgrim introduce the Pilgrim Path", VarbitID.VARLAMORE_PILGRIM_MET);
+        // Listened to the Zombie pirate's story about his crew's whereabouts (https://oldschool.runescape.wiki/w/Zombie_pirate_(NPC))
+        // Claimed a free hunter kit from a hunting expert
+        // Unlocked Ali Morisane's gnome question option
+        addTask("Unlocked Ali Morisane's gnome question option", VarbitID.ALI_GNOME_RIVALRY); // TODO: Untested, probs right
+        // Claimed the pet insurance refund at Probita
+        addEqTask(true, "Claimed the pet insurance refund at Probita", VarbitID.PET_INSURANCE_RECLAIM, 0); // Guessing this is it. Untested
+        // "Unlocked Nevet's trade option"
+        addTask("Unlocked Nevet's trade option", VarbitID.EVENTS_SHOP_OWNER_MET);
+        // Disabled the Port Roberts jail guard bribe warning
+        addTask("Disabled the Port Roberts jail guard bribe warning", VarbitID.PORT_ROBERTS_JAIL_QUICK_ESCAPE); //TODO: Untested, probs right
+        // Listened to Biles's introduction to the Drumstick Kingdom
+        addTask("Listened to Biles's introduction to the Drumstick Kingdom", VarbitID.BILES_MET);
+        // Obtained all guaranteed gold ring drops
+        // Built the bridge leading to the Mausoleum in Morytania
+        // Unlocked Durrik's trade option (Deepfin point)
+        addTask("Unlocked Durrik's trade option", VarbitID.DEEPFIN_DWARF_DURRIK_MET);
+        // Unlocked both additional sailors' amulet teleport locations
+        Task sailorsAmuletAllTelesUnlocked = new Task.TaskBuilder()
+                .name("Unlocked both additional sailors' amulet teleport locations")
+                .switchVar(true, VarbitID.SAILORS_AMULET_DEEPFIN)
+                .switchVar(true, VarbitID.SAILORS_AMULET_ROBERTS)
+                //.switchVar(true, VarbitID.SAILORS_AMULET_REDROCK) ?
+                //.switchVar(true, VarbitID.SAILORS_AMULET_BARRACUDA) ?
+                .build();
+        this.add(sailorsAmuletAllTelesUnlocked);
+        // Unlocked the ability to use Chet's coral nurseries.
+        addTask("Unlocked the ability to use Chet's coral nurseries.", VarbitID.CONCH_CORAL_PATCHES_UNLOCKED);
+        // Disabled the shipwright ship recovery warning
+        addTask("Disabled the shipwright ship recovery warning", VarbitID.SAILING_BOAT_CARGOHOLD_WARNING_DISMISSED);
+        // Unlocked Sleve McDichael's rename-boat option
+        addTask("Unlocked Sleve McDichael's rename-boat option", VarbitID.SLEVE_MCDICHAEL_MET);
+        // Built all 20 hinged-lid crab traps
+        Task builtAllCrabTraps = new Task.TaskBuilder()
+                .name("Built all 20 hinged-lid crab traps")
+                // Crown jewel
+                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_1)
+                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_2)
+                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_3)
+                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_4)
+                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_5)
+                // Pandemonium
+                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_1)
+                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_2)
+                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_3)
+                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_4)
+                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_5)
+                // Conch east
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_1)
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_2)
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_3)
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_4)
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_5)
+                // Conch north
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_1)
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_2)
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_3)
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_4)
+                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_5)
+                .build();
+        this.add(builtAllCrabTraps);
+        // Listened to the Ship Yard foreman's question
+        // Unlocked the zombie pirate's check option
+        addTask("Unlocked the zombie pirate's check option", VarbitID.WILDY_ZOMBIE_PIRATE_FRIENDLY_INTRO_CHAT); // TODO: Untested but probs it
+        // Told the Carnillean guard about the assassin (DT2)
+        addTask("Told the Carnillean guard about the assassin", VarbitID.DT2_GUARD_CARNILLEAN_DIALOGUE);
+        // Listened to the builders' advice (Final Dawn)
+        // Attached a rope to the Charred Dungeon entrance
+        // Unlocked the ability to reclaim the medallion of the deep
+        addTask("Unlocked the ability to reclaim the medallion of the deep", VarbitID.MOTD_CRAFTED);
+        // Claimed XP from charting all oceans
+        addTask("Claimed XP from charting all oceans", VarbitID.SAILING_CHARTING_FULL_COMPLETION_EVER_COMPLETE); //?
+        // Looted the chest containing the storm cruiser's outfit
+        // Looted the chest containing the swamp cruiser's outfit
+        // Looted the chest containing the crystal gliders's outfit
+        // Unlocked the ability to assign all 10 crewmates
+        Task gotAllSailingCrewmates = new Task.TaskBuilder()
+                .name("Unlocked the ability to assign all 10 crewmates")
+                .switchVar(true, VarbitID.SAILING_CREW_GENERIC_1_UNLOCKED) // Jobless Jim
+                .switchVar(true, VarbitID.SAILING_CREW_CAPTAIN_SIAD_UNLOCKED) // Captain Siad
+                .switchVar(true, VarbitID.SAILING_CREW_GENERIC_2_UNLOCKED) // Adventurer Ada
+                .switchVar(true, VarbitID.SAILING_CREW_GHOST_JENKINS_UNLOCKED) // Cabin Boy Jenkins
+                .switchVar(true, VarbitID.SAILING_CREW_WEREWOLF_UNLOCKED) // Oarswoman Olga
+                .switchVar(true, VarbitID.SAILING_CREW_GENERIC_3_UNLOCKED) // Jittery Jim
+                .switchVar(true, VarbitID.SAILING_CREW_FREMENNIK_UNLOCKED) // Bosun Zarah
+                .switchVar(true, VarbitID.SAILING_CREW_GENERIC_4_UNLOCKED) // Jolly Jim
+                .switchVar(true, VarbitID.SAILING_CREW_SPIRIT_ANGLER_UNLOCKED) // Spotter Virginia
+                .switchVar(true, VarbitID.SAILING_CREW_GENERIC_5_UNLOCKED) // Sailor Jakob
+                .build();
+        this.add(gotAllSailingCrewmates);
+        // Listened to the Elder Nama's gryphon warning
+        addTask("Listened to the Elder Nama's gryphon warning", VarbitID.SLAYER_GRYPHON_BOSS_GUARDIAN_MET);
+        // Unlocked Gull's metamorphosis option
+        // Claimed XP from drinking the melted rocks
+        addTask("Claimed XP from drinking the melted rocks", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_ICE);
+        // Claimed XP from drinking Chuck up's 'stew'
+        addTask("Claimed XP from drinking Chuck up's 'stew'", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_STEW);
+        // Claimed XP from drinking Daddy's special water's special water
+        addTask("Claimed XP from drinking Daddy's special water's special water", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_WATER);
+        // Paid Brass Hand Harry for a sailing cape
+        addTask("Paid Brass Hand Harry for a sailing cape", VarbitID.SKILLCAPE_SAILING_PURCHASED);
+        // Listened to Petrus describe minotaurs
+        addTask("Listened to Petrus describe minotaurs", VarbitID.MINOTAURS_REST_BEASTMASTER_MET);
+        // Disabled Shipwright Seb's ship repair warning
+        addTask("Disabled Shipwright Seb's ship repair warning", VarbitID.BOAT_REPAIR_COST_WARNING_DISMISSED);
+        // Claimed all 5 mystery boxes from the puzzlers poteen
+        addTask("Claimed all 5 mystery boxes from the puzzlers poteen", VarbitID.SAILING_CHARTING_DRINK_CRATE_PUZZLERS_POTEEN_REWARD);
+
+        // Unlocked the ability to reclaim Ralph's fabric roll
+        addTask("Unlocked the ability to reclaim Ralph's fabric roll", VarbitID.SAILING_BT_TEMPOR_TANTRUM_MARLIN_FIRST);
+        // Unlocked the ability to reclaim Gurtob's fabric roll
+        addTask("Unlocked the ability to reclaim Gurtob's fabric roll", VarbitID.SAILING_BT_JUBBLY_JIVE_MASTER_STATE);
+        // Unlocked the ability to reclaim Gwyna's fabric roll
+        addTask("Unlocked the ability to reclaim Gwyna's fabric roll", VarbitID.SAILING_BT_GWENITH_GLIDE_MARLIN_FIRST);
+        // Unlocked the ability to reclaim Guthixian paint
+        // Unlocked the ability to reclaim Saradominist paint
+        // Unlocked the ability to reclaim Zamorakian paint
+        // Unlocked the ability to reclaim Armadylean paint
+        // Unlocked the swift marlin fishing trophy option
+        // Unlocked the purplefin fishing trophy option
+        // Unlocked the huge halibut fishing trophy option
+        // Unlocked the golden haddock fishing trophy option
+        // Unlocked the giant blue krill fishing trophy option
+        // Unlocked the orangefin fishing trophy option
+        // Told Betty the meaning of the notes (Ethically Acquired Antiquities)
+        addTask("Told Betty the meaning of the notes", VarbitID.EAA_BETTY_TOLD_ABOUT_NOTE); // TODO: Untested, probably right
+        // Claimed pints of whirlpool suprise from Rum-dashed Ralph
+        //
+        //
+        //
 
     }
 }

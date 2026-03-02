@@ -51,5 +51,8 @@ public class InvisibleTaskList extends TaskList
 
 		addTask("Exit through the Troll Stronghold's secret exit", VarbitID.TROLL_OPENED_BACK_EXIT);
 
+		addTask("Talk to Julie from Biohazard", VarbitID.BIOHAZARD_MET_JULIE); // varbit changes, but no visible effect
+
+		addTask("Talk to Reldo in Varrock castle library", VarbitID.RELDO_MET); // did change to 1, but no visible effect
 	}
 }

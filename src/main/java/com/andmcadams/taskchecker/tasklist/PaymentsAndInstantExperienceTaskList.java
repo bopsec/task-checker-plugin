@@ -48,7 +48,7 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		//TODO:Claimed coins from a Lovakengj minecart station conductor
 		//TODO:Claimed coins from Trossa
 		//Claimed XP from smithing a chromium ingot
-		addTask("Claimed XP from smithing a chromium ingot", VarbitID.CHROMIUM_CRAFTING_UNLOCKED);
+		addTask("Claimed XP from smithing a chromium ingot", VarbitID.CHROMIUM_CRAFTING_UNLOCKED); // Wait no this is just unlocking it
 		//TODO:Claimed XP from smithing an emberlight
 		//TODO:Claimed XP from crafting a purging staff
 		//TODO:Claimed XP from fletching a scorching bow
