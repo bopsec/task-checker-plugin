@@ -548,6 +548,8 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Obtained all 16 elven texts from the Prifddinas Grand Library", VarbitID.PRIF_BOOKS); // TODO: Unchecked
         //Obtained all 93 miscellaneous texts (2 are obtained by default) this is like 50 diff ones
         //
+        // TODO:
+        //  I don't think any of the trophies are exposed in a varb/varp, but haven't tested
         //Unlocked the big bass fishing trophy option
         //Unlocked the big swordfish fishing trophy option
         //Unlocked the big shark fishing trophy option
@@ -566,7 +568,7 @@ public class UnplacedRandomTaskList extends TaskList
         //
         //Paid Ceto for free entry to the drift net fishing area
         addTask("Paid Ceto for free entry to the drift net fishing area", VarbitID.FOSSIL_DRIFTNET_UNLIMITEDACCESS);
-        //Unlocked all 4 Mycelium Transportation System locations unfound
+        //Unlocked all 4 Mycelium Transportation System locations unfound // TODO: Unfound/untested
         //Claimed all 3 XP rewards from the information clerk
         Task claimedAll3MuseumXpRewards = new Task.TaskBuilder()
                 .name("Claimed all 3 XP rewards from the information clerk")
@@ -589,7 +591,7 @@ public class UnplacedRandomTaskList extends TaskList
         //Maxed the Museum Kudos counter with 243 Kudos
         addGeTask(true, "Maxed the Museum Kudos counter with 243 Kudos", VarbitID.VM_KUDOS, 243);
         //
-        // Unlocked the Expert Dragon Archer title - couldnt find varb change on kc, maybe on rank change?
+        // Unlocked the Expert Dragon Archer title - TODO: couldnt find varb change on kc, maybe on rank change?
         //Logged a personal best at Tears of Guthix
         addGeTask(true, "Logged a personal best at Tears of Guthix", VarbitID.TOG_MAX_TEARS_COLLECTED, 1);
 
@@ -618,11 +620,12 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Claimed free food from Koftik in the Underground Pass", VarbitID.UPASS_PALADIN_FOOD); //
         //Claimed items from Elnock Inquisitor in Impetuous Impulses
         addTask("Claimed items from Elnock Inquisitor in Impetuous Impulses", VarbitID.II_ELNOCK_GIVEN_FREESTUFF);
-        //Claimed a free bucket from Fritz the Glassblower
+        //Claimed a free bucket from Fritz the Glassblower // TODO: Unfound/untested
+        //addTask("Claimed a free bucket from Fritz the Glassblower", 0); // TODO: Unfound
         //Claimed both free beers from Lucy in the Falador Party Room
         addEqTask(true, "Claimed both free beers from Lucy in the Falador Party Room", VarbitID.OSB4_FREEBEERS, 3);
         //Claimed the pet reclaim token discount at Probita ? this is dead isnt it
-        //Claimed all free chants for lost crystal equipment from Ilfeen
+        //Claimed all free chants for lost crystal equipment from Ilfeen TODO: Unfound
         //Claimed all weapon charge refunds from the Emblem Trader
         Task claimedBountyHunterWeaponChargeRefund = new Task.TaskBuilder()
                 .name("Claimed all weapon charge refunds from the Emblem Trader")
@@ -634,28 +637,27 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(claimedBountyHunterWeaponChargeRefund);
 
-        //Claimed any deposit back from the Shilo Village furnace coffer
-        //Claimed any additional sunfire armour from the STASH unit)
+        //Claimed any deposit back from the Shilo Village furnace coffer TODO: Unfound
+        //Claimed any additional sunfire armour from the STASH unit) probably doesn't exist
         //Completed all miniquests
         addEqTask(true,"Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
-
 
         // TODO: New, two-point-nine
         // Unlocked the ability to trade Thorgel for death talismans
         addTask("Unlocked the ability to trade Thorgel for death talismans", VarbitID.MOURNING_DWARF_STARTEDTASK); // Test on hog
         // Unlocked Gabooty's shop open option
-        addTask("Unlocked Gabooty's shop open option", VarbitID.GABOOTYSHOPCHAT); // tested, correct
-        // Listened to Shantay introduce the Shantay Pass
-        // Razmire's directions to the Shade Lair (Shades of Mortton)
+        addTask("Unlocked Gabooty's shop open option", VarbitID.GABOOTYSHOPCHAT); // confirmed
+        // Listened to Shantay introduce the Shantay Pass TODO: Unfound
+        // Razmire's directions to the Shade Lair (Shades of Mortton) TODO: Unfound
         // Listened to the summary of Ulfric's parchment (Olaf's Quest)
-        addTask("Listened to the summary of Ulfric's parchment", VarbitID.OLAF2_READ_NOTE); // tested, correct
+        addTask("Listened to the summary of Ulfric's parchment", VarbitID.OLAF2_READ_NOTE); // confirmed
         // Disabled the giant bones bury warning Obor/Bryophyta
         addTask("Disabled the giant bones bury warning", VarbitID.GIANT_BONE_BURY_WARNING_DISABLE); // TODO: Untested
         // Listened to the vineyard foreman's ripe grape request
         addTask("Listened to the vineyard foreman's ripe grape request", VarbitID.ALDARIN_GRAPES_INTRO); // confirmed
         // Unlocked the maximum bow string spool capacity
         addEqTask(true, "Unlocked the maximum bow string spool capacity", VarbitID.BOWSTRING_SPOOL_SIZE, 5); // Idk what the max size is
-        // Unlocked all 6 greenman mask variants
+        // Unlocked all 6 greenman mask variants TODO: Unfound
         // Unlocked all 6 pendant of ates teleport locations
         Task unlockPendantOfAtes = new Task.TaskBuilder()
                 .name("Unlocked all 6 pendant of ates teleport locations") // confirmed
@@ -694,8 +696,7 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Used the antique lamp from Prince Itzla", VarbitID.VMQ4_REWARD_LAMP_USED);
         // Listened to the Pilgrim introduce the Pilgrim Path (https://oldschool.runescape.wiki/w/Pilgrim)
         addTask("Listened to the Pilgrim introduce the Pilgrim Path", VarbitID.VARLAMORE_PILGRIM_MET); // confirmed
-        // Listened to the Zombie pirate's story about his crew's whereabouts (https://oldschool.runescape.wiki/w/Zombie_pirate_(NPC))
-        // Claimed a free hunter kit from a hunting expert
+        // Claimed a free hunter kit from a hunting expert TODO: Not found
         // Unlocked Ali Morisane's gnome question option
         addTask("Unlocked Ali Morisane's gnome question option", VarbitID.ALI_GNOME_RIVALRY); // TODO: Untested, probs right
         // Claimed the pet insurance refund at Probita
@@ -706,7 +707,7 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Disabled the Port Roberts jail guard bribe warning", VarbitID.PORT_ROBERTS_JAIL_QUICK_ESCAPE); //TODO: Untested, probs right
         // Listened to Biles's introduction to the Drumstick Kingdom
         addTask("Listened to Biles's introduction to the Drumstick Kingdom", VarbitID.BILES_MET);
-        // Obtained all guaranteed gold ring drops
+        // Obtained all guaranteed gold ring drops probably doesn't exist
         // Built the bridge leading to the Mausoleum in Morytania
         Task mausoleumBridge = new Task.TaskBuilder()
                 .name("Built the bridge leading to the Mausoleum in Morytania")
@@ -761,22 +762,23 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(builtAllCrabTraps);
         // Listened to the Ship Yard foreman's question no varb/varp
+        // Listened to the Zombie pirate's story about his crew's whereabouts I tihnk this is the same as the next one?
         // Unlocked the zombie pirate's check option
-        addEqTask(true, "Unlocked the zombie pirate's check option", VarbitID.WILDY_ZOMBIE_PIRATE_FRIENDLY_INTRO_CHAT, 2); //
+        addEqTask(true, "Unlocked the zombie pirate's check option", VarbitID.WILDY_ZOMBIE_PIRATE_FRIENDLY_INTRO_CHAT, 2); // confirmed
         // Told the Carnillean guard about the assassin (DT2)
         addTask("Told the Carnillean guard about the assassin", VarbitID.DT2_GUARD_CARNILLEAN_DIALOGUE); // confirmed
         // Listened to the builders' advice (Final Dawn)
         addTask("Listened to the builders' advice", VarbitID.PMOON_BUILDERS_VMQ4_CHAT); // confirmed
         // Listened to Jessamine about the final dawn
         addTask("Talk to Jessamine after The Final Dawn", VarbitID.PMOON_JESS_VMQ4_CHAT); // confirmed
-        // Attached a rope to the Charred Dungeon entrance
+        // Attached a rope to the Charred Dungeon entrance TODO: Unfound
         // Unlocked the ability to reclaim the medallion of the deep
         addTask("Unlocked the ability to reclaim the medallion of the deep", VarbitID.MOTD_CRAFTED);
         // Claimed XP from charting all oceans
         addTask("Claimed XP from charting all oceans", VarbitID.SAILING_CHARTING_FULL_COMPLETION_EVER_COMPLETE); //?
-        // Looted the chest containing the storm cruiser's outfit
-        // Looted the chest containing the swamp cruiser's outfit
-        // Looted the chest containing the crystal gliders's outfit
+        // Looted the chest containing the storm cruiser's outfit TODO: Unfound/untested
+        // Looted the chest containing the swamp cruiser's outfit TODO: Unfound/untested
+        // Looted the chest containing the crystal gliders's outfit TODO: Unfound/untested
         // Unlocked the ability to assign all 10 crewmates
         Task gotAllSailingCrewmates = new Task.TaskBuilder()
                 .name("Unlocked the ability to assign all 10 crewmates")
@@ -794,7 +796,7 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(gotAllSailingCrewmates);
         // Listened to the Elder Nama's gryphon warning
         addTask("Listened to the Elder Nama's gryphon warning", VarbitID.SLAYER_GRYPHON_BOSS_GUARDIAN_MET);
-        // Unlocked Gull's metamorphosis option
+        // Unlocked Gull's metamorphosis option TODO: Unfound, probably doesn't exist? At least not an intuitive name
         // Claimed XP from drinking the melted rocks
         addTask("Claimed XP from drinking the melted rocks", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_ICE); // confirmed
         // Claimed XP from drinking Chuck up's 'stew'
@@ -809,14 +811,13 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Disabled Shipwright Seb's ship repair warning", VarbitID.BOAT_REPAIR_COST_WARNING_DISMISSED); // confirmed
         // Claimed all 5 mystery boxes from the puzzlers poteen
         addTask("Claimed all 5 mystery boxes from the puzzlers poteen", VarbitID.SAILING_CHARTING_DRINK_CRATE_PUZZLERS_POTEEN_REWARD);
-
         // Unlocked the ability to reclaim Ralph's fabric roll
         addTask("Unlocked the ability to reclaim Ralph's fabric roll", VarbitID.SAILING_BT_TEMPOR_TANTRUM_MARLIN_FIRST);
         // Unlocked the ability to reclaim Gurtob's fabric roll
         addTask("Unlocked the ability to reclaim Gurtob's fabric roll", VarbitID.SAILING_BT_JUBBLY_JIVE_MARLIN_FIRST);
         // Unlocked the ability to reclaim Gwyna's fabric roll
         addTask("Unlocked the ability to reclaim Gwyna's fabric roll", VarbitID.SAILING_BT_GWENITH_GLIDE_MARLIN_FIRST);
-        // Unlocked the ability to reclaim Guthixian paint
+        // Unlocked the ability to reclaim Guthixian paint TODO: All paints unfound and untested
         // Unlocked the ability to reclaim Saradominist paint
         // Unlocked the ability to reclaim Zamorakian paint
         // Unlocked the ability to reclaim Armadylean paint
@@ -828,7 +829,7 @@ public class UnplacedRandomTaskList extends TaskList
         // Unlocked the orangefin fishing trophy option
         // Told Betty the meaning of the notes (Ethically Acquired Antiquities)
         addTask("Told Betty the meaning of the notes", VarbitID.EAA_BETTY_TOLD_ABOUT_NOTE); // confirmed
-        // Claimed pints of whirlpool suprise from Rum-dashed Ralph
+        // Claimed pints of whirlpool suprise from Rum-dashed Ralph TODO: Untested/unfound
         // Asked Charlie the Tramp about the black arm gang
         addTask("Asked Charlie the Tramp about the black arm gang", VarbitID.SOA_CHARLIE_MET);
         // Listened to Netmaster Kellan introduce deep sea trawling

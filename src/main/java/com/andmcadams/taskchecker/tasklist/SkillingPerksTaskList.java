@@ -53,36 +53,28 @@ public class SkillingPerksTaskList extends TaskList
         addTask("Unlocked Apprentice Cordelia's ability to repair pouches", VarbitID.GOTR_CORDELIA_REPAIR_POUCH);
 
         //Disabled torn perfected quetzal whistle blueprint drops
-        addTask("Disabled torn perfected quetzal whistle blueprint drops", 0); // TODO: not found
-        //this.add(disabledTornPerfectedQuetzalWhistleBlueprint);
+        //addTask("Disabled torn perfected quetzal whistle blueprint drops", 0); // TODO: not found
 
         //Claimed a free basic quetzal whistle blueprint
-        addTask("Claimed a free basic quetzal whistle blueprint", 0); // TODO: Not found
-        //this.add(claimedFreeWhistle);
+        //addTask("Claimed a free basic quetzal whistle blueprint", 0); // TODO: Not found
         //Unlocked the Hunter Guild teleport on a hunter/max cape
-        addTask("Unlocked the Hunter Guild teleport on a hunter/max cape", 0); // TODO: Not found
-        //this.add(hunterGuildTeleport);
+        //addTask("Unlocked the Hunter Guild teleport on a hunter/max cape", 0); // TODO: Not found
         //Unlocked the ability to reclaim Apatura's items
-        addTask("Unlocked the ability to reclaim Apatura's items", 0); // TODO: Not found
-        //this.add(apaturasItems);
+        //addTask("Unlocked the ability to reclaim Apatura's items", 0); // TODO: Not found
         //
         //Unlocked the forestry kit/basket's outfit storage ability
-        addTask("Unlocked the forestry kit/basket's outfit storage ability", 0); // TODO: Not found
-        //this.add(forestryKitBasketOutfit);
+        //addTask("Unlocked the forestry kit/basket's outfit storage ability", 0); // TODO: Not found
         //Unlocked the forestry kit/basket's cape storage ability
-        addTask("Unlocked the forestry kit/basket's cape storage ability", 0); // TODO: Not found
-        //this.add(forestryKitBasketCape);
+        //addTask("Unlocked the forestry kit/basket's cape storage ability", 0); // TODO: Not found
         //
         //Unlocked the ability to redecorate to the Hosidius house style
-        addTask("Unlocked the ability to redecorate to the Hosidius house style", 0); // TODO: Not found
-        //this.add(hosidiusHouseStyle);
+        //addTask("Unlocked the ability to redecorate to the Hosidius house style", 0); // TODO: Not found
         //
-        //Logged a fastest commission at the highest quality of 199
+        //Logged a fastest commission at the highest quality of 199 TODO: probs not transmitted? idk
         // ?
         //Unlocked the ability to purchase colossal blades from Perdu
-        addTask("Unlocked the ability to purchase colossal blades from Perdu", 0); // TODO: Not found
-        //this.add(colossalBlade);
-        //Unlocked the crucible's custom quantity option
+        //addTask("Unlocked the ability to purchase colossal blades from Perdu", 0); // TODO: Not found
+        //Unlocked the crucible's custom quantity option TODO: Unfound
         //Unlocked all 15 additional sword moulds
         Task giantsFoundryAllMoulds = new Task.TaskBuilder()
                 .name("Unlocked all 15 additional sword moulds")
@@ -119,21 +111,17 @@ public class SkillingPerksTaskList extends TaskList
         addTask("Unlocked the Camdozaal luck buff", VarbitID.CAMDOZAAL_REWARDS_BUFF);
         //
         //Unlocked access to Belona's amethyst cave
-        addTask("Unlocked access to Belona's amethyst cave", 0); // TODO: Unfound
-        //this.add(belonasAmethystCave);
+        //addTask("Unlocked access to Belona's amethyst cave", 0); // TODO: Unfound
         //
         //Unlocked the ability to toggle the full spirit angler outfit
-        addTask("Unlocked the ability to toggle the full spirit angler outfit", 0); // TODO: Unfound
-        //this.add(spiritAngler);
+        //addTask("Unlocked the ability to toggle the full spirit angler outfit", 0); // TODO: Unfound
         //Listened to Captain Pudi's explanation of Tempoross
-        addTask("Unlocked the ability to toggle the full spirit angler outfit", 0); // TODO: Unfound
-        //this.add(captainPudiExplanation);
+        //addTask("Unlocked the ability to toggle the full spirit angler outfit", 0); // TODO: Unfound
         //
         //Unlocked the large water container
         addTask("Unlocked the large water container", VarbitID.FOSSIL_MINE_UNLOCKED_MOREWATER);
         //Disabled the Fertile Soil's non-upgraded spell warning
-        addTask("Disabled the Fertile Soil's non-upgraded spell warning", 0); // TODO: Unfound
-        //this.add(fertileSoilWarningDisabled);
+        //addTask("Disabled the Fertile Soil's non-upgraded spell warning", 0); // TODO: Unfound
 
         //Unlocked the ability to create swampbark armours
         addTask("Unlocked the ability to create swampbark armours", VarbitID.SHADES_SWAMP_UNLOCK);
@@ -144,11 +132,9 @@ public class SkillingPerksTaskList extends TaskList
         addTask("Unlocked Dusuri's trade option", VarbitID.STAR_TRADER_MET);
         //
         //Unlocked the blood rift in the Abyss
-        addTask("Unlocked the blood rift in the Abyss", 0); // TODO: Unfound
-        //this.add(unlockedBloodAbyss);
+        //addTask("Unlocked the blood rift in the Abyss", 0); // TODO: Unfound
         //Unlocked the soul rift in the Abyss
-        addTask("Unlocked the soul rift in the Abyss", 0); // TODO: Unfound
-        //this.add(unlockedSoulAbyss);
+        //addTask("Unlocked the soul rift in the Abyss", 0); // TODO: Unfound
     }
 }
 

@@ -40,14 +40,11 @@ public class UnlimitedServicesTaskList extends TaskList
 
 	public void initTasks()
 	{
-		// TODO:
-		//Paid Fossegrimen for free enchanted lyre imbues
-		// VarbitID.FREMMY_TELE_FIXY?
-
-		//Paid Petrified Pete for free entry to the Volcanic Mine couldnt find
-		//Paid Matthias for free falcon rentals couldnt find
-		//Paid Skully for the ability to toggle loot keys couldnt find
-		//Paid the ghost captain for free trips to Dragontooth Island couldnt find
+		//Paid Fossegrimen for free enchanted lyre imbues TODO: Unfound? VarbitID.FREMMY_TELE_FIXY?
+		//Paid Petrified Pete for free entry to the Volcanic Mine TODO: couldnt find
+		//Paid Matthias for free falcon rentals TODO: couldnt find
+		//Paid Skully for the ability to toggle loot keys TODO: couldnt find
+		//Paid the ghost captain for free trips to Dragontooth Island TODO: couldnt find
 
 		addEqTask(true, "Paid any banker for all 360 additional bank slots", VarbitID.BANK_EXTRA_BLOCKS_PURCHASED, 9);
 

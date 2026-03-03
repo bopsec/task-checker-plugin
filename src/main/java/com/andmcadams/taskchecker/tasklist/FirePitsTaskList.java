@@ -40,7 +40,7 @@ public class FirePitsTaskList extends TaskList
 	public void initTasks()
 	{
 		// TODO:
-		//Built a raft using the smashed table in Ah Za Rhoon couldn't find https://oldschool.runescape.wiki/w/Crude_raft
+		//Built a raft using the smashed table in Ah Za Rhoon TODO: Unfound
 		
 		//Built the Spinning Wheel on the Isle of Souls
 		addTask("Built the Spinning Wheel on the Isle of Souls", VarbitID.SW_SPINNINGWHEEL_BUILT);
@@ -73,7 +73,7 @@ public class FirePitsTaskList extends TaskList
 		//Destroyed all 9 tentacles in the Lassar Undercity couldn't find under DT2_LASSAR
 		//Listened to all 10 remnants in the Lassar Undercity
 //		Task listenedToRemnantsLassarUndercity = new Task.TaskBuilder()
-//				.name("")
+//				.name("Listened to all 10 remnants in the Lassar Undercity")
 //				// where did the other 6 go?
 //				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_6)
 //				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_7)

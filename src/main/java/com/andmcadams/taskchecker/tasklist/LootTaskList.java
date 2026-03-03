@@ -45,9 +45,8 @@ public class LootTaskList extends TaskList
 		addTask("Looted the crate containing a teleport in the Goblin Temple", VarbitID.LOTG_FOUND_SPHERE);
 //		Looted the workbench containing iron nails at Gordon's farm
 		addTask("Looted the workbench containing iron nails at Gordon's farm", VarbitID.GA_NAILS_GIVEN);
-		// TODO:
-//		Looted the stone chest in The Stranglewood mine couldn't find
-//		Looted the chest in Lassar Undercity couldn't find
+//		Looted the stone chest in The Stranglewood mine TODO: Unfound
+//		Looted the chest in Lassar Undercity TODO: Unfound
 
 //
 		Task piscatorisTools = new Task.TaskBuilder()
@@ -59,7 +58,7 @@ public class LootTaskList extends TaskList
 		//
 		// Looted all 3 of Ru Merald's gem locations not transmitted i think, just tested one gem
 
-		//Looted all 4 pallets and the chest in Movario's base
+		//Looted all 4 pallets and the chest in Movario's base TODO: Unfound
 
 		// Search tasks
 		addEqTask(true, "Open Marlo's crate", VarbitID.DADDYSHOME_STATUS, 14);

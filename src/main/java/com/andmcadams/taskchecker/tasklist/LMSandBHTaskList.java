@@ -63,7 +63,6 @@ public class LMSandBHTaskList extends TaskList
         //Unlocked the ability to claim a Bounty Hunter hat (tier 4)
         //Unlocked the ability to claim a Bounty Hunter hat (tier 5)
         //Unlocked the ability to claim a Bounty Hunter hat (tier 6)
-        //Unlocked the ability to avoid teleport attacks
     }
 }
 

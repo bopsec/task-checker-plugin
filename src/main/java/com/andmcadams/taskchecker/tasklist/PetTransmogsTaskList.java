@@ -40,29 +40,29 @@ public class PetTransmogsTaskList extends TaskList
     {
         // Skilling pets
         // Unlocked the ability to recolour the Beaver
-        addTask("Unlocked the ability to recolour the Beaver", 0); // TODO
+        //addTask("Unlocked the ability to recolour the Beaver", 0); // TODO
         // Unlocked the Beaver's pheasant metamorphosis option
-        addTask("Unlocked the Beaver's pheasant metamorphosis option", 0); // TODO
-        addTask("Unlocked the Beaver's fox metamorphosis option", 0); // TODO
+        //addTask("Unlocked the Beaver's pheasant metamorphosis option", 0); // TODO
+        //addTask("Unlocked the Beaver's fox metamorphosis option", 0); // TODO
         // Unlocked the Heron's reduced metamorphosis cost
-        addTask("Unlocked the Heron's reduced metamorphosis cost", 0);
+        //addTask("Unlocked the Heron's reduced metamorphosis cost", 0); // TODO
         // Unlocked the pet phoenix's green metamorphosis option
-        addTask("Unlocked the pet phoenix's green metamorphosis option", 0); // TODO
+        //addTask("Unlocked the pet phoenix's green metamorphosis option", 0); // TODO
         // Unlocked the pet phoenix's blue metamorphosis option
-        addTask("Unlocked the pet phoenix's blue metamorphosis option", 0); // TODO
+        //addTask("Unlocked the pet phoenix's blue metamorphosis option", 0); // TODO
         // Unlocked the pet phoenix's white metamorphosis option
-        addTask("Unlocked the pet phoenix's white metamorphosis option", 0); // TODO
+        //addTask("Unlocked the pet phoenix's white metamorphosis option", 0); // TODO
         // Unlocked the pet phoenix's purple metamorphosis option
-        addTask("Unlocked the pet phoenix's purple metamorphosis option", 0); // TODO
+        //addTask("Unlocked the pet phoenix's purple metamorphosis option", 0); // TODO
 
         addTask("Unlocked the Giant Squirrel's dark metamorphosis option", VarbitID.HALLOWED_SKILLPET_DARK_UNLOCKED);
         addTask("Unlocked the Giant Squirrel's bone metamorphosis option", VarbitID.AGILITY_SKILLPET_BONE_UNLOCKED);
 
         // Bossing pets
         // Unlocked Muphin's metamorphosis option
-        addTask("Unlocked Muphin's metamorphosis option", 0); // TODO
+        //addTask("Unlocked Muphin's metamorphosis option", 0); // TODO
         // Unlocked Nid's metamorphosis option
-        addTask("Unlocked Nid's metamorphosis option", 0); // TODO
+        //addTask("Unlocked Nid's metamorphosis option", 0); // TODO
         // Unlocked the Little Nightmare's metamorphosis option
         addTask("Unlocked the Little Nightmare's metamorphosis option", VarbitID.NIGHTMARE_PET_PARASITE_UNLOCKED);
         // Unlocked Sraracha's orange metamorphosis option
@@ -71,8 +71,8 @@ public class PetTransmogsTaskList extends TaskList
         addTask("Unlocked Sraracha's blue metamorphosis option", VarbitID.SARACHNISPET_BLUE_TRANSMOG);
 
         // Raids pets
-        addTask("Unlocked the Olmlet's metamorphosis option", 0); // TODO
-        addTask("Unlocked Lil' Zik's metamorphosis option", 0); // TODO
+        //addTask("Unlocked the Olmlet's metamorphosis option", 0); // TODO
+        //addTask("Unlocked Lil' Zik's metamorphosis option", 0); // TODO
 
         addTask("Unlocked Tumeken's Guardian's Akkhito metamorphosis", VarbitID.TOA_UNLOCKED_PET_MORPH_AKKHA);
         addTask("Unlocked Tumeken's Guardian's Babi metamorphosis", VarbitID.TOA_UNLOCKED_PET_MORPH_BABA);
@@ -83,23 +83,6 @@ public class PetTransmogsTaskList extends TaskList
                 .switchVar(true, VarbitID.TOA_UNLOCKED_PET_MORPH_DESTROYED_ELIDINIS)
                 // and the other one? VarbitID.TOA_UNLOCKED_PET_MORPH_DESTROYED_TUMEKEN
                 .build();
-
-        //this.add(beaverRecolour);
-//        this.add(beaverPheasant);
-//        this.add(beaverFox);
-//        this.add(heronMetamorphosis);
-//        this.add(phoenixGreen);
-//        this.add(phoenixBlue);
-//        this.add(phoenixWhite);
-//        this.add(phoenixPurple);
-
-
-//        this.add(muphinMetamorphosis); //
-//        this.add(nidMetamorphosis); //
-
-
-//        this.add(olmletTransmog); //
-//        this.add(zikTransmog); //
 
         this.add(damagedGuardian);
     }

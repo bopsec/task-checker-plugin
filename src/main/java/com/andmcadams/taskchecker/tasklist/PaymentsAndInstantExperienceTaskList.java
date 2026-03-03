@@ -52,8 +52,9 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		//TODO:Claimed XP from smithing an emberlight
 		//TODO:Claimed XP from crafting a purging staff
 		//TODO:Claimed XP from fletching a scorching bow
-		//TODO:Claimed a clue scroll from a monkey from Ardougne Zoo
-		//TODO:Claimed a medium pouch from Archmage Sedridor
+		//TODO:Claimed a clue scroll from a monkey from Ardougne Zoo not transmitted i think
+		//Claimed a medium pouch from Archmage Sedridor
+		addEqTask(true,"Claimed a medium pouch from Archmage Sedridor", VarbitID.TOTE_OWED_POUCH, 0);
 		//Claimed a keris partisan from Maisa's tent
 		addEqTask(true, "Claimed a keris partisan from Maisa's tent", VarbitID.BCS_OWED_PARTISAN, 0);
 		//Claimed the circlet of water from the High Priest of Sophanem
