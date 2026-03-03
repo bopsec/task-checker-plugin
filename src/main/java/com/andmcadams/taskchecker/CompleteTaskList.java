@@ -92,13 +92,12 @@ public class CompleteTaskList
 		taskLists.add(forgottenPrayers);
 		taskLists.add(hallowedSepulchre);
 		taskLists.add(hiddenShops);
-		//taskLists.add(invisible);
 		taskLists.add(lmsAndBh);
 		taskLists.add(loot);
 		taskLists.add(lostItems);
 		taskLists.add(motherlodeMine);
 		taskLists.add(paymentsAndInstantExperience);
-		taskLists.add(allPets);
+		//taskLists.add(allPets); // Discontinued, idk how to fix this
 		taskLists.add(petTransmogs);
 		taskLists.add(raidsCapes);
 		taskLists.add(redeemableQuestItems);
@@ -115,6 +114,7 @@ public class CompleteTaskList
 		taskLists.add(unlimitedServices);
 		taskLists.add(unplacedTasks);
 		taskLists.add(utilityItems);
+		taskLists.add(invisible);
 
 		int sum = 0;
 		for(TaskList taskList : taskLists)
