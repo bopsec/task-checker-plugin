@@ -176,11 +176,11 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//addTask("Told Weave about the jar of venom", 0); // TODO: Unfound
 
 		//Told the head butler you won't join the union
-		addTask("Told the head butler you won't join the union", VarbitID.DOTI_MASK_DIALOGUE);
+		addTask("Told the head butler you won't join the union", VarbitID.DOTI_MASK_DIALOGUE); // confirmed
 
 		addTask("Unlocked Rosie", VarbitID.PORCINE_ROSIE);
 
-		addEqTask(false, "Get directions from Baraek", VarPlayerID.PHOENIXGANG, 4);
+		addGeTask(false, "Get directions from Baraek", VarPlayerID.PHOENIXGANG, 4);
 
 		addTask("Pay Eblis for an ancient staff", VarbitID.FD_GOT_ZAROS_STAFF);
 

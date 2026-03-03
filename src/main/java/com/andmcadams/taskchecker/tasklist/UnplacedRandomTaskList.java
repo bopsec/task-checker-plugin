@@ -167,18 +167,19 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(trimmedQuestCape);
         //
         //Built all 3 beginner STASH units (do not have to be filled)
-        addEqTask(true, "Built all 3 beginner STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_BEGINNER_ALL, 7);
+        addEqTask(true, "Built all 3 beginner STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_BEGINNER_ALL, 7); // confirmed
         //Built all 30 easy STASH units (do not have to be filled)
-        addEqTask(true, "Built all 32 easy STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_EASY_ALL, Integer.MAX_VALUE); // 2^32 - 1
+        addEqTask(true, "Built all 32 easy STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_EASY_ALL, Integer.MAX_VALUE); // 2^32 - 1 confirmed
         //Built all 25 medium STASH units (do not have to be filled)
-        addEqTask(true, "Built all 25 medium STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_MEDIUM_ALL, 33554431); // 2^25 - 1
+        addEqTask(true, "Built all 25 medium STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_MEDIUM_ALL, 33554431); // 2^25 - 1 confirmed
         //Built all 16 hard STASH units (do not have to be filled)
-        addEqTask(true, "Built all 16 hard STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_HARD_ALL, 65535); // 2 ^ 16 - 1
+        addEqTask(true, "Built all 16 hard STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_HARD_ALL, 65535); // 2 ^ 16 - 1 confirmed
         //Built all 19 elite STASH units (do not have to be filled)
-        addEqTask(true, "Built all 19 elite STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_ELITE_ALL, 524287); // 2^19 - 1
+        addEqTask(true, "Built all 19 elite STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_ELITE_ALL, 524287); // 2^19 - 1 confirmed
         //Built all 25 master STASH units (do not have to be filled)
-        addEqTask(true, "Built all 25 master STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_MASTER_ALL, 33554431); // 2^25 - 1
+        addEqTask(true, "Built all 25 master STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_MASTER_ALL, 33554431); // 2^25 - 1 confirmed
         //
+        // How do I do these? Just check if the latest event has reached the final varb/varp value?
         //Unlocked the ability to reclaim Crack the Clue III event items
         //Unlocked the ability to reclaim all 35 Birthday holiday items
         //Unlocked the ability to reclaim all 36 Easter holiday items
@@ -206,7 +207,7 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Unlocked the pharaoh's sceptre's Jaltevas teleport option", VarbitID.PHARAOHS_SCEPTRE_NECROPOLIS);
         //
         //Unlocked all 3 of Juna's story options
-        addEqTask(true, "Unlocked all 3 of Juna's story options", VarbitID.TOG_JUNA_STORIES, 4);
+        addEqTask(true, "Unlocked all 3 of Juna's story options", VarbitID.TOG_JUNA_STORIES, 4); // confirmed
         //Unlocked all 4 of Ali Morrisane workers' threatening option
         Task unlockedAllMorrisaneWorkersThreateningOption = new Task.TaskBuilder()
                 .name("Unlocked all 4 of Ali Morrisane workers' threatening option")
@@ -234,7 +235,7 @@ public class UnplacedRandomTaskList extends TaskList
 
 
         //Selected at least one death animation option
-        addGeTask(false, "Selected at least one death animation option", VarPlayerID.DEATH_ANIM_TOGGLES, 1);
+        addGeTask(false, "Selected at least one death animation option", VarPlayerID.DEATH_ANIM_TOGGLES, 1); // confirmed
         //
         //Unlocked all 6 balloon transport system routes
         Task unlockedAllBallooonTransports = new Task.TaskBuilder()
@@ -247,7 +248,7 @@ public class UnplacedRandomTaskList extends TaskList
                 .eqVar(true, VarbitID.ZEP_MULTI_PICCARD, 2)
                 .build();
         this.add(unlockedAllBallooonTransports);
-        //Selected a preference for the log storage crates TODO: Didn't change when already done, so couldn't fint it
+        //Selected a preference for the log storage crates TODO: Didn't change when already done, so couldn't find it
         //
         //Unlocked all 10 random event emotes
         Task unlockedAllRandomEmotes = new Task.TaskBuilder()
@@ -298,11 +299,7 @@ public class UnplacedRandomTaskList extends TaskList
         //Paid Krystilia for the ability to respawn at Edgeville
         addTask("Paid Krystilia for the ability to respawn at Edgeville", VarbitID.EDGEVILLE_SPAWN_UNLOCKED);
         //Paid Ferox for the ability to respawn at Ferox Enclave
-        //Task unlockedFeroxRespawn = new Task.TaskBuilder()
-        //        .name("Paid Ferox for the ability to respawn at Ferox Enclave")
-        //        .switchVar(true, VarbitID.WILDERNESS_SPAWN_UNLOCKED) this does never change from 0
-        //        .build();
-        //this.add(unlockedFeroxRespawn);
+        //addTask("Paid Ferox for the ability to respawn at Ferox Enclave", VarbitID.WILDERNESS_SPAWN_UNLOCKED); // this never changes from 0?
         //
         //Unlocked the ability to see the last item you smithed
         addGeTask(true, "Unlocked the ability to see the last item you smithed", VarbitID.SMITHING_ITEM_LASTTYPE, 1);
@@ -312,7 +309,7 @@ public class UnplacedRandomTaskList extends TaskList
         addGeTask(true, "Unlocked the ability to see the last silver item you crafted", VarbitID.CRAFTING_SILVER_ITEM_LASTTYPE, 1);
         //
         //Unlocked the ability to reclaim the diamond speedrun trophy
-        addTask("Unlocked the ability to reclaim the diamond speedrun trophy", VarbitID.SPEEDRUNNING_DIAMOND_TROPHIES); // TODO: Does this just swap to 1 when you unlock trophy?
+        addTask("Unlocked the ability to reclaim the diamond speedrun trophy", VarbitID.SPEEDRUNNING_DIAMOND_TROPHIES); // TODO: Untested!! Does this just swap to 1 when you unlock trophy?
         //Unlocked the ability to reclaim the tier 1 adventurer's outfit
         //Unlocked the ability to reclaim the tier 2 adventurer's outfit
         //Unlocked the ability to reclaim the tier 3 adventurer's outfit
@@ -404,7 +401,7 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the ability to create ancient icons
         addTask("Unlocked the ability to create ancient icons", VarbitID.DT2_PLAYER_LEARNED_ICON_FUSING);
         //Unlocked the ability to create tormented synapse weapons
-        addTask("Unlocked the ability to create tormented synapse weapons", VarbitID.WGS_MESSAGE_READ); // ???
+        addTask("Unlocked the ability to create tormented synapse weapons", VarbitID.WGS_MESSAGE_READ); // not it, but this task will change
         // TODO: Find the synapse weapons varbit
         //
         //Revealed the human translation of the Cosmic Being's name
@@ -509,11 +506,47 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Obtained all 6 Uhld adventurer texts from the Myths' Guild", VarbitID.DS2_GUILD_BOOKS); // TODO: Unchecked?
         //Obtained all 6 grand bookshelf texts from the Theatre of Blood
         //Obtained all 7 boss texts from the Chambers of Xeric
+        Task obtainedAllCoxTexts = new Task.TaskBuilder()
+                .name("Obtained all 7 boss texts from the Chambers of Xeric")
+                .switchVar(true, VarbitID.RAIDS_BOOK_VESPULA_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_VANGUARD_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_TEKTON_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_REWARDCHEST_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_HOUNDMASTER_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_CREATUREKEEPER_READ)
+                .switchVar(true, VarbitID.RAIDS_BOOK_VASANISTIRIO_READ)
+                .build();
+        this.add(obtainedAllCoxTexts);
+
         //Obtained all 7 desert god texts from the Tombs of Amascut
+        Task obtainedAllToaBooks = new Task.TaskBuilder()
+                .name("Obtained all 7 desert god texts from the Tombs of Amascut")
+                .switchVar(true, VarbitID.TOA_BOOK_KEPHRI)
+                .switchVar(true, VarbitID.TOA_BOOK_BABA)
+                .switchVar(true, VarbitID.TOA_BOOK_ZEBAK)
+                .switchVar(true, VarbitID.TOA_BOOK_AKKHA)
+                .switchVar(true, VarbitID.TOA_BOOK_WARDENS)
+                .switchVar(true, VarbitID.TOA_BOOK_ICTHLARIN)
+                .switchVar(true, 0) // TODO: What is the last book?
+                .build();
+        this.add(obtainedAllToaBooks);
+
         //Obtained all 7 farming patch texts from the Farming Guild
+        Task obtainedAllFarmingGuildTexts = new Task.TaskBuilder()
+                .name("Obtained all 7 farming patch texts from the Farming Guild")
+                .switchVar(true, VarbitID.FGUILD_BOOK_ALLOTMENTS)
+                .switchVar(true, VarbitID.FGUILD_BOOK_BUSHES)
+                .switchVar(true, VarbitID.FGUILD_BOOK_FLOWERS)
+                .switchVar(true, VarbitID.FGUILD_BOOK_FRUIT)
+                .switchVar(true, VarbitID.FGUILD_BOOK_HOPS)
+                .switchVar(true, VarbitID.FGUILD_BOOK_HERBS)
+                .switchVar(true, VarbitID.FGUILD_BOOK_TREES)
+                .build();
+        this.add(obtainedAllFarmingGuildTexts);
+
         //Obtained all 16 elven texts from the Prifddinas Grand Library
         addTask("Obtained all 16 elven texts from the Prifddinas Grand Library", VarbitID.PRIF_BOOKS); // TODO: Unchecked
-        //Obtained all 93 miscellaneous texts (2 are obtained by default) couldn't find
+        //Obtained all 93 miscellaneous texts (2 are obtained by default) this is like 50 diff ones
         //
         //Unlocked the big bass fishing trophy option
         //Unlocked the big swordfish fishing trophy option
@@ -553,11 +586,10 @@ public class UnplacedRandomTaskList extends TaskList
                 .switchVar(true, VarbitID.FOSSIL_TASKREWARDS_SWAMP)
                 .build();
         this.add(claimedFossilsAfterCompletingFossilBoard);
-        //Maxed the Museum Kudos counter with 235 Kudos
+        //Maxed the Museum Kudos counter with 243 Kudos
         addGeTask(true, "Maxed the Museum Kudos counter with 243 Kudos", VarbitID.VM_KUDOS, 243);
         //
-        //Unlocked the Expert Dragon Archer title couldn't find it, can just kill one to check for varb changes?
-        // could not find this one, maybe it +1s when we reach a new rank?
+        // Unlocked the Expert Dragon Archer title - couldnt find varb change on kc, maybe on rank change?
         //Logged a personal best at Tears of Guthix
         addGeTask(true, "Logged a personal best at Tears of Guthix", VarbitID.TOG_MAX_TEARS_COLLECTED, 1);
 
@@ -581,9 +613,9 @@ public class UnplacedRandomTaskList extends TaskList
         //Logged at least 2 counts of opening all 8 Grand Gold Chests
         //
         //Claimed free food from Kamen in the Underground Pass
-        addTask("Claimed free food from Kamen in the Underground Pass", VarbitID.UPASS_DWARF_FOOD);
+        addTask("Claimed free food from Kamen in the Underground Pass", VarbitID.UPASS_DWARF_FOOD); // confirmed
         //Claimed free food from Koftik in the Underground Pass
-        addTask("Claimed free food from Koftik in the Underground Pass", VarbitID.UPASS_PALADIN_FOOD); //??
+        addTask("Claimed free food from Koftik in the Underground Pass", VarbitID.UPASS_PALADIN_FOOD); //
         //Claimed items from Elnock Inquisitor in Impetuous Impulses
         addTask("Claimed items from Elnock Inquisitor in Impetuous Impulses", VarbitID.II_ELNOCK_GIVEN_FREESTUFF);
         //Claimed a free bucket from Fritz the Glassblower
@@ -604,7 +636,7 @@ public class UnplacedRandomTaskList extends TaskList
 
         //Claimed any deposit back from the Shilo Village furnace coffer
         //Claimed any additional sunfire armour from the STASH unit)
-        //Completed all 18 miniquests
+        //Completed all miniquests
         addEqTask(true,"Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
 
 
@@ -620,13 +652,13 @@ public class UnplacedRandomTaskList extends TaskList
         // Disabled the giant bones bury warning Obor/Bryophyta
         addTask("Disabled the giant bones bury warning", VarbitID.GIANT_BONE_BURY_WARNING_DISABLE); // TODO: Untested
         // Listened to the vineyard foreman's ripe grape request
-        addTask("Listened to the vineyard foreman's ripe grape request", VarbitID.ALDARIN_GRAPES_INTRO); // Test on bop
+        addTask("Listened to the vineyard foreman's ripe grape request", VarbitID.ALDARIN_GRAPES_INTRO); // confirmed
         // Unlocked the maximum bow string spool capacity
-        addTask("Unlocked the maximum bow string spool capacity", VarbitID.BOWSTRING_SPOOL_SIZE); // Idk what the max size is
+        addEqTask(true, "Unlocked the maximum bow string spool capacity", VarbitID.BOWSTRING_SPOOL_SIZE, 5); // Idk what the max size is
         // Unlocked all 6 greenman mask variants
         // Unlocked all 6 pendant of ates teleport locations
         Task unlockPendantOfAtes = new Task.TaskBuilder()
-                .name("Unlocked all 6 pendant of ates teleport locations")
+                .name("Unlocked all 6 pendant of ates teleport locations") // confirmed
                 .switchVar(true, VarbitID.PENDANT_OF_ATES_ALDARIN_FOUND)
                 .switchVar(true, VarbitID.PENDANT_OF_ATES_AUBURN_FOUND)
                 .switchVar(true, VarbitID.PENDANT_OF_ATES_DARKFROST_FOUND)
@@ -636,26 +668,32 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(unlockPendantOfAtes);
         // Obtained both Hunter Guild texts
+        Task obtainedBothHunterGuildBooks = new Task.TaskBuilder()
+                .name("Obtained both Hunter Guild texts")
+                .switchVar(true, VarbitID.AUBURN_ECOLOGICAL_REPORTS) // confirmed
+                .switchVar(true, VarbitID.CUSTODIAN_LOREBOOK) // confirmed
+                .build();
+        this.add(obtainedBothHunterGuildBooks);
         // Looted the workbench containing iron nails at Tal Teklan
         addTask("Looted the workbench containing iron nails at Tal Teklan", VarbitID.SCRAMBLED_NAILS_GIVEN);
         // Told King her men helped with the egg (Scrambled!)
-        addTask("Told King her men helped with the egg", VarbitID.SCRAMBLED_FINAL_KING_DIALOGUE);
+        addTask("Told King her men helped with the egg", VarbitID.SCRAMBLED_FINAL_KING_DIALOGUE); // confirmed
         // Told Attala about Mokhaiotl (The final dawn)
-        addTask("Told Attala about Mokhaiotl", VarbitID.VMQ4_ATTALA_POST_QUEST_CHAT);
+        addTask("Told Attala about Mokhaiotl", VarbitID.VMQ4_ATTALA_POST_QUEST_CHAT); // confirmed
         // Told Eyatlalli about Mokhaiotl (The final dawn)
-        addTask("Told Eyatlalli about Mokhaiotl", VarbitID.VMQ4_EYATLALLI_POST_QUEST_CHAT);
-        // Told Bernard that Bernina is proud of him (https://oldschool.runescape.wiki/w/Bernard)
-        addEqTask(true, "Told Bernard that Bernina is proud of him", VarbitID.SPIRITOFADVENTURE, 5);
-        // Told Xilo and Fabia where to find each other (https://oldschool.runescape.wiki/w/Xilo)
-        addEqTask(true, "Told Xilo and Fabia where to find each other", VarbitID.TLATI_LOST_LOVER_FABIA, 2);
+        addTask("Told Eyatlalli about Mokhaiotl", VarbitID.VMQ4_EYATLALLI_POST_QUEST_CHAT); // confirmed
+        // Told Bernard that Bernina is proud of him
+        addEqTask(true, "Told Bernard that Bernina is proud of him", VarbitID.SPIRITOFADVENTURE, 5); // confirmed
+        // Told Xilo and Fabia where to find each other
+        addEqTask(true, "Told Xilo and Fabia where to find each other", VarbitID.TLATI_LOST_LOVER_FABIA, 2); // confirmed
         // Listened to the Friendly Forester explain Forestry
-        addTask("Listened to the Friendly Forester explain Forestry", VarbitID.FORESTRY_FORESTER_MET);
+        addTask("Listened to the Friendly Forester explain Forestry", VarbitID.FORESTRY_FORESTER_MET); // confirmed
         // Listened to the Mountain Guide's offer for help
-        addTask("Listened to the Mountain Guide's offer for help", VarbitID.MET_AUBURN_MOUNTAIN_GUIDE);
+        addTask("Listened to the Mountain Guide's offer for help", VarbitID.MET_AUBURN_MOUNTAIN_GUIDE); // confirmed
         // Used the antique lamp from Prince Itzla (The final dawn)?
         addTask("Used the antique lamp from Prince Itzla", VarbitID.VMQ4_REWARD_LAMP_USED);
         // Listened to the Pilgrim introduce the Pilgrim Path (https://oldschool.runescape.wiki/w/Pilgrim)
-        addTask("Listened to the Pilgrim introduce the Pilgrim Path", VarbitID.VARLAMORE_PILGRIM_MET);
+        addTask("Listened to the Pilgrim introduce the Pilgrim Path", VarbitID.VARLAMORE_PILGRIM_MET); // confirmed
         // Listened to the Zombie pirate's story about his crew's whereabouts (https://oldschool.runescape.wiki/w/Zombie_pirate_(NPC))
         // Claimed a free hunter kit from a hunting expert
         // Unlocked Ali Morisane's gnome question option
@@ -670,6 +708,12 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Listened to Biles's introduction to the Drumstick Kingdom", VarbitID.BILES_MET);
         // Obtained all guaranteed gold ring drops
         // Built the bridge leading to the Mausoleum in Morytania
+        Task mausoleumBridge = new Task.TaskBuilder()
+                .name("Built the bridge leading to the Mausoleum in Morytania")
+                .eqVar(true, VarbitID.FENK_BUILT_BRIDGE_NORTH, 2) // confirmed
+                .eqVar(true, VarbitID.FENK_BUILT_BRIDGE_SOUTH, 2) // confirmed
+                .build();
+        this.add(mausoleumBridge);
         // Unlocked Durrik's trade option (Deepfin point)
         addTask("Unlocked Durrik's trade option", VarbitID.DEEPFIN_DWARF_DURRIK_MET);
         // Unlocked both additional sailors' amulet teleport locations
@@ -686,7 +730,7 @@ public class UnplacedRandomTaskList extends TaskList
         // Disabled the shipwright ship recovery warning
         addTask("Disabled the shipwright ship recovery warning", VarbitID.SAILING_BOAT_CARGOHOLD_WARNING_DISMISSED);
         // Unlocked Sleve McDichael's rename-boat option
-        addTask("Unlocked Sleve McDichael's rename-boat option", VarbitID.SLEVE_MCDICHAEL_MET);
+        addTask("Unlocked Sleve McDichael's rename-boat option", VarbitID.SLEVE_MCDICHAEL_MET); // confirmed
         // Built all 20 hinged-lid crab traps
         Task builtAllCrabTraps = new Task.TaskBuilder()
                 .name("Built all 20 hinged-lid crab traps")
@@ -716,12 +760,15 @@ public class UnplacedRandomTaskList extends TaskList
                 .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_5)
                 .build();
         this.add(builtAllCrabTraps);
-        // Listened to the Ship Yard foreman's question
+        // Listened to the Ship Yard foreman's question no varb/varp
         // Unlocked the zombie pirate's check option
-        addTask("Unlocked the zombie pirate's check option", VarbitID.WILDY_ZOMBIE_PIRATE_FRIENDLY_INTRO_CHAT); // TODO: Untested but probs it
+        addEqTask(true, "Unlocked the zombie pirate's check option", VarbitID.WILDY_ZOMBIE_PIRATE_FRIENDLY_INTRO_CHAT, 2); //
         // Told the Carnillean guard about the assassin (DT2)
-        addTask("Told the Carnillean guard about the assassin", VarbitID.DT2_GUARD_CARNILLEAN_DIALOGUE);
+        addTask("Told the Carnillean guard about the assassin", VarbitID.DT2_GUARD_CARNILLEAN_DIALOGUE); // confirmed
         // Listened to the builders' advice (Final Dawn)
+        addTask("Listened to the builders' advice", VarbitID.PMOON_BUILDERS_VMQ4_CHAT); // confirmed
+        // Listened to Jessamine about the final dawn
+        addTask("Talk to Jessamine after The Final Dawn", VarbitID.PMOON_JESS_VMQ4_CHAT); // confirmed
         // Attached a rope to the Charred Dungeon entrance
         // Unlocked the ability to reclaim the medallion of the deep
         addTask("Unlocked the ability to reclaim the medallion of the deep", VarbitID.MOTD_CRAFTED);
@@ -749,24 +796,24 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Listened to the Elder Nama's gryphon warning", VarbitID.SLAYER_GRYPHON_BOSS_GUARDIAN_MET);
         // Unlocked Gull's metamorphosis option
         // Claimed XP from drinking the melted rocks
-        addTask("Claimed XP from drinking the melted rocks", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_ICE);
+        addTask("Claimed XP from drinking the melted rocks", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_ICE); // confirmed
         // Claimed XP from drinking Chuck up's 'stew'
-        addTask("Claimed XP from drinking Chuck up's 'stew'", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_STEW);
+        addTask("Claimed XP from drinking Chuck up's 'stew'", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_STEW); // confirmed
         // Claimed XP from drinking Daddy's special water's special water
-        addTask("Claimed XP from drinking Daddy's special water's special water", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_WATER);
+        addTask("Claimed XP from drinking Daddy's special water's special water", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_WATER); // confirmed
         // Paid Brass Hand Harry for a sailing cape
-        addTask("Paid Brass Hand Harry for a sailing cape", VarbitID.SKILLCAPE_SAILING_PURCHASED);
+        addTask("Paid Brass Hand Harry for a sailing cape", VarbitID.SKILLCAPE_SAILING_PURCHASED); // confirmed
         // Listened to Petrus describe minotaurs
         addTask("Listened to Petrus describe minotaurs", VarbitID.MINOTAURS_REST_BEASTMASTER_MET);
         // Disabled Shipwright Seb's ship repair warning
-        addTask("Disabled Shipwright Seb's ship repair warning", VarbitID.BOAT_REPAIR_COST_WARNING_DISMISSED);
+        addTask("Disabled Shipwright Seb's ship repair warning", VarbitID.BOAT_REPAIR_COST_WARNING_DISMISSED); // confirmed
         // Claimed all 5 mystery boxes from the puzzlers poteen
         addTask("Claimed all 5 mystery boxes from the puzzlers poteen", VarbitID.SAILING_CHARTING_DRINK_CRATE_PUZZLERS_POTEEN_REWARD);
 
         // Unlocked the ability to reclaim Ralph's fabric roll
         addTask("Unlocked the ability to reclaim Ralph's fabric roll", VarbitID.SAILING_BT_TEMPOR_TANTRUM_MARLIN_FIRST);
         // Unlocked the ability to reclaim Gurtob's fabric roll
-        addTask("Unlocked the ability to reclaim Gurtob's fabric roll", VarbitID.SAILING_BT_JUBBLY_JIVE_MASTER_STATE);
+        addTask("Unlocked the ability to reclaim Gurtob's fabric roll", VarbitID.SAILING_BT_JUBBLY_JIVE_MARLIN_FIRST);
         // Unlocked the ability to reclaim Gwyna's fabric roll
         addTask("Unlocked the ability to reclaim Gwyna's fabric roll", VarbitID.SAILING_BT_GWENITH_GLIDE_MARLIN_FIRST);
         // Unlocked the ability to reclaim Guthixian paint
@@ -780,12 +827,16 @@ public class UnplacedRandomTaskList extends TaskList
         // Unlocked the giant blue krill fishing trophy option
         // Unlocked the orangefin fishing trophy option
         // Told Betty the meaning of the notes (Ethically Acquired Antiquities)
-        addTask("Told Betty the meaning of the notes", VarbitID.EAA_BETTY_TOLD_ABOUT_NOTE); // TODO: Untested, probably right
+        addTask("Told Betty the meaning of the notes", VarbitID.EAA_BETTY_TOLD_ABOUT_NOTE); // confirmed
         // Claimed pints of whirlpool suprise from Rum-dashed Ralph
-        //
-        //
-        //
-
+        // Asked Charlie the Tramp about the black arm gang
+        addTask("Asked Charlie the Tramp about the black arm gang", VarbitID.SOA_CHARLIE_MET);
+        // Listened to Netmaster Kellan introduce deep sea trawling
+        addTask("Listened to Netmaster Kellan introduce deep sea trawling", VarbitID.PORT_ROBERTS_NETMASTER_KELLAN_MET);
+        // Used XP lamp from Cow quest
+        addTask("Used the magic lamp from Gillie Groats", VarbitID.COWBOSS_REWARD_LAMP);
+        // Claimed the Cowbell amulet after Ides of Milk
+        addTask("Claim the Cowbell amulet", VarbitID.COWQUEST_REWARD);
     }
 }
 
