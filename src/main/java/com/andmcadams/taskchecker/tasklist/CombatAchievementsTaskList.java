@@ -38,7 +38,8 @@ public class CombatAchievementsTaskList extends TaskList
 
     public void initTasks()
     {
-        //TODO: Unlocked the permanent slayer bonus in Mor Ul Rek caves
+        //Unlocked the permanent slayer bonus in Mor Ul Rek caves
+        addTask("Unlocked the permanent slayer bonus in Mor Ul Rek caves", VarbitID.INFERNO_SHOWN_GM_HELM);
         //Claimed all Combat Achievement rewards for every tier
         addEqTask(true, "Claimed all Combat Achievement rewards for every tier", VarbitID.CA_TIER_STATUS_GRANDMASTER, 2);
         addTask("Used the antique lamp (easy tier)", VarbitID.CA_LAMP_CLAIMED_EASY);

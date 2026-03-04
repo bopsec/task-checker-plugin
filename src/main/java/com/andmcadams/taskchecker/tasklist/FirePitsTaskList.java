@@ -39,8 +39,7 @@ public class FirePitsTaskList extends TaskList
 
 	public void initTasks()
 	{
-		// TODO:
-		//Built a raft using the smashed table in Ah Za Rhoon TODO: Unfound
+		//Built a raft using the smashed table in Ah Za Rhoon not transmitted
 		
 		//Built the Spinning Wheel on the Isle of Souls
 		addTask("Built the Spinning Wheel on the Isle of Souls", VarbitID.SW_SPINNINGWHEEL_BUILT);

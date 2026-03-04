@@ -42,7 +42,7 @@ public class TrappedSoulsTaskList extends TaskList
 	public void initTasks()
 	{
 		//Freed Mehhar from the High Priest of Scabaras's influence
-		addTask("Freed Mehhar from the High Priest of Scabaras's influence", VarbitID.BCS_MEHHAR_RETURNED);
+		addTask("Freed Mehhar from the High Priest of Scabaras's influence", VarbitID.BCS_MEHHAR_RETURNED); // confirmed
 
 		Task freeKlenter = new Task.TaskBuilder()
 			.name("Free Klenter's soul from Amascut's torment")

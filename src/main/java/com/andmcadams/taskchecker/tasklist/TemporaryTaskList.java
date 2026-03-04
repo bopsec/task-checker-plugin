@@ -39,13 +39,13 @@ public class TemporaryTaskList extends TaskList
 
 	public void initTasks()
 	{
-		addTask("Listen to Fairy Aeryka's Puro-Puro introduction", VarbitID.II_FAIRY_VAR);
+		addTask("Listen to Fairy Aeryka's Puro-Puro introduction", VarbitID.II_FAIRY_VAR); // confirmed
 
-		addTask("Listen to Sil'as Dahcsnu's initial dialogue", VarbitID.SUROK_MONKCHECK);
+		addTask("Listen to Sil'as Dahcsnu's initial dialogue", VarbitID.SUROK_MONKCHECK); // confirmed
 
 		addTask("Listen to Dampe explain shade coffins", VarbitID.SHADES_DAMPE_INTRO);
 
-		addTask("Listen to the Drunken Dwarf talk about his relative", VarbitID.GIANTDWARF_COUSIN_INTRODUCED);
+		addTask("Listen to the Drunken Dwarf talk about his relative", VarbitID.GIANTDWARF_COUSIN_INTRODUCED); // confirmed
 
 		addTask("Receive thanks from Hamal after completing Mountain Daughter", VarbitID.MDAUGHTER_HAMAL_HEARDOFBURIAL);
 

@@ -39,19 +39,18 @@ public class UnplacedRandomTaskList extends TaskList
         initTasks();
     }
 
-    public void initTasks()
-    {
+    public void initTasks() {
         // TODO:!!!!
         //Logged at least 1 count of opening spoils of war
         //
         //Unlocked the effect of Ava's assembler in Castle Wars
-        addEqTask(true, "Unlocked the effect of Ava's assembler in Castle Wars", VarbitID.CASTLEWARS_AVA_REWARD_TIER, 3);
+        addEqTask(true, "Unlocked the effect of Ava's assembler in Castle Wars", VarbitID.CASTLEWARS_AVA_REWARD_TIER, 3); // confirmed
         //Unlocked the effect of Ava's assembler in Soul Wars
-        addEqTask(true, "Unlocked the effect of Ava's assembler in Soul Wars", VarbitID.SOUL_WARS_AVA_REWARD_TIER, 3);
+        addEqTask(true, "Unlocked the effect of Ava's assembler in Soul Wars", VarbitID.SOUL_WARS_AVA_REWARD_TIER, 3); // confirmed
         //Unlocked the effect of Ava's assembler on ranging/max capes
-        addTask("Unlocked the effect of Ava's assembler on ranging/max capes", VarbitID.DS2_AMMO_COLLECTION);
+        addTask("Unlocked the effect of Ava's assembler on ranging/max capes", VarbitID.DS2_AMMO_COLLECTION); // confirmed
         //Unlocked the effect of Ava's assembler on Dizana's quiver
-        addEqTask(true, "Unlocked the effect of Ava's assembler on Dizana's quiver", VarbitID.DIZANAS_QUIVER_AMMO_SAVE, 3);
+        addEqTask(true, "Unlocked the effect of Ava's assembler on Dizana's quiver", VarbitID.DIZANAS_QUIVER_AMMO_SAVE, 3); // confirmed
         //
         //Unlocked access to the basement of the Warriors' Guild
         addTask("Unlocked access to the basement of the Warriors' Guild", VarbitID.WARGUILD_BASEMENT_ACCESS);
@@ -202,7 +201,7 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked Death's death Leagues V animation option
         addTask("Unlocked Death's death Leagues V animation option", VarbitID.LEAGUE_5_DEATH_ANIMATION_UNLOCKED);
         //Unlocked the candle seller's lantern making option
-        addTask("Unlocked the candle seller's lantern making option", VarbitID.SWAMP_CANDLE_GUY_CONVERSATION); // TODO: Think untested
+        addTask("Unlocked the candle seller's lantern making option", VarbitID.SWAMP_CANDLE_GUY_CONVERSATION); // confirmed
         //Unlocked the pharaoh's sceptre's Jaltevas teleport option
         addTask("Unlocked the pharaoh's sceptre's Jaltevas teleport option", VarbitID.PHARAOHS_SCEPTRE_NECROPOLIS);
         //
@@ -248,7 +247,7 @@ public class UnplacedRandomTaskList extends TaskList
                 .eqVar(true, VarbitID.ZEP_MULTI_PICCARD, 2)
                 .build();
         this.add(unlockedAllBallooonTransports);
-        //Selected a preference for the log storage crates TODO: Didn't change when already done, so couldn't find it
+        //Selected a preference for the log storage crates doesn't seem to exist
         //
         //Unlocked all 10 random event emotes
         Task unlockedAllRandomEmotes = new Task.TaskBuilder()
@@ -298,8 +297,7 @@ public class UnplacedRandomTaskList extends TaskList
 
         //Paid Krystilia for the ability to respawn at Edgeville
         addTask("Paid Krystilia for the ability to respawn at Edgeville", VarbitID.EDGEVILLE_SPAWN_UNLOCKED);
-        //Paid Ferox for the ability to respawn at Ferox Enclave
-        //addTask("Paid Ferox for the ability to respawn at Ferox Enclave", VarbitID.WILDERNESS_SPAWN_UNLOCKED); // this never changes from 0?
+        //Paid Ferox for the ability to respawn at Ferox Enclave not exposed
         //
         //Unlocked the ability to see the last item you smithed
         addGeTask(true, "Unlocked the ability to see the last item you smithed", VarbitID.SMITHING_ITEM_LASTTYPE, 1);
@@ -387,25 +385,22 @@ public class UnplacedRandomTaskList extends TaskList
 
         //Filled your Grand Exchange history with 40 completed trades
         //
-        //Unlocked the memories stored in the memoriam crystal (1)
-        //Unlocked the memories stored in the memoriam crystal (2)
-        //Unlocked the memories stored in the memoriam crystal (3)
-        //Unlocked the memories stored in the memoriam crystal (4)
+        //Unlocked the memories stored in the memoriam crystal (1) no varb/varp
+        //Unlocked the memories stored in the memoriam crystal (2) no varb/varp
+        //Unlocked the memories stored in the memoriam crystal (3) no varb/varp
+        //Unlocked the memories stored in the memoriam crystal (4) no varb/varp
         //
         //Unlocked the ability to create Neitiznot faceguards
         addTask("Unlocked the ability to create Neitiznot faceguards", VarbitID.VIKINGEXILE_HELM_UNLOCK);
         //Unlocked the ability to create super antifire potions
         addTask("Unlocked the ability to create super antifire potions", VarbitID.SUPER_ANTIFIRE_UNLOCKED);
-
-        //Unlocked the ability to create sextants and watches
+        //Unlocked the ability to create sextants and watches no varb/varp
         //Unlocked the ability to create ancient icons
         addTask("Unlocked the ability to create ancient icons", VarbitID.DT2_PLAYER_LEARNED_ICON_FUSING);
-        //Unlocked the ability to create tormented synapse weapons
-        addTask("Unlocked the ability to create tormented synapse weapons", VarbitID.WGS_MESSAGE_READ); // not it, but this task will change
-        // TODO: Find the synapse weapons varbit
-        //
         //Revealed the human translation of the Cosmic Being's name
+        addTask("Revealed the human translation of the Cosmic Being's name", VarbitID.FAIRY2_UNIVERSAL_MYSTERY); // confirmed
         //Revealed the stranger's true appearance in the Canifis pub
+        addTask("Revealed the stranger's true appearance in the Canifis pub", VarbitID.THSFM_VANSTROM_HIDE); // confirmed, ty sophie
         //Revealed the bank camel's name
         addTask("Revealed the bank camel's name", VarbitID.TOA_CAMEL_NAME_LEARNED);
         //
@@ -421,10 +416,9 @@ public class UnplacedRandomTaskList extends TaskList
         //Used the dusty lamp from the Strange Old Man
         addTask("Used the dusty lamp from the Strange Old Man", VarbitID.HFS_REWARD_LAMP);
         //Used the crypt map from the Strange Old Man
-        addTask("Used the crypt map from the Strange Old Man", VarbitID.BARROWS_MAP); // TODO: Untested
-
+        addTask("Used the crypt map from the Strange Old Man", VarbitID.BARROWS_MAP); // Untested, likely correct
         //Used both antique lamps from Commander Fullore
-        addTask("Used both antique lamps from Commander Fullore", VarbitID.AKD_LAMP_REWARD); // TODO: Untested
+        addTask("Used both antique lamps from Commander Fullore", VarbitID.AKD_LAMP_REWARD); // Untested, likely correct
 
         //Used all 3 tomes of experience from Ivan Strom
         Task ivanStromUsedExpTomes = new Task.TaskBuilder()
@@ -498,8 +492,8 @@ public class UnplacedRandomTaskList extends TaskList
         //Obtained both Dragon Slayer II texts
         Task obtainedDs2Texts = new Task.TaskBuilder()
                 .name("Obtained both Dragon Slayer II texts")
-                .switchVar(true, VarbitID.DS2_LITHKREN_NOTES)
-                .switchVar(true, VarbitID.DS2_UNGAEL_NOTES)
+                .switchVar(true, VarbitID.DS2_LITHKREN_NOTES) // confirmed
+                .switchVar(true, VarbitID.DS2_UNGAEL_NOTES) // confirmed
                 .build();
         this.add(obtainedDs2Texts);
         //Obtained all 6 Uhld adventurer texts from the Myths' Guild
@@ -547,7 +541,34 @@ public class UnplacedRandomTaskList extends TaskList
         //Obtained all 16 elven texts from the Prifddinas Grand Library
         addTask("Obtained all 16 elven texts from the Prifddinas Grand Library", VarbitID.PRIF_BOOKS); // TODO: Unchecked
         //Obtained all 93 miscellaneous texts (2 are obtained by default) this is like 50 diff ones
-        //
+        Task obtainedAllBooks = new Task.TaskBuilder() // anything added has been tested
+                .name("Obtained all 93 miscellaneous texts")
+                .switchVar(true, VarbitID.HUEYCOATL_BOOK) // Huey book
+                .eqVar(true, VarbitID.SOUL_WARS_TUTORIAL, 16) // Soul wars
+                .switchVar(true, VarbitID.SLAYER_FOUND_DIARY) // Entomologist's diary
+                .switchVar(true, VarbitID.GODWARS_DIARY_FOUND) // Keldagrim Explorer's Notes
+                .switchVar(true, VarbitID.ALDARIN_WINE_BOOK) // Moonrise wines
+                .switchVar(true, VarbitID.GA_JOURNAL) // Neilan's journal
+                .switchVar(true, VarbitID.DARKMEYER_BOOK) // A taste of hope
+                .switchVar(true, VarbitID.DS2_GUILD_BOOKS) // Ds2 myths guild library
+                .switchVar(true, VarbitID.VIKINGEXILE_BALLAD) // Ballad of the basilisks or smth
+                // ancient diary not transmitted
+                // lletya books not transmitted
+                // Both ruins of unkah not transmitted
+                // Ohn's diary Zulrah not transmitted
+
+                // Diary of Charles Charlington in Tar Swamp
+                // Gianne's cookbook
+                // Malumac's journal southwest karamjan temple
+                // Ghrims book?
+                // Memoirs of a Dwarven Explorer (Keldagrim library)?
+                // old diary? Serafina search crate in home
+                // Final battle tutorial barb assault
+                // Taste of hope, Shadum's house in Darkmeyer
+                // tome of the moon, sun, temple, think autocompleted after miniquest?
+                .build();
+        this.add(obtainedAllBooks);
+
         // TODO:
         //  I don't think any of the trophies are exposed in a varb/varp, but haven't tested
         //Unlocked the big bass fishing trophy option
@@ -562,13 +583,13 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the Vorkath head trophy option
         //Unlocked the Alchemical Hydra head trophy option
         //Unlocked the KQ head trophy option
-        //Unlocked the abyssal head trophy option
+        //Unlocked the abyssal head trophy option tested, not transmitted
         //Obtained the guaranteed KQ head (tattered) drop
         //Unlocked all 5 additional ornate combat dummy options
         //
         //Paid Ceto for free entry to the drift net fishing area
         addTask("Paid Ceto for free entry to the drift net fishing area", VarbitID.FOSSIL_DRIFTNET_UNLIMITEDACCESS);
-        //Unlocked all 4 Mycelium Transportation System locations unfound // TODO: Unfound/untested
+        //Unlocked all 4 Mycelium Transportation System locations no varb/varp
         //Claimed all 3 XP rewards from the information clerk
         Task claimedAll3MuseumXpRewards = new Task.TaskBuilder()
                 .name("Claimed all 3 XP rewards from the information clerk")
@@ -620,8 +641,7 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Claimed free food from Koftik in the Underground Pass", VarbitID.UPASS_PALADIN_FOOD); //
         //Claimed items from Elnock Inquisitor in Impetuous Impulses
         addTask("Claimed items from Elnock Inquisitor in Impetuous Impulses", VarbitID.II_ELNOCK_GIVEN_FREESTUFF);
-        //Claimed a free bucket from Fritz the Glassblower // TODO: Unfound/untested
-        //addTask("Claimed a free bucket from Fritz the Glassblower", 0); // TODO: Unfound
+        //Claimed a free bucket from Fritz the Glassblower no varb/varp
         //Claimed both free beers from Lucy in the Falador Party Room
         addEqTask(true, "Claimed both free beers from Lucy in the Falador Party Room", VarbitID.OSB4_FREEBEERS, 3);
         //Claimed the pet reclaim token discount at Probita ? this is dead isnt it
@@ -640,15 +660,16 @@ public class UnplacedRandomTaskList extends TaskList
         //Claimed any deposit back from the Shilo Village furnace coffer TODO: Unfound
         //Claimed any additional sunfire armour from the STASH unit) probably doesn't exist
         //Completed all miniquests
-        addEqTask(true,"Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
+        addEqTask(true, "Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
 
-        // TODO: New, two-point-nine
+        // New, two-point-nine
         // Unlocked the ability to trade Thorgel for death talismans
-        addTask("Unlocked the ability to trade Thorgel for death talismans", VarbitID.MOURNING_DWARF_STARTEDTASK); // Test on hog
+        addTask("Unlocked the ability to trade Thorgel for death talismans", VarbitID.MOURNING_DWARF_STARTEDTASK); // confirmed
         // Unlocked Gabooty's shop open option
         addTask("Unlocked Gabooty's shop open option", VarbitID.GABOOTYSHOPCHAT); // confirmed
-        // Listened to Shantay introduce the Shantay Pass TODO: Unfound
-        // Razmire's directions to the Shade Lair (Shades of Mortton) TODO: Unfound
+        // Listened to Shantay introduce the Shantay Pass no varb/varp
+        // Razmire's directions to the Shade Lair (Shades of Mortton) TODO: Unfound will need a before and after on completing this during the quest! It is a bitmap so very difficult to check
+
         // Listened to the summary of Ulfric's parchment (Olaf's Quest)
         addTask("Listened to the summary of Ulfric's parchment", VarbitID.OLAF2_READ_NOTE); // confirmed
         // Disabled the giant bones bury warning Obor/Bryophyta
@@ -696,18 +717,18 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Used the antique lamp from Prince Itzla", VarbitID.VMQ4_REWARD_LAMP_USED);
         // Listened to the Pilgrim introduce the Pilgrim Path (https://oldschool.runescape.wiki/w/Pilgrim)
         addTask("Listened to the Pilgrim introduce the Pilgrim Path", VarbitID.VARLAMORE_PILGRIM_MET); // confirmed
-        // Claimed a free hunter kit from a hunting expert TODO: Not found
+        // Claimed a free hunter kit from a hunting expert no varb/varp
         // Unlocked Ali Morisane's gnome question option
-        addTask("Unlocked Ali Morisane's gnome question option", VarbitID.ALI_GNOME_RIVALRY); // TODO: Untested, probs right
+        addTask("Unlocked Ali Morisane's gnome question option", VarbitID.ALI_GNOME_RIVALRY); // confirmed
         // Claimed the pet insurance refund at Probita
         addEqTask(true, "Claimed the pet insurance refund at Probita", VarbitID.PET_INSURANCE_RECLAIM, 0); // Guessing this is it. Untested
         // "Unlocked Nevet's trade option"
         addTask("Unlocked Nevet's trade option", VarbitID.EVENTS_SHOP_OWNER_MET);
         // Disabled the Port Roberts jail guard bribe warning
-        addTask("Disabled the Port Roberts jail guard bribe warning", VarbitID.PORT_ROBERTS_JAIL_QUICK_ESCAPE); //TODO: Untested, probs right
+        addTask("Disabled the Port Roberts jail guard bribe warning", VarbitID.PORT_ROBERTS_JAIL_QUICK_ESCAPE); // confirmed
         // Listened to Biles's introduction to the Drumstick Kingdom
         addTask("Listened to Biles's introduction to the Drumstick Kingdom", VarbitID.BILES_MET);
-        // Obtained all guaranteed gold ring drops probably doesn't exist
+        // Obtained all guaranteed gold ring drops -- seems to be between varb 16551 and 16558, but are not transmitted
         // Built the bridge leading to the Mausoleum in Morytania
         Task mausoleumBridge = new Task.TaskBuilder()
                 .name("Built the bridge leading to the Mausoleum in Morytania")
@@ -716,7 +737,7 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(mausoleumBridge);
         // Unlocked Durrik's trade option (Deepfin point)
-        addTask("Unlocked Durrik's trade option", VarbitID.DEEPFIN_DWARF_DURRIK_MET);
+        addTask("Unlocked Durrik's trade option", VarbitID.DEEPFIN_DWARF_DURRIK_MET); // confirmed
         // Unlocked both additional sailors' amulet teleport locations
         Task sailorsAmuletAllTelesUnlocked = new Task.TaskBuilder()
                 .name("Unlocked both additional sailors' amulet teleport locations")
@@ -771,14 +792,18 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Listened to the builders' advice", VarbitID.PMOON_BUILDERS_VMQ4_CHAT); // confirmed
         // Listened to Jessamine about the final dawn
         addTask("Talk to Jessamine after The Final Dawn", VarbitID.PMOON_JESS_VMQ4_CHAT); // confirmed
-        // Attached a rope to the Charred Dungeon entrance TODO: Unfound
+        // Attached a rope to the Charred Dungeon entrance
+        addTask("Attached a rope to the Charred Dungeon entrance", VarbitID.DRAGON_ISLAND_DUNGEON_ENTRANCE_ROPED); // confirmed
         // Unlocked the ability to reclaim the medallion of the deep
         addTask("Unlocked the ability to reclaim the medallion of the deep", VarbitID.MOTD_CRAFTED);
         // Claimed XP from charting all oceans
         addTask("Claimed XP from charting all oceans", VarbitID.SAILING_CHARTING_FULL_COMPLETION_EVER_COMPLETE); //?
-        // Looted the chest containing the storm cruiser's outfit TODO: Unfound/untested
-        // Looted the chest containing the swamp cruiser's outfit TODO: Unfound/untested
-        // Looted the chest containing the crystal gliders's outfit TODO: Unfound/untested
+        // Looted the chest containing the storm cruiser's outfit
+        addTask("Looted the chest containing the storm cruiser's outfit", VarbitID.SAILING_BT_STORMY_KEY_USED);
+        // Looted the chest containing the swamp cruiser's outfit
+        addTask("Looted the chest containing the swamp cruiser's outfit", VarbitID.SAILING_BT_FETID_KEY_USED);
+        // Looted the chest containing the crystal gliders's outfit
+        addTask("Looted the chest containing the crystal gliders's outfit", VarbitID.SAILING_BT_SERRATED_KEY_USED);
         // Unlocked the ability to assign all 10 crewmates
         Task gotAllSailingCrewmates = new Task.TaskBuilder()
                 .name("Unlocked the ability to assign all 10 crewmates")
@@ -796,7 +821,7 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(gotAllSailingCrewmates);
         // Listened to the Elder Nama's gryphon warning
         addTask("Listened to the Elder Nama's gryphon warning", VarbitID.SLAYER_GRYPHON_BOSS_GUARDIAN_MET);
-        // Unlocked Gull's metamorphosis option TODO: Unfound, probably doesn't exist? At least not an intuitive name
+        // Unlocked Gull's metamorphosis option VERY LIKELY not transmitted
         // Claimed XP from drinking the melted rocks
         addTask("Claimed XP from drinking the melted rocks", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_ICE); // confirmed
         // Claimed XP from drinking Chuck up's 'stew'
@@ -817,10 +842,10 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Unlocked the ability to reclaim Gurtob's fabric roll", VarbitID.SAILING_BT_JUBBLY_JIVE_MARLIN_FIRST);
         // Unlocked the ability to reclaim Gwyna's fabric roll
         addTask("Unlocked the ability to reclaim Gwyna's fabric roll", VarbitID.SAILING_BT_GWENITH_GLIDE_MARLIN_FIRST);
-        // Unlocked the ability to reclaim Guthixian paint TODO: All paints unfound and untested
-        // Unlocked the ability to reclaim Saradominist paint
-        // Unlocked the ability to reclaim Zamorakian paint
-        // Unlocked the ability to reclaim Armadylean paint
+        // Unlocked the ability to reclaim Guthixian paint -- these do not seem to be transmitted
+        // Unlocked the ability to reclaim Saradominist paint -- these do not seem to be transmitted
+        // Unlocked the ability to reclaim Zamorakian paint -- these do not seem to be transmitted
+        // Unlocked the ability to reclaim Armadylean paint -- these do not seem to be transmitted
         // Unlocked the swift marlin fishing trophy option
         // Unlocked the purplefin fishing trophy option
         // Unlocked the huge halibut fishing trophy option
@@ -829,15 +854,22 @@ public class UnplacedRandomTaskList extends TaskList
         // Unlocked the orangefin fishing trophy option
         // Told Betty the meaning of the notes (Ethically Acquired Antiquities)
         addTask("Told Betty the meaning of the notes", VarbitID.EAA_BETTY_TOLD_ABOUT_NOTE); // confirmed
-        // Claimed pints of whirlpool suprise from Rum-dashed Ralph TODO: Untested/unfound
+        // Claimed pints of whirlpool suprise from Rum-dashed Ralph
+        addTask("Claimed pints of whirlpool suprise from Rum-dashed Ralph", VarbitID.SAILING_BT_TEMPOR_TANTRUM_COLLECTED_WHIRLPOOL_SURPRISE); // confirmed
         // Asked Charlie the Tramp about the black arm gang
-        addTask("Asked Charlie the Tramp about the black arm gang", VarbitID.SOA_CHARLIE_MET);
+        addTask("Asked Charlie the Tramp about the black arm gang", VarbitID.SOA_CHARLIE_MET); // confirmed
         // Listened to Netmaster Kellan introduce deep sea trawling
-        addTask("Listened to Netmaster Kellan introduce deep sea trawling", VarbitID.PORT_ROBERTS_NETMASTER_KELLAN_MET);
+        addTask("Listened to Netmaster Kellan introduce deep sea trawling", VarbitID.PORT_ROBERTS_NETMASTER_KELLAN_MET); // confirmed
         // Used XP lamp from Cow quest
-        addTask("Used the magic lamp from Gillie Groats", VarbitID.COWBOSS_REWARD_LAMP);
+        addTask("Used the magic lamp from Gillie Groats", VarbitID.COWBOSS_REWARD_LAMP); // confirmed
         // Claimed the Cowbell amulet after Ides of Milk
-        addTask("Claim the Cowbell amulet", VarbitID.COWQUEST_REWARD);
+        addTask("Claim the Cowbell amulet", VarbitID.COWQUEST_REWARD); // confirmed
+        // Disabled the warning on releasing Brutus
+        addTask("Disabled the warning on releasing Brutus", VarbitID.COWBOSS_REGULAR_DONTASKAGAIN); // confirmed
+        // Unlocked both Brutus scoreboards
+        addEqTask(true, "Unlocked both Brutus scoreboards", VarbitID.COWBOSS_SCOREBOARDS, 2); // confirmed
+        // Read the warning sign at Jiggig
+        addTask("Read the warning sign at Jiggig", VarbitID.THZFE_COFFINMESSAGE); // confirmed
     }
 }
 

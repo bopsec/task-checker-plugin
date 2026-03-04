@@ -110,13 +110,10 @@ public class SkillingPerksTaskList extends TaskList
         //Unlocked the Camdozaal luck buff
         addTask("Unlocked the Camdozaal luck buff", VarbitID.CAMDOZAAL_REWARDS_BUFF);
         //
-        //Unlocked access to Belona's amethyst cave
-        //addTask("Unlocked access to Belona's amethyst cave", 0); // TODO: Unfound
+        //Unlocked access to Belona's amethyst cave // TODO: Unfound
         //
-        //Unlocked the ability to toggle the full spirit angler outfit
-        //addTask("Unlocked the ability to toggle the full spirit angler outfit", 0); // TODO: Unfound
-        //Listened to Captain Pudi's explanation of Tempoross
-        //addTask("Unlocked the ability to toggle the full spirit angler outfit", 0); // TODO: Unfound
+        //Unlocked the ability to toggle the full spirit angler outfit // TODO: Unfound
+        //Listened to Captain Pudi's explanation of Tempoross not transmitted
         //
         //Unlocked the large water container
         addTask("Unlocked the large water container", VarbitID.FOSSIL_MINE_UNLOCKED_MOREWATER);
@@ -131,10 +128,8 @@ public class SkillingPerksTaskList extends TaskList
         //Unlocked Dusuri's trade option
         addTask("Unlocked Dusuri's trade option", VarbitID.STAR_TRADER_MET);
         //
-        //Unlocked the blood rift in the Abyss
-        //addTask("Unlocked the blood rift in the Abyss", 0); // TODO: Unfound
-        //Unlocked the soul rift in the Abyss
-        //addTask("Unlocked the soul rift in the Abyss", 0); // TODO: Unfound
+        //Unlocked the blood rift in the Abyss not transmitted
+        //Unlocked the soul rift in the Abyss not transmitted
     }
 }
 

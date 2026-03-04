@@ -42,7 +42,7 @@ public class RightClickTaskList extends TaskList
 	public void initTasks()
 	{
 		//Unlocked Rick's buy-crystals option
-		addTask("Unlocked Rick's buy-crystals option", VarbitID.RICK_HAS_OPENED_SHOP);
+		addTask("Unlocked Rick's buy-crystals option", VarbitID.RICK_HAS_OPENED_SHOP); // confirmed
 
 		//Unlocked Historian Aldo's trade option
 		addTask("Unlocked Historian Aldo's trade option", VarbitID.RAT_BOSS_BIOLOGIST_DIALOG);

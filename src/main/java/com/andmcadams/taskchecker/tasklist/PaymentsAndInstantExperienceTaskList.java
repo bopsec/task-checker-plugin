@@ -49,23 +49,23 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		//TODO:Claimed coins from Trossa
 		//Claimed XP from smithing a chromium ingot
 		addEqTask(true, "Claimed XP from smithing a chromium ingot", VarbitID.CHROMIUM_CRAFTING_UNLOCKED, 3); // confirmed
-		//TODO:Claimed XP from smithing an emberlight
-		//TODO:Claimed XP from crafting a purging staff
-		//TODO:Claimed XP from fletching a scorching bow
-		//TODO:Claimed a clue scroll from a monkey from Ardougne Zoo not transmitted i think
+		//Claimed XP from smithing an emberlight not transmitted
+		//Claimed XP from crafting a purging staff not transmitted
+		//Claimed XP from fletching a scorching bow not transmitted
+		//Claimed a clue scroll from a monkey from Ardougne Zoo not transmitted i think
 		//Claimed a medium pouch from Archmage Sedridor
 		addEqTask(true,"Claimed a medium pouch from Archmage Sedridor", VarbitID.TOTE_OWED_POUCH, 0);
 		//Claimed a keris partisan from Maisa's tent
 		addEqTask(true, "Claimed a keris partisan from Maisa's tent", VarbitID.BCS_OWED_PARTISAN, 0);
 		//Claimed the circlet of water from the High Priest of Sophanem
 		addEqTask(true, "Claimed the circlet of water from the High Priest of Sophanem", VarbitID.BCS_OWED_CIRCLET, 0);
-		//TODO:Claimed an unholy mould from the Spirit of Scorpius
-		//TODO:Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu
+		//Claimed an unholy mould from the Spirit of Scorpius no varbit/varp
+		//Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu, doesnt seem to exist
 		//Claimed all 4 XP drops (or lamps) from Radimus Erkle
 		addEqTask(true, "Claimed all 4 XP drops (or lamps) from Radimus Erkle", VarbitID.LEGENDS_BONUS_LAMPS, 4);
 
-		//TODO:Claimed all 6 XP drops from Combat Training Camp dummies
-		//TODO:Claimed all 14 XP drops from Perdu
+		//Claimed all 6 XP drops from Combat Training Camp dummies not transmitted
+		//TODO:Claimed all 14 XP drops from Perdu who even has an acc with this not done atp
 		//TODO:Claimed all Adventure Paths task rewards and starter kits
 
 		addEqTask(false, "Claim wine from the Observatory assistant", VarPlayerID.ITGRONIGEN, 8);

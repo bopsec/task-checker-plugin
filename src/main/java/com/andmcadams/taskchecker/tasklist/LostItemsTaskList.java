@@ -41,10 +41,11 @@ public class LostItemsTaskList extends TaskList
 
 	public void initTasks()
 	{
-		//Delivered Sir Gerry's notes to Sir Tiffy Cashien
-		addTask("Delivered Sir Gerry's notes to Sir Tiffy Cashien", VarbitID.GODWARS_SCROLL_DELIVERED); // TODO: Untested
+		// Delivered Sir Gerry's notes to Sir Tiffy Cashien
+		addTask("Delivered Sir Gerry's notes to Sir Tiffy Cashien", VarbitID.GODWARS_SCROLL_DELIVERED); // confirmed
 
-		//TODO: Delivered a tangled toad's legs to Longramble
+		// Delivered a tangled toad's legs to Longramble
+		addTask("Delivered a tangled toad's legs to Longramble", VarbitID.POG_LONGRAMBLE_DELIVERY); // confirmed
 
 		Task returnZealotsKey = new Task.TaskBuilder()
 			.name("Deliver Zealot's key to Zealot")
@@ -54,7 +55,6 @@ public class LostItemsTaskList extends TaskList
 
 		addTask("Return the brooch to Mistag", VarbitID.LOST_TRIBE_RETURNED_BROOCH);
 
-		//add(returnCoppersCollar);
 		add(returnZealotsKey);
 	}
 

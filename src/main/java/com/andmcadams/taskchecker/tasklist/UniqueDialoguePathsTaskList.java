@@ -67,31 +67,31 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Paid Madam Sikaro to make the voidwaker", VarbitID.WBR_ASSEMBLED_VOIDWAKER);
 
 		//Listened to Selim explain Osman's absence
-		addTask("Listened to Selim explain Osman's absence", VarbitID.BCS_MET_SELIM); // TODO: Untested
+		addTask("Listened to Selim explain Osman's absence", VarbitID.BCS_MET_SELIM); // confirmed
 
 		//Listened to Raqueel introduce herself and Gem
-		//addTask("Listened to Raqueel introduce herself and Gem", 0); // TODO: Unfound
+		//addTask("Listened to Raqueel introduce herself and Gem", 0); // TODO: Unfound, might not exist
 
 		//Listened to Tarik's request for pyramid loot
-		addTask("Listened to Tarik's request for pyramid loot", VarbitID.TARIK_MET);
+		addTask("Listened to Tarik's request for pyramid loot", VarbitID.TARIK_MET); // confirmed
 
 		//Listened to Al the Camel's confession of love for Ellie
-		addTask("Listened to Al the Camel's confession of love for Ellie", VarbitID.AL_CAMEL_ADVICEGIVEN);
+		addTask("Listened to Al the Camel's confession of love for Ellie", VarbitID.AL_CAMEL_ADVICEGIVEN); // confirmed, thanks sophie
 
 		//Listened to Death's tutorial after dying a dangerous death
 		//addTask("Listened to Death's tutorial after dying a dangerous death", 0); // TODO: Unfound
 
 		//Listened to Nathifa's gratitude
-		addTask("Listened to Nathifa's gratitude", VarbitID.CONTACT_MET_BAKER);
+		addTask("Listened to Nathifa's gratitude", VarbitID.CONTACT_MET_BAKER); // confirmed
 
 		//Listened to Ali the Tea Seller's introduction
-		addTask("Listened to Ali the Tea Seller's introduction", VarbitID.OASIS_TEA_SELLER_MET);
+		addTask("Listened to Ali the Tea Seller's introduction", VarbitID.OASIS_TEA_SELLER_MET); // confirmed
 
 		//Listened to Cassim's introduction
-		addTask("Listened to Cassim's introduction", VarbitID.OASIS_MAGE_MET);
+		addTask("Listened to Cassim's introduction", VarbitID.OASIS_MAGE_MET); // confirmed
 
 		//Listened to Morgiana's introduction
-		addTask("Listened to Morgiana's introduction", VarbitID.OASIS_KNIGHT_MET);
+		addTask("Listened to Morgiana's introduction", VarbitID.OASIS_KNIGHT_MET); // confirmed
 
 		//Listened to Hagus' gratitude for supporting the cause
 		//addTask("Listened to Hagus' gratitude for supporting the cause", 0); // TODO: Unfound
@@ -102,55 +102,53 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//addTask("Listened to Sir Tiffy Cashien's news from Akrisae", VarbitID.WGS_TIFFY_CHAT); // TODO: Unfound, current is wrong
 
 		//Listened to Gloria talk about Grand Champion rank
-		addTask("Listened to Gloria talk about Grand Champion rank", VarbitID.COLOSSEUM_GLORIA_MET); // TODO: Untested
+		addTask("Listened to Gloria talk about Grand Champion rank", VarbitID.COLOSSEUM_GLORIA_MET); // confirmed
 
 		//Listened to Harminia farming patch protection offer
-		addTask("Listened to Harminia farming patch protection offer", VarbitID.COLOSSEUM_HERB_PATCH_CHAT);
+		addTask("Listened to Harminia farming patch protection offer", VarbitID.COLOSSEUM_HERB_PATCH_CHAT); // confirmed
 
 		//Listened to Overseer Khougo interrogation about Mistrock
-		addEqTask(true, "Listened to Overseer Khougo interrogation about Mistrock", VarbitID.VARLAMORE_MISTROCK_OVERSEER, 3);
+		addEqTask(true, "Listened to Overseer Khougo interrogation about Mistrock", VarbitID.VARLAMORE_MISTROCK_OVERSEER, 3); // confirmed
 
 		//Listened to your spirit tree's rotation complaints
-		addTask("Listened to your spirit tree's rotation complaints", VarbitID.POH_SPIRIT_TREE_UPROOTED);
+		addTask("Listened to your spirit tree's rotation complaints", VarbitID.POH_SPIRIT_TREE_UPROOTED); // confirmed
 
 		//Listened to Taala's Hueycoatl introduction
-		addTask("Listened to Taala's Hueycoatl introduction", VarbitID.HUEY_INTRO);
+		addTask("Listened to Taala's Hueycoatl introduction", VarbitID.HUEY_INTRO); // confirmed
 
 		//Listened to Izel introduce Hugh
-		addTask("Listened to Izel's Hugh introduction", VarbitID.VARLAMORE_IZEL_MET);
+		addTask("Listened to Izel's Hugh introduction", VarbitID.VARLAMORE_IZEL_MET); // confirmed
 
 		//Listened to Mage of Zamorak's incantation description
-		addTask("Listened to Mage of Zamorak's incantation description", VarbitID.TOTE_RECEIVED_INCANTATION_BEFORE); // TODO: Untested
+		addTask("Listened to Mage of Zamorak's incantation description", VarbitID.TOTE_ZMI_POSTQUEST_CHAT); // confirmed
 
 		//Listened to a Street urchin's admiration for gladiators
-		addTask("Listened to a Street urchin's admiration for gladiators", VarbitID.VARLAMORE_THIEVING_HOUSE_URCHIN_GLORY_MENTIONED);
+		addTask("Listened to a Street urchin's admiration for gladiators", VarbitID.VARLAMORE_THIEVING_HOUSE_URCHIN_GLORY_MENTIONED); // confirmed
 
 		//Listened to the Windbreaker worker's Darkfrost introduction
-		addTask("Listened to the Windbreaker worker's Darkfrost introduction", VarbitID.HUEY_MET_DWARF_WORKER);
+		addTask("Listened to the Windbreaker worker's Darkfrost introduction", VarbitID.HUEY_MET_DWARF_WORKER); // confirmed
 
 		//Listened to the natural historians' introductions
-		//addTask("Listened to the natural historians' introductions", 0); // TODO: Unfound, probably VM_something
+		addTask("Listened to the natural historians' introductions", VarbitID.VM_NATHIS_GOT_SPIEL); // confirmed
 
 		//Listened to the Mage of Zamorak's Z.M.I. origin story
-		addTask("Listened to the Mage of Zamorak's Z.M.I. origin story", VarbitID.TOTE_ZMI_POSTQUEST_CHAT); // TODO: Untested
+		addTask("Listened to the Mage of Zamorak's Z.M.I. origin story", VarbitID.TOWER_BURNING_ZAM_STORY); // confirmed
 
 		//Listened to the Mysterious Bandit's introduction
-		addTask("Listened to the Mysterious Bandit's introduction", VarbitID.DT2_RING_NPC_MET_BEFORE); // TODO: Untested
+		addTask("Listened to the Mysterious Bandit's introduction", VarbitID.DT2_RING_NPC_MET_BEFORE); // confirmed
 
 		//Listened to the Wise Old Man's bank robbery confession
-		addEqTask(true, "Listened to the Wise Old Man's bank robbery confession", VarbitID.WOM_BANKJOB, 3);
+		addEqTask(true, "Listened to the Wise Old Man's bank robbery confession", VarbitID.WOM_BANKJOB, 3); // confirmed
 
 		//Listened to Oriana's bargain for valuables
-		addTask("Listened to Oriana's bargain for valuables", VarbitID.VARLAMORE_THIEVING_HOUSE_STRANGER_MET);
+		addTask("Listened to Oriana's bargain for valuables", VarbitID.VARLAMORE_THIEVING_HOUSE_STRANGER_MET); // confirmed
 
-		//Listened to all 3 of the haunted wine bottle's initial dialogues
-		//addTask("Listened to all 3 of the haunted wine bottle's initial dialogues", 0); // TODO: Unfound
+		//Listened to all 3 of the haunted wine bottle's initial dialogue untransmitted
 
 		//Listened to Jim explain his wet cloth
-		addEqTask(true, "Listened to Jim explain his wet cloth", VarbitID.YAMA_IMP_CONTRACT_SIGNED, 2);
+		addEqTask(true, "Listened to Jim explain his wet cloth", VarbitID.YAMA_IMP_CONTRACT_SIGNED, 2); // confirmed
 
-		//Listened to the sergeant's advice
-		addTask("Listened to the sergeant's advice", 0); // TOOD: Unfound
+		//Listened to the sergeant's advice not transmitted
 
 		//Told Apprentice Felix about Wizard Persten's fate
 		addTask("Told Apprentice Felix about Wizard Persten's fate", VarbitID.DT2_FELIX_DIALOGUE); // tested, correct
@@ -159,10 +157,10 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//addTask("Told Miazrqa about her cousin's activities", 0); // TODO: Unfound, probably GRIM_ something
 
 		//Told Ramarno about Ketla's fate
-		addTask("Told Ramarno about Ketla's fate", VarbitID.DT2_RAMARNO_SLISKE_DIALOGUE); // TODO: Idk! This does not seem right but maybe?
+		addTask("Told Ramarno about Ketla's fate", VarbitID.DT2_RAMARNO_SLISKE_DIALOGUE); // confirmed
 
 		//Told Sir Tiffy Cashien about the assassin's identity
-		addTask("Told Sir Tiffy Cashien about the assassin's identity", VarbitID.DT2_TIFFY_CHAT);
+		addTask("Told Sir Tiffy Cashien about the assassin's identity", VarbitID.SOTN_TIFFY_CHAT); // confirmed
 
 		//Told King Bolren about Arposandra
 		addTask("Told King Bolren about Arposandra", VarbitID.POG_KING_BOLREN_DONE);
@@ -171,7 +169,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Told Golrie about Yewnock's machine", VarbitID.POG_GOLRIE_RETURN);
 
 		//Told Longramble about the entrance to Arposandra
-		addTask("Told Longramble about the entrance to Arposandra", VarbitID.POG_LONGRAMBLE_DONE);
+		addTask("Told Longramble about the entrance to Arposandra", VarbitID.POG_LONGRAMBLE_DONE); // confirmed
 
 		//addTask("Told Weave about the jar of venom", 0); // TODO: Unfound
 
@@ -203,7 +201,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		add(tellThreeDwarves);
 		// MIAZRQA - UNKNOWN
 
-		addTask("Tell the Street urchin to lure another villager", VarbitID.FEUD_VAR_URCHIN);
+		addTask("Tell the Street urchin to lure another villager", VarbitID.FEUD_VAR_URCHIN); // confirmed
 
 		addTask("Tell the Knight of Varlamore about the sun altar",  VarbitID.VARLAMORE_SUN_KNIGHT);
 	}

@@ -44,7 +44,7 @@ public class HiddenShopsTaskList extends TaskList
 		//Unlocked the Dorgesh-Kaan market trading minigame
 		addGeTask(true, "Unlocked the Dorgesh-Kaan market trading minigame", VarbitID.DORGESH_FOOD_MARKET_LAST_WORLD, 1); // TODO: Unsure on this one
 
-		addEqTask(true, "Unlock Vanligga Gastfrihet's shop, Contraband yak produce", VarbitID.FRISD_PUB_FAVOURS, 2);
+		addEqTask(true, "Unlock Vanligga Gastfrihet's shop, Contraband yak produce", VarbitID.FRISD_PUB_FAVOURS, 2); // confirmed
 
 	}
 }

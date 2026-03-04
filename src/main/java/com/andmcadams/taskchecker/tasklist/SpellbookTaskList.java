@@ -52,8 +52,10 @@ public class SpellbookTaskList extends TaskList
         addTask("Unlocked the Alchemy's League IV animation option", VarbitID.LEAGUE_4_HIGH_ALCH_ANIMATION_UNLOCKED);
         addTask("Unlocked the Vengeance's League IV animation option", VarbitID.LEAGUE_4_VENGEANCE_ANIMATION_UNLOCKED);
 
-        //TODO:Unlocked the NPC Contact's League V animation option couldn't find these two
-        //TODO:Unlocked the ability to select all characters via NPC Contact
+        //Unlocked the NPC Contact's League V animation option
+        addGeTask(false, "Unlocked the NPC Contact's League V animation option", VarPlayerID.NPC_CONTACT_UNLOCKS, 3); // confirmed
+
+        //Unlocked the ability to select all characters via NPC Contact not transmitted
 
         addGeTask(true, "Selected at least one Home Teleport animation option", VarbitID.HOME_TELEPORT_SELECTED, 1);
 
