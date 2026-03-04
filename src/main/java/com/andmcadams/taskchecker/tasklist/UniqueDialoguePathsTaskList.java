@@ -69,14 +69,13 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Selim explain Osman's absence
 		addTask("Listened to Selim explain Osman's absence", VarbitID.BCS_MET_SELIM); // confirmed
 
-		//Listened to Raqueel introduce herself and Gem
-		//addTask("Listened to Raqueel introduce herself and Gem", 0); // TODO: Unfound, might not exist
+		//Listened to Raqueel introduce herself and Gem // TODO: Unfound, might not exist
 
 		//Listened to Tarik's request for pyramid loot
 		addTask("Listened to Tarik's request for pyramid loot", VarbitID.TARIK_MET); // confirmed
 
 		//Listened to Al the Camel's confession of love for Ellie
-		addTask("Listened to Al the Camel's confession of love for Ellie", VarbitID.AL_CAMEL_ADVICEGIVEN); // confirmed, thanks sophie
+		addTask("Give some advice to Al the Camel", VarbitID.AL_CAMEL_ADVICEGIVEN); // confirmed, thanks sophie
 
 		//Listened to Death's tutorial after dying a dangerous death
 		//addTask("Listened to Death's tutorial after dying a dangerous death", 0); // TODO: Unfound
