@@ -542,7 +542,7 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Obtained all 16 elven texts from the Prifddinas Grand Library", VarbitID.PRIF_BOOKS); // TODO: Unchecked
         //Obtained all 93 miscellaneous texts (2 are obtained by default) this is like 50 diff ones
         Task obtainedAllBooks = new Task.TaskBuilder() // anything added has been tested
-                .name("Obtained all 93 miscellaneous texts")
+                .name("Obtained all 93 miscellaneous texts (incomplete!)")
                 .switchVar(true, VarbitID.HUEYCOATL_BOOK) // Huey book
                 .eqVar(true, VarbitID.SOUL_WARS_TUTORIAL, 16) // Soul wars
                 .switchVar(true, VarbitID.SLAYER_FOUND_DIARY) // Entomologist's diary
