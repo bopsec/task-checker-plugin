@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -94,5 +95,12 @@ public class TaskListHeaderPanel extends JPanel
 	{
 		String prefix = collapsed ? "[+] " : "[-] ";
 		toggleButton.setText(prefix + name);
+	}
+
+	@Override
+	public Dimension getMaximumSize()
+	{
+		Dimension preferred = getPreferredSize();
+		return new Dimension(Integer.MAX_VALUE, preferred.height);
 	}
 }
