@@ -306,8 +306,8 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the ability to see the last silver item you crafted
         addGeTask(true, "Unlocked the ability to see the last silver item you crafted", VarbitID.CRAFTING_SILVER_ITEM_LASTTYPE, 1);
         //
-        //Unlocked the ability to reclaim the diamond speedrun trophy
-        addTask("Unlocked the ability to reclaim the diamond speedrun trophy", VarbitID.SPEEDRUNNING_DIAMOND_TROPHIES); // TODO: Untested!! Does this just swap to 1 when you unlock trophy?
+        //Unlocked the ability to reclaim the diamond speedrun trophy doesn't look like this is exposed, the varbs are only set on QSR worlds
+        //addTask("Unlocked the ability to reclaim the diamond speedrun trophy", VarbitID.SPEEDRUNNING_DIAMOND_TROPHIES);
         //Unlocked the ability to reclaim the tier 1 adventurer's outfit
         //Unlocked the ability to reclaim the tier 2 adventurer's outfit
         //Unlocked the ability to reclaim the tier 3 adventurer's outfit
@@ -642,7 +642,7 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Claimed items from Elnock Inquisitor in Impetuous Impulses", VarbitID.II_ELNOCK_GIVEN_FREESTUFF);
         //Claimed a free bucket from Fritz the Glassblower no varb/varp
         //Claimed both free beers from Lucy in the Falador Party Room
-        addEqTask(true, "Claimed both free beers from Lucy in the Falador Party Room", VarbitID.OSB4_FREEBEERS, 3);
+        addGeTask(true, "Claimed both free beers from Lucy in the Falador Party Room", VarbitID.OSB4_FREEBEERS, 2);
         //Claimed the pet reclaim token discount at Probita ? this is dead isnt it
         //Claimed all free chants for lost crystal equipment from Ilfeen TODO: Unfound
         //Claimed all weapon charge refunds from the Emblem Trader
@@ -705,9 +705,14 @@ public class UnplacedRandomTaskList extends TaskList
         // Told Eyatlalli about Mokhaiotl (The final dawn)
         addTask("Told Eyatlalli about Mokhaiotl", VarbitID.VMQ4_EYATLALLI_POST_QUEST_CHAT); // confirmed
         // Told Bernard that Bernina is proud of him
-        addEqTask(true, "Told Bernard that Bernina is proud of him", VarbitID.SPIRITOFADVENTURE, 5); // confirmed
+        addEqTask(true, "Talk to Bernard on top of The Proudspire", VarbitID.SPIRITOFADVENTURE, 6); // confirmed
         // Told Xilo and Fabia where to find each other
-        addEqTask(true, "Told Xilo and Fabia where to find each other", VarbitID.TLATI_LOST_LOVER_FABIA, 2); // confirmed
+        //addEqTask(true, "Told Xilo and Fabia where to find each other", VarbitID.TLATI_LOST_LOVER_FABIA, 2); // confirmed
+        Task xiloAndFabia = new Task.TaskBuilder()
+                .name("Told Xilo and Fabia where to find each other")
+                .geSumVars(true, 2, VarbitID.TLATI_LOST_LOVER_FABIA, VarbitID.TLATI_LOST_LOVER_XILO)
+                .build(); // why does this "quest" have two different outcomes l0l
+        this.add(xiloAndFabia);
         // Listened to the Friendly Forester explain Forestry
         addTask("Listened to the Friendly Forester explain Forestry", VarbitID.FORESTRY_FORESTER_MET); // confirmed
         // Listened to the Mountain Guide's offer for help
@@ -721,7 +726,7 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Unlocked Ali Morisane's gnome question option", VarbitID.ALI_GNOME_RIVALRY); // confirmed
         // Claimed the pet insurance refund at Probita
         addEqTask(true, "Claimed the pet insurance refund at Probita", VarbitID.PET_INSURANCE_RECLAIM, 0); // Guessing this is it. Untested
-        // "Unlocked Nevet's trade option"
+        // Unlocked Nevet's trade option
         addTask("Unlocked Nevet's trade option", VarbitID.EVENTS_SHOP_OWNER_MET);
         // Disabled the Port Roberts jail guard bribe warning
         addTask("Disabled the Port Roberts jail guard bribe warning", VarbitID.PORT_ROBERTS_JAIL_QUICK_ESCAPE); // confirmed
