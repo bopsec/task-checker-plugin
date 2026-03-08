@@ -57,10 +57,8 @@ public class SkillingPerksTaskList extends TaskList
 
         //Claimed a free basic quetzal whistle blueprint
         //addTask("Claimed a free basic quetzal whistle blueprint", 0); // TODO: Not found
-        //Unlocked the Hunter Guild teleport on a hunter/max cape
-        //addTask("Unlocked the Hunter Guild teleport on a hunter/max cape", 0); // TODO: Not found
-        //Unlocked the ability to reclaim Apatura's items
-        //addTask("Unlocked the ability to reclaim Apatura's items", 0); // TODO: Not found
+        //Unlocked the Hunter Guild teleport on a hunter/max cape not exposed
+        //Unlocked the ability to reclaim Apatura's items not exposed
         //
         //Unlocked the forestry kit/basket's outfit storage ability
         //addTask("Unlocked the forestry kit/basket's outfit storage ability", 0); // TODO: Not found

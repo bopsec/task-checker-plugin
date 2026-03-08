@@ -149,12 +149,13 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled the Hallowed Sepulchre's lobby stairs warning", VarbitID.HALLOWED_ENTRY_CHECK); // confirmed
 		//Disabled the Hallowed sack's inventory space warning TODO: Unfound/untested
 		//Disabled the Sourhog cave strange hole entrance warning
-		addTask("Disabled the Sourhog cave strange hole entrance warning", VarbitID.PORCINE_STOP_WARNING);
+		addTask("Disabled the Sourhog cave strange hole entrance warning", VarbitID.PORCINE_STOP_WARNING); // confirmed
 		//Disabled the Mahogany Homes expert contract warning TODO: Unfound/untested
 		//Disabled the Royal Titans' tunnel warning
 		addTask("Disabled the Royal Titans' tunnel warning", VarbitID.ROYAL_TITANS_ENTER_WARNING);
 		//Disabled the Royal Titans' destroy loot warning TODO: Unfound/untested
-		//Disabled the Moons of Peril encounter warning TODO: Unfound/untested
+		//Disabled the Moons of Peril encounter warning
+		addTask("Disabled the Moons of Peril encounter warning", VarbitID.PMOON_DROP_ITEM_WARNING); // confirmed
 		//Disabled the museum's storage crate warning
 	}
 

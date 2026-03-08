@@ -477,7 +477,7 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(filledHallowedTome);
         //Obtained Atlax's diary
-        addTask("Obtained Atlax's diary", VarbitID.GOTR_BOOK_OBTAINED);
+        addTask("Obtained Atlax's diary", VarbitID.GOTR_BOOK_OBTAINED); // essentially confirmed
         //Obtained the Overseer's book
         addEqTask(true, "Obtained the Overseer's book", VarbitID.ABYSSALSIRE_LORE, 5); // TODO: Untested, seems kinda random
         //Obtained the Mount Karuulm diary
