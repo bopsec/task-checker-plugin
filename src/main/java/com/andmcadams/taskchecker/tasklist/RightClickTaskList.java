@@ -48,7 +48,7 @@ public class RightClickTaskList extends TaskList
 		addTask("Unlocked Historian Aldo's trade option", VarbitID.RAT_BOSS_BIOLOGIST_DIALOG);
 
 		//Unlocked the Theatre of Blood chest's custom buy option
-		addTask("Unlocked the Theatre of Blood chest's custom buy option", VarbitID.TOB_MIDWAYCHEST_LAST_X);
+		addGeTask(true, "Unlocked the Theatre of Blood chest's custom buy option", VarbitID.TOB_MIDWAYCHEST_LAST_X, 1);
 
 		addTask("Unlock Jarvald's travel option", VarbitID.DAG_ISLAND_QUICK_TRAVEL);
 
