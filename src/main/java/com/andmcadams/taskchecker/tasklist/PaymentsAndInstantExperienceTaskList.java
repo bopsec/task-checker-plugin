@@ -62,7 +62,7 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		//Claimed an unholy mould from the Spirit of Scorpius no varbit/varp
 		//Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu, doesnt seem to exist
 		//Claimed all 4 XP drops (or lamps) from Radimus Erkle
-		addEqTask(true, "Claimed all 4 XP drops (or lamps) from Radimus Erkle", VarbitID.LEGENDS_BONUS_LAMPS, 4);
+		addEqTask(true, "Claimed all 4 XP drops (or lamps) from Radimus Erkle", VarbitID.LEGENDS_BONUS_LAMPS, 0);
 
 		//Claimed all 6 XP drops from Combat Training Camp dummies not transmitted
 		//TODO:Claimed all 14 XP drops from Perdu who even has an acc with this not done atp
