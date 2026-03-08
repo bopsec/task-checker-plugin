@@ -642,7 +642,7 @@ public class UnplacedRandomTaskList extends TaskList
         addTask("Claimed items from Elnock Inquisitor in Impetuous Impulses", VarbitID.II_ELNOCK_GIVEN_FREESTUFF);
         //Claimed a free bucket from Fritz the Glassblower no varb/varp
         //Claimed both free beers from Lucy in the Falador Party Room
-        addGeTask(true, "Claimed both free beers from Lucy in the Falador Party Room", VarbitID.OSB4_FREEBEERS, 2);
+        //addGeTask(true, "Claimed both free beers from Lucy in the Falador Party Room", VarbitID.OSB4_FREEBEERS, 2); seems like this is incompletable if you had done it a while back?
         //Claimed the pet reclaim token discount at Probita ? this is dead isnt it
         //Claimed all free chants for lost crystal equipment from Ilfeen TODO: Unfound
         //Claimed all weapon charge refunds from the Emblem Trader
