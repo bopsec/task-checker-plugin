@@ -186,8 +186,8 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Unsure about this one, but looks this way from chisel data
 		addEqTask(false, "Talk to Trufitus after completing Shilo Village", VarPlayerID.ZOMBIEQUEEN, 17);
 
-		// CAT - UNKNOWN
-		addEqTask(true, "Listen to your cat explain Icthlarin and the devourer again", VarbitID.ICS_TALKED_CATABOUTPRO, 3);
+		// Discontinued
+		//addEqTask(true, "Listen to your cat explain Icthlarin and the devourer again", VarbitID.ICS_TALKED_CATABOUTPRO, 3);
 
 		addTask("Asked the Dwarven Boatman about transporting gold", VarbitID.DWARFROCK_GOLD_BOATMAN_MET);
 
