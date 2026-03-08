@@ -638,7 +638,7 @@ public class UnplacedRandomTaskList extends TaskList
         //Claimed free food from Kamen in the Underground Pass
         addTask("Claimed free food from Kamen in the Underground Pass", VarbitID.UPASS_DWARF_FOOD); // confirmed
         //Claimed free food from Koftik in the Underground Pass
-        addTask("Claimed free food from Koftik in the Underground Pass", VarbitID.UPASS_PALADIN_FOOD); //
+        addTask("Claimed free food from Koftik in the Underground Pass", VarbitID.REGICIDE_KOFTIK_FOOD); //
         //Claimed items from Elnock Inquisitor in Impetuous Impulses
         addTask("Claimed items from Elnock Inquisitor in Impetuous Impulses", VarbitID.II_ELNOCK_GIVEN_FREESTUFF);
         //Claimed a free bucket from Fritz the Glassblower no varb/varp
