@@ -47,22 +47,22 @@ public class FirePitsTaskList extends TaskList
 		addTask("Built the Potter's Wheel on the Isle of Souls", VarbitID.SW_POTTERYWHEEL_BUILT);
 		//Built all 5 quetzal landing sites
 		Task allQuetzalSites = new Task.TaskBuilder()
-				.name("Built all 5 quetzal landing sites")
+				.name("Built all 6 quetzal landing sites")
 				// the commented out ones are already built
-				//.eqVar(true, VarbitID.QUETZAL_AUBURNVALLEY, 2)
-				//.eqVar(true, VarbitID.QUETZAL_QUETZACALLIGORGE, 2)
-				//.eqVar(true, VarbitID.QUETZAL_TEOMAT, 2)
-				//.eqVar(true, VarbitID.QUETZAL_TALTEKLAN, 2)
-				//.eqVar(true, VarbitID.QUETZAL_HUNTERGUILD, 2)
-				//.eqVar(true, VarbitID.QUETZAL_FORTIS, 2)
-				//.eqVar(true, VarbitID.QUETZAL_SUNSETCOAST, 2)
-				//.eqVar(true, VarbitID.QUETZAL_ALDARIN, 2)
-				.eqVar(true, VarbitID.QUETZAL_SALVAGEROVERLOOK, 2)
-				.eqVar(true, VarbitID.QUETZAL_CAMTORUM, 2)
-				.eqVar(true, VarbitID.QUETZAL_COLOSSEUM, 2)
-				.eqVar(true, VarbitID.QUETZAL_KASTORI, 2)
-				.eqVar(true, VarbitID.QUETZAL_OUTERFORTIS, 2)
-				.eqVar(true, VarbitID.QUETZAL_COLOSSALWYRM, 2)
+				//.geVar(true, VarbitID.QUETZAL_AUBURNVALLEY, 1)
+				//.geVar(true, VarbitID.QUETZAL_QUETZACALLIGORGE, 1)
+				//.geVar(true, VarbitID.QUETZAL_TEOMAT, 1)
+				//.geVar(true, VarbitID.QUETZAL_TALTEKLAN, 1)
+				//.geVar(true, VarbitID.QUETZAL_HUNTERGUILD, 1)
+				//.geVar(true, VarbitID.QUETZAL_FORTIS, 1)
+				//.geVar(true, VarbitID.QUETZAL_SUNSETCOAST, 1)
+				//.geVar(true, VarbitID.QUETZAL_ALDARIN, 1)
+				.geVar(true, VarbitID.QUETZAL_SALVAGEROVERLOOK, 1)
+				.geVar(true, VarbitID.QUETZAL_CAMTORUM, 1)
+				.geVar(true, VarbitID.QUETZAL_COLOSSEUM, 1)
+				.geVar(true, VarbitID.QUETZAL_KASTORI, 1)
+				.geVar(true, VarbitID.QUETZAL_OUTERFORTIS, 1)
+				.geVar(true, VarbitID.QUETZAL_COLOSSALWYRM, 1)
 				.build();
 		this.add(allQuetzalSites);
 
