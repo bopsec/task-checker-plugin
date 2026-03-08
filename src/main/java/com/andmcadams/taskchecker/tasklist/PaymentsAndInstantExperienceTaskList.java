@@ -76,7 +76,7 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 
 		addTask("Claim coins from Lady Shauna Piscarillius", VarbitID.PISCQUEST_REWARD);
 
-		addGeTask(true, "Claim experience from Duke", Varbits.MONKEY_MADNESS_II_PROGRESS.getId(), 200);
+		addGeTask(true, "Claim experience from Duke", VarbitID.MM2_PROGRESS, 200);
 
 		addEqTask(true, "Claim experience from Ellen", VarbitID.DS2_COMBAT_TRAINING, 4);
 
