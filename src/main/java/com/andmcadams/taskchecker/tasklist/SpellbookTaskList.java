@@ -59,11 +59,11 @@ public class SpellbookTaskList extends TaskList
 
         addGeTask(true, "Selected at least one Home Teleport animation option", VarbitID.HOME_TELEPORT_SELECTED, 1);
 
-        addGeTask(false, "Selected at least one Alchemy animation option\t\t", VarPlayerID.ALCHEMY_ANIM_TOGGLES, 1);
+        addGeTask(false, "Selected at least one Alchemy animation option", VarPlayerID.ALCHEMY_ANIM_TOGGLES, 1);
 
-        addGeTask(false, "Selected at least one Vengeance animation option\t\t", VarPlayerID.VENGEANCE_ANIM_TOGGLES, 1);
+        addGeTask(false, "Selected at least one Vengeance animation option", VarPlayerID.VENGEANCE_ANIM_TOGGLES, 1);
 
-        addGeTask(false, "Selected at least one NPC Contact animation option\t\t", VarPlayerID.NPC_CONTACT_ANIM_TOGGLES, 1);
+        addGeTask(false, "Selected at least one NPC Contact animation option", VarPlayerID.NPC_CONTACT_ANIM_TOGGLES, 1);
     }
 }
 
