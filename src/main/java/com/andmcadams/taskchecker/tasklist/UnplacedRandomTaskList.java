@@ -544,7 +544,6 @@ public class UnplacedRandomTaskList extends TaskList
         Task obtainedAllBooks = new Task.TaskBuilder() // anything added has been tested
                 .name("Obtained all 93 miscellaneous texts (incomplete!)")
                 .switchVar(true, VarbitID.HUEYCOATL_BOOK) // Huey book
-                .eqVar(true, VarbitID.SOUL_WARS_TUTORIAL, 16) // Soul wars
                 .switchVar(true, VarbitID.SLAYER_FOUND_DIARY) // Entomologist's diary
                 .switchVar(true, VarbitID.GODWARS_DIARY_FOUND) // Keldagrim Explorer's Notes
                 .switchVar(true, VarbitID.ALDARIN_WINE_BOOK) // Moonrise wines
