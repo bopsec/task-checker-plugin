@@ -41,7 +41,7 @@ public class HallowedSepulchreTaskList extends TaskList
 	{
 
 		//Logged a fastest run for the Hallowed Sepulchre
-		addGeTask(true, "Logged a fastest run for the Hallowed Sepulchre", VarbitID.HALLOWED_TIME_PB_ALL, 1); // TODO: Untested
+		addGeTask(true, "Logged a fastest run for the Hallowed Sepulchre", VarbitID.HALLOWED_TIME_PB_ALL, 1);
 
 		addTask("Give the Darkmeyer Slave 100 Hallowed Marks", VarbitID.HALLOWED_ADVENTURER_MARKS_GIVEN);
 

@@ -167,7 +167,7 @@ public class PetsTaskList extends TaskList
         //Unlocked Bran
         addPet("Unlocked Bran", VarbitID.PET_INSURANCE_ROYALTITANS);
         //Unlocked Yami
-        addPet("Unlocked Yami (not added)", 0); // TODO: why does this not exist?
+        addPet("Unlocked Yami (not added)", 0); // why does this not exist?
         //Unlocked Dom
         addPet("Unlocked Dom", VarbitID.PET_INSURANCE_DOM);
         //Unlocked soup
@@ -175,7 +175,7 @@ public class PetsTaskList extends TaskList
         //Unlocked Gull
         addPet("Unlocked Gull", VarbitID.PET_INSURANCE_GRYPHON);
         //Unlocked Beef
-        addPet("Unlocked Beef (not added)", 0); // TODO: Why does this not exist?
+        addPet("Unlocked Beef (not added)", 0); // why does this not exist?
     }
 
     public void addPet(String taskName, int varbitID) {

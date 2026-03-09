@@ -549,7 +549,6 @@ public class UnplacedRandomTaskList extends TaskList
                 .switchVar(true, VarbitID.ALDARIN_WINE_BOOK) // Moonrise wines
                 .switchVar(true, VarbitID.GA_JOURNAL) // Neilan's journal
                 .switchVar(true, VarbitID.DARKMEYER_BOOK) // A taste of hope
-                .switchVar(true, VarbitID.DS2_GUILD_BOOKS) // Ds2 myths guild library
                 .switchVar(true, VarbitID.VIKINGEXILE_BALLAD) // Ballad of the basilisks or smth
                 // ancient diary not transmitted
                 // lletya books not transmitted
