@@ -128,10 +128,12 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled the World Switcher's switch warning",  VarbitID.WORLDSWITCHER_DISABLE_CONFIRMATION);
 		//Disabled the minigame group finder warning
 		addTask("Disabled the minigame group finder warning", VarbitID.WORLDSWITCHER_MINIGAME_PROMPT); // TODO:Unchecked probs correct
-		//Disabled the Chambers of Xeric's shared storage warning TODO: Unfound/untested
+		//Disabled the Chambers of Xeric's shared storage warning TODO: untested
+		addTask("Disabled the Chambers of Xeric's shared storage warning", VarbitID.RAIDS_SHAREDSTORAGE_WARNING_DISMISSED); // surely?
 		//Disabled the Theatre of Blood's escape crystal warning TODO: Unfound/untested
 		//Disabled the Tombs of Amascut entry warning TODO: Unfound/untested
-		//Disabled the Icy Cavern entrance warning TODO: Unfound/untested
+		//Disabled the Icy Cavern entrance warning TODO: untested
+		addTask("Disabled the Icy Cavern entrance warning", VarbitID.WYVERN_ENTRANCE_WARNING); // surely?
 		//Disabled the crashed airship opening entrance warning TODO: Unfound/untested
 		//Disabled the Grubby Chest's inventory space warning
 		addTask("Disabled the Grubby Chest's inventory space warning",  VarbitID.HOSDUN_CHEST_WARNING);
