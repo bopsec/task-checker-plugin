@@ -1,0 +1,103 @@
+# Tasks that are either untested or confirmed not transmitted
+
+## Untested (ish)
+
+- All event items
+- Unlocked the ability to reclaim Crack the Clue III event items
+- Logged at least 1 count of opening spoils of war
+- Unlocked the ability to use Xeric's talisman's fifth teleport
+- Disabled Araxxor's destroy loot warning
+- Disabled the Gauntlet's crystal teleporter entrance warning
+- Disabled the Gauntlet's item storage warning
+- Disabled the Soul Wars clan lobby entrance warning
+- Disabled the Blast Furnace conveyor belt warning
+- Disabled the Thermonuclear Smoke Devil area warning
+- Disabled the Kraken area warning
+- Disabled the Tithe Farm instanced area entrance warning
+- Disabled the Theatre of Blood's escape crystal warning
+- Disabled the Tombs of Amascut entry warning
+- Disabled the crashed airship opening entrance warning
+- Disabled the Clan Coffer's coin deposit warning
+- Disabled the Hallowed sack's inventory space warning
+- Disabled the Royal Titans' destroy loot warning
+- 1000 LMS wins
+- Bounty hunter hat tier 6
+- Paid Prospector Percy for access to the restricted mine?
+- Paid Prospector Percy for the restricted hopper?
+- Claimed Castle Wars tickets from Lanthus
+- Claimed blood runes from the Vyre well
+- Claimed coins from a Lovakengj minecart station conductor
+- Claimed coins from Trossa
+- Claimed all 14 XP drops from Perdu
+- Claimed all Adventure Paths task rewards and starter kits
+- Unlocked the ability to recolour the Beaver
+- Unlocked the Beaver's pheasant metamorphosis optio
+- Unlocked the Beaver's fox metamorphosis option
+- Unlocked the Heron's reduced metamorphosis cost
+- Unlocked Muphin's metamorphosis option
+- Unlocked Nid's metamorphosis option
+- Unlocked the Olmlet's metamorphosis option
+- Unlocked Lil' Zik's metamorphosis option
+- Disabled torn perfected quetzal whistle blueprint drops
+- Claimed a free basic quetzal whistle blueprint
+- Unlocked the forestry kit/basket's outfit storage ability
+- Unlocked the forestry kit/basket's cape storage ability
+- Unlocked the ability to redecorate to the Hosidius house style
+- Logged a fastest commission at the highest quality of 199
+- Unlocked the ability to purchase colossal blades from Perdu
+- Unlocked access to Belona's amethyst cave
+- Unlocked the ability to toggle the full spirit angler outfit
+- Disabled the Fertile Soil's non-upgraded spell warning
+- Unlocked the ability to trade giantsoul amulets
+- Listened to Raqueel introduce herself and Gem
+- Listened to Death's tutorial after dying a dangerous death
+- Listened to Hagus' gratitude for supporting the cause
+- Told Miazrqa about her cousin's activities
+- Told Weave about the jar of venom
+- Paid the ghost captain for free trips to Dragontooth Island
+- 
+
+
+## Confirmed not transmitted
+
+- All God Book pages
+- Automatic pet insurance
+- Pet phoenix recolours
+- Unlocked the ability to reclaim the mystic cards
+- Unlocked the ability to reclaim the banana hat
+- Unlocked the memories stored in the memoriam crystal (1)/(2)/(3)/(4)
+- Unlocked the ability to create sextants and watches
+- Unlocked all 4 Mycelium Transportation System locations
+- Claimed a free bucket from Fritz the Glassblower
+- Listened to Shantay introduce the Shantay Pass
+- Claimed a free hunter kit from a hunting expert
+- Listened to the Ship Yard foreman's question
+- Claimed an unholy mould from the Spirit of Scorpius
+- Claimed XP from smithing an emberlight/purging staff/scobow
+- Claimed all 6 XP drops from Combat Training Camp dummies
+- Paid Fossegrimen for free enchanted lyre imbues
+- Paid Petrified Pete for free entry to the Volcanic Mine
+- Paid Matthias for free falcon rentals
+- Paid Skully for the ability to toggle loot keys
+- Looted all 3 of Ru Merald's gem locations
+- Looted the stone chest in The Stranglewood mine
+- Looted the chest in Lassar Undercity
+- Unlocked the ability to select all characters via NPC Contact
+- Disabled Odovacar's bank cost warning
+- Disabled the crystal item creation warning
+- Disabled the Gauntlet escape crystal warning
+- Disabled the Revenant Cave's payment warning
+- Disabled the looting bag usage warning
+- Disabled the ornate maul handle attachment warning
+- Disabled the Tempoross area's dropped items warning
+- Disabled the Zalcano prison barrier entrance warning
+- Disabled the Nightmare's Energy Barrier exit warning
+- Disabled the Mahogany Homes expert contract warning
+- Farming contract complete 1 task
+- Unlocked the Hunter Guild teleport on a hunter/max cape
+- Unlocked the ability to reclaim Apatura's items
+- Unlocked the crucible's custom quantity option 
+- Listened to Captain Pudi's explanation of Tempoross
+- Unlocked the blood rift in the Abyss
+- Unlocked the soul rift in the Abyss
+- Listened to all 3 of the haunted wine bottle's initial dialogue
