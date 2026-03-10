@@ -40,7 +40,7 @@ import com.andmcadams.taskchecker.tasklist.TaskList;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Task Checker"
+	name = "Completionist Task Checker"
 )
 public class TaskCheckerPlugin extends Plugin
 {
