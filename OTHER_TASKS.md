@@ -55,7 +55,8 @@
 - Told Miazrqa about her cousin's activities
 - Told Weave about the jar of venom
 - Paid the ghost captain for free trips to Dragontooth Island
-- 
+- All PoH trophies (some tested)
+- PoH combat dummy
 
 
 ## Confirmed not transmitted
