@@ -46,14 +46,12 @@ public class PetTransmogsTaskList extends TaskList
         //addTask("Unlocked the Beaver's fox metamorphosis option", 0); // TODO
         // Unlocked the Heron's reduced metamorphosis cost
         //addTask("Unlocked the Heron's reduced metamorphosis cost", 0); // TODO
+
+        // None of the phoenix transmogs are transmitted :(
         // Unlocked the pet phoenix's green metamorphosis option
-        //addTask("Unlocked the pet phoenix's green metamorphosis option", 0); // TODO
         // Unlocked the pet phoenix's blue metamorphosis option
-        //addTask("Unlocked the pet phoenix's blue metamorphosis option", 0); // TODO
         // Unlocked the pet phoenix's white metamorphosis option
-        //addTask("Unlocked the pet phoenix's white metamorphosis option", 0); // TODO
         // Unlocked the pet phoenix's purple metamorphosis option
-        //addTask("Unlocked the pet phoenix's purple metamorphosis option", 0); // TODO
 
         addTask("Unlocked the Giant Squirrel's dark metamorphosis option", VarbitID.HALLOWED_SKILLPET_DARK_UNLOCKED);
         addTask("Unlocked the Giant Squirrel's bone metamorphosis option", VarbitID.AGILITY_SKILLPET_BONE_UNLOCKED);
