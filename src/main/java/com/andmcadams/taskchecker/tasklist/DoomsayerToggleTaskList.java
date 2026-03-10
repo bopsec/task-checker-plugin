@@ -76,12 +76,13 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled Perdu's owned item purchase warning", VarbitID.PERDU_BUY_MULTIPLE_WARNING);
 		//Disabled Nex's Ancient Barrier warning
 		addTask("Disabled Nex's Ancient Barrier warning",  VarbitID.NEX_BARRIER_WARNING_HIDDEN);
-		//Disabled Araxxor's web tunnel warning TODO: Unfound/untested
+		//Disabled Araxxor's web tunnel warning not transmitted
 		//Disabled Araxxor's destroy loot warning TODO: Unfound/untested
-		//Disabled Wintertodt's modification warning TODO: Unfound/untested
+		//Disabled Wintertodt's modification warning found and tested
+		addEqTask(true,"Disabled Wintertodt's modification warning", VarbitID.WINT_NEEDS_WARNING, 0);
 		//Disabled the Ancient Prison warning
 		addTask("Disabled the Ancient Prison warning", VarbitID.NEX_PRISON_DOOR_WARNING_HIDDEN);
-		//Disabled the crystal item creation warning TODO: Unfound/untested
+		//Disabled the crystal item creation warning not transmitted
 		//Disabled the Gauntlet's crystal teleporter entrance warning TODO: Unfound/untested
 		//Disabled the Gauntlet's item storage warning TODO: Unfound/untested
 		//Disabled the Gauntlet escape crystal warning not transmitted
@@ -113,14 +114,15 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Camdozaal Vault's dropped items warning
 		addTask("Disabled the Camdozaal Vault's dropped items warning", VarbitID.CAMDOZAAL_VAULT_DROP_WARNING);
 		//Disabled the Blast Furnace conveyor belt warning TODO: Unfound/untested
-		//Disabled the Brimhaven dungeon hole entrance warning TODO: Unfound/untested
+		//Disabled the Brimhaven dungeon hole entrance warning varb 5629 -> 1 for unlock -> 2 for warning disabled
+		addEqTask(true, "Disabled the Brimhaven dungeon hole entrance warning", VarbitID.KARAM_DUNGEON_BACKDOOR, 2);
 		//Disabled the Vorkath crater warning
 		addTask("Disabled the Vorkath crater warning",  VarbitID.DS2_UNGAEL_WARNING); // TODO: Untested probs correct
 		//Disabled the Thermonuclear Smoke Devil area warning TODO: Unfound/untested
 		//Disabled the Kraken area warning TODO: Unfound/untested
 		//Disabled the Phantom Muspah crevice warning
 		addTask("Disabled the Phantom Muspah crevice warning", VarbitID.MUSPAH_WARNING); //TODO: Untested probs correct
-		//Disabled the Tempoross area's dropped items warning TODO: Unfound/untested
+		//Disabled the Tempoross area's dropped items warning not transmitted
 		//Disabled the Tithe Farm instanced area entrance warning TODO: Unfound/untested
 		//Disabled the Character Summary's Time Played warning
 		addTask("Disabled the Character Summary's Time Played warning", VarbitID.ACCOUNT_SUMMARY_DISPLAY_PLAYTIME_REMIND_DISABLE);
@@ -128,11 +130,11 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled the World Switcher's switch warning",  VarbitID.WORLDSWITCHER_DISABLE_CONFIRMATION);
 		//Disabled the minigame group finder warning
 		addTask("Disabled the minigame group finder warning", VarbitID.WORLDSWITCHER_MINIGAME_PROMPT); // TODO:Unchecked probs correct
-		//Disabled the Chambers of Xeric's shared storage warning TODO: untested
+		//Disabled the Chambers of Xeric's shared storage warning
 		addTask("Disabled the Chambers of Xeric's shared storage warning", VarbitID.RAIDS_SHAREDSTORAGE_WARNING_DISMISSED); // surely?
 		//Disabled the Theatre of Blood's escape crystal warning TODO: Unfound/untested
 		//Disabled the Tombs of Amascut entry warning TODO: Unfound/untested
-		//Disabled the Icy Cavern entrance warning TODO: untested
+		//Disabled the Icy Cavern entrance warning
 		addTask("Disabled the Icy Cavern entrance warning", VarbitID.WYVERN_ENTRANCE_WARNING); // surely?
 		//Disabled the crashed airship opening entrance warning TODO: Unfound/untested
 		//Disabled the Grubby Chest's inventory space warning
@@ -152,7 +154,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Hallowed sack's inventory space warning TODO: Unfound/untested
 		//Disabled the Sourhog cave strange hole entrance warning
 		addTask("Disabled the Sourhog cave strange hole entrance warning", VarbitID.PORCINE_STOP_WARNING); // confirmed
-		//Disabled the Mahogany Homes expert contract warning TODO: Unfound/untested
+		//Disabled the Mahogany Homes expert contract warning not exposed
 		//Disabled the Royal Titans' tunnel warning
 		addTask("Disabled the Royal Titans' tunnel warning", VarbitID.ROYAL_TITANS_ENTER_WARNING);
 		//Disabled the Royal Titans' destroy loot warning TODO: Unfound/untested

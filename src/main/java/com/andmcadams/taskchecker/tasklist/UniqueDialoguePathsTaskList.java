@@ -61,7 +61,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//addTask("Unlocked the ability to trade giantsoul amulets", 0); // TODO: Unfound
 
 		//Paid Atlas for at least 2 training sessions
-		addGeTask(true, "Paid Atlas for at least 2 training sessions", VarbitID.BIM_WORKOUT_COUNTER, 2); // TODO: Unsure
+		addGeTask(true, "Paid Atlas for at least 2 training sessions", VarbitID.BIM_WORKOUT_COUNTER, 2); // Unsure, probably fine like this
 
 		//Paid Madam Sikaro to make the voidwaker
 		addTask("Paid Madam Sikaro to make the voidwaker", VarbitID.WBR_ASSEMBLED_VOIDWAKER);
@@ -98,7 +98,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Listened to Marcellus give permission to use his farming patch", VarbitID.FROG_QUEST_PATCH_UNLOCKED);
 
 		//Listened to Sir Tiffy Cashien's news from Akrisae
-		//addTask("Listened to Sir Tiffy Cashien's news from Akrisae", VarbitID.WGS_TIFFY_CHAT); // TODO: Unfound, current is wrong
+		addTask("Listened to Sir Tiffy Cashien's news from Akrisae", VarbitID.WGS_TIFFY_CHAT); // i was wrong, current was right
 
 		//Listened to Gloria talk about Grand Champion rank
 		addTask("Listened to Gloria talk about Grand Champion rank", VarbitID.COLOSSEUM_GLORIA_MET); // confirmed

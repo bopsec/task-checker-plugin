@@ -72,7 +72,7 @@ public class SkillingPerksTaskList extends TaskList
         // ?
         //Unlocked the ability to purchase colossal blades from Perdu
         //addTask("Unlocked the ability to purchase colossal blades from Perdu", 0); // TODO: Not found
-        //Unlocked the crucible's custom quantity option TODO: Unfound
+        //Unlocked the crucible's custom quantity option not transmitted
         //Unlocked all 15 additional sword moulds
         Task giantsFoundryAllMoulds = new Task.TaskBuilder()
                 .name("Unlocked all 15 additional sword moulds")

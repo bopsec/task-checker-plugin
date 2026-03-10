@@ -42,7 +42,7 @@ public class HiddenShopsTaskList extends TaskList
 		//Unlocked Uglug Nar's shop, Uglug's stuffsies
 		addTask("Unlocked Uglug Nar's shop, Uglug's stuffsies", VarbitID.THZFE_SOLD_BALM);
 		//Unlocked the Dorgesh-Kaan market trading minigame
-		addGeTask(true, "Unlocked the Dorgesh-Kaan market trading minigame", VarbitID.DORGESH_FOOD_MARKET_LAST_WORLD, 1); // TODO: Unsure on this one
+		addGeTask(true, "Unlocked the Dorgesh-Kaan market trading minigame", VarbitID.DORGESH_FOOD_MARKET_LAST_WORLD, 1); // Unsure on this one, but probs accurate?
 
 		addEqTask(true, "Unlock Vanligga Gastfrihet's shop, Contraband yak produce", VarbitID.FRISD_PUB_FAVOURS, 2); // confirmed
 

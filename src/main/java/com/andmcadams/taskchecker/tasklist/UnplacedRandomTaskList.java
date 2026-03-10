@@ -75,7 +75,7 @@ public class UnplacedRandomTaskList extends TaskList
         //
         //Unlocked the ability to use Xeric's talisman's fifth teleport TODO: Unfound
         //
-        //Told Litara about what happened to Solztun TODO: Untested
+        //Told Litara about what happened to Solztun
         addEqTask(true, "Told Litara about what happened to Solztun", VarbitID.SOS_BROTHER_FOUND, 2);
         //
         //Completed all 12 easy achievement diaries
