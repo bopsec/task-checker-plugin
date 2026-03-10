@@ -57,6 +57,7 @@
 - Paid the ghost captain for free trips to Dragontooth Island
 - All PoH trophies (some tested)
 - PoH combat dummy
+- Logged opening various chests 2+ times, and laps for certain courses
 
 
 ## Confirmed not transmitted
