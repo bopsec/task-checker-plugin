@@ -873,6 +873,8 @@ public class UnplacedRandomTaskList extends TaskList
         addEqTask(true, "Unlocked both Brutus scoreboards", VarbitID.COWBOSS_SCOREBOARDS, 2); // confirmed
         // Read the warning sign at Jiggig
         addTask("Read the warning sign at Jiggig", VarbitID.THZFE_COFFINMESSAGE); // confirmed
+        // Pet Gus after the final dawn
+        addTask("Pet Gus the dog after The Final Dawn", VarbitID.NPC_DOG_GUS_DIALOGUE);
     }
 }
 
