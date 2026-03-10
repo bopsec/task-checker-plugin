@@ -190,10 +190,10 @@ public class UnplacedRandomTaskList extends TaskList
         //Unlocked the ability to reclaim the banana hat No varbit/varp
         //
         //Unlocked Guildmaster Jane's contracts completed option
-        addTask("Unlocked Guildmaster Jane's contracts completed option", VarbitID.FARMGUILD_CONTRACT_DISCUSSED); // TODO: Untested idk about this one
+        addTask("Unlocked Guildmaster Jane's contracts option", VarbitID.FARMGUILD_CONTRACT_DISCUSSED); // technically superseded, but the contract count is not transmitted
 
         //Unlocked Simon Templeton's pyramid artefacts option
-        addTask("Unlocked Simon Templeton's pyramid artefacts option", VarbitID.AGILITY_PYRAMID_SIMON_NAMED); // TODO: Untested
+        addTask("Unlocked Simon Templeton's pyramid artefacts option", VarbitID.AGILITY_PYRAMID_SIMON_JOB_DONE); // tested
         //Unlocked Farmer Gricoller's visitors option
         addTask("Unlocked Farmer Gricoller's visitors option", VarbitID.DARKMEYER_VYRE_TITHE_DIALOGUE); // TODO: Untested
         //Unlocked Death's death Leagues IV animation option
