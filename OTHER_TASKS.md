@@ -98,6 +98,5 @@
 - Unlocked the ability to reclaim Apatura's items
 - Unlocked the crucible's custom quantity option 
 - Listened to Captain Pudi's explanation of Tempoross
-- Unlocked the blood rift in the Abyss
-- Unlocked the soul rift in the Abyss
 - Listened to all 3 of the haunted wine bottle's initial dialogue
+- Crack the clue 3 completion

@@ -126,8 +126,10 @@ public class SkillingPerksTaskList extends TaskList
         //Unlocked Dusuri's trade option
         addTask("Unlocked Dusuri's trade option", VarbitID.STAR_TRADER_MET);
         //
-        //Unlocked the blood rift in the Abyss not transmitted
-        //Unlocked the soul rift in the Abyss not transmitted
+        //Unlocked the blood rift in the Abyss
+        addEqTask(true, "Unlocked the blood rift in the Abyss", VarbitID.ZEAH_BLOOD_ALTAR_UNLOCKED, 2);
+        //Unlocked the soul rift in the Abyss
+        addEqTask(true, "Unlocked the soul rift in the Abyss", VarbitID.ZEAH_SOUL_ALTAR_UNLOCKED, 2);
     }
 }
 

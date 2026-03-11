@@ -161,6 +161,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Moons of Peril encounter warning
 		addTask("Disabled the Moons of Peril encounter warning", VarbitID.PMOON_DROP_ITEM_WARNING); // confirmed
 		//Disabled the museum's storage crate warning
+		addTask("Disabled the museum's storage crate warning", VarbitID.VM_CRATE_WARNINGDISABLED);
 	}
 
 }

@@ -465,7 +465,7 @@ public class UnplacedRandomTaskList extends TaskList
         this.add(disabledCoxBooks);
         //Disabled Theatre of Blood book drops couldn't find these
         //Filled my notes with all 26 ancient pages couldnt find these
-        //Filled the fossil island note book with all 21 entries couldn't find these
+        //Filled the fossil island note book with all 21 entries couldn't see any varb changes
         //Filled the strange Hallowed tome with all 5 mysterious pages
         Task filledHallowedTome = new Task.TaskBuilder()
                 .name("Filled the strange Hallowed tome with all 5 mysterious pages")
