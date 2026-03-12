@@ -555,13 +555,10 @@ public class UnplacedRandomTaskList extends TaskList
                 // Both ruins of unkah not transmitted
                 // Ohn's diary Zulrah not transmitted
 
-                // Diary of Charles Charlington in Tar Swamp
-                // Gianne's cookbook
-                // Malumac's journal southwest karamjan temple
-                // Ghrims book?
-                // Memoirs of a Dwarven Explorer (Keldagrim library)?
-                // old diary? Serafina search crate in home
-                // Final battle tutorial barb assault
+                // Diary of Charles Charlington in Tar Swamp,, i think not?
+                // Gianne's cookbook maybe auto after completing the diary step?
+                .switchVar(true, VarbitID.DS2_KARAMJA_DIARY) // Malumac's journal southwest karamjan temple
+                .switchVar(true, VarbitID.MYQ4_SERAFINA_BOOK) // old diary? Serafina search crate in home
                 // Taste of hope, Shadum's house in Darkmeyer
                 // tome of the moon, sun, temple, think autocompleted after miniquest?
                 .build();
@@ -622,8 +619,8 @@ public class UnplacedRandomTaskList extends TaskList
         //Logged at least 2 laps of the Prifddinas Agility Course
         //Logged at least 2 laps of the Shayzien Basic Agility Course
         //Logged at least 2 laps of the Shayzien Advanced Agility Course
-        //Logged at least 2 laps of the Wyrm Basic Agility Course
-        //Logged at least 2 laps of the Wyrm Advanced Agility Course
+        //Logged at least 2 laps of the Wyrm Basic Agility Course not transmitted
+        //Logged at least 2 laps of the Wyrm Advanced Agility Course not transmitted
         //Logged at least 2 offerings at the Woodcutting Guild's shrine
         //Logged at least 2 counts of opening Larran's small chest
         //Logged at least 2 counts of opening Larran's big chest
