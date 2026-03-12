@@ -550,16 +550,15 @@ public class UnplacedRandomTaskList extends TaskList
                 .switchVar(true, VarbitID.GA_JOURNAL) // Neilan's journal
                 .switchVar(true, VarbitID.DARKMEYER_BOOK) // A taste of hope
                 .switchVar(true, VarbitID.VIKINGEXILE_BALLAD) // Ballad of the basilisks or smth
+                .switchVar(true, VarbitID.DS2_KARAMJA_DIARY) // Malumac's journal southwest karamjan temple
+                .switchVar(true, VarbitID.MYQ4_SERAFINA_BOOK) // old diary? Serafina search crate in home
                 // ancient diary not transmitted
                 // lletya books not transmitted
                 // Both ruins of unkah not transmitted
                 // Ohn's diary Zulrah not transmitted
+                // Diary of Charles Charlington in Tar Swamp not transmitted
 
-                // Diary of Charles Charlington in Tar Swamp,, i think not?
                 // Gianne's cookbook maybe auto after completing the diary step?
-                .switchVar(true, VarbitID.DS2_KARAMJA_DIARY) // Malumac's journal southwest karamjan temple
-                .switchVar(true, VarbitID.MYQ4_SERAFINA_BOOK) // old diary? Serafina search crate in home
-                // Taste of hope, Shadum's house in Darkmeyer
                 // tome of the moon, sun, temple, think autocompleted after miniquest?
                 .build();
         this.add(obtainedAllBooks);
