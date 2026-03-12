@@ -663,7 +663,10 @@ public class UnplacedRandomTaskList extends TaskList
         // Unlocked Gabooty's shop open option
         addTask("Unlocked Gabooty's shop open option", VarbitID.GABOOTYSHOPCHAT); // confirmed
         // Listened to Shantay introduce the Shantay Pass no varb/varp
-        // Razmire's directions to the Shade Lair (Shades of Mortton) TODO: Unfound will need a before and after on completing this during the quest! It is a bitmap so very difficult to check
+        // Listened to Razmire's directions to the Shade Lair
+        addBitTask(false, "Listened to Razmire's directions to the Shade Lair", VarPlayerID.MORTTONMULTI, 29);
+        // 1128137189 -> 1665008101 (1000011001111100000000111100101 -> 1100011001111100000000111100101)
+        // Diff is in bit 29
 
         // Listened to the summary of Ulfric's parchment (Olaf's Quest)
         addTask("Listened to the summary of Ulfric's parchment", VarbitID.OLAF2_READ_NOTE); // confirmed
