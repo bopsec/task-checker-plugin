@@ -652,7 +652,7 @@ public class UnplacedRandomTaskList extends TaskList
                 .build();
         this.add(claimedBountyHunterWeaponChargeRefund);
 
-        //Claimed any deposit back from the Shilo Village furnace coffer TODO: Unfound
+        //Claimed any deposit back from the Shilo Village furnace coffer not transmitted
         //Claimed any additional sunfire armour from the STASH unit) probably doesn't exist
         //Completed all miniquests
         addEqTask(true, "Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
@@ -665,8 +665,7 @@ public class UnplacedRandomTaskList extends TaskList
         // Listened to Shantay introduce the Shantay Pass no varb/varp
         // Listened to Razmire's directions to the Shade Lair
         addBitTask(false, "Listened to Razmire's directions to the Shade Lair", VarPlayerID.MORTTONMULTI, 29);
-        // 1128137189 -> 1665008101 (1000011001111100000000111100101 -> 1100011001111100000000111100101)
-        // Diff is in bit 29
+        // 1128137189 -> 1665008101 (1000011001111100000000111100101 -> 1100011001111100000000111100101) diff is in bit 29
 
         // Listened to the summary of Ulfric's parchment (Olaf's Quest)
         addTask("Listened to the summary of Ulfric's parchment", VarbitID.OLAF2_READ_NOTE); // confirmed
