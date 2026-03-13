@@ -3,7 +3,6 @@
 ## Untested (ish)
 
 - All event items
-- Unlocked the ability to reclaim Crack the Clue III event items
 - Logged at least 1 count of opening spoils of war
 - Unlocked the ability to use Xeric's talisman's fifth teleport
 - Disabled Araxxor's destroy loot warning
