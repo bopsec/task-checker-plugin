@@ -70,8 +70,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		this.add(unlockAllWarningToggles);
 
 		//Disabled Odovacar's bank cost warning not transmitted
-		//Disabled Pennant's crystal acorn trade warning
-		addTask("Disabled Pennant's crystal acorn trade warning",  VarbitID.PRIF_ACORN_TRADE);
+		//Disabled Pennant's crystal acorn trade warning not transmitted
 		//Disabled Perdu's owned item purchase warning
 		addTask("Disabled Perdu's owned item purchase warning", VarbitID.PERDU_BUY_MULTIPLE_WARNING);
 		//Disabled Nex's Ancient Barrier warning

@@ -69,6 +69,7 @@ public class RightClickTaskList extends TaskList
 
 		addGeTask(true, "Unlock the Charter Ship's previous destination option", VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1);
 
+		addTask("Unlocked the Trade option on Pennant",  VarbitID.PRIF_ACORN_TRADE);
 	}
 }
 
