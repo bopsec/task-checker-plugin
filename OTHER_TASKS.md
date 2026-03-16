@@ -83,6 +83,7 @@
 - Looted the chest in Lassar Undercity
 - Unlocked the ability to select all characters via NPC Contact
 - Disabled Odovacar's bank cost warning
+- Disabled the crystal acorn trading warning
 - Disabled the crystal item creation warning
 - Disabled the Gauntlet escape crystal warning
 - Disabled the Revenant Cave's payment warning
