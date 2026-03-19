@@ -25,21 +25,16 @@
 package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
-import com.andmcadams.taskchecker.Varbits;
-import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
-public class SkillingPerksTaskList extends TaskList
-{
+public class SkillingPerksTaskList extends TaskList {
 
-    public SkillingPerksTaskList()
-    {
+    public SkillingPerksTaskList() {
         super("Skilling minigames etc.");
         this.initTasks();
     }
 
-    private void initTasks()
-    {
+    private void initTasks() {
         addEqTask(true, "Unlocked access to Kylie Minnow's fishing platform", VarbitID.MINNOW_ACCESS, 2);
 
         addTask("Unlocked the ability to make abyssal needles", VarbitID.GOTR_UNLOCKED_NEEDLE);
@@ -122,14 +117,6 @@ public class SkillingPerksTaskList extends TaskList
         addTask("Unlocked the ability to create swampbark armours", VarbitID.SHADES_SWAMP_UNLOCK);
         //Unlocked the ability to create bloodbark armours
         addTask("Unlocked the ability to create bloodbark armours", VarbitID.SHADES_BLOOD_UNLOCK);
-
-        //Unlocked Dusuri's trade option
-        addTask("Unlocked Dusuri's trade option", VarbitID.STAR_TRADER_MET);
-        //
-        //Unlocked the blood rift in the Abyss
-        addEqTask(true, "Unlocked the blood rift in the Abyss", VarbitID.ZEAH_BLOOD_ALTAR_UNLOCKED, 2);
-        //Unlocked the soul rift in the Abyss
-        addEqTask(true, "Unlocked the soul rift in the Abyss", VarbitID.ZEAH_SOUL_ALTAR_UNLOCKED, 2);
     }
 }
 

@@ -24,26 +24,18 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
-import com.andmcadams.taskchecker.Task;
-import com.andmcadams.taskchecker.Varbits;
 import net.runelite.api.gameval.VarbitID;
 
-public class TitheFarmTaskList extends TaskList
-{
-	public TitheFarmTaskList()
-	{
-		super("Tithe Farm");
-		this.initTasks();
-	}
+public class TitheFarmTaskList extends TaskList {
+    public TitheFarmTaskList() {
+        super("Tithe Farm");
+        this.initTasks();
+    }
 
-	public void initTasks()
-	{
+    public void initTasks() {
+        addGeTask(true, "Unlocked Autoweed", VarbitID.FARMING_BLOCKWEEDS, 1);
 
-		addGeTask(true, "Unlocked Autoweed", VarbitID.FARMING_BLOCKWEEDS, 1);
-
-		addEqTask(true, "Paid Bologa for the ability to purchase Bologa's blessings", VarbitID.HOSIDIUS_EVILGRAPES, 2);
-
-
-	}
+        addEqTask(true, "Paid Bologa for the ability to purchase Bologa's blessings", VarbitID.HOSIDIUS_EVILGRAPES, 2);
+    }
 }
 

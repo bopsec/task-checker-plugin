@@ -27,17 +27,14 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarbitID;
 
-public class PetTransmogsTaskList extends TaskList
-{
+public class PetTransmogsTaskList extends TaskList {
 
-    public PetTransmogsTaskList()
-    {
+    public PetTransmogsTaskList() {
         super("Pet transmogs");
         initTasks();
     }
 
-    public void initTasks()
-    {
+    public void initTasks() {
         // Skilling pets
         // Unlocked the ability to recolour the Beaver
         //addTask("Unlocked the ability to recolour the Beaver", 0); // TODO
@@ -67,6 +64,7 @@ public class PetTransmogsTaskList extends TaskList
         addTask("Unlocked Sraracha's orange metamorphosis option", VarbitID.SARACHNISPET_ORANGE_TRANSMOG);
         // Unlocked Sraracha's blue metamorphosis option
         addTask("Unlocked Sraracha's blue metamorphosis option", VarbitID.SARACHNISPET_BLUE_TRANSMOG);
+        // Unlocked Gull's metamorphosis option VERY LIKELY not transmitted
 
         // Raids pets
         //addTask("Unlocked the Olmlet's metamorphosis option", 0); // TODO

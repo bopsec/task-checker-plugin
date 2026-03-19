@@ -24,34 +24,30 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
-import com.andmcadams.taskchecker.Task;
-import com.andmcadams.taskchecker.Varbits;
 import net.runelite.api.gameval.VarbitID;
 
-public class MotherlodeMineTaskList extends TaskList
-{
+public class MotherlodeMineTaskList extends TaskList {
 
-	public MotherlodeMineTaskList()
-	{
-		super("Motherlode Mine");
-		initTasks();
-	}
+    public MotherlodeMineTaskList() {
+        super("Motherlode Mine");
+        initTasks();
+    }
 
-	public void initTasks()
-	{
-		//TODO:
-		//Paid Prospector Percy for access to the restricted mine
-		//Paid Prospector Percy for the restricted hopper
+    public void initTasks() {
+        //TODO:
+        //Paid Prospector Percy for access to the restricted mine
+        //Paid Prospector Percy for the restricted hopper
+        // Upstairs mines access has no varb/varp :(
 
 //		Task getAccessToUpperMine = new Task.TaskBuilder()
 //			.name("Pay Prospector Percy for access to the upper levels of the mine")
 //			.switchVar(true, Varbits.PAID_FOR_UPPER_MINE.getId())
 //			.build();
 
-		addTask("Pay Prospector Percy for the bigger sack capacity", VarbitID.MOTHERLODE_BIGGERSACK);
+        addTask("Pay Prospector Percy for the bigger sack capacity", VarbitID.MOTHERLODE_BIGGERSACK);
 
 //		this.add(getAccessToUpperMine);
 
-	}
+    }
 }
 

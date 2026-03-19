@@ -24,26 +24,22 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
-import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarbitID;
 
-public class CombatAchievementsTaskList extends TaskList
-{
+public class CombatAchievementsTaskList extends TaskList {
 
-    public CombatAchievementsTaskList()
-    {
+    public CombatAchievementsTaskList() {
         super("CAs");
         initTasks();
     }
 
-    public void initTasks()
-    {
+    public void initTasks() {
         //Unlocked the permanent slayer bonus in Mor Ul Rek caves
         addTask("Unlocked the permanent slayer bonus in Mor Ul Rek caves", VarbitID.INFERNO_SHOWN_GM_HELM);
         //Claimed all Combat Achievement rewards for every tier
         addEqTask(true, "Claimed all Combat Achievement rewards for every tier", VarbitID.CA_TIER_STATUS_GRANDMASTER, 2);
         addTask("Used the antique lamp (easy tier)", VarbitID.CA_LAMP_CLAIMED_EASY);
-        addTask("Used the antique lamp (medium tier)",  VarbitID.CA_LAMP_CLAIMED_MEDIUM);
+        addTask("Used the antique lamp (medium tier)", VarbitID.CA_LAMP_CLAIMED_MEDIUM);
         addTask("Used the antique lamp (hard tier)", VarbitID.CA_LAMP_CLAIMED_HARD);
         addTask("Used the antique lamp (elite tier)", VarbitID.CA_LAMP_CLAIMED_ELITE);
         addTask("Used the antique lamp (master tier)", VarbitID.CA_LAMP_CLAIMED_MASTER);

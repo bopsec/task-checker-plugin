@@ -24,33 +24,28 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
-import com.andmcadams.taskchecker.Task;
-import com.andmcadams.taskchecker.Varbits;
 import net.runelite.api.gameval.VarbitID;
 
-public class ForgottenPrayerTaskList extends TaskList
-{
+public class ForgottenPrayerTaskList extends TaskList {
 
-	public ForgottenPrayerTaskList()
-	{
-		super("Additional scroll unlocks");
-		initTasks();
-	}
+    public ForgottenPrayerTaskList() {
+        super("Additional scroll unlocks");
+        initTasks();
+    }
 
-	public void initTasks()
-	{
-		addTask("Unlocked the ability to avoid teleport attacks", VarbitID.BLIP_BLOCKING_SCROLL_USED);
+    public void initTasks() {
+        addTask("Unlocked the ability to avoid teleport attacks", VarbitID.BLIP_BLOCKING_SCROLL_USED);
 
-		addTask("Unlock Rigour", VarbitID.PRAYER_RIGOUR_UNLOCKED);
+        addTask("Unlock Rigour", VarbitID.PRAYER_RIGOUR_UNLOCKED);
 
-		addTask("Unlock Augury", VarbitID.PRAYER_AUGURY_UNLOCKED);
+        addTask("Unlock Augury", VarbitID.PRAYER_AUGURY_UNLOCKED);
 
-		addTask("Unlock Preserve", VarbitID.PRAYER_PRESERVE_UNLOCKED);
+        addTask("Unlock Preserve", VarbitID.PRAYER_PRESERVE_UNLOCKED);
 
-		addTask("Unlock Deadeye", VarbitID.PRAYER_DEADEYE_UNLOCKED);
+        addTask("Unlock Deadeye", VarbitID.PRAYER_DEADEYE_UNLOCKED);
 
-		addTask("Unlock Mystic Vigour", VarbitID.PRAYER_MYSTIC_VIGOUR_UNLOCKED);
+        addTask("Unlock Mystic Vigour", VarbitID.PRAYER_MYSTIC_VIGOUR_UNLOCKED);
 
-	}
+    }
 }
 

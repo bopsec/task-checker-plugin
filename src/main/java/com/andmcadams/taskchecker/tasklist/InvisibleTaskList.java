@@ -24,37 +24,31 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
-import com.andmcadams.taskchecker.Task;
-import com.andmcadams.taskchecker.Varbits;
 import net.runelite.api.gameval.VarbitID;
 
-public class InvisibleTaskList extends TaskList
-{
+public class InvisibleTaskList extends TaskList {
 
-	public InvisibleTaskList()
-	{
-		super("No known effect in game");
-		this.initTasks();
-	}
+    public InvisibleTaskList() {
+        super("No known effect in game");
+        this.initTasks();
+    }
 
-	public void initTasks()
-	{
+    public void initTasks() {
+        addTask("Loot the Ancient letter from the Forsaken Tower", VarbitID.LOVAQUEST_HIDDEN_NOTE);
 
-		addTask("Loot the Ancient letter from the Forsaken Tower", VarbitID.LOVAQUEST_HIDDEN_NOTE);
+        addTask("Loot the Tatty note from the bed in the Kebos Lowlands", VarbitID.KEBOS_SHACK_NOTE);
 
-		addTask("Loot the Tatty note from the bed in the Kebos Lowlands", VarbitID.KEBOS_SHACK_NOTE);
+        addTask("Pickpocket Teddy from the female student in the Digsite", VarbitID.ITDIGSITETEDDY);
 
-		addTask("Pickpocket Teddy from the female student in the Digsite", VarbitID.ITDIGSITETEDDY);
+        // Note that this doesn't actually change dialogue as far as I can tell.
+        addTask("Ask a Fortress guard about their uniform outside the Black Knights' Fortress", VarbitID.SPY_ARMOUR_HINT);
 
-		// Note that this doesn't actually change dialogue as far as I can tell.
-		addTask("Ask a Fortress guard about their uniform outside the Black Knights' Fortress", VarbitID.SPY_ARMOUR_HINT);
+        addTask("Exit through the Troll Stronghold's secret exit", VarbitID.TROLL_OPENED_BACK_EXIT);
 
-		addTask("Exit through the Troll Stronghold's secret exit", VarbitID.TROLL_OPENED_BACK_EXIT);
+        addTask("Try to Enter Guidor's room without priest gowns", VarbitID.BIOHAZARD_MET_JULIE); // varbit changes, but no visible effect
 
-		addTask("Try to Enter Guidor's room without priest gowns", VarbitID.BIOHAZARD_MET_JULIE); // varbit changes, but no visible effect
+        addTask("Talk to Reldo in Varrock castle library", VarbitID.RELDO_MET); // did change to 1, but no visible effect
 
-		addTask("Talk to Reldo in Varrock castle library", VarbitID.RELDO_MET); // did change to 1, but no visible effect
-
-		addTask("Search the Ruby Bookcase in Movario's base", VarbitID.WGS_RUBY_BOOKCASE_SEARCHED); // no effect and not needed during quest
-	}
+        addTask("Search the Ruby Bookcase in Movario's base", VarbitID.WGS_RUBY_BOOKCASE_SEARCHED); // no effect and not needed during quest
+    }
 }

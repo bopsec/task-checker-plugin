@@ -24,40 +24,33 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
-import com.andmcadams.taskchecker.Task;
-import com.andmcadams.taskchecker.Varbits;
 import net.runelite.api.gameval.VarbitID;
 
-public class HallowedSepulchreTaskList extends TaskList
-{
+public class HallowedSepulchreTaskList extends TaskList {
 
-	public HallowedSepulchreTaskList()
-	{
-		super("Hallowed Sepulchre");
-		this.initTasks();
-	}
+    public HallowedSepulchreTaskList() {
+        super("Hallowed Sepulchre");
+        this.initTasks();
+    }
 
-	private void initTasks()
-	{
+    private void initTasks() {
+        addGeTask(true, "Logged a fastest run for the Hallowed Sepulchre", VarbitID.HALLOWED_TIME_PB_ALL, 1);
 
-		//Logged a fastest run for the Hallowed Sepulchre
-		addGeTask(true, "Logged a fastest run for the Hallowed Sepulchre", VarbitID.HALLOWED_TIME_PB_ALL, 1);
+        addTask("Give the Darkmeyer Slave 100 Hallowed Marks", VarbitID.HALLOWED_ADVENTURER_MARKS_GIVEN);
 
-		addTask("Give the Darkmeyer Slave 100 Hallowed Marks", VarbitID.HALLOWED_ADVENTURER_MARKS_GIVEN);
+        addTask("Free the Knight of the Owl", VarbitID.HALLOWED_GHOST_OWLKNIGHT_FOUND);
 
-		addTask("Free the Knight of the Owl", VarbitID.HALLOWED_GHOST_OWLKNIGHT_FOUND);
+        addTask("Free the Knight of the Lion", VarbitID.HALLOWED_GHOST_LIONKNIGHT_FOUND);
 
-		addTask("Free the Knight of the Lion", VarbitID.HALLOWED_GHOST_LIONKNIGHT_FOUND);
+        addTask("Free the Knight of the Wolf", VarbitID.HALLOWED_GHOST_WOLFKNIGHT_FOUND);
 
-		addTask("Free the Knight of the Wolf", VarbitID.HALLOWED_GHOST_WOLFKNIGHT_FOUND);
+        addTask("Free the Knight of the Unicorn", VarbitID.HALLOWED_GHOST_UNICORNKNIGHT_FOUND);
 
-		addTask("Free the Knight of the Unicorn", VarbitID.HALLOWED_GHOST_UNICORNKNIGHT_FOUND);
+        addTask("Free the Archpriest of the Unicorn", VarbitID.HALLOWED_GHOST_ARCHPRIEST_FOUND);
 
-		addTask("Free the Archpriest of the Unicorn", VarbitID.HALLOWED_GHOST_ARCHPRIEST_FOUND);
-
-		addTask("Unlock private instances", VarbitID.HALLOWED_PRIVATE_INSTANCES_PURCHASED);
+        addTask("Unlock private instances", VarbitID.HALLOWED_PRIVATE_INSTANCES_PURCHASED);
 
 
-	}
+    }
 }
 

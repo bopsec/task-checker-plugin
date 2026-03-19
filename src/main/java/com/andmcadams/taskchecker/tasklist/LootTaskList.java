@@ -25,93 +25,96 @@
 package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
-import com.andmcadams.taskchecker.Varbits;
-import com.andmcadams.taskchecker.Varplayers;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
-public class LootTaskList extends TaskList
-{
+public class LootTaskList extends TaskList {
 
-	public LootTaskList()
-	{
-		super("Loot crates, chests, and miscellaneous items");
-		initTasks();
-	}
+    public LootTaskList() {
+        super("Loot crates, chests, and miscellaneous items");
+        initTasks();
+    }
 
-	public void initTasks()
-	{
+    public void initTasks() {
 //		Looted the crate containing a teleport in the Goblin Temple
-		addTask("Looted the crate containing a teleport in the Goblin Temple", VarbitID.LOTG_FOUND_SPHERE);
+        addTask("Looted the crate containing a teleport in the Goblin Temple", VarbitID.LOTG_FOUND_SPHERE);
 //		Looted the workbench containing iron nails at Gordon's farm
-		addTask("Looted the workbench containing iron nails at Gordon's farm", VarbitID.GA_NAILS_GIVEN); // confirmed
+        addTask("Looted the workbench containing iron nails at Gordon's farm", VarbitID.GA_NAILS_GIVEN); // confirmed
 //		Looted the stone chest in The Stranglewood mine not exposed
 //		Looted the chest in Lassar Undercity not exposed
 
-		Task piscatorisTools = new Task.TaskBuilder()
-				.name("Looted both bronze tools in the Piscatoris Fishing Colony")
-				.switchVar(true, VarbitID.SWANSONG_PICKAXE) // confirmed
-				.switchVar(true, VarbitID.SWANSONG_HATCHET) // confirmed
-				.build();
-		this.add(piscatorisTools);
-		//
-		// Looted all 3 of Ru Merald's gem locations not transmitted i think, just tested one gem
+        Task piscatorisTools = new Task.TaskBuilder()
+                .name("Looted both bronze tools in the Piscatoris Fishing Colony")
+                .switchVar(true, VarbitID.SWANSONG_PICKAXE) // confirmed
+                .switchVar(true, VarbitID.SWANSONG_HATCHET) // confirmed
+                .build();
+        this.add(piscatorisTools);
+        //
+        // Looted all 3 of Ru Merald's gem locations not transmitted i think, just tested one gem
 
-		//Looted all 4 pallets and the chest in Movario's base confirmed
-		Task lootedMovariosPalletsAndChest = new Task.TaskBuilder()
-				.name("Looted all 4 pallets and the chest in Movario's base")
-				.eqVar(true, VarbitID.WGS_MOVARIO_BASE_FIRERUNE_COUNT, 0)
-				.eqVar(true, VarbitID.WGS_MOVARIO_BASE_DEATHRUNE_COUNT, 0)
-				.eqVar(true, VarbitID.WGS_MOVARIO_BASE_COAL_COUNT, 0)
-				.eqVar(true, VarbitID.WGS_MOVARIO_BASE_PYRELOGS_COUNT, 0)
-				.switchVar(true, VarbitID.WGS_MOVARIO_RUNE_CHEST)
-				.build();
-		this.add(lootedMovariosPalletsAndChest);
+        //Looted all 4 pallets and the chest in Movario's base confirmed
+        Task lootedMovariosPalletsAndChest = new Task.TaskBuilder()
+                .name("Looted all 4 pallets and the chest in Movario's base")
+                .eqVar(true, VarbitID.WGS_MOVARIO_BASE_FIRERUNE_COUNT, 0)
+                .eqVar(true, VarbitID.WGS_MOVARIO_BASE_DEATHRUNE_COUNT, 0)
+                .eqVar(true, VarbitID.WGS_MOVARIO_BASE_COAL_COUNT, 0)
+                .eqVar(true, VarbitID.WGS_MOVARIO_BASE_PYRELOGS_COUNT, 0)
+                .switchVar(true, VarbitID.WGS_MOVARIO_RUNE_CHEST)
+                .build();
+        this.add(lootedMovariosPalletsAndChest);
 
-		// Search tasks
-		addEqTask(true, "Open Marlo's crate", VarbitID.DADDYSHOME_STATUS, 14);
+        // Search tasks
+        addEqTask(true, "Open Marlo's crate", VarbitID.DADDYSHOME_STATUS, 14);
 
-		// MORTON_TABLE
-		Task searchMorttonTable = new Task.TaskBuilder() 		// confirmed
-			.name("Loot the smashed table containing herbs in Mort'ton")
-			.bitVar(false, VarPlayerID.MORTTONMULTI, 8)
-			.build();
-		// 1896595685 (1110001000010111100000011100101) -> 1896595941 (1110001000010111100000111100101)
-		add(searchMorttonTable);
+        // MORTON_TABLE
+        Task searchMorttonTable = new Task.TaskBuilder()        // confirmed
+                .name("Loot the smashed table containing herbs in Mort'ton")
+                .bitVar(false, VarPlayerID.MORTTONMULTI, 8)
+                .build();
+        // 1896595685 (1110001000010111100000011100101) -> 1896595941 (1110001000010111100000111100101)
+        add(searchMorttonTable);
 
-		addTask("Searched the crate in the Underground Pass", VarbitID.UPASS_CRATE_FOOD);
+        addTask("Searched the crate in the Underground Pass", VarbitID.UPASS_CRATE_FOOD);
 
-		addTask("Searched the crate in the Elemental Workshop for leather", VarbitID.ELEMENTAL_WORKSHOP_LEATHER);
+        addTask("Searched the crate in the Elemental Workshop for leather", VarbitID.ELEMENTAL_WORKSHOP_LEATHER);
 
-		addTask("Searched the broken rune case in the Meiyerditch lab", VarbitID.MYQ3_RUNECASE_SEARCHED);
+        addTask("Searched the broken rune case in the Meiyerditch lab", VarbitID.MYQ3_RUNECASE_SEARCHED);
 
-		addEqTask(true, "Searched the chest in the Canifis Myreque hideout for three garlic bulbs", VarbitID.MYQ2_GARLIC_CHEST, 3); // confirmed
+        addEqTask(true, "Searched the chest in the Canifis Myreque hideout for three garlic bulbs", VarbitID.MYQ2_GARLIC_CHEST, 3); // confirmed
 
-		addEqTask(true, "Collected 5 sandstone from Enakhra's temple", VarbitID.ENAKH_RUBBLE_LIMIT, 5);
+        addEqTask(true, "Collected 5 sandstone from Enakhra's temple", VarbitID.ENAKH_RUBBLE_LIMIT, 5);
 
-		addTask("Collected the gems from Agrith Naar's throne", VarbitID.GOLEM_THRONE_GEMS); // confirmed
+        addTask("Collected the gems from Agrith Naar's throne", VarbitID.GOLEM_THRONE_GEMS); // confirmed
 
-		addTask("Searched the clock in Fenkenstrain's castle", VarbitID.FENK_WOUND_CLOCK); // confirmed
+        addTask("Searched the clock in Fenkenstrain's castle", VarbitID.FENK_WOUND_CLOCK); // confirmed
 
-		Task goblinVillageGoblinMail = new Task.TaskBuilder()
-			.name("Loot the 3 pieces of goblin mail in the Goblin Village")
-			.switchVar(true, VarbitID.GOBDIP_CRATE1_SEARCHED)
-			.switchVar(true, VarbitID.GOBDIP_CRATE2_SEARCHED)
-			.switchVar(true, VarbitID.GOBDIP_CRATE3_SEARCHED)
-			.build();
-		add(goblinVillageGoblinMail);
+        Task goblinVillageGoblinMail = new Task.TaskBuilder()
+                .name("Loot the 3 pieces of goblin mail in the Goblin Village")
+                .switchVar(true, VarbitID.GOBDIP_CRATE1_SEARCHED)
+                .switchVar(true, VarbitID.GOBDIP_CRATE2_SEARCHED)
+                .switchVar(true, VarbitID.GOBDIP_CRATE3_SEARCHED)
+                .build();
+        add(goblinVillageGoblinMail);
 
-		Task observatorySpiderChests = new Task.TaskBuilder()
-			.name("Loot the 7 spider chests in the Observatory dungeon")
-			.switchVar(true, VarbitID.OBSERVATORY_CHEST1_SEEN)
-			.switchVar(true, VarbitID.OBSERVATORY_CHEST2_SEEN)
-			.switchVar(true, VarbitID.OBSERVATORY_CHEST3_SEEN)
-			.switchVar(true, VarbitID.OBSERVATORY_CHEST4_SEEN)
-			.switchVar(true, VarbitID.OBSERVATORY_CHEST5_SEEN)
-			.switchVar(true, VarbitID.OBSERVATORY_CHEST6_SEEN)
-			.switchVar(true, VarbitID.OBSERVATORY_CHEST7_SEEN)
-			.build();
-		add(observatorySpiderChests);
-	}
+        Task observatorySpiderChests = new Task.TaskBuilder()
+                .name("Loot the 7 spider chests in the Observatory dungeon")
+                .switchVar(true, VarbitID.OBSERVATORY_CHEST1_SEEN)
+                .switchVar(true, VarbitID.OBSERVATORY_CHEST2_SEEN)
+                .switchVar(true, VarbitID.OBSERVATORY_CHEST3_SEEN)
+                .switchVar(true, VarbitID.OBSERVATORY_CHEST4_SEEN)
+                .switchVar(true, VarbitID.OBSERVATORY_CHEST5_SEEN)
+                .switchVar(true, VarbitID.OBSERVATORY_CHEST6_SEEN)
+                .switchVar(true, VarbitID.OBSERVATORY_CHEST7_SEEN)
+                .build();
+        add(observatorySpiderChests);
+        // Looted the workbench containing iron nails at Tal Teklan
+        addTask("Looted the workbench containing iron nails at Tal Teklan", VarbitID.SCRAMBLED_NAILS_GIVEN);
+        // Looted the chest containing the storm cruiser's outfit
+        addTask("Looted the chest containing the storm cruiser's outfit", VarbitID.SAILING_BT_STORMY_KEY_USED);
+        // Looted the chest containing the swamp cruiser's outfit
+        addTask("Looted the chest containing the swamp cruiser's outfit", VarbitID.SAILING_BT_FETID_KEY_USED);
+        // Looted the chest containing the crystal gliders's outfit
+        addTask("Looted the chest containing the crystal gliders's outfit", VarbitID.SAILING_BT_SERRATED_KEY_USED);
+    }
 }
 

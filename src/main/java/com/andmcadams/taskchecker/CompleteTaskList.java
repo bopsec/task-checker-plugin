@@ -53,7 +53,6 @@ public class CompleteTaskList
 	private void initTasks()
 	{
 		TaskList unplacedTasks = new UnplacedRandomTaskList();
-		TaskList raidsCapes = new RaidsCapesTaskList();
 		TaskList spellBookStuff = new SpellbookTaskList();
 		TaskList hallowedSepulchre = new HallowedSepulchreTaskList();
 		TaskList combatAchievements = new CombatAchievementsTaskList();
@@ -73,17 +72,21 @@ public class CompleteTaskList
 		TaskList utilityItems = new UtilityItemTaskList();
 		TaskList uniqueDialoguePaths = new UniqueDialoguePathsTaskList();
 		TaskList loot = new LootTaskList();
-		TaskList firePits = new FirePitsTaskList();
+		TaskList firePits = new EnvironmentalAlterationsTaskList();
 		TaskList paymentsAndInstantExperience = new PaymentsAndInstantExperienceTaskList();
 		TaskList hiddenShops = new HiddenShopsTaskList();
 		TaskList lostItems = new LostItemsTaskList();
 		TaskList trappedSouls = new TrappedSoulsTaskList();
 		TaskList redeemableQuestItems = new RedeemableQuestItemsTaskList();
-		TaskList temporary = new TemporaryTaskList();
 		TaskList invisible = new InvisibleTaskList();
 		TaskList lmsAndBh = new LMSandBHTaskList();
 		TaskList allPets = new PetsTaskList();
+		TaskList transportsAndTeleports = new TransportationAndTeleportsTaskList();
+		TaskList pohBookcase = new PohBookcaseTaskList();
+		TaskList capes =  new CapesTaskList();
+		TaskList holidaysAndRandoms = new HolidaysAndRandomEventsTaskList();
 
+		taskLists.add(capes);
 		taskLists.add(championsChallenge);
 		taskLists.add(combatAchievements);
 		taskLists.add(doomsayerWarnings);
@@ -92,6 +95,7 @@ public class CompleteTaskList
 		taskLists.add(forgottenPrayers);
 		taskLists.add(hallowedSepulchre);
 		taskLists.add(hiddenShops);
+		taskLists.add(holidaysAndRandoms);
 		taskLists.add(lmsAndBh);
 		taskLists.add(loot);
 		taskLists.add(lostItems);
@@ -99,15 +103,15 @@ public class CompleteTaskList
 		taskLists.add(paymentsAndInstantExperience);
 		//taskLists.add(allPets); // Discontinued, idk how to fix this
 		taskLists.add(petTransmogs);
-		taskLists.add(raidsCapes);
+		taskLists.add(pohBookcase);
 		taskLists.add(redeemableQuestItems);
 		taskLists.add(rightClick);
 		taskLists.add(sailingAmenities);
 		taskLists.add(skillingPerks);
 		taskLists.add(slayerRewards);
 		taskLists.add(spellBookStuff);
-		taskLists.add(temporary);
 		taskLists.add(titheFarm);
+		taskLists.add(transportsAndTeleports);
 		taskLists.add(trappedSouls);
 		taskLists.add(treasureTrails);
 		taskLists.add(uniqueDialoguePaths);

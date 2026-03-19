@@ -24,63 +24,57 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
-import java.util.ArrayList;
-import lombok.Getter;
 import com.andmcadams.taskchecker.Task;
+import lombok.Getter;
 
-public class TaskList
-{
+import java.util.ArrayList;
 
-	@Getter
-	private String name;
+public class TaskList {
 
-	@Getter
-	private ArrayList<Task> tasks = new ArrayList<>();
+    @Getter
+    private String name;
 
-	public TaskList(String name)
-	{
-		this.name = name;
-	}
+    @Getter
+    private ArrayList<Task> tasks = new ArrayList<>();
 
-	public boolean add(Task task)
-	{
-		return tasks.add(task);
-	}
+    public TaskList(String name) {
+        this.name = name;
+    }
 
-	protected void addTask(String taskInfo, int varbitID)
-	{
-		Task task = new Task.TaskBuilder()
-			.name(taskInfo)
-			.switchVar(true, varbitID)
-			.build();
-		this.add(task);
-	}
+    public boolean add(Task task) {
+        return tasks.add(task);
+    }
 
-	protected void addEqTask(boolean isVarbit, String taskInfo, int varID, int value)
-	{
-		Task task = new Task.TaskBuilder()
-			.name(taskInfo)
-			.eqVar(isVarbit, varID, value)
-			.build();
-		this.add(task);
-	}
+    protected void addTask(String taskInfo, int varbitID) {
+        Task task = new Task.TaskBuilder()
+                .name(taskInfo)
+                .switchVar(true, varbitID)
+                .build();
+        this.add(task);
+    }
 
-	protected void addGeTask(boolean isVarbit, String taskInfo, int varID, int value)
-	{
-		Task task = new Task.TaskBuilder()
-			.name(taskInfo)
-			.geVar(isVarbit, varID, value)
-			.build();
-		this.add(task);
-	}
+    protected void addEqTask(boolean isVarbit, String taskInfo, int varID, int value) {
+        Task task = new Task.TaskBuilder()
+                .name(taskInfo)
+                .eqVar(isVarbit, varID, value)
+                .build();
+        this.add(task);
+    }
 
-	protected void addBitTask(boolean isVarbit, String taskInfo, int varID, int bitPosition)
-	{
-		Task task = new Task.TaskBuilder()
-			.name(taskInfo)
-			.bitVar(isVarbit, varID, bitPosition)
-			.build();
-		this.add(task);
-	}
+    protected void addGeTask(boolean isVarbit, String taskInfo, int varID, int value) {
+        Task task = new Task.TaskBuilder()
+                .name(taskInfo)
+                .geVar(isVarbit, varID, value)
+                .build();
+        this.add(task);
+    }
+
+    protected void addBitTask(boolean isVarbit, String taskInfo, int varID, int bitPosition) {
+        Task task = new Task.TaskBuilder()
+                .name(taskInfo)
+                .bitVar(isVarbit, varID, bitPosition)
+                .build();
+        this.add(task);
+    }
 
 }

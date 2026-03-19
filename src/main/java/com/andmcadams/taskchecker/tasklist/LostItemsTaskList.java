@@ -25,38 +25,33 @@
 package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
-import com.andmcadams.taskchecker.Varbits;
-import com.andmcadams.taskchecker.Varplayers;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
-public class LostItemsTaskList extends TaskList
-{
+public class LostItemsTaskList extends TaskList {
 
-	public LostItemsTaskList()
-	{
-		super("Lost items");
-		initTasks();
-	}
+    public LostItemsTaskList() {
+        super("Lost items");
+        initTasks();
+    }
 
-	public void initTasks()
-	{
-		// Delivered Sir Gerry's notes to Sir Tiffy Cashien
-		addTask("Delivered Sir Gerry's notes to Sir Tiffy Cashien", VarbitID.GODWARS_SCROLL_DELIVERED); // confirmed
+    public void initTasks() {
+        // Delivered Sir Gerry's notes to Sir Tiffy Cashien
+        addTask("Delivered Sir Gerry's notes to Sir Tiffy Cashien", VarbitID.GODWARS_SCROLL_DELIVERED); // confirmed
 
-		// Delivered a tangled toad's legs to Longramble
-		addTask("Delivered a tangled toad's legs to Longramble", VarbitID.POG_LONGRAMBLE_DELIVERY); // confirmed
+        // Delivered a tangled toad's legs to Longramble
+        addTask("Delivered a tangled toad's legs to Longramble", VarbitID.POG_LONGRAMBLE_DELIVERY); // confirmed
 
-		Task returnZealotsKey = new Task.TaskBuilder()
-			.name("Deliver Zealot's key to Zealot")
-			.eqVar(true, VarbitID.HAUNTEDMINE_HEARDABOUTKEY, 0)
-			.eqVar(false, VarPlayerID.HAUNTEDMINE, 11)
-			.build();
+        Task returnZealotsKey = new Task.TaskBuilder()
+                .name("Deliver Zealot's key to Zealot")
+                .eqVar(true, VarbitID.HAUNTEDMINE_HEARDABOUTKEY, 0)
+                .eqVar(false, VarPlayerID.HAUNTEDMINE, 11)
+                .build();
 
-		addTask("Return the brooch to Mistag", VarbitID.LOST_TRIBE_RETURNED_BROOCH);
+        addTask("Return the brooch to Mistag", VarbitID.LOST_TRIBE_RETURNED_BROOCH);
 
-		add(returnZealotsKey);
-	}
+        add(returnZealotsKey);
+    }
 
 }
 
