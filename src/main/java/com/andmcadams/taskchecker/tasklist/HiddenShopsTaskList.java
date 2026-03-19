@@ -26,26 +26,29 @@ package com.andmcadams.taskchecker.tasklist;
 
 import net.runelite.api.gameval.VarbitID;
 
-public class HiddenShopsTaskList extends TaskList {
+public class HiddenShopsTaskList extends TaskList
+{
 
-    public HiddenShopsTaskList() {
-        super("Hidden shops and trading services");
-        initTasks();
-    }
+	public HiddenShopsTaskList()
+	{
+		super("Hidden shops and trading services");
+		initTasks();
+	}
 
-    public void initTasks() {
-        //Unlocked Uglug Nar's shop, Uglug's stuffsies
-        addTask("Unlocked Uglug Nar's shop, Uglug's stuffsies", VarbitID.THZFE_SOLD_BALM);
-        //Unlocked the Dorgesh-Kaan market trading minigame
-        addGeTask(true, "Unlocked the Dorgesh-Kaan market trading minigame", VarbitID.DORGESH_FOOD_MARKET_LAST_WORLD, 1); // Unsure on this one, but probs accurate?
+	public void initTasks()
+	{
+		//Unlocked Uglug Nar's shop, Uglug's stuffsies
+		addTask("Unlocked Uglug Nar's shop, Uglug's stuffsies", VarbitID.THZFE_SOLD_BALM);
+		//Unlocked the Dorgesh-Kaan market trading minigame
+		addGeTask(true, "Unlocked the Dorgesh-Kaan market trading minigame", VarbitID.DORGESH_FOOD_MARKET_LAST_WORLD, 1); // Unsure on this one, but probs accurate?
 
-        addEqTask(true, "Unlock Vanligga Gastfrihet's shop, Contraband yak produce", VarbitID.FRISD_PUB_FAVOURS, 2); // confirmed
-        //Unlocked Dusuri's trade option
-        addTask("Unlocked Dusuri's trade option", VarbitID.STAR_TRADER_MET);
-        // Unlocked Durrik's trade option (Deepfin point)
-        addTask("Unlocked Durrik's trade option", VarbitID.DEEPFIN_DWARF_DURRIK_MET); // confirmed
-        // Unlocked Nevet's trade option
-        addTask("Unlocked Nevet's trade option", VarbitID.EVENTS_SHOP_OWNER_MET);
-    }
+		addEqTask(true, "Unlock Vanligga Gastfrihet's shop, Contraband yak produce", VarbitID.FRISD_PUB_FAVOURS, 2); // confirmed
+		//Unlocked Dusuri's trade option
+		addTask("Unlocked Dusuri's trade option", VarbitID.STAR_TRADER_MET);
+		// Unlocked Durrik's trade option (Deepfin point)
+		addTask("Unlocked Durrik's trade option", VarbitID.DEEPFIN_DWARF_DURRIK_MET); // confirmed
+		// Unlocked Nevet's trade option
+		addTask("Unlocked Nevet's trade option", VarbitID.EVENTS_SHOP_OWNER_MET);
+	}
 }
 

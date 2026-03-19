@@ -27,51 +27,54 @@ package com.andmcadams.taskchecker.tasklist;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
-public class RightClickTaskList extends TaskList {
+public class RightClickTaskList extends TaskList
+{
 
-    public RightClickTaskList() {
-        super("Right click menu options");
-        initTasks();
-    }
+	public RightClickTaskList()
+	{
+		super("Right click menu options");
+		initTasks();
+	}
 
-    public void initTasks() {
-        //Unlocked Rick's buy-crystals option
-        addTask("Unlocked Rick's buy-crystals option", VarbitID.RICK_HAS_OPENED_SHOP); // confirmed
+	public void initTasks()
+	{
+		//Unlocked Rick's buy-crystals option
+		addTask("Unlocked Rick's buy-crystals option", VarbitID.RICK_HAS_OPENED_SHOP); // confirmed
 
-        //Unlocked Historian Aldo's trade option
-        addTask("Unlocked Historian Aldo's trade option", VarbitID.RAT_BOSS_BIOLOGIST_DIALOG);
+		//Unlocked Historian Aldo's trade option
+		addTask("Unlocked Historian Aldo's trade option", VarbitID.RAT_BOSS_BIOLOGIST_DIALOG);
 
-        //Unlocked the Theatre of Blood chest's custom buy option
-        addGeTask(true, "Unlocked the Theatre of Blood chest's custom buy option", VarbitID.TOB_MIDWAYCHEST_LAST_X, 1);
+		//Unlocked the Theatre of Blood chest's custom buy option
+		addGeTask(true, "Unlocked the Theatre of Blood chest's custom buy option", VarbitID.TOB_MIDWAYCHEST_LAST_X, 1);
 
-        addTask("Unlock Jarvald's travel option", VarbitID.DAG_ISLAND_QUICK_TRAVEL);
+		addTask("Unlock Jarvald's travel option", VarbitID.DAG_ISLAND_QUICK_TRAVEL);
 
-        addTask("Unlock Mary's trade option", VarbitID.GA_MARY_DIALOGUE);
+		addTask("Unlock Mary's trade option", VarbitID.GA_MARY_DIALOGUE);
 
-        addTask("Unlock Ilfeen's enchant option", VarbitID.ILFEEN_PRIF);
+		addTask("Unlock Ilfeen's enchant option", VarbitID.ILFEEN_PRIF);
 
-        addTask("Unlock Conwenna and Reese's sing option", VarbitID.PRIF_LEARNT_CRYSTAL_SINGING);
+		addTask("Unlock Conwenna and Reese's sing option", VarbitID.PRIF_LEARNT_CRYSTAL_SINGING);
 
-        addTask("Unlock Noranna Tytanin's convert-shards option", VarbitID.DMINE_DAEYALT_CONVERTER_INTRO);
+		addTask("Unlock Noranna Tytanin's convert-shards option", VarbitID.DMINE_DAEYALT_CONVERTER_INTRO);
 
-        addTask("Unlock the Mountain Guide's travel option", VarbitID.RAIDS_GUIDE_TRAVEL_UNLOCK);
+		addTask("Unlock the Mountain Guide's travel option", VarbitID.RAIDS_GUIDE_TRAVEL_UNLOCK);
 
-        addGeTask(false, "Unlock the Cloister Bell's quick-start option", VarPlayerID.TOTAL_GARGBOSS_KILLS, 5);
+		addGeTask(false, "Unlock the Cloister Bell's quick-start option", VarPlayerID.TOTAL_GARGBOSS_KILLS, 5);
 
 
-        addGeTask(true, "Unlock the Jewellery Box's previous teleport option", VarbitID.POH_JEWELLERYBOX_MULTI, 1);
+		addGeTask(true, "Unlock the Jewellery Box's previous teleport option", VarbitID.POH_JEWELLERYBOX_MULTI, 1);
 
-        addGeTask(true, "Unlock the Charter Ship's previous destination option", VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1);
-        //Unlocked Guildmaster Jane's contracts completed option
-        addTask("Unlocked Guildmaster Jane's contracts option", VarbitID.FARMGUILD_CONTRACT_DISCUSSED); // technically superseded, but the contract count is not transmitted
-        addTask("Unlocked the Trade option on Pennant", VarbitID.PRIF_ACORN_TRADE);
-        // Listened to the Zombie pirate's story about his crew's whereabouts I tihnk this is the same as the next one?
-        // Unlocked the zombie pirate's check option
-        addEqTask(true, "Unlocked the zombie pirate's check option", VarbitID.WILDY_ZOMBIE_PIRATE_FRIENDLY_INTRO_CHAT, 2); // confirmed
-        // Unlocked Sleve McDichael's rename-boat option
-        addTask("Unlocked Sleve McDichael's rename-boat option", VarbitID.SLEVE_MCDICHAEL_MET); // confirmed
-        // Unlocked both Brutus scoreboards
-        addEqTask(true, "Unlocked both Brutus scoreboards", VarbitID.COWBOSS_SCOREBOARDS, 2); // confirmed
-    }
+		addGeTask(true, "Unlock the Charter Ship's previous destination option", VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1);
+		//Unlocked Guildmaster Jane's contracts completed option
+		addTask("Unlocked Guildmaster Jane's contracts option", VarbitID.FARMGUILD_CONTRACT_DISCUSSED); // technically superseded, but the contract count is not transmitted
+		addTask("Unlocked the Trade option on Pennant", VarbitID.PRIF_ACORN_TRADE);
+		// Listened to the Zombie pirate's story about his crew's whereabouts I tihnk this is the same as the next one?
+		// Unlocked the zombie pirate's check option
+		addEqTask(true, "Unlocked the zombie pirate's check option", VarbitID.WILDY_ZOMBIE_PIRATE_FRIENDLY_INTRO_CHAT, 2); // confirmed
+		// Unlocked Sleve McDichael's rename-boat option
+		addTask("Unlocked Sleve McDichael's rename-boat option", VarbitID.SLEVE_MCDICHAEL_MET); // confirmed
+		// Unlocked both Brutus scoreboards
+		addEqTask(true, "Unlocked both Brutus scoreboards", VarbitID.COWBOSS_SCOREBOARDS, 2); // confirmed
+	}
 }
 

@@ -24,10 +24,43 @@
  */
 package com.andmcadams.taskchecker;
 
+import com.andmcadams.taskchecker.tasklist.CapesTaskList;
+import com.andmcadams.taskchecker.tasklist.ChampionsChallengeTaskList;
+import com.andmcadams.taskchecker.tasklist.CombatAchievementsTaskList;
+import com.andmcadams.taskchecker.tasklist.DoomsayerToggleTaskList;
+import com.andmcadams.taskchecker.tasklist.EntrancesAndObstaclesTaskList;
+import com.andmcadams.taskchecker.tasklist.EnvironmentalAlterationsTaskList;
+import com.andmcadams.taskchecker.tasklist.ForgottenPrayerTaskList;
+import com.andmcadams.taskchecker.tasklist.HallowedSepulchreTaskList;
+import com.andmcadams.taskchecker.tasklist.HiddenShopsTaskList;
+import com.andmcadams.taskchecker.tasklist.HolidaysAndRandomEventsTaskList;
+import com.andmcadams.taskchecker.tasklist.InvisibleTaskList;
+import com.andmcadams.taskchecker.tasklist.LMSandBHTaskList;
+import com.andmcadams.taskchecker.tasklist.LootTaskList;
+import com.andmcadams.taskchecker.tasklist.LostItemsTaskList;
+import com.andmcadams.taskchecker.tasklist.MotherlodeMineTaskList;
+import com.andmcadams.taskchecker.tasklist.PaymentsAndInstantExperienceTaskList;
+import com.andmcadams.taskchecker.tasklist.PetTransmogsTaskList;
+import com.andmcadams.taskchecker.tasklist.PetsTaskList;
+import com.andmcadams.taskchecker.tasklist.PohBookcaseTaskList;
+import com.andmcadams.taskchecker.tasklist.RedeemableQuestItemsTaskList;
+import com.andmcadams.taskchecker.tasklist.RightClickTaskList;
+import com.andmcadams.taskchecker.tasklist.SailingAmenities;
+import com.andmcadams.taskchecker.tasklist.SkillingPerksTaskList;
+import com.andmcadams.taskchecker.tasklist.SlayerRewardsTaskList;
+import com.andmcadams.taskchecker.tasklist.SpellbookTaskList;
+import com.andmcadams.taskchecker.tasklist.TaskList;
+import com.andmcadams.taskchecker.tasklist.TitheFarmTaskList;
+import com.andmcadams.taskchecker.tasklist.TransportationAndTeleportsTaskList;
+import com.andmcadams.taskchecker.tasklist.TrappedSoulsTaskList;
+import com.andmcadams.taskchecker.tasklist.TreasureTrailsTaskList;
+import com.andmcadams.taskchecker.tasklist.UniqueDialoguePathsTaskList;
+import com.andmcadams.taskchecker.tasklist.UnlimitedServicesTaskList;
+import com.andmcadams.taskchecker.tasklist.UnplacedRandomTaskList;
+import com.andmcadams.taskchecker.tasklist.UtilityItemTaskList;
 import java.util.ArrayList;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import com.andmcadams.taskchecker.tasklist.*;
 
 @Slf4j
 public class CompleteTaskList
@@ -83,7 +116,7 @@ public class CompleteTaskList
 		TaskList allPets = new PetsTaskList();
 		TaskList transportsAndTeleports = new TransportationAndTeleportsTaskList();
 		TaskList pohBookcase = new PohBookcaseTaskList();
-		TaskList capes =  new CapesTaskList();
+		TaskList capes = new CapesTaskList();
 		TaskList holidaysAndRandoms = new HolidaysAndRandomEventsTaskList();
 
 		taskLists.add(capes);
@@ -121,8 +154,10 @@ public class CompleteTaskList
 		taskLists.add(invisible);
 
 		int sum = 0;
-		for(TaskList taskList : taskLists)
+		for (TaskList taskList : taskLists)
+		{
 			sum += taskList.getTasks().size();
+		}
 		log.info("Loaded " + sum + " tasks.");
 
 	}

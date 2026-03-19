@@ -28,23 +28,26 @@ import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
-public class RedeemableQuestItemsTaskList extends TaskList {
+public class RedeemableQuestItemsTaskList extends TaskList
+{
 
-    public RedeemableQuestItemsTaskList() {
-        super("Redeemable quest items");
-        initTasks();
-    }
+	public RedeemableQuestItemsTaskList()
+	{
+		super("Redeemable quest items");
+		initTasks();
+	}
 
-    public void initTasks() {
-        Task tradeDiaryOfHerbiFlax = new Task.TaskBuilder()
-                .name("Trade the diary of Herbi Flax to the Apothecary")
-                .bitVar(false, VarPlayerID.MORTTONMULTI, 30)
-                .build();
-        add(tradeDiaryOfHerbiFlax);
+	public void initTasks()
+	{
+		Task tradeDiaryOfHerbiFlax = new Task.TaskBuilder()
+			.name("Trade the diary of Herbi Flax to the Apothecary")
+			.bitVar(false, VarPlayerID.MORTTONMULTI, 30)
+			.build();
+		add(tradeDiaryOfHerbiFlax);
 
-        addTask("Trade the Weiss fire notes to Burntmeat", VarbitID.MY2ARM_EXTRASTRONGHOLDREWARD);
+		addTask("Trade the Weiss fire notes to Burntmeat", VarbitID.MY2ARM_EXTRASTRONGHOLDREWARD);
 
-        addTask("Trade the black prism to Yanni Salika or Zavistic Rarve", VarbitID.THZFE_PRISMSOLD);
-    }
+		addTask("Trade the black prism to Yanni Salika or Zavistic Rarve", VarbitID.THZFE_PRISMSOLD);
+	}
 }
 

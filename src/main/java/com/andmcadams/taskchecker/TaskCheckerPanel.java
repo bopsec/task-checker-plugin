@@ -24,6 +24,7 @@
  */
 package com.andmcadams.taskchecker;
 
+import com.andmcadams.taskchecker.tasklist.TaskList;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -40,7 +41,6 @@ import javax.swing.border.EmptyBorder;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.client.ui.ColorScheme;
 import net.runelite.client.ui.PluginPanel;
-import com.andmcadams.taskchecker.tasklist.TaskList;
 
 @Slf4j
 public class TaskCheckerPanel extends PluginPanel

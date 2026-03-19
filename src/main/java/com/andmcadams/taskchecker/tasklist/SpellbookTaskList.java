@@ -27,46 +27,49 @@ package com.andmcadams.taskchecker.tasklist;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
-public class SpellbookTaskList extends TaskList {
+public class SpellbookTaskList extends TaskList
+{
 
-    public SpellbookTaskList() {
-        super("Miscellaneous spellbook related");
-        initTasks();
-    }
+	public SpellbookTaskList()
+	{
+		super("Miscellaneous spellbook related");
+		initTasks();
+	}
 
-    public void initTasks() {
-        addTask("Unlocked Teleport to Target", VarbitID.BOUNTY_TARGET_TELEPORT);
-        addTask("Unlocked Ourania Teleport", VarbitID.RC_ZMI_LUNAR_SPELL);
-        addTask("Unlocked the Death Charge upgrade", VarbitID.DEATH_CHARGE_SCROLL_USED);
-        addTask("Unlocked the Home Teleport's Deadman 2024 animation option", VarbitID.DEADMAN_2024_TELEPORT_UNLOCKED);
-        addTask("Unlocked the Home Teleport's Deadman 2026 animation option", VarbitID.DEADMAN_2026_TELEPORT_UNLOCKED);
-        addTask("Unlocked the Home Teleport's League I animation option", VarbitID.LEAGUE_TWISTED_TELEPORT_UNLOCKED);
-        addTask("Unlocked the Home Teleport's League II animation option", VarbitID.LEAGUE_TRAILBLAZER_TELEPORT_UNLOCKED);
-        addTask("Unlocked the Home Teleport's League III animation option", VarbitID.LEAGUE_3_TELEPORT_UNLOCKED);
-        addTask("Unlocked the Home Teleport's League 4 animation option", VarbitID.LEAGUE_4_HOME_TELEPORT_UNLOCKED);
-        addTask("Unlocked the Home Teleport's League 5 animation option", VarbitID.LEAGUE_5_HOME_TELEPORT_UNLOCKED);
-        addTask("Unlocked the Home Teleport's Speedy animation option", VarbitID.SPEEDRUNNING_TELEPORT_UNLOCKED);
-        addTask("Unlocked the Alchemy's League IV animation option", VarbitID.LEAGUE_4_HIGH_ALCH_ANIMATION_UNLOCKED);
-        addTask("Unlocked the Vengeance's League IV animation option", VarbitID.LEAGUE_4_VENGEANCE_ANIMATION_UNLOCKED);
-        //Unlocked Death's death Leagues IV animation option
-        addTask("Unlocked Death's death Leagues IV animation option", VarbitID.LEAGUE_4_DEATH_ANIMATION_UNLOCKED);
-        //Unlocked Death's death Leagues V animation option
-        addTask("Unlocked Death's death Leagues V animation option", VarbitID.LEAGUE_5_DEATH_ANIMATION_UNLOCKED);
-        //Unlocked the NPC Contact's League V animation option
-        addGeTask(false, "Unlocked the NPC Contact's League V animation option", VarPlayerID.NPC_CONTACT_UNLOCKS, 3); // confirmed
+	public void initTasks()
+	{
+		addTask("Unlocked Teleport to Target", VarbitID.BOUNTY_TARGET_TELEPORT);
+		addTask("Unlocked Ourania Teleport", VarbitID.RC_ZMI_LUNAR_SPELL);
+		addTask("Unlocked the Death Charge upgrade", VarbitID.DEATH_CHARGE_SCROLL_USED);
+		addTask("Unlocked the Home Teleport's Deadman 2024 animation option", VarbitID.DEADMAN_2024_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's Deadman 2026 animation option", VarbitID.DEADMAN_2026_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's League I animation option", VarbitID.LEAGUE_TWISTED_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's League II animation option", VarbitID.LEAGUE_TRAILBLAZER_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's League III animation option", VarbitID.LEAGUE_3_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's League 4 animation option", VarbitID.LEAGUE_4_HOME_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's League 5 animation option", VarbitID.LEAGUE_5_HOME_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's Speedy animation option", VarbitID.SPEEDRUNNING_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Alchemy's League IV animation option", VarbitID.LEAGUE_4_HIGH_ALCH_ANIMATION_UNLOCKED);
+		addTask("Unlocked the Vengeance's League IV animation option", VarbitID.LEAGUE_4_VENGEANCE_ANIMATION_UNLOCKED);
+		//Unlocked Death's death Leagues IV animation option
+		addTask("Unlocked Death's death Leagues IV animation option", VarbitID.LEAGUE_4_DEATH_ANIMATION_UNLOCKED);
+		//Unlocked Death's death Leagues V animation option
+		addTask("Unlocked Death's death Leagues V animation option", VarbitID.LEAGUE_5_DEATH_ANIMATION_UNLOCKED);
+		//Unlocked the NPC Contact's League V animation option
+		addGeTask(false, "Unlocked the NPC Contact's League V animation option", VarPlayerID.NPC_CONTACT_UNLOCKS, 3); // confirmed
 
-        //Unlocked the ability to select all characters via NPC Contact not transmitted
-        addGeTask(true, "Unlock the NPC Contact spell's previous contract option", VarbitID.LUNAR_CONTACT_LASTID, 1);
+		//Unlocked the ability to select all characters via NPC Contact not transmitted
+		addGeTask(true, "Unlock the NPC Contact spell's previous contract option", VarbitID.LUNAR_CONTACT_LASTID, 1);
 
-        addGeTask(true, "Selected at least one Home Teleport animation option", VarbitID.HOME_TELEPORT_SELECTED, 1);
+		addGeTask(true, "Selected at least one Home Teleport animation option", VarbitID.HOME_TELEPORT_SELECTED, 1);
 
-        addGeTask(false, "Selected at least one Alchemy animation option", VarPlayerID.ALCHEMY_ANIM_TOGGLES, 1);
+		addGeTask(false, "Selected at least one Alchemy animation option", VarPlayerID.ALCHEMY_ANIM_TOGGLES, 1);
 
-        addGeTask(false, "Selected at least one Vengeance animation option", VarPlayerID.VENGEANCE_ANIM_TOGGLES, 1);
+		addGeTask(false, "Selected at least one Vengeance animation option", VarPlayerID.VENGEANCE_ANIM_TOGGLES, 1);
 
-        addGeTask(false, "Selected at least one NPC Contact animation option", VarPlayerID.NPC_CONTACT_ANIM_TOGGLES, 1);
+		addGeTask(false, "Selected at least one NPC Contact animation option", VarPlayerID.NPC_CONTACT_ANIM_TOGGLES, 1);
 
-        addGeTask(false, "Selected at least one death animation option", VarPlayerID.DEATH_ANIM_TOGGLES, 1); // confirmed
-    }
+		addGeTask(false, "Selected at least one death animation option", VarPlayerID.DEATH_ANIM_TOGGLES, 1); // confirmed
+	}
 }
 

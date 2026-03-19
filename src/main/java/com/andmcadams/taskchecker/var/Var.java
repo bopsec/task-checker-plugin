@@ -52,7 +52,7 @@ public class Var
 		this.targetFunction = targetFunction;
 	}
 
-	public Var(boolean isVarbit, int[] varIndexes, int targetSum,  BiFunction<Integer, Integer, Boolean> targetFunction)
+	public Var(boolean isVarbit, int[] varIndexes, int targetSum, BiFunction<Integer, Integer, Boolean> targetFunction)
 	{
 		this.isVarbit = isVarbit;
 		this.varIndexes = varIndexes;
@@ -68,8 +68,8 @@ public class Var
 			for (int index : varIndexes)
 			{
 				sum += isVarbit
-						? client.getVarbitValue(index)
-						: client.getVarpValue(index);
+					? client.getVarbitValue(index)
+					: client.getVarpValue(index);
 			}
 
 			currentValue = sum;
@@ -77,12 +77,13 @@ public class Var
 		else
 		{
 			currentValue = isVarbit
-					? client.getVarbitValue(varIndex)
-					: client.getVarpValue(varIndex);
+				? client.getVarbitValue(varIndex)
+				: client.getVarpValue(varIndex);
 		}
 
 		return currentValue;
 	}
+
 	public boolean isComplete()
 	{
 		int comparisonTarget = (varIndexes != null) ? targetSum : targetValue;

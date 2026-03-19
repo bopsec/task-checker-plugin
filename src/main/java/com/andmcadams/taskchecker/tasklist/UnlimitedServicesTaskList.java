@@ -26,29 +26,32 @@ package com.andmcadams.taskchecker.tasklist;
 
 import net.runelite.api.gameval.VarbitID;
 
-public class UnlimitedServicesTaskList extends TaskList {
+public class UnlimitedServicesTaskList extends TaskList
+{
 
-    public UnlimitedServicesTaskList() {
-        super("Unlimited services");
-        initTasks();
-    }
+	public UnlimitedServicesTaskList()
+	{
+		super("Unlimited services");
+		initTasks();
+	}
 
-    public void initTasks() {
-        //Paid Fossegrimen for free enchanted lyre imbues not transmitted
-        //Paid Petrified Pete for free entry to the Volcanic Mine not transmitted
-        //Paid Matthias for free falcon rentals not transmitted
-        //Paid Skully for the ability to toggle loot keys no varb/varp
-        //Paid the ghost captain for free trips to Dragontooth Island TODO: couldnt find
+	public void initTasks()
+	{
+		//Paid Fossegrimen for free enchanted lyre imbues not transmitted
+		//Paid Petrified Pete for free entry to the Volcanic Mine not transmitted
+		//Paid Matthias for free falcon rentals not transmitted
+		//Paid Skully for the ability to toggle loot keys no varb/varp
+		//Paid the ghost captain for free trips to Dragontooth Island TODO: couldnt find
 
-        addEqTask(true, "Paid any banker for all 360 additional bank slots", VarbitID.BANK_EXTRA_BLOCKS_PURCHASED, 9);
+		addEqTask(true, "Paid any banker for all 360 additional bank slots", VarbitID.BANK_EXTRA_BLOCKS_PURCHASED, 9);
 
-        addEqTask(true, "Enhance the Camulet for one million coins", VarbitID.ENAKH_CAMULET_CHARGE, 7);
+		addEqTask(true, "Enhance the Camulet for one million coins", VarbitID.ENAKH_CAMULET_CHARGE, 7);
 
-        addTask("Pay Saniboch one million coins for permanent access to Brimhaven dungeon", VarbitID.KARAM_DUNGEON_PERMANENTACCESS);
+		addTask("Pay Saniboch one million coins for permanent access to Brimhaven dungeon", VarbitID.KARAM_DUNGEON_PERMANENTACCESS);
 
-        addTask("Pay Andras for free trips to Slepe", VarbitID.ANDRAS_PERM_UNLOCK);
-        //Paid Ceto for free entry to the drift net fishing area
-        addTask("Paid Ceto for free entry to the drift net fishing area", VarbitID.FOSSIL_DRIFTNET_UNLIMITEDACCESS);
-    }
+		addTask("Pay Andras for free trips to Slepe", VarbitID.ANDRAS_PERM_UNLOCK);
+		//Paid Ceto for free entry to the drift net fishing area
+		addTask("Paid Ceto for free entry to the drift net fishing area", VarbitID.FOSSIL_DRIFTNET_UNLIMITEDACCESS);
+	}
 }
 

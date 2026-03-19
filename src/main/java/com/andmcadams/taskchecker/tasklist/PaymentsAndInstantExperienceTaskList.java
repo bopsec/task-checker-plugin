@@ -80,12 +80,12 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList {
         addTask("Claim a clue scroll (beginner) from Veos", VarbitID.CLUEQUEST_CLUE_REWARD);
 
         addEqTask(true, "Claim a beer from Ali the Barman", VarbitID.FEUD_REPORT_DRINK, 2);
-		Task claimRagAndBoneManIIRewards = new Task.TaskBuilder()
-				.name("Claim the Rams skull helm and Bonesack from the Odd old man")
-				.switchVar(true, VarbitID.RAG_HELMET)
-				.switchVar(true, VarbitID.RAG_BONESACK)
-				.build();
-		add(claimRagAndBoneManIIRewards);
+        Task claimRagAndBoneManIIRewards = new Task.TaskBuilder()
+                .name("Claim the Rams skull helm and Bonesack from the Odd old man")
+                .switchVar(true, VarbitID.RAG_HELMET)
+                .switchVar(true, VarbitID.RAG_BONESACK)
+                .build();
+        add(claimRagAndBoneManIIRewards);
         //Used the blessed lamp from Brother Tranquility
         addTask("Used the blessed lamp from Brother Tranquility", VarbitID.BRAIN_LAMP_USED);
         //Used the combat lamp from the High Priest

@@ -24,6 +24,7 @@
  */
 package com.andmcadams.taskchecker;
 
+import com.andmcadams.taskchecker.tasklist.TaskList;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import javax.inject.Inject;
@@ -36,7 +37,6 @@ import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
 import net.runelite.client.util.ImageUtil;
-import com.andmcadams.taskchecker.tasklist.TaskList;
 
 @Slf4j
 @PluginDescriptor(
@@ -80,8 +80,12 @@ public class TaskCheckerPlugin extends Plugin
 	{
 		clientThread.invoke(() -> {
 			for (TaskList taskList : tasksCopy)
+			{
 				for (Task task : taskList.getTasks())
+				{
 					task.setCurrentValues(client);
+				}
+			}
 			SwingUtilities.invokeLater(() -> taskCheckerPanel.refresh());
 		});
 	}

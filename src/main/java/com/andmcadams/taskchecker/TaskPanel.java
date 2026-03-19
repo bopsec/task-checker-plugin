@@ -69,9 +69,13 @@ public class TaskPanel extends JPanel
 		Color c;
 		boolean isComplete = task.isComplete();
 		if (isComplete)
+		{
 			c = COMPLETE;
+		}
 		else
+		{
 			c = INCOMPLETE;
+		}
 		nameLabel.setForeground(c);
 		return isComplete;
 	}

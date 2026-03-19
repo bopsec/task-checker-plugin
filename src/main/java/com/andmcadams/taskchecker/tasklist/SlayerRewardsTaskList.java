@@ -26,58 +26,61 @@ package com.andmcadams.taskchecker.tasklist;
 
 import net.runelite.api.gameval.VarbitID;
 
-public class SlayerRewardsTaskList extends TaskList {
+public class SlayerRewardsTaskList extends TaskList
+{
 
-    public SlayerRewardsTaskList() {
-        super("Slayer Rewards");
-        initTasks();
-    }
+	public SlayerRewardsTaskList()
+	{
+		super("Slayer Rewards");
+		initTasks();
+	}
 
-    public void initTasks() {
-        addTask("Unlock Gargoyle Smasher", VarbitID.SLAYER_AUTOKILL_GARGOYLES);
+	public void initTasks()
+	{
+		addTask("Unlock Gargoyle Smasher", VarbitID.SLAYER_AUTOKILL_GARGOYLES);
 
-        addTask("Unlock Slug Salter", VarbitID.SLAYER_AUTOKILL_ROCKSLUGS);
+		addTask("Unlock Slug Salter", VarbitID.SLAYER_AUTOKILL_ROCKSLUGS);
 
-        addTask("Unlock Reptile Freezer", VarbitID.SLAYER_AUTOKILL_DESERTLIZARDS);
+		addTask("Unlock Reptile Freezer", VarbitID.SLAYER_AUTOKILL_DESERTLIZARDS);
 
-        addTask("Unlock 'Shroom Sprayer", VarbitID.SLAYER_AUTOKILL_ZYGOMITES);
+		addTask("Unlock 'Shroom Sprayer", VarbitID.SLAYER_AUTOKILL_ZYGOMITES);
 
-        addTask("Unlock Broader Fletching", VarbitID.SLAYER_AMMO_UNLOCKED);
+		addTask("Unlock Broader Fletching", VarbitID.SLAYER_AMMO_UNLOCKED);
 
-        addTask("Unlock Malevolent Masquerade", VarbitID.SLAYER_HELM_UNLOCKED);
+		addTask("Unlock Malevolent Masquerade", VarbitID.SLAYER_HELM_UNLOCKED);
 
-        addTask("Unlock Ring Bling", VarbitID.SLAYER_RING_UNLOCKED);
+		addTask("Unlock Ring Bling", VarbitID.SLAYER_RING_UNLOCKED);
 
-        addTask("Unlock Bigger and Badder", VarbitID.SLAYER_UNLOCK_SUPERIORMOBS);
+		addTask("Unlock Bigger and Badder", VarbitID.SLAYER_UNLOCK_SUPERIORMOBS);
 
-        addTask("Unlock King Black Bonnet", VarbitID.SLAYER_UNLOCK_HELM_BLACK);
+		addTask("Unlock King Black Bonnet", VarbitID.SLAYER_UNLOCK_HELM_BLACK);
 
-        addTask("Unlock Kalphite Khat", VarbitID.SLAYER_UNLOCK_HELM_GREEN);
+		addTask("Unlock Kalphite Khat", VarbitID.SLAYER_UNLOCK_HELM_GREEN);
 
-        addTask("Unlock Unholy Helmet", VarbitID.SLAYER_UNLOCK_HELM_RED);
+		addTask("Unlock Unholy Helmet", VarbitID.SLAYER_UNLOCK_HELM_RED);
 
-        addTask("Unlock Dark Mantle", VarbitID.SLAYER_UNLOCK_HELM_PURPLE);
+		addTask("Unlock Dark Mantle", VarbitID.SLAYER_UNLOCK_HELM_PURPLE);
 
-        addTask("Unlock Undead Head", VarbitID.SLAYER_UNLOCK_HELM_TURQUOISE);
+		addTask("Unlock Undead Head", VarbitID.SLAYER_UNLOCK_HELM_TURQUOISE);
 
-        addTask("Unlock Use More Head", VarbitID.SLAYER_UNLOCK_HELM_HYDRA);
+		addTask("Unlock Use More Head", VarbitID.SLAYER_UNLOCK_HELM_HYDRA);
 
-        addTask("Unlock Duly Noted", VarbitID.SLAYER_UNLOCK_NOTEDMITHRILBARS);
+		addTask("Unlock Duly Noted", VarbitID.SLAYER_UNLOCK_NOTEDMITHRILBARS);
 
-        addTask("Unlock Stop the Wyvern", VarbitID.SLAYER_UNLOCK_FOSSILWYVERNBLOCK);
+		addTask("Unlock Stop the Wyvern", VarbitID.SLAYER_UNLOCK_FOSSILWYVERNBLOCK);
 
-        addTask("Unlock Twisted Vision", VarbitID.SLAYER_UNLOCK_HELM_TWISTED);
+		addTask("Unlock Twisted Vision", VarbitID.SLAYER_UNLOCK_HELM_TWISTED);
 
-        addTask("Unlock Task Storage", VarbitID.SLAYER_UNLOCK_STORAGE);
+		addTask("Unlock Task Storage", VarbitID.SLAYER_UNLOCK_STORAGE);
 
-        addTask("Unlock Revenenenenenants", VarbitID.SLAYER_LONGER_REVENANTS);
+		addTask("Unlock Revenenenenenants", VarbitID.SLAYER_LONGER_REVENANTS);
 
-        addTask("Unlocked Eye See You", VarbitID.SLAYER_UNLOCK_HELM_ARAXYTE);
+		addTask("Unlocked Eye See You", VarbitID.SLAYER_UNLOCK_HELM_ARAXYTE);
 
-        addTask("Unlocked hooded slayer helmet", VarbitID.SLAYER_UNLOCK_HELM_HOODED);
+		addTask("Unlocked hooded slayer helmet", VarbitID.SLAYER_UNLOCK_HELM_HOODED);
 
-        addTask("Unlocked Shayzien(5) effect on slayer helmet", VarbitID.KOUREND_SLAYER_HELM_BONUS);
+		addTask("Unlocked Shayzien(5) effect on slayer helmet", VarbitID.KOUREND_SLAYER_HELM_BONUS);
 
-    }
+	}
 }
 

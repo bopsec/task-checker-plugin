@@ -27,46 +27,49 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarbitID;
 
-public class EnvironmentalAlterationsTaskList extends TaskList {
+public class EnvironmentalAlterationsTaskList extends TaskList
+{
 
-    public EnvironmentalAlterationsTaskList() {
-        super("Environmental alterations");
-        initTasks();
-    }
+	public EnvironmentalAlterationsTaskList()
+	{
+		super("Environmental alterations");
+		initTasks();
+	}
 
-    public void initTasks() {
-        //Built a raft using the smashed table in Ah Za Rhoon not transmitted
+	public void initTasks()
+	{
+		//Built a raft using the smashed table in Ah Za Rhoon not transmitted
 
-        //Built the Spinning Wheel on the Isle of Souls
-        addTask("Built the Spinning Wheel on the Isle of Souls", VarbitID.SW_SPINNINGWHEEL_BUILT);
-        //Built the Potter's Wheel on the Isle of Souls
-        addTask("Built the Potter's Wheel on the Isle of Souls", VarbitID.SW_POTTERYWHEEL_BUILT);
-        //Built all 5 quetzal landing sites
-        Task allQuetzalSites = new Task.TaskBuilder()
-                .name("Built all 6 quetzal landing sites")
-                // the commented out ones are already built
-                //.geVar(true, VarbitID.QUETZAL_AUBURNVALLEY, 1)
-                //.geVar(true, VarbitID.QUETZAL_QUETZACALLIGORGE, 1)
-                //.geVar(true, VarbitID.QUETZAL_TEOMAT, 1)
-                //.geVar(true, VarbitID.QUETZAL_TALTEKLAN, 1)
-                //.geVar(true, VarbitID.QUETZAL_HUNTERGUILD, 1)
-                //.geVar(true, VarbitID.QUETZAL_FORTIS, 1)
-                //.geVar(true, VarbitID.QUETZAL_SUNSETCOAST, 1)
-                //.geVar(true, VarbitID.QUETZAL_ALDARIN, 1)
-                .geVar(true, VarbitID.QUETZAL_SALVAGEROVERLOOK, 1)
-                .geVar(true, VarbitID.QUETZAL_CAMTORUM, 1)
-                .geVar(true, VarbitID.QUETZAL_COLOSSEUM, 1)
-                .geVar(true, VarbitID.QUETZAL_KASTORI, 1)
-                .geVar(true, VarbitID.QUETZAL_OUTERFORTIS, 1)
-                .geVar(true, VarbitID.QUETZAL_COLOSSALWYRM, 1)
-                .build();
-        this.add(allQuetzalSites);
+		//Built the Spinning Wheel on the Isle of Souls
+		addTask("Built the Spinning Wheel on the Isle of Souls", VarbitID.SW_SPINNINGWHEEL_BUILT);
+		//Built the Potter's Wheel on the Isle of Souls
+		addTask("Built the Potter's Wheel on the Isle of Souls", VarbitID.SW_POTTERYWHEEL_BUILT);
+		//Built all 5 quetzal landing sites
+		Task allQuetzalSites = new Task.TaskBuilder()
+			.name("Built all 6 quetzal landing sites")
+			// the commented out ones are already built
+			//.geVar(true, VarbitID.QUETZAL_AUBURNVALLEY, 1)
+			//.geVar(true, VarbitID.QUETZAL_QUETZACALLIGORGE, 1)
+			//.geVar(true, VarbitID.QUETZAL_TEOMAT, 1)
+			//.geVar(true, VarbitID.QUETZAL_TALTEKLAN, 1)
+			//.geVar(true, VarbitID.QUETZAL_HUNTERGUILD, 1)
+			//.geVar(true, VarbitID.QUETZAL_FORTIS, 1)
+			//.geVar(true, VarbitID.QUETZAL_SUNSETCOAST, 1)
+			//.geVar(true, VarbitID.QUETZAL_ALDARIN, 1)
+			.geVar(true, VarbitID.QUETZAL_SALVAGEROVERLOOK, 1)
+			.geVar(true, VarbitID.QUETZAL_CAMTORUM, 1)
+			.geVar(true, VarbitID.QUETZAL_COLOSSEUM, 1)
+			.geVar(true, VarbitID.QUETZAL_KASTORI, 1)
+			.geVar(true, VarbitID.QUETZAL_OUTERFORTIS, 1)
+			.geVar(true, VarbitID.QUETZAL_COLOSSALWYRM, 1)
+			.build();
+		this.add(allQuetzalSites);
 
-        //Searched the treasure pile in Movario's base
-        addTask("Searched the treasure pile in Movario's base", VarbitID.WGS_SEARCHED_TREASURE);
+		//Searched the treasure pile in Movario's base
+		addTask("Searched the treasure pile in Movario's base", VarbitID.WGS_SEARCHED_TREASURE);
 
-        //Destroyed all 9 tentacles in the Lassar Undercity couldn't find under DT2_LASSAR
-        //Listened to all 10 remnants in the Lassar Undercity
+		//Destroyed all 9 tentacles in the Lassar Undercity couldn't find under DT2_LASSAR
+		//Listened to all 10 remnants in the Lassar Undercity
 //		Task listenedToRemnantsLassarUndercity = new Task.TaskBuilder()
 //				.name("Listened to all 10 remnants in the Lassar Undercity")
 //				// where did the other 6 go?
@@ -76,20 +79,20 @@ public class EnvironmentalAlterationsTaskList extends TaskList {
 //				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_9)
 //				.build();
 
-        addTask("Used Saradomin's light", VarbitID.GODWARS_SARADOMIN_LIGHT);
+		addTask("Used Saradomin's light", VarbitID.GODWARS_SARADOMIN_LIGHT);
 
-        addTask("Build the fire pit in the Mole Hole", VarbitID.MY2ARM_FIRE_MOLE);
+		addTask("Build the fire pit in the Mole Hole", VarbitID.MY2ARM_FIRE_MOLE);
 
-        addTask("Build the fire pit in the Lumbridge Swamp Caves", VarbitID.MY2ARM_FIRE_LUMB);
+		addTask("Build the fire pit in the Lumbridge Swamp Caves", VarbitID.MY2ARM_FIRE_LUMB);
 
-        addTask("Build the fire pit in the Mos Le'Harmless Cave", VarbitID.MY2ARM_FIRE_HORRORS);
+		addTask("Build the fire pit in the Mos Le'Harmless Cave", VarbitID.MY2ARM_FIRE_HORRORS);
 
-        addTask("Build the fire pit in the Mort Myre Swamp", VarbitID.MY2ARM_FIRE_GHASTS);
+		addTask("Build the fire pit in the Mort Myre Swamp", VarbitID.MY2ARM_FIRE_GHASTS);
 
-        addGeTask(true, "Build the fire pit near the Weiss herb patch", VarbitID.MY2ARM_STATUS, 205);
+		addGeTask(true, "Build the fire pit near the Weiss herb patch", VarbitID.MY2ARM_STATUS, 205);
 
-        addTask("Build the fire pit by the God Wars Dungeon entrance", VarbitID.MY2ARM_FIRE_GWD);
-    }
+		addTask("Build the fire pit by the God Wars Dungeon entrance", VarbitID.MY2ARM_FIRE_GWD);
+	}
 
 }
 

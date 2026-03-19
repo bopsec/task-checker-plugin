@@ -28,33 +28,36 @@ import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
-public class TrappedSoulsTaskList extends TaskList {
+public class TrappedSoulsTaskList extends TaskList
+{
 
-    public TrappedSoulsTaskList() {
-        super("Trapped souls and afflicted characters");
-        initTasks();
-    }
+	public TrappedSoulsTaskList()
+	{
+		super("Trapped souls and afflicted characters");
+		initTasks();
+	}
 
-    public void initTasks() {
-        //Freed Mehhar from the High Priest of Scabaras's influence
-        addTask("Freed Mehhar from the High Priest of Scabaras's influence", VarbitID.BCS_MEHHAR_RETURNED); // confirmed
+	public void initTasks()
+	{
+		//Freed Mehhar from the High Priest of Scabaras's influence
+		addTask("Freed Mehhar from the High Priest of Scabaras's influence", VarbitID.BCS_MEHHAR_RETURNED); // confirmed
 
-        Task freeKlenter = new Task.TaskBuilder()
-                .name("Free Klenter's soul from Amascut's torment")
-                .eqVar(true, VarbitID.ICS_SPECVIS, 0)
-                .eqVar(true, VarbitID.ICS_LITTLE_VAR, 26)
-                .build();
+		Task freeKlenter = new Task.TaskBuilder()
+			.name("Free Klenter's soul from Amascut's torment")
+			.eqVar(true, VarbitID.ICS_SPECVIS, 0)
+			.eqVar(true, VarbitID.ICS_LITTLE_VAR, 26)
+			.build();
 
-        addTask("Free Droalak's soul from his guilt of departure", VarbitID.MAKINGHISTORY_DROALAK_PRES);
+		addTask("Free Droalak's soul from his guilt of departure", VarbitID.MAKINGHISTORY_DROALAK_PRES);
 
-        Task cureRazmireAndUlsquire = new Task.TaskBuilder()
-                .name("Free Razmire Keelgan and Ulsquire Shauncy from affliction")
-                .bitVar(false, VarPlayerID.MORTTONMULTI, 5)
-                .bitVar(false, VarPlayerID.MORTTONMULTI, 6)
-                .build();
+		Task cureRazmireAndUlsquire = new Task.TaskBuilder()
+			.name("Free Razmire Keelgan and Ulsquire Shauncy from affliction")
+			.bitVar(false, VarPlayerID.MORTTONMULTI, 5)
+			.bitVar(false, VarPlayerID.MORTTONMULTI, 6)
+			.build();
 
-        add(freeKlenter);
-        add(cureRazmireAndUlsquire);
-    }
+		add(freeKlenter);
+		add(cureRazmireAndUlsquire);
+	}
 }
 

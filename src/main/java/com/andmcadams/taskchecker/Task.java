@@ -24,10 +24,10 @@
  */
 package com.andmcadams.taskchecker;
 
+import com.andmcadams.taskchecker.var.Var;
 import java.util.ArrayList;
 import lombok.Getter;
 import net.runelite.api.Client;
-import com.andmcadams.taskchecker.var.Var;
 
 public class Task
 {
@@ -56,7 +56,9 @@ public class Task
 		for (Var v : varsToCheck)
 		{
 			if (!v.isComplete())
+			{
 				return false;
+			}
 		}
 		return true;
 	}

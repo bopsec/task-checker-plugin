@@ -91,7 +91,7 @@ public class UtilityItemTaskList extends TaskList {
                 .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_5)
                 .build();
         this.add(builtAllCrabTraps);
-		//
+        //
     }
 }
 

@@ -27,58 +27,61 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarbitID;
 
-public class LMSandBHTaskList extends TaskList {
+public class LMSandBHTaskList extends TaskList
+{
 
-    public LMSandBHTaskList() {
-        super("PvP Minigame Unlocks");
-        initTasks();
-    }
+	public LMSandBHTaskList()
+	{
+		super("PvP Minigame Unlocks");
+		initTasks();
+	}
 
-    public void initTasks() {
-        addGeTask(true, "Unlocked the Golden Armadyl Special", VarbitID.BH_UNLOCKS_AGS_SPEC, 1);
-        //Unlocked the Golden Bandos Special
-        addGeTask(true, "Unlocked the Golden Bandos Special", VarbitID.BH_UNLOCKS_BGS_SPEC, 1);
-        //Unlocked the Golden Saradomin Special
-        addGeTask(true, "Unlocked the Golden Saradomin Special", VarbitID.BH_UNLOCKS_SGS_SPEC, 1);
-        //Unlocked the Golden Zamorak Special
-        addGeTask(true, "Unlocked the Golden Zamorak Special", VarbitID.BH_UNLOCKS_ZGS_SPEC, 1);
-        //
-        //TODO: Couldn't find LMS wins varb/varp
-        //Unlocked the ability to claim a victor's cape (1)
-        //Unlocked the ability to claim a victor's cape (10)
-        //Unlocked the ability to claim a victor's cape (50)
-        //Unlocked the ability to claim a victor's cape (100)
-        //Unlocked the ability to claim a victor's cape (500)
-        //Unlocked the ability to claim a victor's cape (1000)
-        //
-        //TODO: Couldn't find BH wins (only the 2023 version?)
-        //Unlocked the ability to claim a Bounty Hunter hat (tier 1)
-        //Unlocked the ability to claim a Bounty Hunter hat (tier 2)
-        //Unlocked the ability to claim a Bounty Hunter hat (tier 3)
-        //Unlocked the ability to claim a Bounty Hunter hat (tier 4)
-        //Unlocked the ability to claim a Bounty Hunter hat (tier 5)
-        //Unlocked the ability to claim a Bounty Hunter hat (tier 6)
+	public void initTasks()
+	{
+		addGeTask(true, "Unlocked the Golden Armadyl Special", VarbitID.BH_UNLOCKS_AGS_SPEC, 1);
+		//Unlocked the Golden Bandos Special
+		addGeTask(true, "Unlocked the Golden Bandos Special", VarbitID.BH_UNLOCKS_BGS_SPEC, 1);
+		//Unlocked the Golden Saradomin Special
+		addGeTask(true, "Unlocked the Golden Saradomin Special", VarbitID.BH_UNLOCKS_SGS_SPEC, 1);
+		//Unlocked the Golden Zamorak Special
+		addGeTask(true, "Unlocked the Golden Zamorak Special", VarbitID.BH_UNLOCKS_ZGS_SPEC, 1);
+		//
+		//TODO: Couldn't find LMS wins varb/varp
+		//Unlocked the ability to claim a victor's cape (1)
+		//Unlocked the ability to claim a victor's cape (10)
+		//Unlocked the ability to claim a victor's cape (50)
+		//Unlocked the ability to claim a victor's cape (100)
+		//Unlocked the ability to claim a victor's cape (500)
+		//Unlocked the ability to claim a victor's cape (1000)
+		//
+		//TODO: Couldn't find BH wins (only the 2023 version?)
+		//Unlocked the ability to claim a Bounty Hunter hat (tier 1)
+		//Unlocked the ability to claim a Bounty Hunter hat (tier 2)
+		//Unlocked the ability to claim a Bounty Hunter hat (tier 3)
+		//Unlocked the ability to claim a Bounty Hunter hat (tier 4)
+		//Unlocked the ability to claim a Bounty Hunter hat (tier 5)
+		//Unlocked the ability to claim a Bounty Hunter hat (tier 6)
 
-        //Logged at least 1 count of opening spoils of war
-        //
-        //Unlocked the effect of Ava's assembler in Castle Wars
-        addEqTask(true, "Unlocked the effect of Ava's assembler in Castle Wars", VarbitID.CASTLEWARS_AVA_REWARD_TIER, 3); // confirmed
-        //Unlocked the effect of Ava's assembler in Soul Wars
-        addEqTask(true, "Unlocked the effect of Ava's assembler in Soul Wars", VarbitID.SOUL_WARS_AVA_REWARD_TIER, 3); // confirmed
-
-
-        //Claimed all weapon charge refunds from the Emblem Trader
-        Task claimedBountyHunterWeaponChargeRefund = new Task.TaskBuilder()
-                .name("Claimed all weapon charge refunds from the Emblem Trader")
-                .eqVar(true, VarbitID.BH_MORRIGAN_AXE_REFUND_QUANTITY, 0)
-                .eqVar(true, VarbitID.BH_MORRIGAN_JAVELIN_REFUND_QUANTITY, 0)
-                .eqVar(true, VarbitID.BH_STATIUS_WARHAMMER_REFUND_QUANTITY, 0)
-                .eqVar(true, VarbitID.BH_VESTA_SPEAR_REFUND_QUANTITY, 0)
-                .eqVar(true, VarbitID.BH_ZURIEL_STAFF_REFUND_QUANTITY, 0)
-                .build();
-        this.add(claimedBountyHunterWeaponChargeRefund);
+		//Logged at least 1 count of opening spoils of war
+		//
+		//Unlocked the effect of Ava's assembler in Castle Wars
+		addEqTask(true, "Unlocked the effect of Ava's assembler in Castle Wars", VarbitID.CASTLEWARS_AVA_REWARD_TIER, 3); // confirmed
+		//Unlocked the effect of Ava's assembler in Soul Wars
+		addEqTask(true, "Unlocked the effect of Ava's assembler in Soul Wars", VarbitID.SOUL_WARS_AVA_REWARD_TIER, 3); // confirmed
 
 
-    }
+		//Claimed all weapon charge refunds from the Emblem Trader
+		Task claimedBountyHunterWeaponChargeRefund = new Task.TaskBuilder()
+			.name("Claimed all weapon charge refunds from the Emblem Trader")
+			.eqVar(true, VarbitID.BH_MORRIGAN_AXE_REFUND_QUANTITY, 0)
+			.eqVar(true, VarbitID.BH_MORRIGAN_JAVELIN_REFUND_QUANTITY, 0)
+			.eqVar(true, VarbitID.BH_STATIUS_WARHAMMER_REFUND_QUANTITY, 0)
+			.eqVar(true, VarbitID.BH_VESTA_SPEAR_REFUND_QUANTITY, 0)
+			.eqVar(true, VarbitID.BH_ZURIEL_STAFF_REFUND_QUANTITY, 0)
+			.build();
+		this.add(claimedBountyHunterWeaponChargeRefund);
+
+
+	}
 }
 

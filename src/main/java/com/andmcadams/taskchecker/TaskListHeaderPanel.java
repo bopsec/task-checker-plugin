@@ -40,7 +40,8 @@ public class TaskListHeaderPanel extends JPanel
 	private final JButton toggleButton;
 	private final String name;
 	private boolean collapsed;
-	private Runnable toggleAction = () -> {};
+	private Runnable toggleAction = () -> {
+	};
 
 	public TaskListHeaderPanel(String name)
 	{
@@ -88,7 +89,8 @@ public class TaskListHeaderPanel extends JPanel
 
 	public void setToggleAction(Runnable toggleAction)
 	{
-		this.toggleAction = toggleAction == null ? () -> {} : toggleAction;
+		this.toggleAction = toggleAction == null ? () -> {
+		} : toggleAction;
 	}
 
 	private void updateButtonText()
