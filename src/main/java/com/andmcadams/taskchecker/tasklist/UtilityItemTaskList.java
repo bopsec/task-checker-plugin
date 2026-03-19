@@ -27,71 +27,74 @@ package com.andmcadams.taskchecker.tasklist;
 import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarbitID;
 
-public class UtilityItemTaskList extends TaskList {
+public class UtilityItemTaskList extends TaskList
+{
 
-    public UtilityItemTaskList() {
-        super("Utility items");
-        initTasks();
-    }
+	public UtilityItemTaskList()
+	{
+		super("Utility items");
+		initTasks();
+	}
 
-    public void initTasks() {
-        addTask("Attached a long rope to the rock in the Viyeldi caves", VarbitID.VIYELDI_SHORTCUT);
+	public void initTasks()
+	{
+		addTask("Attached a long rope to the rock in the Viyeldi caves", VarbitID.VIYELDI_SHORTCUT);
 
-        Task attachKalphiteRopes = new Task.TaskBuilder()
-                .name("Attach ropes to both Kalphite Hives tunnel entrances (you may need to enter the Kalphite Hive)")
-                .switchVar(true, VarbitID.KALPHITE_ROPE_1)
-                .geVar(true, VarbitID.KALPHITE_ROPE_2, 1)
-                .build();
+		Task attachKalphiteRopes = new Task.TaskBuilder()
+			.name("Attach ropes to both Kalphite Hives tunnel entrances (you may need to enter the Kalphite Hive)")
+			.switchVar(true, VarbitID.KALPHITE_ROPE_1)
+			.geVar(true, VarbitID.KALPHITE_ROPE_2, 1)
+			.build();
 
-        addTask("Attach a grapple to the rocks next to the Observatory", VarbitID.OBSERVATORY_SHORTCUT_ROPE);
+		addTask("Attach a grapple to the rocks next to the Observatory", VarbitID.OBSERVATORY_SHORTCUT_ROPE);
 
-        Task attachDarkmeyerRopes = new Task.TaskBuilder()
-                .name("Attach both long ropes to both sides of the Darkmeyer wall")
-                .switchVar(true, VarbitID.DARKM_SHORTCUT_INNER)
-                .switchVar(true, VarbitID.DARKM_SHORTCUT_OUTER)
-                .build();
+		Task attachDarkmeyerRopes = new Task.TaskBuilder()
+			.name("Attach both long ropes to both sides of the Darkmeyer wall")
+			.switchVar(true, VarbitID.DARKM_SHORTCUT_INNER)
+			.switchVar(true, VarbitID.DARKM_SHORTCUT_OUTER)
+			.build();
 
-        add(attachKalphiteRopes);
-        add(attachDarkmeyerRopes);
+		add(attachKalphiteRopes);
+		add(attachDarkmeyerRopes);
 
-        // Built the bridge leading to the Mausoleum in Morytania
-        Task mausoleumBridge = new Task.TaskBuilder()
-                .name("Built the bridge leading to the Mausoleum in Morytania")
-                .eqVar(true, VarbitID.FENK_BUILT_BRIDGE_NORTH, 2) // confirmed
-                .eqVar(true, VarbitID.FENK_BUILT_BRIDGE_SOUTH, 2) // confirmed
-                .build();
-        this.add(mausoleumBridge);
+		// Built the bridge leading to the Mausoleum in Morytania
+		Task mausoleumBridge = new Task.TaskBuilder()
+			.name("Built the bridge leading to the Mausoleum in Morytania")
+			.eqVar(true, VarbitID.FENK_BUILT_BRIDGE_NORTH, 2) // confirmed
+			.eqVar(true, VarbitID.FENK_BUILT_BRIDGE_SOUTH, 2) // confirmed
+			.build();
+		this.add(mausoleumBridge);
 
-        // Built all 20 hinged-lid crab traps
-        Task builtAllCrabTraps = new Task.TaskBuilder()
-                .name("Built all 20 hinged-lid crab traps")
-                // Crown jewel
-                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_1)
-                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_2)
-                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_3)
-                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_4)
-                .switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_5)
-                // Pandemonium
-                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_1)
-                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_2)
-                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_3)
-                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_4)
-                .switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_5)
-                // Conch east
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_1)
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_2)
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_3)
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_4)
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_5)
-                // Conch north
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_1)
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_2)
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_3)
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_4)
-                .switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_5)
-                .build();
-        this.add(builtAllCrabTraps);
-        //
-    }
+		// Built all 20 hinged-lid crab traps
+		Task builtAllCrabTraps = new Task.TaskBuilder()
+			.name("Built all 20 hinged-lid crab traps")
+			// Crown jewel
+			.switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_1)
+			.switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_2)
+			.switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_3)
+			.switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_4)
+			.switchVar(true, VarbitID.CRAB_TRAP_CROWN_JEWEL_5)
+			// Pandemonium
+			.switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_1)
+			.switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_2)
+			.switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_3)
+			.switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_4)
+			.switchVar(true, VarbitID.CRAB_TRAP_PANDEMONIUM_5)
+			// Conch east
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_1)
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_2)
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_3)
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_4)
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_EAST_5)
+			// Conch north
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_1)
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_2)
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_3)
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_4)
+			.switchVar(true, VarbitID.CRAB_TRAP_GREAT_CONCH_NORTH_5)
+			.build();
+		this.add(builtAllCrabTraps);
+		//
+	}
 }
 
