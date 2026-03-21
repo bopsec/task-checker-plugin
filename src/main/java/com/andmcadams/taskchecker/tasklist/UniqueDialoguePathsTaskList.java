@@ -294,7 +294,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Listened to Netmaster Kellan introduce deep sea trawling
 		addTask("Listened to Netmaster Kellan introduce deep sea trawling", VarbitID.PORT_ROBERTS_NETMASTER_KELLAN_MET); // confirmed
 		// Read the warning sign at Jiggig
-		addTask("Read the warning sign at Jiggig", VarbitID.THZFE_COFFINMESSAGE); // confirmed
+		addTask("Attempt to pick-lock the northernmost coffin just outside Jiggig", VarbitID.THZFE_COFFINMESSAGE); // confirmed
 		// Listened to Biles's introduction to the Drumstick Kingdom
 		addTask("Listened to Biles's introduction to the Drumstick Kingdom", VarbitID.BILES_MET);
 		// Unlocked Ali Morisane's gnome question option
