@@ -31,7 +31,7 @@ public class SailingAmenities extends TaskList
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_DRAGON_KEEL)
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_DRAGON_SALVAGING_HOOK)
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_DRAGON_CANNON)
-			//.switchVar(true, VarbitID.LOST_SCHEMATIC_BALLISTIC_ATTRACTOR)
+			.switchVar(true, VarbitID.LOST_SCHEMATIC_BALLISTIC_ATTRACTOR)
 			.build();
 		this.add(allSchematics);
 		// Unlocked the ability to assign all 10 crewmates
