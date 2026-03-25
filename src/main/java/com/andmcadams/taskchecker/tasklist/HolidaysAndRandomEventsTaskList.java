@@ -20,7 +20,7 @@ public class HolidaysAndRandomEventsTaskList extends TaskList
 		//Unlocked the ability to reclaim all 35 Birthday holiday items
 		addGeTask(true, "Unlocked the ability to reclaim all Birthday holiday items", VarbitID._25TH_PROGRESS, 30);
 		//Unlocked the ability to reclaim all 36 Easter holiday items
-		addGeTask(true, "Unlocked the ability to reclaim all Easter holiday items", VarbitID.EASTER25_TRACKING, 100);
+		addGeTask(true, "Unlocked the ability to reclaim all Easter holiday items", 19214, 20); // VarbitID.EASTER26_HUNT_TRACKING
 		//Unlocked the ability to reclaim all 56 Hallowe'en holiday items
 		addGeTask(true, "Unlocked the ability to reclaim all Hallowe'en holiday items", VarbitID.HW25_MAIN, 60);
 		//Unlocked the ability to reclaim all 65 Christmas holiday items
