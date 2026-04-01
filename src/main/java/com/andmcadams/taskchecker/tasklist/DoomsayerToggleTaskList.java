@@ -170,7 +170,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled the giant bones bury warning", VarbitID.GIANT_BONE_BURY_WARNING_DISABLE); // TODO: Untested
 		// Disabled the shipwright ship recovery warning
 		addTask("Disabled the shipwright ship recovery warning", VarbitID.SAILING_BOAT_CARGOHOLD_WARNING_DISMISSED);
+		// Disabled the warning for teleporting from Lunar bank to Relekka not transmitted
 	}
-
 }
 
