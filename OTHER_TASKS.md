@@ -54,7 +54,6 @@
 - Told Miazrqa about her cousin's activities
 - Told Weave about the jar of venom
 - Paid the ghost captain for free trips to Dragontooth Island
-- 
 
 
 ## Confirmed not transmitted
@@ -100,3 +99,5 @@
 - Listened to Captain Pudi's explanation of Tempoross
 - Listened to all 3 of the haunted wine bottle's initial dialogue
 - Crack the clue 3 completion
+- Disabled warning for teleporting from Lunar isle to relekka with orb thing
+
