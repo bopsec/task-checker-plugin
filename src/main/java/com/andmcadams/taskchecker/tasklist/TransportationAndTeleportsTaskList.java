@@ -161,7 +161,8 @@ public class TransportationAndTeleportsTaskList extends TaskList
 			//.switchVar(true, VarbitID.SAILORS_AMULET_BARRACUDA) ?
 			.build();
 		this.add(sailorsAmuletAllTelesUnlocked);
-
+		// Unlocked a last destination option on spirit trees
+		addGeTask(true, "Unlocked a last destination option on Spirit Trees", VarbitID.SPIRIT_TREE_PREVIOUS, 1);
 	}
 }
 

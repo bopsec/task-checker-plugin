@@ -75,8 +75,6 @@ public class RightClickTaskList extends TaskList
 		addTask("Unlocked Sleve McDichael's rename-boat option", VarbitID.SLEVE_MCDICHAEL_MET); // confirmed
 		// Unlocked both Brutus scoreboards
 		addEqTask(true, "Unlocked both Brutus scoreboards", VarbitID.COWBOSS_SCOREBOARDS, 2); // confirmed
-		// Unlocked the right click last destination option on spirit trees
-		addGeTask(true, "Unlocked the right click last destination option on Spirit Trees", VarbitID.SPIRIT_TREE_PREVIOUS, 1);
 	}
 }
 
