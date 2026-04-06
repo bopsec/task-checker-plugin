@@ -175,7 +175,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 
 		addTask("Unlocked Rosie", VarbitID.PORCINE_ROSIE);
 
-		addGeTask(false, "Get directions from Baraek", VarPlayerID.PHOENIXGANG, 4);
+		//addGeTask(false, "Get directions from Baraek", VarPlayerID.PHOENIXGANG, 4); this task seems to be discontinued
 
 		addTask("Pay Eblis for an ancient staff", VarbitID.FD_GOT_ZAROS_STAFF);
 
