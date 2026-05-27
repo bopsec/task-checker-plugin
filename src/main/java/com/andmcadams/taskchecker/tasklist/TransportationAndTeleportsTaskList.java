@@ -152,9 +152,9 @@ public class TransportationAndTeleportsTaskList extends TaskList
 			.switchVar(true, VarbitID.PENDANT_OF_ATES_TLATI_FOUND)
 			.build();
 		this.add(unlockPendantOfAtes);
-		// Unlocked both additional sailors' amulet teleport locations
+		// Unlocked all three additional sailors' amulet teleport locations
 		Task sailorsAmuletAllTelesUnlocked = new Task.TaskBuilder()
-			.name("Unlocked both additional sailors' amulet teleport locations")
+			.name("Unlocked all three additional sailors' amulet teleport locations")
 			.switchVar(true, VarbitID.SAILORS_AMULET_DEEPFIN)
 			.switchVar(true, VarbitID.SAILORS_AMULET_ROBERTS)
 			.switchVar(true, VarbitID.SAILORS_AMULET_REDROCK)
