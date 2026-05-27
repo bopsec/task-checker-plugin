@@ -278,7 +278,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 			.build(); // why does this "quest" have two different outcomes l0l
 		this.add(xiloAndFabia);
 		// Unlocked the ability to trade Thorgel for death talismans
-		//addTask("Unlocked the ability to trade Thorgel for death talismans", VarbitID.MOURNING_DWARF_STARTEDTASK); // This will be "uncompleted" once you finish the list, before asking for a new one
+		addGeTask(true, "Unlocked the ability to trade Thorgel for death talismans", VarbitID.MOURNING_DWARF_STARTEDTASK, 1); // This changes to 2 once you've completed list once I think
 		// Listened to the summary of Ulfric's parchment (Olaf's Quest)
 		addTask("Listened to the summary of Ulfric's parchment", VarbitID.OLAF2_READ_NOTE); // confirmed
 		// Listened to the Friendly Forester explain Forestry

@@ -99,5 +99,4 @@
 - Listened to all 3 of the haunted wine bottle's initial dialogue
 - Crack the clue 3 completion
 - Disabled warning for teleporting from Lunar isle to relekka with orb thing
-- Unlocked the ability to trade Thorgel for death talismans
 - Listened to Death's tutorial after dying a dangerous death
