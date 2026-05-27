@@ -157,7 +157,7 @@ public class TransportationAndTeleportsTaskList extends TaskList
 			.name("Unlocked both additional sailors' amulet teleport locations")
 			.switchVar(true, VarbitID.SAILORS_AMULET_DEEPFIN)
 			.switchVar(true, VarbitID.SAILORS_AMULET_ROBERTS)
-			//.switchVar(true, VarbitID.SAILORS_AMULET_REDROCK) ?
+			.switchVar(true, VarbitID.SAILORS_AMULET_REDROCK)
 			//.switchVar(true, VarbitID.SAILORS_AMULET_BARRACUDA) ?
 			.build();
 		this.add(sailorsAmuletAllTelesUnlocked);

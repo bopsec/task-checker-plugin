@@ -278,7 +278,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 			.build(); // why does this "quest" have two different outcomes l0l
 		this.add(xiloAndFabia);
 		// Unlocked the ability to trade Thorgel for death talismans
-		addTask("Unlocked the ability to trade Thorgel for death talismans", VarbitID.MOURNING_DWARF_STARTEDTASK); // confirmed
+		//addTask("Unlocked the ability to trade Thorgel for death talismans", VarbitID.MOURNING_DWARF_STARTEDTASK); // This will be "uncompleted" once you finish the list, before asking for a new one
 		// Listened to the summary of Ulfric's parchment (Olaf's Quest)
 		addTask("Listened to the summary of Ulfric's parchment", VarbitID.OLAF2_READ_NOTE); // confirmed
 		// Listened to the Friendly Forester explain Forestry
@@ -309,6 +309,10 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Unlocked the ability to use Chet's coral nurseries.", VarbitID.CONCH_CORAL_PATCHES_UNLOCKED);
 		// Pet Gus after the final dawn
 		addTask("Pet Gus the dog after The Final Dawn", VarbitID.NPC_DOG_GUS_DIALOGUE);
+		// Sent Isles to the Grimstone dungeon
+		addEqTask(true, "Sent Isles to the Grimstone dungeon", VarbitID.GRIMSTONE_UNCERTER_STATUS, 4);
+		// Freed the Parrot after The Red Reef
+		addEqTask(true, "Freed the Parrot on Last Light", VarbitID.TRR_PARROT, 2);
 	}
 
 }

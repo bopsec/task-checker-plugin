@@ -171,6 +171,8 @@ public class DoomsayerToggleTaskList extends TaskList
 		// Disabled the shipwright ship recovery warning
 		addTask("Disabled the shipwright ship recovery warning", VarbitID.SAILING_BOAT_CARGOHOLD_WARNING_DISMISSED);
 		// Disabled the warning for teleporting from Lunar bank to Relekka not transmitted
+		// Disabled the warning on trading in Immaculate Mole Skin
+		addTask("Disabled the Immaculate Mole Skin trade-in warning", VarbitID.GIANT_MOLE_IMMACULATE_MOLESKIN_WARNING);
 	}
 }
 

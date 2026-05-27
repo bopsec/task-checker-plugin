@@ -20,7 +20,7 @@ public class SailingAmenities extends TaskList
 		addTask("Unlocked the ability to reclaim the medallion of the deep", VarbitID.MOTD_CRAFTED);
 		// Unlocked all lost sailing schematics
 		Task allSchematics = new Task.TaskBuilder()
-			.name("Unlocked all lost sailing schematics")
+			.name("Read all lost sailing schematics")
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_SALVAGING_STATION)
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_GALE_CATCHER)
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_ETERNAL_BRAZIER)
@@ -32,6 +32,7 @@ public class SailingAmenities extends TaskList
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_DRAGON_SALVAGING_HOOK)
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_DRAGON_CANNON)
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_BALLISTIC_ATTRACTOR)
+			.switchVar(true, VarbitID.LOST_SCHEMATIC_BOSUNS_WORKBENCH)
 			.build();
 		this.add(allSchematics);
 		// Unlocked the ability to assign all 10 crewmates

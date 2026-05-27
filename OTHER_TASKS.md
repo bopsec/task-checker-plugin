@@ -49,7 +49,6 @@
 - Disabled the Fertile Soil's non-upgraded spell warning
 - Unlocked the ability to trade giantsoul amulets
 - Listened to Raqueel introduce herself and Gem
-- Listened to Death's tutorial after dying a dangerous death
 - Listened to Hagus' gratitude for supporting the cause
 - Told Miazrqa about her cousin's activities
 - Told Weave about the jar of venom
@@ -100,4 +99,5 @@
 - Listened to all 3 of the haunted wine bottle's initial dialogue
 - Crack the clue 3 completion
 - Disabled warning for teleporting from Lunar isle to relekka with orb thing
-
+- Unlocked the ability to trade Thorgel for death talismans
+- Listened to Death's tutorial after dying a dangerous death
