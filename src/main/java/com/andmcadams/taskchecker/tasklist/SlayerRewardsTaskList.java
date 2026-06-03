@@ -24,6 +24,7 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
+import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
 public class SlayerRewardsTaskList extends TaskList
@@ -78,6 +79,8 @@ public class SlayerRewardsTaskList extends TaskList
 		addTask("Unlocked Eye See You", VarbitID.SLAYER_UNLOCK_HELM_ARAXYTE);
 
 		addTask("Unlocked Absolutely Slayin'", VarbitID.SLAYER_UNLOCK_HELM_HOODED);
+
+		addBitTask(false, "Unlocked Oath Breaker", VarPlayerID.SLAYER_REWARDS_UNLOCKS2, 0);
 
 		addTask("Unlocked Shayzien(5) effect on slayer helmet", VarbitID.KOUREND_SLAYER_HELM_BONUS);
 
