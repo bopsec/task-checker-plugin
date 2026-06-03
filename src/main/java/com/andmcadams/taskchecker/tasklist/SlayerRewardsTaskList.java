@@ -77,7 +77,7 @@ public class SlayerRewardsTaskList extends TaskList
 
 		addTask("Unlocked Eye See You", VarbitID.SLAYER_UNLOCK_HELM_ARAXYTE);
 
-		addTask("Unlocked hooded slayer helmet", VarbitID.SLAYER_UNLOCK_HELM_HOODED);
+		addTask("Unlocked Absolutely Slayin'", VarbitID.SLAYER_UNLOCK_HELM_HOODED);
 
 		addTask("Unlocked Shayzien(5) effect on slayer helmet", VarbitID.KOUREND_SLAYER_HELM_BONUS);
 
