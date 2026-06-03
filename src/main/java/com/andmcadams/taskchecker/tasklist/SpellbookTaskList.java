@@ -48,6 +48,7 @@ public class SpellbookTaskList extends TaskList
 		addTask("Unlocked the Home Teleport's League III animation option", VarbitID.LEAGUE_3_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Home Teleport's League 4 animation option", VarbitID.LEAGUE_4_HOME_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Home Teleport's League 5 animation option", VarbitID.LEAGUE_5_HOME_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's League VI animation option", VarbitID.LEAGUE_6_HOME_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Home Teleport's Speedy animation option", VarbitID.SPEEDRUNNING_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Alchemy's League IV animation option", VarbitID.LEAGUE_4_HIGH_ALCH_ANIMATION_UNLOCKED);
 		addTask("Unlocked the Vengeance's League IV animation option", VarbitID.LEAGUE_4_VENGEANCE_ANIMATION_UNLOCKED);
@@ -57,6 +58,8 @@ public class SpellbookTaskList extends TaskList
 		addTask("Unlocked Death's death Leagues V animation option", VarbitID.LEAGUE_5_DEATH_ANIMATION_UNLOCKED);
 		//Unlocked the NPC Contact's League V animation option
 		addGeTask(false, "Unlocked the NPC Contact's League V animation option", VarPlayerID.NPC_CONTACT_UNLOCKS, 3); // confirmed
+		// Unlocked the imp thrall model
+		addTask("Unlocked the Thrall's Leagues VI recolour option", VarbitID.LEAGUE_6_THRALL_OVERRIDE_UNLOCKED);
 
 		//Unlocked the ability to select all characters via NPC Contact not transmitted
 		addGeTask(true, "Unlock the NPC Contact spell's previous contract option", VarbitID.LUNAR_CONTACT_LASTID, 1);
@@ -70,6 +73,10 @@ public class SpellbookTaskList extends TaskList
 		addGeTask(false, "Selected at least one NPC Contact animation option", VarPlayerID.NPC_CONTACT_ANIM_TOGGLES, 1);
 
 		addGeTask(false, "Selected at least one death animation option", VarPlayerID.DEATH_ANIM_TOGGLES, 1); // confirmed
+
+		addGeTask(true, "Selected at least one skeletal thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_SKELETON, 1);
+		addGeTask(true, "Selected at least one zombie thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_ZOMBIE, 1);
+		addGeTask(true, "Selected at least one ghost thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_GHOST, 1);
 	}
 }
 
