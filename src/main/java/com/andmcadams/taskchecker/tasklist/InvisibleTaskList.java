@@ -53,5 +53,7 @@ public class InvisibleTaskList extends TaskList
 		addTask("Talk to Reldo in Varrock castle library", VarbitID.RELDO_MET); // did change to 1, but no visible effect
 
 		addTask("Search the Ruby Bookcase in Movario's base", VarbitID.WGS_RUBY_BOOKCASE_SEARCHED); // no effect and not needed during quest
+
+		addTask("Read the wall plaque in the basement in Burgh de Rott", VarbitID.BURGH_WALL_PLAQUE_READ);
 	}
 }
