@@ -100,3 +100,4 @@
 - Crack the clue 3 completion
 - Disabled warning for teleporting from Lunar isle to relekka with orb thing
 - Listened to Death's tutorial after dying a dangerous death
+- Received the blueberry muffin
