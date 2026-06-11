@@ -161,8 +161,6 @@ public class UnplacedRandomTaskList extends TaskList
 		addTask("Unlocked the ability to toggle red skin", VarbitID.LEAGUE_6_RED_SKIN_UNLOCKED);
 		// Unlocked the ability to toggle the demon butler cosmetic override
 		addTask("Unlocked the ability to toggle the demon butler cosmetic override", VarbitID.LEAGUE_6_BUTLER_UNLOCKED);
-		// Selected at least one cosmetic override for the demon butler
-		addGeTask(true, "Selected at least one cosmetic override for the demon butler", VarbitID.POH_DEMON_BUTLER_COSMETICS, 1);
 	}
 }
 

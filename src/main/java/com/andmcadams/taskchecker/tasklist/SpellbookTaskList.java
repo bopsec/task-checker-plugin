@@ -74,9 +74,9 @@ public class SpellbookTaskList extends TaskList
 
 		addGeTask(false, "Selected at least one death animation option", VarPlayerID.DEATH_ANIM_TOGGLES, 1); // confirmed
 
+		addGeTask(true, "Selected at least one ghost thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_GHOST, 1);
 		addGeTask(true, "Selected at least one skeletal thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_SKELETON, 1);
 		addGeTask(true, "Selected at least one zombie thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_ZOMBIE, 1);
-		addGeTask(true, "Selected at least one ghost thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_GHOST, 1);
 	}
 }
 
