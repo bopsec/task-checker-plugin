@@ -73,10 +73,10 @@ public class EnvironmentalAlterationsTaskList extends TaskList
 //		Task listenedToRemnantsLassarUndercity = new Task.TaskBuilder()
 //				.name("Listened to all 10 remnants in the Lassar Undercity")
 //				// where did the other 6 go?
-//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_6)
-//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_7)
-//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_8)
-//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_9)
+//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_6) // 1
+//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_7) // 3
+//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_8) // 2
+//				.switchVar(true, VarbitID.DT2_LASSAR_EMPOWERED_REMNANT_9) // 4
 //				.build();
 
 		addTask("Used Saradomin's light", VarbitID.GODWARS_SARADOMIN_LIGHT);

@@ -134,7 +134,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Tombs of Amascut entry warning TODO: Unfound/untested
 		//Disabled the Icy Cavern entrance warning
 		addTask("Disabled the Icy Cavern entrance warning", VarbitID.WYVERN_ENTRANCE_WARNING); // surely?
-		//Disabled the crashed airship opening entrance warning TODO: Unfound/untested
+		//Disabled the crashed airship opening entrance warning not transmitted
 		//Disabled the Grubby Chest's inventory space warning
 		addTask("Disabled the Grubby Chest's inventory space warning", VarbitID.HOSDUN_CHEST_WARNING);
 		//Disabled the Zalcano prison barrier entrance warning not transmitted

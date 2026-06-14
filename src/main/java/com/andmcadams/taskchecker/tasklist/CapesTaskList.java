@@ -111,60 +111,14 @@ public class CapesTaskList extends TaskList
 			.build(); // this could probs be done more cleanly, idk if there's one "can get diary cape" varb/varp
 		this.add(trimmedQuestCape);
 
-		// I changed it to only be the highest cape
-//        addGeTask(false, "Unlocked the ability to claim Xeric's guard", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 100);
-//        addGeTask(false, "Unlocked the ability to claim Xeric's warrior", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 500);
-//        addGeTask(false, "Unlocked the ability to claim Xeric's sentinel", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 1000);
-//        addGeTask(false, "Unlocked the ability to claim Xeric's general", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 1500);
 		addGeTask(false, "Unlocked the ability to claim Xeric's champion", VarPlayerID.TOTAL_COMPLETED_XERICCHAMBERS_CHALLENGE, 2000);
 
-		//
-//        Task tobCape1 = new Task.TaskBuilder()
-//                .name("Unlocked the ability to claim a Sinhaza shroud tier 1")
-//                .geSumVars(false, 100, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD_HARD)
-//                .build();
-//        this.add(tobCape1);
-//        Task tobCape2 = new Task.TaskBuilder()
-//                .name("Unlocked the ability to claim a Sinhaza shroud tier 2")
-//                .geSumVars(false, 500, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD_HARD)
-//                .build();
-//        this.add(tobCape2);
-//        Task tobCape3 = new Task.TaskBuilder()
-//                .name("Unlocked the ability to claim a Sinhaza shroud tier 3")
-//                .geSumVars(false, 1000, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD_HARD)
-//                .build();
-//        this.add(tobCape3);
-//        Task tobCape4 = new Task.TaskBuilder()
-//                .name("Unlocked the ability to claim a Sinhaza shroud tier 4")
-//                .geSumVars(false, 1500, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD_HARD)
-//                .build();
-//        this.add(tobCape4);
 		Task tobCape5 = new Task.TaskBuilder()
 			.name("Unlocked the ability to claim a Sinhaza shroud tier 5")
 			.geSumVars(false, 2000, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD, VarPlayerID.TOTAL_COMPLETED_THEATREOFBLOOD_HARD)
 			.build();
 		this.add(tobCape5);
-//        //
-//        Task toaCape1 = new Task.TaskBuilder()
-//                .name("Unlocked the ability to claim Icthlarin's shroud (tier 1)")
-//                .geSumVars(false, 100, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT_EXPERT)
-//                .build();
-//        this.add(toaCape1);
-//        Task toaCape2 = new Task.TaskBuilder()
-//                .name("Unlocked the ability to claim Icthlarin's shroud (tier 2)")
-//                .geSumVars(false, 500, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT_EXPERT)
-//                .build();
-//        this.add(toaCape2);
-//        Task toaCape3 = new Task.TaskBuilder()
-//                .name("Unlocked the ability to claim Icthlarin's shroud (tier 3)")
-//                .geSumVars(false, 1000, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT_EXPERT)
-//                .build();
-//        this.add(toaCape3);
-//        Task toaCape4 = new Task.TaskBuilder()
-//                .name("Unlocked the ability to claim Icthlarin's shroud (tier 4)")
-//                .geSumVars(false, 1500, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT_EXPERT)
-//                .build();
-//        this.add(toaCape4);
+
 		Task toaCape5 = new Task.TaskBuilder()
 			.name("Unlocked the ability to claim Icthlarin's shroud (tier 5)")
 			.geSumVars(false, 2000, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT_EXPERT)
