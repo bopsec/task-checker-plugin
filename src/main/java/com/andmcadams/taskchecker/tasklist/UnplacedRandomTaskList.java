@@ -138,7 +138,7 @@ public class UnplacedRandomTaskList extends TaskList
 		//Claimed all free chants for lost crystal equipment from Ilfeen TODO: Unfound
 
 		//Claimed any deposit back from the Shilo Village furnace coffer not transmitted
-		//Claimed any additional sunfire armour from the STASH unit) probably doesn't exist
+		//Claimed any additional sunfire armour from the STASH unit) not transmitted
 		//Completed all miniquests
 		addEqTask(true, "Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
 

@@ -40,7 +40,7 @@ public class UnlimitedServicesTaskList extends TaskList
 		//Paid Fossegrimen for free enchanted lyre imbues not transmitted
 		//Paid Petrified Pete for free entry to the Volcanic Mine not transmitted
 		//Paid Matthias for free falcon rentals not transmitted
-		//Paid Skully for the ability to toggle loot keys no varb/varp
+		//Paid Skully for the ability to toggle loot keys not transmitted
 		//Paid the ghost captain for free trips to Dragontooth Island TODO: couldnt find
 
 		addEqTask(true, "Paid any banker for all 360 additional bank slots", VarbitID.BANK_EXTRA_BLOCKS_PURCHASED, 9);

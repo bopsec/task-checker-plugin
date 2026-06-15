@@ -64,7 +64,9 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 
 		//Claimed all 6 XP drops from Combat Training Camp dummies not transmitted
 		//TODO:Claimed all 14 XP drops from Perdu who even has an acc with this not done atp
-		//TODO:Claimed all Adventure Paths task rewards and starter kits
+		//Claimed all Adventure Paths task rewards and starter kits,
+		// these will be unset for accounts that don't have the fker in lumby, so just won't add these
+		// maybe I can check "paths inactive OR paths completed"?
 
 		addEqTask(false, "Claim wine from the Observatory assistant", VarPlayerID.ITGRONIGEN, 8);
 
