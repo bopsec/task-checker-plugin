@@ -313,6 +313,8 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addEqTask(true, "Sent Isles to the Grimstone dungeon", VarbitID.GRIMSTONE_UNCERTER_STATUS, 4);
 		// Freed the Parrot after The Red Reef
 		addEqTask(true, "Freed the Parrot on Last Light", VarbitID.TRR_PARROT, 2);
+		// Listened to the Boat Bottle introduction
+		addTask("Listened to the Boat bottle introduction", VarbitID.SAILING_BOAT_BOTTLE_INTRO);
 	}
 
 }
