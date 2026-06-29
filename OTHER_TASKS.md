@@ -51,7 +51,6 @@
 - Listened to Raqueel introduce herself and Gem
 - Listened to Hagus' gratitude for supporting the cause
 - Told Miazrqa about her cousin's activities
-- Told Weave about the jar of venom
 - Paid the ghost captain for free trips to Dragontooth Island
 
 
@@ -101,3 +100,4 @@
 - Disabled warning for teleporting from Lunar isle to relekka with orb thing
 - Listened to Death's tutorial after dying a dangerous death
 - Received the blueberry muffin
+- Told Weave about the jar of venom
