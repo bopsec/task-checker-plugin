@@ -169,6 +169,8 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		addTask("Used the magic lamp from Gillie Groats", VarbitID.COWBOSS_REWARD_LAMP); // confirmed
 		// Claimed the Cowbell amulet after Ides of Milk
 		addTask("Claim the Cowbell amulet", VarbitID.COWQUEST_REWARD); // confirmed
+		// Used the experience tomes from Blood Moon Rises
+		addEqTask(true, "Used all 6 experience tomes from Blood Moon Rises", VarbitID.MYQ6_XP_REWARD, 6);
 	}
 }
 
