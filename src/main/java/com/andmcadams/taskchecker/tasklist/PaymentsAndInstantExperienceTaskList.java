@@ -112,7 +112,7 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 			.eqVar(true, VarbitID.MYQ3_TOME_XP, 3)
 			.eqVar(true, VarbitID.MYQ4_XP_REWARD, 3)
 			.eqVar(true, VarbitID.MYQ5_XP_REWARD, 3)
-			//.switchVar(true, VarbitID.MYQ5_BONUS_XP_REWARD) what is this?
+			.eqVar(true, VarbitID.MYQ5_BONUS_XP_REWARD, 3)
 			.build();
 		this.add(ivanStromUsedExpTomes);
 		//Used all 3 ancient lamps from the Mysterious Bandit
