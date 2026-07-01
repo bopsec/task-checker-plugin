@@ -322,7 +322,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Told Morgan that Count Draynor is dead
 		addTask("Told Morgan that Count Draynor is dead", VarbitID.MORGAN_POSTQUEST_DIALOGUE);
 		// Reminisce with Safalaan after Blood Moon Rises
-		addTask("Talk about all that has happened with Safalaan", VarbitID.MYQ6_SAFALAAN_POSTQUEST_CHAT);
+		addTask("Talk to Safalaan about everything that has happened", VarbitID.MYQ6_SAFALAAN_POSTQUEST_CHAT);
 	}
 
 }
