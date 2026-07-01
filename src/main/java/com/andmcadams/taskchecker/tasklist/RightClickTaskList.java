@@ -75,6 +75,14 @@ public class RightClickTaskList extends TaskList
 		addTask("Unlocked Sleve McDichael's rename-boat option", VarbitID.SLEVE_MCDICHAEL_MET); // confirmed
 		// Unlocked both Brutus scoreboards
 		addEqTask(true, "Unlocked both Brutus scoreboards", VarbitID.COWBOSS_SCOREBOARDS, 2); // confirmed
+		// Listened to the Aranei explain the Venators
+		addTask("Listened to the Aranei explain the Venators", VarbitID.VAMPYRIUM_VENATOR_ARANEI_MET);
+		// Unlock the Aranei scout's travel option
+		addTask("Unlock the Aranei scout's travel option", VarbitID.VAMPYRIUM_TRAVERSAL_ARANEI_SAVED_TALKED_AFTER);
+		// Listened to the Aranei bucket dealer explain his deal
+		addTask("Listened to the Aranei bucker dealer explain his deal", VarbitID.BUCKET_ARANEI_MET);
+		// Listened to the Aranei scout explain death mechanics at Maggot King
+		addTask("Listened to the Aranei scout explain death mechanics at Maggot King", VarbitID.VAMPYRIUM_GRAVESTONE_ARANEI_MET);
 	}
 }
 

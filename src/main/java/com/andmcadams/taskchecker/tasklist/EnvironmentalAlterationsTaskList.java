@@ -92,6 +92,10 @@ public class EnvironmentalAlterationsTaskList extends TaskList
 		addGeTask(true, "Build the fire pit near the Weiss herb patch", VarbitID.MY2ARM_STATUS, 205);
 
 		addTask("Build the fire pit by the God Wars Dungeon entrance", VarbitID.MY2ARM_FIRE_GWD);
+
+		addTask("Unlocked the shortcut to the south of Sangvesti", VarbitID.VAMPYRIUM_TRAVERSAL_ROCK_MINED);
+
+		addTask("Built the bank chest in Sangvesti", VarbitID.AMENITY_BANKCHEST_SANGVESTI);
 	}
 
 }

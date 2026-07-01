@@ -173,6 +173,8 @@ public class DoomsayerToggleTaskList extends TaskList
 		// Disabled the warning for teleporting from Lunar bank to Relekka not transmitted
 		// Disabled the warning on trading in Immaculate Mole Skin
 		addTask("Disabled the Immaculate Mole Skin trade-in warning", VarbitID.GIANT_MOLE_IMMACULATE_MOLESKIN_WARNING);
+		// Disabled Maggot King's destroy loot warning
+		addTask("Disabled Maggot King's destroy loot warning", VarbitID.MAGGOT_KING_PET_LOOT_WARNING);
 	}
 }
 

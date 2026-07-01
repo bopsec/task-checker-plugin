@@ -95,7 +95,7 @@ public class CapesTaskList extends TaskList
 		//Unlocked the ability to equip a quest point cape (t)
 		Task trimmedQuestCape = new Task.TaskBuilder()
 			.name("Unlocked the ability to equip a quest point cape (t)")
-			.eqVar(false, VarPlayerID.QP, 335)
+			.geVar(false, VarPlayerID.QP, 339)
 			.switchVar(true, VarbitID.ARDOUGNE_DIARY_ELITE_COMPLETE)
 			.switchVar(true, VarbitID.DESERT_DIARY_ELITE_COMPLETE)
 			.switchVar(true, VarbitID.FALADOR_DIARY_ELITE_COMPLETE)

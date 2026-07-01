@@ -315,6 +315,14 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addEqTask(true, "Freed the Parrot on Last Light", VarbitID.TRR_PARROT, 2);
 		// Listened to the Boat Bottle introduction
 		addTask("Listened to the Boat bottle introduction", VarbitID.SAILING_BOAT_BOTTLE_INTRO);
+		// Talk to Veliaf about his newly opened pub
+		addTask("Talk to Veliaf about his newly opened pub", VarbitID.MYQ6_VELIAF_PUB_CHAT);
+		// Talk to Dr Harlow after Blood Moon Rises
+		addTask("Talk to Dr Harlow after Blood Moon Rises", VarbitID.DR_HARLOW_MYQ6);
+		// Told Morgan that Count Draynor is dead
+		addTask("Told Morgan that Count Draynor is dead", VarbitID.MORGAN_POSTQUEST_DIALOGUE);
+		// Reminisce with Safalaan after Blood Moon Rises
+		addTask("Talk about all that has happened with Safalaan", VarbitID.MYQ6_SAFALAAN_POSTQUEST_CHAT);
 	}
 
 }

@@ -140,7 +140,8 @@ public class TransportationAndTeleportsTaskList extends TaskList
 		this.add(lassarTeleporters);
 		//
 		//Unlocked the ability to use Drakan's medallion's third teleport
-		addTask("Unlocked the ability to use Drakan's medallion's third teleport", VarbitID.SLEPE_TELEPORT_UNLOCKED);
+		addTask("Unlocked the ability to use Drakan's medallion's Slepe teleport", VarbitID.SLEPE_TELEPORT_UNLOCKED);
+		addTask("Unlock the ability to use Drakan's medallion's Castle Drakan teleport", VarbitID.CASTLE_DRAKAN_TELEPORT);
 		// Unlocked all 6 pendant of ates teleport locations
 		Task unlockPendantOfAtes = new Task.TaskBuilder()
 			.name("Unlocked all 6 pendant of ates teleport locations") // confirmed
