@@ -49,6 +49,8 @@ public class HiddenShopsTaskList extends TaskList
 		addTask("Unlocked Durrik's trade option", VarbitID.DEEPFIN_DWARF_DURRIK_MET); // confirmed
 		// Unlocked Nevet's trade option
 		addTask("Unlocked Nevet's trade option", VarbitID.EVENTS_SHOP_OWNER_MET);
+		// Unlocked the Garlic Cocktail shop
+		addTask("Unlocked the Garlic Cocktail shop", VarbitID.GARLIC_COCKTAIL_SHOP_UNLOCKED);
 	}
 }
 
