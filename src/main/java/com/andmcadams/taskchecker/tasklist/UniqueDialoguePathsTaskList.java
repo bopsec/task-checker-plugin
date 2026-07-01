@@ -323,6 +323,8 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Told Morgan that Count Draynor is dead", VarbitID.MORGAN_POSTQUEST_DIALOGUE);
 		// Reminisce with Safalaan after Blood Moon Rises
 		addTask("Talk to Safalaan about everything that has happened", VarbitID.MYQ6_SAFALAAN_POSTQUEST_CHAT);
+		// Listened to the Aranei scout's gratitude for saving him
+		addTask("Listened to the Aranei scout's gratitude for saving him", VarbitID.VAMPYRIUM_TRAVERSAL_ARANEI_SAVED_TALKED_AFTER);
 	}
 
 }

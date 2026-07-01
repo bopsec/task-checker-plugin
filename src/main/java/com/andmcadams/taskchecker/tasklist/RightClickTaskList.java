@@ -77,8 +77,6 @@ public class RightClickTaskList extends TaskList
 		addEqTask(true, "Unlocked both Brutus scoreboards", VarbitID.COWBOSS_SCOREBOARDS, 2); // confirmed
 		// Listened to the Aranei explain the Venators
 		addTask("Listened to the Aranei explain the Venators", VarbitID.VAMPYRIUM_VENATOR_ARANEI_MET);
-		// Unlock the Aranei scout's travel option
-		addTask("Unlock the Aranei scout's travel option", VarbitID.VAMPYRIUM_TRAVERSAL_ARANEI_SAVED_TALKED_AFTER);
 		// Listened to the Aranei bucket dealer explain his deal
 		addTask("Listened to the Aranei bucker dealer explain his deal", VarbitID.BUCKET_ARANEI_MET);
 		// Listened to the Aranei scout explain death mechanics at Maggot King
