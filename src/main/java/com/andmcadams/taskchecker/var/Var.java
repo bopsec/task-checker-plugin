@@ -36,6 +36,10 @@ public class Var
 	@Getter
 	private int targetValue;
 
+	private boolean hasTargetIndex;
+	private boolean isTargetVarbit;
+	private int targetIndex;
+
 	private BiFunction<Integer, Integer, Boolean> targetFunction;
 
 	@Getter
@@ -49,6 +53,16 @@ public class Var
 		this.isVarbit = isVarbit;
 		this.varIndex = varIndex;
 		this.targetValue = targetValue;
+		this.targetFunction = targetFunction;
+	}
+
+	public Var(boolean isVarbit, int varIndex, boolean isTargetVarbit, int targetIndex, BiFunction<Integer, Integer, Boolean> targetFunction)
+	{
+		this.isVarbit = isVarbit;
+		this.varIndex = varIndex;
+		this.isTargetVarbit = isTargetVarbit;
+		this.targetIndex = targetIndex;
+		this.hasTargetIndex = true;
 		this.targetFunction = targetFunction;
 	}
 
@@ -79,6 +93,13 @@ public class Var
 			currentValue = isVarbit
 				? client.getVarbitValue(varIndex)
 				: client.getVarpValue(varIndex);
+		}
+
+		if (hasTargetIndex)
+		{
+			targetValue = isTargetVarbit
+				? client.getVarbitValue(targetIndex)
+				: client.getVarpValue(targetIndex);
 		}
 
 		return currentValue;

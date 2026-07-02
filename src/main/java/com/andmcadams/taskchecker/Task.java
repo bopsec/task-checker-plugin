@@ -98,6 +98,13 @@ public class Task
 			return this;
 		}
 
+		public TaskBuilder eqVarVar(boolean isVarbit, int varIndex, int targetIndex)
+		{
+			Var v = new Var(isVarbit, varIndex, true, targetIndex, Var::isEqualTargetValue);
+			varsToCheck.add(v);
+			return this;
+		}
+
 		public TaskBuilder geVar(boolean isVarbit, int varIndex, int targetValue)
 		{
 			Var v = new Var(isVarbit, varIndex, targetValue, Var::isAtLeastTargetValue);
