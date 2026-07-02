@@ -67,7 +67,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Selim explain Osman's absence
 		addTask("Listened to Selim explain Osman's absence", VarbitID.BCS_MET_SELIM); // confirmed
 
-		//Listened to Raqueel introduce herself and Gem // TODO: Unfound, might not exist
+		//Listened to Raqueel introduce herself and Gem not transmitted
 
 		//Listened to Tarik's request for pyramid loot
 		addTask("Listened to Tarik's request for pyramid loot", VarbitID.TARIK_MET); // confirmed
@@ -75,8 +75,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Al the Camel's confession of love for Ellie
 		addTask("Give some advice to Al the Camel", VarbitID.AL_CAMEL_ADVICEGIVEN); // confirmed, thanks sophie
 
-		//Listened to Death's tutorial after dying a dangerous death
-		//addTask("Listened to Death's tutorial after dying a dangerous death", 0); // TODO: Unfound
+		//Listened to Death's tutorial after dying a dangerous death not transmitted
 
 		//Listened to Nathifa's gratitude
 		addTask("Listened to Nathifa's gratitude", VarbitID.CONTACT_MET_BAKER); // confirmed
@@ -150,7 +149,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Told Apprentice Felix about Wizard Persten's fate
 		addTask("Told Apprentice Felix about Wizard Persten's fate", VarbitID.DT2_FELIX_DIALOGUE); // tested, correct
 
-		//Told Miazrqa about her cousin's activities
+		//Told Miazrqa about her cousin's activities this seems to be part of some missable content during the quest
 		//addTask("Told Miazrqa about her cousin's activities", 0); // TODO: Unfound, probably GRIM_ something
 
 		//Told Ramarno about Ketla's fate
@@ -168,7 +167,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Told Longramble about the entrance to Arposandra
 		addTask("Told Longramble about the entrance to Arposandra", VarbitID.POG_LONGRAMBLE_DONE); // confirmed
 
-		//addTask("Told Weave about the jar of venom", 0); // TODO: Unfound
+		//Told Weave about the jar of venom not transmitted
 
 		//Told the head butler you won't join the union
 		addTask("Told the head butler you won't join the union", VarbitID.DOTI_MASK_DIALOGUE); // confirmed

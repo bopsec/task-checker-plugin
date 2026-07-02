@@ -116,8 +116,8 @@ public class DoomsayerToggleTaskList extends TaskList
 		addEqTask(true, "Disabled the Brimhaven dungeon hole entrance warning", VarbitID.KARAM_DUNGEON_BACKDOOR, 2);
 		//Disabled the Vorkath crater warning
 		addTask("Disabled the Vorkath crater warning", VarbitID.DS2_UNGAEL_WARNING); // TODO: Untested probs correct
-		//Disabled the Thermonuclear Smoke Devil area warning TODO: Unfound/untested
-		//Disabled the Kraken area warning TODO: Unfound/untested
+		//Disabled the Thermonuclear Smoke Devil area warning not transmitted
+		//Disabled the Kraken area warning not transmitted
 		//Disabled the Phantom Muspah crevice warning
 		addTask("Disabled the Phantom Muspah crevice warning", VarbitID.MUSPAH_WARNING); //TODO: Untested probs correct
 		//Disabled the Tempoross area's dropped items warning not transmitted
@@ -146,7 +146,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Nightmare staff's orb addition/removal warning
 		addTask("Disabled the Nightmare staff's orb addition/removal warning", VarbitID.NIGHTMARE_STAFF_CHECK); // TODO:Unchecked
 		//Disabled the mounted mythical cape's Building Mode warning no varb/varp
-		//Disabled the Clan Coffer's coin deposit warning TODO: Unfound/untested
+		//Disabled the Clan Coffer's coin deposit warning not exposed
 		//Disabled the Hallowed Sepulchre's lobby stairs warning
 		addTask("Disabled the Hallowed Sepulchre's lobby stairs warning", VarbitID.HALLOWED_ENTRY_CHECK); // confirmed
 		//Disabled the Hallowed sack's inventory space warning TODO: Unfound/untested
@@ -166,8 +166,8 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled Shipwright Seb's ship repair warning", VarbitID.BOAT_REPAIR_COST_WARNING_DISMISSED); // confirmed
 		// Disabled the Port Roberts jail guard bribe warning
 		addTask("Disabled the Port Roberts jail guard bribe warning", VarbitID.PORT_ROBERTS_JAIL_QUICK_ESCAPE); // confirmed
-		// Disabled the giant bones bury warning Obor/Bryophyta
-		addTask("Disabled the giant bones bury warning", VarbitID.GIANT_BONE_BURY_WARNING_DISABLE); // TODO: Untested
+		// Disabled the giant bones bury warning Obor/Bryophyta/Brutus
+		addTask("Disabled the giant bones bury warning", VarbitID.GIANT_BONE_BURY_WARNING_DISABLE);
 		// Disabled the shipwright ship recovery warning
 		addTask("Disabled the shipwright ship recovery warning", VarbitID.SAILING_BOAT_CARGOHOLD_WARNING_DISMISSED);
 		// Disabled the warning for teleporting from Lunar bank to Relekka not transmitted

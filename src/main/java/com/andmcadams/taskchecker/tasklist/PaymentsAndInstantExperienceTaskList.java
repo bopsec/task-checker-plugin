@@ -39,8 +39,8 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 
 	public void initTasks()
 	{
-		//TODO:Claimed Castle Wars tickets from Lanthus maybe VarbitID.PVPA_OWED_JOIN_REFUND?
-		//TODO:Claimed blood runes from the Vyre well
+		//TODO:Claimed Castle Wars tickets from Lanthus very likely not transmitted
+		//TODO:Claimed blood runes from the Vyre well very likely not transmitted
 		//Claimed coins from Willow's bag
 		addTask("Claimed coins from Willow's bag", VarbitID.BIM_CLAIMED_REWARD); // Untested, but likely
 		//TODO:Claimed coins from a Lovakengj minecart station conductor
@@ -57,7 +57,7 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		addEqTask(true, "Claimed a keris partisan from Maisa's tent", VarbitID.BCS_OWED_PARTISAN, 0);
 		//Claimed the circlet of water from the High Priest of Sophanem
 		addEqTask(true, "Claimed the circlet of water from the High Priest of Sophanem", VarbitID.BCS_OWED_CIRCLET, 0);
-		//Claimed an unholy mould from the Spirit of Scorpius no varbit/varp
+		//Claimed an unholy mould from the Spirit of Scorpius not transmitted
 		//Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu, doesnt seem to exist
 		//Claimed all 4 XP drops (or lamps) from Radimus Erkle
 		addEqTask(true, "Claimed all 4 XP drops (or lamps) from Radimus Erkle", VarbitID.LEGENDS_BONUS_LAMPS, 0);

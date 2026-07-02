@@ -10,13 +10,9 @@
 - Disabled the Gauntlet's item storage warning
 - Disabled the Soul Wars clan lobby entrance warning
 - Disabled the Blast Furnace conveyor belt warning
-- Disabled the Thermonuclear Smoke Devil area warning
-- Disabled the Kraken area warning
 - Disabled the Tithe Farm instanced area entrance warning
 - Disabled the Theatre of Blood's escape crystal warning
 - Disabled the Tombs of Amascut entry warning
-- Disabled the crashed airship opening entrance warning
-- Disabled the Clan Coffer's coin deposit warning
 - Disabled the Hallowed sack's inventory space warning
 - Disabled the Royal Titans' destroy loot warning
 - 1000 LMS wins
@@ -28,7 +24,6 @@
 - Claimed coins from a Lovakengj minecart station conductor
 - Claimed coins from Trossa
 - Claimed all 14 XP drops from Perdu
-- Claimed all Adventure Paths task rewards and starter kits
 - Unlocked the ability to recolour the Beaver
 - Unlocked the Beaver's pheasant metamorphosis optio
 - Unlocked the Beaver's fox metamorphosis option
@@ -48,9 +43,8 @@
 - Unlocked the ability to toggle the full spirit angler outfit
 - Disabled the Fertile Soil's non-upgraded spell warning
 - Unlocked the ability to trade giantsoul amulets
-- Listened to Raqueel introduce herself and Gem
 - Listened to Hagus' gratitude for supporting the cause
-- Told Miazrqa about her cousin's activities
+- Told Miazrqa about her cousin's activities (This seems like it is something missable during the quest)
 - Paid the ghost captain for free trips to Dragontooth Island
 
 
@@ -101,3 +95,9 @@
 - Listened to Death's tutorial after dying a dangerous death
 - Received the blueberry muffin
 - Told Weave about the jar of venom
+- Disabled the Thermonuclear Smoke Devil area warning
+- Disabled the Kraken area warning
+- Disabled the Clan Coffer's coin deposit warning
+- Listened to Raqueel introduce herself and Gem
+- Disabled the crashed airship opening entrance warning
+
