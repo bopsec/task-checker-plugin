@@ -94,7 +94,8 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Revenant Cave's payment warning not transmitted
 		//Disabled the Revenant Cave's one-way entrance warning
 		addTask("Disabled the Revenant Cave's one-way entrance warning", VarbitID.WILDERNESS_CAVE_MID_WARNING); // confirmed
-		//Disabled the Soul Wars clan lobby entrance warning TODO: Unfound/untested
+		//Disabled the Soul Wars clan lobby entrance warning
+		addTask("Disabled the Soul Wars clan lobby entrance warning", VarbitID.SOUL_WARS_CLAN_ENTRY_CHECK);
 		//Disabled the Scurrius's broken bars warning
 		addTask("Disabled the Scurrius's broken bars warning", VarbitID.RAT_BOSS_ENTER_WARNING);
 		//Disabled the Wilderness bosses' cave's warning
@@ -155,7 +156,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Mahogany Homes expert contract warning not exposed
 		//Disabled the Royal Titans' tunnel warning
 		addTask("Disabled the Royal Titans' tunnel warning", VarbitID.ROYAL_TITANS_ENTER_WARNING);
-		//Disabled the Royal Titans' destroy loot warning TODO: Unfound/untested
+		//Disabled the Royal Titans' destroy loot warning not transmitted
 		//Disabled the Moons of Peril encounter warning
 		addTask("Disabled the Moons of Peril encounter warning", VarbitID.PMOON_DROP_ITEM_WARNING); // confirmed
 		//Disabled the museum's storage crate warning

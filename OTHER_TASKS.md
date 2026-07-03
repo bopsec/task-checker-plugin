@@ -8,13 +8,11 @@
 - Disabled Araxxor's destroy loot warning
 - Disabled the Gauntlet's crystal teleporter entrance warning
 - Disabled the Gauntlet's item storage warning
-- Disabled the Soul Wars clan lobby entrance warning
 - Disabled the Blast Furnace conveyor belt warning
 - Disabled the Tithe Farm instanced area entrance warning
 - Disabled the Theatre of Blood's escape crystal warning
 - Disabled the Tombs of Amascut entry warning
 - Disabled the Hallowed sack's inventory space warning
-- Disabled the Royal Titans' destroy loot warning
 - 1000 LMS wins
 - Bounty hunter hat tier 6
 - Paid Prospector Percy for access to the restricted mine?
@@ -25,7 +23,7 @@
 - Claimed coins from Trossa
 - Claimed all 14 XP drops from Perdu
 - Unlocked the ability to recolour the Beaver
-- Unlocked the Beaver's pheasant metamorphosis optio
+- Unlocked the Beaver's pheasant metamorphosis option
 - Unlocked the Beaver's fox metamorphosis option
 - Unlocked the Heron's reduced metamorphosis cost
 - Unlocked Muphin's metamorphosis option
@@ -43,7 +41,6 @@
 - Unlocked the ability to toggle the full spirit angler outfit
 - Disabled the Fertile Soil's non-upgraded spell warning
 - Unlocked the ability to trade giantsoul amulets
-- Told Miazrqa about her cousin's activities (This seems like it is something missable during the quest)
 - Paid the ghost captain for free trips to Dragontooth Island
 
 
@@ -100,3 +97,4 @@
 - Listened to Raqueel introduce herself and Gem
 - Disabled the crashed airship opening entrance warning
 - Listened to Hagus' gratitude for supporting the cause
+- Disabled the Royal Titans' destroy loot warning
