@@ -89,8 +89,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Morgiana's introduction
 		addTask("Listened to Morgiana's introduction", VarbitID.OASIS_KNIGHT_MET); // confirmed
 
-		//Listened to Hagus' gratitude for supporting the cause
-		//addTask("Listened to Hagus' gratitude for supporting the cause", 0); // TODO: Unfound
+		//Listened to Hagus' gratitude for supporting the cause not transmitted
 		//Listened to Marcellus give permission to use his farming patch
 		addTask("Listened to Marcellus give permission to use his farming patch", VarbitID.FROG_QUEST_PATCH_UNLOCKED);
 
@@ -139,7 +138,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Oriana's bargain for valuables
 		addTask("Listened to Oriana's bargain for valuables", VarbitID.VARLAMORE_THIEVING_HOUSE_STRANGER_MET); // confirmed
 
-		//Listened to all 3 of the haunted wine bottle's initial dialogue untransmitted
+		//Listened to all 3 of the haunted wine bottle's initial dialogue not transmitted
 
 		//Listened to Jim explain his wet cloth
 		addEqTask(true, "Listened to Jim explain his wet cloth", VarbitID.YAMA_IMP_CONTRACT_SIGNED, 2); // confirmed
@@ -150,7 +149,6 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Told Apprentice Felix about Wizard Persten's fate", VarbitID.DT2_FELIX_DIALOGUE); // tested, correct
 
 		//Told Miazrqa about her cousin's activities this seems to be part of some missable content during the quest
-		//addTask("Told Miazrqa about her cousin's activities", 0); // TODO: Unfound, probably GRIM_ something
 
 		//Told Ramarno about Ketla's fate
 		addTask("Told Ramarno about Ketla's fate", VarbitID.DT2_RAMARNO_SLISKE_DIALOGUE); // confirmed

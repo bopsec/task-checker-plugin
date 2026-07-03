@@ -43,7 +43,6 @@
 - Unlocked the ability to toggle the full spirit angler outfit
 - Disabled the Fertile Soil's non-upgraded spell warning
 - Unlocked the ability to trade giantsoul amulets
-- Listened to Hagus' gratitude for supporting the cause
 - Told Miazrqa about her cousin's activities (This seems like it is something missable during the quest)
 - Paid the ghost captain for free trips to Dragontooth Island
 
@@ -100,4 +99,4 @@
 - Disabled the Clan Coffer's coin deposit warning
 - Listened to Raqueel introduce herself and Gem
 - Disabled the crashed airship opening entrance warning
-
+- Listened to Hagus' gratitude for supporting the cause
