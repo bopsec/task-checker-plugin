@@ -24,6 +24,7 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
+import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarbitID;
 
 public class InvisibleTaskList extends TaskList
@@ -55,5 +56,37 @@ public class InvisibleTaskList extends TaskList
 		addTask("Search the Ruby Bookcase in Movario's base", VarbitID.WGS_RUBY_BOOKCASE_SEARCHED); // no effect and not needed during quest
 
 		addTask("Read the wall plaque in the basement in Burgh de Rott", VarbitID.BURGH_WALL_PLAQUE_READ);
+
+		// Open all the doors in sangvesti once lol
+		Task allSangvestiDoors = new Task.TaskBuilder()
+			.name("Open all the doors in Sangvesti")
+			.switchVar(true, VarbitID.SANGVESTI_CLOTHES_SHOP_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_CLOTHES_SHOP_BACK_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_FANCY_HOUSE_3_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_FANCY_HOUSE_3_BACK_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_CHAPEL_BACK_DOOR_1_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_CHAPEL_BACK_DOOR_2_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_TRAPDOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_BLACKSMITH_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_BASIC_HOUSE_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_PUB_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_PUB_BACK_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_MYRMEL_MANOR_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_MYRMEL_MANOR_BACK_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_BANK_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_INTERIOR_BANK_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_SHADUM_MANOR_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_FANCY_HOUSE_1_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_FANCY_HOUSE_1_BACK_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_VITUR_MANOR_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_FANCY_HOUSE_2_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_FANCY_HOUSE_2_BACK_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_FOOD_SHOP_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_FOOD_SHOP_BACK_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_GENERAL_STORE_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_BASIC_HOUSE_2_DOOR_FOUND)
+			.switchVar(true, VarbitID.SANGVESTI_BASIC_HOUSE_3_DOOR_FOUND)
+			.build(); // these do not remember retroactively it seems, have to be done after 8th of July 2026
+		this.add(allSangvestiDoors);
 	}
 }

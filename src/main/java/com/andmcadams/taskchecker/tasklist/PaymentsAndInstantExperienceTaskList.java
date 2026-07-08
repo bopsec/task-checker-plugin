@@ -171,6 +171,8 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		addTask("Claim the Cowbell amulet", VarbitID.COWQUEST_REWARD); // confirmed
 		// Used the experience tomes from Blood Moon Rises
 		addEqTask(true, "Used all 6 experience tomes from Blood Moon Rises", VarbitID.MYQ6_XP_REWARD, 6);
+		// Claimed the Sunlight Spear after Blood Moon Rises
+		addEqTask(true, "Claimed the Sunlight Spear after Blood Moon Rises", VarbitID.MYQ6_OWED_SPEAR, 0);
 	}
 }
 
