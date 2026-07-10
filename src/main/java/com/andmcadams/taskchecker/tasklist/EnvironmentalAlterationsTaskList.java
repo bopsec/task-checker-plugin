@@ -81,17 +81,17 @@ public class EnvironmentalAlterationsTaskList extends TaskList
 
 		addTask("Used Saradomin's light", VarbitID.GODWARS_SARADOMIN_LIGHT);
 
-		addTask("Build the fire pit in the Mole Hole", VarbitID.MY2ARM_FIRE_MOLE);
+		addTask("Built the fire pit in the Mole Hole", VarbitID.MY2ARM_FIRE_MOLE);
 
-		addTask("Build the fire pit in the Lumbridge Swamp Caves", VarbitID.MY2ARM_FIRE_LUMB);
+		addTask("Built the fire pit in the Lumbridge Swamp Caves", VarbitID.MY2ARM_FIRE_LUMB);
 
-		addTask("Build the fire pit in the Mos Le'Harmless Cave", VarbitID.MY2ARM_FIRE_HORRORS);
+		addTask("Built the fire pit in the Mos Le'Harmless Cave", VarbitID.MY2ARM_FIRE_HORRORS);
 
-		addTask("Build the fire pit in the Mort Myre Swamp", VarbitID.MY2ARM_FIRE_GHASTS);
+		addTask("Built the fire pit in the Mort Myre Swamp", VarbitID.MY2ARM_FIRE_GHASTS);
 
-		addGeTask(true, "Build the fire pit near the Weiss herb patch", VarbitID.MY2ARM_STATUS, 205);
+		addGeTask(true, "Built the fire pit near the Weiss herb patch", VarbitID.MY2ARM_STATUS, 205);
 
-		addTask("Build the fire pit by the God Wars Dungeon entrance", VarbitID.MY2ARM_FIRE_GWD);
+		addTask("Built the fire pit by the God Wars Dungeon entrance", VarbitID.MY2ARM_FIRE_GWD);
 
 		addTask("Unlocked the shortcut to the south of Sangvesti", VarbitID.VAMPYRIUM_TRAVERSAL_ROCK_MINED);
 

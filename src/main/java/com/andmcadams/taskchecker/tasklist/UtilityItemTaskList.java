@@ -41,15 +41,15 @@ public class UtilityItemTaskList extends TaskList
 		addTask("Attached a long rope to the rock in the Viyeldi caves", VarbitID.VIYELDI_SHORTCUT);
 
 		Task attachKalphiteRopes = new Task.TaskBuilder()
-			.name("Attach ropes to both Kalphite Hives tunnel entrances (you may need to enter the Kalphite Hive)")
+			.name("Attached ropes to both Kalphite Hives tunnel entrances (you may need to enter the Kalphite Hive)")
 			.switchVar(true, VarbitID.KALPHITE_ROPE_1)
 			.geVar(true, VarbitID.KALPHITE_ROPE_2, 1)
 			.build();
 
-		addTask("Attach a grapple to the rocks next to the Observatory", VarbitID.OBSERVATORY_SHORTCUT_ROPE);
+		addTask("Attached a grapple to the rocks next to the Observatory", VarbitID.OBSERVATORY_SHORTCUT_ROPE);
 
 		Task attachDarkmeyerRopes = new Task.TaskBuilder()
-			.name("Attach both long ropes to both sides of the Darkmeyer wall")
+			.name("Attached both long ropes to both sides of the Darkmeyer wall")
 			.switchVar(true, VarbitID.DARKM_SHORTCUT_INNER)
 			.switchVar(true, VarbitID.DARKM_SHORTCUT_OUTER)
 			.build();

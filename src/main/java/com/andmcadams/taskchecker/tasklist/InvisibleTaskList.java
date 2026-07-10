@@ -38,28 +38,28 @@ public class InvisibleTaskList extends TaskList
 
 	public void initTasks()
 	{
-		addTask("Loot the Ancient letter from the Forsaken Tower", VarbitID.LOVAQUEST_HIDDEN_NOTE);
+		addTask("Looted the Ancient letter from the Forsaken Tower", VarbitID.LOVAQUEST_HIDDEN_NOTE);
 
-		addTask("Loot the Tatty note from the bed in the Kebos Lowlands", VarbitID.KEBOS_SHACK_NOTE);
+		addTask("Looted the Tatty note from the bed in the Kebos Lowlands", VarbitID.KEBOS_SHACK_NOTE);
 
-		addTask("Pickpocket Teddy from the female student in the Digsite", VarbitID.ITDIGSITETEDDY);
+		addTask("Pickpocketed Teddy from the female student in the Digsite", VarbitID.ITDIGSITETEDDY);
 
 		// Note that this doesn't actually change dialogue as far as I can tell.
-		addTask("Ask a Fortress guard about their uniform outside the Black Knights' Fortress", VarbitID.SPY_ARMOUR_HINT);
+		addTask("Asked a Fortress guard about their uniform outside the Black Knights' Fortress", VarbitID.SPY_ARMOUR_HINT);
 
-		addTask("Exit through the Troll Stronghold's secret exit", VarbitID.TROLL_OPENED_BACK_EXIT);
+		addTask("Exited through the Troll Stronghold's secret exit", VarbitID.TROLL_OPENED_BACK_EXIT);
 
-		addTask("Try to Enter Guidor's room without priest gowns", VarbitID.BIOHAZARD_MET_JULIE); // varbit changes, but no visible effect
+		addTask("Tried to enter Guidor's room without priest gowns", VarbitID.BIOHAZARD_MET_JULIE); // varbit changes, but no visible effect
 
-		addTask("Talk to Reldo in Varrock castle library", VarbitID.RELDO_MET); // did change to 1, but no visible effect
+		addTask("Talked to Reldo in Varrock castle library", VarbitID.RELDO_MET); // did change to 1, but no visible effect
 
-		addTask("Search the Ruby Bookcase in Movario's base", VarbitID.WGS_RUBY_BOOKCASE_SEARCHED); // no effect and not needed during quest
+		addTask("Searched the Ruby Bookcase in Movario's base", VarbitID.WGS_RUBY_BOOKCASE_SEARCHED); // no effect and not needed during quest
 
 		addTask("Read the wall plaque in the basement in Burgh de Rott", VarbitID.BURGH_WALL_PLAQUE_READ);
 
 		// Open all the doors in sangvesti once lol
 		Task allSangvestiDoors = new Task.TaskBuilder()
-			.name("Open all the doors in Sangvesti")
+			.name("Opened all the doors in Sangvesti")
 			.switchVar(true, VarbitID.SANGVESTI_CLOTHES_SHOP_DOOR_FOUND)
 			.switchVar(true, VarbitID.SANGVESTI_CLOTHES_SHOP_BACK_DOOR_FOUND)
 			.switchVar(true, VarbitID.SANGVESTI_FANCY_HOUSE_3_DOOR_FOUND)

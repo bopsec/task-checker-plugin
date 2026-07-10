@@ -46,12 +46,12 @@ public class LostItemsTaskList extends TaskList
 		addTask("Delivered a tangled toad's legs to Longramble", VarbitID.POG_LONGRAMBLE_DELIVERY); // confirmed
 
 		Task returnZealotsKey = new Task.TaskBuilder()
-			.name("Deliver Zealot's key to Zealot")
+			.name("Delivered Zealot's key to Zealot")
 			.eqVar(true, VarbitID.HAUNTEDMINE_HEARDABOUTKEY, 0)
 			.eqVar(false, VarPlayerID.HAUNTEDMINE, 11)
 			.build();
 
-		addTask("Return the brooch to Mistag", VarbitID.LOST_TRIBE_RETURNED_BROOCH);
+		addTask("Returned the brooch to Mistag", VarbitID.LOST_TRIBE_RETURNED_BROOCH);
 
 		add(returnZealotsKey);
 	}

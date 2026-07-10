@@ -43,15 +43,15 @@ public class TrappedSoulsTaskList extends TaskList
 		addTask("Freed Mehhar from the High Priest of Scabaras's influence", VarbitID.BCS_MEHHAR_RETURNED); // confirmed
 
 		Task freeKlenter = new Task.TaskBuilder()
-			.name("Free Klenter's soul from Amascut's torment")
+			.name("Freed Klenter's soul from Amascut's torment")
 			.eqVar(true, VarbitID.ICS_SPECVIS, 0)
 			.eqVar(true, VarbitID.ICS_LITTLE_VAR, 26)
 			.build();
 
-		addTask("Free Droalak's soul from his guilt of departure", VarbitID.MAKINGHISTORY_DROALAK_PRES);
+		addTask("Freed Droalak's soul from his guilt of departure", VarbitID.MAKINGHISTORY_DROALAK_PRES);
 
 		Task cureRazmireAndUlsquire = new Task.TaskBuilder()
-			.name("Free Razmire Keelgan and Ulsquire Shauncy from affliction")
+			.name("Freed Razmire Keelgan and Ulsquire Shauncy from affliction")
 			.bitVar(false, VarPlayerID.MORTTONMULTI, 5)
 			.bitVar(false, VarPlayerID.MORTTONMULTI, 6)
 			.build();

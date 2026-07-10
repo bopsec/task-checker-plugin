@@ -47,7 +47,7 @@ public class MotherlodeMineTaskList extends TaskList
 //			.switchVar(true, Varbits.PAID_FOR_UPPER_MINE.getId())
 //			.build();
 
-		addTask("Pay Prospector Percy for the bigger sack capacity", VarbitID.MOTHERLODE_BIGGERSACK);
+		addTask("Paid Prospector Percy for the bigger sack capacity", VarbitID.MOTHERLODE_BIGGERSACK);
 
 //		this.add(getAccessToUpperMine);
 

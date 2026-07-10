@@ -73,7 +73,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Listened to Tarik's request for pyramid loot", VarbitID.TARIK_MET); // confirmed
 
 		//Listened to Al the Camel's confession of love for Ellie
-		addTask("Give some advice to Al the Camel", VarbitID.AL_CAMEL_ADVICEGIVEN); // confirmed, thanks sophie
+		addTask("Gave some advice to Al the Camel", VarbitID.AL_CAMEL_ADVICEGIVEN); // confirmed, thanks sophie
 
 		//Listened to Death's tutorial after dying a dangerous death not transmitted
 
@@ -174,18 +174,18 @@ public class UniqueDialoguePathsTaskList extends TaskList
 
 		//addGeTask(false, "Get directions from Baraek", VarPlayerID.PHOENIXGANG, 4); this task seems to be discontinued
 
-		addTask("Pay Eblis for an ancient staff", VarbitID.FD_GOT_ZAROS_STAFF);
+		addTask("Paid Eblis for an ancient staff", VarbitID.FD_GOT_ZAROS_STAFF);
 
 		addTask("Asked Chieftain Brundt about the Mountain Camp", VarbitID.MDAUGHTER_BRUNDT_DONE);
 
 		// Unsure about this one, but looks this way from chisel data
-		addEqTask(false, "Talk to Trufitus after completing Shilo Village", VarPlayerID.ZOMBIEQUEEN, 17);
+		addEqTask(false, "Talked to Trufitus after completing Shilo Village", VarPlayerID.ZOMBIEQUEEN, 17);
 
 
 		addTask("Asked the Dwarven Boatman about transporting gold", VarbitID.DWARFROCK_GOLD_BOATMAN_MET);
 
 		Task tellThreeDwarves = new Task.TaskBuilder()
-			.name("Tell the three dwarven boatmen about the dwarven quests")
+			.name("Told the three dwarven boatmen about the dwarven quests")
 			.switchVar(true, VarbitID.DWARFROCK_BROTHERS_TOLDVICTORY)
 			.switchVar(true, VarbitID.GIANTDWARF_BROTHERS_TOLDSUCCESS)
 			.switchVar(true, VarbitID.FORGET_BROTHERS_TOLDSUCCESS)
@@ -196,7 +196,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Unlocked the ability to respawn at Kourend Castle", VarbitID.AKD_ASTEROS_MET);
 		//Told Litara about what happened to Solztun
 		addEqTask(true, "Told Litara about what happened to Solztun", VarbitID.SOS_BROTHER_FOUND, 2);
-		addTask("Tell the Street urchin to lure another villager", VarbitID.FEUD_VAR_URCHIN); // confirmed
+		addTask("Told the Street urchin to lure another villager", VarbitID.FEUD_VAR_URCHIN); // confirmed
 		addTask("Listened to Fairy Aeryka's Puro-Puro introduction", VarbitID.II_FAIRY_VAR); // confirmed
 
 		addTask("Listened to Sil'as Dahcsnu's initial dialogue", VarbitID.SUROK_MONKCHECK); // confirmed
@@ -205,11 +205,11 @@ public class UniqueDialoguePathsTaskList extends TaskList
 
 		addTask("Listened to the Drunken Dwarf talk about his relative", VarbitID.GIANTDWARF_COUSIN_INTRODUCED); // confirmed
 
-		addTask("Receive thanks from Hamal after completing Mountain Daughter", VarbitID.MDAUGHTER_HAMAL_HEARDOFBURIAL);
+		addTask("Received thanks from Hamal after completing Mountain Daughter", VarbitID.MDAUGHTER_HAMAL_HEARDOFBURIAL);
 		//Unlocked the candle seller's lantern making option
 		addTask("Unlocked the candle seller's lantern making option", VarbitID.SWAMP_CANDLE_GUY_CONVERSATION); // confirmed
 
-		addTask("Tell the Knight of Varlamore about the sun altar", VarbitID.VARLAMORE_SUN_KNIGHT);
+		addTask("Told the Knight of Varlamore about the sun altar", VarbitID.VARLAMORE_SUN_KNIGHT);
 		//Unlocked the ability to create Neitiznot faceguards
 		addTask("Unlocked the ability to create Neitiznot faceguards", VarbitID.VIKINGEXILE_HELM_UNLOCK);
 		//Unlocked the ability to create super antifire potions
@@ -256,7 +256,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Listened to the builders' advice (Final Dawn)
 		addTask("Listened to the builders' advice", VarbitID.PMOON_BUILDERS_VMQ4_CHAT); // confirmed
 		// Listened to Jessamine about the final dawn
-		addTask("Talk to Jessamine after The Final Dawn", VarbitID.PMOON_JESS_VMQ4_CHAT); // confirmed
+		addTask("Talked to Jessamine after The Final Dawn", VarbitID.PMOON_JESS_VMQ4_CHAT); // confirmed
 		// Listened to the Elder Nama's gryphon warning
 		addTask("Listened to the Elder Nama's gryphon warning", VarbitID.SLAYER_GRYPHON_BOSS_GUARDIAN_MET);
 		// Told King her men helped with the egg (Scrambled!)
@@ -266,7 +266,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Told Eyatlalli about Mokhaiotl (The final dawn)
 		addTask("Told Eyatlalli about Mokhaiotl", VarbitID.VMQ4_EYATLALLI_POST_QUEST_CHAT); // confirmed
 		// Told Bernard that Bernina is proud of him
-		addEqTask(true, "Talk to Bernard on top of The Proudspire", VarbitID.SPIRITOFADVENTURE, 6); // confirmed
+		addEqTask(true, "Talked to Bernard on top of The Proudspire", VarbitID.SPIRITOFADVENTURE, 6); // confirmed
 		// Told Xilo and Fabia where to find each other
 		Task xiloAndFabia = new Task.TaskBuilder()
 			.name("Told Xilo and Fabia where to find each other")
@@ -290,7 +290,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Listened to Netmaster Kellan introduce deep sea trawling
 		addTask("Listened to Netmaster Kellan introduce deep sea trawling", VarbitID.PORT_ROBERTS_NETMASTER_KELLAN_MET); // confirmed
 		// Read the warning sign at Jiggig
-		addTask("Attempt to pick-lock the northernmost coffin just outside Jiggig", VarbitID.THZFE_COFFINMESSAGE); // confirmed
+		addTask("Attempted to pick-lock the northernmost coffin just outside Jiggig", VarbitID.THZFE_COFFINMESSAGE); // confirmed
 		// Listened to Biles's introduction to the Drumstick Kingdom
 		addTask("Listened to Biles's introduction to the Drumstick Kingdom", VarbitID.BILES_MET);
 		// Unlocked Ali Morisane's gnome question option
@@ -304,7 +304,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Unlocked the ability to use Chet's coral nurseries.
 		addTask("Unlocked the ability to use Chet's coral nurseries.", VarbitID.CONCH_CORAL_PATCHES_UNLOCKED);
 		// Pet Gus after the final dawn
-		addTask("Pet Gus the dog after The Final Dawn", VarbitID.NPC_DOG_GUS_DIALOGUE);
+		addTask("Petted Gus the dog after The Final Dawn", VarbitID.NPC_DOG_GUS_DIALOGUE);
 		// Sent Isles to the Grimstone dungeon
 		addEqTask(true, "Sent Isles to the Grimstone dungeon", VarbitID.GRIMSTONE_UNCERTER_STATUS, 4);
 		// Freed the Parrot after The Red Reef
@@ -312,13 +312,13 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Listened to the Boat Bottle introduction
 		addTask("Listened to the Boat bottle introduction", VarbitID.SAILING_BOAT_BOTTLE_INTRO);
 		// Talk to Veliaf about his newly opened pub
-		addTask("Talk to Veliaf about his newly opened pub", VarbitID.MYQ6_VELIAF_PUB_CHAT);
+		addTask("Talked to Veliaf about his newly opened pub", VarbitID.MYQ6_VELIAF_PUB_CHAT);
 		// Talk to Dr Harlow after Blood Moon Rises
-		addTask("Talk to Dr Harlow after Blood Moon Rises", VarbitID.DR_HARLOW_MYQ6);
+		addTask("Talked to Dr Harlow after Blood Moon Rises", VarbitID.DR_HARLOW_MYQ6);
 		// Told Morgan that Count Draynor is dead
 		addTask("Told Morgan that Count Draynor is dead", VarbitID.MORGAN_POSTQUEST_DIALOGUE);
 		// Reminisce with Safalaan after Blood Moon Rises
-		addTask("Talk to Safalaan about everything that has happened", VarbitID.MYQ6_SAFALAAN_POSTQUEST_CHAT);
+		addTask("Talked to Safalaan about everything that has happened", VarbitID.MYQ6_SAFALAAN_POSTQUEST_CHAT);
 		// Listened to the Aranei scout's gratitude for saving him
 		addTask("Listened to the Aranei scout's gratitude for saving him", VarbitID.VAMPYRIUM_TRAVERSAL_ARANEI_SAVED_TALKED_AFTER);
 	}

@@ -67,11 +67,11 @@ public class LootTaskList extends TaskList
 		this.add(lootedMovariosPalletsAndChest);
 
 		// Search tasks
-		addEqTask(true, "Open Marlo's crate", VarbitID.DADDYSHOME_STATUS, 14);
+		addEqTask(true, "Opened Marlo's crate", VarbitID.DADDYSHOME_STATUS, 14);
 
 		// MORTON_TABLE
 		Task searchMorttonTable = new Task.TaskBuilder()        // confirmed
-			.name("Loot the smashed table containing herbs in Mort'ton")
+			.name("Looted the smashed table containing herbs in Mort'ton")
 			.bitVar(false, VarPlayerID.MORTTONMULTI, 8)
 			.build();
 		// 1896595685 (1110001000010111100000011100101) -> 1896595941 (1110001000010111100000111100101)
@@ -92,7 +92,7 @@ public class LootTaskList extends TaskList
 		addTask("Searched the clock in Fenkenstrain's castle", VarbitID.FENK_WOUND_CLOCK); // confirmed
 
 		Task goblinVillageGoblinMail = new Task.TaskBuilder()
-			.name("Loot the 3 pieces of goblin mail in the Goblin Village")
+			.name("Looted the 3 pieces of goblin mail in the Goblin Village")
 			.switchVar(true, VarbitID.GOBDIP_CRATE1_SEARCHED)
 			.switchVar(true, VarbitID.GOBDIP_CRATE2_SEARCHED)
 			.switchVar(true, VarbitID.GOBDIP_CRATE3_SEARCHED)
@@ -100,7 +100,7 @@ public class LootTaskList extends TaskList
 		add(goblinVillageGoblinMail);
 
 		Task observatorySpiderChests = new Task.TaskBuilder()
-			.name("Loot the 7 spider chests in the Observatory dungeon")
+			.name("Looted the 7 spider chests in the Observatory dungeon")
 			.switchVar(true, VarbitID.OBSERVATORY_CHEST1_SEEN)
 			.switchVar(true, VarbitID.OBSERVATORY_CHEST2_SEEN)
 			.switchVar(true, VarbitID.OBSERVATORY_CHEST3_SEEN)
