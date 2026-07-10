@@ -47,24 +47,23 @@ public class RightClickTaskList extends TaskList
 		//Unlocked the Theatre of Blood chest's custom buy option
 		addGeTask(true, "Unlocked the Theatre of Blood chest's custom buy option", VarbitID.TOB_MIDWAYCHEST_LAST_X, 1);
 
-		addTask("Unlock Jarvald's travel option", VarbitID.DAG_ISLAND_QUICK_TRAVEL);
+		addTask("Unlocked Jarvald's travel option", VarbitID.DAG_ISLAND_QUICK_TRAVEL);
 
-		addTask("Unlock Mary's trade option", VarbitID.GA_MARY_DIALOGUE);
+		addTask("Unlocked Mary's trade option", VarbitID.GA_MARY_DIALOGUE);
 
-		addTask("Unlock Ilfeen's enchant option", VarbitID.ILFEEN_PRIF);
+		addTask("Unlocked Ilfeen's enchant option", VarbitID.ILFEEN_PRIF);
 
-		addTask("Unlock Conwenna and Reese's sing option", VarbitID.PRIF_LEARNT_CRYSTAL_SINGING);
+		addTask("Unlocked Conwenna and Reese's sing option", VarbitID.PRIF_LEARNT_CRYSTAL_SINGING);
 
-		addTask("Unlock Noranna Tytanin's convert-shards option", VarbitID.DMINE_DAEYALT_CONVERTER_INTRO);
+		addTask("Unlocked Noranna Tytanin's convert-shards option", VarbitID.DMINE_DAEYALT_CONVERTER_INTRO);
 
-		addTask("Unlock the Mountain Guide's travel option", VarbitID.RAIDS_GUIDE_TRAVEL_UNLOCK);
+		addTask("Unlocked the Mountain Guide's travel option", VarbitID.RAIDS_GUIDE_TRAVEL_UNLOCK);
 
-		addGeTask(false, "Unlock the Cloister Bell's quick-start option", VarPlayerID.TOTAL_GARGBOSS_KILLS, 5);
+		addGeTask(false, "Unlocked the Cloister Bell's quick-start option", VarPlayerID.TOTAL_GARGBOSS_KILLS, 5);
 
+		addGeTask(true, "Unlocked the Jewellery Box's previous teleport option", VarbitID.POH_JEWELLERYBOX_MULTI, 1);
 
-		addGeTask(true, "Unlock the Jewellery Box's previous teleport option", VarbitID.POH_JEWELLERYBOX_MULTI, 1);
-
-		addGeTask(true, "Unlock the Charter Ship's previous destination option", VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1);
+		addGeTask(true, "Unlocked the Charter Ship's previous destination option", VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1);
 		//Unlocked Guildmaster Jane's contracts completed option
 		addTask("Unlocked Guildmaster Jane's contracts option", VarbitID.FARMGUILD_CONTRACT_DISCUSSED); // technically superseded, but the contract count is not transmitted
 		addTask("Unlocked the Trade option on Pennant", VarbitID.PRIF_ACORN_TRADE);

@@ -68,25 +68,25 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		// these will be unset for accounts that don't have the fker in lumby, so just won't add these
 		// maybe I can check "paths inactive OR paths completed"?
 
-		addEqTask(false, "Claim wine from the Observatory assistant", VarPlayerID.ITGRONIGEN, 8);
+		addEqTask(false, "Claimed wine from the Observatory assistant", VarPlayerID.ITGRONIGEN, 8);
 
-		addTask("Claim coins from Bill Teach", VarbitID.FEVER_GIVEN_BOOK);
+		addTask("Claimed coins from Bill Teach", VarbitID.FEVER_GIVEN_BOOK);
 
-		addTask("Claim coins from Gordon", VarbitID.GA_REWARD);
+		addTask("Claimed coins from Gordon", VarbitID.GA_REWARD);
 
-		addTask("Claim coins from Lady Shauna Piscarillius", VarbitID.PISCQUEST_REWARD);
+		addTask("Claimed coins from Lady Shauna Piscarillius", VarbitID.PISCQUEST_REWARD);
 
-		addGeTask(true, "Claim experience from Duke", VarbitID.MM2_PROGRESS, 200);
+		addGeTask(true, "Claimed experience from Duke", VarbitID.MM2_PROGRESS, 200);
 
-		addEqTask(true, "Claim experience from Ellen", VarbitID.DS2_COMBAT_TRAINING, 4);
+		addEqTask(true, "Claimed experience from Ellen", VarbitID.DS2_COMBAT_TRAINING, 4);
 
-		addTask("Claim experience from Mandy", VarbitID.MISTMYST_XPREWARD);
+		addTask("Claimed experience from Mandy", VarbitID.MISTMYST_XPREWARD);
 
-		addTask("Claim a clue scroll (beginner) from Veos", VarbitID.CLUEQUEST_CLUE_REWARD);
+		addTask("Claimed a clue scroll (beginner) from Veos", VarbitID.CLUEQUEST_CLUE_REWARD);
 
-		addEqTask(true, "Claim a beer from Ali the Barman", VarbitID.FEUD_REPORT_DRINK, 2);
+		addEqTask(true, "Claimed a beer from Ali the Barman", VarbitID.FEUD_REPORT_DRINK, 2);
 		Task claimRagAndBoneManIIRewards = new Task.TaskBuilder()
-			.name("Claim the Rams skull helm and Bonesack from the Odd old man")
+			.name("Claimed the Rams skull helm and Bonesack from the Odd old man")
 			.switchVar(true, VarbitID.RAG_HELMET)
 			.switchVar(true, VarbitID.RAG_BONESACK)
 			.build();
@@ -168,7 +168,7 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		// Used XP lamp from Cow quest
 		addTask("Used the magic lamp from Gillie Groats", VarbitID.COWBOSS_REWARD_LAMP); // confirmed
 		// Claimed the Cowbell amulet after Ides of Milk
-		addTask("Claim the Cowbell amulet", VarbitID.COWQUEST_REWARD); // confirmed
+		addTask("Claimed the Cowbell amulet", VarbitID.COWQUEST_REWARD); // confirmed
 		// Used the experience tomes from Blood Moon Rises
 		addEqTask(true, "Used all 6 experience tomes from Blood Moon Rises", VarbitID.MYQ6_XP_REWARD, 6);
 		// Claimed the Sunlight Spear after Blood Moon Rises

@@ -40,7 +40,7 @@ public class DoomsayerToggleTaskList extends TaskList
 	{
 
 		Task unlockAllWarningToggles = new Task.TaskBuilder()
-			.name("Unlock all Doomsayer warning toggles")
+			.name("Unlocked all Doomsayer warning toggles")
 			.geVar(true, VarbitID.CWS_WARNING_1, 6) // DKS ladder
 			.geVar(true, VarbitID.CWS_WARNING_2, 6) // Contact ladder
 			.geVar(true, VarbitID.CWS_WARNING_3, 6) // Fally mole lair

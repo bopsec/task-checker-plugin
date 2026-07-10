@@ -62,7 +62,7 @@ public class SpellbookTaskList extends TaskList
 		addTask("Unlocked the Thrall's Leagues VI recolour option", VarbitID.LEAGUE_6_THRALL_OVERRIDE_UNLOCKED);
 
 		//Unlocked the ability to select all characters via NPC Contact not transmitted
-		addGeTask(true, "Unlock the NPC Contact spell's previous contract option", VarbitID.LUNAR_CONTACT_LASTID, 1);
+		addGeTask(true, "Unlocked the NPC Contact spell's previous contract option", VarbitID.LUNAR_CONTACT_LASTID, 1);
 
 		addGeTask(true, "Selected at least one Home Teleport animation option", VarbitID.HOME_TELEPORT_SELECTED, 1);
 

@@ -150,7 +150,7 @@ public class UnplacedRandomTaskList extends TaskList
 		// Claimed a free hunter kit from a hunting expert not transmitted
 		// Claimed the pet insurance refund at Probita
 		addEqTask(true, "Claimed the pet insurance refund at Probita", VarbitID.PET_INSURANCE_RECLAIM, 0); // Guessing this is it. Untested
-		// Obtained all guaranteed gold ring drops -- seems to be between varb 16551 and 16558, but are not transmitted
+		// Obtained all guaranteed gold ring drops
 		// Listened to the Ship Yard foreman's question not transmitted
 		// Unlocked the ability to reclaim Guthixian paint -- not transmitted
 		// Unlocked the ability to reclaim Saradominist paint -- not transmitted
@@ -162,9 +162,9 @@ public class UnplacedRandomTaskList extends TaskList
 		// Unlocked the ability to toggle the demon butler cosmetic override
 		addTask("Unlocked the ability to toggle the demon butler cosmetic override", VarbitID.LEAGUE_6_BUTLER_UNLOCKED);
 		// Pray at the altar in Sangvesti after Blood Moon Rises
-		addTask("Pray at the altar in Sangvesti after Blood Moon Rises", VarbitID.SANGVESTI_ALTAR_USE_POSTQUEST);
+		addTask("Prayed at the altar in Sangvesti after Blood Moon Rises", VarbitID.SANGVESTI_ALTAR_USE_POSTQUEST);
 		// Fail the agility shortcut in Sangvesti once
-		addTask("Fail the rockslide shortcut in Sangvesti", VarbitID.VAMPYRIUM_AGILITY_FLAVOUR_DIALOGUE);
+		addTask("Failed the rockslide shortcut in Sangvesti", VarbitID.VAMPYRIUM_AGILITY_FLAVOUR_DIALOGUE);
 	}
 }
 

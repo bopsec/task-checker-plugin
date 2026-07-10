@@ -197,13 +197,13 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Told Litara about what happened to Solztun
 		addEqTask(true, "Told Litara about what happened to Solztun", VarbitID.SOS_BROTHER_FOUND, 2);
 		addTask("Tell the Street urchin to lure another villager", VarbitID.FEUD_VAR_URCHIN); // confirmed
-		addTask("Listen to Fairy Aeryka's Puro-Puro introduction", VarbitID.II_FAIRY_VAR); // confirmed
+		addTask("Listened to Fairy Aeryka's Puro-Puro introduction", VarbitID.II_FAIRY_VAR); // confirmed
 
-		addTask("Listen to Sil'as Dahcsnu's initial dialogue", VarbitID.SUROK_MONKCHECK); // confirmed
+		addTask("Listened to Sil'as Dahcsnu's initial dialogue", VarbitID.SUROK_MONKCHECK); // confirmed
 
-		addTask("Listen to Dampe explain shade coffins", VarbitID.SHADES_DAMPE_INTRO);
+		addTask("Listened to Dampe explain shade coffins", VarbitID.SHADES_DAMPE_INTRO);
 
-		addTask("Listen to the Drunken Dwarf talk about his relative", VarbitID.GIANTDWARF_COUSIN_INTRODUCED); // confirmed
+		addTask("Listened to the Drunken Dwarf talk about his relative", VarbitID.GIANTDWARF_COUSIN_INTRODUCED); // confirmed
 
 		addTask("Receive thanks from Hamal after completing Mountain Daughter", VarbitID.MDAUGHTER_HAMAL_HEARDOFBURIAL);
 		//Unlocked the candle seller's lantern making option

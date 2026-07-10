@@ -38,17 +38,17 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 
 	public void initTasks()
 	{
-		addTask("Unblock the hole leading to the Lumbridge Swamp Caves", VarbitID.LOST_TRIBE_HOLE_2_DUG);
+		addTask("Unblocked the hole leading to the Lumbridge Swamp Caves", VarbitID.LOST_TRIBE_HOLE_2_DUG);
 
 		Task unblockEagleTransport = new Task.TaskBuilder()
-			.name("Unblock both obstructed eagle transport route entrances")
+			.name("Unblocked both obstructed eagle transport route entrances")
 			.switchVar(true, VarbitID.EAGLEPEAK_UNBLOCKED_DESERT)
 			.eqVar(true, VarbitID.EAGLEPEAK_JUNGLE_VINE, 3)
 			.build();
 		add(unblockEagleTransport);
 
 		Task unblockKourendCatacombsEntrances = new Task.TaskBuilder()
-			.name("Unblock all five additional entrances to the Kourend Catacombs")
+			.name("Unblocked all five additional entrances to the Kourend Catacombs")
 			.switchVar(true, VarbitID.CATA_HOLE1)
 			.switchVar(true, VarbitID.CATA_HOLE2)
 			.switchVar(true, VarbitID.CATA_HOLE3)
@@ -57,21 +57,21 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 			.build();
 		add(unblockKourendCatacombsEntrances);
 
-		addTask("Unlock access to Haris's resource area in Corsair Cove", VarbitID.CORSAIR_COVE_RESOURCE_ENTRY);
+		addTask("Unlocked access to Haris's resource area in Corsair Cove", VarbitID.CORSAIR_COVE_RESOURCE_ENTRY);
 
-		addTask("Unlock the hidden passage to the entrance of Kruk's lair", VarbitID.MM2_MAZE_RETURN);
+		addTask("Unlocked the hidden passage to the entrance of Kruk's lair", VarbitID.MM2_MAZE_RETURN);
 
-		addTask("Unlock the door to Eodan in the Forthos Dungeon", VarbitID.HOSDUN_BURNER_OPEN);
+		addTask("Unlocked the door to Eodan in the Forthos Dungeon", VarbitID.HOSDUN_BURNER_OPEN);
 
 		Task unlockForthosDungeonDoors = new Task.TaskBuilder()
-			.name("Unlock both Temple Doors in the Forthos Dungeon")
+			.name("Unlocked both Temple Doors in the Forthos Dungeon")
 			.switchVar(true, VarbitID.HOSDUN_EAST_DOOR_STATUS)
 			.switchVar(true, VarbitID.HOSDUN_WEST_DOOR_STATUS)
 			.build();
 		add(unlockForthosDungeonDoors);
 
 		Task unlockEnakhrasTempleEntrances = new Task.TaskBuilder()
-			.name("Unlock all four secret entrances to Enakhra's Temple")
+			.name("Unlocked all four secret entrances to Enakhra's Temple")
 			.switchVar(true, VarbitID.ENAKH_BOULDER_N_MULTIVAR)
 			.switchVar(true, VarbitID.ENAKH_BOULDER_E_MULTIVAR)
 			.switchVar(true, VarbitID.ENAKH_BOULDER_S_MULTIVAR)
@@ -80,7 +80,7 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 		add(unlockEnakhrasTempleEntrances);
 
 		Task unlockEnakhrasTempleSigilDoors = new Task.TaskBuilder()
-			.name("Unlock all four sigil-locked doors in Enakhra's Temple")
+			.name("Unlocked all four sigil-locked doors in Enakhra's Temple")
 			.switchVar(true, VarbitID.ENAKH_Z_DOOR)
 			.switchVar(true, VarbitID.ENAKH_M_DOOR)
 			.switchVar(true, VarbitID.ENAKH_R_DOOR)
@@ -88,7 +88,7 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 			.build();
 		add(unlockEnakhrasTempleSigilDoors);
 
-		addTask("Unblock the statue leading to the Tunnel of Chaos", VarbitID.SUROK_TUNNELCHECK);
+		addTask("Unblocked the statue leading to the Tunnel of Chaos", VarbitID.SUROK_TUNNELCHECK);
 
 		addTask("Unblocked the tunnel leading to the true Blood Altar", VarbitID.MYQ5_LAB_SC_UNLOCKED);
 		//Unlocked the blood rift in the Abyss

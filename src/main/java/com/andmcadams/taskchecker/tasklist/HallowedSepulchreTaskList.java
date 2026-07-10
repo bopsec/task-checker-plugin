@@ -39,19 +39,19 @@ public class HallowedSepulchreTaskList extends TaskList
 	{
 		addGeTask(true, "Logged a fastest run for the Hallowed Sepulchre", VarbitID.HALLOWED_TIME_PB_ALL, 1);
 
-		addTask("Give the Darkmeyer Slave 100 Hallowed Marks", VarbitID.HALLOWED_ADVENTURER_MARKS_GIVEN);
+		addTask("Gave the Darkmeyer Slave 100 Hallowed Marks", VarbitID.HALLOWED_ADVENTURER_MARKS_GIVEN);
 
-		addTask("Free the Knight of the Owl", VarbitID.HALLOWED_GHOST_OWLKNIGHT_FOUND);
+		addTask("Freed the Knight of the Owl", VarbitID.HALLOWED_GHOST_OWLKNIGHT_FOUND);
 
-		addTask("Free the Knight of the Lion", VarbitID.HALLOWED_GHOST_LIONKNIGHT_FOUND);
+		addTask("Freed the Knight of the Lion", VarbitID.HALLOWED_GHOST_LIONKNIGHT_FOUND);
 
-		addTask("Free the Knight of the Wolf", VarbitID.HALLOWED_GHOST_WOLFKNIGHT_FOUND);
+		addTask("Freed the Knight of the Wolf", VarbitID.HALLOWED_GHOST_WOLFKNIGHT_FOUND);
 
-		addTask("Free the Knight of the Unicorn", VarbitID.HALLOWED_GHOST_UNICORNKNIGHT_FOUND);
+		addTask("Freed the Knight of the Unicorn", VarbitID.HALLOWED_GHOST_UNICORNKNIGHT_FOUND);
 
-		addTask("Free the Archpriest of the Unicorn", VarbitID.HALLOWED_GHOST_ARCHPRIEST_FOUND);
+		addTask("Freed the Archpriest of the Unicorn", VarbitID.HALLOWED_GHOST_ARCHPRIEST_FOUND);
 
-		addTask("Unlock private instances", VarbitID.HALLOWED_PRIVATE_INSTANCES_PURCHASED);
+		addTask("Unlocked private instances", VarbitID.HALLOWED_PRIVATE_INSTANCES_PURCHASED);
 
 
 	}

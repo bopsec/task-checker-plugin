@@ -40,14 +40,14 @@ public class RedeemableQuestItemsTaskList extends TaskList
 	public void initTasks()
 	{
 		Task tradeDiaryOfHerbiFlax = new Task.TaskBuilder()
-			.name("Trade the diary of Herbi Flax to the Apothecary")
+			.name("Traded the diary of Herbi Flax to the Apothecary")
 			.bitVar(false, VarPlayerID.MORTTONMULTI, 30)
 			.build();
 		add(tradeDiaryOfHerbiFlax);
 
-		addTask("Trade the Weiss fire notes to Burntmeat", VarbitID.MY2ARM_EXTRASTRONGHOLDREWARD);
+		addTask("Traded the Weiss fire notes to Burntmeat", VarbitID.MY2ARM_EXTRASTRONGHOLDREWARD);
 
-		addTask("Trade the black prism to Yanni Salika or Zavistic Rarve", VarbitID.THZFE_PRISMSOLD);
+		addTask("Traded the black prism to Yanni Salika or Zavistic Rarve", VarbitID.THZFE_PRISMSOLD);
 	}
 }
 

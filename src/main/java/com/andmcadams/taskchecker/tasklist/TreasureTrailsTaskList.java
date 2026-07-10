@@ -39,17 +39,17 @@ public class TreasureTrailsTaskList extends TaskList
 	public void initTasks()
 	{
 
-		addGeTask(false, "Unlock the Explore emote", VarPlayerID.COMPLETED_CLUES5, 600);
+		addGeTask(false, "Unlocked the Explore emote", VarPlayerID.COMPLETED_CLUES5, 600);
 
-		addGeTask(false, "Unlock the Large spade", VarPlayerID.COMPLETED_CLUES, 500);
+		addGeTask(false, "Unlocked the Large spade", VarPlayerID.COMPLETED_CLUES, 500);
 
-		addGeTask(false, "Unlock the Clueless scroll", VarPlayerID.COMPLETED_CLUES1, 400);
+		addGeTask(false, "Unlocked the Clueless scroll", VarPlayerID.COMPLETED_CLUES1, 400);
 
-		addGeTask(false, "Unlock the Uri transform emote", VarPlayerID.COMPLETED_CLUES2, 300);
+		addGeTask(false, "Unlocked the Uri transform emote", VarPlayerID.COMPLETED_CLUES2, 300);
 
-		addGeTask(false, "Unlock the Heavy casket", VarPlayerID.COMPLETED_CLUES3, 200);
+		addGeTask(false, "Unlocked the Heavy casket", VarPlayerID.COMPLETED_CLUES3, 200);
 
-		addGeTask(false, "Unlock the Scroll sack", VarPlayerID.COMPLETED_CLUES4, 100);
+		addGeTask(false, "Unlocked the Scroll sack", VarPlayerID.COMPLETED_CLUES4, 100);
 
 		//Built all 3 beginner STASH units (do not have to be filled)
 		addEqTask(true, "Built all 3 beginner STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_BEGINNER_ALL, 7); // confirmed
