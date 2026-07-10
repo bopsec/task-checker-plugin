@@ -268,7 +268,6 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Told Bernard that Bernina is proud of him
 		addEqTask(true, "Talk to Bernard on top of The Proudspire", VarbitID.SPIRITOFADVENTURE, 6); // confirmed
 		// Told Xilo and Fabia where to find each other
-		//addEqTask(true, "Told Xilo and Fabia where to find each other", VarbitID.TLATI_LOST_LOVER_FABIA, 2); // confirmed
 		Task xiloAndFabia = new Task.TaskBuilder()
 			.name("Told Xilo and Fabia where to find each other")
 			.geSumVars(true, 2, VarbitID.TLATI_LOST_LOVER_FABIA, VarbitID.TLATI_LOST_LOVER_XILO)
