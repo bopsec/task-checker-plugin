@@ -42,6 +42,17 @@
 - Disabled the Fertile Soil's non-upgraded spell warning
 - Unlocked the ability to trade giantsoul amulets
 - Paid the ghost captain for free trips to Dragontooth Island
+- Destroyed all 9 tentacles in the Lassar Undercity
+- Listened to all 10 remnants in the Lassar Undercity
+- Unlocked Gull's metamorphosis option
+- Unlocked the ability to select the princely monkey transformation
+- Unlocked the ability to reclaim the diamond speedrun trophy
+- Unlocked the ability to reclaim the tier 1 adventurer's outfit
+- Unlocked the ability to reclaim the tier 2 adventurer's outfit
+- Unlocked the ability to reclaim the tier 3 adventurer's outfit
+- Unlocked the ability to reclaim the giant stopwatch
+- Filled your Grand Exchange history with 40 completed trades
+- Unlocked the Expert Dragon Archer title
 
 
 ## Confirmed not transmitted
@@ -98,3 +109,19 @@
 - Disabled the crashed airship opening entrance warning
 - Listened to Hagus' gratitude for supporting the cause
 - Disabled the Royal Titans' destroy loot warning
+- Disabled Araxxor's web tunnel warning
+- Disabled the mounted mythical cape's Building Mode warning
+- Comment says no varb/varp, so I included it here.
+- Built a raft using the smashed table in Ah Za Rhoon
+- Listened to the sergeant's advice
+- Selected a preference for the log storage crates
+- Paid Ferox for the ability to respawn at Ferox Enclave
+- Unlocked the abyssal head trophy option
+- Logged at least 2 laps of the Wyrm Basic Agility Course
+- Logged at least 2 laps of the Wyrm Advanced Agility Course
+- Claimed any deposit back from the Shilo Village furnace coffer
+- Claimed any additional sunfire armour from the STASH unit
+- Unlocked the ability to reclaim Guthixian paint
+- Unlocked the ability to reclaim Saradominist paint
+- Unlocked the ability to reclaim Zamorakian paint
+- Unlocked the ability to reclaim Armadylean paint
