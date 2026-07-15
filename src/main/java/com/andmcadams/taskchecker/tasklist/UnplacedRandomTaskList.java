@@ -165,6 +165,8 @@ public class UnplacedRandomTaskList extends TaskList
 		addTask("Prayed at the altar in Sangvesti after Blood Moon Rises", VarbitID.SANGVESTI_ALTAR_USE_POSTQUEST);
 		// Fail the agility shortcut in Sangvesti once
 		addTask("Failed the rockslide shortcut in Sangvesti", VarbitID.VAMPYRIUM_AGILITY_FLAVOUR_DIALOGUE);
+		// Listened to the Crimson Kisten's warning.
+		addBitTask(false, "Listened to the Crimson Kisten's warning", VarPlayerID.VAMPYRIUM_GENERAL, 11); // swap to varbit when it is in RuneLite
 	}
 }
 
