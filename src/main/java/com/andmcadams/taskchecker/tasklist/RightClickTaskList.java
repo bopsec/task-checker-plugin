@@ -77,7 +77,7 @@ public class RightClickTaskList extends TaskList
 		// Listened to the Aranei explain the Venators
 		addTask("Listened to the Aranei explain the Venators", VarbitID.VAMPYRIUM_VENATOR_ARANEI_MET);
 		// Listened to the Aranei bucket dealer explain his deal
-		addTask("Listened to the Aranei bucker dealer explain his deal", VarbitID.BUCKET_ARANEI_MET);
+		addTask("Listened to the Aranei bucket dealer explain his deal", VarbitID.BUCKET_ARANEI_MET);
 		// Listened to the Aranei scout explain death mechanics at Maggot King
 		addTask("Listened to the Aranei scout explain death mechanics at Maggot King", VarbitID.VAMPYRIUM_GRAVESTONE_ARANEI_MET);
 	}
