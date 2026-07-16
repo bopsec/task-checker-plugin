@@ -108,7 +108,7 @@ public class PohBookcaseTaskList extends TaskList
 			.switchVar(true, VarbitID.TOA_BOOK_AKKHA)
 			.switchVar(true, VarbitID.TOA_BOOK_WARDENS)
 			.switchVar(true, VarbitID.TOA_BOOK_ICTHLARIN)
-			.switchVar(true, 0) // TODO: What is the last book?
+			//.switchVar(true, 0) // TODO: What is the last book?
 			.build();
 		this.add(obtainedAllToaBooks);
 
