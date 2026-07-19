@@ -112,7 +112,7 @@ public class UnplacedRandomTaskList extends TaskList
 		//Maxed the Museum Kudos counter with 243 Kudos
 		addGeTask(true, "Maxed the Museum Kudos counter with 243 Kudos", VarbitID.VM_KUDOS, 243);
 		//
-		// Unlocked the Expert Dragon Archer title - TODO: couldnt find varb change on kc, maybe on rank change?
+		// Unlocked the Expert Dragon Archer title not transmitted
 		//Logged a personal best at Tears of Guthix
 		addGeTask(true, "Logged a personal best at Tears of Guthix", VarbitID.TOG_MAX_TEARS_COLLECTED, 1);
 

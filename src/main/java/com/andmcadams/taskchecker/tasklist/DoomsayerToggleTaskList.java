@@ -106,7 +106,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled the Wilderness Agility pipe rewards warning", VarbitID.WILDY_AGILITY_START_WARNING);
 		//Disabled the Wilderness Agility gate opening warning
 		addTask("Disabled the Wilderness Agility gate opening warning", VarbitID.WILDY_AGILITY_EXIT_WARNING);
-		//Disabled the looting bag usage warning not exposed
+		//Disabled the looting bag usage warning not transmitted
 		//Disabled the ornate maul handle attachment warning not transmitted
 		//Disabled the Camdozaal Vault entrance warning
 		addTask("Disabled the Camdozaal Vault entrance warning", VarbitID.CAMDOZAAL_VAULT_WARNING);
@@ -146,14 +146,14 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Nightmare's Energy Barrier exit warning not transmitted
 		//Disabled the Nightmare staff's orb addition/removal warning
 		addTask("Disabled the Nightmare staff's orb addition/removal warning", VarbitID.NIGHTMARE_STAFF_CHECK); // TODO:Unchecked
-		//Disabled the mounted mythical cape's Building Mode warning no varb/varp
-		//Disabled the Clan Coffer's coin deposit warning not exposed
+		//Disabled the mounted mythical cape's Building Mode warning not transmitted
+		//Disabled the Clan Coffer's coin deposit warning not transmitted
 		//Disabled the Hallowed Sepulchre's lobby stairs warning
 		addTask("Disabled the Hallowed Sepulchre's lobby stairs warning", VarbitID.HALLOWED_ENTRY_CHECK); // confirmed
 		//Disabled the Hallowed sack's inventory space warning TODO: Unfound/untested
 		//Disabled the Sourhog cave strange hole entrance warning
 		addTask("Disabled the Sourhog cave strange hole entrance warning", VarbitID.PORCINE_STOP_WARNING); // confirmed
-		//Disabled the Mahogany Homes expert contract warning not exposed
+		//Disabled the Mahogany Homes expert contract warning not transmitted
 		//Disabled the Royal Titans' tunnel warning
 		addTask("Disabled the Royal Titans' tunnel warning", VarbitID.ROYAL_TITANS_ENTER_WARNING);
 		//Disabled the Royal Titans' destroy loot warning not transmitted

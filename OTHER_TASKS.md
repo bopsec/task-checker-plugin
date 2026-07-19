@@ -121,7 +121,4 @@
 - Logged at least 2 laps of the Wyrm Advanced Agility Course
 - Claimed any deposit back from the Shilo Village furnace coffer
 - Claimed any additional sunfire armour from the STASH unit
-- Unlocked the ability to reclaim Guthixian paint
-- Unlocked the ability to reclaim Saradominist paint
-- Unlocked the ability to reclaim Zamorakian paint
-- Unlocked the ability to reclaim Armadylean paint
+- Unlocked the ability to reclaim the four god paints
