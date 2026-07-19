@@ -111,7 +111,6 @@
 - Disabled the Royal Titans' destroy loot warning
 - Disabled Araxxor's web tunnel warning
 - Disabled the mounted mythical cape's Building Mode warning
-- Comment says no varb/varp, so I included it here.
 - Built a raft using the smashed table in Ah Za Rhoon
 - Listened to the sergeant's advice
 - Selected a preference for the log storage crates
