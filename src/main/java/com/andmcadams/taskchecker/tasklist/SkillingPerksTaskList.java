@@ -66,10 +66,8 @@ public class SkillingPerksTaskList extends TaskList
 		//Unlocked the ability to redecorate to the Hosidius house style
 		//addTask("Unlocked the ability to redecorate to the Hosidius house style", 0); // TODO: Not found
 		//
-		//Logged a fastest commission at the highest quality of 199 TODO: probs not transmitted? idk
-		// ?
-		//Unlocked the ability to purchase colossal blades from Perdu
-		//addTask("Unlocked the ability to purchase colossal blades from Perdu", 0); // TODO: Not found
+		//Logged a fastest commission at the highest quality of 199 not transmitted
+		//Unlocked the ability to purchase colossal blades from Perdu not transmitted
 		//Unlocked the crucible's custom quantity option not transmitted
 		//Unlocked all 15 additional sword moulds
 		Task giantsFoundryAllMoulds = new Task.TaskBuilder()
@@ -113,9 +111,8 @@ public class SkillingPerksTaskList extends TaskList
 		//
 		//Unlocked the large water container
 		addTask("Unlocked the large water container", VarbitID.FOSSIL_MINE_UNLOCKED_MOREWATER);
-		//Disabled the Fertile Soil's non-upgraded spell warning
-		addTask("Unlocked ultra fertile soil. It is also comp to disable the warning.", VarbitID.FOSSIL_MINE_UNLOCKED_ULTRAFERTILESOIL);
-		//addTask("Disabled the Fertile Soil's non-upgraded spell warning", 0); // TODO: Unfound
+		//Disabled the Fertile Soil's non-upgraded spell warning not transmitted
+		addTask("Unlocked ultra fertile soil. It is also comp to disable the warning on using the non-upgraded version.", VarbitID.FOSSIL_MINE_UNLOCKED_ULTRAFERTILESOIL);
 
 		//Unlocked the ability to create swampbark armours
 		addTask("Unlocked the ability to create swampbark armours", VarbitID.SHADES_SWAMP_UNLOCK);

@@ -35,11 +35,8 @@
 - Unlocked the forestry kit/basket's outfit storage ability
 - Unlocked the forestry kit/basket's cape storage ability
 - Unlocked the ability to redecorate to the Hosidius house style
-- Logged a fastest commission at the highest quality of 199
-- Unlocked the ability to purchase colossal blades from Perdu
 - Unlocked access to Belona's amethyst cave
 - Unlocked the ability to toggle the full spirit angler outfit
-- Disabled the Fertile Soil's non-upgraded spell warning
 - Unlocked the ability to trade giantsoul amulets
 - Paid the ghost captain for free trips to Dragontooth Island
 - Destroyed all 9 tentacles in the Lassar Undercity
@@ -52,7 +49,6 @@
 - Unlocked the ability to reclaim the tier 3 adventurer's outfit
 - Unlocked the ability to reclaim the giant stopwatch
 - Filled your Grand Exchange history with 40 completed trades
-- Unlocked the Expert Dragon Archer title
 - Claimed a clue scroll from a monkey from Ardougne Zoo
 - Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu
 - Filled my notes with all 26 ancient pages
@@ -146,3 +142,7 @@
 - Claimed any additional sunfire armour from the STASH unit
 - Unlocked the ability to reclaim the four god paints
 - Obtained all guaranteed gold ring drops
+- Disabled the Fertile Soil's non-upgraded spell warning
+- Logged a fastest commission at the highest quality of 199
+- Unlocked the ability to purchase colossal blades from Perdu
+- Unlocked the Expert Dragon Archer title
