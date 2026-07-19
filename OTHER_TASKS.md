@@ -53,6 +53,30 @@
 - Unlocked the ability to reclaim the giant stopwatch
 - Filled your Grand Exchange history with 40 completed trades
 - Unlocked the Expert Dragon Archer title
+- Claimed a clue scroll from a monkey from Ardougne Zoo
+- Claimed all 3 rewards from Tiadeche, Tinsay and Tamayu
+- Filled my notes with all 26 ancient pages
+- Filled the Fossil Island note book with all 21 entries
+- Unlocked all fishing trophy options
+- Unlocked all 5 additional ornate combat dummy options
+- Claimed the pet reclaim token discount at Probita
+- Claimed all free chants for lost crystal equipment from Ilfeen
+- Unlocked all 6 greenman mask variants
+
+- Logged at least 1 gp of destroyed loot keys via the Loot Chest
+- Logged at least 1 gp of redeemed loot keys via the Loot Chest
+- Logged at least 1 lap of the sledding course
+- Logged at least 2 laps of the Prifddinas Agility Course
+- Logged at least 2 laps of the Shayzien Basic Agility Course
+- Logged at least 2 laps of the Shayzien Advanced Agility Course
+- Logged at least 2 offerings at the Woodcutting Guild's shrine
+- Logged at least 2 counts of opening Larran's small chest
+- Logged at least 2 counts of opening Larran's big chest
+- Logged at least 2 counts of opening the brimstone chest
+- Logged at least 2 counts of opening the Elven Crystal Chest
+- Logged at least 2 counts of opening the Dark Chest
+- Logged at least 2 counts of opening the Zombie Pirate's Locker
+- Logged at least 2 counts of opening all 8 Grand Gold Chests
 
 
 ## Confirmed not transmitted
@@ -115,9 +139,10 @@
 - Listened to the sergeant's advice
 - Selected a preference for the log storage crates
 - Paid Ferox for the ability to respawn at Ferox Enclave
-- Unlocked the abyssal head trophy option
+- Unlocked the PVM head trophy options
 - Logged at least 2 laps of the Wyrm Basic Agility Course
 - Logged at least 2 laps of the Wyrm Advanced Agility Course
 - Claimed any deposit back from the Shilo Village furnace coffer
 - Claimed any additional sunfire armour from the STASH unit
 - Unlocked the ability to reclaim the four god paints
+- Obtained all guaranteed gold ring drops
