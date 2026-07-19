@@ -43,7 +43,7 @@ public class UnlimitedServicesTaskList extends TaskList
 		//Paid Skully for the ability to toggle loot keys not transmitted
 		//Paid the ghost captain for free trips to Dragontooth Island TODO: couldnt find
 
-		addEqTask(true, "Paid any banker for all 360 additional bank slots", VarbitID.BANK_EXTRA_BLOCKS_PURCHASED, 9);
+		addEqTask(true, "Paid any banker for all 450 additional bank slots", VarbitID.BANK_EXTRA_BLOCKS_PURCHASED, 9);
 
 		addEqTask(true, "Enhanced the Camulet for one million coins", VarbitID.ENAKH_CAMULET_CHARGE, 7);
 
