@@ -214,7 +214,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Unlocked the ability to create Neitiznot faceguards", VarbitID.VIKINGEXILE_HELM_UNLOCK);
 		//Unlocked the ability to create super antifire potions
 		addTask("Unlocked the ability to create super antifire potions", VarbitID.SUPER_ANTIFIRE_UNLOCKED);
-		//Unlocked the ability to create sextants and watches no varb/varp
+		//Unlocked the ability to create sextants and watches not transmitted
 		//Unlocked the ability to create ancient icons
 		addTask("Unlocked the ability to create ancient icons", VarbitID.DT2_PLAYER_LEARNED_ICON_FUSING);
 		//Revealed the bank camel's name
@@ -247,7 +247,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Unlocked Farmer Gricoller's visitors option", VarbitID.DARKMEYER_VYRE_TITHE_DIALOGUE); // TODO: Untested
 		// Unlocked Gabooty's shop open option
 		addTask("Unlocked Gabooty's shop open option", VarbitID.GABOOTYSHOPCHAT); // confirmed
-		// Listened to Shantay introduce the Shantay Pass no varb/varp
+		// Listened to Shantay introduce the Shantay Pass not transmitted
 		// Listened to Razmire's directions to the Shade Lair
 		addBitTask(false, "Listened to Razmire's directions to the Shade Lair", VarPlayerID.MORTTONMULTI, 29);
 		// 1128137189 -> 1665008101 (1000011001111100000000111100101 -> 1100011001111100000000111100101) diff is in bit 29
