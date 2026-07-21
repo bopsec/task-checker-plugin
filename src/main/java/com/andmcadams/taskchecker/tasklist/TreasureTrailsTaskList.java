@@ -54,7 +54,7 @@ public class TreasureTrailsTaskList extends TaskList
 		//Built all 3 beginner STASH units (do not have to be filled)
 		addEqTask(true, "Built all 3 beginner STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_BEGINNER_ALL, 7); // confirmed
 		//Built all 30 easy STASH units (do not have to be filled)
-		addEqTask(true, "Built all 32 easy STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_EASY_ALL, Integer.MAX_VALUE); // 2^32 - 1 confirmed
+		addEqTask(true, "Built all 31 easy STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_EASY_ALL, Integer.MAX_VALUE); // 2^31 - 1 confirmed
 		//Built all 25 medium STASH units (do not have to be filled)
 		addEqTask(true, "Built all 25 medium STASH units (do not have to be filled)", VarbitID.HH_CONSTRUCTED_MEDIUM_ALL, 33554431); // 2^25 - 1 confirmed
 		//Built all 16 hard STASH units (do not have to be filled)
