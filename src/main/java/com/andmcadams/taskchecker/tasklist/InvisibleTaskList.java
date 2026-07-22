@@ -90,7 +90,7 @@ public class InvisibleTaskList extends TaskList
 			.build(); // these do not remember retroactively it seems, have to be done after 8th of July 2026
 		this.add(allSangvestiDoors);
 
-		addGeTask(true, "Opened Home Teleport animation options", VarbitID.HOME_TELEPORT_SELECTED, 1);
+		addGeTask(false, "Opened Home Teleport animation options", VarPlayerID.HOME_TELEPORT_ANIM_TOGGLES, 1);
 
 		addGeTask(false, "Opened Alchemy animation options", VarPlayerID.ALCHEMY_ANIM_TOGGLES, 1);
 
