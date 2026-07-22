@@ -80,7 +80,7 @@ public class SlayerRewardsTaskList extends TaskList
 
 		addTask("Unlocked Absolutely Slayin'", VarbitID.SLAYER_UNLOCK_HELM_HOODED);
 
-		addBitTask(false, "Unlocked Oath Breaker", VarPlayerID.SLAYER_REWARDS_UNLOCKS2, 0);
+		addTask("Unlocked Oath Breaker", VarbitID.SLAYER_UNLOCK_HELM_LEAGUE_6);
 
 		addTask("Unlocked Shayzien(5) effect on slayer helmet", VarbitID.KOUREND_SLAYER_HELM_BONUS);
 
