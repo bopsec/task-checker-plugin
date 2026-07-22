@@ -25,6 +25,7 @@
 package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
+import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
 public class InvisibleTaskList extends TaskList
@@ -88,5 +89,19 @@ public class InvisibleTaskList extends TaskList
 			.switchVar(true, VarbitID.SANGVESTI_BASIC_HOUSE_3_DOOR_FOUND)
 			.build(); // these do not remember retroactively it seems, have to be done after 8th of July 2026
 		this.add(allSangvestiDoors);
+
+		addGeTask(true, "Opened Home Teleport animation options", VarbitID.HOME_TELEPORT_SELECTED, 1);
+
+		addGeTask(false, "Opened Alchemy animation options", VarPlayerID.ALCHEMY_ANIM_TOGGLES, 1);
+
+		addGeTask(false, "Opened Vengeance animation options", VarPlayerID.VENGEANCE_ANIM_TOGGLES, 1);
+
+		addGeTask(false, "Opened NPC Contact animation options", VarPlayerID.NPC_CONTACT_ANIM_TOGGLES, 1);
+
+		addGeTask(false, "Opened death animation options", VarPlayerID.DEATH_ANIM_TOGGLES, 1); // confirmed
+
+		addGeTask(true, "Opened ghost thrall model options", VarbitID.RESURRECTION_COSMETIC_TOGGLES_GHOST, 1);
+		addGeTask(true, "Opened skeletal thrall model options", VarbitID.RESURRECTION_COSMETIC_TOGGLES_SKELETON, 1);
+		addGeTask(true, "Opened zombie thrall model options", VarbitID.RESURRECTION_COSMETIC_TOGGLES_ZOMBIE, 1);
 	}
 }

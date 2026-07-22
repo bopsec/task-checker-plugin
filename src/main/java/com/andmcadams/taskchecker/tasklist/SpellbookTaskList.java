@@ -63,20 +63,6 @@ public class SpellbookTaskList extends TaskList
 
 		//Unlocked the ability to select all characters via NPC Contact not transmitted
 		addGeTask(true, "Unlocked the NPC Contact spell's previous contract option", VarbitID.LUNAR_CONTACT_LASTID, 1);
-
-		addGeTask(true, "Selected at least one Home Teleport animation option", VarbitID.HOME_TELEPORT_SELECTED, 1);
-
-		addGeTask(false, "Selected at least one Alchemy animation option", VarPlayerID.ALCHEMY_ANIM_TOGGLES, 1);
-
-		addGeTask(false, "Selected at least one Vengeance animation option", VarPlayerID.VENGEANCE_ANIM_TOGGLES, 1);
-
-		addGeTask(false, "Selected at least one NPC Contact animation option", VarPlayerID.NPC_CONTACT_ANIM_TOGGLES, 1);
-
-		addGeTask(false, "Selected at least one death animation option", VarPlayerID.DEATH_ANIM_TOGGLES, 1); // confirmed
-
-		addGeTask(true, "Selected at least one ghost thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_GHOST, 1);
-		addGeTask(true, "Selected at least one skeletal thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_SKELETON, 1);
-		addGeTask(true, "Selected at least one zombie thrall model", VarbitID.RESURRECTION_COSMETIC_TOGGLES_ZOMBIE, 1);
 	}
 }
 
