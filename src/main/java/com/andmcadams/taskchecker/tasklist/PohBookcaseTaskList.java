@@ -101,14 +101,14 @@ public class PohBookcaseTaskList extends TaskList
 
 		//Obtained all 7 desert god texts from the Tombs of Amascut
 		Task obtainedAllToaBooks = new Task.TaskBuilder()
-			.name("Obtained all 7 desert god texts from the Tombs of Amascut")
+			.name("Obtained all 7 desert god texts from the Tombs of Amascut (Incomplete)")
 			.switchVar(true, VarbitID.TOA_BOOK_KEPHRI)
 			.switchVar(true, VarbitID.TOA_BOOK_BABA)
 			.switchVar(true, VarbitID.TOA_BOOK_ZEBAK)
 			.switchVar(true, VarbitID.TOA_BOOK_AKKHA)
 			.switchVar(true, VarbitID.TOA_BOOK_WARDENS)
 			.switchVar(true, VarbitID.TOA_BOOK_ICTHLARIN)
-			//.switchVar(true, 0) // TODO: What is the last book?
+			//.switchVar(true, 0) // TODO: Need acc to test getting Maisa book, but seems doomed (Akila's Journal)
 			.build();
 		this.add(obtainedAllToaBooks);
 
@@ -135,7 +135,7 @@ public class PohBookcaseTaskList extends TaskList
 		addTask("Obtained all 16 elven texts from the Prifddinas Grand Library", VarbitID.PRIF_BOOKS);
 		//Obtained all 93 miscellaneous texts (2 are obtained by default) this is like 50 diff ones
 		Task obtainedAllBooks = new Task.TaskBuilder() // anything added has been tested
-			.name("Obtained all 93 miscellaneous texts (incomplete!)")
+			.name("Obtained all 95 miscellaneous texts (incomplete!)")
 			.switchVar(true, VarbitID.HUEYCOATL_BOOK) // Huey book
 			.switchVar(true, VarbitID.SLAYER_FOUND_DIARY) // Entomologist's diary
 			.switchVar(true, VarbitID.GODWARS_DIARY_FOUND) // Keldagrim Explorer's Notes
