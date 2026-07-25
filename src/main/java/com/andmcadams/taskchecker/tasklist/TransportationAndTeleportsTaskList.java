@@ -38,10 +38,10 @@ public class TransportationAndTeleportsTaskList extends TaskList
 
 	public void initTasks()
 	{
-		//Filled the travel log with all 53? fairy ring codes
+		//Filled the travel log with all 55? fairy ring codes
 		Task allFairyRingCodes = new Task.TaskBuilder()
-			.name("Filled the travel log with all 53 fairy ring codes")
-			// A:
+			.name("Filled the travel log with all 55 fairy ring codes")
+			// A: (14/16)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_AIQ)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_AIR)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_AJP)
@@ -56,7 +56,7 @@ public class TransportationAndTeleportsTaskList extends TaskList
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_ALQ)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_ALR)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_ALS)
-			// B:
+			// B: (14/16)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_BIP)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_BIQ)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_BIS)
@@ -71,7 +71,7 @@ public class TransportationAndTeleportsTaskList extends TaskList
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_BLQ)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_BLR)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_BLS)
-			// C:
+			// C: (13/16)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_CIP)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_CIQ)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_CIR)
@@ -85,7 +85,7 @@ public class TransportationAndTeleportsTaskList extends TaskList
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_CLP)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_CLR)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_CLS)
-			// D:
+			// D: (13/16)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_DIP)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_DIQ)
 			.switchVar(true, VarbitID.FAIRYRINGS_LOG_DIR)
