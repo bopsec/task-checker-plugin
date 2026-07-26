@@ -145,7 +145,8 @@ public class UnplacedRandomTaskList extends TaskList
 		// New, two-point-nine
 		// Unlocked the maximum bow string spool capacity
 		addEqTask(true, "Unlocked the maximum bow string spool capacity", VarbitID.BOWSTRING_SPOOL_SIZE, 5); // Idk what the max size is
-		// Unlocked all 6 greenman mask variants TODO: Unfound
+		// Unlocked all 6 greenman mask variants
+		addEqTask(false, "Unlocked all 6 greenman mask variants", VarPlayerID.GREENMAN_MASK, 63);
 
 		// Claimed a free hunter kit from a hunting expert not transmitted
 		// Claimed the pet insurance refund at Probita
