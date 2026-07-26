@@ -57,7 +57,6 @@
 - Unlocked all 5 additional ornate combat dummy options
 - Claimed the pet reclaim token discount at Probita
 - Claimed all free chants for lost crystal equipment from Ilfeen
-- Unlocked all 6 greenman mask variants
 
 - Logged at least 1 gp of destroyed loot keys via the Loot Chest
 - Logged at least 1 gp of redeemed loot keys via the Loot Chest
