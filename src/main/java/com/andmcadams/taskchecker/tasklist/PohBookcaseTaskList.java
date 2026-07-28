@@ -50,7 +50,7 @@ public class PohBookcaseTaskList extends TaskList
 			.switchVar(true, VarbitID.RAIDS_BOOK_REWARDCHEST_READ)
 			.build();
 		this.add(disabledCoxBooks);
-		//Disabled Theatre of Blood book drops couldn't find these
+		//Disabled Theatre of Blood book drops couldn't find these, tested at least 4 or 5 of them
 		//Filled my notes with all 26 ancient pages couldnt find these
 		//Filled the fossil island note book with all 21 entries couldn't see any varb changes
 		//Filled the strange Hallowed tome with all 5 mysterious pages
@@ -85,7 +85,7 @@ public class PohBookcaseTaskList extends TaskList
 		this.add(obtainedDs2Texts);
 		//Obtained all 6 Uhld adventurer texts from the Myths' Guild
 		addTask("Obtained all 6 Uhld adventurer texts from the Myths' Guild", VarbitID.DS2_GUILD_BOOKS); // TODO: Unchecked?
-		//Obtained all 6 grand bookshelf texts from the Theatre of Blood
+		//Obtained all 6 grand bookshelf texts from the Theatre of Blood doesnt seem to exist, tried maiden book
 		//Obtained all 7 boss texts from the Chambers of Xeric
 		Task obtainedAllCoxTexts = new Task.TaskBuilder()
 			.name("Obtained all 7 boss texts from the Chambers of Xeric")

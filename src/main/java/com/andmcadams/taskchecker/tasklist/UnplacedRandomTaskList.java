@@ -119,19 +119,20 @@ public class UnplacedRandomTaskList extends TaskList
 		//Logged at least 1 gp of destroyed loot keys via the Loot Chest
 		//Logged at least 1 gp of redeemed loot keys via the Loot Chest
 		//Logged at least 1 lap of the sledding course
-		//Logged at least 2 laps of the Prifddinas Agility Course
-		//Logged at least 2 laps of the Shayzien Basic Agility Course
-		//Logged at least 2 laps of the Shayzien Advanced Agility Course
+		addGeTask(true, "Logged at least 1 lap of the sledding course", VarbitID.XMAS20_TIME_PB, 1); // pb over 1 tick
+		//Logged at least 2 laps of the Prifddinas Agility Course not transmitted
+		//Logged at least 2 laps of the Shayzien Basic Agility Course not transmitted
+		//Logged at least 2 laps of the Shayzien Advanced Agility Course not transmitted
 		//Logged at least 2 laps of the Wyrm Basic Agility Course not transmitted
 		//Logged at least 2 laps of the Wyrm Advanced Agility Course not transmitted
-		//Logged at least 2 offerings at the Woodcutting Guild's shrine
-		//Logged at least 2 counts of opening Larran's small chest
-		//Logged at least 2 counts of opening Larran's big chest
+		//Logged at least 2 offerings at the Woodcutting Guild's shrine not transmitted
+		//Logged at least 2 counts of opening Larran's small chest not transmitted
+		//Logged at least 2 counts of opening Larran's big chest not transmitted
 		//Logged at least 2 counts of opening the brimstone chest
-		//Logged at least 2 counts of opening the Elven Crystal Chest
-		//Logged at least 2 counts of opening the Dark Chest
-		//Logged at least 2 counts of opening the Zombie Pirate's Locker
-		//Logged at least 2 counts of opening all 8 Grand Gold Chests
+		//Logged at least 2 counts of opening the Elven Crystal Chest not transmitted
+		//Logged at least 2 counts of opening the Dark Chest not transmitted
+		//Logged at least 2 counts of opening the Zombie Pirate's Locker not transmitted
+		//Logged at least 2 counts of opening all 8 Grand Gold Chests not transmitted
 		//
 		//Claimed a free bucket from Fritz the Glassblower not transmitted
 		//Claimed the pet reclaim token discount at Probita ? this is dead isnt it
@@ -141,7 +142,6 @@ public class UnplacedRandomTaskList extends TaskList
 		//Claimed any additional sunfire armour from the STASH unit) not transmitted
 		//Completed all miniquests
 		addEqTask(true, "Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
-
 		// New, two-point-nine
 		// Unlocked the maximum bow string spool capacity
 		addEqTask(true, "Unlocked the maximum bow string spool capacity", VarbitID.BOWSTRING_SPOOL_SIZE, 5); // Idk what the max size is
