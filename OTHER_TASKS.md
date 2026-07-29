@@ -86,7 +86,6 @@
 - Looted all 3 of Ru Merald's gem locations
 - Looted the stone chest in The Stranglewood mine
 - Looted the chest in Lassar Undercity
-- Unlocked the ability to select all characters via NPC Contact
 - Disabled Odovacar's bank cost warning
 - Disabled the crystal acorn trading warning
 - Disabled the crystal item creation warning

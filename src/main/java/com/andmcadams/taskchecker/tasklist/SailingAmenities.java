@@ -64,56 +64,59 @@ public class SailingAmenities extends TaskList
 		addTask("Claimed XP from drinking Daddy's special water's special water", VarbitID.SAILING_CHARTING_DRINK_CRATE_FISHIER_STOUT_WATER); // confirmed
 		// Claimed all 5 mystery boxes from the puzzlers poteen
 		addTask("Claimed all 5 mystery boxes from the puzzlers poteen", VarbitID.SAILING_CHARTING_DRINK_CRATE_PUZZLERS_POTEEN_REWARD);
-		// Anglers
+		// Anglers' retreat
 		addTask("Built anglers' retreat cooking pot", VarbitID.AMENITY_COOKING_POT_ANGLERS);
 		addTask("Built anglers' retreat rowboat", VarbitID.AMENITY_ROWBOAT_ANGLERS);
 		addTask("Built anglers' retreat spinning wheel", VarbitID.AMENITY_SPINNING_WHEEL_ANGLERS);
 
-		// Buccaneers
-		addTask("Built buccaneers anvil", VarbitID.AMENITY_ANVIL_BUCCANEERS);
-		addTask("Built buccaneers bank chest", VarbitID.AMENITY_BANKCHEST_BUCCANEERS);
-		addTask("Built buccaneers furnace", VarbitID.AMENITY_FURNACE_BUCCANEERS);
-		addTask("Built buccaneers rowboat", VarbitID.AMENITY_ROWBOAT_BUCCANEERS);
+		// Buccaneers' haven
+		addTask("Built buccaneers' haven anvil", VarbitID.AMENITY_ANVIL_BUCCANEERS);
+		addTask("Built buccaneers' haven bank chest", VarbitID.AMENITY_BANKCHEST_BUCCANEERS);
+		addTask("Built buccaneers' haven furnace", VarbitID.AMENITY_FURNACE_BUCCANEERS);
+		addTask("Built buccaneers' haven rowboat", VarbitID.AMENITY_ROWBOAT_BUCCANEERS);
 
 		// Charred Island
-		addTask("Built charred Island anvil", VarbitID.AMENITY_ANVIL_CHARRED_ISLAND);
-		addTask("Built charred Island bank chest", VarbitID.AMENITY_BANKCHEST_CHARRED_ISLAND);
+		addTask("Built charred island anvil", VarbitID.AMENITY_ANVIL_CHARRED_ISLAND);
+		addTask("Built charred island bank chest", VarbitID.AMENITY_BANKCHEST_CHARRED_ISLAND);
 
 		// Chinchompa Island
-		addTask("Built chinchompa Island cooking pot", VarbitID.AMENITY_COOKING_POT_CHINCHOMPA);
+		addTask("Built chinchompa island cooking pot", VarbitID.AMENITY_COOKING_POT_CHINCHOMPA);
 
 		// Crown Jewel
-		addTask("Built crown Jewel cooking pot", VarbitID.AMENITY_COOKING_POT_CROWN_JEWEL);
+		addTask("Built crown jewel cooking pot", VarbitID.AMENITY_COOKING_POT_CROWN_JEWEL);
 
 		// Deepfin
-		addTask("Built deepfin bank chest 1", VarbitID.AMENITY_BANKCHEST_DEEPFIN_1);
-		addTask("Built deepfin bank chest 2", VarbitID.AMENITY_BANKCHEST_DEEPFIN_2);
+		addTask("Built deepfin point bank chest 1", VarbitID.AMENITY_BANKCHEST_DEEPFIN_1);
+		addTask("Built deepfin point bank chest 2", VarbitID.AMENITY_BANKCHEST_DEEPFIN_2);
 
 		// Laguna Aurorae
-		addTask("Built laguna Aurorae cooking pot", VarbitID.AMENITY_COOKING_POT_LAGUNA_AURORAE);
-		addTask("Built laguna Aurorae loom", VarbitID.AMENITY_LOOM_LAGUNA_AURORAE);
-		addTask("Built laguna Aurorae water pump", VarbitID.AMENITY_WATER_PUMP_LAGUNA_AURORAE);
+		addTask("Built laguna aurorae cooking pot", VarbitID.AMENITY_COOKING_POT_LAGUNA_AURORAE);
+		addTask("Built laguna aurorae loom", VarbitID.AMENITY_LOOM_LAGUNA_AURORAE);
+		addTask("Built laguna aurorae water pump", VarbitID.AMENITY_WATER_PUMP_LAGUNA_AURORAE);
 
 		// Onyx Crest
-		addTask("Built onyx Crest bank chest", VarbitID.AMENITY_BANKCHEST_ONYX_CREST);
-		addTask("Built onyx Crest furnace", VarbitID.AMENITY_FURNACE_ONYX_CREST);
-		addTask("Built onyx Crest water pump", VarbitID.AMENITY_WATER_PUMP_ONYX_CREST);
+		addTask("Built onyx crest bank chest", VarbitID.AMENITY_BANKCHEST_ONYX_CREST);
+		addTask("Built onyx crest furnace", VarbitID.AMENITY_FURNACE_ONYX_CREST);
+		addTask("Built onyx crest water pump", VarbitID.AMENITY_WATER_PUMP_ONYX_CREST);
 
 		// Soul Tear
-		addTask("Built soul Tear rowboat", VarbitID.AMENITY_ROWBOAT_SOUL_TEAR);
+		addTask("Built soul tear rowboat", VarbitID.AMENITY_ROWBOAT_SOUL_TEAR);
 
 		// Sunbleak
-		addTask("Built sunbleak bank chest", VarbitID.AMENITY_BANKCHEST_SUNBLEAK);
-		addTask("Built sunbleak cooking pot", VarbitID.AMENITY_COOKING_POT_SUNBLEAK);
-		addTask("Built sunbleak water pump", VarbitID.AMENITY_WATER_PUMP_SUNBLEAK);
+		addTask("Built sunbleak island bank chest", VarbitID.AMENITY_BANKCHEST_SUNBLEAK);
+		addTask("Built sunbleak island cooking pot", VarbitID.AMENITY_COOKING_POT_SUNBLEAK);
+		addTask("Built sunbleak island water pump", VarbitID.AMENITY_WATER_PUMP_SUNBLEAK);
 
 		// Vatrachos
-		addTask("Built vatrachos pottery oven", VarbitID.AMENITY_POTTERY_OVEN_VATRACHOS);
-		addTask("Built vatrachos pottery wheel", VarbitID.AMENITY_POTTERY_WHEEL_VATRACHOS);
-		addTask("Built vatrachos rowboat", VarbitID.AMENITY_ROWBOAT_VATRACHOS);
-		addTask("Built vatrachos water pump", VarbitID.AMENITY_WATER_PUMP_VATRACHOS);
+		addTask("Built vatrachos island pottery oven", VarbitID.AMENITY_POTTERY_OVEN_VATRACHOS);
+		addTask("Built vatrachos island pottery wheel", VarbitID.AMENITY_POTTERY_WHEEL_VATRACHOS);
+		addTask("Built vatrachos island rowboat", VarbitID.AMENITY_ROWBOAT_VATRACHOS);
+		addTask("Built vatrachos island water pump", VarbitID.AMENITY_WATER_PUMP_VATRACHOS);
 
 		// Ynysdail
 		addTask("Built ynysdail rowboat", VarbitID.AMENITY_ROWBOAT_YNYSDAIL);
+
+		// Wyrmscraig
+		addTask("Built wyrmcraig bank chest", VarbitID.AMENITY_BANKCHEST_WYRMSCRAIG);
 	}
 }

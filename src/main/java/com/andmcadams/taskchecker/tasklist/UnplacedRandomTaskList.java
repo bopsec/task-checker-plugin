@@ -24,6 +24,7 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
+import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
@@ -166,6 +167,9 @@ public class UnplacedRandomTaskList extends TaskList
 		addTask("Prayed at the altar in Sangvesti after Blood Moon Rises", VarbitID.SANGVESTI_ALTAR_USE_POSTQUEST);
 		// Fail the agility shortcut in Sangvesti once
 		addTask("Failed the rockslide shortcut in Sangvesti", VarbitID.VAMPYRIUM_AGILITY_FLAVOUR_DIALOGUE);
+
+		// completed 50 tasks in a row at mortimer
+		// this will likely be exposed next week :)
 	}
 }
 

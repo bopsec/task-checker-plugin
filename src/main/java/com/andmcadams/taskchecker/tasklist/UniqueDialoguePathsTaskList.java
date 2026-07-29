@@ -321,6 +321,8 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Talked to Safalaan about everything that has happened", VarbitID.MYQ6_SAFALAAN_POSTQUEST_CHAT);
 		// Listened to the Aranei scout's gratitude for saving him
 		addTask("Listened to the Aranei scout's gratitude for saving him", VarbitID.VAMPYRIUM_TRAVERSAL_ARANEI_SAVED_TALKED_AFTER);
+		// 15727 goat pit intro
+		addTask("Listened to Geoff introduce goat hunting", VarbitID.GOAT_PIT_INTRODUCTION);
 	}
 
 }

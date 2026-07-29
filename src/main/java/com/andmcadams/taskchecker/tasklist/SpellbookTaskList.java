@@ -24,6 +24,7 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
+import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
@@ -57,12 +58,38 @@ public class SpellbookTaskList extends TaskList
 		//Unlocked Death's death Leagues V animation option
 		addTask("Unlocked Death's death Leagues V animation option", VarbitID.LEAGUE_5_DEATH_ANIMATION_UNLOCKED);
 		//Unlocked the NPC Contact's League V animation option
-		addGeTask(false, "Unlocked the NPC Contact's League V animation option", VarPlayerID.NPC_CONTACT_UNLOCKS, 3); // confirmed
+		addGeTask(false, "Unlocked the Astral Contact's League V animation option", VarPlayerID.NPC_CONTACT_UNLOCKS, 3); // confirmed
 		// Unlocked the imp thrall model
 		addTask("Unlocked the Thrall's Leagues VI recolour option", VarbitID.LEAGUE_6_THRALL_OVERRIDE_UNLOCKED);
 
-		//Unlocked the ability to select all characters via NPC Contact not transmitted
-		addGeTask(true, "Unlocked the NPC Contact spell's previous contract option", VarbitID.LUNAR_CONTACT_LASTID, 1);
+		//Unlocked the ability to select all characters via NPC Contact
+		Task npcContactAllNpcs = new Task.TaskBuilder()
+			.name("Unlocked the ability to select all characters via Astral Contact")
+			// cooking >= 40 honest jimothy 1
+			.geVar(true, VarbitID.HANDSAND_QUEST, 160) // Bert 2
+			.geVar(false, VarPlayerID.MISC_QUEST, 100) // Advisor Ghrim 3
+			.geVar(false, VarPlayerID.ABYSSAL_MINIQUEST, 4) // Dark mage 4
+			// Lanthus default 5
+			.geVar(true, VarbitID.PORCINE, 40) // Spria 6
+			//.geVar(true, VarbitID.WGS_HERO_PART_1_VIS, 0) // Duradel and Turael -> Kuradal and Aya 7 and 8
+			//.geVar(true, VarbitID.WGS_HERO_PART_1_VIS, 1) // Mazchna or the other fella 9
+			//.geVar(true, VarbitID.MM2_SLAYER_MASTER, 1) // Nieve or Steve? 10
+			// Vannaka default 11
+			// Chaeldar default 12
+			.geVar(true, VarbitID.WILDERNESS_MASTER_WARNING, 1) // Krystilia 13
+			.geVar(true, VarbitID.KONAR_SPOKEN, 1) // Konar 14
+			.geVar(true, VarbitID.MORTIMER_INTRODUCTION, 1) // Mortimer 15
+			// fishing >= 15 murphy 16
+			.geVar(true, VarbitID.DREAM_PROG, 16) // Cyrisus, wgs > 660 he is dead though :( 17
+			.geVar(true, VarbitID.ZEAH_PLAYERHASVISITED, 1) // Smoggy 18
+			.geVar(true, VarbitID.ZEAH_SHAYZIEN_METCRIMEFIGHTER, 1) // Shayzien captain ginea 19
+			.geVar(true, VarbitID.TRAIL_WATSON_SPOKEN, 1) // Watson 20
+			.eqVar(false, VarPlayerID.BARCRAWL, 0) // Barbarian fella 21
+			.geVar(true, VarbitID.CON_CONTRACT_DISCUSSED, 1) // Amy
+			.geVar(true, VarbitID.DREAM_PROG, 28) // random 22
+			.build();
+		this.add(npcContactAllNpcs);
+		addGeTask(true, "Unlocked the Astral Contact spell's previous contract option", VarbitID.LUNAR_CONTACT_LASTID, 1);
 	}
 }
 

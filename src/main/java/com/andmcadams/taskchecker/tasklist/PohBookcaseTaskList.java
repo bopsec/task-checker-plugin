@@ -133,6 +133,8 @@ public class PohBookcaseTaskList extends TaskList
 		this.add(obtainedBothHunterGuildBooks);
 		//Obtained all 16 elven texts from the Prifddinas Grand Library
 		addTask("Obtained all 16 elven texts from the Prifddinas Grand Library", VarbitID.PRIF_BOOKS);
+		// Obtained the Observations book
+		addTask("Obtained Observations from Ardeaglais Cathedral", VarbitID.WYRMSCRAIG_CATHEDRAL_BOOK);
 		//Obtained all 93 miscellaneous texts (2 are obtained by default) this is like 50 diff ones
 		Task obtainedAllBooks = new Task.TaskBuilder() // anything added has been tested
 			.name("Obtained all 95 miscellaneous texts (incomplete!)")

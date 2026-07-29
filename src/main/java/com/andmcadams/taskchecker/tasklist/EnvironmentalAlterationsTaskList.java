@@ -93,8 +93,6 @@ public class EnvironmentalAlterationsTaskList extends TaskList
 
 		addTask("Built the fire pit by the God Wars Dungeon entrance", VarbitID.MY2ARM_FIRE_GWD);
 
-		addTask("Unlocked the shortcut to the south of Sangvesti", VarbitID.VAMPYRIUM_TRAVERSAL_ROCK_MINED);
-
 		addTask("Built the bank chest in Sangvesti", VarbitID.AMENITY_BANKCHEST_SANGVESTI);
 	}
 
