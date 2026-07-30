@@ -98,11 +98,10 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 		// Attached a rope to the Charred Dungeon entrance
 		addTask("Attached a rope to the Charred Dungeon entrance", VarbitID.DRAGON_ISLAND_DUNGEON_ENTRANCE_ROPED); // confirmed
 
-		// 15720 shortcut
-		addTask("Cleared the rubble for the Wyrmscraig cathedral shortcut", VarbitID.WYRMSCRAIG_CLIFF_SHORTCUT);
-
 		addTask("Unlocked the shortcut to the south of Sangvesti", VarbitID.VAMPYRIUM_TRAVERSAL_ROCK_MINED);
 
+		// 15720 shortcut
+		addTask("Cleared the rubble for the Wyrmscraig cathedral shortcut", VarbitID.WYRMSCRAIG_CLIFF_SHORTCUT);
 		// 15767 door to angel lady
 		addTask("Opened the door to the Wyrmscraig cathedral", VarbitID.FFG_CATHEDRAL_OPENED);
 	}
