@@ -171,7 +171,7 @@ public class UnplacedRandomTaskList extends TaskList
 		// completed 50 tasks in a row at mortimer
 		// this will likely be exposed next week :)
 
-		addTask("Helped a goat retire on the mainland", VarbitID.GOAT_RETIREMENT_COMPLETION_TRACKER);
+		addTask("Helped a goat retire on the mainland", VarbitID.WYRMSCRAIG_GOAT_RETIREMENT_COMPLETION_TRACKER);
 	}
 }
 
