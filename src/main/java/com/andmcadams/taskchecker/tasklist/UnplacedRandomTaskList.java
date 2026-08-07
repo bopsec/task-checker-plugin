@@ -24,7 +24,6 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
-import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
@@ -172,6 +171,8 @@ public class UnplacedRandomTaskList extends TaskList
 		// this will likely be exposed next week :)
 
 		addTask("Helped a goat retire on the mainland", VarbitID.WYRMSCRAIG_GOAT_RETIREMENT_COMPLETION_TRACKER);
+
+		addGeTask(true, "Logged at least 2 golems crafted", VarbitID.GOLEM_CRAFTING_COUNT, 2);
 	}
 }
 

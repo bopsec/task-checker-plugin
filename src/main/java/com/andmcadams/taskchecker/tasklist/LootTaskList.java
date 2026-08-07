@@ -53,7 +53,7 @@ public class LootTaskList extends TaskList
 			.build();
 		this.add(piscatorisTools);
 		//
-		// Looted all 3 of Ru Merald's gem locations not transmitted i think, just tested one gem
+		// Looted all 3 of Ru Merald's gem locations not transmitted
 
 		//Looted all 4 pallets and the chest in Movario's base confirmed
 		Task lootedMovariosPalletsAndChest = new Task.TaskBuilder()
