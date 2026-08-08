@@ -12,7 +12,6 @@
 - Disabled the Tithe Farm instanced area entrance warning
 - Disabled the Theatre of Blood's escape crystal warning
 - Disabled the Tombs of Amascut entry warning
-- Disabled the Hallowed sack's inventory space warning
 - 1000 LMS wins
 - Bounty hunter hat tier 6
 - Paid Prospector Percy for access to the restricted mine?

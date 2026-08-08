@@ -145,12 +145,13 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled the pool of Nightmares' fight initiation warning", VarbitID.NIGHTMARE_CHALLENGE_ENTRY_CHECK); // TODO:Unchecked
 		//Disabled the Nightmare's Energy Barrier exit warning not transmitted
 		//Disabled the Nightmare staff's orb addition/removal warning
-		addTask("Disabled the Nightmare staff's orb addition/removal warning", VarbitID.NIGHTMARE_STAFF_CHECK); // TODO:Unchecked
+		addTask("Disabled the Nightmare staff's orb addition/removal warning", VarbitID.NIGHTMARE_STAFF_CHECK); //
 		//Disabled the mounted mythical cape's Building Mode warning not transmitted
 		//Disabled the Clan Coffer's coin deposit warning not transmitted
 		//Disabled the Hallowed Sepulchre's lobby stairs warning
 		addTask("Disabled the Hallowed Sepulchre's lobby stairs warning", VarbitID.HALLOWED_ENTRY_CHECK); // confirmed
-		//Disabled the Hallowed sack's inventory space warning TODO: Unfound/untested
+		//Disabled the Hallowed sack's inventory space warning
+		addTask("Disabled the Hallowed sack's inventory space warning", VarbitID.HALLOWED_SACK_REMINDER); // confirmed
 		//Disabled the Sourhog cave strange hole entrance warning
 		addTask("Disabled the Sourhog cave strange hole entrance warning", VarbitID.PORCINE_STOP_WARNING); // confirmed
 		//Disabled the Mahogany Homes expert contract warning not transmitted
