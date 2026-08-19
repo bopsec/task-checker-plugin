@@ -25,6 +25,7 @@
 package com.andmcadams.taskchecker;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
@@ -78,5 +79,12 @@ public class TaskPanel extends JPanel
 		}
 		nameLabel.setForeground(c);
 		return isComplete;
+	}
+
+	@Override
+	public Dimension getMaximumSize()
+	{
+		Dimension preferred = getPreferredSize();
+		return new Dimension(Integer.MAX_VALUE, preferred.height);
 	}
 }

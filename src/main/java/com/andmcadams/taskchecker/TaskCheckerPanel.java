@@ -28,6 +28,7 @@ import com.andmcadams.taskchecker.tasklist.TaskList;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.util.ArrayList;
 import javax.swing.BoxLayout;
@@ -45,6 +46,16 @@ import net.runelite.client.ui.PluginPanel;
 @Slf4j
 public class TaskCheckerPanel extends PluginPanel
 {
+	private static class TaskContainerPanel extends JPanel
+	{
+		@Override
+		public Dimension getMaximumSize()
+		{
+			Dimension preferred = getPreferredSize();
+			return new Dimension(Integer.MAX_VALUE, preferred.height);
+		}
+	}
+
 	private static class CategorySection
 	{
 		private final TaskListHeaderPanel headerPanel;
@@ -117,7 +128,7 @@ public class TaskCheckerPanel extends PluginPanel
 
 		for (TaskList taskList : taskLists)
 		{
-			JPanel categoryTaskContainer = new JPanel();
+			JPanel categoryTaskContainer = new TaskContainerPanel();
 			categoryTaskContainer.setLayout(new BoxLayout(categoryTaskContainer, BoxLayout.Y_AXIS));
 			categoryTaskContainer.setAlignmentX(Component.LEFT_ALIGNMENT);
 			categoryTaskContainer.setBackground(ColorScheme.DARK_GRAY_COLOR);
@@ -147,10 +158,7 @@ public class TaskCheckerPanel extends PluginPanel
 	public TaskListHeaderPanel addTaskListHeader(JPanel taskListPanel, String name, JPanel categoryTaskContainer)
 	{
 		TaskListHeaderPanel taskListHeaderPanel = new TaskListHeaderPanel(name);
-		taskListHeaderPanel.setToggleAction(() ->
-		{
-			applyVisibilityFilters();
-		});
+		taskListHeaderPanel.setToggleAction(this::applyVisibilityFilters);
 		taskListPanel.add(taskListHeaderPanel);
 		return taskListHeaderPanel;
 	}
