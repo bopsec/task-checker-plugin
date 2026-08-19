@@ -167,11 +167,6 @@ public class UnplacedRandomTaskList extends TaskList
 		// Fail the agility shortcut in Sangvesti once
 		addTask("Failed the rockslide shortcut in Sangvesti", VarbitID.VAMPYRIUM_AGILITY_FLAVOUR_DIALOGUE);
 
-		// completed 50 tasks in a row at mortimer
-		// this will likely be exposed next week :)
-
-		addTask("Helped a goat retire on the mainland", VarbitID.WYRMSCRAIG_GOAT_RETIREMENT_COMPLETION_TRACKER);
-
 		addGeTask(true, "Logged at least 2 golems crafted", VarbitID.GOLEM_CRAFTING_COUNT, 2);
 	}
 }

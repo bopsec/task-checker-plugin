@@ -130,6 +130,7 @@
 - Unlocked the ability to purchase colossal blades from Perdu
 - Unlocked the Expert Dragon Archer title
 - Disabled Theatre of Blood book drops
+- Pearl refund for fish sack
 
 - Logged at least 2 laps of the Prifddinas Agility Course
 - Logged at least 2 laps of the Wyrm Basic Agility Course

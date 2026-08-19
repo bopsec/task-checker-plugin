@@ -173,6 +173,9 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		addEqTask(true, "Used all 6 experience tomes from Blood Moon Rises", VarbitID.MYQ6_XP_REWARD, 6);
 		// Claimed the Sunlight Spear after Blood Moon Rises
 		addEqTask(true, "Claimed the Sunlight Spear after Blood Moon Rises", VarbitID.MYQ6_OWED_SPEAR, 0);
+		//
+		addTask("Helped a goat retire on the mainland", VarbitID.WYRMSCRAIG_GOAT_RETIREMENT_COMPLETION_TRACKER);
+
 	}
 }
 

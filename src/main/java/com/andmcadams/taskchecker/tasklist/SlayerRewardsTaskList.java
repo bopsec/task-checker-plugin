@@ -84,6 +84,9 @@ public class SlayerRewardsTaskList extends TaskList
 
 		addTask("Unlocked Shayzien(5) effect on slayer helmet", VarbitID.KOUREND_SLAYER_HELM_BONUS);
 
+		// completed 50 tasks in a row at mortimer
+		addGeTask(false, "Unlocked the third task slot at Mortimer", VarPlayerID.SLAYER_MORTIMER_TASKS_COMPLETED, 50);
+
 	}
 }
 

@@ -84,6 +84,29 @@ public class PetTransmogsTaskList extends TaskList
 			.build();
 
 		this.add(damagedGuardian);
+
+		addTask("Unlocked the Rift Guardian's Greatish guardian transmog", VarbitID.SKILLPET_RUNECRAFTING_GOTR_UNLOCKED);
+
+		Task riftGuardian = new Task.TaskBuilder()
+			.name("Unlocked all 15 Rift Guardian rune transmogs")
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_FIRE_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_AIR_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_MIND_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_WATER_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_EARTH_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_BODY_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_COSMIC_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_CHAOS_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_NATURE_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_LAW_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_DEATH_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_SOUL_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_ASTRAL_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_BLOOD_UNLOCKED)
+			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_WRATH_UNLOCKED)
+			.build();
+
+		this.add(riftGuardian);
 	}
 
 }
