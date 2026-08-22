@@ -135,14 +135,12 @@ public class UnplacedRandomTaskList extends TaskList
 		//Logged at least 2 counts of opening all 8 Grand Gold Chests not transmitted
 		//
 		//Claimed a free bucket from Fritz the Glassblower not transmitted
-		//Claimed the pet reclaim token discount at Probita ? this is dead isnt it
 		//Claimed all free chants for lost crystal equipment from Ilfeen TODO: Unfound
 
 		//Claimed any deposit back from the Shilo Village furnace coffer not transmitted
 		//Claimed any additional sunfire armour from the STASH unit) not transmitted
 		//Completed all miniquests
 		addEqTask(true, "Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
-		// New, two-point-nine
 		// Unlocked the maximum bow string spool capacity
 		addEqTask(true, "Unlocked the maximum bow string spool capacity", VarbitID.BOWSTRING_SPOOL_SIZE, 5); // Idk what the max size is
 		// Unlocked all 6 greenman mask variants
@@ -157,15 +155,6 @@ public class UnplacedRandomTaskList extends TaskList
 		// Unlocked the ability to reclaim Saradominist paint -- not transmitted
 		// Unlocked the ability to reclaim Zamorakian paint -- not transmitted
 		// Unlocked the ability to reclaim Armadylean paint -- not transmitted
-
-		// Unlocked the ability to toggle red skin
-		addTask("Unlocked the ability to toggle red skin", VarbitID.LEAGUE_6_RED_SKIN_UNLOCKED);
-		// Unlocked the ability to toggle the demon butler cosmetic override
-		addTask("Unlocked the ability to toggle the demon butler cosmetic override", VarbitID.LEAGUE_6_BUTLER_UNLOCKED);
-		// Pray at the altar in Sangvesti after Blood Moon Rises
-		addTask("Prayed at the altar in Sangvesti after Blood Moon Rises", VarbitID.SANGVESTI_ALTAR_USE_POSTQUEST);
-		// Fail the agility shortcut in Sangvesti once
-		addTask("Failed the rockslide shortcut in Sangvesti", VarbitID.VAMPYRIUM_AGILITY_FLAVOUR_DIALOGUE);
 
 		addGeTask(true, "Logged at least 2 golems crafted", VarbitID.GOLEM_CRAFTING_COUNT, 2);
 	}

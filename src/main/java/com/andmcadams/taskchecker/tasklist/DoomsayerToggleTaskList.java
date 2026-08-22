@@ -120,7 +120,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Thermonuclear Smoke Devil area warning not transmitted
 		//Disabled the Kraken area warning not transmitted
 		//Disabled the Phantom Muspah crevice warning
-		addTask("Disabled the Phantom Muspah crevice warning", VarbitID.MUSPAH_WARNING); //TODO: Untested probs correct
+		addTask("Disabled the Phantom Muspah crevice warning", VarbitID.MUSPAH_WARNING);
 		//Disabled the Tempoross area's dropped items warning not transmitted
 		//Disabled the Tithe Farm instanced area entrance warning TODO: Unfound/untested
 		//Disabled the Character Summary's Time Played warning
@@ -128,7 +128,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the World Switcher's switch warning
 		addTask("Disabled the World Switcher's switch warning", VarbitID.WORLDSWITCHER_DISABLE_CONFIRMATION);
 		//Disabled the minigame group finder warning
-		addTask("Disabled the minigame group finder warning", VarbitID.WORLDSWITCHER_MINIGAME_PROMPT); // TODO:Unchecked probs correct
+		addTask("Disabled the minigame group finder warning", VarbitID.WORLDSWITCHER_MINIGAME_PROMPT);
 		//Disabled the Chambers of Xeric's shared storage warning
 		addTask("Disabled the Chambers of Xeric's shared storage warning", VarbitID.RAIDS_SHAREDSTORAGE_WARNING_DISMISSED); // surely?
 		//Disabled the Theatre of Blood's escape crystal warning TODO: Unfound/untested
@@ -142,7 +142,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		//Disabled the Nightmare's fight initiation warning
 		addTask("Disabled the Nightmare's fight initiation warning", VarbitID.NIGHTMARE_ENTRY_CHECK); // confirmed
 		//Disabled the pool of Nightmares' fight initiation warning
-		addTask("Disabled the pool of Nightmares' fight initiation warning", VarbitID.NIGHTMARE_CHALLENGE_ENTRY_CHECK); // TODO:Unchecked
+		addTask("Disabled the pool of Nightmares' fight initiation warning", VarbitID.NIGHTMARE_CHALLENGE_ENTRY_CHECK);
 		//Disabled the Nightmare's Energy Barrier exit warning not transmitted
 		//Disabled the Nightmare staff's orb addition/removal warning
 		addTask("Disabled the Nightmare staff's orb addition/removal warning", VarbitID.NIGHTMARE_STAFF_CHECK); //
