@@ -80,6 +80,8 @@ public class RightClickTaskList extends TaskList
 		addTask("Listened to the Aranei bucket dealer explain his deal", VarbitID.BUCKET_ARANEI_MET);
 		// Listened to the Aranei scout explain death mechanics at Maggot King
 		addTask("Listened to the Aranei scout explain death mechanics at Maggot King", VarbitID.VAMPYRIUM_GRAVESTONE_ARANEI_MET);
+		// Unlocked the lecterns' Create-last option
+		addGeTask(false, "Unlocked the lecterns' Create-last option", VarPlayerID.TELETAB_LAST_CRAFTED, 1);
 	}
 }
 
