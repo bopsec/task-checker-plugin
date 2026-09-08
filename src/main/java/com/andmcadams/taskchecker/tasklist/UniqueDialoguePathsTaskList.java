@@ -244,7 +244,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		this.add(unlockedAllMorrisaneWorkersThreateningOption);
 
 		//Unlocked Farmer Gricoller's visitors option
-		addTask("Unlocked Farmer Gricoller's visitors option", VarbitID.DARKMEYER_VYRE_TITHE_DIALOGUE);
+		// addTask("Unlocked Farmer Gricoller's visitors option", VarbitID.DARKMEYER_VYRE_TITHE_DIALOGUE); Discontinued post BMR completion
 		// Unlocked Gabooty's shop open option
 		addTask("Unlocked Gabooty's shop open option", VarbitID.GABOOTYSHOPCHAT); // confirmed
 		// Listened to Shantay introduce the Shantay Pass not transmitted
