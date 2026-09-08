@@ -24,6 +24,7 @@
  */
 package com.andmcadams.taskchecker.tasklist;
 
+import com.andmcadams.taskchecker.Task;
 import net.runelite.api.gameval.VarPlayerID;
 import net.runelite.api.gameval.VarbitID;
 
@@ -157,6 +158,32 @@ public class UnplacedRandomTaskList extends TaskList
 		// Unlocked the ability to reclaim Armadylean paint -- not transmitted
 
 		addGeTask(true, "Logged at least 2 golems crafted", VarbitID.GOLEM_CRAFTING_COUNT, 2);
+
+		// 15833 border collie
+		// 15834 corgi
+		// 15835 greyhound
+		// 15836 chihuahua
+		// 15837 samoyed
+		// 15838 bernese mountain dog
+		// 15839 shiba inu
+		// 15840 husky
+		// 15841 yorkie
+		Task dogs = new Task.TaskBuilder()
+			.name("Unlocked all dog breeds variants")
+			.eqVar(true, VarbitID.DOG_UNLOCK_1, 1)
+			.eqVar(true, VarbitID.DOG_UNLOCK_2, 1)
+			.eqVar(true, VarbitID.DOG_UNLOCK_3, 1)
+			.eqVar(true, VarbitID.DOG_UNLOCK_4, 1)
+			.eqVar(true, VarbitID.DOG_UNLOCK_5, 1)
+			.eqVar(true, VarbitID.DOG_UNLOCK_6, 1)
+			.eqVar(true, VarbitID.DOG_UNLOCK_7, 1)
+			.eqVar(true, VarbitID.DOG_UNLOCK_8, 1)
+			.eqVar(true, VarbitID.DOG_UNLOCK_9, 1)
+			.build();
+		this.add(dogs);
+
+		addTask("Listened to the mysterous stranger's dog trading introduction", VarbitID.DOGQ_STRANGER_INTRO);
+
 	}
 }
 
