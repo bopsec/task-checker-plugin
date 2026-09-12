@@ -159,6 +159,8 @@ public class UnplacedRandomTaskList extends TaskList
 
 		addGeTask(true, "Logged at least 2 golems crafted", VarbitID.GOLEM_CRAFTING_COUNT, 2);
 
+		// Consume the ghommals lucky penny NOT TRANSMITTED
+
 		// 15833 border collie
 		// 15834 corgi
 		// 15835 greyhound

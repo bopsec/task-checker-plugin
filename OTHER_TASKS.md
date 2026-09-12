@@ -131,6 +131,7 @@
 - Unlocked the Expert Dragon Archer title
 - Disabled Theatre of Blood book drops
 - Pearl refund for fish sack
+- Consume ghommal's lucky penny
 
 - Logged at least 2 laps of the Prifddinas Agility Course
 - Logged at least 2 laps of the Wyrm Basic Agility Course
