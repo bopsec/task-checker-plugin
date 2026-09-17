@@ -331,8 +331,10 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Unlocked the ability to toggle the demon butler cosmetic override", VarbitID.LEAGUE_6_BUTLER_UNLOCKED);
 		// 15727 goat pit intro
 		addTask("Listened to Geoff introduce goat hunting", VarbitID.GOAT_PIT_INTRODUCTION);
-
+		//
 		addTask("Unlocked the ability to feed the cormorant whole fish", VarbitID.AERIAL_FISHING_WHOLE_FISH_TOGGLE_PAID);
+		//
+		addTask("Listened to the mysterous stranger's dog trading introduction", VarbitID.DOGQ_STRANGER_INTRO);
 	}
 
 }

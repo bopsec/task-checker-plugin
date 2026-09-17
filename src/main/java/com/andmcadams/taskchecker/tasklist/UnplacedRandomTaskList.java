@@ -183,9 +183,6 @@ public class UnplacedRandomTaskList extends TaskList
 			.eqVar(true, VarbitID.DOG_UNLOCK_9, 1)
 			.build();
 		this.add(dogs);
-
-		addTask("Listened to the mysterous stranger's dog trading introduction", VarbitID.DOGQ_STRANGER_INTRO);
-
 	}
 }
 
