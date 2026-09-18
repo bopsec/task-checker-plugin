@@ -27,6 +27,7 @@ package com.andmcadams.taskchecker;
 import com.andmcadams.taskchecker.tasklist.CapesTaskList;
 import com.andmcadams.taskchecker.tasklist.ChampionsChallengeTaskList;
 import com.andmcadams.taskchecker.tasklist.CombatAchievementsTaskList;
+import com.andmcadams.taskchecker.tasklist.CollectionLogTaskList;
 import com.andmcadams.taskchecker.tasklist.DoomsayerToggleTaskList;
 import com.andmcadams.taskchecker.tasklist.EntrancesAndObstaclesTaskList;
 import com.andmcadams.taskchecker.tasklist.EnvironmentalAlterationsTaskList;
@@ -89,6 +90,7 @@ public class CompleteTaskList
 		TaskList spellBookStuff = new SpellbookTaskList();
 		TaskList hallowedSepulchre = new HallowedSepulchreTaskList();
 		TaskList combatAchievements = new CombatAchievementsTaskList();
+		TaskList collectionLogs = new CollectionLogTaskList();
 		TaskList petTransmogs = new PetTransmogsTaskList();
 		TaskList sailingAmenities = new SailingAmenities();
 		TaskList skillingPerks = new SkillingPerksTaskList();
@@ -122,6 +124,7 @@ public class CompleteTaskList
 		taskLists.add(capes);
 		taskLists.add(championsChallenge);
 		taskLists.add(combatAchievements);
+		taskLists.add(collectionLogs);
 		taskLists.add(doomsayerWarnings);
 		taskLists.add(entrancesAndObstacles);
 		taskLists.add(firePits);

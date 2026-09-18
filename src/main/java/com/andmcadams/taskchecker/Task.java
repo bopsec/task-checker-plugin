@@ -26,6 +26,7 @@ package com.andmcadams.taskchecker;
 
 import com.andmcadams.taskchecker.var.Var;
 import java.util.ArrayList;
+import java.util.function.IntUnaryOperator;
 import lombok.Getter;
 import net.runelite.api.Client;
 
@@ -99,8 +100,17 @@ public class Task
 		}
 
 		public TaskBuilder eqVarVar(boolean isVarbit, int varIndex, int targetIndex)
-		{
+		{ // Just for quest cape for now
 			Var v = new Var(isVarbit, varIndex, true, targetIndex, Var::isEqualTargetValue);
+			varsToCheck.add(v);
+			return this;
+		}
+
+		public TaskBuilder geVarVar(boolean isVarbit, int varIndex, int targetIndex,
+			IntUnaryOperator targetValueFunction)
+		{ // Just for gilded staff for now
+			Var v = new Var(isVarbit, varIndex, false, targetIndex,
+				Var::isAtLeastTargetValue, targetValueFunction);
 			varsToCheck.add(v);
 			return this;
 		}

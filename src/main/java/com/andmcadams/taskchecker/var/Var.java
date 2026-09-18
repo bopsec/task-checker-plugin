@@ -25,6 +25,7 @@
 package com.andmcadams.taskchecker.var;
 
 import java.util.function.BiFunction;
+import java.util.function.IntUnaryOperator;
 import lombok.Getter;
 import net.runelite.api.Client;
 
@@ -39,6 +40,7 @@ public class Var
 	private boolean hasTargetIndex;
 	private boolean isTargetVarbit;
 	private int targetIndex;
+	private IntUnaryOperator targetValueFunction = IntUnaryOperator.identity();
 
 	private BiFunction<Integer, Integer, Boolean> targetFunction;
 
@@ -58,12 +60,19 @@ public class Var
 
 	public Var(boolean isVarbit, int varIndex, boolean isTargetVarbit, int targetIndex, BiFunction<Integer, Integer, Boolean> targetFunction)
 	{
+		this(isVarbit, varIndex, isTargetVarbit, targetIndex, targetFunction, IntUnaryOperator.identity());
+	}
+
+	public Var(boolean isVarbit, int varIndex, boolean isTargetVarbit, int targetIndex,
+		BiFunction<Integer, Integer, Boolean> targetFunction, IntUnaryOperator targetValueFunction)
+	{
 		this.isVarbit = isVarbit;
 		this.varIndex = varIndex;
 		this.isTargetVarbit = isTargetVarbit;
 		this.targetIndex = targetIndex;
 		this.hasTargetIndex = true;
 		this.targetFunction = targetFunction;
+		this.targetValueFunction = targetValueFunction;
 	}
 
 	public Var(boolean isVarbit, int[] varIndexes, int targetSum, BiFunction<Integer, Integer, Boolean> targetFunction)
@@ -97,9 +106,10 @@ public class Var
 
 		if (hasTargetIndex)
 		{
-			targetValue = isTargetVarbit
+			int rawTargetValue = isTargetVarbit
 				? client.getVarbitValue(targetIndex)
 				: client.getVarpValue(targetIndex);
+			targetValue = targetValueFunction.applyAsInt(rawTargetValue);
 		}
 
 		return currentValue;
