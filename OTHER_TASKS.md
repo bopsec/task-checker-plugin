@@ -3,7 +3,6 @@
 ## Untested (ish)
 
 - All event items
-- Logged at least 1 count of opening spoils of war
 - Unlocked the ability to use Xeric's talisman's fifth teleport
 - Disabled Araxxor's destroy loot warning
 - Disabled the Gauntlet's crystal teleporter entrance warning
@@ -12,8 +11,6 @@
 - Disabled the Tithe Farm instanced area entrance warning
 - Disabled the Theatre of Blood's escape crystal warning
 - Disabled the Tombs of Amascut entry warning
-- 1000 LMS wins
-- Bounty hunter hat tier 6
 - Paid Prospector Percy for access to the restricted mine?
 - Paid Prospector Percy for the restricted hopper?
 - Claimed Castle Wars tickets from Lanthus
@@ -132,6 +129,10 @@
 - Disabled Theatre of Blood book drops
 - Pearl refund for fish sack
 - Consume ghommal's lucky penny
+- 1000 LMS wins
+- Bounty hunter hat tier 6
+- Logged at least 1 count of opening spoils of war
+
 
 - Logged at least 2 laps of the Prifddinas Agility Course
 - Logged at least 2 laps of the Wyrm Basic Agility Course
