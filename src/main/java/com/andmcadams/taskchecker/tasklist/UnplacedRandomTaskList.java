@@ -183,6 +183,22 @@ public class UnplacedRandomTaskList extends TaskList
 			.eqVar(true, VarbitID.DOG_UNLOCK_9, 1)
 			.build();
 		this.add(dogs);
+
+		// Claimed the rewards from Pete Kayer's Prayer tutorial
+		addTask("Claimed the rewards from Pete Kayer's Prayer tutorial", VarbitID.PVPTUT_PRAYER_REWARDS_CLAIMED);
+		// Claimed the rewards from Pete Kayer's Freezing tutorial
+		addTask("Claimed the rewards from Pete Kayer's Freezing tutorial", VarbitID.PVPTUT_FREEZE_REWARDS_CLAIMED);
+		// Claimed the rewards from Pete Kayer's Special attack tutorial
+		addTask("Claimed the rewards from Pete Kayer's Special attack tutorial", VarbitID.PVPTUT_SPECIAL_ATTACK_REWARDS_CLAIMED);
+		// Claimed the rewards from Pete Kayer's Gear switching tutorial
+		addTask("Claimed the rewards from Pete Kayer's Gear switching tutorial", VarbitID.PVPTUT_GEAR_SWITCH_REWARDS_CLAIMED);
+		// Claimed the rewards from Pete Kayer's Combo eating tutorial
+		addTask("Claimed the rewards from Pete Kayer's Combo eating tutorial", VarbitID.PVPTUT_COMBO_EATING_REWARDS_CLAIMED);
+		// Claimed all 25 Pete's Vouchers from Pete Kayer's challenges
+		addGeTask(true, "Claimed all 25 Pete's Vouchers from Pete Kayer's challenges", VarbitID.PVPTUT_PETE_VOUCHERS_CLAIMED, 25);
+		// Unlocked the ability to claim the Ancient fabric
+		addTask("Unlocked the ability to claim the Ancient fabric", VarbitID.PVPTUT_BOSS_EXPERT_COMPLETE);
+
 	}
 }
 
