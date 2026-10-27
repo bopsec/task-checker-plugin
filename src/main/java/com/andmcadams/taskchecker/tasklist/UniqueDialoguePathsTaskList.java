@@ -335,6 +335,10 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Unlocked the ability to feed the cormorant whole fish", VarbitID.AERIAL_FISHING_WHOLE_FISH_TOGGLE_PAID);
 		//
 		addTask("Listened to the mysterous stranger's dog trading introduction", VarbitID.DOGQ_STRANGER_INTRO);
+		// Talked to Juna after defeating Ocellus
+		addTask("Talked to Juna after defeating Ocellus", VarbitID.TFA_JUNA_DIALOGUE);
+		// Talked to the Wizard apprentice
+		addTask("Talked to the Wizard apprentice", VarbitID.TFA_WIZARD_APPRENTICE_MET);
 	}
 
 }

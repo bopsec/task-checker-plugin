@@ -48,6 +48,8 @@ public class ForgottenPrayerTaskList extends TaskList
 		addTask("Unlocked Deadeye", VarbitID.PRAYER_DEADEYE_UNLOCKED);
 
 		addTask("Unlocked Mystic Vigour", VarbitID.PRAYER_MYSTIC_VIGOUR_UNLOCKED);
+		// Unlocked Zeal
+		addTask("Unlocked Zeal", VarbitID.PRAYER_ZEAL_UNLOCKED);
 
 	}
 }

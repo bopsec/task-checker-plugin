@@ -202,25 +202,7 @@ public class UnplacedRandomTaskList extends TaskList
 
 		// all FRAC tasks
 		// Disabled entry warning :sus: this was not found, perhaps in the "frac miniquest" varp?
-		// Consumed the fragment of whispering wind
-		addTask("Consumed the fragment of whispering wind", VarbitID.TFA_MOTE_AIR_UNLOCKED);
-		// Consumed the fragment of deep water
-		addTask("Consumed the fragment of deep water", VarbitID.TFA_MOTE_WATER_UNLOCKED);
-		// Consumed the fragment of living earth
-		addTask("Consumed the fragment of living earth", VarbitID.TFA_MOTE_EARTH_UNLOCKED);
-		// Consumed the fragment of burning fire
-		addTask("Consumed the fragment of burning fire", VarbitID.TFA_MOTE_FIRE_UNLOCKED);
-		// Unlocked Zeal
-		addTask("Unlocked Zeal", VarbitID.PRAYER_ZEAL_UNLOCKED);
-		// Unlocked the door to living records
-		addTask("Unlocked the door to the living records", VarbitID.TFA_RECORDS_ROOM_UNLOCKED);
-		// Unlocked the ability to change the living record to tier 5
-		addGeTask(false, "Unlocked the ability to change the living record to tier 5", VarPlayerID.TOTAL_COMPLETED_THEFRACTUREDARCHIVE, 2000);
-		// Talked to Juna after defeating Ocellus
-		addTask("Talked to Juna after defeating Ocellus", VarbitID.TFA_JUNA_DIALOGUE);
-		// Talked to the Wizard apprentice
-		addTask("Talked to the Wizard apprentice", VarbitID.TFA_WIZARD_APPRENTICE_MET);
-		// Talked to record keeper is this maybe nothing not transmitted
+		// Talked to record keeper not transmitted
 	}
 }
 

@@ -104,6 +104,8 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 		addTask("Cleared the rubble for the Wyrmscraig cathedral shortcut", VarbitID.WYRMSCRAIG_CLIFF_SHORTCUT);
 		// 15767 door to angel lady
 		addTask("Opened the door to the Wyrmscraig cathedral", VarbitID.FFG_CATHEDRAL_OPENED);
+		// Unlocked the door to living records
+		addTask("Unlocked the door to the living records", VarbitID.TFA_RECORDS_ROOM_UNLOCKED);
 	}
 }
 

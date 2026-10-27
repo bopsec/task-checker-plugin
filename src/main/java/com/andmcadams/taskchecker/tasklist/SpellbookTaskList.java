@@ -90,6 +90,15 @@ public class SpellbookTaskList extends TaskList
 			.build();
 		this.add(npcContactAllNpcs);
 		addGeTask(true, "Unlocked the Astral Contact spell's previous contract option", VarbitID.LUNAR_CONTACT_LASTID, 1);
+
+		// Consumed the fragment of whispering wind
+		addTask("Consumed the fragment of whispering wind", VarbitID.TFA_MOTE_AIR_UNLOCKED);
+		// Consumed the fragment of deep water
+		addTask("Consumed the fragment of deep water", VarbitID.TFA_MOTE_WATER_UNLOCKED);
+		// Consumed the fragment of living earth
+		addTask("Consumed the fragment of living earth", VarbitID.TFA_MOTE_EARTH_UNLOCKED);
+		// Consumed the fragment of burning fire
+		addTask("Consumed the fragment of burning fire", VarbitID.TFA_MOTE_FIRE_UNLOCKED);
 	}
 }
 

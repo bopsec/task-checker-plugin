@@ -124,5 +124,8 @@ public class CapesTaskList extends TaskList
 			.geSumVars(false, 2000, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT, VarPlayerID.TOTAL_COMPLETED_TOMBSOFAMASCUT_EXPERT)
 			.build();
 		this.add(toaCape5);
+
+		// Unlocked the ability to change the living record to tier 5
+		addGeTask(false, "Unlocked the ability to change the living record to tier 5", VarPlayerID.TOTAL_COMPLETED_THEFRACTUREDARCHIVE, 2000);
 	}
 }
