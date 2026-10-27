@@ -141,7 +141,7 @@ public class UnplacedRandomTaskList extends TaskList
 		//Claimed any deposit back from the Shilo Village furnace coffer not transmitted
 		//Claimed any additional sunfire armour from the STASH unit) not transmitted
 		//Completed all miniquests
-		addEqTask(true, "Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
+		addEqTask(true, "Completed all 20 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 20);
 		// Unlocked the maximum bow string spool capacity
 		addEqTask(true, "Unlocked the maximum bow string spool capacity", VarbitID.BOWSTRING_SPOOL_SIZE, 5); // Idk what the max size is
 		// Unlocked all 6 greenman mask variants
