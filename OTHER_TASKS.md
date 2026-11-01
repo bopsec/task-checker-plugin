@@ -52,6 +52,7 @@
 - Unlocked all fishing trophy options
 - Unlocked all 5 additional ornate combat dummy options
 - Claimed all free chants for lost crystal equipment from Ilfeen
+- Disabled the fractured archive entry warning
 
 - Logged at least 1 gp of destroyed loot keys via the Loot Chest
 - Logged at least 1 gp of redeemed loot keys via the Loot Chest
@@ -132,6 +133,7 @@
 - 1000 LMS wins
 - Bounty hunter hat tier 6
 - Logged at least 1 count of opening spoils of war
+- Talked to the Record Keeper in frac lobby
 
 
 - Logged at least 2 laps of the Prifddinas Agility Course

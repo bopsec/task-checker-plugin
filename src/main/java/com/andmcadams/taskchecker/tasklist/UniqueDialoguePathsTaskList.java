@@ -324,7 +324,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Pray at the altar in Sangvesti after Blood Moon Rises
 		addTask("Prayed at the altar in Sangvesti after Blood Moon Rises", VarbitID.SANGVESTI_ALTAR_USE_POSTQUEST);
 		// Fail the agility shortcut in Sangvesti once
-		addTask("Failed the rockslide shortcut in Sangvesti", VarbitID.VAMPYRIUM_AGILITY_FLAVOUR_DIALOGUE);
+		//addTask("Failed the rockslide shortcut in Sangvesti", VarbitID.VAMPYRIUM_AGILITY_FLAVOUR_DIALOGUE); This task seems to have been discontinued, will re-add if confirmed to still work
 		// Unlocked the ability to toggle red skin
 		addTask("Unlocked the ability to toggle red skin", VarbitID.LEAGUE_6_RED_SKIN_UNLOCKED);
 		// Unlocked the ability to toggle the demon butler cosmetic override
