@@ -117,8 +117,8 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		//Listened to Mage of Zamorak's incantation description
 		addTask("Listened to Mage of Zamorak's incantation description", VarbitID.TOTE_ZMI_POSTQUEST_CHAT); // confirmed
 
-		//Listened to a Street urchin's admiration for gladiators
-		addTask("Listened to a Street urchin's admiration for gladiators", VarbitID.VARLAMORE_THIEVING_HOUSE_URCHIN_GLORY_MENTIONED); // confirmed
+		//Listened to a Street urchin's admiration for gladiators TODO: This will likely get fixed eventually, it is currently not completing for a small subset of people if they have already talked to the urchins prior to getting a high enough rank
+		// addTask("Listened to a Street urchin's admiration for gladiators", VarbitID.VARLAMORE_THIEVING_HOUSE_URCHIN_GLORY_MENTIONED); // confirmed
 
 		//Listened to the Windbreaker worker's Darkfrost introduction
 		addTask("Listened to the Windbreaker worker's Darkfrost introduction", VarbitID.HUEY_MET_DWARF_WORKER); // confirmed
