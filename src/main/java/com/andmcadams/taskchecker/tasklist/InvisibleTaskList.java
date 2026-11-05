@@ -103,5 +103,12 @@ public class InvisibleTaskList extends TaskList
 		addGeTask(true, "Opened ghost thrall model options", VarbitID.RESURRECTION_COSMETIC_TOGGLES_GHOST, 1);
 		addGeTask(true, "Opened skeletal thrall model options", VarbitID.RESURRECTION_COSMETIC_TOGGLES_SKELETON, 1);
 		addGeTask(true, "Opened zombie thrall model options", VarbitID.RESURRECTION_COSMETIC_TOGGLES_ZOMBIE, 1);
+
+		// 16798 Visited morytania lol morytania_visited
+		addTask("Visited Morytania", VarbitID.MORYTANIA_VISITED);
+		// 16775 changed your "quest rating" setting, you can change it back settings_quest_rating_prompts_ever_changed
+		addTask("Changed your Quest Rating setting once (you can change it back)", VarbitID.SETTINGS_QUEST_RATING_PROMPTS_EVER_CHANGED);
+		addTask("Equip any staff", VarbitID.STAFF_EQUIP_HINT);
+		addTask("Equip any bow", VarbitID.BOW_EQUIP_HINT);
 	}
 }

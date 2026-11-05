@@ -134,7 +134,7 @@
 - Bounty hunter hat tier 6
 - Logged at least 1 count of opening spoils of war
 - Talked to the Record Keeper in frac lobby
-
+- Claimed second batch of quest XP (Nov 2026) from Perdu
 
 - Logged at least 2 laps of the Prifddinas Agility Course
 - Logged at least 2 laps of the Wyrm Basic Agility Course

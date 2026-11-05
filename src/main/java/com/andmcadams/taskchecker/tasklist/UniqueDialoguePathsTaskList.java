@@ -339,6 +339,17 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Talked to Juna after defeating Ocellus", VarbitID.TFA_JUNA_DIALOGUE);
 		// Talked to the Wizard apprentice
 		addTask("Talked to the Wizard apprentice", VarbitID.TFA_WIZARD_APPRENTICE_MET);
+
+		// 16781 defence skillcape skillcape_defence_purchased
+		addTask("Purchased a Defence cape", VarbitID.SKILLCAPE_DEFENCE_PURCHASED);
+		// 16790 woodcutting skillcape skillcape_woodcutting_purchased
+		addTask("Purchased a Woodcutting cape", VarbitID.SKILLCAPE_WOODCUTTING_PURCHASED);
+		// 16791 talked to the doomsayer doomsayer_intro
+		addTask("Listened to the Doomsayer's intro", VarbitID.DOOMSAYER_INTRO);
+		// 16792 checked your age at hans hans_age_checked
+		addTask("Checked your age at Hans", VarbitID.HANS_AGE_CHECKED);
+		// 16839 talked to the lumbridge guide lumbridge_guide_met
+		addTask("Listened to the Lumbridge Guide's introduction", VarbitID.LUMBRIDGE_GUIDE_MET);
 	}
 
 }

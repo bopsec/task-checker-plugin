@@ -175,7 +175,20 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		addEqTask(true, "Claimed the Sunlight Spear after Blood Moon Rises", VarbitID.MYQ6_OWED_SPEAR, 0);
 		//
 		addTask("Helped a goat retire on the mainland", VarbitID.WYRMSCRAIG_GOAT_RETIREMENT_COMPLETION_TRACKER);
-
+		// 16789 used all 4 mba lamps (mba_lamps eq 4)
+		addEqTask(true, "Used all lamps from Mudfoot's Big Adventure", VarbitID.MBA_LAMPS, 4);
+		// 16794 used romeo and juliet lamp randj_lamp_used
+		addTask("Used the Romeo and Juliet antique lamp", VarbitID.RANDJ_LAMP_USED);
+		// 16795 used shield of arrav quest lamp soa_lamp_used
+		addTask("Used the Shield of Arrav antique lamp", VarbitID.SOA_LAMP_USED);
+		// 16777 used demon slayer lamps demon_slayer_lamps 2
+		addEqTask(true, "Used both Demon Slayer antique lamps", VarbitID.DEMON_SLAYER_LAMPS, 2);
+		// 16778 used ernest the chicken lamp ernest_chicken_lamp_used
+		addTask("Used the Ernest the Chicken antique lamp", VarbitID.ERNEST_CHICKEN_LAMP_USED);
+		// 16776 used black knights fortress lamps bkf_lamps 2
+		addEqTask(true, "Used both Black Knight's Fortress antique lamps", VarbitID.BKF_LAMPS, 2);
+		// claimed the amulet from writings on the wall wotw_owed_amulet
+		addEqTask(true, "Claimed the Amulet of Sight from Sergeant Hudson", VarbitID.WOTW_OWED_AMULET, 0);
 	}
 }
 

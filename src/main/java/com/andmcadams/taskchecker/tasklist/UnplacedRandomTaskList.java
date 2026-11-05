@@ -141,7 +141,7 @@ public class UnplacedRandomTaskList extends TaskList
 		//Claimed any deposit back from the Shilo Village furnace coffer not transmitted
 		//Claimed any additional sunfire armour from the STASH unit) not transmitted
 		//Completed all miniquests
-		addEqTask(true, "Completed all 20 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 20);
+		addEqTask(true, "Completed all 19 miniquests", VarbitID.MINIQUESTS_COMPLETED_COUNT, 19);
 		// Unlocked the maximum bow string spool capacity
 		addEqTask(true, "Unlocked the maximum bow string spool capacity", VarbitID.BOWSTRING_SPOOL_SIZE, 5); // Idk what the max size is
 		// Unlocked all 6 greenman mask variants
@@ -203,6 +203,15 @@ public class UnplacedRandomTaskList extends TaskList
 		// all FRAC tasks
 		// Disabled entry warning :sus: this was not found, perhaps in the "frac miniquest" varp?
 		// Talked to record keeper not transmitted
+
+		// 242.1
+		// prince ali rescue, pirate's treasure, rune mysteries, corsair curse, below ice mountain, clock tower, family crest, lost city, merlin's crystal, sheep herder, tale of the righteous, throne of miscellania, troll stronghold not transmitted
+		// 16784 Claimed melee gear from Harlan
+		addTask("Claimed some melee gear from Harlan", VarbitID.CAPTAIN_HARLAN_BONUS_MELEE_GIVEAWAY);
+		// 16786 Claimed ranged gear from Harlan
+		addTask("Claimed some ranged gear from Harlan", VarbitID.CAPTAIN_HARLAN_BONUS_RANGED_GIVEAWAY);
+		// 16787 Claimed mage gear from Harlan
+		addTask("Claimed some mage gear from Harlan", VarbitID.CAPTAIN_HARLAN_BONUS_MAGIC_GIVEAWAY);
 	}
 }
 
