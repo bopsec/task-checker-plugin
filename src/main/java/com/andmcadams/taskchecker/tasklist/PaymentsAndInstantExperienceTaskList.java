@@ -167,8 +167,6 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 		addTask("Claimed pints of whirlpool suprise from Rum-dashed Ralph", VarbitID.SAILING_BT_TEMPOR_TANTRUM_COLLECTED_WHIRLPOOL_SURPRISE); // confirmed
 		// Used XP lamp from Cow quest
 		addTask("Used the magic lamp from Gillie Groats", VarbitID.COWBOSS_REWARD_LAMP); // confirmed
-		// Claimed the Cowbell amulet after Ides of Milk
-		addTask("Claimed the Cowbell amulet", VarbitID.COWQUEST_REWARD); // confirmed
 		// Used the experience tomes from Blood Moon Rises
 		addEqTask(true, "Used all 6 experience tomes from Blood Moon Rises", VarbitID.MYQ6_XP_REWARD, 6);
 		// Claimed the Sunlight Spear after Blood Moon Rises
