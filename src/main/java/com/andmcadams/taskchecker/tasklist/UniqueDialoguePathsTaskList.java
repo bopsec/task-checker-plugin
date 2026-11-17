@@ -257,8 +257,6 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Listened to the builders' advice", VarbitID.PMOON_BUILDERS_VMQ4_CHAT); // confirmed
 		// Listened to Jessamine about the final dawn
 		addTask("Talked to Jessamine after The Final Dawn", VarbitID.PMOON_JESS_VMQ4_CHAT); // confirmed
-		// Listened to the Elder Nama's gryphon warning
-		addTask("Listened to the Elder Nama's gryphon warning", VarbitID.SLAYER_GRYPHON_BOSS_GUARDIAN_MET);
 		// Told King her men helped with the egg (Scrambled!)
 		addTask("Told King her men helped with the egg", VarbitID.SCRAMBLED_FINAL_KING_DIALOGUE); // confirmed
 		// Told Attala about Mokhaiotl (The final dawn)

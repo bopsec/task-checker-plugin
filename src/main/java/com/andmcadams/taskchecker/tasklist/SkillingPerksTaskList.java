@@ -111,8 +111,8 @@ public class SkillingPerksTaskList extends TaskList
 		//
 		//Unlocked the large water container
 		addTask("Unlocked the large water container", VarbitID.FOSSIL_MINE_UNLOCKED_MOREWATER);
-		//Disabled the Fertile Soil's non-upgraded spell warning not transmitted
-		addTask("Unlocked ultra fertile soil. It is also comp to disable the warning on using the non-upgraded version.", VarbitID.FOSSIL_MINE_UNLOCKED_ULTRAFERTILESOIL);
+		// The client exposes the unlock, but not whether the spell warning is disabled.
+		addTask("Unlocked Ultra Fertile Soil (Totus also requires disabling the non-upgraded spell warning)", VarbitID.FOSSIL_MINE_UNLOCKED_ULTRAFERTILESOIL);
 
 		//Unlocked the ability to create swampbark armours
 		addTask("Unlocked the ability to create swampbark armours", VarbitID.SHADES_SWAMP_UNLOCK);

@@ -59,13 +59,12 @@ public class RightClickTaskList extends TaskList
 
 		addTask("Unlocked the Mountain Guide's travel option", VarbitID.RAIDS_GUIDE_TRAVEL_UNLOCK);
 
-		addGeTask(false, "Unlocked the Cloister Bell's quick-start option", VarPlayerID.TOTAL_GARGBOSS_KILLS, 5);
 
 		addGeTask(true, "Unlocked the Jewellery Box's previous teleport option", VarbitID.POH_JEWELLERYBOX_MULTI, 1);
 
 		addGeTask(true, "Unlocked the Charter Ship's previous destination option", VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1);
-		//Unlocked Guildmaster Jane's contracts completed option
-		addTask("Unlocked Guildmaster Jane's contracts option", VarbitID.FARMGUILD_CONTRACT_DISCUSSED); // technically superseded, but the contract count is not transmitted
+		// The client exposes the discussion flag, but not the completed contract count.
+		addTask("Discussed contracts with Guildmaster Jane (Totus also requires completing a contract)", VarbitID.FARMGUILD_CONTRACT_DISCUSSED);
 		addTask("Unlocked the Trade option on Pennant", VarbitID.PRIF_ACORN_TRADE);
 		// Listened to the Zombie pirate's story about his crew's whereabouts I tihnk this is the same as the next one?
 		// Unlocked the zombie pirate's check option

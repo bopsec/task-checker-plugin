@@ -212,6 +212,9 @@ public class UnplacedRandomTaskList extends TaskList
 		addTask("Claimed some ranged gear from Harlan", VarbitID.CAPTAIN_HARLAN_BONUS_RANGED_GIVEAWAY);
 		// 16787 Claimed mage gear from Harlan
 		addTask("Claimed some mage gear from Harlan", VarbitID.CAPTAIN_HARLAN_BONUS_MAGIC_GIVEAWAY);
+
+		// Unlocked all of Ali Morrisane's Rune shops
+		addGeTask(true, "Unlocked all of Ali Morrisane's rune shops", VarbitID.ROGUETRADER_RUNES, 5);
 	}
 }
 
