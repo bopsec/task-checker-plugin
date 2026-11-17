@@ -41,9 +41,9 @@ public class EnvironmentalAlterationsTaskList extends TaskList
 		//Built a raft using the smashed table in Ah Za Rhoon not transmitted
 
 		//Built the Spinning Wheel on the Isle of Souls
-		addTask("Built the Spinning Wheel on the Isle of Souls", VarbitID.SW_SPINNINGWHEEL_BUILT);
+		addTask("Built the spinning wheel on the Isle of Souls", VarbitID.SW_SPINNINGWHEEL_BUILT);
 		//Built the Potter's Wheel on the Isle of Souls
-		addTask("Built the Potter's Wheel on the Isle of Souls", VarbitID.SW_POTTERYWHEEL_BUILT);
+		addTask("Built the potter's wheel on the Isle of Souls", VarbitID.SW_POTTERYWHEEL_BUILT);
 		//Built all 5 quetzal landing sites
 		Task allQuetzalSites = new Task.TaskBuilder()
 			.name("Built all 6 quetzal landing sites")
@@ -89,9 +89,9 @@ public class EnvironmentalAlterationsTaskList extends TaskList
 
 		addTask("Built the fire pit in the Mort Myre Swamp", VarbitID.MY2ARM_FIRE_GHASTS);
 
-		addGeTask(true, "Built the fire pit near the Weiss herb patch", VarbitID.MY2ARM_STATUS, 205);
+		addGeTask(true, "Built the fire pit by the Weiss herb patch", VarbitID.MY2ARM_STATUS, 205);
 
-		addTask("Built the fire pit by the God Wars Dungeon entrance", VarbitID.MY2ARM_FIRE_GWD);
+		addTask("Built the fire pit by the entrance to the God Wars Dungeon", VarbitID.MY2ARM_FIRE_GWD);
 
 		addTask("Built the bank chest in Sangvesti", VarbitID.AMENITY_BANKCHEST_SANGVESTI);
 	}

@@ -71,7 +71,7 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 		add(unlockForthosDungeonDoors);
 
 		Task unlockEnakhrasTempleEntrances = new Task.TaskBuilder()
-			.name("Unlocked all four secret entrances to Enakhra's Temple")
+			.name("Unlocked all 4 secret entrances to Enakhra's Temple")
 			.switchVar(true, VarbitID.ENAKH_BOULDER_N_MULTIVAR)
 			.switchVar(true, VarbitID.ENAKH_BOULDER_E_MULTIVAR)
 			.switchVar(true, VarbitID.ENAKH_BOULDER_S_MULTIVAR)
@@ -80,7 +80,7 @@ public class EntrancesAndObstaclesTaskList extends TaskList
 		add(unlockEnakhrasTempleEntrances);
 
 		Task unlockEnakhrasTempleSigilDoors = new Task.TaskBuilder()
-			.name("Unlocked all four sigil-locked doors in Enakhra's Temple")
+			.name("Unlocked all 4 centre sigil-locked doors in Enakhra's Temple")
 			.switchVar(true, VarbitID.ENAKH_Z_DOOR)
 			.switchVar(true, VarbitID.ENAKH_M_DOOR)
 			.switchVar(true, VarbitID.ENAKH_R_DOOR)

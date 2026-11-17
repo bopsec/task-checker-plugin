@@ -25,13 +25,16 @@
 package com.andmcadams.taskchecker;
 
 import com.andmcadams.taskchecker.tasklist.TaskList;
+import com.google.inject.Provides;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
 import javax.inject.Inject;
 import javax.swing.SwingUtilities;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
 import net.runelite.client.callback.ClientThread;
+import net.runelite.client.config.ConfigManager;
+import net.runelite.client.eventbus.Subscribe;
+import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
@@ -50,21 +53,28 @@ public class TaskCheckerPlugin extends Plugin
 	private ClientThread clientThread;
 	@Inject
 	private ClientToolbar clientToolbar;
+	@Inject
+	private TaskCheckerConfig config;
 
 	private CompleteTaskList tasks;
 	private TaskCheckerPanel taskCheckerPanel;
 	private NavigationButton navButton;
-	private ArrayList<TaskList> tasksCopy;
+
+	@Provides
+	TaskCheckerConfig provideConfig(ConfigManager configManager)
+	{
+		return configManager.getConfig(TaskCheckerConfig.class);
+	}
 
 	@Override
 	protected void startUp() throws Exception
 	{
 		log.info("Task Checker started!");
 		tasks = new CompleteTaskList();
-		tasksCopy = tasks.getTaskLists();
-		taskCheckerPanel = new TaskCheckerPanel(this, tasksCopy);
+		taskCheckerPanel = new TaskCheckerPanel(this,
+			config.totusOrder() ? tasks.getTotusTaskLists() : tasks.getTaskLists());
 
-		final BufferedImage icon = ImageUtil.getResourceStreamFromClass(getClass(), "/task_icon.png");
+		final BufferedImage icon = ImageUtil.loadImageResource(getClass(), "/task_icon.png");
 		navButton = NavigationButton.builder().tooltip("Task Checker").icon(icon).priority(7).panel(taskCheckerPanel).build();
 		clientToolbar.addNavigation(navButton);
 	}
@@ -76,10 +86,25 @@ public class TaskCheckerPlugin extends Plugin
 		clientToolbar.removeNavigation(navButton);
 	}
 
+	@Subscribe
+	public void onConfigChanged(ConfigChanged event)
+	{
+		if (TaskCheckerConfig.GROUP.equals(event.getGroup()) && TaskCheckerConfig.TOTUS_ORDER.equals(event.getKey()))
+		{
+			TaskCheckerPanel panel = taskCheckerPanel;
+			SwingUtilities.invokeLater(() -> {
+				if (panel != null && panel == taskCheckerPanel)
+				{
+					panel.setTaskLists(config.totusOrder() ? tasks.getTotusTaskLists() : tasks.getTaskLists());
+				}
+			});
+		}
+	}
+
 	public void checkTasks()
 	{
 		clientThread.invoke(() -> {
-			for (TaskList taskList : tasksCopy)
+			for (TaskList taskList : tasks.getTaskLists())
 			{
 				for (Task task : taskList.getTasks())
 				{

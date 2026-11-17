@@ -38,35 +38,35 @@ public class SlayerRewardsTaskList extends TaskList
 
 	public void initTasks()
 	{
-		addTask("Unlocked Gargoyle Smasher", VarbitID.SLAYER_AUTOKILL_GARGOYLES);
+		addTask("Unlocked Gargoyle smasher", VarbitID.SLAYER_AUTOKILL_GARGOYLES);
 
-		addTask("Unlocked Slug Salter", VarbitID.SLAYER_AUTOKILL_ROCKSLUGS);
+		addTask("Unlocked Slug salter", VarbitID.SLAYER_AUTOKILL_ROCKSLUGS);
 
-		addTask("Unlocked Reptile Freezer", VarbitID.SLAYER_AUTOKILL_DESERTLIZARDS);
+		addTask("Unlocked Reptile freezer", VarbitID.SLAYER_AUTOKILL_DESERTLIZARDS);
 
-		addTask("Unlocked 'Shroom Sprayer", VarbitID.SLAYER_AUTOKILL_ZYGOMITES);
+		addTask("Unlocked 'Shroom sprayer", VarbitID.SLAYER_AUTOKILL_ZYGOMITES);
 
-		addTask("Unlocked Broader Fletching", VarbitID.SLAYER_AMMO_UNLOCKED);
+		addTask("Unlocked Broader fletching", VarbitID.SLAYER_AMMO_UNLOCKED);
 
-		addTask("Unlocked Malevolent Masquerade", VarbitID.SLAYER_HELM_UNLOCKED);
+		addTask("Unlocked Malevolent masquerade", VarbitID.SLAYER_HELM_UNLOCKED);
 
-		addTask("Unlocked Ring Bling", VarbitID.SLAYER_RING_UNLOCKED);
+		addTask("Unlocked Ring bling", VarbitID.SLAYER_RING_UNLOCKED);
 
 		addTask("Unlocked Bigger and Badder", VarbitID.SLAYER_UNLOCK_SUPERIORMOBS);
 
-		addTask("Unlocked King Black Bonnet", VarbitID.SLAYER_UNLOCK_HELM_BLACK);
+		addTask("Unlocked King black bonnet", VarbitID.SLAYER_UNLOCK_HELM_BLACK);
 
-		addTask("Unlocked Kalphite Khat", VarbitID.SLAYER_UNLOCK_HELM_GREEN);
+		addTask("Unlocked Kalphite khat", VarbitID.SLAYER_UNLOCK_HELM_GREEN);
 
-		addTask("Unlocked Unholy Helmet", VarbitID.SLAYER_UNLOCK_HELM_RED);
+		addTask("Unlocked Unholy helmet", VarbitID.SLAYER_UNLOCK_HELM_RED);
 
 		addTask("Unlocked Dark Mantle", VarbitID.SLAYER_UNLOCK_HELM_PURPLE);
 
-		addTask("Unlocked Undead Head", VarbitID.SLAYER_UNLOCK_HELM_TURQUOISE);
+		addTask("Unlocked Undead head", VarbitID.SLAYER_UNLOCK_HELM_TURQUOISE);
 
-		addTask("Unlocked Use More Head", VarbitID.SLAYER_UNLOCK_HELM_HYDRA);
+		addTask("Unlocked Use More head", VarbitID.SLAYER_UNLOCK_HELM_HYDRA);
 
-		addTask("Unlocked Duly Noted", VarbitID.SLAYER_UNLOCK_NOTEDMITHRILBARS);
+		addTask("Unlocked Duly noted", VarbitID.SLAYER_UNLOCK_NOTEDMITHRILBARS);
 
 		addTask("Unlocked Stop the Wyvern", VarbitID.SLAYER_UNLOCK_FOSSILWYVERNBLOCK);
 
@@ -76,7 +76,7 @@ public class SlayerRewardsTaskList extends TaskList
 
 		addTask("Unlocked Revenenenenenants", VarbitID.SLAYER_LONGER_REVENANTS);
 
-		addTask("Unlocked Eye See You", VarbitID.SLAYER_UNLOCK_HELM_ARAXYTE);
+		addTask("Unlocked Eye see you", VarbitID.SLAYER_UNLOCK_HELM_ARAXYTE);
 
 		addTask("Unlocked Absolutely Slayin'", VarbitID.SLAYER_UNLOCK_HELM_HOODED);
 

@@ -31,19 +31,19 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.util.ArrayList;
+import java.util.Objects;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EmptyBorder;
-import lombok.extern.slf4j.Slf4j;
 import net.runelite.client.ui.ColorScheme;
 import net.runelite.client.ui.PluginPanel;
 
-@Slf4j
 public class TaskCheckerPanel extends PluginPanel
 {
 	private static class TaskContainerPanel extends JPanel
@@ -56,11 +56,12 @@ public class TaskCheckerPanel extends PluginPanel
 		}
 	}
 
-	private static class CategorySection
+	public static class CategorySection
 	{
 		private final TaskListHeaderPanel headerPanel;
 		private final JPanel taskContainer;
 		private final ArrayList<TaskPanel> taskPanels = new ArrayList<>();
+		private final ArrayList<JPanel> groups = new ArrayList<>();
 
 		private CategorySection(TaskListHeaderPanel headerPanel, JPanel taskContainer)
 		{
@@ -73,8 +74,8 @@ public class TaskCheckerPanel extends PluginPanel
 	ArrayList<TaskPanel> taskPanelList = new ArrayList<>();
 	ArrayList<CategorySection> categorySections = new ArrayList<>();
 
-	private JScrollPane scrollPane;
-	private JCheckBox hideCompletedToggle;
+	private final JCheckBox hideCompletedToggle;
+	private final FixedWidthPanel taskListPanel = new FixedWidthPanel();
 
 	public TaskCheckerPanel(TaskCheckerPlugin taskCheckerPlugin, ArrayList<TaskList> taskLists)
 	{
@@ -122,40 +123,81 @@ public class TaskCheckerPanel extends PluginPanel
 		add(topContainer, BorderLayout.NORTH);
 
 		// Create the task list panel
-		FixedWidthPanel taskListPanel = new FixedWidthPanel();
 		taskListPanel.setLayout(new BoxLayout(taskListPanel, BoxLayout.Y_AXIS));
 		taskListPanel.setBackground(ColorScheme.DARK_GRAY_COLOR);
 
+		JScrollPane scrollPane = new JScrollPane(taskListPanel);
+		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane.setBorder(new EmptyBorder(2, 2, 2, 2));
+		scrollPane.setBackground(ColorScheme.DARK_GRAY_COLOR);
+		add(scrollPane, BorderLayout.CENTER);
+		setTaskLists(taskLists);
+	}
+
+	void setTaskLists(ArrayList<TaskList> taskLists)
+	{
+		taskListPanel.removeAll();
+		taskPanelList.clear();
+		categorySections.clear();
 		for (TaskList taskList : taskLists)
 		{
 			JPanel categoryTaskContainer = new TaskContainerPanel();
 			categoryTaskContainer.setLayout(new BoxLayout(categoryTaskContainer, BoxLayout.Y_AXIS));
 			categoryTaskContainer.setAlignmentX(Component.LEFT_ALIGNMENT);
 			categoryTaskContainer.setBackground(ColorScheme.DARK_GRAY_COLOR);
-			TaskListHeaderPanel taskListHeaderPanel = addTaskListHeader(taskListPanel, taskList.getName(), categoryTaskContainer);
+			TaskListHeaderPanel taskListHeaderPanel = addTaskListHeader(taskListPanel, taskList.getName());
 			taskListHeaderPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 
 			CategorySection categorySection = new CategorySection(taskListHeaderPanel, categoryTaskContainer);
 			categorySections.add(categorySection);
 
+			String currentGroup = null;
+			JPanel taskContainer = categoryTaskContainer;
 			for (Task task : taskList.getTasks())
 			{
-				addTask(categoryTaskContainer, task, categorySection);
+				String group = taskList.getGroup(task);
+				if (!Objects.equals(group, currentGroup))
+				{
+					currentGroup = group;
+					taskContainer = categoryTaskContainer;
+					if (group != null)
+					{
+						taskContainer = addGroup(categoryTaskContainer, group);
+						categorySection.groups.add(taskContainer);
+					}
+				}
+				addTask(taskContainer, task, taskList.getDisplayName(task), categorySection);
 			}
 			taskListPanel.add(categoryTaskContainer);
 		}
 
-		scrollPane = new JScrollPane(taskListPanel);
-		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-		scrollPane.setBorder(new EmptyBorder(2, 2, 2, 2));
-		scrollPane.setBackground(ColorScheme.DARK_GRAY_COLOR);
-
-		add(scrollPane, BorderLayout.CENTER);
 		refresh();
-
 	}
 
-	public TaskListHeaderPanel addTaskListHeader(JPanel taskListPanel, String name, JPanel categoryTaskContainer)
+	private JPanel addGroup(JPanel category, String name)
+	{
+		JPanel group = new TaskContainerPanel();
+		group.setLayout(new BoxLayout(group, BoxLayout.Y_AXIS));
+		group.setAlignmentX(Component.LEFT_ALIGNMENT);
+		group.setOpaque(false);
+		group.setBorder(new EmptyBorder(0, 8, 0, 0));
+
+		JTextArea heading = new JTextArea(name);
+		heading.setAlignmentX(Component.LEFT_ALIGNMENT);
+		heading.setWrapStyleWord(true);
+		heading.setLineWrap(true);
+		heading.setEditable(false);
+		heading.setFocusable(false);
+		heading.setOpaque(false);
+		heading.setForeground(Color.WHITE);
+		heading.setFont(heading.getFont().deriveFont(java.awt.Font.BOLD));
+		heading.setBorder(new EmptyBorder(8, 5, 5, 5));
+		group.add(heading);
+		category.add(group);
+		return group;
+	}
+
+	public TaskListHeaderPanel addTaskListHeader(JPanel taskListPanel, String name)
 	{
 		TaskListHeaderPanel taskListHeaderPanel = new TaskListHeaderPanel(name);
 		taskListHeaderPanel.setToggleAction(this::applyVisibilityFilters);
@@ -163,9 +205,9 @@ public class TaskCheckerPanel extends PluginPanel
 		return taskListHeaderPanel;
 	}
 
-	public void addTask(JPanel taskListPanel, Task task, CategorySection categorySection)
+	private void addTask(JPanel taskListPanel, Task task, String displayName, CategorySection categorySection)
 	{
-		TaskPanel taskPanel = new TaskPanel(task);
+		TaskPanel taskPanel = new TaskPanel(task, displayName);
 		taskPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 		taskPanelList.add(taskPanel);
 		categorySection.taskPanels.add(taskPanel);
@@ -224,6 +266,19 @@ public class TaskCheckerPanel extends PluginPanel
 			}
 
 			boolean hideEntireCategory = hideCompleted && allComplete;
+			for (JPanel group : categorySection.groups)
+			{
+				boolean hasVisibleChild = false;
+				for (Component child : group.getComponents())
+				{
+					if (child instanceof TaskPanel && child.isVisible())
+					{
+						hasVisibleChild = true;
+						break;
+					}
+				}
+				group.setVisible(hasVisibleChild);
+			}
 			categorySection.headerPanel.setVisible(!hideEntireCategory);
 
 			boolean showTaskContainer = !hideEntireCategory && !categorySection.headerPanel.isCollapsed() && hasVisibleTask;

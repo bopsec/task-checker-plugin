@@ -39,7 +39,7 @@ public class HallowedSepulchreTaskList extends TaskList
 	{
 		addGeTask(true, "Logged a fastest run for the Hallowed Sepulchre", VarbitID.HALLOWED_TIME_PB_ALL, 1);
 
-		addTask("Gave the Darkmeyer Slave 100 Hallowed Marks", VarbitID.HALLOWED_ADVENTURER_MARKS_GIVEN);
+		addTask("Paid the man for his freedom", VarbitID.HALLOWED_ADVENTURER_MARKS_GIVEN);
 
 		addTask("Freed the Knight of the Owl", VarbitID.HALLOWED_GHOST_OWLKNIGHT_FOUND);
 
@@ -51,7 +51,7 @@ public class HallowedSepulchreTaskList extends TaskList
 
 		addTask("Freed the Archpriest of the Unicorn", VarbitID.HALLOWED_GHOST_ARCHPRIEST_FOUND);
 
-		addTask("Unlocked private instances", VarbitID.HALLOWED_PRIVATE_INSTANCES_PURCHASED);
+		addTask("Unlocked the ability to create private instances", VarbitID.HALLOWED_PRIVATE_INSTANCES_PURCHASED);
 
 
 	}

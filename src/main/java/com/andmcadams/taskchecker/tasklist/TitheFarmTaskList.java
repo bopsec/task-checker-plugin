@@ -36,7 +36,7 @@ public class TitheFarmTaskList extends TaskList
 
 	public void initTasks()
 	{
-		addGeTask(true, "Unlocked Autoweed", VarbitID.FARMING_BLOCKWEEDS, 1);
+		addGeTask(true, "Unlocked the ability to toggle auto-weed", VarbitID.FARMING_BLOCKWEEDS, 1);
 
 		addEqTask(true, "Paid Bologa for the ability to purchase Bologa's blessings", VarbitID.HOSIDIUS_EVILGRAPES, 2);
 	}

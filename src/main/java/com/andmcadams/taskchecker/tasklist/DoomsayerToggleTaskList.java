@@ -40,7 +40,7 @@ public class DoomsayerToggleTaskList extends TaskList
 	{
 
 		Task unlockAllWarningToggles = new Task.TaskBuilder()
-			.name("Unlocked all Doomsayer warning toggles")
+			.name("Unlocked the ability to toggle all 24 Doomsayer danger signs")
 			.geVar(true, VarbitID.CWS_WARNING_1, 6) // DKS ladder
 			.geVar(true, VarbitID.CWS_WARNING_2, 6) // Contact ladder
 			.geVar(true, VarbitID.CWS_WARNING_3, 6) // Fally mole lair
@@ -174,7 +174,7 @@ public class DoomsayerToggleTaskList extends TaskList
 		addTask("Disabled the shipwright ship recovery warning", VarbitID.SAILING_BOAT_CARGOHOLD_WARNING_DISMISSED);
 		// Disabled the warning for teleporting from Lunar bank to Relekka not transmitted
 		// Disabled the warning on trading in Immaculate Mole Skin
-		addTask("Disabled the Immaculate Mole Skin trade-in warning", VarbitID.GIANT_MOLE_IMMACULATE_MOLESKIN_WARNING);
+		addTask("Disabled the immaculate mole skin trade-in warning", VarbitID.GIANT_MOLE_IMMACULATE_MOLESKIN_WARNING);
 		// Disabled Maggot King's destroy loot warning
 		addTask("Disabled Maggot King's destroy loot warning", VarbitID.MAGGOT_KING_PET_LOOT_WARNING);
 	}

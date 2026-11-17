@@ -17,10 +17,10 @@ public class SailingAmenities extends TaskList
 		// Claimed XP from charting all oceans
 		addTask("Claimed XP from charting all oceans", VarbitID.SAILING_CHARTING_FULL_COMPLETION_EVER_COMPLETE); //?
 		// Unlocked the ability to reclaim the medallion of the deep
-		addTask("Unlocked the ability to reclaim the medallion of the deep", VarbitID.MOTD_CRAFTED);
+		addTask("Unlocked the ability to reclaim the Medallion of the Deep", VarbitID.MOTD_CRAFTED);
 		// Unlocked all lost sailing schematics
 		Task allSchematics = new Task.TaskBuilder()
-			.name("Read all lost sailing schematics")
+			.name("Unlocked all 12 lost sailing schematics")
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_SALVAGING_STATION)
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_GALE_CATCHER)
 			.switchVar(true, VarbitID.LOST_SCHEMATIC_ETERNAL_BRAZIER)
@@ -85,10 +85,6 @@ public class SailingAmenities extends TaskList
 		// Crown Jewel
 		addTask("Built crown jewel cooking pot", VarbitID.AMENITY_COOKING_POT_CROWN_JEWEL);
 
-		// Deepfin
-		addTask("Built deepfin point bank chest 1", VarbitID.AMENITY_BANKCHEST_DEEPFIN_1);
-		addTask("Built deepfin point bank chest 2", VarbitID.AMENITY_BANKCHEST_DEEPFIN_2);
-
 		// Laguna Aurorae
 		addTask("Built laguna aurorae cooking pot", VarbitID.AMENITY_COOKING_POT_LAGUNA_AURORAE);
 		addTask("Built laguna aurorae loom", VarbitID.AMENITY_LOOM_LAGUNA_AURORAE);
@@ -99,17 +95,17 @@ public class SailingAmenities extends TaskList
 		addTask("Built onyx crest furnace", VarbitID.AMENITY_FURNACE_ONYX_CREST);
 		addTask("Built onyx crest water pump", VarbitID.AMENITY_WATER_PUMP_ONYX_CREST);
 
-		// Soul Tear
-		addTask("Built soul tear rowboat", VarbitID.AMENITY_ROWBOAT_SOUL_TEAR);
-
 		// Sunbleak
 		addTask("Built sunbleak island bank chest", VarbitID.AMENITY_BANKCHEST_SUNBLEAK);
 		addTask("Built sunbleak island cooking pot", VarbitID.AMENITY_COOKING_POT_SUNBLEAK);
 		addTask("Built sunbleak island water pump", VarbitID.AMENITY_WATER_PUMP_SUNBLEAK);
 
+		// Soul Tear
+		addTask("Built soul tear rowboat", VarbitID.AMENITY_ROWBOAT_SOUL_TEAR);
+
 		// Vatrachos
-		addTask("Built vatrachos island pottery oven", VarbitID.AMENITY_POTTERY_OVEN_VATRACHOS);
 		addTask("Built vatrachos island pottery wheel", VarbitID.AMENITY_POTTERY_WHEEL_VATRACHOS);
+		addTask("Built vatrachos island pottery oven", VarbitID.AMENITY_POTTERY_OVEN_VATRACHOS);
 		addTask("Built vatrachos island rowboat", VarbitID.AMENITY_ROWBOAT_VATRACHOS);
 		addTask("Built vatrachos island water pump", VarbitID.AMENITY_WATER_PUMP_VATRACHOS);
 
@@ -117,6 +113,10 @@ public class SailingAmenities extends TaskList
 		addTask("Built ynysdail rowboat", VarbitID.AMENITY_ROWBOAT_YNYSDAIL);
 
 		// Wyrmscraig
-		addTask("Built wyrmcraig bank chest", VarbitID.AMENITY_BANKCHEST_WYRMSCRAIG);
+		addTask("Built the bank chest on Wyrmscraig", VarbitID.AMENITY_BANKCHEST_WYRMSCRAIG);
+
+		// Deepfin
+		addTask("Built deepfin point bank chest 1", VarbitID.AMENITY_BANKCHEST_DEEPFIN_1);
+		addTask("Built deepfin point bank chest 2", VarbitID.AMENITY_BANKCHEST_DEEPFIN_2);
 	}
 }

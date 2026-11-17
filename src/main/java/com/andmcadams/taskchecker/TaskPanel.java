@@ -46,6 +46,11 @@ public class TaskPanel extends JPanel
 
 	public TaskPanel(Task task)
 	{
+		this(task, task.getName());
+	}
+
+	public TaskPanel(Task task, String displayName)
+	{
 		super();
 		this.task = task;
 
@@ -60,7 +65,7 @@ public class TaskPanel extends JPanel
 		nameLabel.setOpaque(false);
 		nameLabel.setFocusable(false);
 
-		nameLabel.setText(task.getName());
+		nameLabel.setText(displayName);
 		nameLabel.setForeground(INCOMPLETE);
 		add(nameLabel);
 	}

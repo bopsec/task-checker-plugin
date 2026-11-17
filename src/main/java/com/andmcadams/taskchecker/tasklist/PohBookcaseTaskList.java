@@ -55,7 +55,7 @@ public class PohBookcaseTaskList extends TaskList
 		//Filled the fossil island note book with all 21 entries couldn't see any varb changes
 		//Filled the strange Hallowed tome with all 5 mysterious pages
 		Task filledHallowedTome = new Task.TaskBuilder()
-			.name("Filled the strange Hallowed tome with all 5 mysterious pages")
+			.name("Filled the strange hallowed tome with all 5 mysterious pages")
 			.switchVar(true, VarbitID.HALLOWED_TOME_PAGE1)
 			.switchVar(true, VarbitID.HALLOWED_TOME_PAGE2)
 			.switchVar(true, VarbitID.HALLOWED_TOME_PAGE3)
@@ -133,11 +133,10 @@ public class PohBookcaseTaskList extends TaskList
 		this.add(obtainedBothHunterGuildBooks);
 		//Obtained all 16 elven texts from the Prifddinas Grand Library
 		addTask("Obtained all 16 elven texts from the Prifddinas Grand Library", VarbitID.PRIF_BOOKS);
-		// Obtained the Observations book
-		addTask("Obtained Observations from Ardeaglais Cathedral", VarbitID.WYRMSCRAIG_CATHEDRAL_BOOK);
-		//Obtained all 93 miscellaneous texts (2 are obtained by default) this is like 50 diff ones
+		// Obtained all 99 miscellaneous texts (2 are obtained by default).
 		Task obtainedAllBooks = new Task.TaskBuilder() // anything added has been tested
-			.name("Obtained all 95 miscellaneous texts (incomplete!)")
+			.name("Obtained all 99 miscellaneous texts (Incomplete)")
+			.switchVar(true, VarbitID.WYRMSCRAIG_CATHEDRAL_BOOK) // Observations
 			.switchVar(true, VarbitID.HUEYCOATL_BOOK) // Huey book
 			.switchVar(true, VarbitID.SLAYER_FOUND_DIARY) // Entomologist's diary
 			.switchVar(true, VarbitID.GODWARS_DIARY_FOUND) // Keldagrim Explorer's Notes

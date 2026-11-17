@@ -26,6 +26,8 @@ package com.andmcadams.taskchecker.tasklist;
 
 import com.andmcadams.taskchecker.Task;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import lombok.Getter;
 
 public class TaskList
@@ -36,6 +38,8 @@ public class TaskList
 
 	@Getter
 	private ArrayList<Task> tasks = new ArrayList<>();
+	private final Map<Task, String> groups = new HashMap<>();
+	private final Map<Task, String> displayNames = new HashMap<>();
 
 	public TaskList(String name)
 	{
@@ -45,6 +49,29 @@ public class TaskList
 	public boolean add(Task task)
 	{
 		return tasks.add(task);
+	}
+
+	public void add(Task task, String group, String displayName)
+	{
+		add(task);
+		if (group != null)
+		{
+			groups.put(task, group);
+		}
+		if (displayName != null)
+		{
+			displayNames.put(task, displayName);
+		}
+	}
+
+	public String getDisplayName(Task task)
+	{
+		return displayNames.getOrDefault(task, task.getName());
+	}
+
+	public String getGroup(Task task)
+	{
+		return groups.get(task);
 	}
 
 	protected void addTask(String taskInfo, int varbitID)
