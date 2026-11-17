@@ -155,7 +155,7 @@ public class TransportationAndTeleportsTaskList extends TaskList
 		this.add(unlockPendantOfAtes);
 		// Unlocked all three additional sailors' amulet teleport locations
 		Task sailorsAmuletAllTelesUnlocked = new Task.TaskBuilder()
-			.name("Unlocked all three additional sailors' amulet teleport locations")
+			.name("Unlocked all 3 additional sailors' amulet teleport locations")
 			.switchVar(true, VarbitID.SAILORS_AMULET_DEEPFIN)
 			.switchVar(true, VarbitID.SAILORS_AMULET_ROBERTS)
 			.switchVar(true, VarbitID.SAILORS_AMULET_REDROCK)

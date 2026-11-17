@@ -39,6 +39,7 @@ public class TaskList
 	@Getter
 	private ArrayList<Task> tasks = new ArrayList<>();
 	private final Map<Task, String> groups = new HashMap<>();
+	private final Map<Task, String> displayNames = new HashMap<>();
 
 	public TaskList(String name)
 	{
@@ -50,13 +51,22 @@ public class TaskList
 		return tasks.add(task);
 	}
 
-	public void add(Task task, String group)
+	public void add(Task task, String group, String displayName)
 	{
 		add(task);
 		if (group != null)
 		{
 			groups.put(task, group);
 		}
+		if (displayName != null)
+		{
+			displayNames.put(task, displayName);
+		}
+	}
+
+	public String getDisplayName(Task task)
+	{
+		return displayNames.getOrDefault(task, task.getName());
 	}
 
 	public String getGroup(Task task)

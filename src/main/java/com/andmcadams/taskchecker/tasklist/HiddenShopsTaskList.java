@@ -50,7 +50,7 @@ public class HiddenShopsTaskList extends TaskList
 		// Unlocked Nevet's trade option
 		addTask("Unlocked Nevet's trade option", VarbitID.EVENTS_SHOP_OWNER_MET);
 		// Unlocked the Garlic Cocktail shop
-		addTask("Unlocked the Garlic Cocktail shop", VarbitID.GARLIC_COCKTAIL_SHOP_UNLOCKED);
+		addTask("Unlocked the Garlic Cocktail Supply shop", VarbitID.GARLIC_COCKTAIL_SHOP_UNLOCKED);
 	}
 }
 

@@ -84,7 +84,7 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 
 		addTask("Claimed a clue scroll (beginner) from Veos", VarbitID.CLUEQUEST_CLUE_REWARD);
 
-		addEqTask(true, "Claimed a beer from Ali the Barman", VarbitID.FEUD_REPORT_DRINK, 2);
+		addEqTask(true, "Claimed a beer from Faisal the Barman", VarbitID.FEUD_REPORT_DRINK, 2);
 		Task claimRagAndBoneManIIRewards = new Task.TaskBuilder()
 			.name("Claimed the Rams skull helm and Bonesack from the Odd old man")
 			.switchVar(true, VarbitID.RAG_HELMET)
@@ -108,7 +108,7 @@ public class PaymentsAndInstantExperienceTaskList extends TaskList
 
 		//Used all 3 tomes of experience from Ivan Strom
 		Task ivanStromUsedExpTomes = new Task.TaskBuilder()
-			.name("Used all 3 tomes of experience from Ivan Strom")
+			.name("Used all 3 Tomes of Experience from Ivan Strom")
 			.eqVar(true, VarbitID.MYQ3_TOME_XP, 3)
 			.eqVar(true, VarbitID.MYQ4_XP_REWARD, 3)
 			.eqVar(true, VarbitID.MYQ5_XP_REWARD, 3)

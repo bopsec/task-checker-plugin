@@ -207,10 +207,12 @@ public class CompleteTaskList
 					group = null;
 					continue;
 				}
-				Task task = tasksByName.remove(line);
+				// An optional tab-separated label applies only to the Totus view.
+				String[] entry = line.split("\t", 2);
+				Task task = tasksByName.remove(entry[0]);
 				if (section != null && task != null)
 				{
-					section.add(task, group);
+					section.add(task, group, entry.length == 2 ? entry[1] : null);
 					movedTasks.add(task);
 				}
 			}

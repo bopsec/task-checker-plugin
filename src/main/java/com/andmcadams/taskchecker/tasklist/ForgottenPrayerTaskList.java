@@ -39,17 +39,17 @@ public class ForgottenPrayerTaskList extends TaskList
 	{
 		addTask("Unlocked the ability to avoid teleport attacks", VarbitID.BLIP_BLOCKING_SCROLL_USED);
 
-		addTask("Unlocked Rigour", VarbitID.PRAYER_RIGOUR_UNLOCKED);
+		addTask("Unlocked rigour", VarbitID.PRAYER_RIGOUR_UNLOCKED);
 
-		addTask("Unlocked Augury", VarbitID.PRAYER_AUGURY_UNLOCKED);
+		addTask("Unlocked augury", VarbitID.PRAYER_AUGURY_UNLOCKED);
 
-		addTask("Unlocked Preserve", VarbitID.PRAYER_PRESERVE_UNLOCKED);
+		addTask("Unlocked preserve", VarbitID.PRAYER_PRESERVE_UNLOCKED);
 
-		addTask("Unlocked Deadeye", VarbitID.PRAYER_DEADEYE_UNLOCKED);
+		addTask("Unlocked deadeye", VarbitID.PRAYER_DEADEYE_UNLOCKED);
 
-		addTask("Unlocked Mystic Vigour", VarbitID.PRAYER_MYSTIC_VIGOUR_UNLOCKED);
+		addTask("Unlocked mystic vigour", VarbitID.PRAYER_MYSTIC_VIGOUR_UNLOCKED);
 		// Unlocked Zeal
-		addTask("Unlocked Zeal", VarbitID.PRAYER_ZEAL_UNLOCKED);
+		addTask("Unlocked zeal", VarbitID.PRAYER_ZEAL_UNLOCKED);
 
 	}
 }

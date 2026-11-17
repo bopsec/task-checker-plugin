@@ -3,8 +3,8 @@
 Unlocked access to Kylie Minnow's fishing platform
 Unlocked the ability to feed the cormorant whole fish
 [[Own/Unlocked all 13 unconsumable Hallowed Sepulchre rewards]]
-Unlocked private instances
-Gave the Darkmeyer Slave 100 Hallowed Marks
+Unlocked the ability to create private instances
+Paid the man for his freedom
 Freed the Knight of the Lion
 Freed the Knight of the Owl
 Freed the Knight of the Unicorn
@@ -21,7 +21,7 @@ Unlocked Apprentice Cordelia's ability to repair pouches
 [[Own/Unlocked all 11 untradeable Hunter Guild rewards]]
 Claimed a free basic quetzal whistle blueprint
 [[Own/Unlocked all 9 unconsumable Tithe Farm rewards]]
-Unlocked Autoweed
+Unlocked the ability to toggle auto-weed
 Paid Bologa for the ability to purchase Bologa's blessings
 [[Own/Unlocked all 9 Vale Totems rewards]]
 Unlocked the maximum bow string spool capacity
@@ -49,32 +49,32 @@ Unlocked Ultra Fertile Soil (Totus also requires disabling the non-upgraded spel
 [[Own/Unlocked all 8 untradeable Shades of Mort'ton rewards]]
 Unlocked the ability to create swampbark armours
 Unlocked the ability to create bloodbark armours
-Listened to Dampe explain shade coffins
+Listened to Dampe's explanation of shade remains coffins
 [[Own/Unlocked all 6 unconsumable Shooting Stars rewards]]
 Unlocked Dusuri's trade option
 
 [Combat equipment & perks]
 [[Unlocked all 24 permanent slayer rewards]]
-Unlocked Gargoyle Smasher
-Unlocked Slug Salter
-Unlocked Reptile Freezer
-Unlocked 'Shroom Sprayer
-Unlocked Broader Fletching
-Unlocked Malevolent Masquerade
-Unlocked Ring Bling
+Unlocked Gargoyle smasher
+Unlocked Slug salter
+Unlocked Reptile freezer
+Unlocked 'Shroom sprayer
+Unlocked Broader fletching
+Unlocked Malevolent masquerade
+Unlocked Ring bling
 Unlocked Bigger and Badder
-Unlocked King Black Bonnet
-Unlocked Kalphite Khat
-Unlocked Unholy Helmet
+Unlocked King black bonnet
+Unlocked Kalphite khat
+Unlocked Unholy helmet
 Unlocked Dark Mantle
-Unlocked Undead Head
-Unlocked Use More Head
-Unlocked Duly Noted
+Unlocked Undead head
+Unlocked Use More head	Unlocked Use more head
+Unlocked Duly noted
 Unlocked Stop the Wyvern
 Unlocked Twisted Vision
 Unlocked Task Storage
 Unlocked Revenenenenenants
-Unlocked Eye See You
+Unlocked Eye see you
 Unlocked Absolutely Slayin'
 Unlocked Oath Breaker
 Unlocked the third task slot at Mortimer
@@ -89,11 +89,11 @@ Unlocked access to the basement of the Warriors' Guild
 [[Unlocked all 7 additional scroll unlocks]]
 Unlocked the ability to avoid teleport attacks
 Unlocked the deadman annihilation house theme
-Unlocked Preserve
-Unlocked Rigour
-Unlocked Augury
-Unlocked Deadeye
-Unlocked Mystic Vigour
+Unlocked preserve
+Unlocked rigour
+Unlocked augury
+Unlocked deadeye
+Unlocked mystic vigour
 
 [Miscellaneous equipment & perks]
 [[Own/Unlocked all 19 untradeable Last Man Standing rewards]]
@@ -108,15 +108,15 @@ Unlocked the ability to toggle the music cape's trim
 Unlocked the ring of shadows' full potential
 [[Unlocked all 30 miscellaneous sailing related rewards]]
 Unlocked the ability to assign all 10 crewmates
-Unlocked the ability to reclaim the medallion of the deep
+Unlocked the ability to reclaim the Medallion of the Deep
 Unlocked the ability to reclaim Ralph's fabric roll
 Unlocked the ability to reclaim Gurtob's fabric roll
 Unlocked the ability to reclaim Gwyna's fabric roll
-Read all lost sailing schematics
+Unlocked all 12 lost sailing schematics
 [[Own/Unlocked all 15 miscellaneous necklace teleports]]
 Unlocked the ability to use Drakan's medallion's Castle Drakan teleport
 Unlocked the ability to use Drakan's medallion's Slepe teleport
-Unlocked all three additional sailors' amulet teleport locations
+Unlocked all 3 additional sailors' amulet teleport locations
 Unlocked all 6 pendant of ates teleport locations
 [[Own/Completed the Stronghold of Security's trials]]
 Told Litara about what happened to Solztun
@@ -170,8 +170,8 @@ Opened the door to the Wyrmscraig cathedral
 Unlocked the blood rift in the Abyss
 Unlocked the soul rift in the Abyss
 Unlocked both Temple Doors in the Forthos Dungeon
-Unlocked all four secret entrances to Enakhra's Temple
-Unlocked all four sigil-locked doors in Enakhra's Temple
+Unlocked all 4 secret entrances to Enakhra's Temple
+Unlocked all 4 centre sigil-locked doors in Enakhra's Temple
 [[Own/Unlocked the ability to reclaim all 250 event reward items]]
 Unlocked the ability to reclaim all Birthday holiday items
 Unlocked the ability to reclaim all Easter holiday items
@@ -195,13 +195,13 @@ Unlocked all 7 teleporters in the Lassar Undercity
 Unlocked Teleport to Target
 Unlocked Ourania Teleport
 Unlocked the Death Charge upgrade
-Unlocked the Home Teleport's Deadman 2024 animation option
-Unlocked the Home Teleport's Deadman 2026 animation option
+Unlocked the Home Teleport's Armageddon animation option
+Unlocked the Home Teleport's Annihilation animation option
 Unlocked the Home Teleport's League I animation option
 Unlocked the Home Teleport's League II animation option
 Unlocked the Home Teleport's League III animation option
-Unlocked the Home Teleport's League 4 animation option
-Unlocked the Home Teleport's League 5 animation option
+Unlocked the Home Teleport's League IV animation option
+Unlocked the Home Teleport's League V animation option
 Unlocked the Home Teleport's League VI animation option
 Unlocked the Alchemy's League IV animation option
 Unlocked the Vengeance's League IV animation option
@@ -233,7 +233,7 @@ Listened to the Aranei scout explain death mechanics at Maggot King
 Unlocked a last destination option on Spirit Trees
 Unlocked the Mountain Guide's travel option
 Unlocked the Jewellery Box's previous teleport option
-Unlocked the Charter Ship's previous destination option
+Unlocked the charter ships' previous destination option
 Unlocked the Theatre of Blood chest's custom buy option
 [[Unlocked the balloon transport system's full service]]
 Unlocked all 6 balloon transport system routes
@@ -272,7 +272,7 @@ Unlocked the ability to recolour capes with Nigel
 Unlocked the ability to trade giantsoul amulets
 Claimed the Rams skull helm and Bonesack from the Odd old man
 Unlocked the ability to trade Thorgel for death talismans
-Unlocked the ability to use Chet's coral nurseries.
+Unlocked the ability to use Chet's coral nurseries
 Unlocked the ability to toggle red skin
 Sent Isles to the Grimstone dungeon
 Unlocked the deadman annihilation weapon themes
@@ -314,7 +314,7 @@ Talked to Dr Harlow after Blood Moon Rises
 Talked to Veliaf about his newly opened pub
 Prayed at the altar in Sangvesti after Blood Moon Rises
 Listened to Geoff introduce goat hunting
-Listened to a Street urchin's admiration for gladiators
+Listened to a street urchin's admiration for gladiators
 Listened to the Windbreaker worker's Darkfrost introduction
 Listened to the natural historians' introductions
 Asked the Dwarven Boatman about transporting gold
@@ -378,39 +378,39 @@ Built the fire pit in the Mole Hole
 Built the fire pit in the Lumbridge Swamp Caves
 Built the fire pit in the Mos Le'Harmless Cave
 Built the fire pit in the Mort Myre Swamp
-Built the fire pit near the Weiss herb patch
-Built the fire pit by the God Wars Dungeon entrance
-Built the Spinning Wheel on the Isle of Souls
-Built the Potter's Wheel on the Isle of Souls
+Built the fire pit by the Weiss herb patch
+Built the fire pit by the entrance to the God Wars Dungeon
+Built the spinning wheel on the Isle of Souls
+Built the potter's wheel on the Isle of Souls
 Built the bridge leading to the Mausoleum in Morytania
-Built anglers' retreat cooking pot
-Built anglers' retreat rowboat
-Built anglers' retreat spinning wheel
-Built buccaneers' haven anvil
-Built buccaneers' haven bank chest
-Built buccaneers' haven furnace
-Built buccaneers' haven rowboat
-Built charred island anvil
-Built charred island bank chest
-Built chinchompa island cooking pot
-Built crown jewel cooking pot
-Built laguna aurorae cooking pot
-Built laguna aurorae loom
-Built laguna aurorae water pump
-Built onyx crest bank chest
-Built onyx crest furnace
-Built onyx crest water pump
-Built sunbleak island bank chest
-Built sunbleak island cooking pot
-Built sunbleak island water pump
-Built soul tear rowboat
-Built vatrachos island pottery wheel
-Built vatrachos island pottery oven
-Built vatrachos island rowboat
-Built vatrachos island water pump
-Built ynysdail rowboat
+Built anglers' retreat cooking pot	Built the cooking pot on Anglers' Retreat
+Built anglers' retreat rowboat	Built the rowboat on Anglers' Retreat
+Built anglers' retreat spinning wheel	Built the spinning wheel on Anglers' Retreat
+Built buccaneers' haven anvil	Built the anvil on Buccaneers' Haven
+Built buccaneers' haven bank chest	Built the bank chest on Buccaneers' Haven
+Built buccaneers' haven furnace	Built the furnace on Buccaneers' Haven
+Built buccaneers' haven rowboat	Built the rowboat on Buccaneers' Haven
+Built charred island anvil	Built the anvil on Charred Island
+Built charred island bank chest	Built the bank chest on Charred Island
+Built chinchompa island cooking pot	Built the cooking pot on Chinchompa Island
+Built crown jewel cooking pot	Built the cooking pot on The Crown Jewel
+Built laguna aurorae cooking pot	Built the cooking pot on Laguna Aurorae
+Built laguna aurorae loom	Built the loom on Laguna Aurorae
+Built laguna aurorae water pump	Built the water pump on Laguna Aurorae
+Built onyx crest bank chest	Built the bank chest on The Onyx Crest
+Built onyx crest furnace	Built the furnace on The Onyx Crest
+Built onyx crest water pump	Built the water pump on The Onyx Crest
+Built sunbleak island bank chest	Built the bank chest on Sunbleak Island
+Built sunbleak island cooking pot	Built the cooking pot on Sunbleak Island
+Built sunbleak island water pump	Built the water pump on Sunbleak Island
+Built soul tear rowboat	Built the rowboat on Tear of the Soul
+Built vatrachos island pottery wheel	Built the potter's wheel on Vatrachos Island
+Built vatrachos island pottery oven	Built the pottery oven on Vatrachos Island
+Built vatrachos island rowboat	Built the rowboat on Vatrachos Island
+Built vatrachos island water pump	Built the water pump on Vatrachos Island
+Built ynysdail rowboat	Built the rowboat on Ynysdail
 Built the bank chest in Sangvesti
-Built wyrmcraig bank chest
+Built the bank chest on Wyrmscraig
 Built deepfin point bank chest 1
 Built deepfin point bank chest 2
 Built all 6 quetzal landing sites
@@ -435,7 +435,7 @@ Helped a goat retire on the mainland
 Claimed XP from drinking Daddy's special water's special water
 Claimed pints of whirlpool suprise from Rum-dashed Ralph
 Claimed a clue scroll (beginner) from Veos
-Claimed a beer from Ali the Barman
+Claimed a beer from Faisal the Barman
 Claimed a medium pouch from Archmage Sedridor
 Claimed a keris partisan from Maisa's tent
 Claimed the circlet of water from the High Priest of Sophanem
@@ -457,7 +457,7 @@ Filled the travel log with all 55 fairy ring codes
 Unlocked Uglug Nar's shop, Uglug's stuffsies
 Unlocked Vanligga Gastfrihet's shop, Contraband yak produce
 Unlocked the Dorgesh-Kaan market trading minigame
-Unlocked the Garlic Cocktail shop
+Unlocked the Garlic Cocktail Supply shop
 [[Unlocked all 5 item combination recipes]]
 Unlocked the ability to create Neitiznot faceguards
 Unlocked the ability to create super antifire potions
@@ -473,7 +473,7 @@ Freed Klenter's soul from Amascut's torment
 Freed Droalak's soul from his guilt of departure
 Freed Mehhar from the High Priest of Scabaras's influence
 Freed Razmire Keelgan and Ulsquire Shauncy from affliction
-Freed the Parrot on Last Light
+Freed the parrot on Last Light
 [[Used all 28 reclaimable quest lamps, certificates and tomes]]
 Used the blessed lamp from Brother Tranquility
 Used the combat lamp from the High Priest
@@ -485,7 +485,7 @@ Used the antique lamp from Prince Itzla
 Used the magic lamp from Gillie Groats
 Used all 6 experience tomes from Blood Moon Rises
 Used both antique lamps from Commander Fullore
-Used all 3 tomes of experience from Ivan Strom
+Used all 3 Tomes of Experience from Ivan Strom
 Used all 3 ancient lamps from the Mysterious Bandit
 Used all 3 antique lamps from Cabin Boy Herbert
 Used all 4 antique lamps from the Mysterious Stranger
@@ -503,7 +503,7 @@ Used the antique lamp (master tier)
 Used the antique lamp (grandmaster tier)
 [[Filled your bookcase with all 160 completed texts]]
 Disabled Chambers of Xeric book drops
-Filled the strange Hallowed tome with all 5 mysterious pages
+Filled the strange hallowed tome with all 5 mysterious pages
 Obtained Atlax's diary
 Obtained the Overseer's book
 Obtained the Mount Karuulm diary
@@ -527,7 +527,7 @@ Logged a personal best at Tears of Guthix
 Logged at least 1 lap of the sledding course
 Logged at least 2 golems crafted
 [[Unlocked/Disabled all 90 miscellaneous warnings]]
-Unlocked all Doomsayer warning toggles
+Unlocked the ability to toggle all 24 Doomsayer danger signs
 Disabled Perdu's owned item purchase warning
 Disabled Nex's Ancient Barrier warning
 Disabled Wintertodt's modification warning
@@ -566,7 +566,7 @@ Disabled the museum's storage crate warning
 Disabled the giant bones bury warning
 Disabled the Port Roberts jail guard bribe warning
 Disabled the shipwright ship recovery warning
-Disabled the Immaculate Mole Skin trade-in warning
+Disabled the immaculate mole skin trade-in warning
 Disabled Maggot King's destroy loot warning
 Disabled the warning on releasing Brutus
 [[Claimed all 13 miscellaneous handouts, discounts and deposits]]
@@ -578,15 +578,15 @@ Claimed all weapon charge refunds from the Emblem Trader
 
 [Collection log entries]
 [[Unlocked/Logged all 10 collection log rewards]]
-Unlocked the Bronze staff of collections
-Unlocked the Iron staff of collections
-Unlocked the Steel staff of collections
-Unlocked the Black staff of collections
-Unlocked the Mithril staff of collections
-Unlocked the Adamant staff of collections
-Unlocked the Rune staff of collections
-Unlocked the Dragon staff of collections
-Unlocked the Gilded staff of collections
+Unlocked the ability to claim a bronze staff of collection
+Unlocked the ability to claim an iron staff of collection
+Unlocked the ability to claim a steel staff of collection
+Unlocked the ability to claim a black staff of collection
+Unlocked the ability to claim a mithril staff of collection
+Unlocked the ability to claim an adamant staff of collection
+Unlocked the ability to claim a rune staff of collection
+Unlocked the ability to claim a dragon staff of collection
+Unlocked the ability to claim a gilded staff of collection
 
 [Endgame tasks]
 [[Unlocked all 39 pet metamorphosis options]]
@@ -609,7 +609,7 @@ Unlocked the Giant Squirrel's dark metamorphosis option
 Unlocked the Heron's reduced metamorphosis cost
 Unlocked the Little Nightmare's metamorphosis option
 Unlocked the Rift Guardian's Greatish guardian transmog
-Unlocked all 15 Rift Guardian rune transmogs
+Unlocked all 15 Rift Guardian rune metamorphosis options
 [[Own/Unlocked all 8 untradeable Challenge Mode rewards]]
 Unlocked the ability to claim Xeric's champion
 [[Own/Unlocked all 9 untradeable Theatre of Blood rewards]]

@@ -55,7 +55,7 @@ public class PohBookcaseTaskList extends TaskList
 		//Filled the fossil island note book with all 21 entries couldn't see any varb changes
 		//Filled the strange Hallowed tome with all 5 mysterious pages
 		Task filledHallowedTome = new Task.TaskBuilder()
-			.name("Filled the strange Hallowed tome with all 5 mysterious pages")
+			.name("Filled the strange hallowed tome with all 5 mysterious pages")
 			.switchVar(true, VarbitID.HALLOWED_TOME_PAGE1)
 			.switchVar(true, VarbitID.HALLOWED_TOME_PAGE2)
 			.switchVar(true, VarbitID.HALLOWED_TOME_PAGE3)

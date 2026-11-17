@@ -62,7 +62,7 @@ public class RightClickTaskList extends TaskList
 
 		addGeTask(true, "Unlocked the Jewellery Box's previous teleport option", VarbitID.POH_JEWELLERYBOX_MULTI, 1);
 
-		addGeTask(true, "Unlocked the Charter Ship's previous destination option", VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1);
+		addGeTask(true, "Unlocked the charter ships' previous destination option", VarbitID.CHARTERING_PREVIOUS_DESTINATION, 1);
 		// The client exposes the discussion flag, but not the completed contract count.
 		addTask("Discussed contracts with Guildmaster Jane (Totus also requires completing a contract)", VarbitID.FARMGUILD_CONTRACT_DISCUSSED);
 		addTask("Unlocked the Trade option on Pennant", VarbitID.PRIF_ACORN_TRADE);

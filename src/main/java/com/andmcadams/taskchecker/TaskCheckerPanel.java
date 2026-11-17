@@ -166,7 +166,7 @@ public class TaskCheckerPanel extends PluginPanel
 						categorySection.groups.add(taskContainer);
 					}
 				}
-				addTask(taskContainer, task, categorySection);
+				addTask(taskContainer, task, taskList.getDisplayName(task), categorySection);
 			}
 			taskListPanel.add(categoryTaskContainer);
 		}
@@ -205,9 +205,9 @@ public class TaskCheckerPanel extends PluginPanel
 		return taskListHeaderPanel;
 	}
 
-	public void addTask(JPanel taskListPanel, Task task, CategorySection categorySection)
+	private void addTask(JPanel taskListPanel, Task task, String displayName, CategorySection categorySection)
 	{
-		TaskPanel taskPanel = new TaskPanel(task);
+		TaskPanel taskPanel = new TaskPanel(task, displayName);
 		taskPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 		taskPanelList.add(taskPanel);
 		categorySection.taskPanels.add(taskPanel);

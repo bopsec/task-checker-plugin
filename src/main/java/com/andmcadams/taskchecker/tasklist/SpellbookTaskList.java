@@ -42,13 +42,13 @@ public class SpellbookTaskList extends TaskList
 		addTask("Unlocked Teleport to Target", VarbitID.BOUNTY_TARGET_TELEPORT);
 		addTask("Unlocked Ourania Teleport", VarbitID.RC_ZMI_LUNAR_SPELL);
 		addTask("Unlocked the Death Charge upgrade", VarbitID.DEATH_CHARGE_SCROLL_USED);
-		addTask("Unlocked the Home Teleport's Deadman 2024 animation option", VarbitID.DEADMAN_2024_TELEPORT_UNLOCKED);
-		addTask("Unlocked the Home Teleport's Deadman 2026 animation option", VarbitID.DEADMAN_2026_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's Armageddon animation option", VarbitID.DEADMAN_2024_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's Annihilation animation option", VarbitID.DEADMAN_2026_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Home Teleport's League I animation option", VarbitID.LEAGUE_TWISTED_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Home Teleport's League II animation option", VarbitID.LEAGUE_TRAILBLAZER_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Home Teleport's League III animation option", VarbitID.LEAGUE_3_TELEPORT_UNLOCKED);
-		addTask("Unlocked the Home Teleport's League 4 animation option", VarbitID.LEAGUE_4_HOME_TELEPORT_UNLOCKED);
-		addTask("Unlocked the Home Teleport's League 5 animation option", VarbitID.LEAGUE_5_HOME_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's League IV animation option", VarbitID.LEAGUE_4_HOME_TELEPORT_UNLOCKED);
+		addTask("Unlocked the Home Teleport's League V animation option", VarbitID.LEAGUE_5_HOME_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Home Teleport's League VI animation option", VarbitID.LEAGUE_6_HOME_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Home Teleport's Speedy animation option", VarbitID.SPEEDRUNNING_TELEPORT_UNLOCKED);
 		addTask("Unlocked the Alchemy's League IV animation option", VarbitID.LEAGUE_4_HIGH_ALCH_ANIMATION_UNLOCKED);

@@ -88,7 +88,7 @@ public class PetTransmogsTaskList extends TaskList
 		addTask("Unlocked the Rift Guardian's Greatish guardian transmog", VarbitID.SKILLPET_RUNECRAFTING_GOTR_UNLOCKED);
 
 		Task riftGuardian = new Task.TaskBuilder()
-			.name("Unlocked all 15 Rift Guardian rune transmogs")
+			.name("Unlocked all 15 Rift Guardian rune metamorphosis options")
 			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_FIRE_UNLOCKED)
 			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_AIR_UNLOCKED)
 			.switchVar(true, VarbitID.SKILLPET_RUNECRAFTING_MIND_UNLOCKED)

@@ -118,7 +118,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		addTask("Listened to Mage of Zamorak's incantation description", VarbitID.TOTE_ZMI_POSTQUEST_CHAT); // confirmed
 
 		//Listened to a Street urchin's admiration for gladiators TODO: This will likely get fixed eventually, it is currently not completing for a small subset of people if they have already talked to the urchins prior to getting a high enough rank
-		// addTask("Listened to a Street urchin's admiration for gladiators", VarbitID.VARLAMORE_THIEVING_HOUSE_URCHIN_GLORY_MENTIONED); // confirmed
+		// addTask("Listened to a street urchin's admiration for gladiators", VarbitID.VARLAMORE_THIEVING_HOUSE_URCHIN_GLORY_MENTIONED); // confirmed
 
 		//Listened to the Windbreaker worker's Darkfrost introduction
 		addTask("Listened to the Windbreaker worker's Darkfrost introduction", VarbitID.HUEY_MET_DWARF_WORKER); // confirmed
@@ -201,7 +201,7 @@ public class UniqueDialoguePathsTaskList extends TaskList
 
 		addTask("Listened to Sil'as Dahcsnu's initial dialogue", VarbitID.SUROK_MONKCHECK); // confirmed
 
-		addTask("Listened to Dampe explain shade coffins", VarbitID.SHADES_DAMPE_INTRO);
+		addTask("Listened to Dampe's explanation of shade remains coffins", VarbitID.SHADES_DAMPE_INTRO);
 
 		addTask("Listened to the Drunken Dwarf talk about his relative", VarbitID.GIANTDWARF_COUSIN_INTRODUCED); // confirmed
 
@@ -300,13 +300,13 @@ public class UniqueDialoguePathsTaskList extends TaskList
 		// Paid Brass Hand Harry for a sailing cape
 		addTask("Paid Brass Hand Harry for a sailing cape", VarbitID.SKILLCAPE_SAILING_PURCHASED); // confirmed
 		// Unlocked the ability to use Chet's coral nurseries.
-		addTask("Unlocked the ability to use Chet's coral nurseries.", VarbitID.CONCH_CORAL_PATCHES_UNLOCKED);
+		addTask("Unlocked the ability to use Chet's coral nurseries", VarbitID.CONCH_CORAL_PATCHES_UNLOCKED);
 		// Pet Gus after the final dawn
 		addTask("Petted Gus the dog after The Final Dawn", VarbitID.NPC_DOG_GUS_DIALOGUE);
 		// Sent Isles to the Grimstone dungeon
 		addEqTask(true, "Sent Isles to the Grimstone dungeon", VarbitID.GRIMSTONE_UNCERTER_STATUS, 4);
 		// Freed the Parrot after The Red Reef
-		addEqTask(true, "Freed the Parrot on Last Light", VarbitID.TRR_PARROT, 2);
+		addEqTask(true, "Freed the parrot on Last Light", VarbitID.TRR_PARROT, 2);
 		// Listened to the Boat Bottle introduction
 		addTask("Listened to the Boat bottle introduction", VarbitID.SAILING_BOAT_BOTTLE_INTRO);
 		// Talk to Veliaf about his newly opened pub
