@@ -215,6 +215,17 @@ public class UnplacedRandomTaskList extends TaskList
 
 		// Unlocked all of Ali Morrisane's Rune shops
 		addGeTask(true, "Unlocked all of Ali Morrisane's rune shops", VarbitID.ROGUETRADER_RUNES, 5);
+		// got upgraded bonesack for free
+		addTask("Received the free bonesack upgrade", VarbitID.RAG3_UPGRADED_BONESACK);
+		// used RAG3 slayer lamp
+		Task rag3Lamps = new Task.TaskBuilder()
+			.name("Used both lamps from the Odd Old Man")
+			.switchVar(true, VarbitID.RAG3_SLAYER_LAMP)
+			.switchVar(true, VarbitID.RAG3_PRAYER_LAMP)
+			.build();
+		this.add(rag3Lamps);
+		// Used a new leaf lamp
+		addTask("Used the combat lamp from Dishop Dennis", VarbitID.ANL_REWARD_LAMP_USED);
 	}
 }
 
