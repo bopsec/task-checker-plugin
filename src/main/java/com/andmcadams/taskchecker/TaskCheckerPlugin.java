@@ -43,7 +43,7 @@ import net.runelite.client.util.ImageUtil;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Completionist Task Checker"
+	name = "Comp Task Checker"
 )
 public class TaskCheckerPlugin extends Plugin
 {
